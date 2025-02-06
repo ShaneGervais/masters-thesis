@@ -1,0 +1,14 @@
+\setcounter{equation}{0}
+\renewcommand{\theequation}{A\thesection.\arabic{equation}}
+\begin{align}
+    &\int_{-\infty}^{\infty} \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{x^2}{2\sigma^2}} xdx = 0\\
+    &\int_{-\infty}^{\infty} \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\delta)^2}{2\sigma^2}} xdx = \delta\\
+    &\int_{-\infty}^{\infty} \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{x^2}{2\sigma^2}} dx = 1\\
+    &\int_{-\infty}^{\infty} \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x^2 + (x-\delta)^2)}{4\sigma^2}} xdx = \frac{\delta}{2}e^{-\frac{\delta^2}{8\sigma^2}}\\
+    &\int_{-\infty}^{\infty} \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\delta)^2}{2\sigma^2}} dx = 1\\
+    &\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{x^2}{4\sigma^2}}e^{-ikx} dx = \frac{\sqrt{2\sigma}}{(\sqrt{2\pi})^{1/2}}e^{-k^2 \sigma^2}\\
+    &\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\delta)^2}{4\sigma^2}}e^{-ikx} dx = \frac{\sqrt{2\sigma}}{(\sqrt{2\pi})^{1/2}}e^{-k^2 \sigma^2}e^{ik\delta}\\
+    &\int_{-\infty}^{\infty} \frac{2\sigma}{\sqrt{2\pi}}e^{-2k^2 \sigma^2} kdk = 0\\
+    &\int_{-\infty}^{\infty} \frac{2\sigma}{\sqrt{2\pi}}e^{-2k^2 \sigma^2}e^{ik\delta} kdk = i\frac{\delta}{4\sigma^2}e^{-\frac{\delta^2}{8\sigma^2}}\\
+    &\int_{-\infty}^{\infty} \frac{2\sigma}{\sqrt{2\pi}}e^{-2k^2 \sigma^2}e^{-ik\delta} kdk = -i\frac{\delta}{4\sigma^2}e^{-\frac{\delta^2}{8\sigma^2}}
+\end{align}

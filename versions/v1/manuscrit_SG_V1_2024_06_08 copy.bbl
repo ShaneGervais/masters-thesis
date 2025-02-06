@@ -1,0 +1,440 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{Bell_1990}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BJ}{%
+         family={Bell},
+         familyi={B\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJ1}
+    \strng{fullhash}{BJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Surely, after 62 years, we should have an exact formulation of some serious part of quantum mechanics? By ‘exact’ I do not of course mean ‘exactly true’. I mean only that the theory should be fully formulated in mathematical terms, with nothing left to the discretion of the theoretical physicist...until workable approximations are needed in applications. By ‘serious’ I mean that some substantial fragment of physics should be covered. Nonrelativistic ‘particle’ quantum mechanics, perhaps with the inclusion of the electromagnetic field and cut-off interaction, is serious enough. For it covers ‘a large part of physics and the whole of chemistry’ (P A M Dirac 1929 Proc. R. Soc.A 123 714). I mean too, by ‘serious’, that ‘apparatus’ should not be separated off from the rest of the world into black boxes, as if it were not made of atoms and not ruled by quantum mechanics.%
+    }
+    \verb{doi}
+    \verb 10.1088/2058-7058/3/8/26
+    \endverb
+    \field{number}{8}
+    \field{pages}{33}
+    \field{title}{Against ‘measurement’}
+    \verb{url}
+    \verb https://dx.doi.org/10.1088/2058-7058/3/8/26
+    \endverb
+    \field{volume}{3}
+    \field{journaltitle}{Physics World}
+    \field{year}{1990}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{JordanBook}{book}{}
+    \name{author}{2}{}{%
+      {{hash=JAN}{%
+         family={Jordan},
+         familyi={J\bibinitperiod},
+         given={Andrew\bibnamedelima N.},
+         giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=SIA}{%
+         family={Siddiqi},
+         familyi={S\bibinitperiod},
+         given={Irfan\bibnamedelima A.},
+         giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=}{%
+         family={1},
+         familyi={\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{JANSIA1}
+    \strng{fullhash}{JANSIA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Quantum Measurement: Theory and Practice}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Peephole}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=GY}{%
+         family={Gefen},
+         familyi={G\bibinitperiod},
+         given={Yuval},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=oSWI}{%
+         prefix={of},
+         prefixi={o\bibinitperiod},
+         family={Science},
+         familyi={S\bibinitperiod},
+         given={Weizmann\bibnamedelima Institute},
+         giveni={W\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GY1}
+    \strng{fullhash}{GY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{ICTP Colloquium Series}
+    \field{title}{Weak Measurement: A Peephole into the Quantum World}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Lundeen2011DirectMO}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LJS}{%
+         family={Lundeen},
+         familyi={L\bibinitperiod},
+         given={Jeff\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Sutherland},
+         familyi={S\bibinitperiod},
+         given={B},
+         giveni={B},
+      }}%
+      {{hash=PA}{%
+         family={Patel},
+         familyi={P\bibinitperiod},
+         given={Aabid},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Stewart},
+         familyi={S\bibinitperiod},
+         given={C},
+         giveni={C},
+      }}%
+      {{hash=BC}{%
+         family={Bamber},
+         familyi={B\bibinitperiod},
+         given={Charles},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LJS+1}
+    \strng{fullhash}{LJSSBPASCBC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{188\bibrangedash 191}
+    \field{title}{Direct measurement of the quantum wavefunction}
+    \verb{url}
+    \verb https://api.semanticscholar.org/CorpusID:4405067
+    \endverb
+    \field{volume}{474}
+    \field{journaltitle}{Nature}
+    \field{year}{2011}
+  \endentry
+
+  \entry{Aharonov}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AY}{%
+         family={Aharonov},
+         familyi={A\bibinitperiod},
+         given={Yakir},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ADZ}{%
+         family={Albert},
+         familyi={A\bibinitperiod},
+         given={David\bibnamedelima Z.},
+         giveni={D\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=VL}{%
+         family={Vaidman},
+         familyi={V\bibinitperiod},
+         given={Lev},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{AYADZVL1}
+    \strng{fullhash}{AYADZVL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.60.1351
+    \endverb
+    \field{issue}{14}
+    \field{pages}{1351\bibrangedash 1354}
+    \field{title}{How the result of a measurement of a component of the spin of a spin-1/2 particle can turn out to be 100}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.60.1351
+    \endverb
+    \field{volume}{60}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{year}{1988}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{vonNeumann}{book}{}
+    \name{author}{2}{}{%
+      {{hash=vNJ}{%
+         prefix={von},
+         prefixi={v\bibinitperiod},
+         family={Neumann},
+         familyi={N\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BRT}{%
+         family={Beyer},
+         familyi={B\bibinitperiod},
+         given={Robert\bibnamedelima T.},
+         giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Princeton University Press}%
+    }
+    \strng{namehash}{NJvBRT1}
+    \strng{fullhash}{NJvBRT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    {Quantum mechanics was still in its infancy in 1932 when the young John von Neumann, who would go on to become one of the greatest mathematicians of the twentieth century, published Mathematical Foundations of Quantum Mechanics—a revolutionary book that for the first time provided a rigorous mathematical framework for the new science. Robert Beyer's 1955 English translation, which von Neumann reviewed and approved, is cited more frequently today than ever before. But its many treasures and insights were too often obscured by the limitations of the way the text and equations were set on the page. This new edition of this classic work has been completely reset in TeX, making the text and equations far easier to read. The book has also seen the correction of a handful of typographic errors, revision of some sentences for clarity and readability, provision of an index for the first time, and prefatory remarks drawn from the writings of Léon Van Hove and Freeman Dyson have been added. The result brings new life to an essential work in theoretical physics and mathematics.}%
+    }
+    \verb{doi}
+    \verb 10.23943/princeton/9780691178561.001.0001
+    \endverb
+    \field{isbn}{9780691178561}
+    \field{title}{{Mathematical Foundations of Quantum Mechanics: New Edition}}
+    \verb{url}
+    \verb https://doi.org/10.23943/princeton/9780691178561.001.0001
+    \endverb
+    \field{month}{02}
+    \field{year}{2018}
+  \endentry
+
+  \entry{OpticalNetworks}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BN}{%
+         family={Brunner},
+         familyi={B\bibinitperiod},
+         given={Nicolas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Ac\'{\i}n},
+         familyi={A\bibinitperiod},
+         given={Antonio},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Collins},
+         familyi={C\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GN}{%
+         family={Gisin},
+         familyi={G\bibinitperiod},
+         given={Nicolas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SV}{%
+         family={Scarani},
+         familyi={S\bibinitperiod},
+         given={Valerio},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{BN+1}
+    \strng{fullhash}{BNAACDGNSV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.91.180402
+    \endverb
+    \field{issue}{18}
+    \field{pages}{180402}
+    \field{title}{Optical Telecom Networks as Weak Quantum Measurements with Postselection}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.91.180402
+    \endverb
+    \field{volume}{91}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{year}{2003}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Hairiri}{article}{}
+    \name{author}{4}{}{%
+      {{hash=HA}{%
+         family={Hariri},
+         familyi={H\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Curic},
+         familyi={C\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GL}{%
+         family={Giner},
+         familyi={G\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LJS}{%
+         family={Lundeen},
+         familyi={L\bibinitperiod},
+         given={J.\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{HA+1}
+    \strng{fullhash}{HACDGLLJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevA.100.032119
+    \endverb
+    \field{issue}{3}
+    \field{pages}{032119}
+    \field{title}{Experimental simultaneous readout of the real and imaginary parts of the weak value}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevA.100.032119
+    \endverb
+    \field{volume}{100}
+    \field{journaltitle}{Phys. Rev. A}
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Lundeen_Bamber}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LJS}{%
+         family={Lundeen},
+         familyi={L\bibinitperiod},
+         given={Jeff\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Bamber},
+         familyi={B\bibinitperiod},
+         given={Charles},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{LJSBC1}
+    \strng{fullhash}{LJSBC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.108.070402
+    \endverb
+    \field{issue}{7}
+    \field{pages}{070402}
+    \field{title}{Procedure for Direct Measurement of General Quantum States Using Weak Measurement}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.108.070402
+    \endverb
+    \field{volume}{108}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{year}{2012}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Lundeen_Resch}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LJ}{%
+         family={Lundeen},
+         familyi={L\bibinitperiod},
+         given={J.S.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=RK}{%
+         family={Resch},
+         familyi={R\bibinitperiod},
+         given={K.J.},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \keyw{Weak measurement, Entanglement, Post-selection, Annihilation operator}
+    \strng{namehash}{LJRK1}
+    \strng{fullhash}{LJRK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Weak measurements are a new tool for characterizing post-selected quantum systems during their evolution. Weak measurement was originally formulated in terms of von Neumann interactions which are practically available for only the simplest single-particle observables. In the present work, we extend and greatly simplify a recent, experimentally feasible, reformulation of weak measurement for multiparticle observables [Phys. Rev. Lett. 92 (2004) 130402]. We also show that the resulting “joint weak values” take on a particularly elegant form when expressed in terms of annihilation operators.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.physleta.2004.11.037
+    \endverb
+    \field{issn}{0375-9601}
+    \field{number}{5}
+    \field{pages}{337\bibrangedash 344}
+    \field{title}{Practical measurement of joint weak values and their connection to the annihilation operator}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0375960104016342
+    \endverb
+    \field{volume}{334}
+    \field{journaltitle}{Physics Letters A}
+    \field{year}{2005}
+  \endentry
+
+  \entry{Lundeen_thesis}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=LJ}{%
+         family={Lundeen},
+         familyi={L\bibinitperiod},
+         given={Jeff},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LJ1}
+    \strng{fullhash}{LJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Generalized Measurement and Post-selection in Optical Quantum Information}
+    \list{institution}{1}{%
+      {University of Toronto}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{2006}
+  \endentry
+\enddatalist
+\endinput

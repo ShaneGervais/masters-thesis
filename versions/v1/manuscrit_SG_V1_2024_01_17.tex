@@ -1,0 +1,343 @@
+ %Dans cette section, on défini le format du document et toute autre fonction qui seront utile pour le document
+ \documentclass[superscriptaddress,12pt]{article}
+ %\documentclass[aps,pra,notitlepage,superscriptaddress,10pt]{revtex4-2}
+ %\documentclass[aps,pra,notitlepage,superscriptaddress,twocolumn,10pt]{revtex4-2}
+ \usepackage[utf8]{inputenc} % to insert the character directly by copy paste or as ^+i typed on your keyboard
+ \usepackage[T1]{fontenc} % to lower the accent
+ \usepackage{graphicx}		%Permet d'ajouter des figures
+ \graphicspath{ {./figure/}}
+ \usepackage{bm} 			%Permet d'utiliser des charactères gras dans les équations
+ \usepackage{amsmath}		%Défini plusieurs fonctions utiles pour les équations
+ \usepackage{physics}
+ %\usepackage[pdfauthor={Deny Hamel},pdftitle={Title}]{hyperref} %Cette fonction permet de créer des liens dans le document PDF généré. TRÈS utile pour des documents électroniques.
+ \usepackage{icomma}			%Enlève l'espace après la virgule dans les nombres 
+ \usepackage{setspace}
+ \usepackage{multirow}
+ \usepackage{booktabs}
+ 
+ 
+ \makeatletter
+ \newcommand{\mathleft}{\@fleqntrue\@mathmargin0pt}
+ \newcommand{\mathcenter}{\@fleqnfalse}
+ \makeatother
+ 
+ 
+ \usepackage{gensymb}
+ \usepackage{titlesec}
+ \titleformat{\section}
+   {\normalfont\fontsize{12}{15}\bfseries}{\thesection}{1em}{}
+ \titleformat{\subsection}
+   {\normalfont\fontsize{12}{15}\bfseries}{\thesubsection}{1em}{}
+ \titleformat{\subsubsection}
+   {\normalfont\fontsize{12}{15}\bfseries}{\thesubsubsection}{1em}{}
+ \usepackage{siunitx}
+ 
+ \usepackage{caption}
+ 
+ 
+ \usepackage{xcolor}
+ 
+ 
+ \newcommand\tab[1][0.83cm]{\hspace*{#1}}
+ 
+ 
+ \usepackage[style=numeric, backend=bibtex, sorting=none]{biblatex}
+ \addbibresource{./reference_these.bib}
+ 
+ 
+ \usepackage{parskip}
+ \setlength{\parindent}{4em}
+ \setlength{\parskip}{1em}
+ \usepackage[ letterpaper, top=2.5cm ,  bottom=2.5cm , left=4cm , right =2.5cm , ]{geometry}
+ %\pagestyle{myheadings}
+ 
+ \usepackage[french]{babel}
+ \usepackage{hyperref}
+ \hypersetup{
+     colorlinks,
+     citecolor=black,
+     filecolor=black,
+     linkcolor=black,
+     urlcolor=black
+ }
+ %J'ai changé la numérotation des sections pour avoir une numérotation avec des chiffres arabes. Voir https://tex.stackexchange.com/questions/3177/how-to-change-the-numbering-of-part-chapter-section-to-alphabetical-r
+ \renewcommand\thesection{\arabic{section}}
+ \renewcommand\thesubsection{\thesection.\arabic{subsection}} 
+ \renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}} 
+ 
+ 
+ %\renewcommand\thetable{\arabic{table}} Si on veut aussi une numérotation arabe pour les tableaux.
+ 
+ 
+ %%Cette partie corrige un problème causé par les définitions ici-haut, qui faisait qu'au lieu de citer par exemple la section 2.1, latex donnait 2 2.1 (ce qui ferait du sens avec le sections romaine de PRA, i.e. II A). Voir : https://tex.stackexchange.com/questions/104486/section-reference-shows-section-then-subsection-number
+ \makeatletter
+ \def\p@subsection{}
+ \makeatother
+ \makeatletter
+ \def\p@subsubsection{}
+ \makeatother
+ 
+ 
+ %J'ai modifié le format un peu pour que les tables, figures, etc. soient en français
+ \def\andname{et} 			%Remplace le "and" dans la liste d'auteur avec un "et"
+ \def\tablename{Tableau}	
+ \def\figurename{Figure}
+ 
+ 
+ %La typographie pour la plupart des opérateur mathématique est déjà défini par latex. Or, il y a quelques cas ou il n'y a pas de consensus, comme par exemple exemple pour l'opérateur différentiel d. Dans ces cas, il suffit de définir de nouveaux opérateurs avec la typographie désirée.
+ \def\D{\mathrm{d}}
+ \def\e{\mathrm{e}}
+ \def\i{\mathrm{i}}
+ 
+ 
+ \usepackage{scalerel}
+ 
+ 
+ \usepackage{fancyhdr}
+ \pagestyle{fancy}
+ \fancyhf{}
+ \fancyhead[R]{\thepage}
+ \renewcommand{\headrulewidth}{0pt}
+ 
+ 
+ \usepackage{gensymb}
+ 
+ 
+ 
+ 
+ \makeatletter
+ \newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+ \makeatother
+ 
+ 
+ %%%%%%%%%%%%Le document commence ici%%%%%%%%%%%%%%%%%%%%-----------------------------------------------------------------------------
+ \usepackage{titlesec}
+
+\begin{document}
+    \pagenumbering{roman}
+
+    \thispagestyle{empty}
+    \begin{titlepage}
+    \addcontentsline{toc}{section}{\protect\numberline{}Page titre}%
+       \begin{center}
+           \vspace*{1cm}
+
+
+           \textbf{Caractérisation directe d'un état de polarisation à l'aide des mesures faibles temporelles}
+
+
+           \vspace{5cm}
+
+
+            Thèse présentée à la faculté des sciences de l'université de Moncton \\
+            pour l'obtention du grade de \\
+            maitrise ès sciences et spécialisation physique (M. Sc.)
+
+           \vspace{5cm}
+
+
+           \textbf{Shane Gervais} \\
+           A00198792
+
+
+           \vfill
+
+           Département de physique et d'astronomie \\
+           Université de Moncton\\
+           \textcolor{red}{DATE}
+
+           \vspace{0.8cm}
+
+       \end{center}
+    \end{titlepage}
+
+
+
+
+    \section*{Composition du jury}
+    \setcounter{page}{2}
+
+    \addcontentsline{toc}{section}{\protect\numberline{}Composition du jury}%
+
+
+    \vspace{2.5cm}
+
+
+    Président du jury : \textcolor{red}{noms} \\
+    \tab \tab Professeur, \\
+    \tab \tab Université de Moncton
+
+
+    \vspace{3cm}
+
+
+    Examinateur interne : \textcolor{red}{noms} \\
+    \tab \tab Professeur, \\
+    \tab \tab Université de Moncton
+
+
+    \vspace{3cm}
+
+
+    Examinateur externe : \textcolor{red}{noms} \\
+    \tab \tab Professeur, \\
+    \tab \tab Université de \textcolor{red}{noms de l'uni}
+
+
+    \vspace{3cm}
+
+
+    Directeur de thèse : Lambert Giner \\
+    \tab \tab Professeur, \\
+    \tab \tab Université de Moncton
+
+
+    \pagebreak
+
+
+    \section*{Remerciements}
+
+    \addcontentsline{toc}{section}{\protect\numberline{}Remerciements}%
+    \pagebreak
+
+    \section*{Sommaire}
+
+    
+    \addcontentsline{toc}{section}{\protect\numberline{}Sommaire}%
+
+
+    \pagebreak
+
+
+    \section*{Abstract}
+
+    
+
+    \addcontentsline{toc}{section}{\protect\numberline{}Abstract}%
+
+
+    \pagebreak
+
+
+    \singlespacing
+    \tableofcontents
+
+
+    \newpage
+
+
+    \listoftables
+
+
+    \addcontentsline{toc}{section}{\protect\numberline{}Liste des tableaux}%
+
+
+    \pagebreak
+
+
+    \listoffigures
+
+    \addcontentsline{toc}{section}{\protect\numberline{}Liste des figures}%
+
+
+
+
+
+    \pagebreak
+
+
+    \section*{Liste des symboles}
+
+
+    \addcontentsline{toc}{section}{\protect\numberline{}Liste des symboles}%
+
+
+    \pagebreak
+
+
+    \onehalfspacing
+
+
+    \pagenumbering{arabic}
+
+
+    \thispagestyle{empty}
+    \section{INTRODUCTION DES MESURES QUANTIQUE}
+
+    \subsection{La notion des mesures quantique}
+    
+    \pagebreak
+    
+    \subsection{Les procédures de mesure directe utilisant des mesures faibles}	
+
+    \pagebreak
+
+    \subsection{Motivation de la thèse}
+    \pagebreak
+    
+    \thispagestyle{empty}
+    \section{LES MESURES QUANTIQUES TEMPORELLES ET FRÉQUENCIELLES}
+    
+    \subsection{Compréhension des mesures temporelles en quantique}
+    
+    \pagebreak
+
+    \subsection{Possiblité d'une mesure faible temporelle}
+    
+    \pagebreak
+    
+    \subsection{Correlation entre d'observable temporel et fréquenciel}
+
+    \pagebreak
+
+    \thispagestyle{empty}
+    \section{MESURE EXPÉRIMENTALE DIRECTE D'UN ÉTAT DE POLARISATION EN UTILISANT UNE MESURE FAIBLE TEMPORELLE}
+    
+    \subsection{Proposition d'expérience pour mesurer la partie réelle de la valeur faible d'un état quantique}
+
+    \pagebreak
+
+    \subsection{Caractérisation de la partie réelle de la valeur faible}
+    
+    \pagebreak
+
+    \subsection{Proposition d'expérience pour mesurer la partie imaginaire de la valeur faible d'un état quantique}
+
+    \pagebreak
+
+    \subsection{Caractérisation de la partie imaginaire de la valeur faible}
+    
+    \pagebreak
+
+    \subsection{Caractérisation générale d'un état de polarisation en utilisant des mesures faibles temporelles}
+
+    \pagebreak
+
+    \thispagestyle{empty}
+    \section{CONCLUSION}
+
+    \subsection{Discussion des résultats expérimentaux}
+
+    \pagebreak
+    
+    \subsection{Conclusion sur la thèse}
+
+    \pagebreak
+
+    \subsection{Applications et projet de future}
+
+    \pagebreak
+
+    \printbibliography	
+
+    \thispagestyle{empty}
+
+    \section*{ANNEXE A}
+
+    \pagebreak
+    \thispagestyle{empty}
+    \section*{ANNEXE B}
+    \pagebreak
+    \thispagestyle{empty}
+
+\end{document}

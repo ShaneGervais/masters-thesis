@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: manuscrit_SG_V1_2024_06_08.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: manuscrit_SG_V1_2024_06_08-blx.bib
+Database file #2: ./reference_these.bib
+Biblatex version: 3.19
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 19 entries,
+            6399 wiz_defined-function locations,
+            1378 strings with 16725 characters,
+and the built_in function-call counts, 143153 in all, are:
+= -- 11749
+> -- 2029
+< -- 612
++ -- 4085
+- -- 691
+* -- 9639
+:= -- 15895
+add.period$ -- 0
+call.type$ -- 19
+change.case$ -- 400
+chr.to.int$ -- 55
+cite$ -- 36
+duplicate$ -- 15031
+empty$ -- 12522
+format.name$ -- 1146
+if$ -- 29098
+int.to.chr$ -- 0
+int.to.str$ -- 50
+missing$ -- 0
+newline$ -- 672
+num.names$ -- 986
+pop$ -- 6460
+preamble$ -- 1
+purify$ -- 510
+quote$ -- 0
+skip$ -- 3697
+stack$ -- 0
+substring$ -- 21241
+swap$ -- 2880
+text.length$ -- 404
+text.prefix$ -- 2
+top$ -- 1
+type$ -- 632
+warning$ -- 0
+while$ -- 1956
+width$ -- 0
+write$ -- 654

@@ -1,0 +1,54 @@
+À partir de l'interprétation de von Neumann des mesures quantiques, 
+écrivons une procédure pour mesurer un état particulier soit 
+$\ket{\psi}$ d'un système $\hat{S}$ dont $\ket{\psi}\in\hat{S}$. 
+L'appareil de mesure ou le pointeur $\hat{P}$, 
+pour des utilisations ultérieures 
+dans cette thèse nous allons utiliser des impulsions gaussien comme pointeur, sera d'obtenir le décalage $\delta$ 
+d'une fonction $\ket{\zeta(x)}$ avec un 
+profil gaussien et dans le domaine d'une variable indépendante étant $x$ dont $\ket{\zeta(x)}\in\hat{P}$. 
+Supposons que le décalage $\delta$ soit sur et dans le même domaine que la 
+variable $x$, comme l'aiguille du voltmètre qui commence à $V_i =0V$ et après 
+$V_f = 0V + 10V$ où $\delta=10V$. L'hamiltonien du système total comprenant le 
+système mesuré et le pointeur s'écrit: 
+
+\begin{equation}
+    \mathcal{H} = g(\hat{S} \otimes \hat{P})
+\end{equation}
+
+Soit g la force de couplage entre le système et le pointeur qui est proportionelle
+au décalage de la varaible du pointeur comme 
+$g \propto \frac{-\hbar\delta}{it}$ où $\ll t \gg$ soit le temps d'interaction
+entre l'appareil et le système. Cet-à-dire l'opérateur d'interaction s'écrit:
+
+\begin{equation}
+    \hat{U} = e^{-\frac{i\mathcal{H}t}{\hbar}} = e^{\frac{-igt}{\hbar}(\hat{S} \otimes \hat{P})}
+\end{equation}
+
+Ce dernier est un opérateur unitaire et ce qui nous permettons d'effectuer 
+une mesure sur le système quantique. On peut alors écrire les étapes de la 
+procédure de mesurer un état $\ket{\psi}$. Initialement, on écrit l'état 
+désirable à mesurer avec les bases orthogonales $\ket{0}$ et 
+$\ket{1}$ comme le suivant:
+
+\begin{equation}
+    \ket{\psi} = a\ket{0} + b\ket{1}
+\end{equation}
+
+Dont $a$ et $b$ sont des paramètres pour chaque bases où 
+$|a|^2 + |b|^2 = 1$. Les bases choisi peuvent être soit la polarisation $\ket{H}$ et $\ket{V}$, $\ket{D}$ et $\ket{A}$ ou
+même le spin $\ket{\uparrow}$ et $\ket{\downarrow}$, etc... 
+Ensuite le pointeur dans sa position initial s'écrit:
+
+\begin{equation}
+    \ket{\zeta(x)} = \frac{1}{(\sqrt{2\pi}\sigma)^{1/2}}e^{\frac{-x^2}{4\sigma^2}}
+\end{equation}
+
+On défini l'étape de préparation $\Sigma$ d'un état désirable à mesurer  
+d'être dans un état total $\ket{\Psi_i}$ initialement:
+
+\begin{equation}
+    \ket{\Psi_i} \equiv \ket{\psi} \otimes \ket{\zeta(x)}
+\end{equation}
+
+Les prochaines sous-section sont dédié à démontrer la différence entre une
+mesure qu'on appelle forte et une qui est faible.

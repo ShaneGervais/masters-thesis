@@ -1,0 +1,97 @@
+Notre expérience a été optimisée pour être automatisée. 
+Tout d’abord, notre appareil expérimental subit un 
+étalonnage consistant en une seule demi-plaque d’onde 
+pendant la phase de préparation de la procédure 
+expérimentale. Cette dernière est ensuite tournée pour 
+envoyer la polarisation V correspondant à notre position 
+temporelle moyenne de référence, qui est notre état 
+d’entrée à retard 0. L’oscilloscope prend des données 
+pour notre position 0, puis notre code fait tourner la 
+demi-plaque d’onde pour envoyer le retard maximal, soit 
+l’état de polarisation H. Notez qu’un passage de V à H, 
+qui correspond à un changement de 90 degrés par rapport 
+aux états de base, revient en réalité à un décalage de 
+45 degrés sur la demi-plaque d’onde. Chaque état de 
+polarisation d’étalonnage (H et V) est mesuré séparément, 
+puis les 10 résultats sont moyennés. L’oscilloscope est 
+évidemment utilisé pour mesurer les temps d’équivalence 
+et il calcule ensuite la moyenne de plus de 10000 formes 
+d’onde. Après l’étalonnage, nous pouvons effectuer chacun 
+des chemins de polarisation énoncés plus haut dans ce 
+chapitre. Pour changer de chemin de polarisation, nous 
+devons ajouter un quart de plaque d’onde à la préparation 
+de l’état d’entrée, en fonction du chemin que nous 
+caractérisons. Le premier chemin consiste seulement en 
+une demi-plaque d’onde. Nous prenons des données tous les 
+5 degrés, ce qui représente 2,5 degrés en réalité. Pour 
+chaque état d’entrée de polarisation, nous prenons 
+3 fichiers distincts que nous moyennons, puis nous 
+comparons leur position temporelle moyenne avec le 
+dossier d’étalonnage pour obtenir le retard associé à cet 
+état. Voici les résultats de chaque délai pour les différentes 
+état d'entrée pour le trajet 
+$\ket{H} \rightarrow \ket{D} \rightarrow \ket{A} \rightarrow \ket{V}$.
+
+\begin{figure}[!h!t!p!b]
+    \centering
+    \includegraphics[width=1.0\textwidth]{real_weak_value_measurement_3.pdf}
+    \caption{Dispositif expérimental pour la partie réel de la valeur faible}
+    \label{fig:HDAV_delay_results}
+\end{figure}
+
+Cette série de données a été prise avec une 
+interaction faible correspondant à un délai de 
+$167$ $ps$, obtenu en allongeant le bras $\ket{H}$ 
+de $2,5$ $cm$ 
+par rapport au bras $\ket{V}$. Avec les mêmes techniques 
+d'ajustement que celles utilisées pour 
+l'expérience sur la vitesse de la lumière, nous 
+mesurons les retards indiqués dans la figure \ref{fig:HDAV_delay_results}. 
+L’erreur résulte de l’incohérence de nos 
+modifications physiques dans notre expérience, 
+que nous ne pouvons pas compenser, telles que 
+les vibrations de la table et les variations 
+d’alignement du laser pendant les longues 
+périodes d’acquisition de données pour chaque 
+état d’entrée. Voici les résultats pour le 
+chemin $\ket{H} \rightarrow \ket{R} \rightarrow \ket{L} \rightarrow \ket{V}$.
+
+\begin{figure}[!h!t!p!b]
+    \centering
+    \includegraphics[width=1.0\textwidth]{real_weak_value_measurement_4.pdf}
+    \caption{Dispositif expérimental pour la partie réel de la valeur faible}
+    \label{fig:HDAV_delay_results}
+\end{figure}
+
+Ces résultats suivent la même courbe que ceux 
+du chemin précédent. C’est logique, puisque les 
+états de polarisation R et L possèdent toujours 
+autant d’états de base ($\ket{D}$ et $\ket{A}$). 
+On ne peut pas 
+déterminer juste à partir de la partie réelle de 
+la valeur faible si l’état initial est elliptique. 
+L’information concernant le changement de phase 
+ou d’ellipticité des états de polarisation se 
+trouve dans la partie imaginaire de la valeur 
+faible. Voici les résultats pour le chemin 
+$\ket{H} \rightarrow \ket{D} \rightarrow \ket{R} \rightarrow \ket{A}$.
+
+\begin{figure}[!h!t!p!b]
+    \centering
+    \includegraphics[width=1.0\textwidth]{real_weak_value_measurement_5_2.pdf}
+    \caption{Dispositif expérimental pour la partie réel de la valeur faible}
+    \label{fig:HDAV_delay_results}
+\end{figure}
+
+Ceci est plus intéressant, car c'est une preuve 
+directe que nous avons toujours la même partie 
+réelle de la valeur faible. Par conséquent, 
+toute l’information nécessaire au décodage entre 
+les polarisations se trouve dans la variable 
+complexe du décalage temporel, c’est-à-dire le 
+décalage de fréquence obtenu en mesurant la 
+valeur minimale. De plus, à partir de ces 
+données pour chaque trajet, nous pouvons 
+calculer directement les amplitudes de 
+probabilité de l’état quantique à partir de ces 
+mesures de retard comme nous avons mentionné dans la section 2.3. 

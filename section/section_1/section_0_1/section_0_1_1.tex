@@ -1,0 +1,84 @@
+Nous commencerons par la notation. En mécanique 
+quantique, il est commun d'utiliser ce que l'on appelle 
+la notation braket pour décrire les états quantiques. 
+Un ket aura la structure suivante tout au long de cette 
+thèse:
+
+\begin{equation}
+    \ket{nom^{condition A}_{coniditon B}}_{base}
+\end{equation}
+
+Un ket est utilisé pour représenter un vecteur. À 
+l'intérieur du ket se trouve le nom du ket qui décrit ce 
+qu'est le ket. Il peut y avoir des indices d'un ket 
+montrés comme condition A et condition B. La condition 
+A sera principalement utilisée pour décrire si un état 
+est dans un état initial ou dans son état final. La 
+condition B sera principalement utilisée pour décrire 
+plus en détail l'état, tel qu'un état qui est un stade 
+intermédiaire avec l'indice INT ou un état qui est passé 
+par une condition spécifique telle qu'un type de fibre 
+optique que nous pourrions écrire avec l'indice FIB. Voici
+un exemple d'un ket qui represente un vecteur à $N$ dimension 
+avec ${a_n}$ composantes complexe.
+
+\begin{align}
+    \ket{a} \to a = \begin{pmatrix}
+        a_1\\
+        a_2\\
+        \vdots\\
+        a_N
+    \end{pmatrix}
+\end{align}
+
+Un bra est la transposée conjuguée d'un vecteur, par 
+exemple le ket $\ket{a}$, sa transposée conjuguée est écrite en 
+bra :
+
+\begin{equation}
+    \bra{a} \to \bar{a} = \begin{pmatrix}
+        \bar{a}_1 & \bar{a}_2 \dots \bar{a}_N
+    \end{pmatrix}
+\end{equation}
+
+La bar represente que ceci est le complex conjugué de $a$. 
+Donc, si $a = \alpha + i\beta$, le complex conjugué s'écrit 
+$\bar{a} = \alpha - i\beta$ dont $\alpha in \mathcal{R}$ et
+$\beta \in \mathcal{I}$. $\mathcal{R}$ et $\mathcal{I}$
+represente l'espace réel et imaginaire respectivement. Le produit scalaire de 
+deux vecteurs s'écrirait comme suit :
+
+\begin{equation}
+    \bra{a}\ket{b} = \bar{a}_{1}b_1 + \bar{a}_{2}b_2 + \dots + \bar{a}_{N}b_N
+\end{equation}
+
+L'exemple précédente utilise un vecteur $\ket{b}$ avec 
+les mêmes conditions que $\ket{a}$.
+Une autre notation que nous verrons tout au long de cette 
+thèse est celle d'une fonction représenter avec un ket, 
+qui sera écrite comme suit:
+
+\begin{equation}
+    \ket{f(x)} \to f(x) = x^2
+\end{equation}
+
+Le produit scalare de deux fonction $f(x)$ et $g(x)$ de
+$a$ à $b$ s'écrite comme suit:
+
+\begin{equation}
+    \bra{f(x)}\ket{g(x)} \equiv \int_{a}^{b} \bar{f(x)}g(x) dx
+\end{equation}
+
+Les observables et les opérateurs auront la notation 
+suivante (nous reviendrons plus tard sur ces objets 
+quantiques) :
+
+\begin{align}
+    \expval{\hat{nom}_{conditon A}} &\to observable\\
+    \hat{nom}^{condition B} &\to op\acute{e}rateur
+\end{align}
+
+Un opérateur et une observable on un chapeau. 
+La condition A d'un observable est pour décrire une condition
+spécifique du observable et la condition B du opérateur est pour
+d'écrire spécifiquement où l'opérateur s'applique. Plus sur les opérateurs et observables se suit.

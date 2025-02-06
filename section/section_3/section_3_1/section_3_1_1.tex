@@ -1,0 +1,133 @@
+La façon que nous acquérons nos données est 
+importante, car nous devons nous assurer que 
+nous utilisons la méthode la plus précise pour 
+acquérir la position temporelle moyenne de 
+l'état en vue d'une analyse ultérieure des 
+mesures faibles. Nous faiscon deux expériences
+pour mesuré la vitesse de la lumière. L'une est
+de mesurer la vitesse de la lumière à partir 
+d'un miroir et prenons des mesures à 
+différentes distances de 
+$2,52$, $5,48$, $10,10$, $20,19$, $30,29$, 
+$40,38$, $50,48$ et $65,62$ $cm$.
+(mesuré à l'oeuil avec une règle). Le délai mesuré est 
+à partir d'une 
+distance de référence appelée position 0, 
+située à $11,5$ $cm$ du PBS. La lumière 
+doit voyager dans les deux 
+sens à partir du séparateur de faisceau, de 
+sorte que la distance parcourue est le double de 
+la distance envoyée. L'autre expérience
+est le même principe mais de mesurer la vitesse de 
+la lumière dans nos cable BNC RG-58 de Thorlabs à des différentes longeurs.
+Cette expérience facilitant nos mesurer car les cables on 
+une longeurs déterminer par le manufacturier. Le délai
+est puisque dans la différences de longeurs 
+entre les différentes
+longeurs de cables. Les différences de longeurs 
+de cables sont $17$, $27$, $52$, $100$ et $300$ $cm$. Les délais 
+mesuré sont à partir d'une prise de mesure 
+avec un cable inférieur au
+premier. Pour ce dernier, le miroir ajustable est fix.
+Une implication importante est la façon 
+dont l'oscilloscope 
+acquiert des données pour le domaine temporel. 
+Le signal est détecté par le photomultiplicateur 
+rapide à base de Si et est introduit dans 
+l'oscilloscope à l'aide d'un câble BNC et est 
+déclenché par le front montant gauche de notre 
+signal de référence. Le signal de référence que 
+nous déclenchons est utilisé comme temps $0$ pour 
+l'oscilloscope afin de mesurer la position 
+temporelle pour chaque distance et de les 
+comparer à notre position temporelle de 
+référence lorsque le miroir est à notre position 
+$0$. De cette façon, nous isolons l'expérience 
+pour n'observer que ce qui se passe lorsque 
+nous déplaçons le miroir de sa position initiale 
+à des distances plus grandes. Les performances 
+de l'oscilloscope dépendent également de la 
+manière dont il acquiert le signal d'entrée 
+via ses commandes d'acquisition. Ce paramètre 
+traite le nombre de formes d'onde que nous 
+pouvons spécifier dans la forme d'onde acquise, 
+créant ainsi une forme d'onde moyenne de notre 
+signal d'entrée. Nous calculons la moyenne de 
+plus de $10000$ formes d'onde pour obtenir un 
+signal propre afin de réduire et d'omettre le 
+bruit de fond et d'obtenir une mesure plus 
+précise de la position temporelle moyenne d'un 
+signal. L'expérience est également réalisée 
+dans l'obscurité pour réduire le bruit de fond, 
+mais nous avons également trouvé que cette 
+étape n'était pas nécessaire et que nous n'avons 
+pas constaté de changements radicaux dans les 
+résultats, mais nous l'avons quand même fait. 
+Un autre aspect important de l'oscilloscope est 
+son mode d'échantillonnage qui contrôle la façon 
+dont l'oscilloscope prend ses échantillons. Ces 
+modes sont l'échantillonnage en temps réel, 
+l'interpolation et le temps d'équivalence. En 
+mode d'échantillonnage en temps réel, 
+l'oscilloscope numérise tous les points qu'il 
+acquiert après un événement déclencheur. Ce mode 
+est principalement utilisé pour les mesures 
+d'acquisition unique ou les changements en temps 
+réel du signal. Le mode d'interpolation 
+interpole entre les points d'échantillonnage en 
+créant des points qui aident à combler les 
+lacunes de sorte qu'il y ait une ligne droite ou 
+une onde sinusoïdale entre les points pour une 
+courbe plus lisse. Nous ne souhaitons pas faire 
+cela car nous ne voulons pas créer un maximum 
+interpolé du signal. Enfin, le mode 
+d'échantillonnage par équivalence de temps 
+augmente le taux d'échantillonnage au-delà du 
+taux d'échantillonnage maximum en temps réel, 
+ce qui permet d'obtenir le taux 
+d'échantillonnage complet de l'oscilloscope, 
+soit 500 Géch/s. Notez que si le déclenchement 
+n'est pas en mode externe et que vous avez votre 
+état d'entrée dans un canal et le signal de 
+référence dans un autre, votre taux 
+d'échantillonnage maximum est maintenant divisé 
+en deux. L'importance de la fréquence 
+d'échantillonnage maximale est de permettre à 
+l'oscilloscope d'avoir sa résolution temporelle 
+maximale pour notre signal, qui s'avère être de 
+$4$ $\pm$ $2$ $ps$, ce qui permet des mesures temporelles 
+précises. Nous enregistrons ensuite les formes 
+d'ondes de sortie dans un fichier CSV sur un 
+ordinateur pour une analyse plus approfondie 
+des données.
+
+\begin{figure}[hp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{EQ _time_oscillo_fig.png}
+    \caption{Schéma du fonctionnement du mode 
+    d'acquisition du temps d'équivalence de 
+    l'oscilloscope. L’oscilloscope acquiert 
+    quelques échantillons par événement de 
+    déclenchement pour obtenir le signal complet 
+    de notre impulsion. Il va ensuite 
+    enregistrer un certain nombre d'échantillons 
+    d’acquisition. Une fois terminé, 
+    l'oscilloscope combine plusieurs 
+    échantillons d'acquisition d'un signal 
+    répétitif. Il émet ensuite la densité 
+    d'échantillonnage du signal d'entrée pour un 
+    enregistrement de forme d'onde lisse et 
+    complet. Le taux d'échantillonnage est 
+    supérieur à celui de son homologue en temps 
+    réel. Le type d'échantillonnage par 
+    équivalence de temps que prend 
+    l'oscilloscope est appelé échantillonnage 
+    aléatoire par équivalence de temps, qui est 
+    effectué dans le cadre d'événements 
+    aléatoires définis par l'horloge 
+    d'échantillonnage de l'oscilloscope, qui 
+    fonctionne de manière asynchrone par rapport 
+    au signal d'entrée et au signal de 
+    déclenchement. \cite{TektronixTDS5000}}
+    \label{fig:EQ-time}
+\end{figure}

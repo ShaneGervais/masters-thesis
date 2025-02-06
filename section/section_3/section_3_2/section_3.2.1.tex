@@ -1,0 +1,187 @@
+Notre appareil expérimental est constitué de 
+notre laser pulsé de tout à l'heure entrant dans 
+une demi-plaque d'onde qui est principalement 
+utilisée pour le contrôle de l'intensité puisque 
+l'entrée externe de l'oscilloscope a besoin 
+d'une intensité assez importante pour se 
+déclencher sur le signal de référence. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\textwidth]{partiereelexp.png}
+    \caption{Dispositif expérimental pour la partie réel de la valeur faible}
+    \label{fig:realexp}
+\end{figure}
+
+Encore 
+une fois, nous voulons déclencher le signal de 
+référence de manière externe puisque nous 
+voulons utiliser le taux d'échantillonnage de 
+500GS/s de l'oscilloscope pour une résolution 
+temporelle maximale pour la détection des 
+retards. Le faisceau passe à travers un 
+séparateur de faisceau non polarisant qui divise 
+le faisceau laser en deux voies, l'une étant 
+utilisée comme signal de référence pour le 
+déclenchement de l'oscilloscope et l'autre 
+subissant une mesure faible. L'état est alors 
+préparé pour que différents chemins de 
+polarisation sur la sphère de Poincarré soient 
+caractérisés par le retard temporel. Les 
+chemins de polarisation testés sont les 
+suivants et sont obtenus en changeant les 
+plaques d'onde lors de l'étape de préparation. 
+Le premier chemin consiste à passer d'un état 
+de base à un autre sans polarisation circulaire, 
+de H à D à V à A. Note que les figures des trajets sont 
+dans la cadres du paramètre de Stokes définit par:
+
+\begin{equation}
+    S \equiv \begin{pmatrix}
+        S_0\\
+        S_1\\
+        S_2\\
+        S_3
+    \end{pmatrix} \equiv \begin{pmatrix}
+        \bra{\psi}\ket{\psi}\\
+        \bra{\psi}\sigma_z\ket{\psi}\\
+        \bra{\psi}\sigma_x\ket{\psi}\\
+        \bra{\psi}\sigma_y\ket{\psi}
+    \end{pmatrix}
+\end{equation}
+
+Soit les matrices de Pauli $\sigma_z = \ket{H}\bra{H} - \ket{V}\bra{V}$, 
+$\sigma_x = \ket{H}\bra{V} + \ket{V}\bra{H}$ et $\sigma_y = i(\ket{V}\bra{H} - \ket{H}\bra{V})$.
+Pour un état de polarisation $\ket{\psi}$ défini par 
+$\ket{\psi} \equiv a\ket{H} + b\ket{V}$ avec les amplitudes
+de probabilité $a$ et $b$, nous pouvons écrire
+les paramètres de Stokes avec ces paramètres comme ceci:
+
+\begin{equation}
+    S = \begin{pmatrix}
+        S_0 = |a|^2 + |b^2|\\
+        S_1 = |a|^2 - |b|^2\\
+        S_2 = 2\mathcal{R}(\bar{a}b)\\
+        S_3 = 2\mathcal{I}(\bar{a}b)
+    \end{pmatrix}
+\end{equation}
+
+Où $\bar{}$ comporte au complexe conjugué de la variable. 
+Les paramètres de Stokes sont utilisé pour démontré comment
+l'état de polarization change en fonction de l'angle de telle composantes
+optique utilisé pour les différents chemins.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{path3_sphere.png}
+    \caption{Schéma du trajet $\ket{H}\rightarrow\ket{D}\rightarrow\ket{V}\rightarrow\ket{A}\dots$
+    utilisant seulement une lame demi-onde dans la préparation de l'état d'entrée}
+    \label{fig:path3sphere}
+\end{figure}
+
+Ce chemin est réalisé en 
+tournant uniquement une lame demi-onde par pas 
+de 2,5 degrés. Chaque degré que nous tournons 
+en réalité équivaut à tourner de 5 degrés sur 
+un plan circulaire ou de 10 degrés sur la sphère 
+de Poincarré. Le chemin suivant consiste à 
+passer d'un état de base à un autre, mais en 
+passant par une polarisation circulaire. Cela se 
+fait avec une demi-plaque d'onde tournant de la 
+même manière que précédemment, mais avec un 
+quart de plaque d'onde réglé à 0 degré par 
+rapport à l'état de base H. La trajectoire 
+résultante est H à R à V à L lorsque nous 
+tournons la demi-plaque d'onde. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{path4_2_sphere.png}
+    \caption{Schéma du trajet $\ket{H}\rightarrow\ket{R}\rightarrow\ket{V}\rightarrow\ket{L}\dots$
+    utilisant seulement une lame demi-onde et une lame quart d'onde à 0 dégrée dans la préparation de l'état d'entrée}
+    \label{fig:path4sphere}
+\end{figure}
+
+Ces deux 
+trajectoires devraient suivre une fonction 
+cosinusoïdale, comme cela a été théorisé. Le 
+chemin suivant est un chemin intéressant où 
+nous avons toujours les deux états de base mais 
+où nous passons d'une polarisation linéaire à 
+une polarisation circulaire. La trajectoire 
+résultante est D à R à A à L. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{path5_2_sphere.png}
+    \caption{Schéma du trajet $\ket{D}\rightarrow\ket{R}\rightarrow\ket{A}\rightarrow\ket{L}\dots$
+    utilisant seulement une lame demi-onde et une lame quart d'onde à 45 dégrée dans la préparation de l'état d'entrée}
+    \label{fig:path5sphere}
+\end{figure}
+
+Cette dernière est 
+obtenue en tournant une demi-plaque d'onde avec 
+un quart de plaque d'onde réglé à 45 degrés par 
+rapport à l'état de base H. Le résultat doit 
+avoir une partie réelle et doit donc toujours 
+être égal à une amplitude de probabilité de 
+1ésqrt(2). 
+
+
+
+Une fois l'état préparé, nous 
+interagissons faiblement avec le système en 
+introduisant un petit délai temporel entre les 
+deux états de base en divisant les états de base 
+à l'aide d'un séparateur de faisceau polarisant 
+et en faisant en sorte que l'un des bras 
+parcourt un chemin légèrement plus long. Chaque 
+bras du séparateur de faisceaux est équipé d'un 
+quart de plaque d'onde pour inverser l'état de 
+base afin qu'ils puissent se chevaucher. Il y a 
+donc un changement d'état de base à prendre en 
+compte dans notre théorie, mais ce n'est qu'un 
+changement mineur qui ne modifie pas 
+radicalement le résultat. La partie H est 
+faiblement interférée et se retourne à 45 degrés 
+en passant une fois par la plaque d'onde quart 
+d'onde et en revenant, ce qui donne un état de 
+polarisation V, de sorte qu'elle peut être 
+réfléchie à notre étape de postsélection. Il est 
+donc bon de noter que l'interaction faible est 
+maintenant sur l'état de base V. L'état de base 
+V d'origine suit une histoire similaire : il 
+est retourné de 90 degrés pour pouvoir être 
+transmis à travers le séparateur de faisceau de 
+polarisation, puis mis en forme avec le nouvel 
+état de base V légèrement retardé en tant 
+qu'état de base H. L'impulsion superposée est 
+ensuite mesurée de manière projective via un 
+état de polarisation qui contient les deux états 
+de base. Pour des raisons de simplicité, nous 
+avons choisi de faire la postsélection avec 
+l'état D, ce qui se fait par l'intermédiaire 
+d'une demi-plaque d'onde et d'un polariseur. Le 
+polariseur est utilisé comme référence, il est 
+réglé pour être polarisé verticalement et la 
+plaque demi-onde est réglée à 45 degrés par 
+rapport à ce polariseur, ce qui donne un état de 
+polarisation D qui est projeté sur notre état à 
+faible interaction. Nous caractérisons ensuite 
+le chemin de polarisation en sauvegardant chaque 
+fichier csv pour chaque degré d'état d'entrée 
+lorsque nous tournons la plaque d'onde. 
+L'expérience a été optimisée pour fonctionner 
+automatiquement à l'aide de supports de rotation 
+motorisés fournis par thorlabs et contrôlés par 
+un code python qui fait tourner ces supports via 
+la bibliothèque Kinesis et utilise l'API des 
+oscilloscopes pour enregistrer chaque fichier 
+csv à chaque état d'entrée. Les données 
+complètes sont ensuite caractérisées pour la 
+partie réelle de la valeur faible, dont les 
+résultats sont présentés au chapitre 4. La 
+différenciation entre un chemin de polarisation 
+linéaire et circulaire se fait dans la partie 
+imaginaire de la valeur faible. C'est ce qui est 
+proposé dans la section suivante.

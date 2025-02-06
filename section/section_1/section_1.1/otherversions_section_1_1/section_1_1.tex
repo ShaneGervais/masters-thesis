@@ -1,0 +1,89 @@
+Les mesures en physique ont toujours troublé les scientifiques 
+et les philosophes depuis aussi longtemps qu'on puisse 
+l'imaginer. Même l'idée d’une mesure simple comme telle que la 
+mesure de la taille d'une personne pourrait être discutée en 
+profondeur. De nombreux éléments sont à prendre en compte, tel 
+que la définition du point de départ et du point d'arrivée de 
+la mesure, les unités ou la méthodologie à utiliser pour 
+mesurer la taille de la personne, on considère-tu la hauteur de 
+ses cheveux ou pas? Qu’est-ce que sont les incertitudes de nos 
+mesures, etc. Aujourd'hui, nous discutons ces idées en profondeur 
+dans nos cours d'expérimental au baccalauréat. Ce n'est qu'au 
+cours des années 1900 que le domaine de la mécanique quantique 
+a été introduit, ce qui a encore compliqué ces notions de 
+mesures. Il y a encore beaucoup de physiciens et philosophes qui décrivent les mesures quantiques comme étant $\ll$ problème $\gg$. C'est les travaux de Paul Dirac et Jon von Neumann qui ont débuté en 1930 sur les principes des mesures quantiques. Dans cette section, nous discuterons principalement de l'approche de John von Neumann concernant les mesures en mécanique 
+quantique et de la manière dont elle est utilisée dans des procédures 
+directes d’une mesure d'un état quantique à l'aide des mesures 
+faibles. Premièrement, la façon qu'on interprète la description de Paul Dirac des mesures quantiques c'est avec des observables. En mécanique quantique, les observables sont des opérateurs qui peuvent être appliqués à un état quantique pour réduire 
+physiquement l'état à l'une de ses valeurs propres associées 
+à son état propre mesuré $\hat{A}\ket{\Psi} = a_i\ket{\psi_i}$ dont
+$a_i$ une valeur propre de l’observable $\hat{A}$ que l'état quantique
+$\ket{\Psi}$ est réduit dessus. Cet état se décrit comme étant $\ket{\Psi} \equiv \sum_{i}^{N} c_i \ket{\psi_i}$, qui vit dans un espace d'Hilbert $ket{\Psi} \in \mathcal{H}$ a dimension
+$N$ avec des vecteurs propres $\ket{\psi_i}$ chacun associé avec un coefficient
+de probabilité $c_i$ où chaque élément dans cet espace est un état $\ket{\psi_i}$ 
+possible auquel l'état quantique $\ket{\Psi}$ peut se réduire quand elle est mesurée. 
+Les observables sont 
+simplement des propriétés physiques d'un système, comme la 
+taille d'une personne ou la position d'une particule. Classiquement, des mesures de ces observables sont analysées avec une méthode statistique, soit l'inférence bayésienne, pour déterminer sa valeur et son incertitude. En mécanique quantique, la méthode statistique est plus probabiliste que la mécanique classique dont simplement mesurer le système change le résultat à chaque fois. Nous pouvons utiliser comme analogie
+un dé à six faces en tant d'un état quantique, sa valeur comme observable et nous comme l'observateur. On tire 
+le dé et note sa valeur. Avant de lancer le dé, 
+l’état du dé peut s’exprimer par une superposition de
+toutes ses valeurs possibles (de 1 à 6). Après le lancer, 
+le dé est tombé sur une
+de ses faces et son état est parfaitement défini comme étant la valeur inscrite sur cette
+face. Définissons l’état du dé avant le lancer comme étant la superposition
+des états propres représentant chaque face du dé soit $\ket{1}, \ket{2}... \ket{6}$ avec des
+probabilités égales de $\frac{1}{\sqrt{6}}$ a chacun des états propres. 
+Après le lancer, le dé se trouve à d'être dans l’un
+de ses états propres. Donc, en mécanique quantique, 
+l’état d’un système
+quantique est une superposition de tous ses vecteurs. Lors d’une mesure,
+l’état se réduit à une de ces valeurs propres. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\textwidth]{dice.png}
+    \caption{L’état du dé en superposition et puisque réduit à une de ses
+    valeurs}
+    \label{fig1:dice}
+\end{figure}
+
+Les observables 
+sont ce que nous pouvons 
+physiquement observer, mais nous n'obtenons pas toute 
+l'information du système quantique simplement par ses observables. 
+Même en sciences humaines, nous pouvons faire des observations 
+sur une personne, comme son ton ou ses goûts personnels, mais 
+nous ne comprendrons toujours pas cette personne à son juste 
+niveau, nous y reviendrons plus tard. En physique, nous pouvons 
+mesurer l'intensité de la lumière, mais nous ne pouvons pas 
+mesurer directement son champ électrique. Ensuite, von Neumann décrit 
+les mesures quantiques étant comme la dualité des observables et le 
+système quantique. Ceci veut dire que nous pouvons décrire un système 
+$S$ pour être couplé avec un l'appareil de mesure utiliser qui s'appelle 
+le «pointeur» $P$. Le mot «pointeur» est utilisé en hommage d'une 
+aiguille qui «pointe» au résultat de la mesure. 
+En utilisant l'exemple d'un voltmètre qui mesure le voltage d'une source
+électrique, nous pourrions dire que 
+l'aiguille était initialement à la position zéro $\ket{\xi=0}$ puis, une fois 
+que nous avons interagi avec le système (mesuré le système), 
+l'aiguille est déplacée de $\ket{\xi=\delta V}$ et ce résultat est 
+$\ket{\xi=10V}$. 
+
+\begin{figure}[h]
+	\centering
+   	\includegraphics[width=1.0\textwidth]{voltameter.jpg}
+    \caption{Un Frederiksen voltmètre appartenant au département qui mesure le voltage d'un aliment électrique. Ici, l'aiguille du voltmètre serait le pointeur qui «pointe» (mesure) à une valeur de 10V pour le système (l'aliment). }
+    \label{fig2:voltameter}
+\end{figure}
+
+Ce dernier signifie que nous pouvons constater que la procédure 
+d'une mesure quantique se compose de la préparation de l'état, soit 
+préparé l'espèce (système) qu'on veut mesurée, la mesure elle-même 
+$\hat{\pi}$ soit l'interaction entre le système et l'appareil de mesure 
+(pointeur) et ensuite la registration de la mesure. Ce que von Neumann 
+décrit comme une mesure quantique est ce que nous appelons 
+aujourd'hui le modèle standard.  La section suivante 
+sera consacrée à la description des 
+procédures de mesures directes d'un état quantique général avec cette 
+méthodologie.
