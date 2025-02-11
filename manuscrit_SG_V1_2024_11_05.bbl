@@ -17,367 +17,6 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
-  \entry{Feynman1982}{article}{}
-    \name{author}{1}{}{%
-      {{hash=FRP}{%
-         family={Feynman},
-         familyi={F\bibinitperiod},
-         given={Richard\bibnamedelima P.},
-         giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{FRP1}
-    \strng{fullhash}{FRP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1007/BF02650179
-    \endverb
-    \field{isbn}{1572-9575}
-    \field{number}{6}
-    \field{pages}{467\bibrangedash 488}
-    \field{title}{Simulating physics with computers}
-    \verb{url}
-    \verb https://doi.org/10.1007/BF02650179
-    \endverb
-    \field{volume}{21}
-    \field{journaltitle}{International Journal of Theoretical Physics}
-    \field{year}{1982}
-    \warn{\item Invalid format of field 'date' \item Invalid format of field 'date'}
-  \endentry
-
-  \entry{DiVincenzo_2000}{article}{}
-    \name{author}{1}{}{%
-      {{hash=DDP}{%
-         family={DiVincenzo},
-         familyi={D\bibinitperiod},
-         given={David\bibnamedelima P.},
-         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Wiley}%
-    }
-    \strng{namehash}{DDP1}
-    \strng{fullhash}{DDP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1002/1521-3978(200009)48:9/11<771::aid-prop771>3.0.co;2-e
-    \endverb
-    \field{issn}{1521-3978}
-    \field{number}{9–11}
-    \field{pages}{771–783}
-    \field{title}{The Physical Implementation of Quantum Computation}
-    \verb{url}
-    \verb http://dx.doi.org/10.1002/1521-3978(200009)48:9/11<771::AID-PROP771>3
-    \verb .0.CO;2-E
-    \endverb
-    \field{volume}{48}
-    \field{journaltitle}{Fortschritte der Physik}
-    \field{month}{09}
-    \field{year}{2000}
-  \endentry
-
-  \entry{JordanBook}{book}{}
-    \name{author}{2}{}{%
-      {{hash=JAN}{%
-         family={Jordan},
-         familyi={J\bibinitperiod},
-         given={Andrew\bibnamedelima N.},
-         giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
-      }}%
-      {{hash=SIA}{%
-         family={Siddiqi},
-         familyi={S\bibinitperiod},
-         given={Irfan\bibnamedelima A.},
-         giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-    }
-    \name{editor}{1}{}{%
-      {{hash=}{%
-         family={1},
-         familyi={\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Cambridge University Press}%
-    }
-    \strng{namehash}{JANSIA1}
-    \strng{fullhash}{JANSIA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Quantum Measurement: Theory and Practice}
-    \field{year}{2024}
-  \endentry
-
-  \entry{EPR}{article}{}
-    \name{author}{3}{}{%
-      {{hash=EA}{%
-         family={Einstein},
-         familyi={E\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=PB}{%
-         family={Podolsky},
-         familyi={P\bibinitperiod},
-         given={B.},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=RN}{%
-         family={Rosen},
-         familyi={R\bibinitperiod},
-         given={N.},
-         giveni={N\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {American Physical Society}%
-    }
-    \strng{namehash}{EAPBRN1}
-    \strng{fullhash}{EAPBRN1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1103/PhysRev.47.777
-    \endverb
-    \field{issue}{10}
-    \field{pages}{777\bibrangedash 780}
-    \field{title}{Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?}
-    \verb{url}
-    \verb https://link.aps.org/doi/10.1103/PhysRev.47.777
-    \endverb
-    \field{volume}{47}
-    \field{journaltitle}{Phys. Rev.}
-    \field{year}{1935}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{Bell1966}{article}{}
-    \name{author}{1}{}{%
-      {{hash=BJS}{%
-         family={BELL},
-         familyi={B\bibinitperiod},
-         given={JOHN\bibnamedelima S.},
-         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {American Physical Society}%
-    }
-    \strng{namehash}{BJS1}
-    \strng{fullhash}{BJS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1103/RevModPhys.38.447
-    \endverb
-    \field{issue}{3}
-    \field{pages}{447\bibrangedash 452}
-    \field{title}{On the Problem of Hidden Variables in Quantum Mechanics}
-    \verb{url}
-    \verb https://link.aps.org/doi/10.1103/RevModPhys.38.447
-    \endverb
-    \field{volume}{38}
-    \field{journaltitle}{Rev. Mod. Phys.}
-    \field{year}{1966}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{Bell_1990}{article}{}
-    \name{author}{1}{}{%
-      {{hash=BJ}{%
-         family={Bell},
-         familyi={B\bibinitperiod},
-         given={John},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BJ1}
-    \strng{fullhash}{BJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Surely, after 62 years, we should have an exact formulation of some serious part of quantum mechanics? By ‘exact’ I do not of course mean ‘exactly true’. I mean only that the theory should be fully formulated in mathematical terms, with nothing left to the discretion of the theoretical physicist...until workable approximations are needed in applications. By ‘serious’ I mean that some substantial fragment of physics should be covered. Nonrelativistic ‘particle’ quantum mechanics, perhaps with the inclusion of the electromagnetic field and cut-off interaction, is serious enough. For it covers ‘a large part of physics and the whole of chemistry’ (P A M Dirac 1929 Proc. R. Soc.A 123 714). I mean too, by ‘serious’, that ‘apparatus’ should not be separated off from the rest of the world into black boxes, as if it were not made of atoms and not ruled by quantum mechanics.%
-    }
-    \verb{doi}
-    \verb 10.1088/2058-7058/3/8/26
-    \endverb
-    \field{number}{8}
-    \field{pages}{33}
-    \field{title}{Against ‘measurement’}
-    \verb{url}
-    \verb https://dx.doi.org/10.1088/2058-7058/3/8/26
-    \endverb
-    \field{volume}{3}
-    \field{journaltitle}{Physics World}
-    \field{year}{1990}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{MeasurementProb}{article}{}
-    \name{author}{1}{}{%
-      {{hash=SM}{%
-         family={Schlosshauer},
-         familyi={S\bibinitperiod},
-         given={Maximilian},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {American Physical Society}%
-    }
-    \strng{namehash}{SM1}
-    \strng{fullhash}{SM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1103/RevModPhys.76.1267
-    \endverb
-    \field{issue}{4}
-    \field{pages}{1267\bibrangedash 1305}
-    \field{title}{Decoherence, the measurement problem, and interpretations of quantum mechanics}
-    \verb{url}
-    \verb https://link.aps.org/doi/10.1103/RevModPhys.76.1267
-    \endverb
-    \field{volume}{76}
-    \field{journaltitle}{Rev. Mod. Phys.}
-    \field{year}{2005}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{MeasurementProb2}{article}{}
-    \name{author}{1}{}{%
-      {{hash=LAJ}{%
-         family={Leggett},
-         familyi={L\bibinitperiod},
-         given={A.\bibnamedelima J.},
-         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LAJ1}
-    \strng{fullhash}{LAJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Despite the spectacular success of quantum mechanics (QM) over the last 80 years in explaining phenomena observed at the atomic and subatomic level, the conceptual status of the theory is still a topic of lively controversy. Most of the discussion centers around two famous paradoxes (or, as some would have it, pseudoparadoxes) associated, respectively, with the names of Einstein, Podolsky, and Rosen (EPR) and with Schrödinger's cat. In this Viewpoint, I will concentrate on the paradox of Schrödinger's cat or, as it is often known (to my mind somewhat misleadingly), the quantum measurement paradox.%
-    }
-    \verb{doi}
-    \verb 10.1126/science.1109541
-    \endverb
-    \verb{eprint}
-    \verb https://www.science.org/doi/pdf/10.1126/science.1109541
-    \endverb
-    \field{number}{5711}
-    \field{pages}{871\bibrangedash 872}
-    \field{title}{The Quantum Measurement Problem}
-    \verb{url}
-    \verb https://www.science.org/doi/abs/10.1126/science.1109541
-    \endverb
-    \field{volume}{307}
-    \field{journaltitle}{Science}
-    \field{year}{2005}
-  \endentry
-
-  \entry{Wigner}{article}{}
-    \name{author}{1}{}{%
-      {{hash=WEP}{%
-         family={Wigner},
-         familyi={W\bibinitperiod},
-         given={Eugene\bibnamedelima Paul},
-         giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{WEP1}
-    \strng{fullhash}{WEP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pages}{6\bibrangedash 15}
-    \field{title}{The Problem of Measurement}
-    \verb{url}
-    \verb https://api.semanticscholar.org/CorpusID:123135868
-    \endverb
-    \field{volume}{31}
-    \field{journaltitle}{American Journal of Physics}
-    \field{year}{1963}
-  \endentry
-
-  \entry{Peebles}{book}{}
-    \name{author}{1}{}{%
-      {{hash=PPPJE}{%
-         family={Peebles},
-         familyi={P\bibinitperiod},
-         given={P.J.E. (Phillip James\bibnamedelima Edwin)},
-         giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Princeton University Press}%
-    }
-    \strng{namehash}{PPPJE1}
-    \strng{fullhash}{PPPJE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Quantum Mechanics}
-    \field{year}{1992}
-  \endentry
-
-  \entry{OpticalNetworks}{article}{}
-    \name{author}{5}{}{%
-      {{hash=BN}{%
-         family={Brunner},
-         familyi={B\bibinitperiod},
-         given={Nicolas},
-         giveni={N\bibinitperiod},
-      }}%
-      {{hash=AA}{%
-         family={Ac\'{\i}n},
-         familyi={A\bibinitperiod},
-         given={Antonio},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=CD}{%
-         family={Collins},
-         familyi={C\bibinitperiod},
-         given={Daniel},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=GN}{%
-         family={Gisin},
-         familyi={G\bibinitperiod},
-         given={Nicolas},
-         giveni={N\bibinitperiod},
-      }}%
-      {{hash=SV}{%
-         family={Scarani},
-         familyi={S\bibinitperiod},
-         given={Valerio},
-         giveni={V\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {American Physical Society}%
-    }
-    \strng{namehash}{BN+1}
-    \strng{fullhash}{BNAACDGNSV1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1103/PhysRevLett.91.180402
-    \endverb
-    \field{issue}{18}
-    \field{pages}{180402}
-    \field{title}{Optical Telecom Networks as Weak Quantum Measurements with Postselection}
-    \verb{url}
-    \verb https://link.aps.org/doi/10.1103/PhysRevLett.91.180402
-    \endverb
-    \field{volume}{91}
-    \field{journaltitle}{Phys. Rev. Lett.}
-    \field{year}{2003}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
   \entry{Kwiat}{incollection}{}
     \name{author}{3}{}{%
       {{hash=AJ}{%
@@ -887,6 +526,61 @@
     \field{volume}{93}
     \field{journaltitle}{Physical Review Letters}
     \field{year}{2004}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{OpticalNetworks}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BN}{%
+         family={Brunner},
+         familyi={B\bibinitperiod},
+         given={Nicolas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Ac\'{\i}n},
+         familyi={A\bibinitperiod},
+         given={Antonio},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Collins},
+         familyi={C\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GN}{%
+         family={Gisin},
+         familyi={G\bibinitperiod},
+         given={Nicolas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SV}{%
+         family={Scarani},
+         familyi={S\bibinitperiod},
+         given={Valerio},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{BN+1}
+    \strng{fullhash}{BNAACDGNSV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.91.180402
+    \endverb
+    \field{issue}{18}
+    \field{pages}{180402}
+    \field{title}{Optical Telecom Networks as Weak Quantum Measurements with Postselection}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.91.180402
+    \endverb
+    \field{volume}{91}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{year}{2003}
     \warn{\item Invalid format of field 'month'}
   \endentry
 

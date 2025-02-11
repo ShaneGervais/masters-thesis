@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.28)  3 FEB 2025 18:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.28)  11 FEB 2025 14:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -824,37 +824,6 @@ Package biblatex Info: ... file 'manuscrit_SG_V1_2024_11_05.bbl' found.
  (./manuscrit_SG_V1_2024_11_05.bbl
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Feynman1982':
-(biblatex)                - Invalid format of field 'date' 
-(biblatex)                - Invalid format of field 'date'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'EPR':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Bell1966':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Bell_1990':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'MeasurementProb':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'OpticalNetworks':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'Aharonov':
 (biblatex)                - Invalid format of field 'month'.
 
@@ -882,6 +851,11 @@ Package biblatex Warning: BibTeX reported the following issues
 
 Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'Brunner_2004':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'OpticalNetworks':
 (biblatex)                - Invalid format of field 'month'.
 
 
@@ -982,7 +956,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[3]
+[3] (./extra/resume.tex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -998,16 +972,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[5]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[6] (./manuscrit_SG_V1_2024_11_05.toc
-Overfull \hbox (11.8423pt too wide) in paragraph at lines 14--14
+[5] (./manuscrit_SG_V1_2024_11_05.toc
+Overfull \hbox (11.8423pt too wide) in paragraph at lines 15--15
  [] [][][]\T1/cmr/bx/n/12 LES ME-SURES FAIBLES TEM-PO-RELLES ET FRÉ-QUEN-CIELLES 
  []
 
@@ -1018,7 +984,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7])
+[6])
 \tf@toc=\write6
 \openout6 = `manuscrit_SG_V1_2024_11_05.toc'.
 
@@ -1030,7 +996,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8] (./manuscrit_SG_V1_2024_11_05.lot)
+[7] (./manuscrit_SG_V1_2024_11_05.lot)
 \tf@lot=\write7
 \openout7 = `manuscrit_SG_V1_2024_11_05.lot'.
 
@@ -1042,7 +1008,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[9] (./manuscrit_SG_V1_2024_11_05.lof
+[8] (./manuscrit_SG_V1_2024_11_05.lof
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1050,7 +1016,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[10])
+[9])
 \tf@lof=\write8
 \openout8 = `manuscrit_SG_V1_2024_11_05.lof'.
 
@@ -1062,7 +1028,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11]
+[10]
 No file manuscrit_SG_V1_2024_11_05.nls.
 
 Overfull \hbox (0.95027pt too wide) in paragraph at lines 289--289
@@ -1070,10 +1036,18 @@ Overfull \hbox (0.95027pt too wide) in paragraph at lines 289--289
  []
 
 (./section/section_1/section_1.1/section_1_0.tex [1]
-<./figure/dice.png, id=372, 765.86125pt x 272.01625pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[2]
+<./figure/dice.png, id=356, 765.86125pt x 272.01625pt>
 File: ./figure/dice.png Graphic file (type png)
 <use ./figure/dice.png>
-Package pdftex.def Info: ./figure/dice.png  used on input line 49.
+Package pdftex.def Info: ./figure/dice.png  used on input line 15.
 (pdftex.def)             Requested size: 429.3521pt x 152.49823pt.
 
 
@@ -1083,15 +1057,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[2 <./figure/dice.png>]) (./section/section_1/section_1.1/section_1_1.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[3]
+[3 <./figure/dice.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1109,13 +1075,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 
-pdfTeX warning: pdflatex (file ./figure/force_de_mesure.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figure/force_de_mesure.pdf, id=406, 794.97pt x 614.295pt>
-File: ./figure/force_de_mesure.pdf Graphic file (type pdf)
-<use ./figure/force_de_mesure.pdf>
-Package pdftex.def Info: ./figure/force_de_mesure.pdf  used on input line 202.
-(pdftex.def)             Requested size: 386.41426pt x 298.59822pt.
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -1124,17 +1083,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [6]
 
+pdfTeX warning: pdflatex (file ./figure/force_de_mesure.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figure/force_de_mesure.pdf, id=389, 794.97pt x 614.295pt>
+File: ./figure/force_de_mesure.pdf Graphic file (type pdf)
+<use ./figure/force_de_mesure.pdf>
+Package pdftex.def Info: ./figure/force_de_mesure.pdf  used on input line 230.
+(pdftex.def)             Requested size: 386.41426pt x 298.59822pt.
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7 <./figure/force_de_mesure.pdf>]
-<./figure/fuel_gauge.png, id=431, 787.94376pt x 456.70625pt>
+[7]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[8 <./figure/force_de_mesure.pdf>]
+<./figure/fuel_gauge.png, id=413, 787.94376pt x 456.70625pt>
 File: ./figure/fuel_gauge.png Graphic file (type png)
 <use ./figure/fuel_gauge.png>
-Package pdftex.def Info: ./figure/fuel_gauge.png  used on input line 240.
+Package pdftex.def Info: ./figure/fuel_gauge.png  used on input line 268.
 (pdftex.def)             Requested size: 386.41426pt x 223.9692pt.
 
 
@@ -1144,7 +1118,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8 <./figure/fuel_gauge.png>]) (./section/section_1/section_1.3/section_1_3.tex
+[9 <./figure/fuel_gauge.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1152,7 +1126,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[9])
+[10])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1160,15 +1134,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[10] (./section/section_2/section_2.1/section_2.0.tex) (./section/section_2/section_2.1/section_2_1.tex [11]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[12]
+[11] (./section/section_2/section_2.1/section_2.0.tex) (./section/section_2/section_2.1/section_2_1.tex [12]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1177,6 +1143,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [13]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[14]
 Overfull \hbox (2.02654pt too wide) detected at line 147
 []
  []
@@ -1188,7 +1162,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[14]
+[15]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1196,15 +1170,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[15]) (./section/section_2/section_2.2/section_2_2.tex) (./section/section_2/section_2.2/section_2_2_1.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[16]
+[16]) (./section/section_2/section_2.2/section_2_2.tex) (./section/section_2/section_2.2/section_2_2_1.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1220,7 +1186,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18]) (./section/section_2/section_2.2/section_2_2_2.tex
+[18]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1228,7 +1194,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[19]
+[19]) (./section/section_2/section_2.2/section_2_2_2.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1236,7 +1202,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[20]) (./section/section_2/section_2.3/section_2_3.tex
+[20]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1244,7 +1210,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21]) (./section/section_2/section_2.4/section_2.4.tex)
+[21]) (./section/section_2/section_2.3/section_2_3.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1252,13 +1218,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22] (./section/section_3/section_3_1/section_3_intro.tex) (./section/section_3/section_3_1/section_3_1.tex
-<./figure/speed_of_light_exp.png, id=617, 499.11469pt x 225.84375pt>
+[22]) (./section/section_2/section_2.4/section_2.4.tex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[23] (./section/section_3/section_3_1/section_3_intro.tex) (./section/section_3/section_3_1/section_3_1.tex
+<./figure/speed_of_light_exp.png, id=600, 499.11469pt x 225.84375pt>
 File: ./figure/speed_of_light_exp.png Graphic file (type png)
 <use ./figure/speed_of_light_exp.png>
 Package pdftex.def Info: ./figure/speed_of_light_exp.png  used on input line 40.
 (pdftex.def)             Requested size: 429.3521pt x 194.28386pt.
-) (./section/section_3/section_3_1/section_3_1_1.tex [23]
+) (./section/section_3/section_3_1/section_3_1_1.tex [24]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1266,7 +1240,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[24 <./figure/speed_of_light_exp.png>]
+[25 <./figure/speed_of_light_exp.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1274,19 +1248,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[25]
-<./figure/EQ _time_oscillo_fig.png, id=631, 856.19875pt x 441.14813pt>
+[26]
+<./figure/EQ _time_oscillo_fig.png, id=614, 856.19875pt x 441.14813pt>
 File: ./figure/EQ _time_oscillo_fig.png Graphic file (type png)
 <use ./figure/EQ _time_oscillo_fig.png>
 Package pdftex.def Info: ./figure/EQ _time_oscillo_fig.png  used on input line 106.
 (pdftex.def)             Requested size: 429.3521pt x 221.21973pt.
 ) (./section/section_3/section_3_1/section3_1_2.tex
-<./figure/typ_pulse.png, id=634, 562.14015pt x 421.575pt>
+<./figure/typ_pulse.png, id=617, 562.14015pt x 421.575pt>
 File: ./figure/typ_pulse.png Graphic file (type png)
 <use ./figure/typ_pulse.png>
 Package pdftex.def Info: ./figure/typ_pulse.png  used on input line 18.
 (pdftex.def)             Requested size: 429.3521pt x 321.99564pt.
-<./figure/speed_pulses.png, id=635, 562.14015pt x 421.575pt>
+<./figure/speed_pulses.png, id=618, 562.14015pt x 421.575pt>
 File: ./figure/speed_pulses.png Graphic file (type png)
 <use ./figure/speed_pulses.png>
 Package pdftex.def Info: ./figure/speed_pulses.png  used on input line 48.
@@ -1299,7 +1273,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[26]
+[27]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1307,7 +1281,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[27 <./figure/EQ _time_oscillo_fig.png>]
+[28 <./figure/EQ _time_oscillo_fig.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1315,7 +1289,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[28 <./figure/typ_pulse.png (PNG copy)>]
+[29 <./figure/typ_pulse.png (PNG copy)>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1323,8 +1297,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[29 <./figure/speed_pulses.png (PNG copy)>]
-<./figure/speed_results.png, id=655, 562.14015pt x 421.575pt>
+[30 <./figure/speed_pulses.png (PNG copy)>]
+<./figure/speed_results.png, id=638, 562.14015pt x 421.575pt>
 File: ./figure/speed_results.png Graphic file (type png)
 <use ./figure/speed_results.png>
 Package pdftex.def Info: ./figure/speed_results.png  used on input line 104.
@@ -1341,13 +1315,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30 <./figure/speed_results.png (PNG copy)>]
-<./figure/BNC_pulses.png, id=662, 562.14015pt x 421.575pt>
+[31 <./figure/speed_results.png (PNG copy)>]
+<./figure/BNC_pulses.png, id=645, 562.14015pt x 421.575pt>
 File: ./figure/BNC_pulses.png Graphic file (type png)
 <use ./figure/BNC_pulses.png>
 Package pdftex.def Info: ./figure/BNC_pulses.png  used on input line 127.
 (pdftex.def)             Requested size: 429.3521pt x 321.99564pt.
-<./figure/BNC_results.png, id=664, 562.14015pt x 421.575pt>
+<./figure/BNC_results.png, id=647, 562.14015pt x 421.575pt>
 File: ./figure/BNC_results.png Graphic file (type png)
 <use ./figure/BNC_results.png>
 Package pdftex.def Info: ./figure/BNC_results.png  used on input line 145.
@@ -1364,7 +1338,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[31 <./figure/BNC_pulses.png (PNG copy)>] (./section/section_3/section_3_2/section_3.2.tex)
+[32 <./figure/BNC_pulses.png (PNG copy)>] (./section/section_3/section_3_2/section_3.2.tex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1372,8 +1346,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32 <./figure/BNC_results.png (PNG copy)>] (./section/section_3/section_3_2/section_3.2.1.tex
-<./figure/partiereelexp.png, id=678, 740.7675pt x 335.00156pt>
+[33 <./figure/BNC_results.png (PNG copy)>] (./section/section_3/section_3_2/section_3.2.1.tex
+<./figure/partiereelexp.png, id=661, 740.7675pt x 335.00156pt>
 File: ./figure/partiereelexp.png Graphic file (type png)
 <use ./figure/partiereelexp.png>
 Package pdftex.def Info: ./figure/partiereelexp.png  used on input line 11.
@@ -1386,8 +1360,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[33 <./figure/partiereelexp.png>]
-<./figure/path3_sphere.png, id=684, 294.8616pt x 278.9622pt>
+[34 <./figure/partiereelexp.png>]
+<./figure/path3_sphere.png, id=667, 294.8616pt x 278.9622pt>
 File: ./figure/path3_sphere.png Graphic file (type png)
 <use ./figure/path3_sphere.png>
 Package pdftex.def Info: ./figure/path3_sphere.png  used on input line 76.
@@ -1396,7 +1370,7 @@ Package pdftex.def Info: ./figure/path3_sphere.png  used on input line 76.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figure/path4_2_sphere.png, id=685, 334.24875pt x 320.33678pt>
+<./figure/path4_2_sphere.png, id=668, 334.24875pt x 320.33678pt>
 File: ./figure/path4_2_sphere.png Graphic file (type png)
 <use ./figure/path4_2_sphere.png>
 Package pdftex.def Info: ./figure/path4_2_sphere.png  used on input line 99.
@@ -1404,7 +1378,7 @@ Package pdftex.def Info: ./figure/path4_2_sphere.png  used on input line 99.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figure/path5_2_sphere.png, id=686, 334.24875pt x 320.33678pt>
+<./figure/path5_2_sphere.png, id=669, 334.24875pt x 320.33678pt>
 File: ./figure/path5_2_sphere.png Graphic file (type png)
 <use ./figure/path5_2_sphere.png>
 Package pdftex.def Info: ./figure/path5_2_sphere.png  used on input line 116.
@@ -1419,7 +1393,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[34])
+[35])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1427,7 +1401,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[35 <./figure/path3_sphere.png (PNG copy)>]
+[36 <./figure/path3_sphere.png (PNG copy)>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1435,7 +1409,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[36 <./figure/path4_2_sphere.png (PNG copy)>]
+[37 <./figure/path4_2_sphere.png (PNG copy)>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1443,13 +1417,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[37 <./figure/path5_2_sphere.png (PNG copy)>] (./section/section_4/section_4_1/section_4.tex) (./section/section_4/section_4_1/section_4.1.tex) (./section/section_4/section_4_1/section_4_1_1.tex [38]
-<./figure/real_weak_value_measurement_3.pdf, id=711, 867.24pt x 433.62pt>
+[38 <./figure/path5_2_sphere.png (PNG copy)>] (./section/section_4/section_4_1/section_4.tex) (./section/section_4/section_4_1/section_4.1.tex) (./section/section_4/section_4_1/section_4_1_1.tex [39]
+<./figure/real_weak_value_measurement_3.pdf, id=694, 867.24pt x 433.62pt>
 File: ./figure/real_weak_value_measurement_3.pdf Graphic file (type pdf)
 <use ./figure/real_weak_value_measurement_3.pdf>
 Package pdftex.def Info: ./figure/real_weak_value_measurement_3.pdf  used on input line 37.
 (pdftex.def)             Requested size: 429.3521pt x 214.67896pt.
-<./figure/real_weak_value_measurement_4.pdf, id=713, 867.24pt x 433.62pt>
+<./figure/real_weak_value_measurement_4.pdf, id=696, 867.24pt x 433.62pt>
 File: ./figure/real_weak_value_measurement_4.pdf Graphic file (type pdf)
 <use ./figure/real_weak_value_measurement_4.pdf>
 Package pdftex.def Info: ./figure/real_weak_value_measurement_4.pdf  used on input line 61.
@@ -1462,7 +1436,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[39]
+[40]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1470,8 +1444,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[40 <./figure/real_weak_value_measurement_3.pdf> <./figure/real_weak_value_measurement_4.pdf>]
-<./figure/real_weak_value_measurement_5_2.pdf, id=794, 867.24pt x 433.62pt>
+[41 <./figure/real_weak_value_measurement_3.pdf> <./figure/real_weak_value_measurement_4.pdf>]
+<./figure/real_weak_value_measurement_5_2.pdf, id=777, 867.24pt x 433.62pt>
 File: ./figure/real_weak_value_measurement_5_2.pdf Graphic file (type pdf)
 <use ./figure/real_weak_value_measurement_5_2.pdf>
 Package pdftex.def Info: ./figure/real_weak_value_measurement_5_2.pdf  used on input line 81.
@@ -1484,7 +1458,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[41 <./figure/real_weak_value_measurement_5_2.pdf>]
+[42 <./figure/real_weak_value_measurement_5_2.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1492,7 +1466,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[42])
+[43])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1500,19 +1474,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[43] [44]
+[44] [45]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 377.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[45]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1549,7 +1515,7 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `manuscrit_SG_V1_2024_11_05.out' has not changed.
-(rerunfilecheck)             Checksum: BD0D1BEB451A5F41952382107D073FE9;10329.
+(rerunfilecheck)             Checksum: 557CBF81571535B34434A7515D76BAEA;10320.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                manuscrit_SG_V1_2024_11_05
@@ -1560,18 +1526,18 @@ Package logreq Info: Writing requests to 'manuscrit_SG_V1_2024_11_05.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27741 strings out of 474116
- 541152 string characters out of 5743682
- 1953187 words of memory out of 5000000
- 49492 multiletter control sequences out of 15000+600000
+ 27687 strings out of 474116
+ 538990 string characters out of 5743682
+ 1954187 words of memory out of 5000000
+ 49452 multiletter control sequences out of 15000+600000
  568224 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,13n,117p,1947b,3149s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 110i,13n,117p,2834b,3149s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on manuscrit_SG_V1_2024_11_05.pdf (61 pages, 4393523 bytes).
+Output written on manuscrit_SG_V1_2024_11_05.pdf (60 pages, 4386675 bytes).
 PDF statistics:
- 1089 PDF objects out of 1200 (max. 8388607)
- 942 compressed objects within 10 object streams
- 223 named destinations out of 1000 (max. 500000)
- 406 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1035 PDF objects out of 1200 (max. 8388607)
+ 890 compressed objects within 9 object streams
+ 213 named destinations out of 1000 (max. 500000)
+ 414 words of extra memory for PDF output out of 10000 (max. 10000000)
 
