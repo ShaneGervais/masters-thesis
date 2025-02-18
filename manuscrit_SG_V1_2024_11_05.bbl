@@ -17,6 +17,181 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
+  \entry{Feynman1982}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FRP}{%
+         family={Feynman},
+         familyi={F\bibinitperiod},
+         given={Richard\bibnamedelima P.},
+         giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FRP1}
+    \strng{fullhash}{FRP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1007/BF02650179
+    \endverb
+    \field{isbn}{1572-9575}
+    \field{number}{6}
+    \field{pages}{467\bibrangedash 488}
+    \field{title}{Simulating physics with computers}
+    \verb{url}
+    \verb https://doi.org/10.1007/BF02650179
+    \endverb
+    \field{volume}{21}
+    \field{journaltitle}{International Journal of Theoretical Physics}
+    \field{year}{1982}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field 'date'}
+  \endentry
+
+  \entry{DiVincenzo_2000}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DDP}{%
+         family={DiVincenzo},
+         familyi={D\bibinitperiod},
+         given={David\bibnamedelima P.},
+         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley}%
+    }
+    \strng{namehash}{DDP1}
+    \strng{fullhash}{DDP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1002/1521-3978(200009)48:9/11<771::aid-prop771>3.0.co;2-e
+    \endverb
+    \field{issn}{1521-3978}
+    \field{number}{9–11}
+    \field{pages}{771–783}
+    \field{title}{The Physical Implementation of Quantum Computation}
+    \verb{url}
+    \verb http://dx.doi.org/10.1002/1521-3978(200009)48:9/11<771::AID-PROP771>3
+    \verb .0.CO;2-E
+    \endverb
+    \field{volume}{48}
+    \field{journaltitle}{Fortschritte der Physik}
+    \field{month}{09}
+    \field{year}{2000}
+  \endentry
+
+  \entry{QTapplImpl}{report}{}
+    \name{author}{2}{}{%
+      {{hash=LJA}{%
+         family={Lewis},
+         familyi={L\bibinitperiod},
+         given={James\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=WG}{%
+         family={Wood},
+         familyi={W\bibinitperiod},
+         given={Georgia},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LJAWG1}
+    \strng{fullhash}{LJAWG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Quantum Technology Applications and Implications}
+    \list{institution}{2}{%
+      {CSIS (Center for Strategic}%
+      {International Studies)}%
+    }
+    \field{type}{techreport}
+    \field{year}{2023}
+  \endentry
+
+  \entry{browne2017quantumopticsquantumtechnologies}{misc}{}
+    \name{author}{4}{}{%
+      {{hash=BD}{%
+         family={Browne},
+         familyi={B\bibinitperiod},
+         given={Dan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bose},
+         familyi={B\bibinitperiod},
+         given={Sougato},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={Mintert},
+         familyi={M\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=KMS}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={M.\bibnamedelima S.},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BD+1}
+    \strng{fullhash}{BDBSMFKMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{eprint}
+    \verb 1707.02925
+    \endverb
+    \field{title}{From Quantum Optics to Quantum Technologies}
+    \verb{url}
+    \verb https://arxiv.org/abs/1707.02925
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{quant-ph}
+    \field{year}{2017}
+  \endentry
+
+  \entry{photonicInformation}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SS}{%
+         family={Slussarenko},
+         familyi={S\bibinitperiod},
+         given={Sergei},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PGJ}{%
+         family={Pryde},
+         familyi={P\bibinitperiod},
+         given={Geoff\bibnamedelima J.},
+         giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SSPGJ1}
+    \strng{fullhash}{SSPGJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Photons have been a flagship system for studying quantum mechanics, advancing quantum information science, and developing quantum technologies. Quantum entanglement, teleportation, quantum key distribution, and early quantum computing demonstrations were pioneered in this technology because photons represent a naturally mobile and low-noise system with quantum-limited detection readily available. The quantum states of individual photons can be manipulated with very high precision using interferometry, an experimental staple that has been under continuous development since the 19th century. The complexity of photonic quantum computing devices and protocol realizations has raced ahead as both underlying technologies and theoretical schemes have continued to develop. Today, photonic quantum computing represents an exciting path to medium- and large-scale processing. It promises to put aside its reputation for requiring excessive resource overheads due to inefficient two-qubit gates. Instead, the ability to generate large numbers of photons—and the development of integrated platforms, improved sources and detectors, novel noise-tolerant theoretical approaches, and more—have solidified it as a leading contender for both quantum information processing and quantum networking. Our concise review provides a flyover of some key aspects of the field, with a focus on experiment. Apart from being a short and accessible introduction, its many references to in-depth articles and longer specialist reviews serve as a launching point for deeper study of the field.%
+    }
+    \verb{doi}
+    \verb 10.1063/1.5115814
+    \endverb
+    \verb{eprint}
+    \verb https://pubs.aip.org/aip/apr/article-pdf/doi/10.1063/1.5115814/197395
+    \verb 02/041303\_1\_online.pdf
+    \endverb
+    \field{issn}{1931-9401}
+    \field{number}{4}
+    \field{pages}{041303}
+    \field{title}{Photonic quantum information processing: A concise review}
+    \verb{url}
+    \verb https://doi.org/10.1063/1.5115814
+    \endverb
+    \field{volume}{6}
+    \field{journaltitle}{Applied Physics Reviews}
+    \field{month}{10}
+    \field{year}{2019}
+  \endentry
+
   \entry{Kwiat}{incollection}{}
     \name{author}{3}{}{%
       {{hash=AJ}{%
@@ -74,6 +249,339 @@
     \endverb
     \field{volume}{52}
     \field{year}{2005}
+  \endentry
+
+  \entry{QTintelecomindustry}{article}{}
+    \name{author}{16}{}{%
+      {{hash=MV}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={Vicente},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=BJP}{%
+         family={Brito},
+         familyi={B\bibinitperiod},
+         given={Juan\bibnamedelima Pedro},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=EC}{%
+         family={Escribano},
+         familyi={E\bibinitperiod},
+         given={Carmen},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Menchetti},
+         familyi={M\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WC}{%
+         family={White},
+         familyi={W\bibinitperiod},
+         given={Catherine},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Lord},
+         familyi={L\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WF}{%
+         family={Wissel},
+         familyi={W\bibinitperiod},
+         given={Felix},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gunkel},
+         familyi={G\bibinitperiod},
+         given={Matthias},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GP}{%
+         family={Gavignet},
+         familyi={G\bibinitperiod},
+         given={Paulette},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GN}{%
+         family={Genay},
+         familyi={G\bibinitperiod},
+         given={Naveena},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=LMO}{%
+         family={Le\bibnamedelima Moult},
+         familyi={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+         given={Olivier},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=AC}{%
+         family={Abell{\'a}n},
+         familyi={A\bibinitperiod},
+         given={Carlos},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Manzalini},
+         familyi={M\bibinitperiod},
+         given={Antonio},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PPA}{%
+         family={Pastor-Perales},
+         familyi={P\bibinithyphendelim P\bibinitperiod},
+         given={Antonio},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LV}{%
+         family={L{\'o}pez},
+         familyi={L\bibinitperiod},
+         given={Victor},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={L{\'o}pez},
+         familyi={L\bibinitperiod},
+         given={Diego},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MV+1}
+    \strng{fullhash}{MVBJPECMMWCLAWFGMGPGNLMOACMAPPALVLD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Quantum based technologies have been fundamental in our world. After producing the laser and the transistor, the devices that have shaped our modern information society, the possibilities enabled by the ability to create and manipulate individual quantum states opens the door to a second quantum revolution. In this paper we explore the possibilities that these new technologies bring to the Telecommunications industry.%
+    }
+    \verb{doi}
+    \verb 10.1140/epjqt/s40507-021-00108-9
+    \endverb
+    \field{isbn}{2196-0763}
+    \field{number}{1}
+    \field{pages}{19}
+    \field{title}{Quantum technologies in the telecommunications industry}
+    \verb{url}
+    \verb https://doi.org/10.1140/epjqt/s40507-021-00108-9
+    \endverb
+    \field{volume}{8}
+    \field{journaltitle}{EPJ Quantum Technology}
+    \field{year}{2021}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field 'date'}
+  \endentry
+
+  \entry{metrology}{article}{}
+    \name{author}{10}{}{%
+      {{hash=TA}{%
+         family={Tzalenchuk},
+         familyi={T\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Spethmann},
+         familyi={S\bibinitperiod},
+         given={Nicolas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=PT}{%
+         family={Prior},
+         familyi={P\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HJH}{%
+         family={Hendricks},
+         familyi={H\bibinitperiod},
+         given={Jay\bibnamedelima H.},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=PY}{%
+         family={Pan},
+         familyi={P\bibinitperiod},
+         given={Yijie},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=BV}{%
+         family={Bubanja},
+         familyi={B\bibinitperiod},
+         given={Vladimir},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=TGP}{%
+         family={Tempor{\~a}o},
+         familyi={T\bibinitperiod},
+         given={Guilherme\bibnamedelima P.},
+         giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=YDH}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Dai-Hyuk},
+         giveni={D\bibinithyphendelim H\bibinitperiod},
+      }}%
+      {{hash=ID}{%
+         family={Ili{\'c}},
+         familyi={I\bibinitperiod},
+         given={Damir},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GBL}{%
+         family={Goldstein},
+         familyi={G\bibinitperiod},
+         given={Barbara\bibnamedelima L.},
+         giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TA+1}
+    \strng{fullhash}{TASNPTHJHPYBVTGPYDHIDGBL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Emerging quantum technologies pose new measurement challenges, but also offer previously unknown measurement solutions. National metrology institutes are playing a leading role in this fast evolving world.%
+    }
+    \verb{doi}
+    \verb 10.1038/s41567-022-01659-z
+    \endverb
+    \field{isbn}{1745-2481}
+    \field{number}{7}
+    \field{pages}{724\bibrangedash 727}
+    \field{title}{The expanding role of National Metrology Institutes in the quantum era}
+    \verb{url}
+    \verb https://doi.org/10.1038/s41567-022-01659-z
+    \endverb
+    \field{volume}{18}
+    \field{journaltitle}{Nature Physics}
+    \field{year}{2022}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field 'date'}
+  \endentry
+
+  \entry{Wang_2019}{article}{}
+    \name{author}{4}{}{%
+      {{hash=WJ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Jianwei},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Sciarrino},
+         familyi={S\bibinitperiod},
+         given={Fabio},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Laing},
+         familyi={L\bibinitperiod},
+         given={Anthony},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TMG}{%
+         family={Thompson},
+         familyi={T\bibinitperiod},
+         given={Mark\bibnamedelima G.},
+         giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Springer Science}%
+      {Business Media LLC}%
+    }
+    \strng{namehash}{WJ+1}
+    \strng{fullhash}{WJSFLATMG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1038/s41566-019-0532-1
+    \endverb
+    \field{issn}{1749-4893}
+    \field{number}{5}
+    \field{pages}{273–284}
+    \field{title}{Integrated photonic quantum technologies}
+    \verb{url}
+    \verb http://dx.doi.org/10.1038/s41566-019-0532-1
+    \endverb
+    \field{volume}{14}
+    \field{journaltitle}{Nature Photonics}
+    \field{month}{10}
+    \field{year}{2019}
+  \endentry
+
+  \entry{EPR}{article}{}
+    \name{author}{3}{}{%
+      {{hash=EA}{%
+         family={Einstein},
+         familyi={E\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PB}{%
+         family={Podolsky},
+         familyi={P\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=RN}{%
+         family={Rosen},
+         familyi={R\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{EAPBRN1}
+    \strng{fullhash}{EAPBRN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRev.47.777
+    \endverb
+    \field{issue}{10}
+    \field{pages}{777\bibrangedash 780}
+    \field{title}{Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRev.47.777
+    \endverb
+    \field{volume}{47}
+    \field{journaltitle}{Phys. Rev.}
+    \field{year}{1935}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Bell1966}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BJS}{%
+         family={BELL},
+         familyi={B\bibinitperiod},
+         given={JOHN\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{BJS1}
+    \strng{fullhash}{BJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/RevModPhys.38.447
+    \endverb
+    \field{issue}{3}
+    \field{pages}{447\bibrangedash 452}
+    \field{title}{On the Problem of Hidden Variables in Quantum Mechanics}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/RevModPhys.38.447
+    \endverb
+    \field{volume}{38}
+    \field{journaltitle}{Rev. Mod. Phys.}
+    \field{year}{1966}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{Aharonov}{article}{}
@@ -158,6 +666,101 @@
     \field{year}{2018}
   \endentry
 
+  \entry{hecht2012optics}{book}{}
+    \name{author}{1}{}{%
+      {{hash=HE}{%
+         family={Hecht},
+         familyi={H\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Pearson}%
+    }
+    \strng{namehash}{HE1}
+    \strng{fullhash}{HE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9788131718070}
+    \field{title}{Optics}
+    \verb{url}
+    \verb https://books.google.ca/books?id=wcMWpBMMzIkC
+    \endverb
+    \field{year}{2012}
+  \endentry
+
+  \entry{Peephole}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=GY}{%
+         family={Gefen},
+         familyi={G\bibinitperiod},
+         given={Yuval},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=oSWI}{%
+         prefix={of},
+         prefixi={o\bibinitperiod},
+         family={Science},
+         familyi={S\bibinitperiod},
+         given={Weizmann\bibnamedelima Institute},
+         giveni={W\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GY1}
+    \strng{fullhash}{GY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{ICTP Colloquium Series}
+    \field{title}{Weak Measurement: A Peephole into the Quantum World}
+    \field{year}{2017}
+  \endentry
+
+  \entry{ApplicationWeak}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AY}{%
+         family={Aharonov},
+         familyi={A\bibinitperiod},
+         given={Yakir},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CE}{%
+         family={Cohen},
+         familyi={C\bibinitperiod},
+         given={Eliahu},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=EAC}{%
+         family={Elitzur},
+         familyi={E\bibinitperiod},
+         given={Avshalom\bibnamedelima C.},
+         giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{AYCEEAC1}
+    \strng{fullhash}{AYCEEAC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevA.89.052105
+    \endverb
+    \field{issue}{5}
+    \field{pages}{052105}
+    \field{title}{Foundations and applications of weak quantum measurements}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevA.89.052105
+    \endverb
+    \field{volume}{89}
+    \field{journaltitle}{Phys. Rev. A}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Lundeen_Resch}{article}{}
     \name{author}{2}{}{%
       {{hash=LJ}{%
@@ -194,235 +797,6 @@
     \field{volume}{334}
     \field{journaltitle}{Physics Letters A}
     \field{year}{2005}
-  \endentry
-
-  \entry{Lundeen_Direct_Measurement}{article}{}
-    \name{author}{5}{}{%
-      {{hash=LJS}{%
-         family={Lundeen},
-         familyi={L\bibinitperiod},
-         given={Jeff\bibnamedelima S.},
-         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=SB}{%
-         family={Sutherland},
-         familyi={S\bibinitperiod},
-         given={Brandon},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=PA}{%
-         family={Patel},
-         familyi={P\bibinitperiod},
-         given={Aabid},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=SC}{%
-         family={Stewart},
-         familyi={S\bibinitperiod},
-         given={Corey},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=BC}{%
-         family={Bamber},
-         familyi={B\bibinitperiod},
-         given={Charles},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LJS+1}
-    \strng{fullhash}{LJSSBPASCBC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    The wavefunction, describing both the wave-like and the particle-like nature of everything in the Universe, is central to quantum theory. Physicists usually learn about it indirectly in tomographic experiments that measure only some aspects of its behaviour. Now a team from Canada's Institute for National Measurement Standards has developed a new and gentle technique that makes it possible to observe the wavefunction directly. They demonstrate the approach by measuring the transverse spatial wavefunction of a single photon. The discovery that the wavefunction can be probed directly provides a tool that could prove useful in a wide range of fields, and raises questions bordering on the philosophical about what the wavefunction actually is.%
-    }
-    \verb{doi}
-    \verb 10.1038/nature10120
-    \endverb
-    \field{isbn}{1476-4687}
-    \field{number}{7350}
-    \field{pages}{188\bibrangedash 191}
-    \field{title}{Direct measurement of the quantum wavefunction}
-    \verb{url}
-    \verb https://doi.org/10.1038/nature10120
-    \endverb
-    \field{volume}{474}
-    \field{journaltitle}{Nature}
-    \field{year}{2011}
-    \warn{\item Invalid format of field 'date' \item Invalid format of field 'date'}
-  \endentry
-
-  \entry{Peephole}{inproceedings}{}
-    \name{author}{1}{}{%
-      {{hash=GY}{%
-         family={Gefen},
-         familyi={G\bibinitperiod},
-         given={Yuval},
-         giveni={Y\bibinitperiod},
-      }}%
-    }
-    \name{editor}{1}{}{%
-      {{hash=oSWI}{%
-         prefix={of},
-         prefixi={o\bibinitperiod},
-         family={Science},
-         familyi={S\bibinitperiod},
-         given={Weizmann\bibnamedelima Institute},
-         giveni={W\bibinitperiod\bibinitdelim I\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GY1}
-    \strng{fullhash}{GY1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{ICTP Colloquium Series}
-    \field{title}{Weak Measurement: A Peephole into the Quantum World}
-    \field{year}{2017}
-  \endentry
-
-  \entry{Lundeen_Bamber}{article}{}
-    \name{author}{2}{}{%
-      {{hash=LJS}{%
-         family={Lundeen},
-         familyi={L\bibinitperiod},
-         given={Jeff\bibnamedelima S.},
-         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=BC}{%
-         family={Bamber},
-         familyi={B\bibinitperiod},
-         given={Charles},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {American Physical Society}%
-    }
-    \strng{namehash}{LJSBC1}
-    \strng{fullhash}{LJSBC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1103/PhysRevLett.108.070402
-    \endverb
-    \field{issue}{7}
-    \field{pages}{070402}
-    \field{title}{Procedure for Direct Measurement of General Quantum States Using Weak Measurement}
-    \verb{url}
-    \verb https://link.aps.org/doi/10.1103/PhysRevLett.108.070402
-    \endverb
-    \field{volume}{108}
-    \field{journaltitle}{Phys. Rev. Lett.}
-    \field{year}{2012}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{Lundeen_thesis}{thesis}{}
-    \name{author}{1}{}{%
-      {{hash=LJ}{%
-         family={Lundeen},
-         familyi={L\bibinitperiod},
-         given={Jeff},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LJ1}
-    \strng{fullhash}{LJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Generalized Measurement and Post-selection in Optical Quantum Information}
-    \list{institution}{1}{%
-      {University of Toronto}%
-    }
-    \field{type}{phdthesis}
-    \field{year}{2006}
-  \endentry
-
-  \entry{Aharonov_2002_Hardy}{article}{}
-    \name{author}{5}{}{%
-      {{hash=AY}{%
-         family={Aharonov},
-         familyi={A\bibinitperiod},
-         given={Yakir},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=BA}{%
-         family={Botero},
-         familyi={B\bibinitperiod},
-         given={Alonso},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=PS}{%
-         family={Popescu},
-         familyi={P\bibinitperiod},
-         given={Sandu},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=RB}{%
-         family={Reznik},
-         familyi={R\bibinitperiod},
-         given={Benni},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=TJ}{%
-         family={Tollaksen},
-         familyi={T\bibinitperiod},
-         given={Jeff},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier BV}%
-    }
-    \strng{namehash}{AY+1}
-    \strng{fullhash}{AYBAPSRBTJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1016/s0375-9601(02)00986-6
-    \endverb
-    \field{issn}{0375-9601}
-    \field{number}{3–4}
-    \field{pages}{130–138}
-    \field{title}{Revisiting Hardy’s paradox: counterfactual statements, real measurements, entanglement and weak values}
-    \verb{url}
-    \verb http://dx.doi.org/10.1016/S0375-9601(02)00986-6
-    \endverb
-    \field{volume}{301}
-    \field{journaltitle}{Physics Letters A}
-    \field{month}{08}
-    \field{year}{2002}
-  \endentry
-
-  \entry{HardyParadox}{article}{}
-    \name{author}{1}{}{%
-      {{hash=HL}{%
-         family={Hardy},
-         familyi={H\bibinitperiod},
-         given={Lucien},
-         giveni={L\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {American Physical Society}%
-    }
-    \strng{namehash}{HL1}
-    \strng{fullhash}{HL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1103/PhysRevLett.68.2981
-    \endverb
-    \field{issue}{20}
-    \field{pages}{2981\bibrangedash 2984}
-    \field{title}{Quantum mechanics, local realistic theories, and Lorentz-invariant realistic theories}
-    \verb{url}
-    \verb https://link.aps.org/doi/10.1103/PhysRevLett.68.2981
-    \endverb
-    \field{volume}{68}
-    \field{journaltitle}{Phys. Rev. Lett.}
-    \field{year}{1992}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{QED}{article}{}
@@ -471,61 +845,6 @@
     \field{volume}{85}
     \field{journaltitle}{Phys. Rev. Lett.}
     \field{year}{2000}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{Brunner_2004}{article}{}
-    \name{author}{5}{}{%
-      {{hash=BN}{%
-         family={Brunner},
-         familyi={B\bibinitperiod},
-         given={Nicolas},
-         giveni={N\bibinitperiod},
-      }}%
-      {{hash=SV}{%
-         family={Scarani},
-         familyi={S\bibinitperiod},
-         given={Valerio},
-         giveni={V\bibinitperiod},
-      }}%
-      {{hash=WM}{%
-         family={Wegmüller},
-         familyi={W\bibinitperiod},
-         given={Mark},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=LM}{%
-         family={Legré},
-         familyi={L\bibinitperiod},
-         given={Matthieu},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=GN}{%
-         family={Gisin},
-         familyi={G\bibinitperiod},
-         given={Nicolas},
-         giveni={N\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {American Physical Society (APS)}%
-    }
-    \strng{namehash}{BN+1}
-    \strng{fullhash}{BNSVWMLMGN1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1103/physrevlett.93.203902
-    \endverb
-    \field{issn}{1079-7114}
-    \field{number}{20}
-    \field{title}{Direct Measurement of Superluminal Group Velocity and Signal Velocity in an Optical Fiber}
-    \verb{url}
-    \verb http://dx.doi.org/10.1103/PhysRevLett.93.203902
-    \endverb
-    \field{volume}{93}
-    \field{journaltitle}{Physical Review Letters}
-    \field{year}{2004}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
@@ -584,46 +903,61 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Jeff_outperform}{article}{}
-    \name{author}{3}{}{%
-      {{hash=HJ}{%
-         family={Harris},
-         familyi={H\bibinitperiod},
-         given={J\'er\'emie},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=BRW}{%
-         family={Boyd},
-         familyi={B\bibinitperiod},
-         given={Robert\bibnamedelima W.},
-         giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-      {{hash=LJS}{%
+  \entry{Lundeen_thesis}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=LJ}{%
          family={Lundeen},
          familyi={L\bibinitperiod},
-         given={Jeff\bibnamedelima S.},
-         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+         given={Jeff},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LJ1}
+    \strng{fullhash}{LJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Generalized Measurement and Post-selection in Optical Quantum Information}
+    \list{institution}{1}{%
+      {University of Toronto}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{2006}
+  \endentry
+
+  \entry{WeakorStd}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BN}{%
+         family={Brunner},
+         familyi={B\bibinitperiod},
+         given={Nicolas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Simon},
+         familyi={S\bibinitperiod},
+         given={Christoph},
+         giveni={C\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
       {American Physical Society}%
     }
-    \strng{namehash}{HJBRWLJS1}
-    \strng{fullhash}{HJBRWLJS1}
+    \strng{namehash}{BNSC1}
+    \strng{fullhash}{BNSC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \verb{doi}
-    \verb 10.1103/PhysRevLett.118.070802
+    \verb 10.1103/PhysRevLett.105.010405
     \endverb
-    \field{issue}{7}
-    \field{pages}{070802}
-    \field{title}{Weak Value Amplification Can Outperform Conventional Measurement in the Presence of Detector Saturation}
+    \field{issue}{1}
+    \field{pages}{010405}
+    \field{title}{Measuring Small Longitudinal Phase Shifts: Weak Measurements or Standard Interferometry?}
     \verb{url}
-    \verb https://link.aps.org/doi/10.1103/PhysRevLett.118.070802
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.105.010405
     \endverb
-    \field{volume}{118}
+    \field{volume}{105}
     \field{journaltitle}{Phys. Rev. Lett.}
-    \field{year}{2017}
+    \field{year}{2010}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
@@ -679,40 +1013,139 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{WeakorStd}{article}{}
-    \name{author}{2}{}{%
-      {{hash=BN}{%
-         family={Brunner},
+  \entry{Jeff_outperform}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HJ}{%
+         family={Harris},
+         familyi={H\bibinitperiod},
+         given={J\'er\'emie},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BRW}{%
+         family={Boyd},
          familyi={B\bibinitperiod},
-         given={Nicolas},
-         giveni={N\bibinitperiod},
+         given={Robert\bibnamedelima W.},
+         giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=LJS}{%
+         family={Lundeen},
+         familyi={L\bibinitperiod},
+         given={Jeff\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{HJBRWLJS1}
+    \strng{fullhash}{HJBRWLJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.118.070802
+    \endverb
+    \field{issue}{7}
+    \field{pages}{070802}
+    \field{title}{Weak Value Amplification Can Outperform Conventional Measurement in the Presence of Detector Saturation}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.118.070802
+    \endverb
+    \field{volume}{118}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Lundeen_Direct_Measurement}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LJS}{%
+         family={Lundeen},
+         familyi={L\bibinitperiod},
+         given={Jeff\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Sutherland},
+         familyi={S\bibinitperiod},
+         given={Brandon},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Patel},
+         familyi={P\bibinitperiod},
+         given={Aabid},
+         giveni={A\bibinitperiod},
       }}%
       {{hash=SC}{%
-         family={Simon},
+         family={Stewart},
          familyi={S\bibinitperiod},
-         given={Christoph},
+         given={Corey},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Bamber},
+         familyi={B\bibinitperiod},
+         given={Charles},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LJS+1}
+    \strng{fullhash}{LJSSBPASCBC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The wavefunction, describing both the wave-like and the particle-like nature of everything in the Universe, is central to quantum theory. Physicists usually learn about it indirectly in tomographic experiments that measure only some aspects of its behaviour. Now a team from Canada's Institute for National Measurement Standards has developed a new and gentle technique that makes it possible to observe the wavefunction directly. They demonstrate the approach by measuring the transverse spatial wavefunction of a single photon. The discovery that the wavefunction can be probed directly provides a tool that could prove useful in a wide range of fields, and raises questions bordering on the philosophical about what the wavefunction actually is.%
+    }
+    \verb{doi}
+    \verb 10.1038/nature10120
+    \endverb
+    \field{isbn}{1476-4687}
+    \field{number}{7350}
+    \field{pages}{188\bibrangedash 191}
+    \field{title}{Direct measurement of the quantum wavefunction}
+    \verb{url}
+    \verb https://doi.org/10.1038/nature10120
+    \endverb
+    \field{volume}{474}
+    \field{journaltitle}{Nature}
+    \field{year}{2011}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field 'date'}
+  \endentry
+
+  \entry{Lundeen_Bamber}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LJS}{%
+         family={Lundeen},
+         familyi={L\bibinitperiod},
+         given={Jeff\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Bamber},
+         familyi={B\bibinitperiod},
+         given={Charles},
          giveni={C\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
       {American Physical Society}%
     }
-    \strng{namehash}{BNSC1}
-    \strng{fullhash}{BNSC1}
+    \strng{namehash}{LJSBC1}
+    \strng{fullhash}{LJSBC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \verb{doi}
-    \verb 10.1103/PhysRevLett.105.010405
+    \verb 10.1103/PhysRevLett.108.070402
     \endverb
-    \field{issue}{1}
-    \field{pages}{010405}
-    \field{title}{Measuring Small Longitudinal Phase Shifts: Weak Measurements or Standard Interferometry?}
+    \field{issue}{7}
+    \field{pages}{070402}
+    \field{title}{Procedure for Direct Measurement of General Quantum States Using Weak Measurement}
     \verb{url}
-    \verb https://link.aps.org/doi/10.1103/PhysRevLett.105.010405
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.108.070402
     \endverb
-    \field{volume}{105}
+    \field{volume}{108}
     \field{journaltitle}{Phys. Rev. Lett.}
-    \field{year}{2010}
+    \field{year}{2012}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
@@ -845,6 +1278,148 @@
     }
     \field{type}{mathesis}
     \field{year}{2017}
+  \endentry
+
+  \entry{kaneda2018highefficiencysinglephotongenerationlargescale}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=KF}{%
+         family={Kaneda},
+         familyi={K\bibinitperiod},
+         given={Fumihiro},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=KPG}{%
+         family={Kwiat},
+         familyi={K\bibinitperiod},
+         given={Paul\bibnamedelima G.},
+         giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KFKPG1}
+    \strng{fullhash}{KFKPG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{eprint}
+    \verb 1803.04803
+    \endverb
+    \field{title}{High-efficiency single-photon generation via large-scale active time multiplexing}
+    \verb{url}
+    \verb https://arxiv.org/abs/1803.04803
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{quant-ph}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Dai_2020}{article}{}
+    \name{author}{14}{}{%
+      {{hash=DH}{%
+         family={Dai},
+         familyi={D\bibinitperiod},
+         given={Hui},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=SQ}{%
+         family={Shen},
+         familyi={S\bibinitperiod},
+         given={Qi},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=WCZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Chao-Ze},
+         giveni={C\bibinithyphendelim Z\bibinitperiod},
+      }}%
+      {{hash=LSL}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Shuang-Lin},
+         giveni={S\bibinithyphendelim L\bibinitperiod},
+      }}%
+      {{hash=LWY}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Wei-Yue},
+         giveni={W\bibinithyphendelim Y\bibinitperiod},
+      }}%
+      {{hash=CWQ}{%
+         family={Cai},
+         familyi={C\bibinitperiod},
+         given={Wen-Qi},
+         giveni={W\bibinithyphendelim Q\bibinitperiod},
+      }}%
+      {{hash=LSK}{%
+         family={Liao},
+         familyi={L\bibinitperiod},
+         given={Sheng-Kai},
+         giveni={S\bibinithyphendelim K\bibinitperiod},
+      }}%
+      {{hash=RJG}{%
+         family={Ren},
+         familyi={R\bibinitperiod},
+         given={Ji-Gang},
+         giveni={J\bibinithyphendelim G\bibinitperiod},
+      }}%
+      {{hash=YJ}{%
+         family={Yin},
+         familyi={Y\bibinitperiod},
+         given={Juan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CYA}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Yu-Ao},
+         giveni={Y\bibinithyphendelim A\bibinitperiod},
+      }}%
+      {{hash=ZQ}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Qiang},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=XF}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Feihu},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=PCZ}{%
+         family={Peng},
+         familyi={P\bibinitperiod},
+         given={Cheng-Zhi},
+         giveni={C\bibinithyphendelim Z\bibinitperiod},
+      }}%
+      {{hash=PJW}{%
+         family={Pan},
+         familyi={P\bibinitperiod},
+         given={Jian-Wei},
+         giveni={J\bibinithyphendelim W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Springer Science}%
+      {Business Media LLC}%
+    }
+    \strng{namehash}{DH+1}
+    \strng{fullhash}{DHSQWCZLSLLWYCWQLSKRJGYJCYAZQXFPCZPJW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1038/s41567-020-0892-y
+    \endverb
+    \field{issn}{1745-2481}
+    \field{number}{8}
+    \field{pages}{848–852}
+    \field{title}{Towards satellite-based quantum-secure time transfer}
+    \verb{url}
+    \verb http://dx.doi.org/10.1038/s41567-020-0892-y
+    \endverb
+    \field{volume}{16}
+    \field{journaltitle}{Nature Physics}
+    \field{month}{05}
+    \field{year}{2020}
   \endentry
 
   \entry{Salazar}{article}{}
@@ -984,30 +1559,6 @@
       {Beaverton, OR, USA}%
     }
     \field{year}{2002}
-  \endentry
-
-  \entry{hecht2012optics}{book}{}
-    \name{author}{1}{}{%
-      {{hash=HE}{%
-         family={Hecht},
-         familyi={H\bibinitperiod},
-         given={E.},
-         giveni={E\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Pearson}%
-    }
-    \strng{namehash}{HE1}
-    \strng{fullhash}{HE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{isbn}{9788131718070}
-    \field{title}{Optics}
-    \verb{url}
-    \verb https://books.google.ca/books?id=wcMWpBMMzIkC
-    \endverb
-    \field{year}{2012}
   \endentry
 
   \entry{arrl2019}{book}{}
