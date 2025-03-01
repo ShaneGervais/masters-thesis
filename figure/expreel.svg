@@ -29,13 +29,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.89940482"
-     inkscape:cx="580.38382"
-     inkscape:cy="392.48178"
+     inkscape:zoom="1.2548224"
+     inkscape:cx="388.89965"
+     inkscape:cy="334.31025"
      inkscape:window-width="1712"
-     inkscape:window-height="1041"
+     inkscape:window-height="972"
      inkscape:window-x="0"
-     inkscape:window-y="66"
+     inkscape:window-y="39"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
@@ -1024,12 +1024,19 @@
       </g>
     </g>
     <rect
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.619001;stroke-dasharray:1.857, 0.619001;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.52;stroke-dasharray:1.5599984,0.52;stroke-dashoffset:0;stroke-opacity:1"
        id="rect3"
-       width="97.622238"
-       height="74.69989"
-       x="174.66798"
-       y="46.655025" />
+       width="95.755836"
+       height="103.13364"
+       x="168.54099"
+       y="54.942623" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.558;stroke-dasharray:1.67399778,0.558;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3-0"
+       width="44.44286"
+       height="28.580738"
+       x="216.27992"
+       y="82.122154" />
     <rect
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.619001;stroke-dasharray:1.857, 0.619001;stroke-dashoffset:0;stroke-opacity:1"
        id="rect6"
@@ -1283,32 +1290,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
-       x="221.31911"
-       y="64.190613"
+       x="223.08417"
+       y="91.843163"
        id="text4099-2-5"><tspan
          sodipodi:role="line"
-         x="221.31911"
-         y="64.190613"
+         x="223.08417"
+         y="91.843163"
          style="font-size:4.23333px;line-height:1.25;stroke-width:0.264583"
-         id="tspan8">Intéraction faible.</tspan></text>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 236.95787,67.04622 247.8261,91.691062"
-       id="path9"
-       inkscape:connector-type="polyline"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.243462px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 247.85621,91.577081 0.96692,-2.543452"
-       id="path10"
-       inkscape:connector-type="polyline"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 247.74387,91.622817 -2.83181,-1.167624"
-       id="path11"
-       inkscape:connector-type="polyline"
-       inkscape:connector-curvature="0" />
+         id="tspan8">Intéraction faible</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
@@ -1334,21 +1323,26 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
-       x="176.16063"
-       y="151.93587"
+       x="177.04317"
+       y="138.10959"
        id="text4099-2-5-4-8"><tspan
          sodipodi:role="line"
-         x="176.16063"
-         y="151.93587"
+         x="177.04317"
+         y="138.10959"
          style="font-size:4.23333px;line-height:1.25;stroke-width:0.264583"
-         id="tspan12">Postselection</tspan></text>
+         id="tspan12">Mesure </tspan><tspan
+         sodipodi:role="line"
+         x="177.04317"
+         y="143.40125"
+         style="font-size:4.23333px;line-height:1.25;stroke-width:0.264583"
+         id="tspan1">projective</tspan></text>
     <g
        style="display:inline;enable-background:new"
        i:rgbTrio="#4F008000FFFF"
        i:dimmedPercent="50"
        i:layer="yes"
        id="g7434-5"
-       transform="matrix(0,0.26458333,-0.26458333,0,83.55511,96.137847)">
+       transform="matrix(-0.26458234,7.2236911e-4,-7.2236911e-4,-0.26458234,83.56356,102.32777)">
       <g
          id="g7436-3">
         <linearGradient
@@ -1398,14 +1392,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
-       x="75.48172"
-       y="93.596977"
+       x="76.36425"
+       y="94.185326"
        id="text4099-5"><tspan
          sodipodi:role="line"
          id="tspan4101-50"
-         x="75.48172"
-         y="93.596977"
-         style="font-size:4.23333px;line-height:1.25;stroke-width:0.264583">NPBS</tspan></text>
+         x="76.36425"
+         y="94.185326"
+         style="font-size:4.23333px;line-height:1.25;stroke-width:0.264583">PBS</tspan></text>
     <g
        style="display:inline;enable-background:new"
        i:rgbTrio="#4F008000FFFF"
@@ -1486,13 +1480,24 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
-       x="85.933975"
-       y="162.0938"
+       x="36.512402"
+       y="125.61597"
        id="text4099-2-5-4-3"><tspan
          sodipodi:role="line"
-         x="85.933975"
-         y="162.0938"
+         x="36.512402"
+         y="125.61597"
          style="font-size:4.23333px;line-height:1.25;stroke-width:0.264583"
          id="tspan8-5-9">Signaux de reférence</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="233.92516"
+       y="61.591492"
+       id="text4099-2-5-7"><tspan
+         sodipodi:role="line"
+         x="233.92516"
+         y="61.591492"
+         style="font-size:4.23333px;line-height:1.25;stroke-width:0.264583"
+         id="tspan8-9">Mesure faible</tspan></text>
   </g>
 </svg>

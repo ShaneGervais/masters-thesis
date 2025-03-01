@@ -924,6 +924,61 @@
     \field{year}{2006}
   \endentry
 
+  \entry{Brunner_2004}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BN}{%
+         family={Brunner},
+         familyi={B\bibinitperiod},
+         given={Nicolas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SV}{%
+         family={Scarani},
+         familyi={S\bibinitperiod},
+         given={Valerio},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wegmüller},
+         familyi={W\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Legré},
+         familyi={L\bibinitperiod},
+         given={Matthieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GN}{%
+         family={Gisin},
+         familyi={G\bibinitperiod},
+         given={Nicolas},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society (APS)}%
+    }
+    \strng{namehash}{BN+1}
+    \strng{fullhash}{BNSVWMLMGN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/physrevlett.93.203902
+    \endverb
+    \field{issn}{1079-7114}
+    \field{number}{20}
+    \field{title}{Direct Measurement of Superluminal Group Velocity and Signal Velocity in an Optical Fiber}
+    \verb{url}
+    \verb http://dx.doi.org/10.1103/PhysRevLett.93.203902
+    \endverb
+    \field{volume}{93}
+    \field{journaltitle}{Physical Review Letters}
+    \field{year}{2004}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{WeakorStd}{article}{}
     \name{author}{2}{}{%
       {{hash=BN}{%
@@ -1535,6 +1590,42 @@
     \field{year}{2018}
   \endentry
 
+  \entry{Peebles}{book}{}
+    \name{author}{1}{}{%
+      {{hash=PPPJE}{%
+         family={Peebles},
+         familyi={P\bibinitperiod},
+         given={P.J.E. (Phillip James\bibnamedelima Edwin)},
+         giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Princeton University Press}%
+    }
+    \strng{namehash}{PPPJE1}
+    \strng{fullhash}{PPPJE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Quantum Mechanics}
+    \field{year}{1992}
+  \endentry
+
+  \entry{ThorlabsNPL64B}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={Thorlabs},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T2}
+    \strng{fullhash}{T2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://www.thorlabs.com/thorproduct.cfm?partnumber=NPL64B}}
+    \field{note}{Consulté le 25 février 2025}
+    \field{title}{NPL64B - Nanosecond Pulsed Laser Diode System, 640 nm, 5 - 39 ns Adjustable Pulse Width}
+  \endentry
+
   \entry{TektronixTDS5000}{manual}{}
     \name{author}{1}{}{%
       {{hash=T}{%
@@ -1559,6 +1650,38 @@
       {Beaverton, OR, USA}%
     }
     \field{year}{2002}
+  \endentry
+
+  \entry{ThorlabsDET025A}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={Thorlabs},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T2}
+    \strng{fullhash}{T2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://www.thorlabs.com/thorproduct.cfm?partnumber=DET025A}}
+    \field{note}{Consulté le 25 février 2025}
+    \field{title}{DET025A - 2 GHz Si Free-Space Photodetector with Window, 400 - 1100 nm, 8-32 Tap}
+  \endentry
+
+  \entry{ThorlabsBNC}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={Thorlabs},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T2}
+    \strng{fullhash}{T2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=2887}}
+    \field{note}{Consulté le 25 février 2025}
+    \field{title}{RG-58 BNC Coaxial Cable, BNC Male to BNC Male}
   \endentry
 
   \entry{arrl2019}{book}{}
@@ -1591,8 +1714,8 @@
          familyi={T\bibinitperiod},
       }}%
     }
-    \strng{namehash}{T2}
-    \strng{fullhash}{T2}
+    \strng{namehash}{T3}
+    \strng{fullhash}{T3}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{Rev A, August 6, 2021}
@@ -1601,6 +1724,85 @@
     \verb https://www.thorlabs.com
     \endverb
     \field{year}{2021}
+  \endentry
+
+  \entry{ThorlabsROT}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={Thorlabs},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T4}
+    \strng{fullhash}{T4}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=2875}}
+    \field{note}{Consulté le 28 février 2025}
+    \field{title}{Motorized Precision Rotation Mount}
+  \endentry
+
+  \entry{pylablib_thorlabs_kinesis}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=P}{%
+         family={{PyLabLib Developers}},
+         familyi={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{P1}
+    \strng{fullhash}{P1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2025-02-28}
+    \field{title}{{Thorlabs Kinesis Device Support in PyLabLib}}
+    \verb{url}
+    \verb https://pylablib.readthedocs.io/en/latest/devices/Thorlabs_kinesis.ht
+    \verb ml
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{Time_delay_china}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LW}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Weining},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=WY}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Yisen},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Luo},
+         familyi={L\bibinitperiod},
+         given={Hailu},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{LWWYLH1}
+    \strng{fullhash}{LWWYLH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevA.108.052606
+    \endverb
+    \field{issue}{5}
+    \field{pages}{052606}
+    \field{title}{Precision estimation of time delay based on weak measurement with real weak value}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevA.108.052606
+    \endverb
+    \field{volume}{108}
+    \field{journaltitle}{Phys. Rev. A}
+    \field{year}{2023}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 \enddatalist
 \endinput

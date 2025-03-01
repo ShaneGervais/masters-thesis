@@ -1,168 +1,75 @@
-Dans cette section, nous discuterons des 
-résultats et de l'analyse de l'expérience sur 
-la vitesse de la lumière. Commençons par 
-examiner la forme d'impulsion typique de notre 
-laser. Celle-ci est acquise avec les paramètres 
-de l'oscilloscope réglés sur le mode EQ-time, 
-une durée de 100ns, une longueur de rec de 10000 
-avec une résolution de 4ps. Nous nous rendrons 
-compte plus tard, lors d'expériences de mesures 
-faibles, que nous n'avons pas besoin d'une telle 
-durée. Remarquez que le profil temporel des 
-impulsions n'est pas essentiellement une 
-fonction de gaussien mais plutôt une fonction de 
-port. 
+\begin{doublespace}
+    Dans cette section, nous discuterons des résultats et de l’analyse de l’expérience sur la vitesse de la lumière. Pour commencer, examinons la forme d’impulsion typique de notre laser.  
+\end{doublespace}
 
 \begin{figure}[hp]
     \centering
     \includegraphics[width=1.0\textwidth]{typ_pulse.png}
     \caption{Profil temporel typique de notre 
-    impulsion laser ultra-courte NPL64B 
-    fabriquée par thorlabs, mesurée avec un 
-    photomultiplicateur à base de Si et acquise 
-    à l'aide du mode d'acquisition temporelle EQ 
-    de l'oscilloscope.}
+    impulsion laser ultra-courte NPL64B \cite{ThorlabsNPL64B}, mesurée avec un 
+    photodétecteur DET025A à base de Si \cite{ThorlabsDET025A} et acquise 
+    à l'aide du mode d'acquisition temporelle EQ-time 
+    de l'oscilloscope \cite{TektronixTDS5000}.}
     \label{fig:typical-pulse}
 \end{figure}
 
-L'impulsion ressemble de plus en plus à 
-une fonction de port au fur et à mesure que nous 
-augmentons la durée de l'impulsion. Une figure 
-de thorlabs montre comment la forme de 
-l'impulsion change avec l'augmentation de la 
-largeur de l'impulsion. La raison pour laquelle 
-nous voulons une forme gaussienne est qu'elle 
-est simplement plus fréquente dans les mesures 
-faibles et qu'il est plus facile de trouver la 
-valeur d'espérance temporelle de l'impulsion 
-(le moment le plus probabiliste pour trouver un 
-photon de cette impulsion) que nous déterminons 
-comme étant le pic. Ainsi, nous voulons prendre 
-la dérivée des données de l'impulsion 
-numériquement, ce qui nous donne une vision 
-claire de l'endroit où se trouve le pic et qui 
-est cohérent avec d'autres impulsions.
+\begin{doublespace}
+    \noindent Nous avons configuré l’oscilloscope en mode EQ-time (temps d'équivalence), avec une durée de $100$ $ns$, une longueur d'enregistrement de $10 000$ points et une résolution de $4$ $ps$. Plus tard, lors d’expériences de mesures faibles, nous réaliserons que nous n’avons pas besoin d’une telle durée. Remarquez que le profil temporel des impulsions n’est pas essentiellement une fonction de Gauss, mais plutôt une fonction de porte.
+    \noindent En allongeant la durée de l’impulsion du laser, l’impulsion ressemble de plus en plus à une fonction de port au fur et à mesure. La raison pour laquelle nous souhaitons une forme gaussienne est qu'elle est simplement plus fréquente dans les mesures faibles et qu'il est plus facile de déterminer la valeur moyenne de la position temporelle de l'impulsion (le moment le plus probable pour détecter un photon de cette impulsion) que nous définissons comme le pic. Par conséquent, notre objectif est de calculer numériquement la dérivée des données de l’impulsion, ce qui nous permettra de localiser précisément le pic et de le comparer à d'autres impulsions.
+    \noindent Voici les résultats des données issues des impulsions de l’expérience du miroir déplacé, figure \ref{fig:speed-pulses}. Ces données dérivées montrent clairement une forme gaussienne avec un pic maximal nettement visible. Cela facilite grandement son identification de sa position temporelle. 
+\end{doublespace}
 
-\begin{figure}[hp]
+\begin{figure}[!hptb]
     \centering
-    \includegraphics[width=1.0\textwidth]{speed_pulses.png}
-    \caption{Profil temporel des données 
-    d'impulsion pour chacune des distances 
-    mesurées et ajustement de la courbe pour 
-    l'expérience de la vitesse de la lumière 
-    avec un miroir ajustable.}
+    \includegraphics[width=1.0\textwidth]{overlay_pulses_mirror.png}
+    \caption{Profil temporel de la dérivée des données d'impulsion pour chacune des distances mesurées et ajustement de la courbe pour l'expérience de la vitesse de la lumière avec un miroir réglable.}
     \label{fig:speed-pulses}
 \end{figure}
 
-Voici les 
-données numériques dérivées des impulsions de 
-l'expérience du miroir déplacé qui montrent la 
-forme de l'impulsion après la dérivée avec un 
-maximum clair qui peut être trouvé et comment il 
-suit clairement une tendance linéaire suspecte 
-d'augmentation du retard avec l'augmentation de 
-la distance du miroir. Nous soumettons les 
-données à un ajustement de courbe en utilisant 
-une fonction de série de Fourier du 2e ordre, 
-soit :
+\begin{doublespace}
+    \noindent Nous procédons à l’ajustement des données en leur appliquant une fonction de série de Fourier du 2e ordre, qui s’écrit comme suit :
+\end{doublespace}
 
 \begin{equation}
     y(t) = a_0 + \sum_{j=1}^{n} a_{j}cos(jwt) + b_{j}sin(jwt)
 \end{equation}
 
-Soit les paramètres d'ajustement $a_i$, $b_i$ et $w$ 
-de la série de Fourier, $n$ est l'ordre ($n=2$) 
-pour les variables $y$ soit l'amplitude
-et $t$ la position temporel des courbes sont 
-choisis pour optimiser l’ajustement de nos 
-données dont $40$ $\%$ des points de l'axe 
-d'amplitude et de l'axe temporel sont ignorés. 
-Ce sont ces paramètres qui correspondent le 
-mieux à nos données. Il n'y a pas vraiment de 
-valeur quantifiée pour évaluer la qualité de 
-l'ajustement de notre courbe, car il a été 
-effectué principalement à partir d’une analyse 
-visuelle. Le coefficient de détermination ($R^2$) 
-a également été utilisé pour nous guider, mais 
-nous avons tenté d'éviter un ajustement excessif. 
-Grâce à cet ajustement, nous pouvons identifier 
-la position maximale, laquelle correspond à une 
-position réelle mesurée dans nos données. Cette 
-position maximale est notre valeur prédite pour 
-la position temporelle moyenne des photons pour 
-la distance mesurée. Ensuite, chaque position 
-temporelle est comparée à celle des distances de 
-référence, ce qui donne les retards mesurés pour 
-notre expérience. Ces délais sont ensuite tracés 
-avec la distance associée, et, par ajustement 
-linéaire de la courbe, nous pouvons déterminer 
-que la pente correspond à la vitesse de la 
-lumière. 
+\begin{doublespace}
+    \noindent Les paramètres d’ajustement $a_i$, $b_i$ et $w$ de la série de Fourier, où $n$ est l’ordre (fixé à 2) pour les variables $y$, qui représente l’amplitude, et $t$, qui correspond à la position temporelle des courbes, sont sélectionnés pour optimiser l’ajustement de nos données. Parmi ces données, $40\%$ des points de l’axe d’amplitude et de l’axe temporel sont ignorés. Ces paramètres correspondent le mieux à nos données. Il est difficile d’attribuer une valeur numérique pour évaluer la qualité du réglage de notre courbe, puisque celui-ci a principalement découlé d’une analyse visuelle. Nous avons néanmoins utilisé le coefficient de détermination ($R^2$) comme boussole, mais nous avons tenté d'éviter un ajustement excessif. Ce réglage nous permet maintenant d’identifier la position optimale, qui correspond à une position réelle observée dans nos données. Ensuite, nous comparons chaque position temporelle à celle des distances de référence pour obtenir les délais mesurés pour notre expérience. Ces délais sont tracés en fonction de la distance associée, et, par ajustement linéaire de la courbe, nous pouvons déterminer que la pente correspond à la vitesse de la lumière. 
+\end{doublespace}
 
-\begin{figure}[hp]
+\begin{figure}[!hptb]
     \centering
-    \includegraphics[width=1.0\textwidth]{speed_results.png}
-    \caption{Résultats des retards mesurés 
-    lors de l'expérience sur la vitesse de la 
-    lumière et leur ajustement linéaire}
+    \includegraphics[width=1.0\textwidth]{speed_of_light_mirror.png}
+    \caption{Résultats des délais mesurés pendant l'expérience sur la vitesse de la lumière, ainsi que leur ajustement linéaire. Les barres d’erreur horizontales représentent l’incertitude de nos mesures de la distance, soit $\pm 0,5$ $mm$, qui est trop petite pour être visible sur le graphique. Les barres d'erreurs verticales correspondent à l'erreur de l'ajustement Fourier basé sur l'expérience de la vitesse de la lumière dans les câbles BNC $\pm 0,03\%$.}
     \label{fig:speed-res}
 \end{figure}
 
-Notre résultat pour la vitesse de la 
-lumière de cette expérience est $296 297 418,89$ $m/s$ 
-avec un pourcentage d'erreur de $1,15$ $\%$. 
-Cela correspond à une différence de $0,9998$ par 
-rapport à la vitesse de la 
-lumière $c$ dans l’air ($c_{air} = 0.9998c$) \cite{hecht2012optics}. 
-La raison pour laquelle la vitesse de la lumière 
-est plus lente est ce que nous pensons être due 
-à l'alignement de notre installation. En effet, 
-selon notre erreur, cet écart correspondrait à 
-environ $1 cm$, ce qui est plausible. Voici 
-maintenant le résultat de l'expérience avec le 
-câble BNC. 
+\begin{doublespace}
+    \noindent Le résultat de notre expérience sur la vitesse de la lumière est de $296 991 901$ $m/s$ avec une marge d'erreur de $0.91$ $\%$ par rapport à la valeur actuelle. Cela correspond à une différence de $0,9998$ par rapport à la vitesse de la lumière $c$ dans l’air ($c_{air} = 0.9998c$) \cite{hecht2012optics}. Nous disons que la raison pour laquelle la vitesse de la lumière est plus lente est due à l’alignement de notre expérience, une erreur commune et probable. En effet, selon notre erreur, cet écart correspondrait à environ $\approx 1$ $cm$ $=33$ $ps$, ce qui est plausible. Voici maintenant le résultat de l'expérience avec le câble BNC. 
+\end{doublespace}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=1.0\textwidth]{BNC_pulses.png}
-    \caption{Profil temporel des données 
-    d'impulsion de la vitesse de la lumière dans 
-    l'expérience des câbles BNC RG-58 avec 
-    chacun de ses ajustements de courbe. }
+    \includegraphics[width=1.0\textwidth]{overlay_pulses_with_fits_BNC.png}
+    \caption{Profil temporel de la dérivée des données d'impulsion dans l'expérience des câbles BNC RG-58 avec chacun de ses ajustements de courbe. }
     \label{fig:BNC-pulse}
 \end{figure}
 
-Sur la figure \ref{fig:BNC-pulse}, on voit chaque 
-impulsion provenant de différentes longueurs de 
-câble BNC. Cette expérience ne mesure pas 
-seulement la vitesse de la lumière dans les 
-câbles BNC, elle teste aussi nos paramètres 
-d’ajustement, puisque nous avons utilisé les 
-mêmes paramètres. 
+\begin{doublespace}
+    \noindent Sur la figure \ref{fig:BNC-pulse}, on voit chaque impulsion provenant de différentes longueurs de câble BNC. Cette expérience ne mesure pas seulement la vitesse de la lumière dans les câbles BNC, elle teste aussi nos paramètres d’ajustement, puisque nous avons utilisé les mêmes paramètres pour la vitesse de la lumière pour les miroirs ajustables. 
+\end{doublespace}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=1.0\textwidth]{BNC_results.png}
-    \caption{Retards mesurés pour la longueur 
-    du câble BNC eaxh avec son ajustement de 
-    courbe.}
+    \includegraphics[width=1.0\textwidth]{speed_of_light_BNC.png}
+    \caption{Délais mesurés pour la longueur du câble BNC eux avec son ajustement de courbe.}
     \label{fig:BNC-res}
 \end{figure}
 
-Notre résultat pour la vitesse 
-de la lumière est $195 185 070.31$ $m/s$, ce qui 
-représente une erreur en pourcentage de $1,35\%$
-correspondant que la vitesse de la lumière dans un 
-cable BNC possède un différentes de $0.66$ 
-par rapport à $c$, soit une erreur de 1cm, 
-ce qui est réaliste et cohérent avec l'erreur dans 
-l'expérience précédant \cite{arrl2019,thorlabs2021}. 
-Nous avons donc démontré notre capacité à 
-mesurer des retards très précis. C’est un 
-élément essentiel pour pouvoir commencer à 
-mesurer de petits retards dans les états 
-d'entrée de changement de polarisation par le 
-biais de mesures faibles.
+\begin{doublespace}
+    \noindent Notre résultat pour la vitesse de la lumière est $197 946 443$ $m/s$, ce qui représente une erreur en pourcentage de $0,04\%$ correspondant que la vitesse de la lumière dans un câble BNC possède un différentes de $0.66$ par rapport à $c$, soit une erreur de 1cm, ce qui est réaliste et cohérent avec l'erreur observée lors de l'expérience précédente \cite{arrl2019,thorlabs2021}. En effet, nous avons donc démontré notre capacité à mesurer des délais très précis. C’est un élément essentiel pour pouvoir commencer à mesurer de petits délais entre des états polarisation d'entrée de changement dans le biais de mesures faibles.
+\end{doublespace}
 
 
 

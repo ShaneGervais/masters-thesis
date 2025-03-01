@@ -1,67 +1,11 @@
-Nous vous invitons à évaluer notre habileté à 
-mesurer des délais temporelles avec précision 
-en déterminant la vitesse de la lumière sur 
-différentes distances. Nous allons utiliser un 
-laser pulsé ultra-court de type NPL64B, fabriqué 
-par Thorlabs, pour nos expériences. Ce système 
-laser peut produire des impulsions de 5 à 39 
-nanosecondes. Nous avons choisi une impulsion 
-de 10 nanosecondes dans cette gamme, car les 
-intervalles de temps plus longs ont tendance à 
-avoir une distribution temporelle similaire à 
-celle d’une fonction porte. Nous voulons une 
-impulsion dans le domaine temporel qui ressemble 
-à une fonction gaussienne, ce qui se produit 
-lorsque les impulsions du laser sont plus 
-courtes. Cette dernière est souvent utilisée 
-dans les mesures de faibles, facilitant ainsi 
-l’identification de la position maximum de 
-l'impulsion, que nous identifierons comme 
-correspondant à la position temporelle moyenne 
-de l'impulsion. Le laser utilisé possède une 
-longueur d'onde comprise entre 630 et 650 nm, 
-avec une énergie d'impulsion maximale de 
-2,0 nanojoules. Sa puissance de pointe atteint 
-50 milliwatts lorsque le taux de répétition 
-maximal et la largeur d'impulsion maximale 
-sont utilisés. Toutefois, pour notre protocole, 
-nous réglons le taux de répétition à 1 MHz, ce 
-qui garantit une fréquence constante tout au 
-long de l'expérience. Pour nos tests, nous 
-utiliserons un miroir pour régler des 
-intervalles de distance variables et analyserons 
-les résultats à l’aide d'un oscilloscope fourni 
-par Tektronix, le modèle étant le TSD5000B. Un 
-schéma de l'appareil expérimental est présenté 
-dans la figure \ref{fig:speed-of-light}.
+\begin{doublespace}
+    Nous vous invitons à évaluer notre capacité à mesurer des délais temporels avec précision. Pour ce faire, nous devons déterminer notre précision de la vitesse de la lumière via des délais temporels. Nous allons utiliser un laser pulsé ultra-court de type nanoseconde dans le cadre de nos expériences \cite{ThorlabsNPL64B}. Ce dispositif laser est capable de générer des impulsions allant de $5$ à $39$ $ns$. Nous avons opté pour une impulsion de $10$ $ns$ dans cette plage, car les intervalles de temps plus longs ont tendance à présenter une distribution temporelle similaire à celle d’une fonction porte. Nous cherchons une impulsion dans le domaine temporel qui ressemble à une fonction gaussienne, ce qui se produit lorsque les impulsions du laser sont plus courtes. Cette dernière est souvent utilisée dans les mesures de faibles \cite{OpticalNetworks, Lundeen_Direct_Measurement,Hairiri,Guilleaum,Brunner_2004} pour faciliter l’identification de la position maximale de l’impulsion, que nous identifierons comme correspondant à la position temporelle moyenne de l’impulsion. Le laser utilisé possède une longueur d’onde comprise entre $640 \pm 10$ $nm$, avec une énergie d’impulsion maximale de $2,0$ $nJ$. Sa puissance de pointe s’élève à $50$ $mW$ lorsque le taux de répétition et la largeur d’impulsion maximale sont utilisés. Toutefois, dans le cadre de notre protocole, nous fixons la fréquence de répétition à $1$ $MHz$, assurant ainsi une fréquence constante tout au long de l’expérience. Cela n’affectera pas l’expérience elle-même. Pour nos tests, nous utiliserons un miroir pour régler des intervalles de distances variables et analyserons les résultats avec notre oscilloscope \cite{TektronixTDS5000}. Voici un diagramme du dispositif d’expérimentation, visible à la figure \ref{fig:speed-of-light}.
+\end{doublespace}
 
-\begin{figure}[hp]
+\begin{figure}[!hpbt]
     \centering
     \includegraphics[width=1.0\textwidth]{speed_of_light_exp.png}
-    \caption{Schéma de notre dispositif expérimental pour 
-    évaluer la fiabilité de nos mesures temporelles en 
-    mesurant la vitesse de la lumière. Un laser 
-    impulsionnel passe dans une lame demi-onde pour régler 
-    l'intensité d'entrée, avant d'être dirigé vers un 
-    séparateur de faisceau polarisant (PBS) qui divise les 
-    états de polarisation horizontaux et verticaux de base 
-    de l'impulsion d'entrée en deux voies orthogonales, 
-    l'une d'entre elles étant ignorée par un bloc. Nous 
-    définissons les états de polarisation comme le faisceau 
-    réfléchi étant l'état de base de polarisation verticale 
-    de l'état d'entrée, et le faisceau transmis étant 
-    l'état de base horizontal. L'état horizontal se dirige 
-    vers un miroir que nous ajusterons en fonction des 
-    différentes distances à mesurer. Il est ensuite renvoyé 
-    vers le PBS pour y être réfléchi. Ce dernier se fait 
-    avec une lame quart d'onde qui modifie l'état de 
-    polarisation $\ket{H}$ en un état $\ket{V}$. 
-    L'impulsion traverse 
-    ensuite une demi-plaque d'onde et un polariseur. Il est 
-    réglé pour transmettre uniquement l'état verticale 
-    lors de la réflexion du PBS. Il est ensuite 
-    détecté avec un photomultiplicateur rapide à base de Si 
-    fabriqué par Thorlabs, puis interprété par notre 
-    oscilloscope.}
+    \caption{Représentation de notre dispositif expérimental pour évaluer la précision de nos mesures temporelles en mesurant la vitesse de la lumière. L’impulsion du laser est d’abord réglée en intensité par une lame demi-onde, puis dirigée vers un séparateur de faisceau polarisant (PBS) qui divise les états de polarisation horizontaux et verticaux de base de l’impulsion d’entrée en deux voies orthogonales. Celui qui est réfléchi par le PBS sera notre signal de référence pour déclencher l’oscilloscope décu. L’autre subit encore un autre PBS. Une des voies sera ensuite ignorée par un bloc. Nous définissons les états de polarisation comme suit : le faisceau réfléchi représente l’état de base de polarisation verticale $\ket{V}$ de l’état d’entrée $\ket{\psi}$, tandis que le faisceau transmis correspond à l’état de base horizontal $\ket{H}$. Nous orientons l’état horizontal vers un miroir, que nous réglerons en fonction des différentes distances à évaluer. Il est ensuite renvoyé 
+    vers le PBS pour y être réfléchi. Ce procédé utilise une lame quart d’onde pour convertir l’état de polarisation $\ket{H}$ en un état $\ket{V}$. Il est ensuite détecté avec un photodétecteur rapide à base de Si \cite{ThorlabsDET025A} puis interprété par notre oscilloscope.}
     \label{fig:speed-of-light}
 \end{figure}

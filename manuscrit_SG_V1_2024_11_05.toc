@@ -13,29 +13,31 @@
 \contentsline {subsection}{\numberline {1.3}Motivation de la thèse}{14}{subsection.1.3}%
 \contentsline {section}{\numberline {2}LES MESURES FAIBLES TEMPORELLES ET FRÉQUENCIELLES D'UN SYSTÈME QUANTIQUE}{16}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Proposition d'une procédure directe avec une mesure faible temporelle}{16}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Mesure faible temporelle d'un système photonique quantique}{23}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}Mesure faible temporelle d'un système photonique quantique}{22}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}La partie réelle du système}{23}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}La partie imaginaire du système}{27}{subsubsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.3}Proposition expérimentale pour la caractérisation de la valeur faible}{28}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.3}Proposition expérimentale pour la caractérisation de la valeur faible}{29}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Mots finale sur la théorie}{30}{subsection.2.4}%
-\contentsline {section}{\numberline {3}MESURE EXPÉRIMENTALE DIRECTE D'UN ÉTAT DE POLARISATION EN UTILISANT UNE MESURE FAIBLE TEMPORELLE}{31}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Mesure de la vitesse de la lumière à l'aide d'un oscilloscope}{31}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Acquisition de donnée et mesure d'un délai en utilisant un oscilloscope}{31}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Analyse et résultats de l'expérience de la vitesse de la lumière}{34}{subsubsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}Caractérisation de la partie réelle de la valeur faible}{40}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Montage préposé}{41}{subsubsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.3}Caractérisation de la partie imaginaire de la valeur faible}{45}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Montage préposé}{45}{subsubsection.3.3.1}%
-\contentsline {section}{\numberline {4}RÉSULTATS ET DISCUSSION}{46}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Analyze des résultats expérimentaux pour la partie réelle de la valeur faible}{46}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}La partie réelle}{47}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}Discussion sur les résultats expérimentaux de la partie réelle}{49}{subsubsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.2}La partie imaginaire}{51}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}EXTRA}{51}{subsection.4.3}%
-\contentsline {section}{\numberline {5}CONCLUSION}{52}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Conclusion sur la thèse}{52}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Applications et projet de future}{52}{subsection.5.2}%
-\contentsline {section}{\numberline {} ANNEXE A}{57}{subsection.5.2}%
-\contentsline {subsection}{\numberline {.1}Mesure d'une fréquence crée par l'effet Doppler à l'aide de la visibilité et l'oscilloscope}{57}{subsection.Alph0.1}%
-\contentsline {subsection}{\numberline {.2}Résultats de l'effet Doppler}{57}{subsection.Alph0.2}%
-\contentsline {section}{\numberline {} ANNEXE B}{58}{subsection.Alph0.2}%
+\contentsline {section}{\numberline {3}MESURE EXPÉRIMENTALE DIRECTE D'UN ÉTAT DE POLARISATION EN UTILISANT UNE MESURE FAIBLE TEMPORELLE}{32}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Mesure de la vitesse de la lumière à l'aide d'un oscilloscope}{32}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Acquisition de donnée et mesure d'un délai en utilisant un oscilloscope}{33}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Analyse et résultats de l'expérience de la vitesse de la lumière}{36}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Caractérisation de la partie réelle de la valeur faible}{42}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Montage préposé et étape de préparation}{43}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Mesure faible temporelle}{49}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Caractérisation de la partie imaginaire de la valeur faible}{53}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Montage préposé}{53}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Résultats attendus théoriques de la partie imaginaire de la valeur faible}{55}{subsubsection.3.3.2}%
+\contentsline {section}{\numberline {4}RÉSULTATS ET DISCUSSION}{56}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Analyze des résultats expérimentaux pour la partie réelle de la valeur faible}{56}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}La partie réelle}{57}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Discussion sur les résultats expérimentaux de la partie réelle}{59}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}La partie imaginaire}{61}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}EXTRA}{61}{subsection.4.3}%
+\contentsline {section}{\numberline {5}CONCLUSION}{62}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Conclusion sur la thèse}{62}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Applications et projet de future}{62}{subsection.5.2}%
+\contentsline {section}{\numberline {} ANNEXE A}{68}{subsection.5.2}%
+\contentsline {subsection}{\numberline {.1}Mesure d'une fréquence crée par l'effet Doppler à l'aide de la visibilité et l'oscilloscope}{68}{subsection.Alph0.1}%
+\contentsline {subsection}{\numberline {.2}Résultats de l'effet Doppler}{68}{subsection.Alph0.2}%
+\contentsline {section}{\numberline {} ANNEXE B}{69}{subsection.Alph0.2}%

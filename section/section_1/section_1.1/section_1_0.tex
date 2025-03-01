@@ -1,7 +1,7 @@
 \begin{onehalfspace}
     Le développement des technologies quantiques repose sur la capacité à mesurer et à caractériser les états quantiques avec une précision et une fiabilité accrues \cite{Feynman1982,DiVincenzo_2000,QTapplImpl}. Dans ce contexte, le domaine de la photonique quantique occupe une place centrale grâce aux propriétés étonnantes des photons. Contrairement aux systèmes basés sur d’autres matières, les photons présentent une faible décohérence. Ils peuvent être manipulés facilement grâce à leurs divers degrés de liberté (polarisation, domaine positionnel, quantité de mouvement, temporel et fréquentiel), et ils s’intègrent naturellement dans les infrastructures optiques existantes \cite{browne2017quantumopticsquantumtechnologies,photonicInformation}. L’état de polarisation des photons peut être utilisé comme état de base pour des technologies quantiques, par exemple sous forme de qubit pour des ordinateurs ou de circuit quantique \cite{Kwiat}. Cette plateforme possède des caractéristiques idéales pour de nombreuses applications, notamment la communication quantique sécurisée, l’imagerie quantique à haute résolution, la métrologie quantique, le calcul quantique basé sur l’optique linéaire, ainsi que d’autres domaines où les technologies quantiques sont nécessaires \cite{QTintelecomindustry,metrology,Wang_2019}.
 
-    Par conséquent, il est crucial d’effectuer des mesures approfondies afin de caractériser avec précision les états quantiques dans le cadre de ces avancées technologiques. Cependant, effectuer des mesures quantiques pose un défi en raison de la nature aléatoire de la théorie. Contrairement à la mécanique classique, il est impossible de mesurer simultanément le moment d’arrivée et la fréquence spectrale avec une précision absolue et optimale. Cela est dû au principe d’incertitude d’Heisenberg, qui découle de la nature ondulatoire du système. On prétend que l’état du système se trouve dans une superposition de tous ses états possibles. Une mesure ou une interaction avec le système quantique cause une perturbation qui fait effondrer l’état dans l’un de ses états propres possibles. Une fois perturbé, l’état demeure inchangé. La figure ci-dessous illustre ce concept de manière classique. Par conséquent, pour caractériser un état quantique, on doit effectuer des mesures projectives pour obtenir certaines informations sur le système. Les techniques conventionnelles, comme la tomographie quantique, permettent une reconstruction complète des états à l’aide de plusieurs mesures projectives. Toutefois, elles deviennent rapidement inadaptées aux systèmes de grande dimension en raison de leur coût computationnel et expérimental exponentiel. Étant que ces techniques reposent sur un grand nombre de mesures de projection, ceci les rend inadaptées à certaines applications nécessitant des mesures en temps réel ou une interaction minimale avec le système.
+    Par conséquent, il est crucial d’effectuer des mesures approfondies afin de caractériser avec précision les états quantiques dans le cadre de ces avancées technologiques. Cependant, effectuer des mesures quantiques pose un défi en raison de la nature aléatoire de la théorie. Contrairement à la mécanique classique, il est impossible de mesurer simultanément le moment d’arrivée et la fréquence spectrale avec une précision absolue et optimale. Cela est dû au principe d’incertitude d’Heisenberg, qui découle de la nature ondulatoire du système. On prétend que l’état du système se trouve dans une superposition de tous ses états possibles. Une mesure ou une interaction avec le système quantique cause une perturbation qui fait effondrer l’état dans l’un de ses états propres possibles. Une fois perturbé, l’état demeure inchangé. La figure \ref{fig:dice} ci-dessous illustre ce concept de manière classique. Par conséquent, pour caractériser un état quantique, on doit effectuer des mesures projectives pour obtenir certaines informations sur le système. Les techniques conventionnelles, comme la tomographie quantique, permettent une reconstruction complète des états à l’aide de plusieurs mesures projectives. Toutefois, elles deviennent rapidement inadaptées aux systèmes de grande dimension en raison de leur coût computationnel et expérimental exponentiel. Étant que ces techniques reposent sur un grand nombre de mesures de projection, ceci les rend inadaptées à certaines applications nécessitant des mesures en temps réel ou une interaction minimale avec le système.
 
     \begin{figure}[!htbp]
         \centering
@@ -30,12 +30,12 @@
     
     \begin{equation}
         \hat{\rho} = \begin{pmatrix}
-            |a|^2 & a\bar{b}\\
-            \bar{a}b & |b|^2
+            |a|^2 & ab^*\\
+            a^*b & |b|^2
         \end{pmatrix}
     \end{equation}
     
-    L'objectif d'une tomographie quantique est de déterminer les coefficients de la matrice. Pour ce faire, il faut effectuer des mesures projectives pour obtenir les probabilités ou intensités de détection dans différentes bases de polarisation. La fraction de photons détectés en sortie $\ket{H}$ correspond alors à $|a|^2$ et en sortie $\ket{V}$ correspond à $|b|^2$. Pour accéder aux termes d’interférence, comme $a\bar{b}$, il faut réaliser des mesures dans des bases complémentaires, telles que $\{\ket{D}, \ket{A}\}$ pour la polarisation diagonale et antidiagonale, ou $\{\ket{R}, \ket{L}\}$ pour la polarisation circulaire. Les différences d’intensité observées dans ces diverses configurations de mesure projective permettent de reconstruire les éléments de matrice densité. Ensemble, ce dernier illustre la puissance de la tomographie quantique, tout en soulignant sa complexité et les ressources nécessaires à sa mise en œuvre pour des états de dimension plus élevée. En photonique quantique, ainsi, pour la caractérisation des états de polarisation, cette matrice densitée peut également être exprimée en termes des paramètres de Stokes \cite{Kwiat}. Les paramètres de Stokes décrivent complètement l’état de polarisation, et ils sont liés aux probabilités de détection dans différentes bases de polarisation \cite{hecht2012optics}. Les paramètres sont définis par:
+    L'objectif d'une tomographie quantique est de déterminer les coefficients de la matrice. Pour ce faire, il faut effectuer des mesures projectives pour obtenir les probabilités ou intensités de détection dans différentes bases de polarisation. La fraction de photons détectés en sortie $\ket{H}$ correspond alors à $|a|^2$ et en sortie $\ket{V}$ correspond à $|b|^2$. Pour accéder aux termes d’interférence, comme $ab^*$, il faut réaliser des mesures dans des bases complémentaires, telles que $\{\ket{D}, \ket{A}\}$ pour la polarisation diagonale et antidiagonale, et/ou $\{\ket{R}, \ket{L}\}$ pour la polarisation circulaire. Les différences d’intensité observées dans ces diverses configurations de mesure projective permettent de reconstruire les éléments de matrice densité. Ensemble, ce dernier illustre la puissance de la tomographie quantique, tout en soulignant sa complexité et les ressources nécessaires à sa mise en œuvre pour des états de dimension plus élevée. En photonique quantique, ainsi, pour la caractérisation des états de polarisation, cette matrice densitée peut également être exprimée en termes des paramètres de Stokes \cite{Kwiat}. Les paramètres de Stokes décrivent complètement l’état de polarisation, et ils sont liés aux probabilités de détection dans différentes bases de polarisation \cite{hecht2012optics}. Les paramètres sont définis par:
     \begin{equation}
         S = \begin{pmatrix}
             S_0\\
@@ -87,9 +87,9 @@
     \noindent Ensuite, trouvons chacun des paramètres de Stokes en projetant les différentes bases sur l'état de polarisation. Les deux premiers paramètres $S_0$ et $S_1$ sont simples, trouvons les probabilités $P_{\ket{H}}$ et $P_{\ket{V}}$.
 
     \begin{align}
-        P_{\ket{H}} &= |\bra{H}\ket{\psi}|^2 = (a\bra{H}\ket{H} + b\bra{H}\ket{V})(\bar{a}\bra{H}\ket{H} + \bar{b}\bra{H}\ket{V})\\
+        P_{\ket{H}} &= |\bra{H}\ket{\psi}|^2 = (a\bra{H}\ket{H} + b\bra{H}\ket{V})(a^*\bra{H}\ket{H} + b^*\bra{H}\ket{V})\\
         &= |a|^2\\
-        P_{\ket{V}} &= |\bra{V}\ket{\psi}|^2 = (a\bra{V}\ket{H} + b\bra{V}\ket{V})(\bar{a}\bra{V}\ket{H} + \bar{b}\bra{V}\ket{V})\\
+        P_{\ket{V}} &= |\bra{V}\ket{\psi}|^2 = (a\bra{V}\ket{H} + b\bra{V}\ket{V})(a^*\bra{V}\ket{H} + b^*\bra{V}\ket{V})\\
         &= |b|^2
     \end{align}
 
@@ -104,28 +104,28 @@
 
     \begin{align}
         P_{\ket{D}} &= |\bra{D}\ket{\psi}|^2 = \Biggl[\biggl(\frac{1}{\sqrt{2}}(a\bra{H}\ket{H} + a\bra{V}\ket{H})\biggr)\\ 
-        &+ \biggl(\frac{1}{\sqrt{2}}(b\bra{H}\ket{V} + b\bra{V}\ket{V})\biggr)\Biggr]\Biggl[ \biggl(\frac{1}{\sqrt{2}}(\bar{a}\bra{H}\ket{H} + \bar{a}\bra{V}\ket{H})\biggr)\\
-        &+ \biggl(\frac{1}{\sqrt{2}}(\bar{b}\bra{H}\ket{V} + \bar{b}\bra{V}\ket{V})\biggr) \Biggr] = \frac{1}{2}(a + b)(\bar{a} + \bar{b})\\
-        &= \frac{1}{2}(|a|^2 + a\bar{b} + \bar{a}b + |b|^2)\\
+        &+ \biggl(\frac{1}{\sqrt{2}}(b\bra{H}\ket{V} + b\bra{V}\ket{V})\biggr)\Biggr]\Biggl[ \biggl(\frac{1}{\sqrt{2}}(a^*\bra{H}\ket{H} + a^*\bra{V}\ket{H})\biggr)\\
+        &+ \biggl(\frac{1}{\sqrt{2}}(b^*\bra{H}\ket{V} + b^*\bra{V}\ket{V})\biggr) \Biggr] = \frac{1}{2}(a + b)(a^* + b^*)\\
+        &= \frac{1}{2}(|a|^2 + ab^* + a^*b + |b|^2)\\
         P_{\ket{A}} &= |\bra{A}\ket{\psi}|^2 = \Biggl[\biggl(\frac{1}{\sqrt{2}}(a\bra{H}\ket{H} - a\bra{V}\ket{H})\biggr)\\ 
-        &+ \biggl(\frac{1}{\sqrt{2}}(b\bra{H}\ket{V} - b\bra{V}\ket{V})\biggr)\Biggr]\Biggl[ \biggl(\frac{1}{\sqrt{2}}(\bar{a}\bra{H}\ket{H} - \bar{a}\bra{V}\ket{H})\biggr)\\
-        &+ \biggl(\frac{1}{\sqrt{2}}(\bar{b}\bra{H}\ket{V} - \bar{b}\bra{V}\ket{V})\biggr) \Biggr] = \frac{1}{2}(a - b)(\bar{a} - \bar{b})\\
-        &= \frac{1}{2}(|a|^2 - a\bar{b} - \bar{a}b + |b|^2)\\
-        S_2 &= P_{\ket{D}} - P_{\ket{A}} = a\bar{b} + \bar{a}b = 2\mathcal{R}(a\bar{b})
+        &+ \biggl(\frac{1}{\sqrt{2}}(b\bra{H}\ket{V} - b\bra{V}\ket{V})\biggr)\Biggr]\Biggl[ \biggl(\frac{1}{\sqrt{2}}(a^*\bra{H}\ket{H} - a^*\bra{V}\ket{H})\biggr)\\
+        &+ \biggl(\frac{1}{\sqrt{2}}(b^*\bra{H}\ket{V} - b^*\bra{V}\ket{V})\biggr) \Biggr] = \frac{1}{2}(a - b)(a^* - b^*)\\
+        &= \frac{1}{2}(|a|^2 - ab^* - a^*b + |b|^2)\\
+        S_2 &= P_{\ket{D}} - P_{\ket{A}} = ab^* + a^*b = 2\mathcal{R}(ab^*)
     \end{align} 
 
     \noindent On répète la même technique pour $S_3$:
 
     \begin{align}
         P_{\ket{R}} &= |\bra{R}\ket{\psi}|^2 = \Biggl[\biggl(\frac{1}{\sqrt{2}}(a\bra{H}\ket{H} + ia\bra{V}\ket{H})\biggr)\\ 
-        &+ \biggl(\frac{1}{\sqrt{2}}(b\bra{H}\ket{V} + ib\bra{V}\ket{V})\biggr)\Biggr]\Biggl[ \biggl(\frac{1}{\sqrt{2}}(\bar{a}\bra{H}\ket{H} + i\bar{a}\bra{V}\ket{H})\biggr)\\
-        &+ \biggl(\frac{1}{\sqrt{2}}(\bar{b}\bra{H}\ket{V} + i\bar{b}\bra{V}\ket{V})\biggr) \Biggr] = \frac{1}{2}(a + ib)(\bar{a} + i\bar{b})\\
-        &= \frac{1}{2}(|a|^2 + ia\bar{b} + i\bar{a}b - |b|^2)\\
+        &+ \biggl(\frac{1}{\sqrt{2}}(b\bra{H}\ket{V} + ib\bra{V}\ket{V})\biggr)\Biggr]\Biggl[ \biggl(\frac{1}{\sqrt{2}}(a^*\bra{H}\ket{H} + ia^*\bra{V}\ket{H})\biggr)\\
+        &+ \biggl(\frac{1}{\sqrt{2}}(b^*\bra{H}\ket{V} + ib^*\bra{V}\ket{V})\biggr) \Biggr] = \frac{1}{2}(a + ib)(a^* + ib^*)\\
+        &= \frac{1}{2}(|a|^2 + iab^* + ia^*b - |b|^2)\\
         P_{\ket{L}} &= |\bra{L}\ket{\psi}|^2 = \Biggl[\biggl(\frac{1}{\sqrt{2}}(a\bra{H}\ket{H} - ia\bra{V}\ket{H})\biggr)\\ 
-        &+ \biggl(\frac{1}{\sqrt{2}}(b\bra{H}\ket{V} - ib\bra{V}\ket{V})\biggr)\Biggr]\Biggl[ \biggl(\frac{1}{\sqrt{2}}(\bar{a}\bra{H}\ket{H} - i\bar{a}\bra{V}\ket{H})\biggr)\\
-        &+ \biggl(\frac{1}{\sqrt{2}}(\bar{b}\bra{H}\ket{V} - i\bar{b}\bra{V}\ket{V})\biggr) \Biggr] = \frac{1}{2}(a - ib)(\bar{a} - i\bar{b})\\
-        &= \frac{1}{2}(|a|^2 - ia\bar{b} - i\bar{a}b - |b|^2)\\
-        S_3 &= P_{\ket{R}} - P_{\ket{L}} = i(a\bar{b} + \bar{a}b) = 2\mathcal{I}(a\bar{b})
+        &+ \biggl(\frac{1}{\sqrt{2}}(b\bra{H}\ket{V} - ib\bra{V}\ket{V})\biggr)\Biggr]\Biggl[ \biggl(\frac{1}{\sqrt{2}}(a^*\bra{H}\ket{H} - ia^*\bra{V}\ket{H})\biggr)\\
+        &+ \biggl(\frac{1}{\sqrt{2}}(b^*\bra{H}\ket{V} - ib^*\bra{V}\ket{V})\biggr) \Biggr] = \frac{1}{2}(a - ib)(a^* - ib^*)\\
+        &= \frac{1}{2}(|a|^2 - iab^* - ia^*b - |b|^2)\\
+        S_3 &= P_{\ket{R}} - P_{\ket{L}} = i(ab^* + a^*b) = 2\mathcal{I}(ab^*)
     \end{align}
 
     \noindent Ensuite écrivons nous résultats dans notre matrice densité.
@@ -138,12 +138,12 @@
             S_2 + S_3 & S_0 - S_1
         \end{pmatrix}\\
         &= \begin{pmatrix}
-            |a|^2 & \mathcal{R}(a\bar{b}) - i\mathcal{I}(a\bar{b})\\
-            \mathcal{R}(\bar{a}b) - i\mathcal{I}(\bar{a}b) & |b|^2
+            |a|^2 & \mathcal{R}(ab^*) - i\mathcal{I}(ab^*)\\
+            \mathcal{R}(a^*b) - i\mathcal{I}(a^*b) & |b|^2
         \end{pmatrix}\\
         &= \begin{pmatrix}
-            |a|^2 & a\bar{b}\\
-            \bar{a}b & |b|^2
+            |a|^2 & ab^*\\
+            a^*b & |b|^2
         \end{pmatrix}
     \end{align}
 
@@ -154,7 +154,7 @@
     \end{equation}
 
 
-    \noindent Nous avons $N$ états, chacun étant associé à une probabilité $p_i$. Pour chaque état $\hat{\psi}_i$, nous avons $\sum_{i}^{N} p_i = 1 $. Dans ce contexte, $Tr(\hat{\rho}_{mixte}) < 1 $. Cela signifie que la pureté d’une matrice densitée peut être mesurée par sa trace. Un état pur possède une cohérence parfaite, tandis qu’un état mixte résulte d’un mélange statistique d’états. Il est possible de mesurer la pureté d’un état en examinant les paramètres de Stokes de cet état. La somme de ces paramètres, $\sum_{i}^{3} S_i$, doit être égale à 1 pour un état pur et inférieure à 1 pour un état mixte. Dans le domaine de la photonique quantique, il est possible de visualiser l’état de polarisation sur la sphère de Poincaré, une représentation tridimensionnelle où chaque axe correspond à un paramètre de Stokes, excluant ainsi $S_0$. Chaque point sur cette surface représente un état distinct de polarisation. 
+    \noindent Nous avons $N$ états, chacun étant associé à une probabilité $p_i$. Pour chaque état $\ket{\psi}_i$, nous avons $\sum_{i}^{N} p_i = 1 $. Dans ce contexte, $Tr(\hat{\rho}_{mixte}) < 1 $. Cela signifie que la pureté d’une matrice densitée peut être mesurée par sa trace. Un état pur possède une cohérence parfaite, tandis qu’un état mixte résulte d’un mélange statistique d’états. Il est possible de mesurer la pureté d’un état en examinant les paramètres de Stokes de cet état. La somme de ces paramètres, $\sum_{i}^{3} S_i$, doit être égale à 1 pour un état pur et inférieure à 1 pour un état mixte. Dans le domaine de la photonique quantique, il est possible de visualiser l’état de polarisation sur la sphère de Poincaré, une représentation tridimensionnelle où chaque axe correspond à un paramètre de Stokes, excluant ainsi $S_0$. Chaque point sur cette surface représente un état distinct de polarisation. 
 
     \begin{figure}[!h!t!p!b!]
         \centering
@@ -210,6 +210,6 @@
 
 \begin{doublespace}
     
-    Les recherches sur les mesures faibles ont démontré leur potentiel dans divers domaines, notamment en ce qui concerne la théorie des mesures quantiques, l’électrodynamique quantique et la télécommunication optique, entre autres \cite{Lundeen_Resch,QED,OpticalNetworks,Lundeen_thesis}. Elles peuvent même se révéler plus efficaces que les méthodes traditionnelles \cite{WeakorStd,Magaña-Loaiza_2017,Jeff_outperform}. Cette thèse se concentre sur la caractérisation d’un état de polarisation dans un système photonique quantique en s’appuyant sur les travaux de Jeff Lundeen et de ses collaborateurs \cite{Lundeen_Direct_Measurement,Lundeen_Bamber,Hairiri,Guilleaum}. Ils ont démontré la faisabilité de cette approche en utilisant des mesures faibles et en exploitant le domaine spatial et la quantité de mouvement des photons comme pointeur pour caractériser un système quantique complètement et directement. Toutefois, ces méthodes présentent de graves limites pour les applications et l’intégration dans des technologies quantiques exigeant des mesures en temps réel. Elles exigent généralement l’utilisation de cristaux BBO (bêta-borate de baryum) de taille spécifique pour régler l’interaction faible \cite{Hairiri,Guilleaum,Guilleaum_thesis}. Cette exigence rend leur flexibilité difficile pour s’adapter à divers systèmes. Grâce aux différents degrés de liberté des photons, nous proposons d’utiliser le domaine temporel comme pointeur pour la caractérisation de l’état quantique à l’aide de méthodes interférométriques. Ces dernières offrent en effet un contrôle direct du temps par le réglage de la disposition des miroirs, ce qui élimine le besoin de compter sur des cristaux particuliers. Cette flexibilité rend possible pour l’intégration de mesures faibles temporelle dans des technologies quantiques \cite{kaneda2018highefficiencysinglephotongenerationlargescale,Dai_2020}. Elles peuvent également être facilement implantées dans nos systèmes optiques existant, par exemple dans les télécommunications à fibre optique \cite{OpticalNetworks}. Cette thèse propose de surmonter les limites des mesures faibles en développant une approche temporelle utilisant un système photonique quantique pour caractériser un état quantique. Certains ont déjà travaillé sur des mesures temporelles, mais principalement sous l’angle d’un délai fréquentiel ou à des fins théoriques \cite{Salazar,OpticalNetworks,Steinberg_prob_div}. Notre objectif consiste à évaluer directement la composante réelle et imaginée de la valeur faible provenant d'un pointeur temporel, ce qui permet une description exhaustive de l’état de polarisation. Cette méthode utilise la polarisation comme base quantique, car elle est facile à contrôler et à mettre en pratique en laboratoire. Cette thèse vise à améliorer la méthode de caractérisation directe des états quantiques, contribuant ainsi à l’avancement des technologies quantiques et à l’exploration de nouvelles opportunités dans les domaines scientifique et industriel.
+    Les recherches sur les mesures faibles ont démontré leur potentiel dans divers domaines, notamment en ce qui concerne la théorie des mesures quantiques, l’électrodynamique quantique et la télécommunication optique, entre autres \cite{Lundeen_Resch,QED,OpticalNetworks,Lundeen_thesis,Brunner_2004}. Elles peuvent même se révéler plus efficaces que les méthodes traditionnelles \cite{WeakorStd,Magaña-Loaiza_2017,Jeff_outperform}. Cette thèse se concentre sur la caractérisation d’un état de polarisation dans un système photonique quantique en s’appuyant sur les travaux de Jeff Lundeen et de ses collaborateurs \cite{Lundeen_Direct_Measurement,Lundeen_Bamber,Hairiri,Guilleaum}. Ils ont démontré la faisabilité de cette approche en utilisant des mesures faibles et en exploitant le domaine spatial et la quantité de mouvement des photons comme pointeur pour caractériser un système quantique complètement et directement. Toutefois, ces méthodes présentent de graves limites pour les applications et l’intégration dans des technologies quantiques exigeant des mesures en temps réel. Elles exigent généralement l’utilisation de cristaux BBO (bêta-borate de baryum) de taille spécifique pour régler l’interaction faible \cite{Hairiri,Guilleaum,Guilleaum_thesis}. Cette exigence rend leur flexibilité difficile pour s’adapter à divers systèmes. Grâce aux différents degrés de liberté des photons, nous proposons d’utiliser le domaine temporel comme pointeur pour la caractérisation de l’état quantique à l’aide de méthodes interférométriques. Ces dernières offrent en effet un contrôle direct du temps par le réglage de la disposition des miroirs, ce qui élimine le besoin de compter sur des cristaux particuliers. Cette flexibilité rend possible pour l’intégration de mesures faibles temporelle dans des technologies quantiques \cite{kaneda2018highefficiencysinglephotongenerationlargescale,Dai_2020}. Elles peuvent également être facilement implantées dans nos systèmes optiques existant, par exemple dans les télécommunications à fibre optique \cite{OpticalNetworks}. Cette thèse propose de surmonter les limites des mesures faibles en développant une approche temporelle utilisant un système photonique quantique pour caractériser un état quantique. Certains ont déjà travaillé sur des mesures temporelles, mais principalement sous l’angle d’un délai fréquentiel ou à des fins théoriques \cite{Salazar,OpticalNetworks,Steinberg_prob_div}. Notre objectif consiste à évaluer directement la composante réelle et imaginée de la valeur faible provenant d'un pointeur temporel, ce qui permet une description exhaustive de l’état de polarisation. Cette méthode utilise la polarisation comme base quantique, car elle est facile à contrôler et à mettre en pratique en laboratoire. Cette thèse vise à améliorer la méthode de caractérisation directe des états quantiques, contribuant ainsi à l’avancement des technologies quantiques et à l’exploration de nouvelles opportunités dans les domaines scientifique et industriel.
 
 \end{doublespace}
