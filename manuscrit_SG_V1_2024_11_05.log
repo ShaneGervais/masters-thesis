@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.28)  1 MAR 2025 14:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.28)  2 MAR 2025 19:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -726,14 +726,7 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 LaTeX Warning: Unused global option(s):
     [superscriptaddress].
 
-(./manuscrit_SG_V1_2024_11_05.aux
-
-LaTeX Warning: Label `fig:HDAV_delay_results' multiply defined.
-
-
-LaTeX Warning: Label `fig:HDAV_delay_results' multiply defined.
-
-)
+(./manuscrit_SG_V1_2024_11_05.aux)
 \openout1 = `manuscrit_SG_V1_2024_11_05.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
@@ -1067,6 +1060,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[12]
 No file manuscrit_SG_V1_2024_11_05.nls.
 
 Overfull \hbox (0.95027pt too wide) in paragraph at lines 289--289
@@ -1076,7 +1077,7 @@ Overfull \hbox (0.95027pt too wide) in paragraph at lines 289--289
 (./section/section_1/section_1.1/section_1_0.tex
 
 pdfTeX warning: pdflatex (file ./figure/FIGURES.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figure/FIGURES.pdf, id=406, page=1, 963.6pt x 542.025pt>
+<./figure/FIGURES.pdf, id=438, page=1, 963.6pt x 542.025pt>
 File: ./figure/FIGURES.pdf Graphic file (type pdf)
 <use ./figure/FIGURES.pdf, page 1>
 Package pdftex.def Info: ./figure/FIGURES.pdf , page1 used on input line 8.
@@ -1146,7 +1147,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9]
-<./figure/poincare_sphere.png, id=520, 682.2288pt x 682.2288pt>
+<./figure/poincare_sphere.png, id=551, 682.2288pt x 682.2288pt>
 File: ./figure/poincare_sphere.png Graphic file (type png)
 <use ./figure/poincare_sphere.png>
 Package pdftex.def Info: ./figure/poincare_sphere.png  used on input line 161.
@@ -1162,7 +1163,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [10 <./figure/poincare_sphere.png>]
 
 pdfTeX warning: pdflatex (file ./figure/FIGURES.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figure/FIGURES.pdf, id=530, page=2, 963.6pt x 542.025pt>
+<./figure/FIGURES.pdf, id=561, page=2, 963.6pt x 542.025pt>
 File: ./figure/FIGURES.pdf Graphic file (type pdf)
 <use ./figure/FIGURES.pdf, page 2>
 Package pdftex.def Info: ./figure/FIGURES.pdf , page2 used on input line 179.
@@ -1177,7 +1178,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [11]
 
 pdfTeX warning: pdflatex (file ./figure/FIGURES.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figure/FIGURES.pdf, id=535, page=3, 963.6pt x 542.025pt>
+<./figure/FIGURES.pdf, id=567, page=3, 963.6pt x 542.025pt>
 File: ./figure/FIGURES.pdf Graphic file (type pdf)
 <use ./figure/FIGURES.pdf, page 3>
 Package pdftex.def Info: ./figure/FIGURES.pdf , page3 used on input line 188.
@@ -1334,7 +1335,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [31] (./section/section_3/section_3_1/section_3_intro.tex) (./section/section_3/section_3_1/section_3_1.tex [32]
-<./figure/speed_of_light_exp.png, id=796, 499.11469pt x 225.84375pt>
+<./figure/speed_of_light_exp.png, id=828, 499.11469pt x 225.84375pt>
 File: ./figure/speed_of_light_exp.png Graphic file (type png)
 <use ./figure/speed_of_light_exp.png>
 Package pdftex.def Info: ./figure/speed_of_light_exp.png  used on input line 7.
@@ -1364,13 +1365,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [35]
-<./figure/EQ _time_oscillo_fig.png, id=816, 856.19875pt x 441.14813pt>
+<./figure/EQ _time_oscillo_fig.png, id=847, 856.19875pt x 441.14813pt>
 File: ./figure/EQ _time_oscillo_fig.png Graphic file (type png)
 <use ./figure/EQ _time_oscillo_fig.png>
 Package pdftex.def Info: ./figure/EQ _time_oscillo_fig.png  used on input line 20.
 (pdftex.def)             Requested size: 429.3521pt x 221.21973pt.
 ) (./section/section_3/section_3_1/section3_1_2.tex
-<./figure/typ_pulse.png, id=819, 562.14015pt x 421.575pt>
+<./figure/typ_pulse.png, id=850, 562.14015pt x 421.575pt>
 File: ./figure/typ_pulse.png Graphic file (type png)
 <use ./figure/typ_pulse.png>
 Package pdftex.def Info: ./figure/typ_pulse.png  used on input line 7.
@@ -1392,7 +1393,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [37 <./figure/typ_pulse.png (PNG copy)>]
-<./figure/overlay_pulses_mirror.png, id=836, 867.24pt x 578.16pt>
+<./figure/overlay_pulses_mirror.png, id=868, 867.24pt x 578.16pt>
 File: ./figure/overlay_pulses_mirror.png Graphic file (type png)
 <use ./figure/overlay_pulses_mirror.png>
 Package pdftex.def Info: ./figure/overlay_pulses_mirror.png  used on input line 24.
@@ -1414,7 +1415,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [39 <./figure/overlay_pulses_mirror.png>]
-<./figure/speed_of_light_mirror.png, id=848, 722.7pt x 433.62pt>
+<./figure/speed_of_light_mirror.png, id=879, 722.7pt x 433.62pt>
 File: ./figure/speed_of_light_mirror.png Graphic file (type png)
 <use ./figure/speed_of_light_mirror.png>
 Package pdftex.def Info: ./figure/speed_of_light_mirror.png  used on input line 43.
@@ -1428,12 +1429,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [40 <./figure/speed_of_light_mirror.png>]
-<./figure/overlay_pulses_with_fits_BNC.png, id=855, 867.24pt x 578.16pt>
+<./figure/overlay_pulses_with_fits_BNC.png, id=886, 867.24pt x 578.16pt>
 File: ./figure/overlay_pulses_with_fits_BNC.png Graphic file (type png)
 <use ./figure/overlay_pulses_with_fits_BNC.png>
 Package pdftex.def Info: ./figure/overlay_pulses_with_fits_BNC.png  used on input line 54.
 (pdftex.def)             Requested size: 429.3521pt x 286.2386pt.
-<./figure/speed_of_light_BNC.png, id=857, 722.7pt x 433.62pt>
+<./figure/speed_of_light_BNC.png, id=888, 722.7pt x 433.62pt>
 File: ./figure/speed_of_light_BNC.png Graphic file (type png)
 <use ./figure/speed_of_light_BNC.png>
 Package pdftex.def Info: ./figure/speed_of_light_BNC.png  used on input line 65.
@@ -1458,7 +1459,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [42 <./figure/speed_of_light_BNC.png>]) (./section/section_3/section_3_2/section_3.2.1.tex
-<./figure/partiereelexp.png, id=876, 11490.93pt x 4974.585pt>
+<./figure/partiereelexp.png, id=907, 11490.93pt x 4974.585pt>
 File: ./figure/partiereelexp.png Graphic file (type png)
 <use ./figure/partiereelexp.png>
 Package pdftex.def Info: ./figure/partiereelexp.png  used on input line 7.
@@ -1480,7 +1481,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [44 <./figure/partiereelexp.png>]
-<./figure/poincare_sphere_HDVAH.png, id=889, 682.2288pt x 682.2288pt>
+<./figure/poincare_sphere_HDVAH.png, id=920, 682.2288pt x 682.2288pt>
 File: ./figure/poincare_sphere_HDVAH.png Graphic file (type png)
 <use ./figure/poincare_sphere_HDVAH.png>
 Package pdftex.def Info: ./figure/poincare_sphere_HDVAH.png  used on input line 70.
@@ -1502,7 +1503,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [46 <./figure/poincare_sphere_HDVAH.png>]
-<./figure/poincare_sphere_HRVLH.png, id=904, 570.933pt x 570.933pt>
+<./figure/poincare_sphere_HRVLH.png, id=935, 570.933pt x 570.933pt>
 File: ./figure/poincare_sphere_HRVLH.png Graphic file (type png)
 <use ./figure/poincare_sphere_HRVLH.png>
 Package pdftex.def Info: ./figure/poincare_sphere_HRVLH.png  used on input line 142.
@@ -1524,7 +1525,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [48 <./figure/poincare_sphere_HRVLH.png>]
-<./figure/poincare_sphere_DRALD.png, id=921, 570.933pt x 570.933pt>
+<./figure/poincare_sphere_DRALD.png, id=953, 570.933pt x 570.933pt>
 File: ./figure/poincare_sphere_DRALD.png Graphic file (type png)
 <use ./figure/poincare_sphere_DRALD.png>
 Package pdftex.def Info: ./figure/poincare_sphere_DRALD.png  used on input line 208.
@@ -1562,7 +1563,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [52]) (./section/section_3/section_3_3/section_3.3_intro.tex) (./section/section_3/section_3_3/section_3.3.1.tex
-<./figure/partieimagexp.png, id=958, 11490.93pt x 6889.74pt>
+<./figure/partieimagexp.png, id=989, 11490.93pt x 6889.74pt>
 File: ./figure/partieimagexp.png Graphic file (type png)
 <use ./figure/partieimagexp.png>
 Package pdftex.def Info: ./figure/partieimagexp.png  used on input line 6.
@@ -1591,18 +1592,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[55] (./section/section_4/section_4_1/section_4.tex) (./section/section_4/section_4_1/section_4.1.tex) (./section/section_4/section_4_1/section_4_1_1.tex [56]
-<./figure/real_weak_value_measurement_3.pdf, id=985, 867.24pt x 433.62pt>
-File: ./figure/real_weak_value_measurement_3.pdf Graphic file (type pdf)
-<use ./figure/real_weak_value_measurement_3.pdf>
-Package pdftex.def Info: ./figure/real_weak_value_measurement_3.pdf  used on input line 37.
-(pdftex.def)             Requested size: 429.3521pt x 214.67896pt.
-<./figure/real_weak_value_measurement_4.pdf, id=987, 867.24pt x 433.62pt>
-File: ./figure/real_weak_value_measurement_4.pdf Graphic file (type pdf)
-<use ./figure/real_weak_value_measurement_4.pdf>
-Package pdftex.def Info: ./figure/real_weak_value_measurement_4.pdf  used on input line 61.
-(pdftex.def)             Requested size: 429.3521pt x 214.67896pt.
-
+[55] (./section/section_4/section_4_1/section_4.tex) (./section/section_4/section_4_1/section_4.1.tex [56]) (./section/section_4/section_4_1/section_4_1_1.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1611,6 +1601,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [57]
+<./figure/real_weak_value_measurement_3.pdf, id=1021, 867.24pt x 433.62pt>
+File: ./figure/real_weak_value_measurement_3.pdf Graphic file (type pdf)
+<use ./figure/real_weak_value_measurement_3.pdf>
+Package pdftex.def Info: ./figure/real_weak_value_measurement_3.pdf  used on input line 7.
+(pdftex.def)             Requested size: 429.3521pt x 214.67896pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1618,11 +1614,40 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[58 <./figure/real_weak_value_measurement_3.pdf> <./figure/real_weak_value_measurement_4.pdf>]
-<./figure/real_weak_value_measurement_5_2.pdf, id=1068, 867.24pt x 433.62pt>
+[58 <./figure/real_weak_value_measurement_3.pdf>]
+<./figure/real_weak_value_measurement_4.pdf, id=1071, 867.24pt x 433.62pt>
+File: ./figure/real_weak_value_measurement_4.pdf Graphic file (type pdf)
+<use ./figure/real_weak_value_measurement_4.pdf>
+Package pdftex.def Info: ./figure/real_weak_value_measurement_4.pdf  used on input line 18.
+(pdftex.def)             Requested size: 429.3521pt x 214.67896pt.
+<./figure/real_weak_value_measurement_5_2.pdf, id=1073, 867.24pt x 433.62pt>
 File: ./figure/real_weak_value_measurement_5_2.pdf Graphic file (type pdf)
 <use ./figure/real_weak_value_measurement_5_2.pdf>
-Package pdftex.def Info: ./figure/real_weak_value_measurement_5_2.pdf  used on input line 81.
+Package pdftex.def Info: ./figure/real_weak_value_measurement_5_2.pdf  used on input line 29.
+(pdftex.def)             Requested size: 429.3521pt x 214.67896pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[59 <./figure/real_weak_value_measurement_4.pdf>]
+<./figure/real_prof_amp_measurement_3.pdf, id=1108, 867.24pt x 433.62pt>
+File: ./figure/real_prof_amp_measurement_3.pdf Graphic file (type pdf)
+<use ./figure/real_prof_amp_measurement_3.pdf>
+Package pdftex.def Info: ./figure/real_prof_amp_measurement_3.pdf  used on input line 40.
+(pdftex.def)             Requested size: 429.3521pt x 214.67896pt.
+<./figure/real_prof_amp_measurement_4.pdf, id=1110, 867.24pt x 433.62pt>
+File: ./figure/real_prof_amp_measurement_4.pdf Graphic file (type pdf)
+<use ./figure/real_prof_amp_measurement_4.pdf>
+Package pdftex.def Info: ./figure/real_prof_amp_measurement_4.pdf  used on input line 51.
+(pdftex.def)             Requested size: 429.3521pt x 214.67896pt.
+<./figure/real_prof_amp_measurement_5_2.pdf, id=1112, 867.24pt x 433.62pt>
+File: ./figure/real_prof_amp_measurement_5_2.pdf Graphic file (type pdf)
+<use ./figure/real_prof_amp_measurement_5_2.pdf>
+Package pdftex.def Info: ./figure/real_prof_amp_measurement_5_2.pdf  used on input line 62.
 (pdftex.def)             Requested size: 429.3521pt x 214.67896pt.
 ) (./section/section_4/section_4_1/section_4_1_2.tex
 
@@ -1632,7 +1657,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[59 <./figure/real_weak_value_measurement_5_2.pdf>]
+[60 <./figure/real_weak_value_measurement_5_2.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1640,7 +1665,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[60])
+[61 <./figure/real_prof_amp_measurement_3.pdf> <./figure/real_prof_amp_measurement_4.pdf>]) (./section/section_4/section_4_2/section_4.2.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1648,11 +1673,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[61] [62]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 379.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
+[62 <./figure/real_prof_amp_measurement_5_2.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1661,6 +1682,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [63]
+<./figure/power_spectrum_DRAL.png, id=1237, 722.7pt x 433.62pt>
+File: ./figure/power_spectrum_DRAL.png Graphic file (type png)
+<use ./figure/power_spectrum_DRAL.png>
+Package pdftex.def Info: ./figure/power_spectrum_DRAL.png  used on input line 30.
+(pdftex.def)             Requested size: 429.3521pt x 257.61342pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1676,7 +1703,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[65]
+[65 <./figure/power_spectrum_DRAL.png>])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1684,7 +1711,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[66]
+[66] [67]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 379.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1692,7 +1723,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[67] (./annexe/annexe_A.tex) [68] [69] (./manuscrit_SG_V1_2024_11_05.aux)
+[68]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[69]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[70]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[71]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[72] (./annexe/annexe_A.tex) [73] [74] (./manuscrit_SG_V1_2024_11_05.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1701,11 +1764,8 @@ L3 programming layer <2024-02-20>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `manuscrit_SG_V1_2024_11_05.out' has not changed.
-(rerunfilecheck)             Checksum: 6B91722EA7D33D9198A12C72FC5E8EC1;10821.
+(rerunfilecheck)             Checksum: 8DFD7A4087544AF37308E0963FB30162;10985.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                manuscrit_SG_V1_2024_11_05
@@ -1716,18 +1776,18 @@ Package logreq Info: Writing requests to 'manuscrit_SG_V1_2024_11_05.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27843 strings out of 474116
- 543664 string characters out of 5743682
- 1959187 words of memory out of 5000000
- 49522 multiletter control sequences out of 15000+600000
+ 27897 strings out of 474116
+ 545759 string characters out of 5743682
+ 1961187 words of memory out of 5000000
+ 49569 multiletter control sequences out of 15000+600000
  568990 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,14n,117p,3357b,3149s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on manuscrit_SG_V1_2024_11_05.pdf (80 pages, 12619913 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on manuscrit_SG_V1_2024_11_05.pdf (86 pages, 12707679 bytes).
 PDF statistics:
- 1405 PDF objects out of 1440 (max. 8388607)
- 1214 compressed objects within 13 object streams
- 312 named destinations out of 1000 (max. 500000)
- 432 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1532 PDF objects out of 1728 (max. 8388607)
+ 1313 compressed objects within 14 object streams
+ 315 named destinations out of 1000 (max. 500000)
+ 452 words of extra memory for PDF output out of 10000 (max. 10000000)
 
