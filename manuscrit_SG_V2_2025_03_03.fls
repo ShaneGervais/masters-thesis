@@ -343,22 +343,22 @@ INPUT ./figure/typ_pulse.png
 INPUT ./figure/typ_pulse.png
 INPUT ./figure/typ_pulse.png
 INPUT ./figure/typ_pulse.png
-INPUT ./figure/overlay_pulses_with_fits_BNC.png
-INPUT ./figure/overlay_pulses_with_fits_BNC.png
-INPUT ./figure/overlay_pulses_with_fits_BNC.png
-INPUT ./figure/overlay_pulses_with_fits_BNC.png
-INPUT ./figure/speed_of_light_BNC.png
-INPUT ./figure/speed_of_light_BNC.png
-INPUT ./figure/speed_of_light_BNC.png
-INPUT ./figure/speed_of_light_BNC.png
-INPUT ./figure/overlay_pulses_mirror.png
-INPUT ./figure/overlay_pulses_mirror.png
-INPUT ./figure/overlay_pulses_mirror.png
-INPUT ./figure/overlay_pulses_mirror.png
-INPUT ./figure/speed_of_light_mirror.png
-INPUT ./figure/speed_of_light_mirror.png
-INPUT ./figure/speed_of_light_mirror.png
-INPUT ./figure/speed_of_light_mirror.png
+INPUT ./figure/fits_BNC copy.png
+INPUT ./figure/fits_BNC copy.png
+INPUT ./figure/fits_BNC copy.png
+INPUT ./figure/fits_BNC copy.png
+INPUT ./figure/speed_BNC.png
+INPUT ./figure/speed_BNC.png
+INPUT ./figure/speed_BNC.png
+INPUT ./figure/speed_BNC.png
+INPUT ./figure/fits_light.png
+INPUT ./figure/fits_light.png
+INPUT ./figure/fits_light.png
+INPUT ./figure/fits_light.png
+INPUT ./figure/speed_light.png
+INPUT ./figure/speed_light.png
+INPUT ./figure/speed_light.png
+INPUT ./figure/speed_light.png
 INPUT ./section/section_3/section_3_2/section_3.2.tex
 INPUT ./section/section_3/section_3_2/section_3.2.tex
 INPUT section/section_3/section_3_2/section_3.2.tex

@@ -1831,5 +1831,207 @@
     \field{year}{2023}
     \warn{\item Invalid format of field 'month'}
   \endentry
+
+  \entry{quantuminfoweak}{article}{}
+    \name{author}{5}{}{%
+      {{hash=HJC}{%
+         family={Howell},
+         familyi={H\bibinitperiod},
+         given={John\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=SDJ}{%
+         family={Starling},
+         familyi={S\bibinitperiod},
+         given={David\bibnamedelima J.},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=DPB}{%
+         family={Dixon},
+         familyi={D\bibinitperiod},
+         given={P.\bibnamedelima Ben},
+         giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=VPK}{%
+         family={Vudyasetu},
+         familyi={V\bibinitperiod},
+         given={Praveen\bibnamedelima K.},
+         giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=JAN}{%
+         family={Jordan},
+         familyi={J\bibinitperiod},
+         given={Andrew\bibnamedelima N.},
+         giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{HJC+1}
+    \strng{fullhash}{HJCSDJDPBVPKJAN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevA.81.033813
+    \endverb
+    \field{issue}{3}
+    \field{pages}{033813}
+    \field{title}{Interferometric weak value deflections: Quantum and classical treatments}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevA.81.033813
+    \endverb
+    \field{volume}{81}
+    \field{journaltitle}{Phys. Rev. A}
+    \field{year}{2010}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{troupe2017quantumcryptographyweakmeasurements}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=TJE}{%
+         family={Troupe},
+         familyi={T\bibinitperiod},
+         given={James\bibnamedelima E.},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=FJM}{%
+         family={Farinholt},
+         familyi={F\bibinitperiod},
+         given={Jacob\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TJEFJM1}
+    \strng{fullhash}{TJEFJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{eprint}
+    \verb 1702.04836
+    \endverb
+    \field{title}{Quantum Cryptography with Weak Measurements}
+    \verb{url}
+    \verb https://arxiv.org/abs/1702.04836
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{quant-ph}
+    \field{year}{2017}
+  \endentry
+
+  \entry{intlundeen}{article}{}
+    \name{author}{5}{}{%
+      {{hash=HJH}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Jing-Hui},
+         giveni={J\bibinithyphendelim H\bibinitperiod},
+      }}%
+      {{hash=JKM}{%
+         family={Jordan},
+         familyi={J\bibinitperiod},
+         given={Kyle\bibnamedelima M.},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=DAC}{%
+         family={Dada},
+         familyi={D\bibinitperiod},
+         given={Adetunmise\bibnamedelima C.},
+         giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=HXY}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Xiang-Yun},
+         giveni={X\bibinithyphendelim Y\bibinitperiod},
+      }}%
+      {{hash=LJS}{%
+         family={Lundeen},
+         familyi={L\bibinitperiod},
+         given={Jeff.\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{HJH+1}
+    \strng{fullhash}{HJHJKMDACHXYLJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.134.080802
+    \endverb
+    \field{issue}{8}
+    \field{pages}{080802}
+    \field{title}{Enhancing Interferometry Using Weak Value Amplification with Real Weak Values}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.134.080802
+    \endverb
+    \field{volume}{134}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{year}{2025}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{imaginary_part}{article}{}
+    \name{author}{6}{}{%
+      {{hash=WR}{%
+         family={Wagner},
+         familyi={W\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KW}{%
+         family={Kersten},
+         familyi={K\bibinitperiod},
+         given={Wenzel},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Danner},
+         familyi={D\bibinitperiod},
+         given={Armin},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Lemmel},
+         familyi={L\bibinitperiod},
+         given={Hartmut},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=PAK}{%
+         family={Pan},
+         familyi={P\bibinitperiod},
+         given={Alok\bibnamedelima Kumar},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Sponar},
+         familyi={S\bibinitperiod},
+         given={Stephan},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{WR+1}
+    \strng{fullhash}{WRKWDALHPAKSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevResearch.3.023243
+    \endverb
+    \field{issue}{2}
+    \field{pages}{023243}
+    \field{title}{Direct experimental test of commutation relation via imaginary weak value}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevResearch.3.023243
+    \endverb
+    \field{volume}{3}
+    \field{journaltitle}{Phys. Rev. Res.}
+    \field{year}{2021}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
 \enddatalist
 \endinput

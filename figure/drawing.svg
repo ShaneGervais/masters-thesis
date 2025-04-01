@@ -869,21 +869,6 @@
            y="88.120399"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:125%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.264583">PBS</tspan></text>
     </g>
-    <g
-       id="g2-5"
-       transform="translate(217.61107,0.22955937)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
-         x="11.274933"
-         y="87.572212"
-         id="text4083-2-02"><tspan
-           sodipodi:role="line"
-           id="tspan4085-6-1"
-           x="11.274933"
-           y="87.572212"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:125%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.264583">Miroir ajustable</tspan></text>
-    </g>
     <path
        style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.189;stroke-dasharray:none;stroke-opacity:1"
        d="m 234.45413,90.543664 h 15.99005"
@@ -1048,21 +1033,6 @@
            x="17.114933"
            y="88.880638"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:125%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.264583">PBS</tspan></text>
-    </g>
-    <g
-       id="g2-5-1"
-       transform="translate(108.49112,46.336476)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
-         x="-1.6490661"
-         y="89.852921"
-         id="text4083-2-02-5"><tspan
-           sodipodi:role="line"
-           id="tspan4085-6-1-8"
-           x="-1.6490661"
-           y="89.852921"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:125%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.264583">Signaux de reférence</tspan></text>
     </g>
   </g>
 </svg>
