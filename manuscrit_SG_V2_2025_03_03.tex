@@ -15,7 +15,7 @@
  \usepackage{multirow}
  \usepackage{booktabs}
  \usepackage{titlesec}
- \usepackage{nomencl}
+ %\usepackage{nomencl}
  \usepackage{csvsimple}
  \usepackage{longtable}
  \usepackage{array}
@@ -33,7 +33,7 @@
 
 % \makenomenclature
 %\renewcommand{\nomname}{Liste des symboles}
-\renewcommand{\nomname}{}
+%\renewcommand{\nomname}{}
 
  \makeatletter
  \newcommand{\mathleft}{\@fleqntrue\@mathmargin0pt}
@@ -41,7 +41,8 @@
  \makeatother
 
  %\input{extra/nomenclature.tex}
- 
+ %\newcommand{\nomenclchapter}[1]{\addcontentsline{toc}{section}{Chapitre #1}\markboth{Chapitre #1}{}}
+
  
  \usepackage{gensymb}
  \usepackage{titlesec}
@@ -57,11 +58,12 @@
  
  
  \usepackage{xcolor}
- 
+
  
  \newcommand\tab[1][0.83cm]{\hspace*{#1}}
  
- 
+
+
  \usepackage[style=numeric, backend=bibtex, sorting=none]{biblatex}
  \addbibresource{./reference_these.bib}
  
@@ -133,6 +135,8 @@
  
  %%%%%%%%%%%%Le document commence ici%%%%%%%%%%%%%%%%%%%%-----------------------------------------------------------------------------
  \usepackage{titlesec}
+
+ %\makenomenclature
 
 \begin{document}
     \pagenumbering{roman}
@@ -265,12 +269,73 @@
 
 
     \pagebreak
-
+    %\printnomenclature
 
     \section*{Liste des symboles}
-    \makenomenclature
-    \addcontentsline{toc}{section}{\protect\numberline{}Liste des symboles}%
-    \printnomenclature
+    \addcontentsline{toc}{section}{Liste des symboles}
+
+    \begin{longtable}{@{}lll@{}}
+      \textbf{Symbole} & \textbf{Description} & \textbf{Chapitre} \\
+      \midrule
+      $\ket{H}$ & Polarisation horizontale $\begin{pmatrix} 1 \\ 0 \end{pmatrix}$ & 2 \\
+      $\ket{V}$ & Polarisation verticale $\begin{pmatrix} 0 \\ 1 \end{pmatrix}$ & 2 \\
+      $\ket{D}$ & Polarisation diagonale $\frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 0 \end{pmatrix}$ & 2 \\
+      $\ket{A}$ & Polarisation anti-diagonale $\frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ -1 \end{pmatrix}$ & 2 \\
+      $\ket{R}$ & Polarisation circulaire droite $\frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ i \end{pmatrix}$ & 2 \\
+      $\ket{L}$ & Polarisation circulaire gauche $\frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ -i \end{pmatrix}$ & 2 \\
+      $\rho$ & Matrice densité d'un système & 2 \\
+      $\psi$ & Fonction d'onde d'un état quantique & 2 \\
+      $S_{0,1,2,3}$ & Paramètres de Stokes & 2 \\
+      $\sigma_{x,y,z}$ & Matrices de Pauli & 2 \\
+      $\hat{S}$ & Opérateur arbitraire du système & 2 \\
+      $\ket{\psi_i}$ & État initial arbitraire & 2 \\
+      $\ket{\psi_f}$ & État final arbitraire & 2 \\
+      $\expval{\hat{S}_W}$ & Valeur faible du système & 2 \\
+      $\hat{p}$ & Observable du système & 2 \\
+      $\hat{q}$ & Observable conjuguée de celle du système & 2 \\
+      $\sigma$ & Écart-type de la distribution du pointeur & 2 \\
+      $i$ & Nombre imaginaire $\sqrt{-1}$ & 2 \\
+      $S$ & Base du système & 2 \\
+      $P$ & Base du pointeur & 2 \\
+      $g$ & Force de couplage entre le système et le pointeur & 2 \\
+      $\ket{\bar{p}}$ & Position moyenne de l'observable du pointeur & 2 \\
+      $\ket{s}$ & Valeur ou vecteur propre du système & 2 \\
+      $\hbar$ & Constante de Planck & 2 \\
+      $\hat{U}$ & Opérateur d'interaction de von Neumann & 2 \\
+      $\mathcal{O}$ & Ordre analytique d'une série & 2 \\
+      $\ket{\varphi}$ & État de projection & 2 \\
+      $\ket{\Psi}$ & État total incluant le système et le pointeur & 2 \\
+      $\expval{\hat{\pi}_W}$ & Valeur faible de polarisation & 2 \\
+      $a$ & Amplitude de probabilité pour l'état horizontal & 2 \\
+      $b$ & Amplitude de probabilité pour l'état vertical & 2 \\
+      $\ket{\xi}$ & Distribution du pointeur & 2 \\
+      $\ket{t}$ & Domaine temporel du pointeur & 2 \\
+      $\ket{\xi(t)}$ & Fonction temporelle du pointeur & 2 \\
+      $\hat{U}^H$ & Interaction de von Neumann appliquée à $H$ & 2 \\
+      $\mathcal{H}$ & Hamiltonien du système & 2 \\
+      $\hat{\pi}$ & Observable de polarisation & 2 \\
+      $\hat{E}$ & Opérateur d’énergie & 2 \\
+      $t$ & Temps & 2 \\
+      $\tau$ & Délai temporel & 2 \\
+      $\ket{\varsigma}$ & État de projection de polarisation & 2 \\
+      $\mu$ & Amplitude de probabilité de l’état horizontal projeté & 2 \\
+      $\nu$ & Amplitude de probabilité de l’état vertical projeté & 2 \\
+      $\expval{\hat{t}}$ & Position temporelle moyenne & 2 \\
+      $\expval{\hat{\omega}}$ & Position fréquentielle moyenne & 2 \\
+      $A$ & $\mu^* a$ & 2 \\
+      $B$ & $\nu^* b$ & 2 \\
+      $F(\omega)$ & Fonction du domaine fréquentiel du pointeur & 2 \\
+      $c$ & Vitesse de la lumière & 3 \\
+      $a_0, b_0, c_0$ & Paramètres d’ajustement & 3 \\
+      $\hat{T}$ & Opérateur d’une plaque d’onde & 3 \\
+      $\theta$ & Orientation d’une composante & 3 \\
+      $\phi$ & Orientation d’une composante & 3 \\
+    \end{longtable}
+
+
+    %\addcontentsline{toc}{section}{\protect\numberline{}Liste des symboles}%
+    %\input{extra/nomenclature.tex}
+
 
     %\addcontentsline{toc}{section}{\protect\numberline{}Liste des symboles}%
 
