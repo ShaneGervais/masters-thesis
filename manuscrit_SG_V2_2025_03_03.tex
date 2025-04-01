@@ -87,7 +87,7 @@
  \renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}} 
  
  
- %\renewcommand\thetable{\arabic{table}} Si on veut aussi une numérotation arabe pour les tableaux.
+ %\renewcommand\thetable{\arabic{table}} %Si on veut aussi une numérotation arabe pour les tableaux.
  
  
  %%Cette partie corrige un problème causé par les définitions ici-haut, qui faisait qu'au lieu de citer par exemple la section 2.1, latex donnait 2 2.1 (ce qui ferait du sens avec le sections romaine de PRA, i.e. II A). Voir : https://tex.stackexchange.com/questions/104486/section-reference-shows-section-then-subsection-number
@@ -244,13 +244,13 @@
     \tableofcontents
 
 
-    %\newpage
+    \newpage
 
 
-    %\listoftables
+    \listoftables
 
 
-    %\addcontentsline{toc}{section}{\protect\numberline{}Liste des tableaux}%
+    \addcontentsline{toc}{section}{\protect\numberline{}Liste des tableaux}%
 
 
     \pagebreak
@@ -385,19 +385,20 @@
 
     \thispagestyle{empty}
 
-    %\pagebreak
+    \pagebreak
 
-    %\appendix
-    %\section*{ANNEXE A}
-    %\addcontentsline{toc}{section}{\protect\numberline{} ANNEXE A}
-    %\input{annexe/annexe_A.tex}
+    \appendix
+    \section*{ANNEXE A}
+    \addcontentsline{toc}{section}{\protect\numberline{} ANNEXE A}
+    \input{annexe/annexe_A.tex}
 
-    %\pagebreak
-    %\thispagestyle{empty}
-    %\section*{ANNEXE B}
-    %\addcontentsline{toc}{section}{\protect\numberline{} ANNEXE B}
-    
-    %\pagebreak
-    %\thispagestyle{empty}
+    \pagebreak
+    \thispagestyle{empty}
+    \section*{ANNEXE B}
+    \addcontentsline{toc}{section}{\protect\numberline{} ANNEXE B}
+    \input{annexe/annexe_B.tex}
+
+    \pagebreak
+    \thispagestyle{empty}
 
 \end{document}

@@ -609,6 +609,45 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{vonNeumann}{book}{}
+    \name{author}{2}{}{%
+      {{hash=vNJ}{%
+         prefix={von},
+         prefixi={v\bibinitperiod},
+         family={Neumann},
+         familyi={N\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BRT}{%
+         family={Beyer},
+         familyi={B\bibinitperiod},
+         given={Robert\bibnamedelima T.},
+         giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Princeton University Press}%
+    }
+    \strng{namehash}{NJvBRT1}
+    \strng{fullhash}{NJvBRT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    {Quantum mechanics was still in its infancy in 1932 when the young John von Neumann, who would go on to become one of the greatest mathematicians of the twentieth century, published Mathematical Foundations of Quantum Mechanics—a revolutionary book that for the first time provided a rigorous mathematical framework for the new science. Robert Beyer's 1955 English translation, which von Neumann reviewed and approved, is cited more frequently today than ever before. But its many treasures and insights were too often obscured by the limitations of the way the text and equations were set on the page. This new edition of this classic work has been completely reset in TeX, making the text and equations far easier to read. The book has also seen the correction of a handful of typographic errors, revision of some sentences for clarity and readability, provision of an index for the first time, and prefatory remarks drawn from the writings of Léon Van Hove and Freeman Dyson have been added. The result brings new life to an essential work in theoretical physics and mathematics.}%
+    }
+    \verb{doi}
+    \verb 10.23943/princeton/9780691178561.001.0001
+    \endverb
+    \field{isbn}{9780691178561}
+    \field{title}{{Mathematical Foundations of Quantum Mechanics: New Edition}}
+    \verb{url}
+    \verb https://doi.org/10.23943/princeton/9780691178561.001.0001
+    \endverb
+    \field{month}{02}
+    \field{year}{2018}
+  \endentry
+
   \entry{Aharonov}{article}{}
     \name{author}{3}{}{%
       {{hash=AY}{%
@@ -650,45 +689,6 @@
     \field{journaltitle}{Phys. Rev. Lett.}
     \field{year}{1988}
     \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{vonNeumann}{book}{}
-    \name{author}{2}{}{%
-      {{hash=vNJ}{%
-         prefix={von},
-         prefixi={v\bibinitperiod},
-         family={Neumann},
-         familyi={N\bibinitperiod},
-         given={John},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=BRT}{%
-         family={Beyer},
-         familyi={B\bibinitperiod},
-         given={Robert\bibnamedelima T.},
-         giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Princeton University Press}%
-    }
-    \strng{namehash}{NJvBRT1}
-    \strng{fullhash}{NJvBRT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    {Quantum mechanics was still in its infancy in 1932 when the young John von Neumann, who would go on to become one of the greatest mathematicians of the twentieth century, published Mathematical Foundations of Quantum Mechanics—a revolutionary book that for the first time provided a rigorous mathematical framework for the new science. Robert Beyer's 1955 English translation, which von Neumann reviewed and approved, is cited more frequently today than ever before. But its many treasures and insights were too often obscured by the limitations of the way the text and equations were set on the page. This new edition of this classic work has been completely reset in TeX, making the text and equations far easier to read. The book has also seen the correction of a handful of typographic errors, revision of some sentences for clarity and readability, provision of an index for the first time, and prefatory remarks drawn from the writings of Léon Van Hove and Freeman Dyson have been added. The result brings new life to an essential work in theoretical physics and mathematics.}%
-    }
-    \verb{doi}
-    \verb 10.23943/princeton/9780691178561.001.0001
-    \endverb
-    \field{isbn}{9780691178561}
-    \field{title}{{Mathematical Foundations of Quantum Mechanics: New Edition}}
-    \verb{url}
-    \verb https://doi.org/10.23943/princeton/9780691178561.001.0001
-    \endverb
-    \field{month}{02}
-    \field{year}{2018}
   \endentry
 
   \entry{Lundeen_Resch}{article}{}
@@ -1695,18 +1695,20 @@
 
   \entry{ThorlabsBNC}{misc}{}
     \name{author}{1}{}{%
-      {{hash=T}{%
-         family={Thorlabs},
-         familyi={T\bibinitperiod},
+      {{hash=PM}{%
+         family={PRO},
+         familyi={P\bibinitperiod},
+         given={MULTICOMP},
+         giveni={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{T2}
-    \strng{fullhash}{T2}
+    \strng{namehash}{PM1}
+    \strng{fullhash}{PM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{howpublished}{\url{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=2887}}
-    \field{note}{Consulté le 25 février 2025}
-    \field{title}{RG-58 BNC Coaxial Cable, BNC Male to BNC Male}
+    \field{howpublished}{\url{https://canada.newark.com/multicomp-pro/24-15626/rf-coax-bnc-straight-plug-10ft/dp/83X8079}}
+    \field{note}{Consulté le 28 mars 2025}
+    \field{title}{RF / Coaxial Cable Assembly, BNC Straight Plug, BNC Straight Plug, RG58, 50 ohm}
   \endentry
 
   \entry{arrl2019}{book}{}
