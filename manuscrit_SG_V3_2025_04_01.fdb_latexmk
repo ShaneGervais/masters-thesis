@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex manuscrit_SG_V3_2025_04_01"] 1748276841.30363 "manuscrit_SG_V3_2025_04_01.aux" "manuscrit_SG_V3_2025_04_01.bbl" "manuscrit_SG_V3_2025_04_01" 1748281072.86799 0
-  "./manuscrit_SG_V3_2025_04_01-blx.bib" 1748281072.52332 343 3a07cef98ad14713f755034bc844b0fc ""
+["bibtex manuscrit_SG_V3_2025_04_01"] 1748281792.04857 "manuscrit_SG_V3_2025_04_01.aux" "manuscrit_SG_V3_2025_04_01.bbl" "manuscrit_SG_V3_2025_04_01" 1748281798.83243 0
+  "./manuscrit_SG_V3_2025_04_01-blx.bib" 1748281798.48474 343 3a07cef98ad14713f755034bc844b0fc ""
   "./reference_these.bib" 1748137818.44051 33502 9ee6508a6dfba2864121d0de1fa916b7 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1678141846 65484 b7949c47a88ed6dca66ebc7a04577312 ""
-  "manuscrit_SG_V3_2025_04_01.aux" 1748281072.51304 49581 f4d0be67af669698b871b210cd8e61e3 "pdflatex"
+  "manuscrit_SG_V3_2025_04_01.aux" 1748281798.47438 49582 5e8edadf63aee12e711f6096365c999a "pdflatex"
   (generated)
   "manuscrit_SG_V3_2025_04_01.bbl"
   "manuscrit_SG_V3_2025_04_01.blg"
   (rewritten before read)
-["pdflatex"] 1748281066.29662 "/Users/shanegervais/Documents/These/manuscrit_SG_V3_2025_04_01.tex" "manuscrit_SG_V3_2025_04_01.pdf" "manuscrit_SG_V3_2025_04_01" 1748281072.86817 0
+["pdflatex"] 1748281792.14944 "/Users/shanegervais/Documents/These/manuscrit_SG_V3_2025_04_01.tex" "manuscrit_SG_V3_2025_04_01.pdf" "manuscrit_SG_V3_2025_04_01" 1748281798.83262 0
   "/Users/shanegervais/Documents/These/manuscrit_SG_V3_2025_04_01.tex" 1743515592.04918 15968 9bb39d6828070e4f006462dd9b314338 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -199,16 +199,16 @@
   "figure/typ_pulse.png" 1733426867.91824 234554 04711d3430fc91a18607b43202365fd7 ""
   "figure/visibility_2.png" 1746223651.16767 308779 7c32d26e6a9f77a774a180f0675cc2ea ""
   "figure/zoom_doppler_res_scatter.png" 1743440515.61706 37682 c62b6413dd2f59ed9a6017f7bb8ef063 ""
-  "manuscrit_SG_V3_2025_04_01.aux" 1748281072.51304 49581 f4d0be67af669698b871b210cd8e61e3 "pdflatex"
-  "manuscrit_SG_V3_2025_04_01.bbl" 1748276841.39604 65173 004d802b5d95c222b1b227a2aa93dbf3 "bibtex manuscrit_SG_V3_2025_04_01"
-  "manuscrit_SG_V3_2025_04_01.lof" 1748281072.52398 11626 13a7cbbb1a99dd14821b835f9f91343b "pdflatex"
-  "manuscrit_SG_V3_2025_04_01.lot" 1748281072.52395 728 9b34c15b8f9f87184ae02a2dcbef20a4 "pdflatex"
-  "manuscrit_SG_V3_2025_04_01.out" 1748281072.52238 9898 2f685f11a6140cecbc6626d03d8c6b77 "pdflatex"
-  "manuscrit_SG_V3_2025_04_01.run.xml" 1748281072.52382 2726 4869d043f1eef97e840e6eaa914d551c "pdflatex"
+  "manuscrit_SG_V3_2025_04_01.aux" 1748281798.47438 49582 5e8edadf63aee12e711f6096365c999a "pdflatex"
+  "manuscrit_SG_V3_2025_04_01.bbl" 1748281792.14646 65173 004d802b5d95c222b1b227a2aa93dbf3 "bibtex manuscrit_SG_V3_2025_04_01"
+  "manuscrit_SG_V3_2025_04_01.lof" 1748281798.48543 11626 13a7cbbb1a99dd14821b835f9f91343b "pdflatex"
+  "manuscrit_SG_V3_2025_04_01.lot" 1748281798.48541 728 9b34c15b8f9f87184ae02a2dcbef20a4 "pdflatex"
+  "manuscrit_SG_V3_2025_04_01.out" 1748281798.48377 9903 8acd0ec00cc74ebbe41191ae6eb9fb54 "pdflatex"
+  "manuscrit_SG_V3_2025_04_01.run.xml" 1748281798.48528 2726 4869d043f1eef97e840e6eaa914d551c "pdflatex"
   "manuscrit_SG_V3_2025_04_01.tex" 1743515592.04918 15968 9bb39d6828070e4f006462dd9b314338 ""
-  "manuscrit_SG_V3_2025_04_01.toc" 1748281072.52387 4155 a0a52fd901c69c665763239ebf6314e9 "pdflatex"
+  "manuscrit_SG_V3_2025_04_01.toc" 1748281798.48533 4156 cf7dc418cef61248ad060c9ce831e9f0 "pdflatex"
   "section/section_1/section_1.1/section_1_0_V2.tex" 1747808111.10544 11494 8e564c1fe2e0e6f34e070a1816edbc92 ""
-  "section/section_2/section_2.1/section_2.0_V2.tex" 1748281066.00317 44158 5f11568b3bb355f4780d02f97ee54805 ""
+  "section/section_2/section_2.1/section_2.0_V2.tex" 1748281785.10195 44159 a7e5b7a89190f8c601954f72d272c99f ""
   "section/section_3/section_3_1/section3_1_2.tex" 1743505605.1316 21487 8fa6537f04c1d31f250e9c3cb25890fb ""
   "section/section_3/section_3_1/section_3_1.tex" 1743493971.36144 3841 e50496d0e68a08cb517f3938d81c6c5a ""
   "section/section_3/section_3_1/section_3_1_1.tex" 1743493971.36176 7650 1b8e1074c9f758455d7cbc2812989b04 ""
