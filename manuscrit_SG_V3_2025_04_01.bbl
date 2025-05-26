@@ -1553,6 +1553,43 @@
     \field{year}{2012}
   \endentry
 
+  \entry{TomoReview}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LAI}{%
+         family={Lvovsky},
+         familyi={L\bibinitperiod},
+         given={A.\bibnamedelima I.},
+         giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=RMG}{%
+         family={Raymer},
+         familyi={R\bibinitperiod},
+         given={M.\bibnamedelima G.},
+         giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{LAIRMG1}
+    \strng{fullhash}{LAIRMG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/RevModPhys.81.299
+    \endverb
+    \field{issue}{1}
+    \field{pages}{299\bibrangedash 332}
+    \field{title}{Continuous-variable optical quantum-state tomography}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/RevModPhys.81.299
+    \endverb
+    \field{volume}{81}
+    \field{journaltitle}{Rev. Mod. Phys.}
+    \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Peephole}{inproceedings}{}
     \name{author}{1}{}{%
       {{hash=GY}{%
@@ -1624,6 +1661,26 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Peebles}{book}{}
+    \name{author}{1}{}{%
+      {{hash=PPPJE}{%
+         family={Peebles},
+         familyi={P\bibinitperiod},
+         given={P.J.E. (Phillip James\bibnamedelima Edwin)},
+         giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Princeton University Press}%
+    }
+    \strng{namehash}{PPPJE1}
+    \strng{fullhash}{PPPJE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Quantum Mechanics}
+    \field{year}{1992}
+  \endentry
+
   \entry{Griffiths}{book}{}
     \name{author}{2}{}{%
       {{hash=GDJ}{%
@@ -1649,26 +1706,6 @@
     \field{edition}{3}
     \field{title}{Introduction to Quantum Mechanics}
     \field{year}{2018}
-  \endentry
-
-  \entry{Peebles}{book}{}
-    \name{author}{1}{}{%
-      {{hash=PPPJE}{%
-         family={Peebles},
-         familyi={P\bibinitperiod},
-         given={P.J.E. (Phillip James\bibnamedelima Edwin)},
-         giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Princeton University Press}%
-    }
-    \strng{namehash}{PPPJE1}
-    \strng{fullhash}{PPPJE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Quantum Mechanics}
-    \field{year}{1992}
   \endentry
 
   \entry{ThorlabsNPL64B}{misc}{}
