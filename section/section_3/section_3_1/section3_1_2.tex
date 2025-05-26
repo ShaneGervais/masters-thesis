@@ -138,12 +138,11 @@
     gauss1    & 3000         & 22.62690         & 0.00346       & 0.22570
 \end{longtable}
 
-
 \begin{doublespace}
     
     \noindent En plus de la vérification de l'ajustement présentant le moins d'écart entre les fichiers pour chaque longueur de câble possible, le tableau suivant, table \ref{table:speed-BNC-table}, présente les différents types d'ajustement, en testant également la précision de la vitesse des mesures du signal en fonction des ajustements trouvés pour le temps d'arrivée. La vitesse est déterminée en effectuant un ajustement linéaire sur les valeurs moyennes du temps d'arrivée, pour chaque longueur de câble. Nous comparons ensuite ces données à la valeur théorique, qui est d’environ $0,66 c$ \cite{arrl2019}. 
 
-    \noindent Nous en concluons que, selon nos deux tableaux, le meilleur ajustement possible est un polynôme du troisième ordre, une série de Fourier du premier ou du deuxième ordre, ainsi qu’un ajustement gaussien. Nous avons choisi un ajustement gaussien comme type d’ajustement à utiliser, car il présente un bon équilibre des écarts-types à travers des différents fichiers, \ref{table:BNC-fits}. Cela est optimal pour obtenir la meilleure résolution possible pour les procédures directes via mesure faible, ainsi que la forme typique qu’on retrouve. Il présente également un bon pourcentage d’erreur par rapport à la théorie. Vous pouvez trouver les mêmes tableaux que nous avons créés pour mesurer la vitesse de la lumière sur différentes longueurs de miroir à l’annexe A, table \ref{table:AnnexeFits}. 
+    \noindent Nous en concluons que, selon nos deux tableaux, le meilleur ajustement possible est un polynôme du quatrième ordre, une série de Fourier du premier ou du deuxième ordre, ainsi qu’un ajustement gaussien. Nous avons choisi un ajustement polynôme d'ordre quatre comme type d’ajustement à utiliser, car il présente un bon équilibre des écarts-types à travers des différents fichiers, \ref{table:BNC-fits}. Cela est optimal pour obtenir la meilleure résolution possible pour les procédures directes via mesure faible, ainsi que la forme typique qu’on retrouve. Il présente également un bon pourcentage d’erreur par rapport à la théorie. Vous pouvez trouver les mêmes tableaux que nous avons créés pour mesurer la vitesse de la lumière sur différentes longueurs de miroir à l’annexe A, table \ref{table:AnnexeFits}. 
 \end{doublespace}
 
 \begin{longtable}{p{2.0cm} p{2.0cm} p{2.0cm} p{2.0cm} p{2.0cm}}
@@ -203,11 +202,11 @@
 \end{doublespace}
 
 \begin{equation}
-    y(t) = a_0 e^{-(\frac{t-b_0}{c_0})^2}
+    y(t) = a_0 + b_0 t^2 + c_0 t^3 + d_0 t^4
 \end{equation}
 
 \begin{doublespace}
-    \noindent Les paramètres d’ajustement $a_0$, $b_0$ et $c_0$ de la fonction avec variable $y$, qui représente l’amplitude, et $t$, qui correspond à la position temporelle des courbes, sont sélectionnés pour optimiser l’ajustement de nos données. Parmi ces données, $40\%$ des points de l’axe d’amplitude et de l’axe temporel sont ignorés. Ces paramètres correspondent le mieux à nos données. Il est difficile d’attribuer une valeur numérique pour évaluer la qualité du réglage de notre courbe, puisque celui-ci a principalement découlé d’une analyse visuelle. Nous avons néanmoins utilisé le coefficient de détermination ($R^2$) comme boussole, mais nous avons tenté d'éviter un ajustement excessif. Ce réglage nous permet maintenant d’identifier la position optimale, qui correspond à une position réelle observée dans nos données. Ensuite, nous comparons chaque position temporelle à celle des distances de référence pour obtenir les délais mesurés pour notre expérience. Ces délais sont tracés en fonction de la distance associée, et, par ajustement linéaire de la courbe, nous pouvons déterminer que la pente correspond à la vitesse du signal. 
+    \noindent Les paramètres d’ajustement $a_0$, $b_0$, $c_0$ et $d_0$ de la fonction avec variable dépendante $y$, qui représente l’amplitude, et $t$, qui correspond à la position temporelle des courbes, sont sélectionnés pour optimiser l’ajustement de nos données. Parmi ces données, $40\%$ des points de l’axe d’amplitude et de l’axe temporel sont ignorés. Ces paramètres correspondent le mieux à nos données. Il est difficile d’attribuer une valeur numérique pour évaluer la qualité du réglage de notre courbe, puisque celui-ci a principalement découlé d’une analyse visuelle. Nous avons néanmoins utilisé le coefficient de détermination ($R^2$) comme boussole, mais nous avons tenté d'éviter un ajustement excessif. Ce réglage nous permet maintenant d’identifier la position optimale, qui correspond à une position réelle observée dans nos données. Ensuite, nous comparons chaque position temporelle à celle des distances de référence pour obtenir les délais mesurés pour notre expérience. Ces délais sont tracés en fonction de la distance associée, et, par ajustement linéaire de la courbe, nous pouvons déterminer que la pente correspond à la vitesse du signal. 
 \end{doublespace}
 
 \begin{figure}[h]
