@@ -35,8 +35,8 @@
 \contentsline {subsubsection}{\numberline {4.1.2}Discussion sur les résultats expérimentaux de la partie réelle}{74}{subsubsection.4.1.2}%
 \contentsline {subsection}{\numberline {4.2}La partie imaginaire}{75}{subsection.4.2}%
 \contentsline {subsubsection}{\numberline {4.2.1}Implications pour la partie imaginaire}{75}{subsubsection.4.2.1}%
-\contentsline {section}{\numberline {5}CONCLUSION}{78}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Conclusion sur la thèse}{78}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Applications et projets futurs}{78}{subsection.5.2}%
-\contentsline {section}{\numberline {} ANNEXE A}{86}{subsection.5.2}%
-\contentsline {section}{\numberline {} ANNEXE B}{92}{table.5}%
+\contentsline {section}{\numberline {5}CONCLUSION}{80}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Conclusion sur la thèse}{80}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Applications et projets futurs}{80}{subsection.5.2}%
+\contentsline {section}{\numberline {} ANNEXE A}{88}{subsection.5.2}%
+\contentsline {section}{\numberline {} ANNEXE B}{94}{table.6}%
