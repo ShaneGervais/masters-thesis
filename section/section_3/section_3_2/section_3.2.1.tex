@@ -1,11 +1,22 @@
 \begin{doublespace}
-    Notre dispositif expérimental, figure \ref{fig:realexp}, est composé de notre laser pulsé de tout à l'heure entrant dans une demi-plaque d'onde principalement utilisée pour réguler l’intensité. En effet, l’entrée externe de l'oscilloscope a besoin d'une intensité assez élevée pour se déclencher sur le signal de référence. 
+    Notre dispositif expérimental, représenté à la figure \ref{fig:realexp}, est composé de notre laser pulsé de tout à l’heure et suit une configuration similaire à celle de notre montage précédent (figure \ref{fig:speed-of-light}). Cependant, après le premier séparateur de faisceau, l’état de polarisation d’entrée est préparé et ensuite soumis une mesure faible en introduisant un court délai avec une différence de parcours entre les deux composantes orthogonales venant du deuxième séparateur de faisceau. Finalement, une mesure projective est effectuée pour une caractérisation complète et directe.
 \end{doublespace}
 
 \begin{figure}[!htpb]
     \centering
     \includegraphics[width=1.0\textwidth]{partiereelexp.png}
-    \caption{Dispositif expérimental pour la partie réelle de la valeur faible}
+    \caption{Dispositif expérimental pour la partie réelle de la valeur faible. Comme la dernière configuration, 
+    l’impulsion du laser est réglée en intensité par une lame demi-onde, puis dirigée vers un PBS qui divise les états de polarisation horizontaux et verticaux de
+    base de l’impulsion d’entrée en deux voies orthogonales. Celui qui est réfléchi sera notre signal de référence pour déclencher l’oscilloscope déçu et l’autre suit la procédure directe. 
+    Ce dernier est préparé en combinant différentes lames, dont on change pour chaque trajet de polarisation, et ensuite subit une mesure faible. Lors de la mesure faible, le couplage faible temporel est réalisé en introduisant 
+    une différence de parcours entre la voie transmise et réfléchie du deuxième PBS. Le faisceau réfléchi représente l’état
+    de base de polarisation verticale $\ket{V}$ de l’état d’entrée $\ket{\psi}$, tandis que le faisceau
+    transmis correspond à l’état de base horizontal $\ket{H}$. Le miroir de la voie de l’état vertical 
+    est considéré sans délai et il se trouve à $10,5$ $cm$ du PBS. Le miroir de la voie de l’état horizontal est positionné à la même 
+    distance, mais avec le délai que nous ajouterons. Les deux voies subissent une rotation pour revenir et se projettent sur une lame demi-onde inclinée à $45$ degrés par rapport à un polariseur initialement orienté à $0$ degré. 
+    Cela crée une mesure de projection avec l’état $\ket{D}$, qui retient le chevauchement des états de base. Ce dernier est ensuite détecté avec un
+    photodétecteur, puis interprété par notre oscilloscope. 
+}
     \label{fig:realexp}
 \end{figure}
 
@@ -229,12 +240,14 @@
 
     \noindent Nous caractérisons ensuite le trajet de polarisation par la partie réelle de la valeur faible, c’est-à-dire le délai entre les positions temporelles trouvées pour chaque état d’entrée lorsque nous tournons la plaque d’onde en comparaison avec notre calibration. 
 
+    \noindent Comme rappel nous avons calculé dans le chapitre 2, la partie réelle de la valeur faible est donnée par le suivant:
+
     \begin{align}
         \expval{\hat{t}} &= \bra{\psi_f}\hat{t}\ket{\psi_f}\\
         \mathcal{R}\Bigl(\expval{\hat{\pi}_W}\Bigr) &\equiv \frac{\expval{\hat{t}}}{\tau} \propto \ket{\psi_i}
     \end{align}
 
-    \noindent Comme nous avons calculé dans le chapitre 2, voici les parties réelles de la valeur faible pour chaque état d'entrée que nous allons investiguer. Soit pour $\ket{\psi_{i}^{1}} = cos(2\theta)\ket{H} + sin(2\theta)\ket{V}$:
+    \noindent Voici les parties réelles de la valeur faible pour chaque état d'entrée que nous allons investiguer. Soit pour $\ket{\psi_{i}^{1}} = cos(2\theta)\ket{H} + sin(2\theta)\ket{V}$:
 
     \begin{equation}
         \expval{\hat{t}} = \frac{\tau}{2}(cos^2(2\theta) + 2sin(2\theta)cos(2\theta))
