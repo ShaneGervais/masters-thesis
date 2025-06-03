@@ -1,0 +1,28 @@
+\glsdefs@newdocentry{symbolname}%
+{%
+name={Symbol},%
+sort={symbolname},%
+type={main},%
+first={Symbol},%
+firstplural={Symbols},%
+text={Symbol},%
+plural={Symbols},%
+description={Description of what the symbol represents},%
+descriptionplural={Description of what the symbol represents},%
+symbol={S},%
+symbolplural={S},%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
