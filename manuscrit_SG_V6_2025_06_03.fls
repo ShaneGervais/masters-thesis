@@ -1,8 +1,8 @@
-PWD /Users/shanegervais/Documents/These
+PWD /Users/shanegervais/Documents/masters-thesis
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/shanegervais/Documents/These/manuscrit_SG_V6_2025_06_03.tex
+INPUT /Users/shanegervais/Documents/masters-thesis/manuscrit_SG_V6_2025_06_03.tex
 OUTPUT manuscrit_SG_V6_2025_06_03.log
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -343,6 +343,7 @@ INPUT ./figure/typ_pulse.png
 INPUT ./figure/typ_pulse.png
 INPUT ./figure/typ_pulse.png
 INPUT ./figure/typ_pulse.png
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm
 INPUT ./figure/fits_BNC copy.png
 INPUT ./figure/fits_BNC copy.png
 INPUT ./figure/fits_BNC copy.png
@@ -351,6 +352,9 @@ INPUT ./figure/speed_BNC.png
 INPUT ./figure/speed_BNC.png
 INPUT ./figure/speed_BNC.png
 INPUT ./figure/speed_BNC.png
+INPUT ./section/section_3/section_3_1/section_3_1_3.tex
+INPUT ./section/section_3/section_3_1/section_3_1_3.tex
+INPUT section/section_3/section_3_1/section_3_1_3.tex
 INPUT ./figure/fits_light.png
 INPUT ./figure/fits_light.png
 INPUT ./figure/fits_light.png
@@ -449,7 +453,6 @@ INPUT ./figure/PSD_zoom_1054Mhz.png
 INPUT ./section/section_5/section_5.tex
 INPUT ./section/section_5/section_5.tex
 INPUT section/section_5/section_5.tex
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm
 INPUT ./annexe/annexe_A.tex
 INPUT ./annexe/annexe_A.tex
 INPUT annexe/annexe_A.tex

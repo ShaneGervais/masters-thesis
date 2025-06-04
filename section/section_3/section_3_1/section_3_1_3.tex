@@ -1,0 +1,293 @@
+\begin{doublespace}
+
+    Le dispositif expérimental, figure \ref{fig:speed-of-light} 
+    est conçu pour mesurer la vitesse de la 
+    lumière dans les câbles BNC, en utilisant un miroir ajustable pour 
+    créer un délai temporel. Le principe de l'expérience repose sur le 
+    fait que le signal parcourt une distance connue dans un câble BNC, 
+    et en mesurant le temps que met le signal à parcourir cette 
+    distance, nous pouvons calculer sa vitesse. Peux être que utiliser
+    pour mesurer la vitesse de la lumière. Ce dernier ce fait en
+    déplaçant le miroir ajustable, ce qui modifie la distance parcourue
+    par le signal. En mesurant le temps que met le signal à parcourir 
+    cette distance, nous pouvons calculer la vitesse de la lumière dans notre
+    milieu. Je vais maintenant présenter les résultats de cette expérience,
+    ainsi que les données dérivées de l'impulsion mesurée.
+
+    \noindent J'analyse les données de l'expérience en utilisant la
+    méthode que nous avons acquise précédemment, en effectuant un ajustement de
+    la courbe de la dérivée de l'impulsion mesurée. Cette approche
+    permet de déterminer le temps d'arrivée des impulsions. Le tableau 
+    \ref{table:fits_light} présente les résultats de l'expérience,
+    qui présente les temps d’arrivée mesurés pour différentes distances 
+    parcourues par les impulsions, ainsi que les écarts-types et la 
+    qualité des ajustements de courbe. 
+
+
+\begin{longtable}{p{2.0cm} p{1.5cm} p{3.0cm} p{2.0cm} p{2.5cm}}
+    \caption{ Résultats des temps d’arrivée mesurés pour différentes parcout des impulsions et types d’ajustement de courbe, avec leurs écarts-types et qualités des adjustements pour l'expérience de la vitesse de la lumière} \\
+    \toprule
+    \label{table:fits_light}
+    Type de fit & Parcours (cm) & Temps d'arrivée (ns) & Écart-type (ns) & Qualité du fit \\
+    \midrule
+    \endfirsthead
+    
+    \toprule
+    Type de fit & Parcours (cm) & Temps d'arrivée (ns) & Écart-type (ns) & Qualité du fit \\
+    \midrule
+    \endhead
+    
+    \midrule
+    \multicolumn{5}{r}{{\dots}} \\
+    \midrule
+    \endfoot
+    
+    \bottomrule
+    \endlastfoot
+    
+    % Paste all your rows here like:
+    poly2     & 0            & 4.71331          & 0.00540       & 0.65535 \\
+poly2     & 5.08         & 4.89051          & 0.00260       & 0.67606 \\
+poly2     & 10.16        & 5.06522          & 0.00269       & 0.62149 \\
+poly2     & 20.32        & 5.39393          & 0.00350       & 0.68970 \\
+poly2     & 40.64        & 6.07951          & 0.00302       & 0.61930 \\
+poly2     & 60.96        & 6.76310          & 0.00531       & 0.66085 \\
+poly2     & 81.28        & 7.44000          & 0.00568       & 0.62715 \\
+poly2     & 101.6        & 8.11442          & 0.00226       & 0.66930 \\
+poly2     & 121.92       & 8.79659          & 0.00352       & 0.65540 \\
+\midrule
+poly3     & 0            & 4.72475          & 0.01273       & 0.65280 \\
+poly3     & 5.08         & 4.90564          & 0.00548       & 0.67392 \\
+poly3     & 10.16        & 5.07506          & 0.00277       & 0.62064 \\
+poly3     & 20.32        & 5.41906          & 0.00608       & 0.68383 \\
+poly3     & 40.64        & 6.08960          & 0.00444       & 0.61804 \\
+poly3     & 60.96        & 6.76516          & 0.01389       & 0.65857 \\
+poly3     & 81.28        & 7.45457          & 0.01290       & 0.62294 \\
+poly3     & 101.6        & 8.12238          & 0.01007       & 0.66779 \\
+poly3     & 121.92       & 8.80146          & 0.01551       & 0.65261 \\
+\midrule
+poly4     & 0            & 4.72134          & 0.00366       & 0.64088 \\
+poly4     & 5.08         & 4.89551          & 0.00187       & 0.66138 \\
+poly4     & 10.16        & 5.07134          & 0.00393       & 0.60899 \\
+poly4     & 20.32        & 5.31017          & 0.21437       & 0.67474 \\
+poly4     & 40.64        & 6.08475          & 0.00196       & 0.60412 \\
+poly4     & 60.96        & 6.76839          & 0.00235       & 0.64813 \\
+poly4     & 81.28        & 7.44816          & 0.00308       & 0.61352 \\
+poly4     & 101.6        & 8.11833          & 0.00449       & 0.65716 \\
+poly4     & 121.92       & 8.80287          & 0.00408       & 0.64269 \\
+\midrule
+poly5     & 0            & 4.72634          & 0.00810       & 0.64049 \\
+poly5     & 5.08         & 4.80277          & 0.20913       & 0.66133 \\
+poly5     & 10.16        & 4.99172          & 0.18918       & 0.60878 \\
+poly5     & 20.32        & 5.11453          & 0.26545       & 0.67455 \\
+poly5     & 40.64        & 6.08785          & 0.00248       & 0.60394 \\
+poly5     & 60.96        & 6.96124          & 0.26574       & 0.64786 \\
+poly5     & 81.28        & 7.35435          & 0.21549       & 0.61320 \\
+poly5     & 101.6        & 8.12024          & 0.00382       & 0.65707 \\
+poly5     & 121.92       & 8.80513          & 0.00999       & 0.64219 \\
+\midrule
+poly6     & 0            & 4.72661          & 0.00817       & 0.63983 \\
+poly6     & 5.08         & 4.97781          & 0.18094       & 0.66097 \\
+poly6     & 10.16        & 5.07586          & 0.00696       & 0.60835 \\
+poly6     & 20.32        & 5.40079          & 0.00798       & 0.67433 \\
+poly6     & 40.64        & 6.08851          & 0.00310       & 0.60386 \\
+poly6     & 60.96        & 6.86658          & 0.21361       & 0.64768 \\
+poly6     & 81.28        & 7.35519          & 0.21417       & 0.61316 \\
+poly6     & 101.6        & 8.12101          & 0.00479       & 0.65679 \\
+poly6     & 121.92       & 8.80259          & 0.00943       & 0.64184 \\
+\midrule
+poly7     & 0            & 4.71966          & 0.01125       & 0.63930 \\
+poly7     & 5.08         & 4.81158          & 0.19912       & 0.66074 \\
+poly7     & 10.16        & 5.07004          & 0.00832       & 0.60817 \\
+poly7     & 20.32        & 5.40111          & 0.00790       & 0.67401 \\
+poly7     & 40.64        & 6.08673          & 0.00729       & 0.60372 \\
+poly7     & 60.96        & 6.67275          & 0.21349       & 0.64746 \\
+poly7     & 81.28        & 7.44627          & 0.00925       & 0.61295 \\
+poly7     & 101.6        & 8.11835          & 0.00488       & 0.65661 \\
+poly7     & 121.92       & 8.81123          & 0.30484       & 0.64079 \\
+\midrule
+poly8     & 0            & 4.72029          & 0.01048       & 0.63920 \\
+poly8     & 5.08         & 4.81604          & 0.19913       & 0.66011 \\
+poly8     & 10.16        & 5.07020          & 0.00792       & 0.60801 \\
+poly8     & 20.32        & 5.40480          & 0.00838       & 0.67384 \\
+poly8     & 40.64        & 6.08686          & 0.00920       & 0.60324 \\
+poly8     & 60.96        & 6.67051          & 0.19889       & 0.64680 \\
+poly8     & 81.28        & 7.43096          & 0.33318       & 0.61283 \\
+poly8     & 101.6        & 7.92769          & 0.20935       & 0.65582 \\
+poly8     & 121.92       & 8.42229          & 0.13732       & 0.64046 \\
+\midrule
+poly9     & 0            & 4.72486          & 0.33006       & 0.63897 \\
+poly9     & 5.08         & 4.70720          & 0.22780       & 0.65972 \\
+poly9     & 10.16        & 4.88903          & 0.22563       & 0.60786 \\
+poly9     & 20.32        & 5.20094          & 0.25460       & 0.67365 \\
+poly9     & 40.64        & 5.80773          & 0.23018       & 0.60284 \\
+poly9     & 60.96        & 6.38899          & 0.10911       & 0.64666 \\
+poly9     & 81.28        & 7.09352          & 0.15865       & 0.61282 \\
+poly9     & 101.6        & 7.69569          & 0.08447       & 0.65868 \\
+poly9     & 121.92       & 8.38099          & 0.05428       & 0.64209 \\
+\midrule
+fourier1  & 0            & 4.71572          & 0.00457       & 0.64231 \\
+fourier1  & 5.08         & 4.89408          & 0.00229       & 0.66186 \\
+fourier1  & 10.16        & 5.06706          & 0.00226       & 0.60996 \\
+fourier1  & 20.32        & 5.39963          & 0.00321       & 0.67576 \\
+fourier1  & 40.64        & 6.08169          & 0.00254       & 0.60503 \\
+fourier1  & 60.96        & 6.76347          & 0.00355       & 0.64888 \\
+fourier1  & 81.28        & 7.44291          & 0.00361       & 0.61461 \\
+fourier1  & 101.6        & 8.11617          & 0.00191       & 0.65769 \\
+fourier1  & 121.92       & 8.79741          & 0.00198       & 0.64380 \\
+\midrule
+fourier2  & 0            & 4.72877          & 0.01125       & 0.64064 \\
+fourier2  & 5.08         & 4.89736          & 0.00518       & 0.66119 \\
+fourier2  & 10.16        & 4.99303          & 0.19275       & 0.60877 \\
+fourier2  & 20.32        & 5.40637          & 0.00155       & 0.67472 \\
+fourier2  & 40.64        & 6.08968          & 0.00487       & 0.60397 \\
+fourier2  & 60.96        & 6.77192          & 0.00455       & 0.64791 \\
+fourier2  & 81.28        & 7.45179          & 0.00598       & 0.61331 \\
+fourier2  & 101.6        & 7.93620          & 0.25209       & 0.65693 \\
+fourier2  & 121.92       & 8.89100          & 0.19440       & 0.64262 \\
+\midrule
+fourier3  & 0            & 4.63993          & 0.18354       & 0.63971 \\
+fourier3  & 5.08         & 4.89476          & 0.00496       & 0.66074 \\
+fourier3  & 10.16        & 5.07082          & 0.01047       & 0.60822 \\
+fourier3  & 20.32        & 5.30076          & 0.21511       & 0.67417 \\
+fourier3  & 40.64        & 6.08743          & 0.00893       & 0.60372 \\
+fourier3  & 60.96        & 6.76993          & 0.00735       & 0.64743 \\
+fourier3  & 81.28        & 7.44726          & 0.01016       & 0.61299 \\
+fourier3  & 101.6        & 8.12069          & 0.01187       & 0.65622 \\
+fourier3  & 121.92       & 8.71801          & 0.19372       & 0.64159 \\
+\midrule
+fourier4  & 0            & 4.72830          & 0.01700       & 0.63849 \\
+fourier4  & 5.08         & 4.82117          & 0.19003       & 0.65918 \\
+fourier4  & 10.16        & 5.16231          & 0.16442       & 0.60734 \\
+fourier4  & 20.32        & 5.32363          & 0.21445       & 0.67340 \\
+fourier4  & 40.64        & 6.18942          & 0.19740       & 0.60294 \\
+fourier4  & 60.96        & 6.85717          & 0.18283       & 0.64564 \\
+fourier4  & 81.28        & 7.47014          & 0.00785       & 0.61182 \\
+fourier4  & 101.6        & 8.01239          & 0.20774       & 0.65498 \\
+fourier4  & 121.92       & 8.80669          & 0.04605       & 0.63934 \\
+\midrule
+fourier5  & 0            & 4.71827          & 0.03783       & 0.63602 \\
+fourier5  & 5.08         & 4.81994          & 0.18129       & 0.65602 \\
+fourier5  & 10.16        & 4.99705          & 0.21753       & 0.60598 \\
+fourier5  & 20.32        & 5.30335          & 0.20536       & 0.67253 \\
+fourier5  & 40.64        & 6.09325          & 0.01973       & 0.60150 \\
+fourier5  & 60.96        & 6.60507          & 0.26801       & 0.64472 \\
+fourier5  & 81.28        & 7.44084          & 0.06341       & 0.61077 \\
+fourier5  & 101.6        & 7.96551          & 0.26103       & 0.65341 \\
+fourier5  & 121.92       & 8.70882          & 0.22482       & 0.63844 \\
+\midrule
+fourier6  & 0            & 4.67487          & 0.21258       & 0.63513 \\
+fourier6  & 5.08         & 4.87912          & 0.30044       & 0.65545 \\
+fourier6  & 10.16        & 5.01425          & 0.15367       & 0.60510 \\
+fourier6  & 20.32        & 5.40065          & 0.04759       & 0.67185 \\
+fourier6  & 40.64        & 6.02640          & 0.20386       & 0.60054 \\
+fourier6  & 60.96        & 6.82890          & 0.21281       & 0.64294 \\
+fourier6  & 81.28        & 7.56540          & 0.18348       & 0.61024 \\
+fourier6  & 101.6        & 8.01208          & 0.20554       & 0.65208 \\
+fourier6  & 121.92       & 8.67386          & 0.20449       & 0.63782 \\
+\midrule
+gauss1    & 0            & 4.71424          & 0.00450       & 0.64553 \\
+gauss1    & 5.08         & 4.89228          & 0.00232       & 0.66632 \\
+gauss1    & 10.16        & 5.06612          & 0.00245       & 0.61264 \\
+gauss1    & 20.32        & 5.39707          & 0.00293       & 0.67962 \\
+gauss1    & 40.64        & 6.08066          & 0.00273       & 0.60835 \\
+gauss1    & 60.96        & 6.76292          & 0.00380       & 0.65146 \\
+gauss1    & 81.28        & 7.44163          & 0.00415       & 0.61718 \\
+gauss1    & 101.6        & 8.11554          & 0.00192       & 0.66113 \\
+gauss1    & 121.92       & 8.79674          & 0.00190       & 0.64651
+\end{longtable}
+
+\noindent Le tableau \ref{table:speed_light} 
+présente les résultats de la mesure de la vitesse de la lumière pour 
+différents ajustements de courbe. Les valeurs mesurées sont comparées
+ à la vitesse théorique de la lumière dans le vide, qui est de 
+ $299792458$ $m/s$. Les erreurs en pourcentage sont calculées par 
+ rapport à cette valeur théorique, et la qualité du fit est 
+ indiquée par le coefficient de détermination ($R^2$) pour chaque 
+ ajustement.
+
+\begin{longtable}{p{2.0cm} p{2.0cm} p{2.0cm} p{2.0cm} p{2.0cm}}
+    \caption{Mesure de la vitesse de la lumière pour différent ajustement de courbe} \\
+    \toprule
+    \label{table:speed_light}
+    Type de fit & Vitesse mesurée (m/s) & Vitesse théorique (m/s) & Erreur (\%) & Qualité du fit \\
+    \midrule
+    \endfirsthead
+    
+    \toprule
+    Type de fit & Vitesse mesurée (m/s) & Vitesse théorique (m/s) & Erreur (\%) & Qualité du fit \\
+    \midrule
+    \endhead
+    
+    \midrule
+    \multicolumn{5}{r}{{À suivre sur la prochaine page}} \\
+    \midrule
+    \endfoot
+    
+    \bottomrule
+    \endlastfoot
+    
+    % Paste all your rows here like:
+    poly2     & 298948041     & 299792458           & 0.2817      & 0.0048       \\
+    poly3     & 299593785     & 299792458           & 0.0663      & 0.0061       \\
+    poly4     & 297557352     & 299792458           & 0.7456      & 0.0361       \\
+    poly5     & 291020596     & 299792458           & 2.9260      & 0.1405       \\
+    poly6     & 302282720     & 299792458           & 0.8307      & 0.0605       \\
+    poly7     & 297220542     & 299792458           & 0.8579      & 0.0440       \\
+    poly8     & 320556240     & 299792458           & 6.9261      & 0.0943       \\
+    poly9     & 326791560     & 299792458           & 9.0059      & 0.0690       \\
+    fourier1  & 299104313     & 299792458           & 0.2295      & 0.0042       \\
+    fourier2  & 299334235     & 299792458           & 0.1528      & 0.0874       \\
+    fourier3  & 298537843     & 299792458           & 0.4185      & 0.0546       \\
+    fourier4  & 300580478     & 299792458           & 0.2629      & 0.0943       \\
+    fourier5  & 303509743     & 299792458           & 1.2400      & 0.0682       \\
+    fourier6  & 301689685     & 299792458           & 0.6328      & 0.0907       \\
+    gauss1    & 299025597     & 299792458           & 0.2558      & 0.0044     
+\end{longtable}
+
+
+    Je remarque que les ajustements de courbe sont de bonne qualité, avec des valeurs similaires
+    que l'expérience précédente, ce qui indique que les données sont
+    cohérentes et fiables. Les écarts-types sont également faibles, ce qui
+    suggère que les mesures sont précises et répétables. Je procède ensuite
+    aux résultats des données issues des impulsions de l’expérience du miroir déplacé, 
+    figure \ref{fig:speed-pulses}.
+    
+    \begin{figure}[!hptb]
+        \centering
+        \includegraphics[width=1.0\textwidth]{fits_light.png}
+        \caption{Profil temporel de la dérivée des données d'impulsion pour chacune des distances mesurées et ajustement de la courbe pour l'expérience de la vitesse de la lumière avec un miroir réglable.}
+        \label{fig:speed-pulses}
+    \end{figure}
+
+    \noindent D'ici je place les résultats des délais obtenue dans l'expérience
+    de la vitesse de la lumière et les comparant à le temps d'arrivée
+    d'un impulsion où le miroir est fixe, ce qui nous permet
+    de déterminer les délais pour la vitesse de la lumière. La figure
+    \ref{fig:speed-res} présente le résultat de notre expérience.
+
+    \begin{figure}[!hptb]
+    \centering
+    \includegraphics[width=1.0\textwidth]{speed_light.png}
+    \caption{Résultats des délais mesurés pendant l'expérience sur la vitesse de la lumière, ainsi que leur ajustement linéaire. Les barres d’erreur horizontales représentent l’incertitude de nos mesures de la distance, soit $\pm 0,5$ $mm$, qui est trop petite pour être visible sur le graphique. Les barres d'erreurs verticales correspondent à l'erreur de l'ajustement Fourier basé sur l'expérience de la vitesse de la lumière dans les câbles BNC $\pm 0,03\%$.}
+    \label{fig:speed-res}
+    \end{figure}
+
+    \noindent En utilisant les résultats de l'expérience, nous avons
+    calculé la vitesse de la lumière dans les câbles BNC. La vitesse
+    mesurée est de $299 025 597$ $m/s$ avec un écart-type de 
+    $0.03\%$ par rapport à la valeur théorique de la vitesse de la
+    lumière dans l'aire libre, qui est de $0.9998c$. À partir de ces 
+    résultats de ces deux expériences, nous concluons que nous pouvons 
+    mesurer des délais temporels très courts, de l'ordre de $4$ $ps$ avec 
+    une variation inférieure à $2$ $ps$ entre les ensembles de données. 
+    Les sections suivantes seront 
+    consacrées à la caractérisation des états de polarisations en utilisant
+    les méthodologies que nous avons développées dans les sections précédentes.
+    
+\end{doublespace}
+
+
+
+
+

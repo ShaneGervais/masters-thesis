@@ -1,13 +1,13 @@
 \begin{doublespace}
     Maintenant, analysons nos données de l'expérience de la 
-    vitesse d’un signal à travers un câble BNC à partir des délais 
+    vitesse d’un signal électrique à travers un câble BNC à partir des délais 
     d’impulsion. Nous avons configuré l’oscilloscope en mode EQ-time 
-    (temps d'équivalence), avec une durée de $100$ $ns$, une longueur 
-    d'enregistrement de $10 000$ points et une résolution de $4$ $ps$. 
-    Plus tard, lors d’expériences de mesures faibles, nous constaterons 
-    que nous n’avons pas besoin d’une telle durée. Nous commençons par 
-    observer l'impulsion typique du laser dans la figure 
-    \ref{fig:typical-pulse}. 
+    (temps de équivalent) et acquérons des données sur une durée 
+    de $100$ $ns$, avec une longueur d'enregistrement de $10 000$ points
+    , une résolution temporelle de $4$ $ps$, moyenné sur $10 000$ formes d'ondes
+    pour $10$ différentes prise de données. La figure \ref{fig:typical-pulse}
+    montre le profil temporel typique de notre impulsion laser d'une série
+    de données avec ces paramètres.
 \end{doublespace}
 
 \begin{figure}[hp]
@@ -22,74 +22,66 @@
 \end{figure}
 
 \begin{doublespace}
-    \noindent Observez que le profil temporel des impulsions n’est 
-    pas une fonction de Gauss, mais plutôt une fonction de porte. 
+    \noindent Le profil temporel des impulsions n’est 
+    pas une fonction gaussienne, mais plutôt une fonction de porte. 
     En allongeant la durée de l’impulsion du laser, l’impulsion 
-    ressemble de plus en plus à une fonction de port au fur et à 
-    mesure. La raison pour laquelle nous souhaitons une forme 
-    gaussienne est qu'elle est simplement plus fréquente dans 
-    les mesures faibles ayant un sens physique plus naturel et 
-    qu'il est plus facile de déterminer la valeur moyenne de la 
-    position temporelle de l'impulsion (le moment le plus probable 
-    pour détecter un photon de cette impulsion) que nous définissons 
-    comme le pic. Par conséquent, notre objectif est de calculer 
-    numériquement la dérivée des données de l’impulsion, ce qui nous 
-    permettra de localiser précisément le pic et de le comparer à 
-    d'autres impulsions.
+    ressemble de plus en plus à une fonction de porte au fur et à 
+    mesure. Pour préciser la position temporelle de l'impulsion, nous allons
+    effecteur la dérivée de la fonction d'amplitude du signal pour identifié
+    le temps d'arrivée du signal représenté par le pic maximale 
+    de la dérivée. Ensuite, je vais ajuster une courbe à ce pic pour
+    déterminer la position temporelle du pic (le temps d'arrivée du signal) 
+    avec une précision maximale. Nous allons utiliser MATLAB pour
+    effectuer ces ajustements. J'ai essayé plusieurs types
+    d'ajustements, notamment des polynômes de 
+    différents ordres $N$, de degré $2$ à $9$ démarquant par \textit{polyN},
     
-    \noindent Notez que le profil temporel des impulsions n’est pas 
-    une fonction gaussienne, mais plutôt une fonction porte. En 
-    prolongeant la durée de l’impulsion du laser, l’impulsion tend 
-    vers une fonction porte de plus en plus. Nous désirons une 
-    distribution gaussienne, car elle se révèle plus fréquente dans 
-    les mesures à faible intensité, présentant ainsi une signification 
-    physique plus naturelle. De plus, il est plus facile de déterminer 
-    la valeur moyenne de la position temporelle de l'impulsion 
-    (le moment le plus probable pour détecter un photon de cette 
-    impulsion), que nous nommons le \guillemetleft pic \guillemetright. 
-    Par conséquent, notre objectif est de calculer numériquement la 
-    dérivée des données de l’impulsion. La méthode des différences 
-    finies est utilisée comme type de dérivé numérique. Elle s’avère 
-    suffisante pour cette expérience. Ce dernier nous permettra de 
-    localiser précisément le pic en prenant un ajustement de courbe 
-    avec un domaine temporel plus fini pour la localisation du pic.
-    Cette méthode nous permettra aussi de choisir un point temporel 
-    pour le temps d’arrivée, qui n’est pas nécessairement situé entre 
-    deux points de données. On comparera ensuite chacun de ces temps 
-    d’arrivée, pour chacune des longueurs de câble.
+    \begin{equation}
+        y(t) = a_0 + a_1 T + a_2 t^2 + \ldots + a_N t^N
+    \end{equation}
 
-    \noindent À partir de là, l’ajustement de la courbe devient un 
+    \noindent Où $a_i$ sont les coefficients du polynôme et $t$ est le temps. 
+    Des séries de Fourier de degré $1$ à $6$, démarquant par \textit{fourierN},
+    
+    \begin{equation}
+        y(t) = a_0 + a_1 cos(\omega t) + a_2 sin(\omega t) + \ldots + a_N cos(N \omega t) + b_1 sin(N \omega t)
+    \end{equation}
+
+    \noindent Où $a_i$ et $b_i$ sont les coefficients de la série de 
+    Fourier, $\omega$ est la fréquence angulaire et $t$ est le temps. 
+    Et une fonction gaussienne, démarquant par \textit{gauss1} qui est:
+
+    \begin{equation}
+        y(t) = a_0 + a_1 e^{-\frac{(t - t_0)^2}{2 \sigma^2}}
+    \end{equation}
+
+    \noindent Les ajustements de la courbe devient un 
     aspect vraiment important dans la localisation du temps d’arrivée 
-    de notre signal. Nous effectuons de nombreux calculs numériques 
-    pour constater que l’option la plus adéquate était d’utiliser un 
-    pas de temps de $1/10000$ de la résolution des oscilloscopes pour 
-    l’axe des temps sur lequel nous effectuions l’ajustement. Nous 
-    avons remarqué qu’en négligeant environ $40 \%$ des données 
+    de notre signal. Je effectue de nombreux ajustements de courbe 
+    pour chaque longueur de câble, en utilisant les données d’amplitude
+    initiales de l’impulsion. Pour les ajustements j'utiliser une 
+    résultion de $1/10000$ de la résolution de l’oscilloscope. Ainsi 
+    qu’en négligeant environ $40 \%$ des données 
     d’amplitude initiales, l’ajustement était plus susceptible d’être 
-    optimal. Le reste du signal ne présentait pas d’intérêt. On prend 
+    optimal. Le reste du signal ne présente pas d’intérêt. On prend 
     alors la position temporelle de ce pic et on l’ajoute dans un 
-    dictionnaire des temps d’arrivée, puis on la compare à notre câble 
-    de référence, qui est considéré comme notre origine, donc une 
-    position temporelle $0$ ou sans délai. Le tableau suivant, table 
-    \ref{table:BNC-fits}, montre les différents ajustements que nous 
+    tableau des temps d’arrivée, puisque les comparent au temps d'arrivée
+    du premier câble, qui est considéré comme notre origine.
+    Le tableau \ref{table:BNC-fits}, démontre les différents ajustements que nous 
     avons essayés ainsi que le temps moyen d'arrivée pour chaque 
     distance en utilisant ces ajustements. Il montre également 
     l'écart-type de la façon dont la position du temps d'arrivée change 
     pour chaque fichier individuel de cette même longueur de câble et 
-    le coefficient de détermination $R^2$ qui a également été utilisé 
+    le coefficient de corrélation $R^2$ qui a également été utilisé 
     comme paramètre pour déterminer la qualité de l'ajustement ainsi
-    que la visualisation de tous ces ajustements. Nous avons 
-    sélectionné $5$ échantillons distincts pour chaque longueur de 
-    câble. Nous avions initialement prévu d’en prélever plus de $5$, 
-    mais nous avons réalisé que c'était excessif et qu'il suffisait 
-    d'en prélever au moins $3$. 
+    que la visualisation de tous ces ajustements.
 
     
 \end{doublespace}
 
 
 \begin{longtable}{p{2.0cm} p{1.5cm} p{3.0cm} p{2.0cm} p{2.5cm}}
-    \caption{Résultats des temps d'arrivées et écart-type de différent ajustement de courbe pour l'expérience de vitesse dans les câbles BNC} \\
+    \caption{Résultats des temps d'arrivées et écart-type de différent ajustement de courbe pour l'expérience de vitesse dans les câbles BNC. Plus de chiffres significatifs ont été ajoutés pour les ajustements de courbe pour qu'ils soient compatibles avec l'écart-type et la qualité du fit.} \\
     \toprule
     \label{table:BNC-fits}
     Type de fit & Longueur du câble (mm) & Temps d'arrivée (ns) & Écart-type (ns) & Qualité du fit \\
@@ -102,7 +94,7 @@
     \endhead
     
     \midrule
-    \multicolumn{5}{r}{{À suivre sur la prochaine page}} \\
+    \multicolumn{5}{r}{{\dots}} \\
     \midrule
     \endfoot
     
@@ -116,84 +108,99 @@
     poly2     & 522          & 10.12025         & 0.00104       & 0.24149 \\
     poly2     & 1032         & 12.68037         & 0.00099       & 0.24337 \\
     poly2     & 3000         & 22.62379         & 0.00354       & 0.24339 \\
+    \midrule
+    
     poly3     & 0            & 7.46342          & 0.00222       & 0.23412 \\
     poly3     & 172          & 8.39546          & 0.00278       & 0.23143 \\
     poly3     & 270          & 8.88637          & 0.00227       & 0.21571 \\
     poly3     & 522          & 10.14113         & 0.00196       & 0.22738 \\
     poly3     & 1032         & 12.70091         & 0.00150       & 0.23016 \\
     poly3     & 3000         & 22.64460         & 0.00396       & 0.23005 \\
+    \midrule
     poly4     & 0            & 7.45750          & 0.00114       & 0.21840 \\
     poly4     & 172          & 8.38888          & 0.00177       & 0.21391 \\
     poly4     & 270          & 8.88005          & 0.00136       & 0.19823 \\
     poly4     & 522          & 10.13472         & 0.00099       & 0.20934 \\
     poly4     & 1032         & 12.69463         & 0.00132       & 0.21404 \\
     poly4     & 3000         & 22.63830         & 0.00336       & 0.21629 \\
+    \midrule
     poly5     & 0            & 7.46484          & 0.00131       & 0.21682 \\
     poly5     & 172          & 8.39631          & 0.00106       & 0.21231 \\
     poly5     & 270          & 8.88844          & 0.00185       & 0.19591 \\
     poly5     & 522          & 10.14197         & 0.00119       & 0.20773 \\
     poly5     & 1032         & 12.70253         & 0.00211       & 0.21218 \\
     poly5     & 3000         & 22.64039         & 0.00294       & 0.21483 \\
+    \midrule
     poly6     & 0            & 7.46521          & 0.00202       & 0.21675 \\
     poly6     & 172          & 8.39659          & 0.00153       & 0.21216 \\
     poly6     & 270          & 8.88736          & 0.00307       & 0.19582 \\
     poly6     & 522          & 10.14084         & 0.00182       & 0.20762 \\
     poly6     & 1032         & 12.69214         & 0.00663       & 0.21204 \\
     poly6     & 3000         & 22.29098         & 0.18052       & 0.21469 \\
+    \midrule
     poly7     & 0            & 7.33751          & 0.03120       & 0.21499 \\
     poly7     & 172          & 8.21566          & 0.13047       & 0.21160 \\
     poly7     & 270          & 8.52569          & 0.11581       & 0.19487 \\
     poly7     & 522          & 9.72629          & 0.12391       & 0.20682 \\
     poly7     & 1032         & 12.23442         & 0.00780       & 0.21036 \\
     poly7     & 3000         & 22.16566         & 0.01151       & 0.21381 \\
+    \midrule
     poly8     & 0            & 6.99619          & 0.00997       & 0.21454 \\
     poly8     & 172          & 7.92408          & 0.01360       & 0.21110 \\
     poly8     & 270          & 8.41125          & 0.01215       & 0.19425 \\
     poly8     & 522          & 9.66966          & 0.01255       & 0.20656 \\
     poly8     & 1032         & 12.23447         & 0.00776       & 0.21055 \\
     poly8     & 3000         & 22.16570         & 0.01148       & 0.21527 \\
+    \midrule
     poly9     & 0            & 6.99605          & 0.00983       & 0.21387 \\
     poly9     & 172          & 7.92413          & 0.01359       & 0.21270 \\
     poly9     & 270          & 8.41132          & 0.01220       & 0.19766 \\
     poly9     & 522          & 9.66971          & 0.01257       & 0.20799 \\
     poly9     & 1032         & 12.23498         & 0.00810       & 0.21169 \\
     poly9     & 3000         & 22.16569         & 0.01146       & 0.22500 \\
+    \midrule
     fourier1  & 0            & 7.44586          & 0.00075       & 0.22821 \\
     fourier1  & 172          & 8.37913          & 0.00125       & 0.22118 \\
     fourier1  & 270          & 8.86896          & 0.00128       & 0.20785 \\
     fourier1  & 522          & 10.12332         & 0.00084       & 0.21928 \\
     fourier1  & 1032         & 12.68338         & 0.00115       & 0.22325 \\
     fourier1  & 3000         & 22.62676         & 0.00359       & 0.22515 \\
+    \midrule
     fourier2  & 0            & 7.46383          & 0.00189       & 0.21728 \\
     fourier2  & 172          & 8.39629          & 0.00139       & 0.21263 \\
     fourier2  & 270          & 8.88716          & 0.00276       & 0.19641 \\
     fourier2  & 522          & 10.14204         & 0.00308       & 0.20802 \\
     fourier2  & 1032         & 12.70221         & 0.00217       & 0.21270 \\
     fourier2  & 3000         & 22.64465         & 0.00462       & 0.21526 \\
+    \midrule
     fourier3  & 0            & 7.41817          & 0.06115       & 0.21482 \\
     fourier3  & 172          & 8.37827          & 0.00987       & 0.21003 \\
     fourier3  & 270          & 8.87882          & 0.01193       & 0.19474 \\
     fourier3  & 522          & 10.12619         & 0.01515       & 0.20527 \\
     fourier3  & 1032         & 12.68675         & 0.01349       & 0.21032 \\
     fourier3  & 3000         & 22.61673         & 0.00260       & 0.20832 \\
+    \midrule
     fourier4  & 0            & 7.42123          & 0.00635       & 0.21111 \\
     fourier4  & 172          & 8.34673          & 0.00717       & 0.20424 \\
     fourier4  & 270          & 8.84979          & 0.00872       & 0.19021 \\
     fourier4  & 522          & 10.10293         & 0.00667       & 0.20169 \\
     fourier4  & 1032         & 12.66846         & 0.00449       & 0.20740 \\
     fourier4  & 3000         & 22.60242         & 0.00497       & 0.20594 \\
+    \midrule
     fourier5  & 0            & 7.42623          & 0.00692       & 0.21058 \\
     fourier5  & 172          & 8.36756          & 0.05475       & 0.20214 \\
     fourier5  & 270          & 8.85968          & 0.01496       & 0.18814 \\
     fourier5  & 522          & 10.10500         & 0.00430       & 0.19736 \\
     fourier5  & 1032         & 12.67241         & 0.00725       & 0.20597 \\
     fourier5  & 3000         & 22.52103         & 0.19931       & 0.20521 \\
+    \midrule
     fourier6  & 0            & 7.43023          & 0.01046       & 0.21021 \\
     fourier6  & 172          & 8.41189          & 0.06274       & 0.20157 \\
     fourier6  & 270          & 8.85976          & 0.01835       & 0.18777 \\
     fourier6  & 522          & 10.19384         & 0.19938       & 0.19661 \\
     fourier6  & 1032         & 12.76117         & 0.19404       & 0.20516 \\
     fourier6  & 3000         & 22.52226         & 0.19765       & 0.20480 \\
+    \midrule
     gauss1    & 0            & 7.44584          & 0.00059       & 0.22856 \\
     gauss1    & 172          & 8.37897          & 0.00111       & 0.22152 \\
     gauss1    & 270          & 8.86887          & 0.00131       & 0.20805 \\
@@ -205,152 +212,135 @@
 \begin{doublespace}
     
     \noindent En plus de la vérification de l'ajustement présentant 
-    le moins d'écart entre les fichiers pour chaque longueur de câble 
-    possible, le tableau suivant, table \ref{table:speed-BNC-table},
-    présente les différents types d'ajustement, en testant également 
-    la précision de la vitesse des mesures du signal en fonction des 
-    ajustements trouvés pour le temps d'arrivée. La vitesse est 
-    déterminée en effectuant un ajustement linéaire sur les valeurs 
+    l'écart-type le plus faible, le tableau \ref{table:BNC-fits}
+    présente les différennts type d'adjustement, j'utilise également 
+    $R^2$ pour indiquer la qualité de l'ajustement, 
+    où une valeur proche de $1$ indique un bon
+    ajustement. Il est important de noter
+    que le coefficient de corrélation ne doit pas être utilisé seul
+    pour évaluer la qualité de l'ajustement. Je procède l’ajustement 
+    de la courbe pour chaque longueur de câble BNC
+    avec un adjustement d'un polynome du quatrième ordre, en utilisant la fonction 
+    \textit{polyfit} de MATLAB. L'adjustement de la courbe s'écrit
+    comme suit :
+
+    \begin{equation}
+        y(t) = a_0 + b_0 t^2 + c_0 t^3 + d_0 t^4
+    \end{equation}
+    
+    
+    \noindent Les paramètres d’ajustement $a_0$, $b_0$, $c_0$ et 
+        $d_0$ de la fonction avec variable dépendante $y$, qui 
+        représente l’amplitude, et $t$, qui correspond à la position 
+        temporelle des courbes, sont sélectionnés pour optimiser 
+        l’ajustement de nos données. La figure \ref{fig:BNC-pulse} montre le profil temporel 
+    de la dérivée des données d'impulsion pour l'expérience des
+    câbles BNC RG-58 avec chacun de ses ajustements de courbe. On 
+    peut voir que la dérivée de l'impulsion est bien ajustée par
+    un polynôme du quatrième ordre, ce qui est conforme à nos attentes.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=1.0\textwidth]{fits_BNC copy.png}
+        \caption{Profil temporel de la dérivée des données d'impulsion dans l'expérience des câbles BNC RG-58 avec chacun de ses ajustements de courbe. }
+        \label{fig:BNC-pulse}
+    \end{figure}
+
+    \noindent La vitesse est 
+    déterminée en effectuant un ajustement linéaire des les valeurs 
     moyennes du temps d'arrivée, pour chaque longueur de câble. Nous 
     comparons ensuite ces données à la valeur théorique, qui est 
-    d’environ $0,66 c$ \cite{arrl2019}. 
-
-    \noindent Nous en concluons que, selon nos deux tableaux, le 
+    d’environ $0,66 c$ \cite{arrl2019}. Le tableau \ref{table:speed-BNC-table} présente les résultats
+    de la vitesse mesurée dans les câbles BNC pour chaque type 
+    d’ajustement de courbe. 
+    
+    \begin{longtable}{p{2.0cm} p{2.0cm} p{2.0cm} p{2.0cm} p{2.0cm}}
+        \caption{Mesure de la vitesse du signal dans les câbles BNC pour différent ajustement de courbe} \\
+        \toprule
+        \label{table:speed-BNC-table}
+        Type de fit & Vitesse mesurée (m/s) & Vitesse théorique (m/s) & Erreur (\%) & Qualité du fit \\
+        \midrule
+        \endfirsthead
+        
+        \toprule
+        Type de fit & Vitesse mesurée (m/s) & Vitesse théorique (m/s) & Erreur (\%) & Qualité du fit \\
+        \midrule
+        \endhead
+        
+        \midrule
+        \multicolumn{5}{r}{{À suivre sur la prochaine page}} \\
+        \midrule
+        \endfoot
+        
+        \bottomrule
+        \endlastfoot
+        
+        % Paste all your rows here like:
+        poly2     & 198125399     & 197863022           & 0.1326      & 0.0303       \\
+        poly3     & 198116966     & 197863022           & 0.1283      & 0.0301       \\
+        poly4     & 198117476     & 197863022           & 0.1286      & 0.0298       \\
+        poly5     & 198191774     & 197863022           & 0.1662      & 0.0301       \\
+        poly6     & 203054996     & 197863022           & 2.6240      & 0.0637       \\
+        poly7     & 201780752     & 197863022           & 1.9800      & 0.1358       \\
+        poly8     & 198220958     & 197863022           & 0.1809      & 0.0271       \\
+        poly9     & 198220258     & 197863022           & 0.1805      & 0.0271       \\
+        fourier1  & 198125807     & 197863022           & 0.1328      & 0.0304       \\
+        fourier2  & 198124682     & 197863022           & 0.1322      & 0.0302       \\
+        fourier3  & 198150017     & 197863022           & 0.1450      & 0.0454       \\
+        fourier4  & 198105100     & 197863022           & 0.1223      & 0.0295       \\
+        fourier5  & 199361343     & 197863022           & 0.7573      & 0.0386       \\
+        fourier6  & 199614259     & 197863022           & 0.8851      & 0.0779       \\
+        gauss1    & 198122675     & 197863022           & 0.1312      & 0.0304 
+    \end{longtable}
+    
+    \noindent Il inclut la vitesse mesurée, la vitesse 
+    théorique, l'erreur en pourcentage et la qualité de l'ajustement.
+    Nous avons utilisé la vitesse théorique de $197 863 022$ $m/s$
+    comme référence, qui est la vitesse du signal dans un câble BNC
+    RG-58 \cite{arrl2019,thorlabs2021}.
+    Le tableau \ref{table:speed-BNC-table} démontre que les ajustements
+    polynomiaux de degré $2$ à $5$, les séries de Fourier de degré 
+    $1$ et $4$, ainsi que l'ajustement gaussien, donnent des résultats
+    très proches de la vitesse théorique, avec des erreurs en 
+    pourcentage inférieures à $0,2\%$. Les ajustements polynomiaux de 
+    degré $5$ et supérieur, ainsi que les séries de Fourier de degré 
+    $5$ et supérieur, donnent des résultats moins précis, avec des
+    erreurs en pourcentage supérieures à $0,7\%$. Je conclus donc, 
+    selon les deux tableaux, le 
     meilleur ajustement possible est un polynôme du quatrième ordre, 
     une série de Fourier du premier ou du deuxième ordre, ainsi qu’un 
-    ajustement gaussien. Nous avons choisi un ajustement polynôme 
+    ajustement gaussien. Je choisi un ajustement polynôme 
     d'ordre quatre comme type d’ajustement à utiliser, car il présente 
-    un bon équilibre des écarts-types à travers des différents 
-    fichiers, \ref{table:BNC-fits}. Cela est optimal pour obtenir la 
+    un bon équilibre des écarts-types à travers les différents 
+    fichiers et elle est optimal pour obtenir la 
     meilleure résolution possible pour les procédures directes via 
-    mesure faible, ainsi que la forme typique qu’on retrouve. Il 
-    présente également un bon pourcentage d’erreur par rapport à la 
-    théorie. Vous pouvez trouver les mêmes tableaux que nous avons 
-    créés pour mesurer la vitesse de la lumière sur différentes 
-    longueurs de miroir à l’annexe A, table \ref{table:AnnexeFits}. 
+    mesure faible, ainsi que la forme typique qu’on retrouve. 
+    La figure \ref{fig:BNC-res} montre les délais mesurés
+    pour chaque longueur de câble BNC, ainsi que leur ajustement de
+    courbe. On peut voir que les délais mesurés sont linéaires en
+    fonction de la distance, ce qui est conforme à nos attentes. 
 
-\end{doublespace}
-
-\begin{longtable}{p{2.0cm} p{2.0cm} p{2.0cm} p{2.0cm} p{2.0cm}}
-    \caption{Mesure de la vitesse du signal dans les câbles BNC pour différent ajustement de courbe} \\
-    \toprule
-    \label{table:speed-BNC-table}
-    Type de fit & Vitesse mesurée (m/s) & Vitesse théorique (m/s) & Erreur (\%) & Qualité du fit \\
-    \midrule
-    \endfirsthead
-    
-    \toprule
-    Type de fit & Vitesse mesurée (m/s) & Vitesse théorique (m/s) & Erreur (\%) & Qualité du fit \\
-    \midrule
-    \endhead
-    
-    \midrule
-    \multicolumn{5}{r}{{À suivre sur la prochaine page}} \\
-    \midrule
-    \endfoot
-    
-    \bottomrule
-    \endlastfoot
-    
-    % Paste all your rows here like:
-    poly2     & 198125399     & 197863022           & 0.1326      & 0.0303       \\
-    poly3     & 198116966     & 197863022           & 0.1283      & 0.0301       \\
-    poly4     & 198117476     & 197863022           & 0.1286      & 0.0298       \\
-    poly5     & 198191774     & 197863022           & 0.1662      & 0.0301       \\
-    poly6     & 203054996     & 197863022           & 2.6240      & 0.0637       \\
-    poly7     & 201780752     & 197863022           & 1.9800      & 0.1358       \\
-    poly8     & 198220958     & 197863022           & 0.1809      & 0.0271       \\
-    poly9     & 198220258     & 197863022           & 0.1805      & 0.0271       \\
-    fourier1  & 198125807     & 197863022           & 0.1328      & 0.0304       \\
-    fourier2  & 198124682     & 197863022           & 0.1322      & 0.0302       \\
-    fourier3  & 198150017     & 197863022           & 0.1450      & 0.0454       \\
-    fourier4  & 198105100     & 197863022           & 0.1223      & 0.0295       \\
-    fourier5  & 199361343     & 197863022           & 0.7573      & 0.0386       \\
-    fourier6  & 199614259     & 197863022           & 0.8851      & 0.0779       \\
-    gauss1    & 198122675     & 197863022           & 0.1312      & 0.0304 
-\end{longtable}
-
-\begin{doublespace}
-    \noindent Discutons nos données dans une façon plus visuelle. 
-    Sur la figure \ref{fig:BNC-pulse}, on voit chaque impulsion 
-    provenant de différentes longueurs de câble BNC. Cette expérience 
-    ne mesure pas seulement la vitesse de la lumière dans les câbles 
-    BNC, elle teste aussi nos paramètres d’ajustement, puisque nous 
-    avons utilisé les mêmes paramètres pour la vitesse de la lumière 
-    pour les miroirs ajustables ainsi que nos mesure faibles. 
-\end{doublespace}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=1.0\textwidth]{speed_BNC.png}
+        \caption{Délais mesurés pour la longueur du câble BNC eux avec 
+        son ajustement de courbe.}
+        \label{fig:BNC-res}
+    \end{figure}
 
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=1.0\textwidth]{fits_BNC copy.png}
-    \caption{Profil temporel de la dérivée des données d'impulsion dans l'expérience des câbles BNC RG-58 avec chacun de ses ajustements de courbe. }
-    \label{fig:BNC-pulse}
-\end{figure}
 
-
-\begin{doublespace}
-    \noindent Nous procédons à l’ajustement des données en leur 
-    appliquant une fonction gaussienne, qui s’écrit comme suit :
-\end{doublespace}
-
-\begin{equation}
-    y(t) = a_0 + b_0 t^2 + c_0 t^3 + d_0 t^4
-\end{equation}
-
-\begin{doublespace}
-    \noindent Les paramètres d’ajustement $a_0$, $b_0$, $c_0$ et $d_0$ de la fonction avec variable dépendante $y$, qui représente l’amplitude, et $t$, qui correspond à la position temporelle des courbes, sont sélectionnés pour optimiser l’ajustement de nos données. Parmi ces données, $40\%$ des points de l’axe d’amplitude et de l’axe temporel sont ignorés. Ces paramètres correspondent le mieux à nos données. Il est difficile d’attribuer une valeur numérique pour évaluer la qualité du réglage de notre courbe, puisque celui-ci a principalement découlé d’une analyse visuelle. Nous avons néanmoins utilisé le coefficient de détermination ($R^2$) comme boussole, mais nous avons tenté d'éviter un ajustement excessif. Ce réglage nous permet maintenant d’identifier la position optimale, qui correspond à une position réelle observée dans nos données. Ensuite, nous comparons chaque position temporelle à celle des distances de référence pour obtenir les délais mesurés pour notre expérience. Ces délais sont tracés en fonction de la distance associée, et, par ajustement linéaire de la courbe, nous pouvons déterminer que la pente correspond à la vitesse du signal. 
-\end{doublespace}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=1.0\textwidth]{speed_BNC.png}
-    \caption{Délais mesurés pour la longueur du câble BNC eux avec 
-    son ajustement de courbe.}
-    \label{fig:BNC-res}
-\end{figure}
-
-\begin{doublespace}
     \noindent Notre résultat pour la vitesse du signal est 
     $197 863 022$ $m/s$, ce qui représente une erreur en 
-    pourcentage de $0.1312\%$ correspondant que la vitesse du 
-    sginal dans un câble BNC possède un différentes de $0.66$ par 
-    rapport à $c$, table \ref{table:speed-BNC-table}, ce qui est 
+    pourcentage de $0.1312\%$ par rapport à la vitesse du 
+    signal dans un câble BNC qui est environ $0.66$ par 
+    rapport à $c$, voir le tableau \ref{table:speed-BNC-table}, ce qui est 
     réaliste et cohérent avec l'erreur observée lors de 
     l'expérience précédente \cite{arrl2019,thorlabs2021}. En effet, 
     nous avons donc démontré notre capacité à mesurer des délais très 
     précis. C’est un élément essentiel pour pouvoir commencer à mesurer 
-    de petits délais entre des états polarisation d'entrée de 
-    changement dans le biais de mesures faibles.
+    de petits délais entre des impulsions de lumière, qui est 
+    l’objectif de la prochaine expérience.
+
 \end{doublespace}
-
-\begin{doublespace}
-    \noindent Voici les résultats des données issues des impulsions de l’expérience du miroir déplacé, figure \ref{fig:speed-pulses}. Ces données dérivées montrent clairement une forme gaussienne avec un pic maximal nettement visible. Cela facilite grandement son identification de sa position temporelle. 
-\end{doublespace}
-
-\begin{figure}[!hptb]
-    \centering
-    \includegraphics[width=1.0\textwidth]{fits_light.png}
-    \caption{Profil temporel de la dérivée des données d'impulsion pour chacune des distances mesurées et ajustement de la courbe pour l'expérience de la vitesse de la lumière avec un miroir réglable.}
-    \label{fig:speed-pulses}
-\end{figure}
-
-\begin{doublespace}
-    \noindent Le résultat de notre expérience sur la vitesse de la lumière est de $296 991 901$ $m/s$ avec une marge d'erreur de $0.91$ $\%$ par rapport à la valeur actuelle, table \ref{table:AnnexeASpeed}. Cela correspond à une différence de $0,9998$ par rapport à la vitesse de la lumière $c$ dans l’air ($c_{air} = 0.9998c$) \cite{hecht2012optics}.
-\end{doublespace}
-
-\begin{figure}[!hptb]
-    \centering
-    \includegraphics[width=1.0\textwidth]{speed_light.png}
-    \caption{Résultats des délais mesurés pendant l'expérience sur la vitesse de la lumière, ainsi que leur ajustement linéaire. Les barres d’erreur horizontales représentent l’incertitude de nos mesures de la distance, soit $\pm 0,5$ $mm$, qui est trop petite pour être visible sur le graphique. Les barres d'erreurs verticales correspondent à l'erreur de l'ajustement Fourier basé sur l'expérience de la vitesse de la lumière dans les câbles BNC $\pm 0,03\%$.}
-    \label{fig:speed-res}
-\end{figure}
-
-\begin{doublespace}
-    \noindent À partir des résultats de ces deux expériences, nous concluons que nous pouvons mesurer des délais temporels très courts, de l'ordre de 2 ps avec une variation inférieure à 1 ps entre les ensembles de données. Cette résolution est suffisante pour mettre en œuvre notre proposition de mesure du temps. Les sections suivantes seront consacrées à la caractérisation des états de polarisation par un petit décalage temporel entre les états de base. 
-\end{doublespace}
-
-
-
-
 
