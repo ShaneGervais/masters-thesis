@@ -1,115 +1,130 @@
 \begin{doublespace}
     
-    La façon dont nous acquérons nos données est importante, car nous 
-    devons nous assurer que nous utilisons la méthode la plus précise 
-    pour déterminer la position temporelle moyenne de l’état en vue
-    d’une analyse ultérieure des mesures faibles. Des implications 
-    importantes à considérer pour la précision de nos mesures est la 
-    façon dont l’oscilloscope est déclenché, ça méthode qu'elle 
-    acquiert des données pour le domaine temporel, ainsi que ça 
-    méthode d'échantillonnage et ce qu'on définit comme un délai. 
+    %La façon dont nous acquérons nos données est importante, car nous 
+    %devons nous assurer que nous utilisons la méthode la plus précise 
+    %pour déterminer la position temporelle moyenne de l’état en vue
+    %d’une analyse ultérieure. Des implications 
+    %mportantes à considérer pour la précision de nos mesures est la 
+    %façon dont l’oscilloscope est déclenché, ça méthode qu'elle 
+    %acquiert des données pour le domaine temporel, ainsi que ça 
+    %méthode d'échantillonnage et ce qu'on définit comme un délai. 
 
-    \noindent Le signal est détecté par le photodétecteur rapide, 
-    puis il est introduit dans l’oscilloscope à l’aide d’un câble BNC, 
-    figure \ref{fig:speed-of-light}. Il est ensuite déclenché par le 
-    front montant gauche de notre signal de déclenchement. Ce signal 
-    correspond à notre déclencheur, qui constitue une origine 
-    temporelle pour l’oscilloscope. Nous insérons le signal de 
-    déclenchement dans la porte externe (auxiliaire) de l’oscilloscope 
-    afin d’obtenir la meilleure résolution possible lors de 
-    l’acquisition et de l’échantillonnage. Nous avons établi qu’il 
+    Les signaux sont détecté par les photodétecteurs rapides, 
+    voir la figure \ref{fig:speed-of-light}, une partie du faisceau 
+    laser est détournée à l’aide d’un PBS 
+    vers un photodétecteur rapide, dont la sortie sert de 
+    \guillemetleft trigger \guillemetright (déclencheur) 
+    pour l'oscilloscope (signal de référence). Le signal expérimental, 
+    détecté est ensuite acquis en tant que voie principale sur 
+    l’oscilloscope afin de mesurer le délai temporel par rapport à 
+    cette référence. Je utilise le port externe de l’oscilloscope 
+    pour déclencher l’acquisition à partir d’un 
+    signal externe qui permet de synchroniser l’acquisition avec 
+    le signal de référence et on obtient la plus haute résolution
+    temporelle possible pour l'acquisition des données.       
+    Nous avons établi qu’il 
     fallait au moins $30$ $\mu W$ d’intensité de signal pour 
-    déclencher l’oscilloscope dans cette porte \cite{TektronixTDS5000}. 
+    déclencher l’oscilloscope sur le port \cite{TektronixTDS5000}. 
     Nous déterminons le délai de chaque acquisition par rapport à 
-    notre référence temporelle de départ, qui correspond à la position 
-    du miroir à l’origine, c’est-à-dire lorsqu’il se trouve à 
-    l’emplacement $0$. De cette manière, nous isolons l’expérience 
-    pour observer uniquement ce qui se produit lorsqu'on modifie la 
-    longueur du câble ou lorsqu’on déplace le miroir de son emplacement 
-    initial vers des positions plus éloignées. 
+    notre référence, qui correspond à longueur initial du câble
+    ou la position du miroir. De cette manière, nous isolons 
+    l’expérience pour observer uniquement ce qui se produit lorsqu'on modifie la 
+    longueur du câble ou lorsqu’on déplace le miroir. 
 
-    \noindent Les capacités et la résolution de l’oscilloscope sont 
-    influencées par sa méthode d’acquisition du signal entré. 
-    L’oscilloscope possède plusieurs modes d'acquisition: 
-    échantillonnage (\guillemetleft Sample\guillemetright), détection 
-    de pic, enveloppe, haute résolution et moyenne. Nous avons choisi 
-    le mode d'acquisition moyen, car il nous fournit le signal de 
-    sortie le plus typique du laser. Ce réglage gère le nombre de 
-    signaux sinusoïdaux que nous pouvons définir dans le signal 
-    d’entrée, ce qui permet de créer une moyenne des ondes sinusoïdales 
-    acquises \cite{TektronixTDS5000}. Pour obtenir un signal propre et 
-    éliminer le bruit de fond, nous devions acquérir en moyenne plus de 
-    $10 000$ formes d’ondes. Cela nous permet d’obtenir une mesure plus 
-    précise de la position temporelle moyenne du temps d'arrivée d'un 
-    signal. Nous avons aussi réalisé l’expérience dans l’obscurité 
-    pour réduire le bruit de fond, mais nous avons constaté que cette 
-    étape n’était pas nécessaire. Les résultats n’ont pas été 
-    radicalement différents, mais nous l’avons quand même fait. 
+    \noindent Le mode d'acquisition est un mode crucial pour la résolution
+    des données. Notre oscilloscope possède plusieurs modes d'acquisition: 
+    échantillonnage direct, détection 
+    de pic, enveloppe, haute résolution et moyennage. Je choisi 
+    le mode d'acquisition moyen, car il me fournit le signal de 
+    sortie le plus typique du laser. Pour obtenir un signal de sortie
+    représentatif de l'impulsion du laser, 
+    je dois effectuer un moyennage sur $10 000$ formes d'onde expérimentaux. 
 
     \noindent Le mode d'échantillonnage est un autre aspect important 
-    de la façon dont l'oscilloscope collecte des données dans le 
-    domaine temporel. Ces modes sont l’échantillonnage en temps réel, 
-    l’interpolation et l’équivalence temporelle. En mode 
+    de la façon dont l'oscilloscope collecte des données. Ces modes sont 
+    l’échantillonnage en temps réel, 
+    l’interpolation et temps d'équivalent. En mode 
     d’échantillonnage en temps réel, l’oscilloscope numérise tous 
-    les points acquits après un événement déclencheur. Ce mode 
+    les points après un événement déclencheur. Ce mode 
     d'échantillonnage est principalement utilisé pour les mesures 
     ponctuelles où les variations du signal en temps réel sont 
-    importantes. Le mode d’interpolation crée des points intermédiaires 
+    importantes \cite{TektronixTDS5000}. Le mode d’interpolation crée 
+    des points intermédiaires 
     entre les points d’échantillonnage, ce qui permet de combler 
-    les éventuelles lacunes. Cela donne une ligne droite ou une onde 
-    sinusoïdale entre les points, ce qui rend la courbe plus lisse. 
-    Nous ne voulons pas faire cela, car nous ne souhaitons pas que 
-    le signal soit surchargé d’interpolations. Enfin, le mode d
-    ’échantillonnage par équivalence de temps permet d’augmenter 
+    les éventuelles lacunes. Ce mode interprète les données et 
+    les relie par une ligne droite ou une onde sinusoïdale entre 
+    les points \cite{TektronixTDS5000}. Cependant, la résolution
+    temporelle est insufisante pour nos mesures. Le mode d
+    ’échantillonnage par temps d'équivalent permet d’augmenter 
     le taux d’échantillonnage au-delà du taux d’échantillonnage 
-    maximum en temps réel. Voyez la figure \ref{fig:EQ-time} pour 
-    comprendre comment cela fonctionne. Ainsi, il est possible 
-    d’obtenir le taux d’échantillonnage complet de l’oscilloscope, 
-    soit $500$ $GS/s$ (gigéchantillons par seconde), en utilisant 
-    ce mode. Notez que, si le déclenchement n’est pas en mode externe 
-    et que votre état d’entrée se trouve sur un canal différent de 
-    celui du signal de référence, votre taux d’échantillonnage maximal 
-    sera désormais divisé par deux. L’échantillonnage maximal est 
-    crucial pour l’oscilloscope, car il permet d’atteindre sa 
-    résolution temporelle maximale pour notre signal, qui est de 
-    4 $\pm 2 $ $ps$. Cela nous assure des mesures temporelles 
-    précises. 
+    maximum de l'oscilloscope. La figure \ref{fig:EQ-time} 
+    illustre le fonctionnement de ce mode. 
     
     \begin{figure}[!hptb]
         \centering
         \includegraphics[width=1.0\textwidth]{EQ _time_oscillo_fig.png}
-        \caption{Diagramme illustrant le fonctionnement du mode d’acquisition du temps d’équivalence de l’oscilloscope \cite{TektronixTDS5000}. Cet appareil collecte un petit nombre d’échantillons au moment où l’événement de déclenchement se produit, ce qui lui permet d’obtenir le signal complet de notre impulsion. Le taux d’échantillonnage est supérieur à celui de son homologue en temps réel. L’oscilloscope fonctionne en mode équivalence de temps en effectuant un échantillonnage aléatoire, qui est déclenché par des événements aléatoires définis par l’horloge d’échantillonnage de l’instrument. Cette horloge fonctionne de manière asynchrone par rapport au signal d’entrée et au signal de déclenchement. Il enregistre ensuite un certain nombre d’échantillons d’acquisition. Après cela, l’oscilloscope combine plusieurs échantillons d’un signal répétitif en cours d’acquisition. Il régule ensuite la fréquence d’échantillonnage du signal d’entrée pour un enregistrement d’ondes régulières et complètes. }
+        \caption{Diagramme illustrant le fonctionnement du mode 
+        d’échantillonnage en temps de équivalent de l’oscilloscope 
+        \cite{TektronixTDS5000}. Cet appareil collecte un petit 
+        nombre d’échantillons au moment où l’événement de 
+        déclenchement se produit, ce qui lui permet d’obtenir le 
+        signal complet de notre impulsion. Le taux d’échantillonnage 
+        est supérieur à celui du mode en temps réel. 
+        L’oscilloscope fonctionne en mode de temps d'équivalent
+        effectue un échantillonnage à chaque déclenchement du signaux de
+        référence avec l’horloge d’échantillonnage de l’instrument. Cette horloge fonctionne 
+        de manière asynchrone par rapport au signal d’entrée et au 
+        signal de déclenchement. Il enregistre ensuite un certain 
+        nombre d’échantillons d’acquisition. Après cela, l’oscilloscope 
+        combine plusieurs échantillons d’un signal répétitif en cours 
+        d’acquisition. Il régule ensuite la fréquence d’échantillonnage 
+        du signal d’entrée pour un enregistrement du signal complet.
+        }
         \label{fig:EQ-time}
     \end{figure}
+
+    \noindent En utilisant ce mode, 
+    je acquiert un petit nombre d’échantillons au moment
+    où l’événement de déclenchement se produit, ce qui lui permet
+    d’obtenir le signal complet de notre impulsion. Dans ce mode, 
+    il est possible 
+    d’obtenir le taux d’échantillonnage complet de $500$ $GS/s$ 
+    (gigéchantillons par seconde), en utilisant 
+    ce mode, et un taux d'échantillonnage électronique maximum
+    de $20$ $GS/s$. Si le déclenchement n’est pas en mode externe 
+    et que le signal de reférence se trouve sur un port, 
+    le taux d’échantillonnage maximal 
+    sera désormais divisé par deux. L’échantillonnage maximal est 
+    crucial pour l’oscilloscope, car il permet d’atteindre une 
+    résolution temporelle maximale de 
+    4 $\pm 2 $ $ps$. Cela nous assure des mesures temporelles 
+    précises. 
 
     \noindent Avec ces paramètres, nous avons la meilleure résolution 
     possible avec l’équipement servant à collecter des données sur 
     notre signal. Nous enregistrons ensuite les signaux d’onde de 
-    sortie sous forme de tableau CSV sur un ordinateur, ce qui 
-    facilitera une analyse plus approfondie des données. Ce processus 
-    d’acquisition prend environ trois minutes. Par la suite, discutons 
-    des procédures et des résultats de nos expériences pour valider 
-    notre capacité de mesurer des délais ultra-courts. 
-
-    \noindent L'une consiste à mesurer la vitesse d'un signal dans un 
-    câble BNC RG-58 \cite{ThorlabsBNC} avec des délais temporels à 
-    l'aide de différentes longueurs de câbles. Cette expérience 
+    sortie au format CSV. Une mesure d'acquisition prend environ trois minutes et
+    je prend $10$ différentes acquisitions pour chaque different délai. 
+    Pour mesurer la vitesse d'un signal dans un 
+    câble BNC RG-58 \cite{ThorlabsBNC} avec des délais temporels implémentés
+    en faisant parcourir le signal expérimental sur des 
+    différentes longueurs de câbles. Cette expérience 
     facilite nos mesures, car les câbles ont une longueur déterminée 
     par le fabricant. Le délai est lié aux variations de longueur entre 
     les différentes longueurs de câbles. Ces dernières sont de 
-    $172$, $270$, $522$, $1032$ et $3000$ $mm$. Les délais commencent 
-    par une mesure avec un câble plus court que le premier. Dans ce 
-    cas, le miroir ajustable est fixe.
-
-    \noindent L’autre expérience consiste en un principe semblable, 
-    soit la mesure de la vitesse de la lumière à partir d’un miroir 
-    et à prendre des mesures à différentes distances 
-    ($2,52$, $5,48$, $10,10$, $20,19$, $30,29$, $40,38$, $50,48$ 
-    et $65,62$ $cm$ (mesuré à l’œil avec une règle)). Le délai mesuré 
-    part d’une référence, appelée position $0$, située à $11,5$ $cm$ 
-    du PBS. La lumière doit parcourir une distance double de celle 
-    envoyée dans les deux sens à partir du séparateur de faisceau. 
-    Ensuite, analyser les données afin de trouver le délai obtenu 
-    pour chaque distance du miroir.
+    $172$, $270$, $522$, $1032$ et $3000$ $ \pm 0.5 mm$ . Les délais 
+    commencent par une mesure avec un câble possèdant la longueur 
+    la plus courte; dans ce cas, le miroir ajustable est fixe. Pour 
+    l'expérience de mesures de la vitesse de la lumière en introduiosant
+    un délai en déplacent le miroir à des différentes distances: 
+    $2,52$, $5,48$, $10,10$, $20,19$, $30,29$, $40,38$, $50,48$ 
+    et $65,62$ $cm$ (mesuré à l’œil avec une règle). Le délai mesuré 
+    part d’une référence, appelée position $0$, correspondant à 
+    la position initiale du miroir. Comme le montrons dans 
+    la figure \ref{fig:speed-of-light}, la lumière doit parcourir 
+    une distance double de celle envoyée dans les deux sens à partir 
+    du séparateur de faisceau (incorporé dans les distances notées 
+    précédemment). Ensuite, les données sont analysées afin de 
+    trouver le délai obtenu pour chaque distance du miroir.
     
 \end{doublespace}

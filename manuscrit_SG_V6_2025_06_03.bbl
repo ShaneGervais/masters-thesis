@@ -1708,22 +1708,6 @@
     \field{year}{2018}
   \endentry
 
-  \entry{ThorlabsDET025A}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=T}{%
-         family={Thorlabs},
-         familyi={T\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{T2}
-    \strng{fullhash}{T2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{howpublished}{\url{https://www.thorlabs.com/thorproduct.cfm?partnumber=DET025A}}
-    \field{note}{Consulté le 25 février 2025}
-    \field{title}{DET025A - 2 GHz Si Free-Space Photodetector with Window, 400 - 1100 nm, 8-32 Tap}
-  \endentry
-
   \entry{ThorlabsNPL64B}{misc}{}
     \name{author}{1}{}{%
       {{hash=T}{%
@@ -1738,6 +1722,22 @@
     \field{howpublished}{\url{https://www.thorlabs.com/thorproduct.cfm?partnumber=NPL64B}}
     \field{note}{Consulté le 25 février 2025}
     \field{title}{NPL64B - Nanosecond Pulsed Laser Diode System, 640 nm, 5 - 39 ns Adjustable Pulse Width}
+  \endentry
+
+  \entry{ThorlabsDET025A}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={Thorlabs},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T2}
+    \strng{fullhash}{T2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://www.thorlabs.com/thorproduct.cfm?partnumber=DET025A}}
+    \field{note}{Consulté le 25 février 2025}
+    \field{title}{DET025A - 2 GHz Si Free-Space Photodetector with Window, 400 - 1100 nm, 8-32 Tap}
   \endentry
 
   \entry{ThorlabsBNC}{misc}{}

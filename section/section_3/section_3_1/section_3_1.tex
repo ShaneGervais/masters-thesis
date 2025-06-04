@@ -16,29 +16,28 @@
     \caption{
         Représentation de notre dispositif expérimental pour 
     évaluer la précision de nos mesures temporelles en mesurant la 
-    vitesse d'un signal dans les câbles BNC et la vitesse de la lumière 
-    en déplaçant un miroir. L’impulsion du laser est d’abord réglée en 
+    vitesse d'un signal dans les câbles BNC et la vitesse de la lumière. 
+    L’impulsion du laser est d’abord réglée en 
     intensité par une lame demi-onde, puis dirigée vers un séparateur 
     de faisceau polarisant (PBS) qui divise les états de polarisation 
-    horizontaux et verticaux de base de l’impulsion d’entrée en deux 
-    voies orthogonales. Celui qui est réfléchi par le PBS sera notre 
-    signal de référence pour déclencher l’oscilloscope déçu. L’autre 
-    subit encore un autre PBS. Une des voies sera ensuite ignorée à 
-    l'aide d'un bloc. Nous définissons les états de polarisation comme 
-    suit : le faisceau réfléchi représente l’état de base de 
-    polarisation verticale $\ket{V}$ de l’état d’entrée $\ket{\psi}$, 
-    tandis que le faisceau transmis correspond à l’état de base 
-    horizontal $\ket{H}$. Nous orientons l’état horizontal vers un 
-    miroir, que nous réglerons en fonction des différentes distances à 
+    horizontaux et verticaux en deux 
+    voies orthogonales. Le faisceau réfléchi, représenté par l’état de base de 
+    polarisation verticale $\ket{V}$, sera notre 
+    signal de référence pour déclencher l’oscilloscope, à gauche. 
+    Le faisceau transmis, correspondent à l’état de base 
+    horizontal $\ket{H}$, subit encore un autre PBS et se revoie avec un miroir fixe 
+    ainsi qu'une lame quart d'onde pour convertir l'état de polarisation
+    $\ket{H}$ en un état $\ket{V}$ pour qu'il soit réfléchi. Il est 
+    ensuite détecté avec un autre photodétecteur puis 
+    mesuré par notre oscilloscope, à droite.
+    Pour l'expérience de la vitesse d'un signal dans un câble BNC, nous 
+    utilisent simplement de différentes longueurs de câble attachées 
+    sur notre photodétecteur. Pour l'expérience de la vitesse de la lumière, nous
+    orientons l'état de polarisation horizontal vers un miroir,
+    que nous réglerons en fonction des différentes distances à 
     évaluer pour l'expérience de la vitesse de la lumière. Il est 
     ensuite renvoyé vers le PBS pour y être réfléchi. Ce procédé 
     utilise une lame quart d’onde pour convertir l’état de polarisation 
-    $\ket{H}$ en un état $\ket{V}$ pour qu'il soit réfléchi. Il est 
-    ensuite détecté avec un photodétecteur rapide à base de Si 
-    \cite{ThorlabsDET025A} puis interprété par notre oscilloscope. Pour 
-    l'expérience de la vitesse d'un signal dans un câble BNC, nous 
-    utilisent simplement de différentes longueurs de câble attachées 
-    sur notre photodétecteur.
     }
     \label{fig:speed-of-light}
 \end{figure}
@@ -69,8 +68,15 @@
     $2$ $GHz$, ce qui est suffisant pour mesurer les impulsions de
     $10$ $ns$. Le photodétecteur est connecté à un câble BNC de 
     $50$ $\Omega$ \cite{ThorlabsBNC} qui est ensuite connecté à 
-    un oscilloscope \cite{TektronixTDS5000} pour l'enregistrement 
-    des données et j'analyse les données avec MATLAB et/ou Python.
+    un oscilloscope pour l'enregistrement des données.
+    Nous utilisons un oscilloscope Tektronix TDS 5000 \cite{TektronixTDS5000}, 
+    qui est un oscilloscope numérique à mémoire profonde, 
+    capable d’acquérir des signaux à des vitesses allant jusqu’à 
+    $500$ $GS/s$ (gigéchantillons par seconde) et possède une 
+    bande passante de $500$ $MHz$.  
+    Ensuite, je analyse les données avec MATLAB et/ou Python et interprète 
+    les résultats pour en tirer des conclusions sur la précision de nos
+    mesures temporelles.
 
 \end{doublespace}
 
