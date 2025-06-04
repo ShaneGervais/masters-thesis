@@ -1,0 +1,9 @@
+{
+    "latex-workshop.formatting.latex": "latexindent",
+
+    "rewrap.wrappingColumn": 72,    // or whatever maximum line length you prefer
+	"[latex]": {
+  	"rewrap.wrappingColumn": 72    // only for .tex files, if you’d like
+	}
+}
+

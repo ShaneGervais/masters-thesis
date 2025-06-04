@@ -20,7 +20,7 @@
 \contentsline {subsection}{\numberline {2.5}Proposition expérimentale pour la caractérisation de la valeur faible}{31}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}Mots finaux sur la théorie}{33}{subsection.2.6}%
 \contentsline {section}{\numberline {3}MESURE EXPÉRIMENTALE DIRECTE D'UN ÉTAT DE POLARISATION EN UTILISANT UNE MESURE FAIBLE TEMPORELLE}{34}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Mesure de délai temporel ultra courte}{34}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.1}Mesure de délais temporels ultra courts}{34}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}L’importance de l’acquisition de données }{35}{subsubsection.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}Analyse et résultats de l'expérience de la vitesse de la lumière}{40}{subsubsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.2}Caractérisation de la partie réelle de la valeur faible}{52}{subsection.3.2}%
