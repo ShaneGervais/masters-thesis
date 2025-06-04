@@ -1708,6 +1708,22 @@
     \field{year}{2018}
   \endentry
 
+  \entry{ThorlabsDET025A}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={Thorlabs},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T2}
+    \strng{fullhash}{T2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://www.thorlabs.com/thorproduct.cfm?partnumber=DET025A}}
+    \field{note}{Consulté le 25 février 2025}
+    \field{title}{DET025A - 2 GHz Si Free-Space Photodetector with Window, 400 - 1100 nm, 8-32 Tap}
+  \endentry
+
   \entry{ThorlabsNPL64B}{misc}{}
     \name{author}{1}{}{%
       {{hash=T}{%
@@ -1722,6 +1738,24 @@
     \field{howpublished}{\url{https://www.thorlabs.com/thorproduct.cfm?partnumber=NPL64B}}
     \field{note}{Consulté le 25 février 2025}
     \field{title}{NPL64B - Nanosecond Pulsed Laser Diode System, 640 nm, 5 - 39 ns Adjustable Pulse Width}
+  \endentry
+
+  \entry{ThorlabsBNC}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=PM}{%
+         family={PRO},
+         familyi={P\bibinitperiod},
+         given={MULTICOMP},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PM1}
+    \strng{fullhash}{PM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://canada.newark.com/multicomp-pro/24-15626/rf-coax-bnc-straight-plug-10ft/dp/83X8079}}
+    \field{note}{Consulté le 28 mars 2025}
+    \field{title}{RF / Coaxial Cable Assembly, BNC Straight Plug, BNC Straight Plug, RG58, 50 ohm}
   \endentry
 
   \entry{TektronixTDS5000}{manual}{}
@@ -1748,40 +1782,6 @@
       {Beaverton, OR, USA}%
     }
     \field{year}{2002}
-  \endentry
-
-  \entry{ThorlabsDET025A}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=T}{%
-         family={Thorlabs},
-         familyi={T\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{T2}
-    \strng{fullhash}{T2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{howpublished}{\url{https://www.thorlabs.com/thorproduct.cfm?partnumber=DET025A}}
-    \field{note}{Consulté le 25 février 2025}
-    \field{title}{DET025A - 2 GHz Si Free-Space Photodetector with Window, 400 - 1100 nm, 8-32 Tap}
-  \endentry
-
-  \entry{ThorlabsBNC}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=PM}{%
-         family={PRO},
-         familyi={P\bibinitperiod},
-         given={MULTICOMP},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{PM1}
-    \strng{fullhash}{PM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{howpublished}{\url{https://canada.newark.com/multicomp-pro/24-15626/rf-coax-bnc-straight-plug-10ft/dp/83X8079}}
-    \field{note}{Consulté le 28 mars 2025}
-    \field{title}{RF / Coaxial Cable Assembly, BNC Straight Plug, BNC Straight Plug, RG58, 50 ohm}
   \endentry
 
   \entry{arrl2019}{book}{}

@@ -1,5 +1,13 @@
 \begin{doublespace}
-    Maintenant, analysons nos données de l'expérience de la vitesse d’un signal à travers un câble BNC à partir des délais d’impulsion. Nous avons configuré l’oscilloscope en mode EQ-time (temps d'équivalence), avec une durée de $100$ $ns$, une longueur d'enregistrement de $10 000$ points et une résolution de $4$ $ps$. Plus tard, lors d’expériences de mesures faibles, nous constaterons que nous n’avons pas besoin d’une telle durée. Nous commençons par observer l'impulsion typique du laser dans la figure \ref{fig:typical-pulse}. 
+    Maintenant, analysons nos données de l'expérience de la 
+    vitesse d’un signal à travers un câble BNC à partir des délais 
+    d’impulsion. Nous avons configuré l’oscilloscope en mode EQ-time 
+    (temps d'équivalence), avec une durée de $100$ $ns$, une longueur 
+    d'enregistrement de $10 000$ points et une résolution de $4$ $ps$. 
+    Plus tard, lors d’expériences de mesures faibles, nous constaterons 
+    que nous n’avons pas besoin d’une telle durée. Nous commençons par 
+    observer l'impulsion typique du laser dans la figure 
+    \ref{fig:typical-pulse}. 
 \end{doublespace}
 
 \begin{figure}[hp]
@@ -14,11 +22,67 @@
 \end{figure}
 
 \begin{doublespace}
-    \noindent Observez que le profil temporel des impulsions n’est pas une fonction de Gauss, mais plutôt une fonction de porte. En allongeant la durée de l’impulsion du laser, l’impulsion ressemble de plus en plus à une fonction de port au fur et à mesure. La raison pour laquelle nous souhaitons une forme gaussienne est qu'elle est simplement plus fréquente dans les mesures faibles ayant un sens physique plus naturel et qu'il est plus facile de déterminer la valeur moyenne de la position temporelle de l'impulsion (le moment le plus probable pour détecter un photon de cette impulsion) que nous définissons comme le pic. Par conséquent, notre objectif est de calculer numériquement la dérivée des données de l’impulsion, ce qui nous permettra de localiser précisément le pic et de le comparer à d'autres impulsions.
+    \noindent Observez que le profil temporel des impulsions n’est 
+    pas une fonction de Gauss, mais plutôt une fonction de porte. 
+    En allongeant la durée de l’impulsion du laser, l’impulsion 
+    ressemble de plus en plus à une fonction de port au fur et à 
+    mesure. La raison pour laquelle nous souhaitons une forme 
+    gaussienne est qu'elle est simplement plus fréquente dans 
+    les mesures faibles ayant un sens physique plus naturel et 
+    qu'il est plus facile de déterminer la valeur moyenne de la 
+    position temporelle de l'impulsion (le moment le plus probable 
+    pour détecter un photon de cette impulsion) que nous définissons 
+    comme le pic. Par conséquent, notre objectif est de calculer 
+    numériquement la dérivée des données de l’impulsion, ce qui nous 
+    permettra de localiser précisément le pic et de le comparer à 
+    d'autres impulsions.
     
-    \noindent Notez que le profil temporel des impulsions n’est pas une fonction gaussienne, mais plutôt une fonction porte. En prolongeant la durée de l’impulsion du laser, l’impulsion tend vers une fonction porte de plus en plus. Nous désirons une distribution gaussienne, car elle se révèle plus fréquente dans les mesures à faible intensité, présentant ainsi une signification physique plus naturelle. De plus, il est plus facile de déterminer la valeur moyenne de la position temporelle de l'impulsion (le moment le plus probable pour détecter un photon de cette impulsion), que nous nommons le \guillemetleft pic \guillemetright. Par conséquent, notre objectif est de calculer numériquement la dérivée des données de l’impulsion. La méthode des différences finies est utilisée comme type de dérivé numérique. Elle s’avère suffisante pour cette expérience. Ce dernier nous permettra de localiser précisément le pic en prenant un ajustement de courbe avec un domaine temporel plus fini pour la localisation du pic. Cette méthode nous permettra aussi de choisir un point temporel pour le temps d’arrivée, qui n’est pas nécessairement situé entre deux points de données. On comparera ensuite chacun de ces temps d’arrivée, pour chacune des longueurs de câble.
+    \noindent Notez que le profil temporel des impulsions n’est pas 
+    une fonction gaussienne, mais plutôt une fonction porte. En 
+    prolongeant la durée de l’impulsion du laser, l’impulsion tend 
+    vers une fonction porte de plus en plus. Nous désirons une 
+    distribution gaussienne, car elle se révèle plus fréquente dans 
+    les mesures à faible intensité, présentant ainsi une signification 
+    physique plus naturelle. De plus, il est plus facile de déterminer 
+    la valeur moyenne de la position temporelle de l'impulsion 
+    (le moment le plus probable pour détecter un photon de cette 
+    impulsion), que nous nommons le \guillemetleft pic \guillemetright. 
+    Par conséquent, notre objectif est de calculer numériquement la 
+    dérivée des données de l’impulsion. La méthode des différences 
+    finies est utilisée comme type de dérivé numérique. Elle s’avère 
+    suffisante pour cette expérience. Ce dernier nous permettra de 
+    localiser précisément le pic en prenant un ajustement de courbe 
+    avec un domaine temporel plus fini pour la localisation du pic.
+    Cette méthode nous permettra aussi de choisir un point temporel 
+    pour le temps d’arrivée, qui n’est pas nécessairement situé entre 
+    deux points de données. On comparera ensuite chacun de ces temps 
+    d’arrivée, pour chacune des longueurs de câble.
 
-    \noindent À partir de là, l’ajustement de la courbe devient un aspect vraiment important dans la localisation du temps d’arrivée de notre signal. Nous effectuons de nombreux calculs numériques pour constater que l’option la plus adéquate était d’utiliser un pas de temps de $1/10000$ de la résolution des oscilloscopes pour l’axe des temps sur lequel nous effectuions l’ajustement. Nous avons remarqué qu’en négligeant environ $40 \%$ des données d’amplitude initiales, l’ajustement était plus susceptible d’être optimal. Le reste du signal ne présentait pas d’intérêt. On prend alors la position temporelle de ce pic et on l’ajoute dans un dictionnaire des temps d’arrivée, puis on la compare à notre câble de référence, qui est considéré comme notre origine, donc une position temporelle $0$ ou sans délai. Le tableau suivant, table \ref{table:BNC-fits}, montre les différents ajustements que nous avons essayés ainsi que le temps moyen d'arrivée pour chaque distance en utilisant ces ajustements. Il montre également l'écart-type de la façon dont la position du temps d'arrivée change pour chaque fichier individuel de cette même longueur de câble et le coefficient de détermination $R^2$ qui a également été utilisé comme paramètre pour déterminer la qualité de l'ajustement ainsi que la visualisation de tous ces ajustements. Nous avons sélectionné $5$ échantillons distincts pour chaque longueur de câble. Nous avions initialement prévu d’en prélever plus de $5$, mais nous avons réalisé que c'était excessif et qu'il suffisait d'en prélever au moins $3$. 
+    \noindent À partir de là, l’ajustement de la courbe devient un 
+    aspect vraiment important dans la localisation du temps d’arrivée 
+    de notre signal. Nous effectuons de nombreux calculs numériques 
+    pour constater que l’option la plus adéquate était d’utiliser un 
+    pas de temps de $1/10000$ de la résolution des oscilloscopes pour 
+    l’axe des temps sur lequel nous effectuions l’ajustement. Nous 
+    avons remarqué qu’en négligeant environ $40 \%$ des données 
+    d’amplitude initiales, l’ajustement était plus susceptible d’être 
+    optimal. Le reste du signal ne présentait pas d’intérêt. On prend 
+    alors la position temporelle de ce pic et on l’ajoute dans un 
+    dictionnaire des temps d’arrivée, puis on la compare à notre câble 
+    de référence, qui est considéré comme notre origine, donc une 
+    position temporelle $0$ ou sans délai. Le tableau suivant, table 
+    \ref{table:BNC-fits}, montre les différents ajustements que nous 
+    avons essayés ainsi que le temps moyen d'arrivée pour chaque 
+    distance en utilisant ces ajustements. Il montre également 
+    l'écart-type de la façon dont la position du temps d'arrivée change 
+    pour chaque fichier individuel de cette même longueur de câble et 
+    le coefficient de détermination $R^2$ qui a également été utilisé 
+    comme paramètre pour déterminer la qualité de l'ajustement ainsi
+    que la visualisation de tous ces ajustements. Nous avons 
+    sélectionné $5$ échantillons distincts pour chaque longueur de 
+    câble. Nous avions initialement prévu d’en prélever plus de $5$, 
+    mais nous avons réalisé que c'était excessif et qu'il suffisait 
+    d'en prélever au moins $3$. 
 
     
 \end{doublespace}
@@ -140,9 +204,31 @@
 
 \begin{doublespace}
     
-    \noindent En plus de la vérification de l'ajustement présentant le moins d'écart entre les fichiers pour chaque longueur de câble possible, le tableau suivant, table \ref{table:speed-BNC-table}, présente les différents types d'ajustement, en testant également la précision de la vitesse des mesures du signal en fonction des ajustements trouvés pour le temps d'arrivée. La vitesse est déterminée en effectuant un ajustement linéaire sur les valeurs moyennes du temps d'arrivée, pour chaque longueur de câble. Nous comparons ensuite ces données à la valeur théorique, qui est d’environ $0,66 c$ \cite{arrl2019}. 
+    \noindent En plus de la vérification de l'ajustement présentant 
+    le moins d'écart entre les fichiers pour chaque longueur de câble 
+    possible, le tableau suivant, table \ref{table:speed-BNC-table},
+    présente les différents types d'ajustement, en testant également 
+    la précision de la vitesse des mesures du signal en fonction des 
+    ajustements trouvés pour le temps d'arrivée. La vitesse est 
+    déterminée en effectuant un ajustement linéaire sur les valeurs 
+    moyennes du temps d'arrivée, pour chaque longueur de câble. Nous 
+    comparons ensuite ces données à la valeur théorique, qui est 
+    d’environ $0,66 c$ \cite{arrl2019}. 
 
-    \noindent Nous en concluons que, selon nos deux tableaux, le meilleur ajustement possible est un polynôme du quatrième ordre, une série de Fourier du premier ou du deuxième ordre, ainsi qu’un ajustement gaussien. Nous avons choisi un ajustement polynôme d'ordre quatre comme type d’ajustement à utiliser, car il présente un bon équilibre des écarts-types à travers des différents fichiers, \ref{table:BNC-fits}. Cela est optimal pour obtenir la meilleure résolution possible pour les procédures directes via mesure faible, ainsi que la forme typique qu’on retrouve. Il présente également un bon pourcentage d’erreur par rapport à la théorie. Vous pouvez trouver les mêmes tableaux que nous avons créés pour mesurer la vitesse de la lumière sur différentes longueurs de miroir à l’annexe A, table \ref{table:AnnexeFits}. 
+    \noindent Nous en concluons que, selon nos deux tableaux, le 
+    meilleur ajustement possible est un polynôme du quatrième ordre, 
+    une série de Fourier du premier ou du deuxième ordre, ainsi qu’un 
+    ajustement gaussien. Nous avons choisi un ajustement polynôme 
+    d'ordre quatre comme type d’ajustement à utiliser, car il présente 
+    un bon équilibre des écarts-types à travers des différents 
+    fichiers, \ref{table:BNC-fits}. Cela est optimal pour obtenir la 
+    meilleure résolution possible pour les procédures directes via 
+    mesure faible, ainsi que la forme typique qu’on retrouve. Il 
+    présente également un bon pourcentage d’erreur par rapport à la 
+    théorie. Vous pouvez trouver les mêmes tableaux que nous avons 
+    créés pour mesurer la vitesse de la lumière sur différentes 
+    longueurs de miroir à l’annexe A, table \ref{table:AnnexeFits}. 
+
 \end{doublespace}
 
 \begin{longtable}{p{2.0cm} p{2.0cm} p{2.0cm} p{2.0cm} p{2.0cm}}
@@ -185,7 +271,13 @@
 \end{longtable}
 
 \begin{doublespace}
-    \noindent Discutons nos données dans une façon plus visuelle. Sur la figure \ref{fig:BNC-pulse}, on voit chaque impulsion provenant de différentes longueurs de câble BNC. Cette expérience ne mesure pas seulement la vitesse de la lumière dans les câbles BNC, elle teste aussi nos paramètres d’ajustement, puisque nous avons utilisé les mêmes paramètres pour la vitesse de la lumière pour les miroirs ajustables ainsi que nos mesure faibles. 
+    \noindent Discutons nos données dans une façon plus visuelle. 
+    Sur la figure \ref{fig:BNC-pulse}, on voit chaque impulsion 
+    provenant de différentes longueurs de câble BNC. Cette expérience 
+    ne mesure pas seulement la vitesse de la lumière dans les câbles 
+    BNC, elle teste aussi nos paramètres d’ajustement, puisque nous 
+    avons utilisé les mêmes paramètres pour la vitesse de la lumière 
+    pour les miroirs ajustables ainsi que nos mesure faibles. 
 \end{doublespace}
 
 
@@ -198,7 +290,8 @@
 
 
 \begin{doublespace}
-    \noindent Nous procédons à l’ajustement des données en leur appliquant une fonction gaussienne, qui s’écrit comme suit :
+    \noindent Nous procédons à l’ajustement des données en leur 
+    appliquant une fonction gaussienne, qui s’écrit comme suit :
 \end{doublespace}
 
 \begin{equation}
@@ -212,12 +305,23 @@
 \begin{figure}[h]
     \centering
     \includegraphics[width=1.0\textwidth]{speed_BNC.png}
-    \caption{Délais mesurés pour la longueur du câble BNC eux avec son ajustement de courbe.}
+    \caption{Délais mesurés pour la longueur du câble BNC eux avec 
+    son ajustement de courbe.}
     \label{fig:BNC-res}
 \end{figure}
 
 \begin{doublespace}
-    \noindent Notre résultat pour la vitesse du signal est $197 863 022$ $m/s$, ce qui représente une erreur en pourcentage de $0.1312\%$ correspondant que la vitesse du sginal dans un câble BNC possède un différentes de $0.66$ par rapport à $c$, table \ref{table:speed-BNC-table}, ce qui est réaliste et cohérent avec l'erreur observée lors de l'expérience précédente \cite{arrl2019,thorlabs2021}. En effet, nous avons donc démontré notre capacité à mesurer des délais très précis. C’est un élément essentiel pour pouvoir commencer à mesurer de petits délais entre des états polarisation d'entrée de changement dans le biais de mesures faibles.
+    \noindent Notre résultat pour la vitesse du signal est 
+    $197 863 022$ $m/s$, ce qui représente une erreur en 
+    pourcentage de $0.1312\%$ correspondant que la vitesse du 
+    sginal dans un câble BNC possède un différentes de $0.66$ par 
+    rapport à $c$, table \ref{table:speed-BNC-table}, ce qui est 
+    réaliste et cohérent avec l'erreur observée lors de 
+    l'expérience précédente \cite{arrl2019,thorlabs2021}. En effet, 
+    nous avons donc démontré notre capacité à mesurer des délais très 
+    précis. C’est un élément essentiel pour pouvoir commencer à mesurer 
+    de petits délais entre des états polarisation d'entrée de 
+    changement dans le biais de mesures faibles.
 \end{doublespace}
 
 \begin{doublespace}

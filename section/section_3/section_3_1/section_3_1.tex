@@ -8,37 +8,9 @@
     notre précision de la vitesse de la lumière via des délais 
     temporels. Dans la figure \ref{fig:speed-of-light}, nous 
     présentons le dispositif expérimental que nous utiliserons pour 
-    les deux prochaines expériences. Notre laser est une source à diodes
-    pulsés nanosecondes, capable de générer des impulsions 
-    allant de $5$ à $39$ $ns$. J'utilisant une impulsion de $10$ $ns$
-    pour nos expériences, car les intervalles de temps plus longs  
-    rend la mesure moins précise. Cette perte de précision ce présente 
-    dans la mesure de la partie imaginaire, à ces longueurs d'impulsion,
-    la distribution temporel du signal devient plus similaire à celle d’une
-    fonction porte \cite{ThorlabsNPL64B}, qui apporte une discontinuïté
-    dans le domaine temporel,
-    entraînant un bruit à haute fréquence ce qui rend la mesure
-    moins précise. Nous voulons une impulsion de forme gaussienne, car cette
-    forme est souvent utilisée dans
-    les mesures de faibles \cite{OpticalNetworks, Lundeen_Direct_Measurement,Hairiri,Guilleaum,Brunner_2004}
-    pour faciliter l’identification de la position maximale de
-    l’impulsion, que nous identifierons comme correspondant à la
-    position temporelle moyenne de l’impulsion.
-     
-    Le laser possède une longueur d’onde comprise entre 
-    $640 \pm 10$ $nm$, avec une énergie d’impulsion maximale de 
-    $2,0$ $nJ$. Sa puissance de pointe s’élève à $50$ $mW$ lorsque le 
-    taux de répétition et la largeur d’impulsion maximale sont utilisés. 
-    Toutefois, dans le cadre de notre protocole, nous fixons la 
-    fréquence de répétition à $1$ $MHz$, assurant ainsi une fréquence 
-    constante tout au long de l’expérience. Cela n’affectera pas 
-    l’expérience elle-même. Nous recueillons nos données à l'aide d'un 
-    oscilloscope \cite{TektronixTDS5000} et les analyserons sur un 
-    logiciel de programmation soit MATLAB ou Python à volonté. 
+    les deux prochaines expériences. 
 
-\end{doublespace}
-
-\begin{figure}[!hpbt]
+    \begin{figure}[!hpbt]
     \centering
     \includegraphics[width=1.0\textwidth]{speed_of_light_exp.png}
     \caption{
@@ -70,3 +42,35 @@
     }
     \label{fig:speed-of-light}
 \end{figure}
+    
+    \noindent Notre laser est une source à diodes
+    pulsés nanosecondes, capable de générer des impulsions 
+    allant de $5$ à $39$ $ns$. J'utilisant une impulsion de $10$ $ns$
+    pour nos expériences, car les intervalles de temps plus longs  
+    rend la mesure moins précise. Cette perte de précision ce présente 
+    dans la mesure de la partie imaginaire, à ces longueurs d'impulsion,
+    la distribution temporel du signal devient plus similaire à celle d’une
+    fonction porte \cite{ThorlabsNPL64B}, qui apporte une discontinuïté
+    dans le domaine temporel,
+    entraînant un bruit à haute fréquence ce qui rend la mesure
+    moins précise. Nous voulons une impulsion de forme gaussienne, car cette
+    forme est souvent utilisée dans
+    les mesures de faibles \cite{OpticalNetworks, Lundeen_Direct_Measurement,Hairiri,Guilleaum,Brunner_2004}
+    pour faciliter l’identification de la position maximale de
+    l’impulsion, que nous identifierons comme correspondant à la
+    position temporelle moyenne de l’impulsion. Le laser possède une longueur d’onde comprise entre 
+    $640 \pm 10$ $nm$, avec une énergie d’impulsion maximale de 
+    $2,0$ $nJ$. Sa puissance de crête s’élève pas plus 
+    qu’à $50$ $mW$, ca puissance moyenne est de $20$ $MW$. 
+    Je fixe le taux de répétition à $1$ $MHz$, pour avoir un temps 
+    suffisamment long entre les impulsions. Je recueille les
+    données à l'aide d'un photodétecteur rapide à base de Si 
+    \cite{ThorlabsDET025A}, qui possède une bande passante de 
+    $2$ $GHz$, ce qui est suffisant pour mesurer les impulsions de
+    $10$ $ns$. Le photodétecteur est connecté à un câble BNC de 
+    $50$ $\Omega$ \cite{ThorlabsBNC} qui est ensuite connecté à 
+    un oscilloscope \cite{TektronixTDS5000} pour l'enregistrement 
+    des données et j'analyse les données avec MATLAB et/ou Python.
+
+\end{doublespace}
+
