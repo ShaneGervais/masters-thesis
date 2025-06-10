@@ -1,12 +1,17 @@
 \begin{doublespace}
 
     Nous souhaitons d'évaluer notre capacité à mesurer des délais 
-    temporels avec précision. Pour ce faire, nous devons déterminer 
-    notre précision de la vitesse de la lumière via des délais
-    Nous vous invitons à évaluer notre capacité à mesurer des délais 
-    temporels avec précision. Pour ce faire, nous devons déterminer 
-    notre précision de la vitesse de la lumière via des délais 
-    temporels. Dans la figure \ref{fig:speed-of-light}, nous 
+    temporels avec précision. À cet effet, nous devons déterminer 
+    notre précision de mesure temporelle en mesurant la vitesse d'un
+    signal électrique qui se déplaçant dans un câble BNC de différentes
+    longueurs. Nous utiliserons ensuite cette méthode pour
+    mesurer la vitesse de la lumière dans un système photonique,
+    qui nous permettra de tester notre précision de mesure temporelle
+    dans un système plus complexe. Ces expériences nous permettront
+    de caractériser notre capacité à mesurer des délais
+    temporels avec précision, ce qui est essentiel pour la
+    caractérisation des états de polarisation avec une mesure faible
+    temporelle. Dans la figure \ref{fig:speed-of-light}, nous 
     présentons le dispositif expérimental que nous utiliserons pour 
     les deux prochaines expériences. 
 
@@ -24,45 +29,47 @@
     voies orthogonales. Le faisceau réfléchi, représenté par l’état de base de 
     polarisation verticale $\ket{V}$, sera notre 
     signal de référence pour déclencher l’oscilloscope, à gauche. 
-    Le faisceau transmis, correspondent à l’état de base 
-    horizontal $\ket{H}$, subit encore un autre PBS et se revoie avec un miroir fixe 
+    Le faisceau transmis, correspondant à l’état de base 
+    horizontal $\ket{H}$, subit encore un autre PBS et se revoit avec un miroir fixe 
     ainsi qu'une lame quart d'onde pour convertir l'état de polarisation
     $\ket{H}$ en un état $\ket{V}$ pour qu'il soit réfléchi. Il est 
     ensuite détecté avec un autre photodétecteur puis 
     mesuré par notre oscilloscope, à droite.
     Pour l'expérience de la vitesse d'un signal dans un câble BNC, nous 
-    utilisent simplement de différentes longueurs de câble attachées 
-    sur notre photodétecteur. Pour l'expérience de la vitesse de la lumière, nous
+    utilisons simplement différentes longueurs de câble attachées 
+    sur notre photodétecteur, désigner par $\Delta L$. Pour l'expérience de la 
+    vitesse de la lumière, nous
     orientons l'état de polarisation horizontal vers un miroir,
     que nous réglerons en fonction des différentes distances à 
-    évaluer pour l'expérience de la vitesse de la lumière. Il est 
+    évaluer pour l'expérience de la vitesse de la lumière, désigner par $\Delta x$. 
+    Il est 
     ensuite renvoyé vers le PBS pour y être réfléchi. Ce procédé 
-    utilise une lame quart d’onde pour convertir l’état de polarisation 
+    utilise une lame quart d’onde pour convertir l’état de polarisation. 
     }
     \label{fig:speed-of-light}
 \end{figure}
     
     \noindent Notre laser est une source à diodes
     pulsés nanosecondes, capable de générer des impulsions 
-    allant de $5$ à $39$ $ns$. J'utilisant une impulsion de $10$ $ns$
+    allant de $5$ à $39$ $ns$. Nous utilisons une impulsion de $10$ $ns$
     pour nos expériences, car les intervalles de temps plus longs  
-    rend la mesure moins précise. Cette perte de précision ce présente 
-    dans la mesure de la partie imaginaire, à ces longueurs d'impulsion,
-    la distribution temporel du signal devient plus similaire à celle d’une
-    fonction porte \cite{ThorlabsNPL64B}, qui apporte une discontinuïté
-    dans le domaine temporel,
-    entraînant un bruit à haute fréquence ce qui rend la mesure
-    moins précise. Nous voulons une impulsion de forme gaussienne, car cette
+    rendent la mesure moins précise. Cette perte de précision se présente 
+    dans la mesure de la partie imaginaire. À ces longueurs d'impulsion,
+    la distribution temporelle du signal devient plus similaire à celle d’une
+    fonction porte \cite{ThorlabsNPL64B} Or, les discountinuités de cette 
+    fonction entrainent la présence de bruit à hautes fréquences ce qui 
+    rend l'analyse moins facile. 
+    Nous voulons une impulsion de forme gaussienne, car cette
     forme est souvent utilisée dans
-    les mesures de faibles \cite{OpticalNetworks, Lundeen_Direct_Measurement,Hairiri,Guilleaum,Brunner_2004}
-    pour faciliter l’identification de la position maximale de
+    les mesures faibles \cite{OpticalNetworks, Lundeen_Direct_Measurement,Hairiri,Guilleaum,Brunner_2004}
+    et pour faciliter l’identification de la position maximale de
     l’impulsion, que nous identifierons comme correspondant à la
     position temporelle moyenne de l’impulsion. Le laser possède une longueur d’onde comprise entre 
     $640 \pm 10$ $nm$, avec une énergie d’impulsion maximale de 
     $2,0$ $nJ$. Sa puissance de crête s’élève pas plus 
-    qu’à $50$ $mW$, ca puissance moyenne est de $20$ $MW$. 
-    Je fixe le taux de répétition à $1$ $MHz$, pour avoir un temps 
-    suffisamment long entre les impulsions. Je recueille les
+    qu’à $50$ $mW$, dont sa puissance moyenne est de $20$ $MW$. 
+    Nous fixons le taux de répétition à $1$ $MHz$, pour avoir un temps 
+    suffisamment long entre les impulsions. Nous recueillons les
     données à l'aide d'un photodétecteur rapide à base de Si 
     \cite{ThorlabsDET025A}, qui possède une bande passante de 
     $2$ $GHz$, ce qui est suffisant pour mesurer les impulsions de
@@ -72,9 +79,9 @@
     Nous utilisons un oscilloscope Tektronix TDS 5000 \cite{TektronixTDS5000}, 
     qui est un oscilloscope numérique à mémoire profonde, 
     capable d’acquérir des signaux à des vitesses allant jusqu’à 
-    $500$ $GS/s$ (gigéchantillons par seconde) et possède une 
+    $500$ $GS/s$ (gigéchantillons par seconde), et qui possède une 
     bande passante de $500$ $MHz$.  
-    Ensuite, je analyse les données avec MATLAB et/ou Python et interprète 
+    Ensuite, nous analysons les données avec MATLAB et/ou Python et interprètons 
     les résultats pour en tirer des conclusions sur la précision de nos
     mesures temporelles.
 
