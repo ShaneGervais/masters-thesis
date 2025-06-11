@@ -1784,6 +1784,24 @@
     \field{year}{2002}
   \endentry
 
+  \entry{EdmundOpticsStage}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=OE}{%
+         family={Optics},
+         familyi={O\bibinitperiod},
+         given={Edmund},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OE1}
+    \strng{fullhash}{OE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://www.edmundoptics.com/p/precision-rotation-stage-1-inch-travel-0-1-degree-accuracy/1452/}}
+    \field{note}{Consulté le 28 février 2025}
+    \field{title}{Crossed-Roller Bearing Linear Translation Stage}
+  \endentry
+
   \entry{arrl2019}{book}{}
     \name{author}{1}{}{%
       {{hash=A}{%
