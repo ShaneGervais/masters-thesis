@@ -1,0 +1,81 @@
+\begin{doublespace}
+
+    Nous souhaitons évaluer notre capacité à mesurer des délais % Nous souhaitons d'évaluer notre capacité à mesurer des délais 
+    temporels avec précision. Pour ce faire, nous allons déterminer % devons déterminer 
+    la précision sur notre mesure de la vitesse de la lumière via des délais % notre précision de la vitesse de la lumière via des délais
+    Nous vous invitons à évaluer notre capacité à mesurer des délais 
+    temporels. % temporels avec précision. Pour ce faire, nous devons déterminer     phrase répétée
+    Dans la figure \ref{fig:speed-of-light}, nous 
+    présentons le dispositif expérimental que nous utiliserons pour 
+    les deux prochaines expériences. 
+
+    \begin{figure}[!hpbt]
+    \centering
+    \includegraphics[width=1.0\textwidth]{speed_of_light_exp.png}
+    \caption{
+        Représentation de notre dispositif expérimental pour 
+    évaluer la précision de nos mesures temporelles en mesurant la 
+    vitesse d'un signal dans les câbles BNC et la vitesse de la lumière. 
+    L’impulsion du laser est d’abord réglée en 
+    intensité par une lame demi-onde, puis dirigée vers un séparateur 
+    de faisceau polarisant (PBS) qui divise les états de polarisation 
+    horizontaux et verticaux en deux 
+    voies orthogonales. Le faisceau réfléchi, représenté par l’état de base de 
+    polarisation verticale $\ket{V}$, sera notre 
+    signal de référence pour déclencher l’oscilloscope, à gauche. 
+    Le faisceau transmis, correspondant à l’état de base % correspondent
+    horizontal $\ket{H}$, passe encore par un autre PBS, puis un miroir fixe % et est renvoyé par un miroit % pas sûr, je ne connais pas le contexte
+    ainsi que par une lame quart d'onde pour convertir l'état de polarisation % ainsi qu'une lame quart d'onde pour convertir l'état de polarisation
+    $\ket{H}$ en un état $\ket{V}$ pour qu'il soit réfléchi. Il est 
+    ensuite détecté avec un autre photodétecteur puis 
+    mesuré par notre oscilloscope, à droite.
+    Pour l'expérience de la vitesse d'un signal dans un câble BNC, nous 
+    utilisons simplement des câbles de différentes longueurs et branchés % utilisent simplement de différentes longueurs de câble attachées 
+    à notre photodétecteur. Pour l'expérience de la vitesse de la lumière, nous % sur notre photodétecteur. Pour l'expérience de la vitesse de la lumière, nous
+    orientons l'état de polarisation horizontal vers un miroir,
+    que nous réglerons en fonction des différentes distances à 
+    tester pour l'expérience de la vitesse de la lumière. Il est % évaluer pour l'expérience de la vitesse de la lumière. Il est 
+    ensuite renvoyé vers le PBS pour y être réfléchi. Ce procédé 
+    utilise une lame quart d’onde pour convertir l’état de polarisation 
+    }
+    \label{fig:speed-of-light}
+\end{figure}
+    
+    \noindent Notre laser est une source à diodes
+    pulsées nanosecondes, capable de générer des impulsions % pulsés
+    allant de $5$ à $39$ $\text{ns}$. Nous utilisons une impulsion de $10$ $ns$ % allant de $5$ à $39$ $ns$. J'utilisant une impulsion de $10$ $ns$ % les unités de mesure ne doivent pas être en italique % aussi on préfère utiliser le "nous" que le "je"
+    pour nos expériences, car les intervalles de temps plus longs  
+    rendent la mesure moins précise. Cette perte de précision se retrouve % rend la mesure moins précise. Cette perte de précision ce présente 
+    dans la mesure de la partie imaginaire. À ces longueurs d'impulsion, % dans la mesure de la partie imaginaire, à ces longueurs d'impulsion,
+    la distribution temporelle du signal devient similaire à celle d’une % la distribution temporel du signal devient plus similaire à celle d’une
+    fonction porte \cite{ThorlabsNPL64B}, ce qui entraîne une discontinuité % fonction porte \cite{ThorlabsNPL64B}, qui apporte une discontinuïté
+    dans le domaine temporel % ,
+    et donc un bruit à haute fréquence. La mesure est alors % entraînant un bruit à haute fréquence ce qui rend la mesure
+    moins précise. Nous voulons une impulsion de forme gaussienne, car cette
+    forme est souvent utilisée dans
+    les mesures faibles \cite{OpticalNetworks, Lundeen_Direct_Measurement,Hairiri,Guilleaum,Brunner_2004} %     les mesures de faibles \cite{OpticalNetworks, Lundeen_Direct_Measurement,Hairiri,Guilleaum,Brunner_2004}
+    pour faciliter l’identification de la position maximale de
+    l’impulsion, que nous identifierons comme correspondant à la
+    position temporelle moyenne de l’impulsion. Le laser possède une longueur d’onde comprise autour de % entre 
+    $640 \pm 10$ $\text{nm}$, avec une énergie d’impulsion maximale de 
+    $2,0$ $\text{nJ}$. Sa puissance de crête ne dépasse pas % s’élève pas plus
+    $50$ $\text{mW}$, sa puissance moyenne est de $20$ $\text{MW}$. % qu’à $50$ $mW$, ca puissance moyenne est de $20$ $MW$. 
+    Nous fixons le taux de répétition à $1$ $MHz$, pour avoir un temps %  Je fixe le taux de répétition à $1$ $MHz$, pour avoir un temps
+    suffisamment long entre les impulsions. Nous recueillons les % Je recueille les
+    données à l'aide d'un photodétecteur rapide à base de Si 
+    \cite{ThorlabsDET025A}, qui possède une bande passante de 
+    $2$ $GHz$, ce qui est suffisant pour mesurer les impulsions de
+    $10$ $ns$. Le photodétecteur est connecté à un câble BNC de 
+    $50$ $\Omega$ \cite{ThorlabsBNC} qui est ensuite connecté à 
+    un oscilloscope pour l'enregistrement des données.
+    Nous utilisons un oscilloscope Tektronix TDS 5000 \cite{TektronixTDS5000}, 
+    un oscilloscope numérique à mémoire profonde, %  qui est un oscilloscope numérique à mémoire profonde,
+    capable d’acquérir des signaux à des vitesses allant jusqu’à 
+    $500$ $GS/s$ (gigéchantillons par seconde) et qui possède une % possède un
+    bande passante de $500$ $MHz$.  
+    Ensuite, nous analysons les données avec MATLAB et/ou Python et nous interprétons % Ensuite, je analyse les données avec MATLAB et/ou Python et interprète
+    les résultats pour en tirer des conclusions sur la précision de nos
+    mesures temporelles.
+
+\end{doublespace}
+
