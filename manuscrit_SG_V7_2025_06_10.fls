@@ -462,9 +462,6 @@ INPUT section/section_5/section_5.tex
 INPUT ./annexe/annexe_A.tex
 INPUT ./annexe/annexe_A.tex
 INPUT annexe/annexe_A.tex
-INPUT ./annexe/annexe_B.tex
-INPUT ./annexe/annexe_B.tex
-INPUT annexe/annexe_B.tex
 INPUT ./figure/entire_spec.png
 INPUT ./figure/entire_spec.png
 INPUT ./figure/entire_spec.png
