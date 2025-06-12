@@ -1844,6 +1844,80 @@
     \field{year}{2021}
   \endentry
 
+  \entry{RefractiveIndexAir}{article}{}
+    \name{author}{1}{}{%
+      {{hash=EB}{%
+         family={Edlén},
+         familyi={E\bibinitperiod},
+         given={Bengt},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EB1}
+    \strng{fullhash}{EB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Present knowledge of the refractive index of air is reviewed. Regarding the absolute values there are as yet no definite indications that the standard adopted in 1953 on the basis of Barrell and Sears' measurements should be changed, but new experiments aiming at reducing the present uncertainty of about ± 5 × 10-8 would be desirable. Several recent investigations have contributed important new information on the dispersion of air, which has made it possible to derive an improved dispersion formula for standard air, (n − 1)s × 108 = 8342.13 + 2406030 (130 − σ2)-1 + 15997 (38.9 − σ2)−1, where σ is the vacuum wave-number in μm-1. The deviations from the 1953 formula are small and practically negligible in most spectroscopic work. An equation for the dependence of refractivity on temperature and pressure based on theoretical considerations has been derived. For the range of atmospheric conditions normally found in a laboratory the equation can be approximated by the formula (n − 1)tp = (n − 1)s × 0.00138823 p/(1 + 0.003671 t), with p in torr, t in °C, and (n − 1)s given by the dispersion formula for standard air. The effect of carbon dioxide and water vapour is discussed. From Erickson's dispersion data for water vapour, combined with Barrell and Sears' absolute measurements, one obtains the equation ntpf – ntp = −f (5.722 − 0.0457 σ2) × 10-8 for the difference in refractive index of moist air, containing f torr of water vapour, and dry air at equal temperature and total pressure. The equation is valid for visible radiations and normal atmospheric conditions.%
+    }
+    \verb{doi}
+    \verb 10.1088/0026-1394/2/2/002
+    \endverb
+    \field{number}{2}
+    \field{pages}{71}
+    \field{title}{The Refractive Index of Air}
+    \verb{url}
+    \verb https://dx.doi.org/10.1088/0026-1394/2/2/002
+    \endverb
+    \field{volume}{2}
+    \field{journaltitle}{Metrologia}
+    \field{year}{1966}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{SpeedOfLight}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MPJ}{%
+         family={Mohr},
+         familyi={M\bibinitperiod},
+         given={Peter\bibnamedelima J.},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=NDB}{%
+         family={Newell},
+         familyi={N\bibinitperiod},
+         given={David\bibnamedelima B.},
+         giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=TBN}{%
+         family={Taylor},
+         familyi={T\bibinitperiod},
+         given={Barry\bibnamedelima N.},
+         giveni={B\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{MPJNDBTBN1}
+    \strng{fullhash}{MPJNDBTBN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/RevModPhys.88.035009
+    \endverb
+    \field{issue}{3}
+    \field{pages}{035009}
+    \field{title}{CODATA recommended values of the fundamental physical constants: 2014}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/RevModPhys.88.035009
+    \endverb
+    \field{volume}{88}
+    \field{journaltitle}{Rev. Mod. Phys.}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{ThorlabsROT}{misc}{}
     \name{author}{1}{}{%
       {{hash=T}{%
