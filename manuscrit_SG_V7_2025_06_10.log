@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.28)  12 JUN 2025 11:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.28)  12 JUN 2025 13:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1723,7 +1723,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <./figure/partiereelexp.png, id=1119, 11490.93pt x 4974.585pt>
 File: ./figure/partiereelexp.png Graphic file (type png)
 <use ./figure/partiereelexp.png>
-Package pdftex.def Info: ./figure/partiereelexp.png  used on input line 7.
+Package pdftex.def Info: ./figure/partiereelexp.png  used on input line 16.
 (pdftex.def)             Requested size: 429.3521pt x 185.81778pt.
 
 
@@ -1745,7 +1745,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <./figure/poincare_sphere_HDVAH.png, id=1131, 682.2288pt x 682.2288pt>
 File: ./figure/poincare_sphere_HDVAH.png Graphic file (type png)
 <use ./figure/poincare_sphere_HDVAH.png>
-Package pdftex.def Info: ./figure/poincare_sphere_HDVAH.png  used on input line 81.
+Package pdftex.def Info: ./figure/poincare_sphere_HDVAH.png  used on input line 129.
 (pdftex.def)             Requested size: 429.3521pt x 429.34837pt.
 
 
@@ -1775,7 +1775,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <./figure/poincare_sphere_HRVLH.png, id=1156, 570.933pt x 570.933pt>
 File: ./figure/poincare_sphere_HRVLH.png Graphic file (type png)
 <use ./figure/poincare_sphere_HRVLH.png>
-Package pdftex.def Info: ./figure/poincare_sphere_HRVLH.png  used on input line 153.
+Package pdftex.def Info: ./figure/poincare_sphere_HRVLH.png  used on input line 222.
 (pdftex.def)             Requested size: 429.3521pt x 429.36606pt.
 
 
@@ -1789,7 +1789,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <./figure/poincare_sphere_DRALD.png, id=1164, 570.933pt x 570.933pt>
 File: ./figure/poincare_sphere_DRALD.png Graphic file (type png)
 <use ./figure/poincare_sphere_DRALD.png>
-Package pdftex.def Info: ./figure/poincare_sphere_DRALD.png  used on input line 219.
+Package pdftex.def Info: ./figure/poincare_sphere_DRALD.png  used on input line 298.
 (pdftex.def)             Requested size: 429.3521pt x 429.36606pt.
 
 
@@ -1823,7 +1823,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[71]) (./section/section_3/section_3_3/section_3.3_intro.tex
+[71]) (./section/section_3/section_3_3/section_3.3_intro.tex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1831,8 +1831,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[72]) (./section/section_3/section_3_3/section_3.3.1.tex
-<./figure/partieimagexp.png, id=1209, 11490.93pt x 6889.74pt>
+[72] (./section/section_3/section_3_3/section_3.3.1.tex
+<./figure/partieimagexp.png, id=1210, 11490.93pt x 6889.74pt>
 File: ./figure/partieimagexp.png Graphic file (type png)
 <use ./figure/partieimagexp.png>
 Package pdftex.def Info: ./figure/partieimagexp.png  used on input line 8.
@@ -2219,7 +2219,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  79i,14n,93p,1956b,3215s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on manuscrit_SG_V7_2025_06_10.pdf (118 pages, 10118914 bytes).
+Output written on manuscrit_SG_V7_2025_06_10.pdf (118 pages, 10119094 bytes).
 PDF statistics:
  1848 PDF objects out of 2073 (max. 8388607)
  1592 compressed objects within 16 object streams
