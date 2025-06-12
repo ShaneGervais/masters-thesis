@@ -1,5 +1,28 @@
 \begin{doublespace}
-    Nous avons optimisé notre expérience pour qu’elle soit automatisée. Tout d’abord, pendant la phase de calibration, notre dispositif expérimental subit un étalonnage consistant en une seule demi-plaque d’onde. Cette dernière est ensuite tournée pour envoyer la polarisation $\ket{V}$ correspondant à notre position temporelle moyenne de référence, qui est notre état d’entrée possédant un délai de $0$. L’oscilloscope prend des données, puis notre code fait tourner la demi-plaque d’onde pour envoyer le délai maximal, soit l’état de polarisation $\ket{H}$. Chaque état de polarisation d’étalonnage ($\ket{H}$ et $\ket{V}$) est mesuré séparément, puis on en calcule la moyenne à partir de dix résultats différents. L’oscilloscope est évidemment utilisé pour mesurer les temps d’équivalence et il calcule ensuite la moyenne de plus de $10000$ formes d’onde. Après la calibration, nous pouvons exécuter chaque trajet de polarisation mentionné dans le chapitre précédent. Pour changer de trajet de polarisation, nous devons ajouter un quart de plaque d’onde à la préparation de l’état d’entrée, en fonction du trajet que nous caractérisons. Le premier trajet consiste seulement en une demi-plaque d’onde. Nous collectons des données toutes les $2,5$ dégrés. Pour chaque état d’entrée de polarisation, nous prenons trois fichiers distincts que nous moyennons, puis nous comparons leur position temporelle moyenne avec le dossier de calibration pour obtenir le délai associé à cet état. Voici les résultats de chaque délai pour les différents états d’entrée pour le trajet $\ket{H}\rightarrow\ket{D}\rightarrow\ket{V}\rightarrow\ket{A}$, figure \ref{fig:HDAV_delay_results}.
+    %Cette dernière est ensuite tournée pour envoyer la 
+    %polarisation $\ket{V}$ correspondant à notre position temporelle 
+    %moyenne de référence, qui est notre état d’entrée possédant un délai 
+    %de $0$. L’oscilloscope prend des données, puis notre code fait 
+    %tourner la lame demi-onde pour envoyer le délai maximal, soit 
+    %l’état de polarisation $\ket{H}$. 
+    
+    
+    %L’oscilloscope est évidemment utilisé pour mesurer les temps 
+    %d’équivalence et il calcule ensuite la moyenne de plus de $10000$ 
+    %formes d’onde. 
+
+    Nous avons optimisé notre expérience pour qu’elle soit 
+    automatisée avec un code \textsc{Python} qui contrôle le moteur pas à pas
+    la lame demi-onde à l'étape d'entrée 
+    \cite{pylablib_thorlabs_kinesis}. Nous collectons des données tous les 
+    $2,5$ dégrés. Pour chaque état d’entrée de polarisation, nous 
+    prenons cinq fichiers distincts que nous moyennons, puis nous 
+    comparons leur position temporelle moyenne avec le dossier de 
+    calibration pour obtenir le délai associé à cet état.
+    Voici les 
+    résultats de chaque délai pour les différents états d’entrée pour 
+    le trajet $\ket{H}\rightarrow\ket{D}\rightarrow\ket{V}\rightarrow\ket{A}$ 
+    (figure \ref{fig:HDAV_delay_results}).
 \end{doublespace}
 
 \begin{figure}[!h!t!p!b]

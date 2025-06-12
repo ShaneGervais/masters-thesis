@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.28)  12 JUN 2025 16:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.28)  12 JUN 2025 18:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1884,6 +1884,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [77] (./section/section_4/section_4_1/section_4.tex) (./section/section_4/section_4_1/section_4.1.tex [78]) (./section/section_4/section_4_1/section_4_1_1.tex
+<./figure/real_weak_value_measurement_3.pdf, id=1240, 867.24pt x 433.62pt>
+File: ./figure/real_weak_value_measurement_3.pdf Graphic file (type pdf)
+<use ./figure/real_weak_value_measurement_3.pdf>
+Package pdftex.def Info: ./figure/real_weak_value_measurement_3.pdf  used on input line 30.
+(pdftex.def)             Requested size: 429.3521pt x 214.67896pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1892,10 +1898,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [79]
-<./figure/real_weak_value_measurement_3.pdf, id=1242, 867.24pt x 433.62pt>
-File: ./figure/real_weak_value_measurement_3.pdf Graphic file (type pdf)
-<use ./figure/real_weak_value_measurement_3.pdf>
-Package pdftex.def Info: ./figure/real_weak_value_measurement_3.pdf  used on input line 7.
+<./figure/real_weak_value_measurement_4.pdf, id=1246, 867.24pt x 433.62pt>
+File: ./figure/real_weak_value_measurement_4.pdf Graphic file (type pdf)
+<use ./figure/real_weak_value_measurement_4.pdf>
+Package pdftex.def Info: ./figure/real_weak_value_measurement_4.pdf  used on input line 41.
 (pdftex.def)             Requested size: 429.3521pt x 214.67896pt.
 
 
@@ -1906,15 +1912,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [80 <./figure/real_weak_value_measurement_3.pdf>]
-<./figure/real_weak_value_measurement_4.pdf, id=1292, 867.24pt x 433.62pt>
-File: ./figure/real_weak_value_measurement_4.pdf Graphic file (type pdf)
-<use ./figure/real_weak_value_measurement_4.pdf>
-Package pdftex.def Info: ./figure/real_weak_value_measurement_4.pdf  used on input line 18.
-(pdftex.def)             Requested size: 429.3521pt x 214.67896pt.
-<./figure/real_weak_value_measurement_5_2.pdf, id=1294, 867.24pt x 433.62pt>
+<./figure/real_weak_value_measurement_5_2.pdf, id=1296, 867.24pt x 433.62pt>
 File: ./figure/real_weak_value_measurement_5_2.pdf Graphic file (type pdf)
 <use ./figure/real_weak_value_measurement_5_2.pdf>
-Package pdftex.def Info: ./figure/real_weak_value_measurement_5_2.pdf  used on input line 29.
+Package pdftex.def Info: ./figure/real_weak_value_measurement_5_2.pdf  used on input line 52.
 (pdftex.def)             Requested size: 429.3521pt x 214.67896pt.
 
 
@@ -1925,20 +1926,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [81 <./figure/real_weak_value_measurement_4.pdf>]
-<./figure/real_prof_amp_measurement_3.pdf, id=1329, 867.24pt x 433.62pt>
+<./figure/real_prof_amp_measurement_3.pdf, id=1331, 867.24pt x 433.62pt>
 File: ./figure/real_prof_amp_measurement_3.pdf Graphic file (type pdf)
 <use ./figure/real_prof_amp_measurement_3.pdf>
-Package pdftex.def Info: ./figure/real_prof_amp_measurement_3.pdf  used on input line 40.
+Package pdftex.def Info: ./figure/real_prof_amp_measurement_3.pdf  used on input line 63.
 (pdftex.def)             Requested size: 429.3521pt x 214.67896pt.
-<./figure/real_prof_amp_measurement_4.pdf, id=1331, 867.24pt x 433.62pt>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[82 <./figure/real_weak_value_measurement_5_2.pdf> <./figure/real_prof_amp_measurement_3.pdf>]
+<./figure/real_prof_amp_measurement_4.pdf, id=1393, 867.24pt x 433.62pt>
 File: ./figure/real_prof_amp_measurement_4.pdf Graphic file (type pdf)
 <use ./figure/real_prof_amp_measurement_4.pdf>
-Package pdftex.def Info: ./figure/real_prof_amp_measurement_4.pdf  used on input line 51.
+Package pdftex.def Info: ./figure/real_prof_amp_measurement_4.pdf  used on input line 74.
 (pdftex.def)             Requested size: 429.3521pt x 214.67896pt.
-<./figure/real_prof_amp_measurement_5_2.pdf, id=1333, 867.24pt x 433.62pt>
+<./figure/real_prof_amp_measurement_5_2.pdf, id=1395, 867.24pt x 433.62pt>
 File: ./figure/real_prof_amp_measurement_5_2.pdf Graphic file (type pdf)
 <use ./figure/real_prof_amp_measurement_5_2.pdf>
-Package pdftex.def Info: ./figure/real_prof_amp_measurement_5_2.pdf  used on input line 62.
+Package pdftex.def Info: ./figure/real_prof_amp_measurement_5_2.pdf  used on input line 85.
 (pdftex.def)             Requested size: 429.3521pt x 214.67896pt.
 ) (./section/section_4/section_4_1/section_4_1_2.tex
 
@@ -1948,7 +1958,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[82 <./figure/real_weak_value_measurement_5_2.pdf>]
+[83 <./figure/real_prof_amp_measurement_4.pdf> <./figure/real_prof_amp_measurement_5_2.pdf>]) (./section/section_4/section_4_2/section_4.2.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1956,33 +1966,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[83 <./figure/real_prof_amp_measurement_3.pdf> <./figure/real_prof_amp_measurement_4.pdf>]) (./section/section_4/section_4_2/section_4.2.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[84 <./figure/real_prof_amp_measurement_5_2.pdf>]
+[84]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 16.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[85]
-<./figure/powerdensityspectrum.png, id=1459, 369.0588pt x 288.1164pt>
+<./figure/powerdensityspectrum.png, id=1455, 369.0588pt x 288.1164pt>
 File: ./figure/powerdensityspectrum.png Graphic file (type png)
 <use ./figure/powerdensityspectrum.png>
 Package pdftex.def Info: ./figure/powerdensityspectrum.png  used on input line 20.
 (pdftex.def)             Requested size: 429.3521pt x 335.2088pt.
-<./figure/PSD_zoom_1054Mhz.png, id=1462, 365.6862pt x 288.1164pt>
+<./figure/PSD_zoom_1054Mhz.png, id=1458, 365.6862pt x 288.1164pt>
 File: ./figure/PSD_zoom_1054Mhz.png Graphic file (type png)
 <use ./figure/PSD_zoom_1054Mhz.png>
 Package pdftex.def Info: ./figure/PSD_zoom_1054Mhz.png  used on input line 27.
@@ -2017,6 +2011,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 \T1/cmr/m/n/12 fré-quen-tiel
  []
 
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[85]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2113,12 +2115,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [99]
-<figure/entire_spec.png, id=1664, 1124.2pt x 843.15pt>
+<figure/entire_spec.png, id=1666, 1124.2pt x 843.15pt>
 File: figure/entire_spec.png Graphic file (type png)
 <use figure/entire_spec.png>
 Package pdftex.def Info: figure/entire_spec.png  used on input line 144.
 (pdftex.def)             Requested size: 429.3521pt x 322.0085pt.
-<figure/zoom_doppler_res_scatter.png, id=1667, 1124.2pt x 843.15pt>
+<figure/zoom_doppler_res_scatter.png, id=1669, 1124.2pt x 843.15pt>
 File: figure/zoom_doppler_res_scatter.png Graphic file (type png)
 <use figure/zoom_doppler_res_scatter.png>
 Package pdftex.def Info: figure/zoom_doppler_res_scatter.png  used on input line 163.
@@ -2179,10 +2181,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  79i,14n,93p,1956b,3215s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on manuscrit_SG_V7_2025_06_10.pdf (117 pages, 10117541 bytes).
+Output written on manuscrit_SG_V7_2025_06_10.pdf (117 pages, 10116890 bytes).
 PDF statistics:
- 1838 PDF objects out of 2073 (max. 8388607)
- 1583 compressed objects within 16 object streams
+ 1840 PDF objects out of 2073 (max. 8388607)
+ 1585 compressed objects within 16 object streams
  374 named destinations out of 1000 (max. 500000)
  464 words of extra memory for PDF output out of 10000 (max. 10000000)
 
