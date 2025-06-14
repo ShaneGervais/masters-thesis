@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {2.3}Fondamentaux théoriques des mesures faibles}{19}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Proposition d'une procédure directe avec une mesure faible temporelle}{25}{subsection.2.4}%
 \contentsline {subsubsection}{\numberline {2.4.1}La partie réelle du système}{25}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.2}La partie imaginaire du système}{30}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.2}La partie imaginaire du système}{29}{subsubsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.5}Proposition expérimentale pour la caractérisation de la valeur faible}{31}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}Mots finaux sur la théorie}{33}{subsection.2.6}%
 \contentsline {section}{\numberline {3}MESURE EXPÉRIMENTALE DIRECTE D'UN ÉTAT DE POLARISATION EN UTILISANT UNE MESURE FAIBLE TEMPORELLE}{34}{section.3}%
