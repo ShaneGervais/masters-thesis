@@ -1,5 +1,12 @@
 \begin{doublespace}
-    Notre méthode pour mesurer la partie imaginaire de la valeur faible est assez simple. Nous faisons passer une impulsion faiblement mesurée à travers un interféromètre MZ en y ajoutant un signal de référence, soit celui du laser à une fréquence connue $f_0 = 4,68\cdot10^{14}$ $Hz$. Ce dernier fait en sorte que la fréquence mesurée sera $f_0+\expval{\hat{\omega}}$. Cependant, certaines implications nous empêchent de mesurer la partie imaginaire de la valeur faible.
+    Notre méthode pour mesurer la partie imaginaire de la valeur faible 
+    est assez simple. Nous faisons passer une impulsion faiblement 
+    mesurée à travers un interféromètre MZ en y ajoutant un signal de 
+    référence, soit celui du laser à une fréquence connue 
+    $f_0 = 4,68\cdot10^{14}$ $Hz$. Ce dernier fait en sorte que la 
+    fréquence mesurée sera $f_0+\expval{\hat{\omega}}$. Cependant, 
+    certaines implications nous empêchent de mesurer la partie 
+    imaginaire de la valeur faible.
 \end{doublespace}
 
 \subsubsection{Implications pour la partie imaginaire}
@@ -7,32 +14,67 @@
 
 \begin{doublespace}
 
-     \noindent À partir de la relation proportionelle à partie imaginaire de la valeur faible:
+     À partir de la relation proportionelle à la partie imaginaire 
+     de la valeur faible:
 
     \begin{equation}
         \frac{\mathcal{I}(\expval{\hat{\pi}_W})}{\tau} = \expval{\hat{\omega}} \propto \frac{\tau}{8\sigma^2}
     \end{equation}
     
-    \noindent Cela signifie que, pour une impulsion avec une durée de $10$ $ns$, et un délai de $40$ $ps$ appliqué sur le système, on s'attend à un déplacement dans le spectre de fréquence de seulement $7,96$ kHz (avec $\omega \equiv 2\pi f$). Cette valeur est extrêmement petite par rapport à la fréquence de notre laser, qui se situe dans l'ordre des térahertz. Les mesures interférométriques régulières effectuées dans un laboratoire ne présentent qu’une résolution en $MHz$, ce qui nécessite un délai extrêmement long, ce qui dépasse la marge de mesure minimale ainsi que sa facilité d’utilisation dans un laboratoire. En effet, pour effectuer la mesure dans un interféromètre de Michelson, les distances nécessaires dépassent la longueur de cohérence du laser de $0,2$ $mm$. Cependant, nous allons choisir une longueur d'impulsion de $4$ $ns$ (le minimum que notre laser peut effectuer) pour un attendue de $49,77$ $kHz$, encore très petits.  Pour trouver des déplacements induits par la mesure faible, nous calculons la densité spectrale du spectre de puissance densité (DSP) pour chaque ensemble d'impulsions. La fonction \texttt{pspectrum()} de MATLAB facilite se calcule pour nous, en effectuent une transformation de Fourier à haute résolution. Voici, ce spectre que nous avons obtenu à partir de nos données expérimentales.
+    \noindent Cela signifie que, pour une impulsion avec une durée de 
+    $10$ $ns$, et un délai de $40$ $ps$ appliqué sur le système, on 
+    s'attend à un déplacement dans le spectre de fréquence de seulement 
+    $7,96$ kHz (avec $\omega \equiv 2\pi f$). Cette valeur est 
+    extrêmement petite par rapport à la fréquence de notre laser, qui se 
+    situe dans l'ordre des térahertz. Les mesures interférométriques 
+    régulières effectuées dans un laboratoire ne présentent qu’une 
+    résolution en $MHz$, ce qui nécessite un délai extrêmement long. Cela 
+    dépasse la marge de mesure minimale ainsi que sa facilité 
+    d’utilisation dans un laboratoire. En effet, pour effectuer la mesure 
+    dans un interféromètre de Michelson, les distances nécessaires 
+    dépassent la longueur de cohérence du laser de $0,2$ $mm$. Cependant, 
+    nous allons choisir une longueur d'impulsion de $4$ $ns$ (le minimum 
+    que notre laser peut effectuer) pour un attendue de $49,77$ $kHz$, 
+    encore très petits.  Pour trouver des déplacements induits par la 
+    mesure faible, nous calculons la densité spectrale du spectre de 
+    puissance densité (DSP) sur un ensemble d'impulsions du signal expérimentale.  
+    La fonction \textit{pspectrum} de \textsc{MATLAB} facilite se calcule pour 
+    nous, en effectuent une transformation de Fourier à haute résolution sur 
+    plusieurs impulsions pour obtenir le spectre de puissance densité. 
+    Voici ce spectre que nous avons obtenu à partir de nos données 
+    expérimentales (figure \ref{fig:spectre}).
 
     \begin{figure}[!htpb]
         \centering
         \includegraphics[width=1.0\textwidth]{powerdensityspectrum.png}
-        \caption{DSP résultant d'une mesure faible temporelle. Ici, les lignes verticales représentent la position des pics de puissance dans le spectre. La figure \ref{fig:spectre1054} montre un zoom sur le pic de puissance à $1054$ $MHz$.}
+        \caption{DSP résultant d'une mesure faible temporelle. Ici, les 
+        lignes verticales représentent la position des pics de puissance 
+        dans le spectre. La figure \ref{fig:spectre1054} montre un zoom 
+        sur le pic de puissance à $1054$ $MHz$.}
         \label{fig:spectre}
     \end{figure}
 
     \begin{figure}[!htpb]
         \centering
         \includegraphics[width=1.0\textwidth]{PSD_zoom_1054Mhz.png}
-        \caption{Zoom sur le pic de puissance à $1054$ $MHz$. On peut observer la présence de plusieurs pics de puissance, avec leur ajustement de courbe polynomiale du quatrième ordre pour determiner chaque position fréquenciel des états d'entrées.}
+        \caption{Zoom sur le pic de puissance à $1054$ $MHz$. On peut 
+        observer la présence de plusieurs pics de puissance, avec leur 
+        ajustement de courbe polynomiale du quatrième ordre pour 
+        determiner chaque position fréquentielle des états d'entrée.}
         \label{fig:spectre1054}
     \end{figure}
 
-    \noindent Nous analysons ensuite le spectre pour repérer les pics avec un amplitude supérieure à $1\%$ de la puissance maximale. Pour chacun de ces pics, nous effectuons un ajustement de courbe polynomiale du quatrième ordre, comme dans nos dernières analyses pour estimer précisément la position fréquentielle du pic. En comparant chacune de ces fréquences à celles de l’état $\ket{V}$, nous obtenons le tableau suivant:
+    \noindent Nous analysons ensuite le spectre pour repérer les pics
+    avec une amplitude supérieure à $1\%$ de la puissance maximale. Pour 
+    chacun de ces pics, nous effectuons un ajustement de courbe 
+    polynomiale du quatrième ordre, comme dans nos dernières analyses 
+    pour estimer précisément la position fréquentielle du pic. En 
+    comparant chacune de ces fréquences à celles de l’état $\ket{V}$, 
+    nous obtenons le tableau suivant:
 
     \begin{longtable}{p{3.0cm} p{3.0cm} p{3.0cm} p{3.0cm}}
-    \caption{Mesure de la vitesse du signal dans les câbles BNC pour différent ajustement de courbe} \\
+    \caption{Mesure de la vitesse du signal dans les câbles BNC pour 
+    différents ajustements de courbe} \\
     \toprule
     \label{table:imaginare-table}
     Pic & État d'entrée & Fréquence (MHz) & Déplacement fréquentiel (kHz)\\
@@ -91,7 +133,21 @@
 
 \end{longtable}
 
-    \noindent Bien que la différence prévue soit de 50 kHz, ce qui n’a pas été strictement observé, l’analyse de Fourier révèle effectivement un déplacement de certains pics dans le spectre, mesuré dans l'ordre de kilohertz. Cependant, ces déplacements ne semblent pas être cohérents ni suivre une tendance correspondant à notre théorie. Les interférences présentent un comportement imprévisible, ce qui indique que nous avons dépassé la longueur de cohérence du laser. En conséquence, nous observons des interférences constructives et destructives qui se produisent de manière aléatoire. Pour assurer une meilleure cohérence, il est nécessaire de modifier notre source. Malgré cette limitation, nos résultats indiquent qu’un effet fréquentiel est causé par la mesure faible. Des études futures examineront l’intégration d'une source impulsionnelle cohérente et permettront de mesurer la partie imaginaire de la valeur faible pour une caractérisation complète. 
+    \noindent Bien que la différence prévue soit de $50$ $kHz$, ce qui 
+    n’a pas été strictement observé, l’analyse de Fourier révèle 
+    effectivement un déplacement de certains pics dans le spectre, 
+    mesuré dans l'ordre de kilohertz. Cependant, ces déplacements ne 
+    semblent pas être cohérents ni suivre une tendance correspondant à 
+    notre théorie. Les interférences présentent un comportement 
+    imprévisible, ce qui indique que nous avons dépassé la longueur de 
+    cohérence du laser. En conséquence, nous observons des interférences 
+    constructives et destructives qui se produisent de manière aléatoire. 
+    Pour assurer une meilleure cohérence, il est nécessaire de modifier 
+    notre source. Malgré cette limitation, nos résultats indiquent qu’un 
+    effet fréquentiel est causé par la mesure faible. Des études futures 
+    examineront l’intégration d'une source impulsionnelle cohérente et 
+    permettront de mesurer la partie imaginaire de la valeur faible pour 
+    une caractérisation complète. 
 
 \end{doublespace}
 
