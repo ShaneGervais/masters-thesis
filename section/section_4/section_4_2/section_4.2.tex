@@ -35,12 +35,16 @@
     dépassent la longueur de cohérence du laser de $0,2$ $mm$. Cependant, 
     nous allons choisir une longueur d'impulsion de $4$ $ns$ (le minimum 
     que notre laser peut effectuer) pour un attendue de $49,77$ $kHz$, 
-    encore très petits.  Pour trouver des déplacements induits par la 
+    encore très petits. 
+    
+    \subsubsection{Mesure de la partie imaginaire}
+    
+    Pour trouver des déplacements induits par la 
     mesure faible, nous calculons la densité spectrale du spectre de 
-    puissance densité (DSP) sur un ensemble d'impulsions du signal expérimentale.  
+    puissance (DSP) sur un ensemble d'impulsions du signal expérimentale.  
     La fonction \textit{pspectrum} de \textsc{MATLAB} facilite se calcule pour 
     nous, en effectuent une transformation de Fourier à haute résolution sur 
-    plusieurs impulsions pour obtenir le spectre de puissance densité. 
+    plusieurs impulsions pour obtenir la DSP. 
     Voici ce spectre que nous avons obtenu à partir de nos données 
     expérimentales (figure \ref{fig:spectre}).
 
@@ -94,7 +98,6 @@
     \bottomrule
     \endlastfoot
     
-    % Paste all your rows here like:
 1 & $\ket{H}$ & 175.8   &  -5.4971 \\
 1 & $\ket{V}$ & 175.8   &   0      \\
 1 & $\ket{R}$ & 175.8   &  -8.2456 \\
@@ -141,10 +144,20 @@
     notre théorie. Les interférences présentent un comportement 
     imprévisible, ce qui indique que nous avons dépassé la longueur de 
     cohérence du laser. En conséquence, nous observons des interférences 
-    constructives et destructives qui se produisent de manière aléatoire. 
+    constructives et destructives qui se produisent de manière inconsistante. 
+    %Malgré cette limitation, nos résultats indiquent qu’un 
+    %effet fréquentiel est causé par la mesure faible. 
+    On entend par
+    effet fréquentiel un déplacement dans le spectre de fréquence
+    causé par la mesure faible. Ce déplacement se manifeste dans la DSP
+    cependant, nous n'avons pas pu
+    mesurer la partie imaginaire de la valeur faible qui suit nos attentes
+    théoriques car les
+    déplacements sont trop petits et incohérent pour obtenir une
+    mesure fiable.
     Pour assurer une meilleure cohérence, il est nécessaire de modifier 
-    notre source. Malgré cette limitation, nos résultats indiquent qu’un 
-    effet fréquentiel est causé par la mesure faible. Des études futures 
+    notre source.
+    Des études futures 
     examineront l’intégration d'une source impulsionnelle cohérente et 
     permettront de mesurer la partie imaginaire de la valeur faible pour 
     une caractérisation complète. 
