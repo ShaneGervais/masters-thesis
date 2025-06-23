@@ -193,231 +193,6 @@
     \warn{\item Invalid format of field 'date' \item Invalid format of field 'date'}
   \endentry
 
-  \entry{photonicInformation}{article}{}
-    \name{author}{2}{}{%
-      {{hash=SS}{%
-         family={Slussarenko},
-         familyi={S\bibinitperiod},
-         given={Sergei},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=PGJ}{%
-         family={Pryde},
-         familyi={P\bibinitperiod},
-         given={Geoff\bibnamedelima J.},
-         giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SSPGJ1}
-    \strng{fullhash}{SSPGJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Photons have been a flagship system for studying quantum mechanics, advancing quantum information science, and developing quantum technologies. Quantum entanglement, teleportation, quantum key distribution, and early quantum computing demonstrations were pioneered in this technology because photons represent a naturally mobile and low-noise system with quantum-limited detection readily available. The quantum states of individual photons can be manipulated with very high precision using interferometry, an experimental staple that has been under continuous development since the 19th century. The complexity of photonic quantum computing devices and protocol realizations has raced ahead as both underlying technologies and theoretical schemes have continued to develop. Today, photonic quantum computing represents an exciting path to medium- and large-scale processing. It promises to put aside its reputation for requiring excessive resource overheads due to inefficient two-qubit gates. Instead, the ability to generate large numbers of photons—and the development of integrated platforms, improved sources and detectors, novel noise-tolerant theoretical approaches, and more—have solidified it as a leading contender for both quantum information processing and quantum networking. Our concise review provides a flyover of some key aspects of the field, with a focus on experiment. Apart from being a short and accessible introduction, its many references to in-depth articles and longer specialist reviews serve as a launching point for deeper study of the field.%
-    }
-    \verb{doi}
-    \verb 10.1063/1.5115814
-    \endverb
-    \verb{eprint}
-    \verb https://pubs.aip.org/aip/apr/article-pdf/doi/10.1063/1.5115814/197395
-    \verb 02/041303\_1\_online.pdf
-    \endverb
-    \field{issn}{1931-9401}
-    \field{number}{4}
-    \field{pages}{041303}
-    \field{title}{Photonic quantum information processing: A concise review}
-    \verb{url}
-    \verb https://doi.org/10.1063/1.5115814
-    \endverb
-    \field{volume}{6}
-    \field{journaltitle}{Applied Physics Reviews}
-    \field{month}{10}
-    \field{year}{2019}
-  \endentry
-
-  \entry{QTapplImpl}{report}{}
-    \name{author}{2}{}{%
-      {{hash=LJA}{%
-         family={Lewis},
-         familyi={L\bibinitperiod},
-         given={James\bibnamedelima A.},
-         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=WG}{%
-         family={Wood},
-         familyi={W\bibinitperiod},
-         given={Georgia},
-         giveni={G\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LJAWG1}
-    \strng{fullhash}{LJAWG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Quantum Technology Applications and Implications}
-    \list{institution}{2}{%
-      {CSIS (Center for Strategic}%
-      {International Studies)}%
-    }
-    \field{type}{techreport}
-    \field{year}{2023}
-  \endentry
-
-  \entry{QuantumMedicalNexus}{article}{}
-    \true{moreauthor}
-    \true{morelabelname}
-    \name{author}{10}{}{%
-      {{hash=SM}{%
-         family={Shams},
-         familyi={S\bibinitperiod},
-         given={Muhammad},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=CJ}{%
-         family={Choudhari},
-         familyi={C\bibinitperiod},
-         given={Jinal},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=RK}{%
-         family={Reyes},
-         familyi={R\bibinitperiod},
-         given={Katherine},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=PS}{%
-         family={Prentzas},
-         familyi={P\bibinitperiod},
-         given={Sophia},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=GA}{%
-         family={Gapizov},
-         familyi={G\bibinitperiod},
-         given={Abubakar},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=SA}{%
-         family={Shehryar},
-         familyi={S\bibinitperiod},
-         given={Abdullah},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=AM}{%
-         family={Affaf},
-         familyi={A\bibinitperiod},
-         given={Maryam},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=GH}{%
-         family={Grezenko},
-         familyi={G\bibinitperiod},
-         given={Han},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=GRW}{%
-         family={Gasim},
-         familyi={G\bibinitperiod},
-         given={Rayan\bibnamedelima W},
-         giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-      {{hash=MSN}{%
-         family={Mohsin},
-         familyi={M\bibinitperiod},
-         given={Syed\bibnamedelima Naveed},
-         giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Cureus}%
-    }
-    \strng{namehash}{SM+1}
-    \strng{fullhash}{SMCJRKPSGASAAMGHGRWMSN+1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{10}
-    \field{title}{The quantum-medical nexus: Understanding the impact of quantum technologies on healthcare}
-    \field{volume}{15}
-    \field{journaltitle}{Cureus}
-    \field{year}{2023}
-  \endentry
-
-  \entry{DiVincenzo_2000}{article}{}
-    \name{author}{1}{}{%
-      {{hash=DDP}{%
-         family={DiVincenzo},
-         familyi={D\bibinitperiod},
-         given={David\bibnamedelima P.},
-         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Wiley}%
-    }
-    \strng{namehash}{DDP1}
-    \strng{fullhash}{DDP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1002/1521-3978(200009)48:9/11<771::aid-prop771>3.0.co;2-e
-    \endverb
-    \field{issn}{1521-3978}
-    \field{number}{9–11}
-    \field{pages}{771–783}
-    \field{title}{The Physical Implementation of Quantum Computation}
-    \verb{url}
-    \verb http://dx.doi.org/10.1002/1521-3978(200009)48:9/11<771::AID-PROP771>3
-    \verb .0.CO;2-E
-    \endverb
-    \field{volume}{48}
-    \field{journaltitle}{Fortschritte der Physik}
-    \field{month}{09}
-    \field{year}{2000}
-  \endentry
-
-  \entry{browne2017quantumopticsquantumtechnologies}{misc}{}
-    \name{author}{4}{}{%
-      {{hash=BD}{%
-         family={Browne},
-         familyi={B\bibinitperiod},
-         given={Dan},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=BS}{%
-         family={Bose},
-         familyi={B\bibinitperiod},
-         given={Sougato},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=MF}{%
-         family={Mintert},
-         familyi={M\bibinitperiod},
-         given={Florian},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=KMS}{%
-         family={Kim},
-         familyi={K\bibinitperiod},
-         given={M.\bibnamedelima S.},
-         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BD+1}
-    \strng{fullhash}{BDBSMFKMS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{eprint}
-    \verb 1707.02925
-    \endverb
-    \field{title}{From Quantum Optics to Quantum Technologies}
-    \verb{url}
-    \verb https://arxiv.org/abs/1707.02925
-    \endverb
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{quant-ph}
-    \field{year}{2017}
-  \endentry
-
   \entry{metrology}{article}{}
     \name{author}{10}{}{%
       {{hash=TA}{%
@@ -502,6 +277,152 @@
     \field{journaltitle}{Nature Physics}
     \field{year}{2022}
     \warn{\item Invalid format of field 'date' \item Invalid format of field 'date'}
+  \endentry
+
+  \entry{QTapplImpl}{report}{}
+    \name{author}{2}{}{%
+      {{hash=LJA}{%
+         family={Lewis},
+         familyi={L\bibinitperiod},
+         given={James\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=WG}{%
+         family={Wood},
+         familyi={W\bibinitperiod},
+         given={Georgia},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LJAWG1}
+    \strng{fullhash}{LJAWG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Quantum Technology Applications and Implications}
+    \list{institution}{2}{%
+      {CSIS (Center for Strategic}%
+      {International Studies)}%
+    }
+    \field{type}{techreport}
+    \field{year}{2023}
+  \endentry
+
+  \entry{DiVincenzo_2000}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DDP}{%
+         family={DiVincenzo},
+         familyi={D\bibinitperiod},
+         given={David\bibnamedelima P.},
+         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley}%
+    }
+    \strng{namehash}{DDP1}
+    \strng{fullhash}{DDP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1002/1521-3978(200009)48:9/11<771::aid-prop771>3.0.co;2-e
+    \endverb
+    \field{issn}{1521-3978}
+    \field{number}{9–11}
+    \field{pages}{771–783}
+    \field{title}{The Physical Implementation of Quantum Computation}
+    \verb{url}
+    \verb http://dx.doi.org/10.1002/1521-3978(200009)48:9/11<771::AID-PROP771>3
+    \verb .0.CO;2-E
+    \endverb
+    \field{volume}{48}
+    \field{journaltitle}{Fortschritte der Physik}
+    \field{month}{09}
+    \field{year}{2000}
+  \endentry
+
+  \entry{browne2017quantumopticsquantumtechnologies}{misc}{}
+    \name{author}{4}{}{%
+      {{hash=BD}{%
+         family={Browne},
+         familyi={B\bibinitperiod},
+         given={Dan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bose},
+         familyi={B\bibinitperiod},
+         given={Sougato},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={Mintert},
+         familyi={M\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=KMS}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={M.\bibnamedelima S.},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BD+1}
+    \strng{fullhash}{BDBSMFKMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{eprint}
+    \verb 1707.02925
+    \endverb
+    \field{title}{From Quantum Optics to Quantum Technologies}
+    \verb{url}
+    \verb https://arxiv.org/abs/1707.02925
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{quant-ph}
+    \field{year}{2017}
+  \endentry
+
+  \entry{photonicInformation}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SS}{%
+         family={Slussarenko},
+         familyi={S\bibinitperiod},
+         given={Sergei},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PGJ}{%
+         family={Pryde},
+         familyi={P\bibinitperiod},
+         given={Geoff\bibnamedelima J.},
+         giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SSPGJ1}
+    \strng{fullhash}{SSPGJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Photons have been a flagship system for studying quantum mechanics, advancing quantum information science, and developing quantum technologies. Quantum entanglement, teleportation, quantum key distribution, and early quantum computing demonstrations were pioneered in this technology because photons represent a naturally mobile and low-noise system with quantum-limited detection readily available. The quantum states of individual photons can be manipulated with very high precision using interferometry, an experimental staple that has been under continuous development since the 19th century. The complexity of photonic quantum computing devices and protocol realizations has raced ahead as both underlying technologies and theoretical schemes have continued to develop. Today, photonic quantum computing represents an exciting path to medium- and large-scale processing. It promises to put aside its reputation for requiring excessive resource overheads due to inefficient two-qubit gates. Instead, the ability to generate large numbers of photons—and the development of integrated platforms, improved sources and detectors, novel noise-tolerant theoretical approaches, and more—have solidified it as a leading contender for both quantum information processing and quantum networking. Our concise review provides a flyover of some key aspects of the field, with a focus on experiment. Apart from being a short and accessible introduction, its many references to in-depth articles and longer specialist reviews serve as a launching point for deeper study of the field.%
+    }
+    \verb{doi}
+    \verb 10.1063/1.5115814
+    \endverb
+    \verb{eprint}
+    \verb https://pubs.aip.org/aip/apr/article-pdf/doi/10.1063/1.5115814/197395
+    \verb 02/041303\_1\_online.pdf
+    \endverb
+    \field{issn}{1931-9401}
+    \field{number}{4}
+    \field{pages}{041303}
+    \field{title}{Photonic quantum information processing: A concise review}
+    \verb{url}
+    \verb https://doi.org/10.1063/1.5115814
+    \endverb
+    \field{volume}{6}
+    \field{journaltitle}{Applied Physics Reviews}
+    \field{month}{10}
+    \field{year}{2019}
   \endentry
 
   \entry{Wang_2019}{article}{}
