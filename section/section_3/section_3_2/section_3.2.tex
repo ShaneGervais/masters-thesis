@@ -2,26 +2,36 @@
     Pour caractériser la partie réelle de la valeur faible, nous 
     introduisons une interaction faible entre les états de base de 
     la polarisation $\ket{H}$ et $\ket{V}$ via un délai temporel. Ce 
-    délai doit être inférieur au profil temporel du laser 
-    $\sigma \ll \tau$ \cite{Aharonov,Lundeen_Resch}. Aucun modèle ne 
-    décrit spécifiquement comment l'interaction devrait être faible, 
-    mais il doit y avoir un chevauchement évident entre les états de 
-    base pour atteindre de l'information significative de l'état 
-    quantique \cite{Lundeen_thesis}. Nous supposons que, pour être dans 
+    délai doit être inférieur à la largeur à mi-hauteur de l'impulsion du laser 
+    $\sigma \ll \tau$ \cite{Aharonov,Lundeen_Resch}. On suppose 
+    que l'exponentielle dans l'équation \ref{eq:expval_t_norm} est
+    négligeable, ce qui signifie que l'interaction est faible. 
+    En effet, si l'interaction est faible, la valeur de l'exponentielle
+    est proche de $1$, ce qui signifie que l'interaction n'a pas
+    d'effet significatif sur l'état quantique. En revanche, si l'interaction
+    est forte, la valeur de l'exponentielle peut être significativement
+    différente de $1$, ce qui signifie que l'interaction a un effet
+    significatif sur l'état quantique. Une fois l'interaction est faible,
+    il y a un chevauchement évident entre les états de base, ce qui permet 
+    d'extraire significativement l'état de polarisation de l'état
+    d'entrée. Après, la valeur faible temps vers $0.5$ car les deux impulsions 
+    sont complètement séparés donc le déplacement moyen est $0.5$. 
+    Pour l'interaction faible, nous introduisons un délai temporel 
+    suffisamment court entre les deux états de polarisation $\ket{H}$ et $\ket{V}$
+    avec un interféromètre de polarisation. Nous supposons que, pour être dans 
     le régime des mesures faibles, au moins $90 \%$ du chevauchement 
-    entre les états de base est nécessaire. Ensuite, pour mesurer l'état 
-    directement par des mesures faibles, nous devons effectuer une mesure 
-    projective qui contient les deux états de base afin de pouvoir 
-    caractériser les états d'entrée de polarisation entre nos états de 
-    base. L’un de ces états correspond au délai maximal appliqué, 
-    tandis que l'autre correspond à l'absence de délai. Ici, le terme 
-    délai fait référence à un signal extérieur qui active l'oscilloscope, 
-    comme dans l'expérience sur la vitesse de la lumière. La différence 
-    est que nous postulons que la manière la plus simple de créer des 
-    délais temporels entre les états de base est d'utiliser un type 
-    d'interféromètre de polarisation dont l'un des bras est légèrement 
-    décalé d'une quantité correspondant à notre délai maximum par rapport 
-    à l'autre bras non décalé. La section suivante décrit le dispositif 
+    entre les états de base est suffisant. Pour ce faire, l'un de ses 
+    bras est légèrement long correspondant à notre délai 
+    maximum par rapport à l'autre bras. Ensuite, pour mesurer 
+    l"état directement, nous devons déterminer le délai 
+    moyen que l'état a subit en traversant l'interféromètre de
+    polarisation. Pour ce faire, nous effectuons une postsélection qui 
+    est une mesure projective permettant de faire interférer les 
+    composantes $\ket{H}$ et $\ket{V}$ de la polarisation. Si l'état n'a subit aucun 
+    délai, cela correspond à $\ket{V}$. Si l'état est maximalement retardé, 
+    cela correspond à $\ket{H}$. Et, pour les autres états, nous comparons le 
+    délai à un étalon afin de pouvoir associer délai à son état de 
+    polarisation correspondant. La section suivante décrit le dispositif 
     expérimental que nous avons utilisé pour caractériser la partie 
     réelle de la valeur faible. 
 \end{doublespace}
