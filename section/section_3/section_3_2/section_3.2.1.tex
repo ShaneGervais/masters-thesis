@@ -68,7 +68,7 @@
 \end{doublespace}
 
 \begin{align}
-    \hat{T}_{HWP}(\theta) = \begin{pmatrix}
+    T_{HWP}(\theta) = \begin{pmatrix}
         cos(2\theta) & sin(2\theta)\\
         sin(2\theta) & -cos(2\theta)
     \end{pmatrix}
@@ -79,24 +79,31 @@
     (\guillemetleft halfwaveplate \guillemetright en anglais) 
     et l'angle $\theta$ l'angle de rotation de la lame par 
     rapport à l'axe rapide. 
-    L'opérateur $\hat{T}_{HWP}(\theta)$ est un opérateur unitaire 
-    qui agit sur l'état d'entrée $\ket{\psi}$, et il est 
-    défini par la rotation de l'état d'entrée sur la sphère de Poincaré. 
-    Ce dernier est essentiellement une matrice de Jones qui 
+    %L'opérateur $T_{HWP}(\theta)$ est un opérateur unitaire 
+    %qui agit sur l'état d'entrée $\ket{\psi}$, et il est 
+    %défini par la rotation de l'état d'entrée sur la sphère de Poincaré.
+    Ce dernier est une matrice de Jones qui 
     représente la transformation de polarisation induite par la lame 
-    demi-onde. Cependant, nous l'apellons un opérateur unitaire 
-    car il agit sur l'état d'entrée $\ket{\psi}$ de manière unitaire,
-    c'est-à-dire qu'il conserve la norme de l'état de polarisation 
-    et ne modifie pas la probabilité de détection de l'état de polarisation
-    après la transformation. Ce caractère unitaire est essentiel
-    pour des applications en technologie quantique, soit pour
-    une porte quantique sur un qubit de polarisation à l'étape de
-    préparation de l'état d'entrée.
-    Il est important de noter que l'angle $\theta$ est défini par
-    rapport à l'état de base $\ket{H}$, qui est l'état horizontal 
-    de polarisation.
-    Ainsi, l'angle $\theta$ est l'angle de rotation de la lame 
-    demi-onde par rapport à l'état de base $\ket{H}$.
+    demi-onde. 
+    %Ce dernier est essentiellement une matrice de Jones qui 
+    %représente la transformation de polarisation induite par la lame 
+    %demi-onde. 
+    %Cependant, nous l'apellons un opérateur unitaire 
+    %--------------------------------
+    %Il agit sur l'état d'entrée $\ket{\psi}$ de manière unitaire,
+    %c'est-à-dire qu'il conserve la norme de l'état de polarisation 
+    %et ne modifie pas la probabilité de détection de l'état de polarisation
+    %après la transformation. 
+    %Ce caractère est essentiel
+    %pour des applications en technologie quantique, soit pour
+    %une porte quantique sur un qubit de polarisation à l'étape de
+    %préparation de l'état d'entrée.
+    %--------------------------------
+    %Il est important de noter que l'angle $\theta$ est défini par
+    %rapport à l'état de base $\ket{H}$, qui est l'état horizontal 
+    %de polarisation.
+    %Ainsi, l'angle $\theta$ est l'angle de rotation de la lame 
+    %demi-onde par rapport à l'état de base $\ket{H}$.
     Ce premier trajet réalise le trajet
     $\ket{H} \to \ket{D} \to \ket{V} \to \ket{A} \to \ket{H}$. 
     Pour comprendre 
@@ -111,7 +118,7 @@
 \end{doublespace}
 
 \begin{align}
-    \hat{T}_{HWP}(\theta)\ket{H} &= \begin{pmatrix}
+    T_{HWP}(\theta)\ket{H} &= \begin{pmatrix}
         cos(2\theta) & sin(2\theta)\\
         sin(2\theta) & -cos(2\theta)
     \end{pmatrix} \begin{pmatrix}
@@ -204,18 +211,18 @@
 \end{doublespace}
 
 \begin{align}
-    \hat{T}_{QWP}(\phi) &= \begin{pmatrix}
+    T_{QWP}(\phi) &= \begin{pmatrix}
         cos^{2}(\phi) + isin^{2}(\phi) & (1-i)cos(\phi)sin(\phi)\\
         (1-i)cos(\phi)sin(\phi) & sin^{2}(\phi) + icos^{2}(\phi)
     \end{pmatrix}\\
-    \hat{T}_{QWP}(\phi = 0^{\degree}) &= \begin{pmatrix}
+    T_{QWP}(\phi = 0^{\degree}) &= \begin{pmatrix}
         1 & 0 \\
         0 & i
     \end{pmatrix}
 \end{align}
 
 \begin{doublespace}
-    \noindent La forme de cet opérateur $\hat{T}_{QWP}(\phi)$, avec 
+    \noindent La forme de cet opérateur $T_{QWP}(\phi)$, avec 
     l'angle $\phi$ pour la lame d'onde et l'indice QWP fait référence 
     à une lame quart d'onde 
     (\guillemetleft quarter waveplate \guillemetright en anglais). 
@@ -228,7 +235,7 @@
 \end{doublespace}
 
 \begin{align}
-    \hat{T}_{QWP}(\phi = 0^{\degree})\hat{T}_{HWP}(\theta)\ket{H} &= 
+    T_{QWP}(\phi = 0^{\degree})T_{HWP}(\theta)\ket{H} &= 
     \begin{pmatrix} 
         1 & 0 \\
         0 & i
@@ -294,7 +301,7 @@
 \end{doublespace}
 
 \begin{equation}
-    \hat{T}_{QWP}(\phi = 45^{\degree}) = \frac{1}{2}\begin{pmatrix}
+    T_{QWP}(\phi = 45^{\degree}) = \frac{1}{2}\begin{pmatrix}
         1+i & 1-i \\
         1-i & 1+i
     \end{pmatrix}
@@ -305,7 +312,7 @@
 \end{doublespace}
 
 \begin{align}
-    \hat{T}_{QWP}(\phi = 45^{\degree})\hat{T}_{HWP}(\theta)\ket{H} &= 
+    T_{QWP}(\phi = 45^{\degree})T_{HWP}(\theta)\ket{H} &= 
     \begin{pmatrix} 
         \frac{1+i}{2} & \frac{1-i}{2} \\
         \frac{1-i}{2} & \frac{1+i}{2}
