@@ -28,8 +28,7 @@
 
     \noindent Pour observer ce spectre, on peut soit utiliser un 
     spectromètre. Cependant, cette méthode peut offrir une 
-    bonne résolution, mais il reste coûteux et difficilement intégrable 
-    dans une plateforme photonique intégrée. 
+    bonne résolution, mais il reste coûteux. 
     %En ce qui concerne 
     %l'interférométrie, la faible longueur de cohérence du laser (entre $2$ et $8$ $\mu m$) 
     %rend délicate l’observation d’interférences stables sans un système 
@@ -45,22 +44,24 @@
     \begin{figure}[!htpb]
         \centering
         \includegraphics[width=1.0\textwidth]{partieimagexp.png}
-        \caption{Dispositif expérimental pour la partie imaginaire 
+        \caption{Dispositif expérimental pour la caractérisation 
+        de la partie imaginaire 
         de la valeur faible. Cette configuration utilise le 
         dispositif de la partie réelle dans un interféromètre de 
-        Mach-Zedner. Un séparateur de faisceau non polarisant 
+        Mach-Zehdner. Un séparateur de faisceau non polarisant 
         (NPBS) est utilisé avant l'étape de préparation de l'état 
         pour diviser le faisceau en deux voies. L’une de ces voies 
         sert de référence pour interférer avec l’autre voie, qui a 
-        subi une mesure directe. Une lame demi-onde a été placée sur 
+        subi une mesure faible. Une lame demi-onde a été placée sur 
         le trajet de cette référence afin de modifier son état de 
-        polarisation pour permettre des interférences avec le dernier.}
+        polarisation pour permettre des interférences avec l'autre.}
         \label{fig:imagexp}
     \end{figure}
 
     \noindent Cette technique repose sur l’interférence entre deux 
     impulsions émises par un seul laser, l’une ayant subi une mesure 
-    faible (signal expérimental) et l’autre servant de référence (signal de référence)
+    faible (signal expérimental) et l’autre servant 
+    de référence (signal d'interférence). 
     (figure \ref{fig:imagexp}). L’interférence entre ces deux signaux 
     modifie le spectre de fréquence du signal mesuré. L’information 
     sur l’état de polarisation se retrouve dans les 
@@ -89,7 +90,16 @@
     \begin{figure}[!htpb]
         \centering
         \includegraphics[width=1.0\textwidth]{visibility_2.png}
-        \caption{Spectre de visibilité de notre laser. }
+        \caption{Spectre de visibilité de notre laser. La 
+        visibilité obtenue est d'environ $0,78$, ce qui est 
+        relativement élevé. On constate 
+        que le pic de visibilité à $0$ $cm$ correspond à l’état de 
+        polarisation verticale $\ket{V}$, tandis que le pic à 
+        $1,2$ $cm$ correspond à l’état de polarisation horizontale 
+        $\ket{H}$ avec une visibilité de $0,54$
+        . Le pic à $0,6$ $cm$ est dû à l’état de superposition
+        donc à l’interférence entre les deux états de polarisation, avec 
+        une visibilité de $0,77$.}
         \label{fig:vis}
     \end{figure}
 
@@ -97,37 +107,44 @@
     troisième pique du spectre de visibilité de l’interféromètre. Cela 
     signifie que nous plaçons l’état de polarisation horizontale 
     ($\ket{H}$) sur ce pic, un déplacement du mirroir d'environ 
-    $1.2$ $cm$ (allé-retour), de sorte que l’effet du décalage temporel 
-    introduit soit maximal à cet endroit. Cette configuration nous permet 
-    ensuite d’obtenir une information sensible sur les états de 
-    polarisation circulaire, en particulier à partir des variations 
-    observées sur le deuxième pic du spectre. Cependant, le spectre de 
-    visibilité seul ne possède pas la résolution nécessaire pour détecter 
-    les petits décalages fréquentiels causés par l’interaction faible. 
-    Nous revenons donc dans le chapitre suivant sur une analyse spectrale 
-    plus poussée.
+    $1.2$ $cm$ (aller-retour), de sorte que l’effet du décalage temporel 
+    introduit soit maximal à cet endroit. En effet, les états de 
+    polarisation ciruclaires droit et gauche possède un délai temporel 
+    correspondant au deuxième pic. Ainsi, ces états interféreront avec 
+    une bonne visibilité, $0,77$, avec le signal de référence permettant 
+    d'analyser le spectre fréquentiel. Cette configuration nous permet 
+    ensuite d’observer un effet de décalage fréquentiel maximal pour
+    les états de polarisation circulaires.
+    %Cependant, le spectre de 
+    %visibilité seul ne possède pas la résolution nécessaire pour détecter 
+    %les petits décalages fréquentiels causés par l’interaction faible. 
+    %Nous revenons donc dans le chapitre suivant sur une analyse spectrale 
+    %plus poussée.
+    %Ensuite, on superpose les impulsions sous le même état de 
+    %polarisation. Comme mentionné précédemment, le polariseur est réglé 
+    %sur un état de polarisation verticale pendant notre mesure projective. 
+    À l'aide d'une lame demi-onde dans le bras du signal d'interférence, 
+    nous pouvons intérférer contrustivement ou destructivement 
+    le signal expériemental et le signal d'interférence pour identifier 
+    quels pics sont causés par des interférences. 
 
-    \noindent Ensuite, on superpose les impulsions sous le même état de 
-    polarisation. Comme mentionné précédemment, le polariseur est réglé 
-    sur un état de polarisation verticale pendant notre mesure projective. 
-    À l'aide d'une lame demi-onde, nous pouvons autoriser des 
-    interférences avec le bras non faiblement mesuré dans le MZ et 
-    l’utiliser comme interférence de référence pour identifier quels 
-    pics sont causés par des interférences. 
-
-    \noindent Les données sont prélevées en mode FFT (transformation de 
-    Fourier rapide) de l’oscilloscope sur plusieurs impulsions pendant 
-    $400$ $ns$. On les moyenne ensuite à partir de $10$ séries de mesures. 
-    Comme nous ne pourrons pas caractériser la partie imaginaire de la 
-    valeur faible avec autant d'états d'entrée, comme la partie réelle, 
+    \noindent Les données sont acquises %en mode FFT (transformation de 
+    %Fourier rapide) de l’oscilloscope 
+    sur plusieurs impulsions pendant 
+    $400$ $ns$. On moyenne ensuite à partir de $10$ séries de mesures. 
+    Comme cette aspect de l'expérience est plus difficile, dans un 
+    premier temps,
     nous allons vérifier si nous pouvons mesurer l’écart maximal attendu 
     entre des polarisations linéaires et circulaires qui est attendu par 
-    la relation: $\expval{\hat{\omega}} \propto \frac{\tau}{8\sigma^2}$. 
+    la relation dans l'équation \ref{eq:imaginary_part}. 
     Les variations du spectre de puissance entre les états de polarisation 
     linéaires et circulaires, où un état de polarisation circulaire 
     devrait entraîner le décalage fréquentiel maximal par rapport à un 
-    état de polarisation linéaire, devraient suivre cette relation. 
-    Cependant, nous avons rencontré des difficultés qui seront abordées 
-    dans le chapitre suivant. 
+    état de polarisation linéaire. 
+    Nous allons discuter des résultats attendus dans la section 
+    suivante et les méthodes d'analyse que nous avons utilisées, tels 
+    que la transformation de Fourier rapide (FFT) pour extraire les 
+    variations de fréquence dans le spectre de puissance, dans le 
+    chapitre suivant.
 
 \end{doublespace}

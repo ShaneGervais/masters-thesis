@@ -29,11 +29,11 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.96142337"
-     inkscape:cx="556.46661"
-     inkscape:cy="402.52818"
+     inkscape:zoom="1.1152579"
+     inkscape:cx="556.82186"
+     inkscape:cy="423.22048"
      inkscape:window-width="1712"
-     inkscape:window-height="965"
+     inkscape:window-height="949"
      inkscape:window-x="0"
      inkscape:window-y="39"
      inkscape:window-maximized="0"
@@ -495,6 +495,26 @@
        y1="105.6735"
        x2="43.5355"
        y2="76.388496" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4089"
+       id="linearGradient19"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.8,0,0,0.8,-34.8284,-61.1108)"
+       x1="43.5355"
+       y1="105.6735"
+       x2="43.5355"
+       y2="76.388496" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4089"
+       id="linearGradient21"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.8,0,0,0.8,-34.8284,-61.1108)"
+       x1="43.5355"
+       y1="105.6735"
+       x2="43.5355"
+       y2="76.388496" />
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -802,7 +822,7 @@
        i:dimmedPercent="50"
        i:layer="yes"
        id="g7458"
-       transform="matrix(-0.00305813,-0.26456566,0.26456566,-0.00305813,204.86112,40.331378)">
+       transform="matrix(-0.00305813,-0.26456566,0.26456566,-0.00305813,205.00165,40.471911)">
       <g
          id="g7460">
         <linearGradient
@@ -1207,7 +1227,7 @@
     <g
        style="display:inline;enable-background:new"
        id="g5881"
-       transform="matrix(0.26458333,0,0,0.26458333,98.563824,-18.725349)">
+       transform="matrix(0.26458333,0,0,0.26458333,98.423291,-17.882153)">
       <path
          id="path4081"
          d="m 218.89213,327.96527 -3.29742,6.83864 h -1.74138 l 4.48116,-9.22448 -0.16696,-0.86144 c -0.19534,-0.94 -0.45746,-1.57608 -0.78804,-1.91336 -0.33058,-0.33728 -0.69622,-0.50424 -1.10026,-0.50424 -0.36564,0 -0.68452,0.1336 -0.95834,0.40072 -0.27381,0.26712 -0.45246,0.7012 -0.5376,1.30064 h -0.35228 c 0.02,-1.0168 0.27047,-1.8332 0.75298,-2.446 0.34727,-0.44072 0.768,-0.6628 1.2622,-0.6628 0.43744,0 0.81142,0.1736 1.1253,0.51928 0.46915,0.52752 0.85482,1.46088 1.15368,2.79816 l 1.56607,6.88704 c 0.23541,1.03016 0.50255,1.69968 0.8014,2.0052 0.29384,0.31384 0.63945,0.46912 1.03681,0.46912 0.37899,0 0.68954,-0.12688 0.93497,-0.38232 0.24542,-0.25544 0.38901,-0.6612 0.43576,-1.22216 h 0.38233 c 0.007,0.17032 0.01,0.2972 0.01,0.38232 0,0.85488 -0.21204,1.54272 -0.63611,2.0636 -0.31889,0.39072 -0.73629,0.58776 -1.25219,0.58776 -0.4558,0 -0.86484,-0.192 -1.22213,-0.57768 -0.35729,-0.38568 -0.69455,-1.26888 -1.00843,-2.65136 l -0.88154,-3.80664 z"
@@ -1340,12 +1360,12 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
-       x="229.07083"
-       y="71.873573"
+       x="234.97321"
+       y="89.721214"
        id="text4099-2-5"><tspan
          sodipodi:role="line"
-         x="229.07083"
-         y="71.873573"
+         x="234.97321"
+         y="89.721214"
          style="font-size:4.23333px;line-height:1.25;stroke-width:0.264583"
          id="tspan8">Intéraction faible</tspan></text>
     <text
@@ -1373,19 +1393,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
-       x="183.02983"
-       y="118.14"
+       x="182.32716"
+       y="130.78793"
        id="text4099-2-5-4-8"><tspan
          sodipodi:role="line"
-         x="183.02983"
-         y="118.14"
+         x="182.32716"
+         y="130.78793"
          style="font-size:4.23333px;line-height:1.25;stroke-width:0.264583"
-         id="tspan12">Mesure </tspan><tspan
-         sodipodi:role="line"
-         x="183.02983"
-         y="123.43166"
-         style="font-size:4.23333px;line-height:1.25;stroke-width:0.264583"
-         id="tspan1">projective</tspan></text>
+         id="tspan1">Postsélection</tspan></text>
     <g
        style="display:inline;enable-background:new"
        i:rgbTrio="#4F008000FFFF"
@@ -1806,5 +1821,190 @@
          x="214.22083"
          y="141.24812"
          style="font-size:4.23333px;line-height:1.25;stroke-width:0.264583">NPBS</tspan></text>
+    <g
+       style="display:inline;enable-background:new"
+       i:rgbTrio="#4F008000FFFF"
+       i:dimmedPercent="50"
+       i:layer="yes"
+       id="g7594-4"
+       transform="matrix(0.26458333,0,0,0.26458333,239.05928,76.3813)">
+      <linearGradient
+         y2="0.375"
+         x2="2.5009999"
+         y1="23.0527"
+         x1="2.5009999"
+         gradientUnits="userSpaceOnUse"
+         id="linearGradient18">
+        <stop
+           id="stop7598-8"
+           style="stop-color:#FF1A00"
+           offset="0.0056" />
+        <stop
+           id="stop7600-3"
+           style="stop-color:#FFFFFF"
+           offset="0.5" />
+        <stop
+           id="stop7602-9"
+           style="stop-color:#FF1A00"
+           offset="1" />
+        <a:midPointStop
+           style="stop-color:#FF1A00"
+           offset="0.0056" />
+        <a:midPointStop
+           style="stop-color:#FF1A00"
+           offset="0.5" />
+        <a:midPointStop
+           style="stop-color:#FFFFFF"
+           offset="0.5" />
+        <a:midPointStop
+           style="stop-color:#FFFFFF"
+           offset="0.5" />
+        <a:midPointStop
+           style="stop-color:#FF1A00"
+           offset="1" />
+      </linearGradient>
+      <rect
+         id="rect7604-0"
+         height="22.677999"
+         width="4.2519999"
+         i:knockout="Off"
+         y="0.375"
+         x="0.375"
+         style="fill:url(#linearGradient19);fill-opacity:1;stroke:#000000;stroke-width:0.75" />
+    </g>
+    <g
+       style="display:inline;enable-background:new"
+       id="g5881-7"
+       transform="matrix(0.26458333,0,0,0.26458333,182.04025,-16.921491)">
+      <path
+         id="path4081-3"
+         d="m 218.89213,327.96527 -3.29742,6.83864 h -1.74138 l 4.48116,-9.22448 -0.16696,-0.86144 c -0.19534,-0.94 -0.45746,-1.57608 -0.78804,-1.91336 -0.33058,-0.33728 -0.69622,-0.50424 -1.10026,-0.50424 -0.36564,0 -0.68452,0.1336 -0.95834,0.40072 -0.27381,0.26712 -0.45246,0.7012 -0.5376,1.30064 h -0.35228 c 0.02,-1.0168 0.27047,-1.8332 0.75298,-2.446 0.34727,-0.44072 0.768,-0.6628 1.2622,-0.6628 0.43744,0 0.81142,0.1736 1.1253,0.51928 0.46915,0.52752 0.85482,1.46088 1.15368,2.79816 l 1.56607,6.88704 c 0.23541,1.03016 0.50255,1.69968 0.8014,2.0052 0.29384,0.31384 0.63945,0.46912 1.03681,0.46912 0.37899,0 0.68954,-0.12688 0.93497,-0.38232 0.24542,-0.25544 0.38901,-0.6612 0.43576,-1.22216 h 0.38233 c 0.007,0.17032 0.01,0.2972 0.01,0.38232 0,0.85488 -0.21204,1.54272 -0.63611,2.0636 -0.31889,0.39072 -0.73629,0.58776 -1.25219,0.58776 -0.4558,0 -0.86484,-0.192 -1.22213,-0.57768 -0.35729,-0.38568 -0.69455,-1.26888 -1.00843,-2.65136 l -0.88154,-3.80664 z"
+         style="display:inline" />
+      <text
+         id="text4091-7"
+         y="348.91339"
+         x="213.2126"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:125%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start"
+           y="348.91339"
+           x="213.2126"
+           id="tspan4093-9"
+           sodipodi:role="line">4</tspan></text>
+      <path
+         sodipodi:nodetypes="cc"
+         id="path4910-0"
+         d="m 212.59843,335.90551 h 10.62992"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       style="display:inline;enable-background:new"
+       i:rgbTrio="#4F008000FFFF"
+       i:dimmedPercent="50"
+       i:layer="yes"
+       id="g7594-4-3"
+       transform="matrix(0.0012754,-0.26458026,0.26458026,0.0012754,205.83664,58.316198)">
+      <linearGradient
+         y2="0.375"
+         x2="2.5009999"
+         y1="23.0527"
+         x1="2.5009999"
+         gradientUnits="userSpaceOnUse"
+         id="linearGradient20">
+        <stop
+           id="stop7598-8-9"
+           style="stop-color:#FF1A00"
+           offset="0.0056" />
+        <stop
+           id="stop7600-3-8"
+           style="stop-color:#FFFFFF"
+           offset="0.5" />
+        <stop
+           id="stop7602-9-6"
+           style="stop-color:#FF1A00"
+           offset="1" />
+        <a:midPointStop
+           style="stop-color:#FF1A00"
+           offset="0.0056" />
+        <a:midPointStop
+           style="stop-color:#FF1A00"
+           offset="0.5" />
+        <a:midPointStop
+           style="stop-color:#FFFFFF"
+           offset="0.5" />
+        <a:midPointStop
+           style="stop-color:#FFFFFF"
+           offset="0.5" />
+        <a:midPointStop
+           style="stop-color:#FF1A00"
+           offset="1" />
+      </linearGradient>
+      <rect
+         id="rect7604-0-5"
+         height="22.677999"
+         width="4.2519999"
+         i:knockout="Off"
+         y="0.375"
+         x="0.375"
+         style="fill:url(#linearGradient21);fill-opacity:1;stroke:#000000;stroke-width:0.75" />
+    </g>
+    <g
+       style="display:inline;enable-background:new"
+       id="g5881-7-7"
+       transform="matrix(0.26458333,0,0,0.26458333,145.76717,-31.002532)">
+      <path
+         id="path4081-3-0"
+         d="m 218.89213,327.96527 -3.29742,6.83864 h -1.74138 l 4.48116,-9.22448 -0.16696,-0.86144 c -0.19534,-0.94 -0.45746,-1.57608 -0.78804,-1.91336 -0.33058,-0.33728 -0.69622,-0.50424 -1.10026,-0.50424 -0.36564,0 -0.68452,0.1336 -0.95834,0.40072 -0.27381,0.26712 -0.45246,0.7012 -0.5376,1.30064 h -0.35228 c 0.02,-1.0168 0.27047,-1.8332 0.75298,-2.446 0.34727,-0.44072 0.768,-0.6628 1.2622,-0.6628 0.43744,0 0.81142,0.1736 1.1253,0.51928 0.46915,0.52752 0.85482,1.46088 1.15368,2.79816 l 1.56607,6.88704 c 0.23541,1.03016 0.50255,1.69968 0.8014,2.0052 0.29384,0.31384 0.63945,0.46912 1.03681,0.46912 0.37899,0 0.68954,-0.12688 0.93497,-0.38232 0.24542,-0.25544 0.38901,-0.6612 0.43576,-1.22216 h 0.38233 c 0.007,0.17032 0.01,0.2972 0.01,0.38232 0,0.85488 -0.21204,1.54272 -0.63611,2.0636 -0.31889,0.39072 -0.73629,0.58776 -1.25219,0.58776 -0.4558,0 -0.86484,-0.192 -1.22213,-0.57768 -0.35729,-0.38568 -0.69455,-1.26888 -1.00843,-2.65136 l -0.88154,-3.80664 z"
+         style="display:inline" />
+      <text
+         id="text4091-7-3"
+         y="348.91339"
+         x="213.2126"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:125%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start"
+           y="348.91339"
+           x="213.2126"
+           id="tspan4093-9-9"
+           sodipodi:role="line">4</tspan></text>
+      <path
+         sodipodi:nodetypes="cc"
+         id="path4910-0-9"
+         d="m 212.59843,335.90551 h 10.62992"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="45.982414"
+       y="142.55685"
+       id="text4099-2-5-4-6"><tspan
+         sodipodi:role="line"
+         x="45.982414"
+         y="142.55685"
+         style="font-size:4.23333px;line-height:1.25;stroke-width:0.264583"
+         id="tspan8-5-7">Signal de référence</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="233.61276"
+       y="138.83447"
+       id="text4099-2-5-4-7"><tspan
+         sodipodi:role="line"
+         x="233.61276"
+         y="138.83447"
+         style="font-size:4.23333px;line-height:1.25;stroke-width:0.264583"
+         id="tspan8-5-1">Signal expérimental</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;enable-background:new"
+       x="165.96729"
+       y="144.79108"
+       id="text4099-2-5-4-6-1"><tspan
+         sodipodi:role="line"
+         x="165.96729"
+         y="144.79108"
+         style="font-size:4.23333px;line-height:1.25;stroke-width:0.264583"
+         id="tspan8-5-7-8">Signal d'interférence</tspan></text>
   </g>
 </svg>
