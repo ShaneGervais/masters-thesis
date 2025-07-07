@@ -22,7 +22,7 @@
      de la valeur faible:
 
     \begin{equation}
-        \frac{\mathcal{I}(\expval{\hat{\pi}_W})}{\tau} = \expval{\hat{\omega}} \propto \frac{\tau}{8\sigma^2}
+        \mathcal{I}(\expval{\hat{\pi}_W}) = \expval{\hat{\omega}} \propto \frac{\tau}{8\sigma^2}
     \end{equation}
     
     \noindent Cela signifie que, pour une impulsion avec une durée de 
@@ -30,19 +30,23 @@
     s'attend à un déplacement dans le spectre de fréquence de seulement 
     $7,96$ kHz (avec $\omega \equiv 2\pi f$). Cette valeur est 
     extrêmement petite par rapport à la fréquence de notre laser, qui se 
-    situe dans l'ordre des térahertz. Les mesures interférométriques 
+    situe dans l'ordre $THz$ avec plusieurs modes \cite{ThorlabsNPL64B}. 
+    Les mesures interférométriques 
     régulières effectuées dans un laboratoire ne présentent qu’une 
-    résolution en $MHz$, ce qui nécessite un délai extrêmement long. Cela 
-    dépasse la marge de mesure minimale ainsi que sa facilité 
-    d’utilisation dans un laboratoire. En effet, pour effectuer la mesure 
-    dans un interféromètre de Michelson, les distances nécessaires 
-    dépassent la longueur de cohérence du laser de $0,2$ $mm$. Cependant, 
-    nous allons choisir une longueur d'impulsion de $4$ $ns$ (le minimum 
-    que notre laser peut effectuer) pour un attendue de $49,77$ $kHz$, 
+    résolution de l'ordre $MHz$, ce qui nécessite des bras 
+    d'interféromètres assez longs. Donc, pour améliorer l'effet par l'interaction faible,
+    il faut réduire la durée de l'impulsion. 
+    Nous allons choisir une longueur d'impulsion de $4$ $ns$ (le minimum 
+    que notre laser peut effectuer) pour un attendue de $49,74$ $kHz$, 
     encore très petits. 
     
     \subsubsection{Mesure de la partie imaginaire}
     
+    Nous avons commencer par si nous pouvions observer
+    des déplacements fréquentiels dans la DSP
+    causés par la mesure faible. Pour ce faire, nous avons utilisé
+    les états de polarisation $\ket{H}$, $\ket{V}$, $\ket{R}$,
+    $\ket{A}$, $\ket{L}$ et $\ket{D}$ comme états d'entrée.
     Pour trouver des déplacements induits par la 
     mesure faible, nous calculons la densité spectrale du spectre de 
     puissance (DSP) sur un ensemble d'impulsions du signal expérimentale.  
@@ -81,8 +85,11 @@
     nous obtenons le tableau suivant:
 
     \begin{longtable}{p{3.0cm} p{3.0cm} p{3.0cm} p{3.0cm}}
-    \caption{Mesure de la vitesse du signal dans les câbles BNC pour 
-    différents ajustements de courbe} \\
+    \caption{Tableau récapitulatif des pics de puissance dans le spectre de
+    puissance, avec les états d'entrée, les fréquences mesurées et les
+    déplacements fréquentiels. Les fréquences sont mesurées en
+    mégahertz (MHz) et les déplacements fréquentiels en kilohertz (kHz) 
+    par rapport à l'état $\ket{V}$.} \\
     \toprule
     \label{table:imaginare-table}
     Pic & État d'entrée & Fréquence (MHz) & Déplacement fréquentiel (kHz)\\
@@ -95,7 +102,7 @@
     \endhead
     
     \midrule
-    \multicolumn{4}{r}{{À suivre sur la prochaine page}} \\
+    \multicolumn{4}{r}{{\dots}} \\
     \midrule
     \endfoot
     
@@ -108,28 +115,28 @@
 1 & $\ket{A}$ & 175.8   &  -8.2456 \\
 1 & $\ket{L}$ & 175.81  &   8.2456 \\
 1 & $\ket{D}$ & 175.81  &   8.2456 \\
-
+\midrule
 2 & $\ket{H}$ & 351.57  &  -5.4971 \\
 2 & $\ket{V}$ & 351.58  &   0      \\
 2 & $\ket{R}$ & 351.56  & -16.491  \\
 2 & $\ket{A}$ & 351.48  & -101.52  \\
 2 & $\ket{L}$ & 351.56  & -21.988  \\
 2 & $\ket{D}$ & 351.55  & -24.737  \\
-
+\midrule
 3 & $\ket{H}$ & 527.42  &  27.485  \\
 3 & $\ket{V}$ & 527.39  &   0      \\
 3 & $\ket{R}$ & 527.41  &  16.491  \\
 3 & $\ket{A}$ & 527.30  & -90.701  \\
 3 & $\ket{L}$ &   NaN   &   NaN    \\
 3 & $\ket{D}$ &   NaN   &   NaN    \\
-
+\midrule
 4 & $\ket{H}$ & 878.82  &  32.982  \\
 4 & $\ket{V}$ & 878.78  &   0      \\
 4 & $\ket{R}$ & 878.73  & -52.222  \\
 4 & $\ket{A}$ &   NaN   &   NaN    \\
 4 & $\ket{L}$ & 879.02  & 236.200  \\
 4 & $\ket{D}$ & 878.95  & 161.990  \\
-
+\midrule
 5 & $\ket{H}$ & 1054.7  &  13.743  \\
 5 & $\ket{V}$ & 1054.7  &   0      \\
 5 & $\ket{R}$ & 1054.7  &  24.737  \\

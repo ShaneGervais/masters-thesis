@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex manuscrit_SG_V8_2025_06_10"] 1751855654.11193 "manuscrit_SG_V8_2025_06_10.aux" "manuscrit_SG_V8_2025_06_10.bbl" "manuscrit_SG_V8_2025_06_10" 1751864140.09892 0
-  "./manuscrit_SG_V8_2025_06_10-blx.bib" 1751864139.73021 343 3a07cef98ad14713f755034bc844b0fc ""
+["bibtex manuscrit_SG_V8_2025_06_10"] 1751881097.15217 "manuscrit_SG_V8_2025_06_10.aux" "manuscrit_SG_V8_2025_06_10.bbl" "manuscrit_SG_V8_2025_06_10" 1751881106.02321 0
+  "./manuscrit_SG_V8_2025_06_10-blx.bib" 1751881105.51943 343 3a07cef98ad14713f755034bc844b0fc ""
   "./reference_these.bib" 1751687021.88962 36540 bf600ea3060f5f0ffc5e729eb38a8ca4 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1678141846 65484 b7949c47a88ed6dca66ebc7a04577312 ""
-  "manuscrit_SG_V8_2025_06_10.aux" 1751864139.71727 62010 cf875ab4ad52a5dfa2b758c7c21aaac1 "pdflatex"
+  "manuscrit_SG_V8_2025_06_10.aux" 1751881105.50077 62164 bacb2a278034a40b1057a2ccf6fdc600 "pdflatex"
   (generated)
   "manuscrit_SG_V8_2025_06_10.bbl"
   "manuscrit_SG_V8_2025_06_10.blg"
   (rewritten before read)
-["pdflatex"] 1751864132.36621 "/Users/shanegervais/Documents/masters-thesis/manuscrit_SG_V8_2025_06_10.tex" "manuscrit_SG_V8_2025_06_10.pdf" "manuscrit_SG_V8_2025_06_10" 1751864140.09912 0
+["pdflatex"] 1751881097.28094 "/Users/shanegervais/Documents/masters-thesis/manuscrit_SG_V8_2025_06_10.tex" "manuscrit_SG_V8_2025_06_10.pdf" "manuscrit_SG_V8_2025_06_10" 1751881106.02348 0
   "/Users/shanegervais/Documents/masters-thesis/manuscrit_SG_V8_2025_06_10.tex" 1750727138.75973 16219 bc20b69dbf7f3510a21784467768f408 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -195,14 +195,14 @@
   "figure/typ_pulse.png" 1749030043.32499 234554 04711d3430fc91a18607b43202365fd7 ""
   "figure/visibility_2.png" 1749030043.32883 308779 7c32d26e6a9f77a774a180f0675cc2ea ""
   "figure/zoom_doppler_res_scatter.png" 1749030043.33997 37682 c62b6413dd2f59ed9a6017f7bb8ef063 ""
-  "manuscrit_SG_V8_2025_06_10.aux" 1751864139.71727 62010 cf875ab4ad52a5dfa2b758c7c21aaac1 "pdflatex"
-  "manuscrit_SG_V8_2025_06_10.bbl" 1751855654.20905 67960 216347376e5ef4d5d7d18ba51b8b210e "bibtex manuscrit_SG_V8_2025_06_10"
-  "manuscrit_SG_V8_2025_06_10.lof" 1751864139.73124 15226 d5d10f4002f302718e8c5e9f209f60f8 "pdflatex"
-  "manuscrit_SG_V8_2025_06_10.lot" 1751864139.73122 1302 92feed61bdf7b5deef051e0fbbff4dc8 "pdflatex"
-  "manuscrit_SG_V8_2025_06_10.out" 1751864139.72899 10709 b8113fd037ef11f764a0056fdddd7421 "pdflatex"
-  "manuscrit_SG_V8_2025_06_10.run.xml" 1751864139.73102 2726 591218945762cd73b8d603739599b5f4 "pdflatex"
+  "manuscrit_SG_V8_2025_06_10.aux" 1751881105.50077 62164 bacb2a278034a40b1057a2ccf6fdc600 "pdflatex"
+  "manuscrit_SG_V8_2025_06_10.bbl" 1751881097.27696 67960 216347376e5ef4d5d7d18ba51b8b210e "bibtex manuscrit_SG_V8_2025_06_10"
+  "manuscrit_SG_V8_2025_06_10.lof" 1751881105.52026 15226 086111a32024d7b56d97ea3f609a2f08 "pdflatex"
+  "manuscrit_SG_V8_2025_06_10.lot" 1751881105.52023 1515 0975830cffb597e2ab503429845405e6 "pdflatex"
+  "manuscrit_SG_V8_2025_06_10.out" 1751881105.51813 10709 b8113fd037ef11f764a0056fdddd7421 "pdflatex"
+  "manuscrit_SG_V8_2025_06_10.run.xml" 1751881105.52012 2726 591218945762cd73b8d603739599b5f4 "pdflatex"
   "manuscrit_SG_V8_2025_06_10.tex" 1750727138.75973 16219 bc20b69dbf7f3510a21784467768f408 ""
-  "manuscrit_SG_V8_2025_06_10.toc" 1751864139.73117 4385 a57a4c05054671874913f7c5bfb0eb54 "pdflatex"
+  "manuscrit_SG_V8_2025_06_10.toc" 1751881105.52019 4385 84412861a5cb1c9d47c4fadd910d4858 "pdflatex"
   "section/section_1/section_1.1/section_1_0_V2.tex" 1750693038.58054 12786 d8c812f59ff1a105ec6e08476534b1e5 ""
   "section/section_2/section_2.1/section_2.0_V2.tex" 1751850832.92528 48393 f5ce7fb26b1ead0609bb488586a87cc5 ""
   "section/section_3/section_3_1/section3_1_2.tex" 1751037339.50999 17719 15cad657e6a5a51cba8d00665f877d97 ""
@@ -220,8 +220,8 @@
   "section/section_4/section_4_1/section_4.tex" 1751316745.96337 1282 642937ff9e632639c7d59e10968b85e6 ""
   "section/section_4/section_4_1/section_4_1_1.tex" 1751855645.82583 12992 a621927c3b4206acfb935dc8fe1a562c ""
   "section/section_4/section_4_1/section_4_1_2.tex" 1751855837.1824 898 7cba389cb7605af18610fa653da98d33 ""
-  "section/section_4/section_4_2/section_4.2.tex" 1751864132.20304 7311 16ed25faa4733f5556a2b15202f393f4 ""
-  "section/section_5/section_5.tex" 1750046853.50472 4741 6b9f86dffe6cb87ad4fe7ac048f9105b ""
+  "section/section_4/section_4_2/section_4.2.tex" 1751878276.76443 7699 f095035f5d53ddf31dd1239fec9bdeba ""
+  "section/section_5/section_5.tex" 1751881088.25791 4473 ed50df0540e419726da48230524fb603 ""
   (generated)
   "manuscrit_SG_V8_2025_06_10-blx.bib"
   "manuscrit_SG_V8_2025_06_10.aux"
