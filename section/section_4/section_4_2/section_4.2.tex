@@ -13,12 +13,10 @@
     mesure de la partie imaginaire de la valeur faible.
 \end{doublespace}
 
-\subsubsection{Implications pour la partie imaginaire}
-
 
 \begin{doublespace}
 
-     À partir de la relation proportionelle à la partie imaginaire 
+     \noindent À partir de la relation proportionelle à la partie imaginaire 
      de la valeur faible:
 
     \begin{equation}
@@ -26,9 +24,9 @@
     \end{equation}
     
     \noindent Cela signifie que, pour une impulsion avec une durée de 
-    $10$ $ns$, et un délai de $40$ $ps$ appliqué sur le système, on 
+    $10$ $ns$, et un délai de $167$ $ps$ appliqué sur le système, on 
     s'attend à un déplacement dans le spectre de fréquence de seulement 
-    $7,96$ kHz (avec $\omega \equiv 2\pi f$). Cette valeur est 
+    $3,98$ kHz (avec $\omega \equiv 2\pi f$). Cette valeur est 
     extrêmement petite par rapport à la fréquence de notre laser, qui se 
     situe dans l'ordre $THz$ avec plusieurs modes \cite{ThorlabsNPL64B}. 
     Les mesures interférométriques 
@@ -37,10 +35,10 @@
     d'interféromètres assez longs. Donc, pour améliorer l'effet par l'interaction faible,
     il faut réduire la durée de l'impulsion. 
     Nous allons choisir une longueur d'impulsion de $4$ $ns$ (le minimum 
-    que notre laser peut effectuer) pour un attendue de $49,74$ $kHz$, 
+    que notre laser peut effectuer) pour un attendue de $16,61$ $kHz$, 
     encore très petits. 
     
-    \subsubsection{Mesure de la partie imaginaire}
+    \subsubsection{Vérification de la partie imaginaire}
     
     Nous avons commencer par si nous pouvions observer
     des déplacements fréquentiels dans la DSP
@@ -58,18 +56,21 @@
 
     \begin{figure}[!htpb]
         \centering
-        \includegraphics[width=1.0\textwidth]{powerdensityspectrum.png}
+        \includegraphics[width=1.0\textwidth]{PSD.png}
         \caption{DSP résultant d'une mesure faible temporelle. Ici, les 
         lignes verticales représentent la position des pics de puissance 
-        dans le spectre. La figure \ref{fig:spectre1054} montre un zoom 
-        sur le pic de puissance à $1054$ $MHz$.}
+        dans le spectre. La fréquence centrale est de 
+        $703.12$ $MHz$ pour une durée spectrale de $1.4062$ $GHz$ avec une 
+        résolution temporelle de $4$ $ps$.
+        La figure \ref{fig:spectre1054} montre un zoom 
+        sur le pic de puissance à $87,9$ $MHz$.}
         \label{fig:spectre}
     \end{figure}
 
     \begin{figure}[!htpb]
         \centering
-        \includegraphics[width=1.0\textwidth]{PSD_zoom_1054Mhz.png}
-        \caption{Zoom sur le pic de puissance à $1054$ $MHz$. On peut 
+        \includegraphics[width=1.0\textwidth]{zoom_at_87MHz.png}
+        \caption{Zoom sur le pic de puissance à $87,9$ $MHz$. On peut 
         observer la présence de plusieurs pics de puissance, avec leur 
         ajustement de courbe polynomiale du quatrième ordre pour 
         determiner chaque position fréquentielle des états d'entrée.}
@@ -82,77 +83,122 @@
     polynomiale du quatrième ordre, comme dans nos dernières analyses 
     pour estimer précisément la position fréquentielle du pic. En 
     comparant chacune de ces fréquences à celles de l’état $\ket{V}$, 
-    nous obtenons le tableau suivant:
+    nous obtenons le tableau suivant pour le pic à la fréquence $87,9$ $MHz$:
 
-    \begin{longtable}{p{3.0cm} p{3.0cm} p{3.0cm} p{3.0cm}}
+    \begin{longtable}{p{3.0cm} p{3.0cm} p{3.0cm}}
     \caption{Tableau récapitulatif des pics de puissance dans le spectre de
     puissance, avec les états d'entrée, les fréquences mesurées et les
     déplacements fréquentiels. Les fréquences sont mesurées en
     mégahertz (MHz) et les déplacements fréquentiels en kilohertz (kHz) 
-    par rapport à l'état $\ket{V}$.} \\
+    par rapport à l'état $\ket{R}$.} \\
     \toprule
     \label{table:imaginare-table}
-    Pic & État d'entrée & Fréquence (MHz) & Déplacement fréquentiel (kHz)\\
+    État d'entrée & Fréquence (MHz) & Déplacement fréquentiel (kHz)\\
     \midrule
     \endfirsthead
     
     \toprule
-    Pic & État d'entrée & Fréquence (MHz) & Déplacement fréquentiel (kHz)\\
+    État d'entrée & Fréquence (MHz) & Déplacement fréquentiel (kHz)\\
     \midrule
     \endhead
     
     \midrule
-    \multicolumn{4}{r}{{\dots}} \\
+    \multicolumn{3}{r}{{\dots}} \\
     \midrule
     \endfoot
     
     \bottomrule
     \endlastfoot
     
-1 & $\ket{H}$ & 175.8   &  -5.4971 \\
-1 & $\ket{V}$ & 175.8   &   0      \\
-1 & $\ket{R}$ & 175.8   &  -8.2456 \\
-1 & $\ket{A}$ & 175.8   &  -8.2456 \\
-1 & $\ket{L}$ & 175.81  &   8.2456 \\
-1 & $\ket{D}$ & 175.81  &   8.2456 \\
-\midrule
-2 & $\ket{H}$ & 351.57  &  -5.4971 \\
-2 & $\ket{V}$ & 351.58  &   0      \\
-2 & $\ket{R}$ & 351.56  & -16.491  \\
-2 & $\ket{A}$ & 351.48  & -101.52  \\
-2 & $\ket{L}$ & 351.56  & -21.988  \\
-2 & $\ket{D}$ & 351.55  & -24.737  \\
-\midrule
-3 & $\ket{H}$ & 527.42  &  27.485  \\
-3 & $\ket{V}$ & 527.39  &   0      \\
-3 & $\ket{R}$ & 527.41  &  16.491  \\
-3 & $\ket{A}$ & 527.30  & -90.701  \\
-3 & $\ket{L}$ &   NaN   &   NaN    \\
-3 & $\ket{D}$ &   NaN   &   NaN    \\
-\midrule
-4 & $\ket{H}$ & 878.82  &  32.982  \\
-4 & $\ket{V}$ & 878.78  &   0      \\
-4 & $\ket{R}$ & 878.73  & -52.222  \\
-4 & $\ket{A}$ &   NaN   &   NaN    \\
-4 & $\ket{L}$ & 879.02  & 236.200  \\
-4 & $\ket{D}$ & 878.95  & 161.990  \\
-\midrule
-5 & $\ket{H}$ & 1054.7  &  13.743  \\
-5 & $\ket{V}$ & 1054.7  &   0      \\
-5 & $\ket{R}$ & 1054.7  &  24.737  \\
-5 & $\ket{A}$ & 1054.7  & -16.491  \\
-5 & $\ket{L}$ & 1054.6  & -93.450  \\
-5 & $\ket{D}$ & 1054.6  & -46.725  \\
+    $\ket{H}$ & 87.907 &  +1.000 \\
+    $\ket{V}$ & 87.915 &  +9.000 \\
+    $\ket{R}$ & 87.906 &   0.000 \\
+    $\ket{A}$ & 87.910 &  +4.000 \\
+    $\ket{L}$ & 87.902 &  -4.000 \\
+    $\ket{D}$ & 87.916 & +10.000 \\
+
+    %\midrule
 
 
-\end{longtable}
+    \end{longtable}
 
-    \noindent Bien que la différence prévue soit de $50$ $kHz$, ce qui 
+    \noindent Bien que la différence prévue soit de $16,61$ $kHz$ (du minimum au maximum), ce qui 
     n’a pas été strictement observé, l’analyse de Fourier révèle 
     effectivement un déplacement de certains pics dans le spectre, 
     mesuré dans l'ordre de kilohertz. Cependant, ces déplacements ne 
     semblent pas être cohérents ni suivre une tendance correspondant à 
-    notre théorie. Les interférences présentent un comportement 
+    notre théorie. 
+
+    \subsubsection{Tentatives de mesurer la partie imaginaire}
+
+    \noindent Considérons une prise de données sur plusieurs
+    état d'entrée, comme l'on fait dans notre expérience de la partie
+    réelle de la valeur faible. Cette fois ici, nous avons
+    pris la mesure de la DSP pour chaque état d'entrée et considéré
+    comment le centroïde de chaque pic se déplace en fonction de l'état
+    d'entrée d'écrit par:
+
+    \begin{equation}
+        f_{centroïde} = \frac{\sum_{i=1}^{n} f_i \cdot P_i}{\sum_{i=1}^{n} P_i}
+    \end{equation}
+
+    \noindent Où $f_i$ est la fréquence de chaque pic et $P_i$ est la puissance
+    de chaque pic. Nous avons ensuite calculé la différence entre le
+    centroïde de chaque état d'entrée et celui de l'état $\ket{R}$.
+    Cette méthode prend inspiration de: \cite{WeakorStd,OpticalNetworks}.
+    Nous évaluons la partie imaginaire de la valeur faible de les 
+    trajets de polarisation discutés dans le chapitre 3. Voici les
+    résultats que nous avons obtenus pour les déplacements fréquentiels
+    pour le trajet de polarisation $\ket{H} \to \ket{R} \to \ket{V} \to \ket{L} \to \ket{H}$
+    présenté dans la figure \ref{fig:imaginary_part}.
+
+    \begin{figure}[!htpb]
+        \centering
+        \includegraphics[width=1.0\textwidth]{imag_weak_value_path_4.png}
+        \caption{Déplacement fréquentiel mesuré pour les trajets de polarisation 
+        $\ket{H} \to \ket{R} \to \ket{V} \to \ket{L} \to \ket{H}$, 
+        avec un délai de $167$ $ps$ et une durée d'impulsion de $4$ $ns$. 
+        Les barres d'erreur verticale représentent l'incertitude de la mesure,
+        calculée à partir de la variations des fréquences
+        mesurées pour chaque état d'entrée. Les déplacements sont mesurés en
+        kilohertz (kHz) par rapport à l'état $\ket{L}$. La courbe théorique
+        n'est pas représentée car les déplacements ne correspondent pas
+        avec nos attentes théoriques.}
+        \label{fig:imaginary_part_HRVLH}
+    \end{figure}
+
+    \noindent Ces données on été obtenues en prenant les résultats de la DSP
+    pour chaque état d'entrée, en calculant le centroïde de chaque pic
+    et utilisant l'équation \ref{eq:imaginary_part} pour
+    calculer la partie imaginaire de la valeur faible. Nous pouvons effectivement
+    calculé les amplitudes de probabilité pour chaque état d'entrée
+    en utilisant la relation \ref{eq:amplitude_a_im} et \ref{eq:amplitude_b_im} 
+    (figure \ref{fig:prob_amp_imaginary_part_HRVLH}).
+
+    \begin{figure}[!htpb]
+        \centering
+        \includegraphics[width=1.0\textwidth]{imaginary_probability_path_4.png}
+        \caption{
+        La partie imaginaire des amplitudes de probabilité mesurées pour le trajet de polarisation
+        $\ket{H} \to \ket{R} \to \ket{V} \to \ket{L} \to \ket{H}$.
+        Les barres d'erreur sont propagées à partir de l'incertitude
+        de la mesure des déplacements fréquentiels de la partie imaginaire de ce trajet de polarisation.
+        }
+        \label{fig:prob_amp_imaginary_part_HRVLH}
+    \end{figure}
+
+    \noindent Ce résultat démontre que la partie imaginaire de la valeur faible
+    est effectivement mesurable, mais que les déplacements ne correspondent pas 
+    avec nos attentes théoriques. Cependant, nous avons observé des
+    déplacements dans le spectre de fréquence, ce qui indique que la
+    partie imaginaire de la valeur faible est présente et elle suit
+    une tendance sinusoïdale. À ce moment présent, ceci est nos meilleures
+    résultats pour la partie imaginaire de la valeur faible et que les autres 
+    tentatives de mesure n'ont pas été concluantes.
+    
+    \subsubsection{Implications pour la partie imaginaire}
+    
+    Les interférences présentent un comportement 
     imprévisible, ce qui indique que nous avons dépassé la longueur de 
     cohérence du laser. En conséquence, nous observons des interférences 
     constructives et destructives qui se produisent de manière inconsistante. 
