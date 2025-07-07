@@ -12,40 +12,49 @@
     %formes d’onde. 
 
     Nous avons optimisé notre expérience pour qu’elle soit 
-    automatisée avec un code \textsc{Python} qui contrôle le moteur pas à pas
-    la lame demi-onde à l'étape d'entrée 
-    \cite{pylablib_thorlabs_kinesis}. Nous collectons des données tous les 
+    automatisée avec un code \textsc{Python} qui contrôle les supports de 
+    rotation motorisés pour les lames d'ondes à l'étape d'entrée 
+    ainsi que l'oscilloscope qui controle les acquisitions de données. 
+    \cite{pylablib_thorlabs_kinesis,TektronixTDS5000,oscilloscope_coding}. 
+    Nous collectons des données à chaque 
     $2,5$ dégrés. Pour chaque état d’entrée de polarisation, nous 
     prenons cinq fichiers distincts que nous moyennons, puis nous 
-    comparons leur position temporelle moyenne avec le dossier de 
-    calibration pour obtenir le délai associé à cet état. Notons que nous 
-    redéfinissons l’angle $\theta \equiv 2\theta$ pour qu’il ait une 
-    forme similaire à 
-    un plan circulaire et pour négligé le facteur de $2$. Nous combinons 
+    comparons leur temps d'arrivé moyen avec le dossier de 
+    calibration pour obtenir le délai associé à cet état. 
+    Nous combinons 
     les résultats pour la partie 
-    réelle de la valeur faible correspondant à nos valeurs théoriques 
-    calculées dans le chapitre précédent.
+    réelle de la valeur faible à nos valeurs théoriques 
+    calculées dans le chapitre précédent dans les équations: 
+    \ref{eq:expval_t_1}, \ref{eq:expval_t_2} et \ref{eq:expval_t_3}.
+    Pour simplifier la notation des équations, nous redéfinissons
+    l'angle $\theta$ de sorte que $\theta \equiv 2\theta$,
+    c’est-à-dire, nous utilisons une nouvelle variable angulaire égale 
+    à deux fois l’angle initial. Cela permet de négliger le facteur $2$ 
+    dans les expressions ultérieures et de se rapprocher de la forme 
+    usuelle dans les représentations circulaires.
     Voici les 
     résultats de chaque délai pour les différents états d’entrée pour 
     le trajet 
-    $\ket{H}\rightarrow\ket{D}\rightarrow\ket{V}\rightarrow\ket{A}$ 
+    $\ket{H}\rightarrow\ket{D}\rightarrow\ket{V}\rightarrow\ket{A}\rightarrow\ket{H}$ 
     (figure \ref{fig:HDAV_delay_results}).
 \end{doublespace}
 
 \begin{figure}[!h!t!p!b]
     \centering
-    \includegraphics[width=1.0\textwidth]{real_weak_value_measurement_3.pdf}
+    \includegraphics[width=1.0\textwidth]{real_weak_value_path_3.png}
     \caption{Résultats expérimentaux pour la partie réelle de la valeur 
     faible du trajet de polarisation 
-    $\ket{H}\rightarrow\ket{D}\rightarrow\ket{V}\rightarrow\ket{A}$. 
+    $\ket{H}\rightarrow\ket{D}\rightarrow\ket{V}\rightarrow\ket{A}\rightarrow\ket{H}$. 
     Les barres d’erreurs horizontales représentent l’erreur de 
     la position de l’angle induite par notre 
-    stade motorisé. Ils sont pas visibles, car ils sont
+    support de rotation motorisé de $\pm 0.3 \degree$ \cite{ThorlabsROT}. Ils sont pas visibles, car ils sont
     trop petits pour être prise en 
     considération, alors nous les avons négligées.
-    Les barres verticales représente l'incertitudes de la partie réelle, 
-    et les barres d’erreurs verticales, l’erreur de la position de 
-    l’angle induite par notre stade motorisé.
+    Les barres verticales représente l'incertitudes de la partie réelle.
+    Chaque point est la moyenne de $5$ mesures pour chaque état d'entrée.
+    La courbe théorique est la partie réelle de la valeur faible
+    calculée dans la section 2.3 (un cosinus carré). Les données sont normalisées par le
+    délai de référence $\tau$ de $167$ $ps$.
     }
     \label{fig:HDAV_delay_results}
 \end{figure}
@@ -56,29 +65,41 @@
     allongeant le bras $\ket{H}$ de $2,5$ $cm$ par rapport au bras 
     $\ket{V}$. En utilisant les mêmes méthodes d’ajustement que celles 
     employées dans l’expérience sur la vitesse de la lumière, nous 
-    mesurons les délais de chaque état $\psi(\theta)$. En réalité, la courbe 
+    mesurons les délais de chaque état $\ket{\psi(\theta)}$. En effet, la courbe 
     théorique de cette partie réelle est une valeur cosinus carrée en 
-    ignorant la partie $2sin(\theta)cos(\theta)$ de notre résultat 
-    théorique, car elle correspond mieux à nos résultats expérimentaux. 
-    Cette partie $2sin(\theta)cos(\theta)$ n’a pas de signification 
-    physique, car lorsque nous passons de $\ket{V}$ à $\ket{H}$, nous 
-    devrions éviter tout délai négatif, ce que nous constatons 
-    effectivement pour garder la symmétrie positive de la mesure. 
-    Une erreur additionnelle à noter est l’incohérence de nos 
-    modifications physiques dans notre expérience, que nous ne pouvons 
-    pas compenser numériquement. Par exemple, les vibrations de la table 
-    et les variations d’alignement du laser sont des facteurs que nous 
-    ne pouvons pas prendre en compte pendant les longues périodes 
-    d’acquisition de données pour chaque état d’entrée. Cette erreur se 
-    trouve dans le trajet à venir. Voici les résultats pour le trajet 
-    $\ket{H} \rightarrow \ket{R} \rightarrow \ket{V} \rightarrow \ket{L}$ 
+    ignorant la partie $2sin(\theta)cos(\theta)$ de l'équation \ref{eq:expval_t_1}. 
+    On suppose que cette partie est un artéfact perviennant dans
+    l'évolution de nos calculs théoriques, car elle ne contribue pas à la
+    partie réelle de la valeur faible.
+    Cette partie de notre résultat théorique pour ce trajet de polarisation
+    n’a pas de signification 
+    physique; car lorsque nous passons de $\ket{V}$ à $\ket{H}$, nous 
+    devrions pas avoir de délai négatif, car nous avons
+    déjà un délai de référence de $0$ pour l’état $\ket{V}$ au cours de la 
+    calibration. Ce dernier, est donc un terme de 
+    correction qui n’est pas nécessaire pour 
+    caractériser la partie réelle de la valeur faible. En effet,
+    nous avons constaté que la partie réelle de la valeur faible
+    est bien représentée par la fonction cosinus carrée,
+    ce qui est conforme à nos attentes théoriques.
+    %Une erreur additionnelle à noter est l’incohérence de nos 
+    %modifications physiques dans notre expérience, que nous ne pouvons 
+    %pas compenser numériquement. Par exemple, les vibrations de la table 
+    %et les variations d’alignement du laser sont des facteurs que nous 
+    %ne pouvons pas prendre en compte pendant les longues périodes 
+    %d’acquisition de données pour chaque état d’entrée. Cette erreur se 
+    %trouve dans le trajet à venir. 
+    Voici les résultats pour le trajet 
+    $\ket{H} \rightarrow \ket{R} \rightarrow \ket{V} \rightarrow \ket{L} \rightarrow \ket{H}$ 
     (figure \ref{fig:HRAL_delay_results}).
 \end{doublespace}
 
 \begin{figure}[!h!t!p!b]
     \centering
-    \includegraphics[width=1.0\textwidth]{real_weak_value_measurement_4.pdf}
-    \caption{Résultats expérimentaux pour la partie réelle de la valeur faible du trajet de polarisation $\ket{H} \rightarrow \ket{R} \rightarrow \ket{V} \rightarrow \ket{L}$}
+    \includegraphics[width=1.0\textwidth]{real_weak_value_path_4.png}
+    \caption{Résultats expérimentaux pour la partie réelle de la valeur 
+    faible du trajet de polarisation 
+    $\ket{H} \rightarrow \ket{R} \rightarrow \ket{V} \rightarrow \ket{L} \rightarrow\ket{H}$}
     \label{fig:HRAL_delay_results}
 \end{figure}
 
@@ -86,22 +107,39 @@
     \noindent Ces résultats sont similaires à ceux du trajet précédent, 
     ce qui est logique, car les états de polarisation $\ket{R}$ et 
     $\ket{L}$ possèdent toujours les mêmes états de base que $\ket{D}$ 
-    et $\ket{A}$, mais avec une composante imaginaire. On ne peut pas 
+    et $\ket{A}$, mais avec une composante imaginaire. Ce dernier 
+    n’affecte pas la partie réelle de la valeur faible, car il ne 
+    s’agit que d’un décalage de phase, soit de $e^{i\pi/2}$,
+    qui ne modifie pas la partie réelle de la valeur faible. 
+    En effet, la partie réelle de la valeur faible est toujours représentée
+    par la fonction cosinus carrée, ce qui est conforme à nos attentes
+    théoriques trouvées dans l'équation \ref{eq:expval_t_2}.
+    On ne peut pas 
     déterminer à partir de la partie réelle de la valeur faible si 
     l’état initial est elliptique ou circulaire. Les informations sur 
-    le passage de phase ou d’ellipticité des états de polarisation se 
-    trouvent dans la partie imaginaire de la valeur faible. Ensuite, 
-    voici les résultats pour le trajet 
-    $\ket{D} \rightarrow \ket{R} \rightarrow \ket{A} \rightarrow \ket{L}$ 
+    l’ellipticité des états de polarisation se 
+    trouvent dans la partie imaginaire de la valeur faible, où un 
+    décalage fréquentiel est observé (maximale pour les états
+    circulaires, null pour les états
+    linéaires et intermédiaire pour les états elliptiques) ce qui
+    permet de distinguer ces états de polarisation. C’est ce que nous allons
+    mesurer dans la section suivante.
+    Ensuite, voici les résultats pour le trajet 
+    $\ket{D} \rightarrow \ket{R} \rightarrow \ket{A} \rightarrow \ket{L} \rightarrow \ket{D}$, 
+    qui est le même trajet que le précédent, mais en départant de l'état
+    $\ket{D}$ et en terminant avec l'état $\ket{D}$, qui sont
+    des états de polarisation linéaires possédant les états de base
+    $\ket{H}$ et $\ket{V}$ comme $\ket{R}$ et $\ket{L}$,
+    mais avec pas de composante imaginaire
     (figure \ref{fig:HDAV_delay_results}).
 \end{doublespace}
 
 \begin{figure}[!h!t!p!b]
     \centering
-    \includegraphics[width=1.0\textwidth]{real_weak_value_measurement_5_2.pdf}
+    \includegraphics[width=1.0\textwidth]{real_weak_value_path_5.png}
     \caption{Résultats expérimentaux pour la partie réelle de la valeur 
     faible du trajet de polarisation 
-    $\ket{D} \rightarrow \ket{R} \rightarrow \ket{A} \rightarrow \ket{L}$
+    $\ket{D} \rightarrow \ket{R} \rightarrow \ket{A} \rightarrow \ket{L} \rightarrow \ket{D}$
     }
     \label{fig:DRAL_delay_results}
 \end{figure}
@@ -109,42 +147,69 @@
 \begin{doublespace}
     \noindent Cela s’avère captivant, car elle démontre 
     incontestablement que nous conservons toujours la même composante 
-    réelle de la faible valeur. Cette constatation met en évidence la 
-    symétrie quantique, qui correspond à la symétrie optique des états 
-    de polarisation D, A, L et R. Par conséquent, l’ensemble des données 
+    réelle de la faible valeur. Comme l'équation \ref{eq:expval_t_1},
+    le terme $sin(4\theta)/4$ de l'équation \ref{eq:expval_t_3} 
+    ne contribue pas à la partie réelle de la
+    valeur faible et ne modifie pas la partie réelle de la valeur faible
+    comme dans démonté expérimentalement dans la figure 
+    \ref{fig:DRAL_delay_results}. Le résultat est que la partie réelle de la
+    valeur faible est toujours représentée par $\tau/2$.
+    Ce dernier se conforme à nos attentes expérimentales, 
+    car la partie réelle de la valeur faible est toujours
+    constante, peu importe l'état de polarisation initial.
+    %Nous avons donc réussi à mesurer la partie réelle de la valeur faible
+    %pour chaque trajet de polarisation, ce qui nous permet de
+    %caractériser les amplitudes de probabilité des états de polarisation
+    %initiaux. Cependant, nous avons négligé la partie imaginaire de la
+    %valeur faible, qui est essentielle pour caractériser complètement
+    %les états de polarisation. C’est ce que nous allons aborder dans la
+    %section suivante.
+    Par conséquent, l’ensemble des données 
     sur l’ellipticité entre ces polarisations est contenu dans la 
     variable conjuguée du décalage temporel, c’est-à-dire le décalage 
     de fréquence obtenu en mesurant la partie imaginaire de la valeur 
-    faible. En outre, à partir de ces données pour chaque trajet, nous 
-    pouvons directement calculer les amplitudes de probabilité de l’état 
+    faible. 
+    
+    \noindent En outre, à partir de ces données pour chaque trajet, nous 
+    pouvons directement calculer les modules d'amplitudes de probabilité de l’état 
     quantique à partir de ces mesures de délai, comme nous l’avons 
-    mentionné dans la section 2.3. 
-    Voici $\ket{H} \to \ket{D} \to \ket{V} \to \ket{A}$ 
+    mentionné dans la section 2.5 avec les équations: 
+    \ref{eq:amplitude_a} et \ref{eq:amplitude_b}.
+    Nous allons maintenant
+    présenter les résultats expérimentaux pour 
+    les amplitudes de probabilité pour chaque trajet de polarisation
+    que nous avons mesuré. Voici les résultats pour l'amplitudes de 
+    probabilités du trajet de polarisation 
+    $\ket{H} \rightarrow \ket{D} \rightarrow \ket{V} \rightarrow \ket{A} \rightarrow \ket{H}$ 
     (figure \ref{fig:HDVA_prob_amp}):
 \end{doublespace}
 
 \begin{figure}[!h!t!p!b]
     \centering
-    \includegraphics[width=1.0\textwidth]{real_prof_amp_measurement_3.pdf}
+    \includegraphics[width=1.0\textwidth]{real_probability_path_3.png}
     \caption{Résultats de l'amplitude de probabilité pour le trajet 
     de polarisation 
-    $\ket{H} \rightarrow \ket{D} \rightarrow \ket{V} \rightarrow \ket{A}$. 
-    Les courbes théoriques provenant de nos calculs dans la section 2.3. 
-    Les barres d'erreur sont les incertitudes proviennent à partir de notre 
-    partie réelle de la valeur faible via Monte-Carlo, car la propagation 
-    analytique fait exploser certaines incertitudes de façon irrégulières. }
+    $\ket{H} \rightarrow \ket{D} \rightarrow \ket{V} \rightarrow \ket{A} \rightarrow \ket{H}$. 
+    Les courbes théoriques provenant de les amplitudes de probabilités
+    de l'équation \ref{eq:expval_t_1}, \ref{eq:amplitude_a} et \ref{eq:amplitude_b}.}
     \label{fig:HDVA_prob_amp}
 \end{figure}
 
 \begin{doublespace}
-    \noindent Ensuite 
-    $\ket{H}\rightarrow\ket{R}\rightarrow\ket{V}\rightarrow\ket{L}$ 
+    \noindent Les barres d'erreur sont les incertitudes proviennent de l'erreur 
+    de la propagation d'erreur à partir de notre 
+    partie réelle de la valeur faible.
+    Les résultats sont conformes à nos attentes théoriques,
+    car les amplitudes de probabilité sont bien représentées par ceux 
+    des équations \ref{eq:amplitude_a} et \ref{eq:amplitude_b}.
+    Nous avons ensuite mesuré les amplitudes de probabilité pour le trajet 
+    $\ket{H} \rightarrow \ket{R} \rightarrow \ket{V} \rightarrow \ket{L}$ 
     (figure \ref{fig:HRVL_prob_amp}):
 \end{doublespace}
 
 \begin{figure}[!h!t!p!b]
     \centering
-    \includegraphics[width=1.0\textwidth]{real_prof_amp_measurement_4.pdf}
+    \includegraphics[width=1.0\textwidth]{real_probability_path_4.png}
     \caption{Résultats de l'amplitude de probabilité pour le trajet de 
     polarisation 
     $\ket{H} \rightarrow \ket{R} \rightarrow \ket{V} \rightarrow \ket{L}$
@@ -153,17 +218,31 @@
 \end{figure}
 
 \begin{doublespace}
-    \noindent Finalement 
-    $\ket{D}\rightarrow\ket{R}\rightarrow\ket{A}\rightarrow\ket{L}$ 
+    
+    Ces résultats sont également conformes à nos attentes théoriques,
+    car les amplitudes de probabilité sont bien représentées par ceux 
+    des équations \ref{eq:amplitude_a} et \ref{eq:amplitude_b} et suit 
+    la même tendance que le trajet précédent.
+    Nous avons ensuite mesuré les amplitudes de probabilité pour le trajet 
+    $\ket{D} \rightarrow \ket{R} \rightarrow \ket{A} \rightarrow \ket{L}$ 
     (figure \ref{fig:DRAL_prob_amp}):
 \end{doublespace}
 
 \begin{figure}[!h!t!p!b]
     \centering
-    \includegraphics[width=1.0\textwidth]{real_prof_amp_measurement_5_2.pdf}
+    \includegraphics[width=1.0\textwidth]{real_probability_path_5.png}
     \caption{Résultats de l'amplitude de probabilité pour le trajet de 
     polarisation 
     $\ket{D} \rightarrow \ket{R} \rightarrow \ket{A} \rightarrow \ket{L}$
     }
     \label{fig:DRAL_prob_amp}
 \end{figure}
+
+\begin{doublespace}
+    \noindent Ces résultats démontre bien que les amplitudes de probabilité,
+    soit $\mathcal{R}(a)$ est constante a une valeur de $\frac{1}{\sqrt{2}}$, 
+    qui est très interessant, car cela démontre une superposition constante 
+    des états de bases $\ket{H}$ et $\ket{V}$ dans ce trajet de polarisation
+    dont la partie réelle de la valeur faible est toujours
+    $\frac{\tau}{2}$, ce qui est conforme à nos attentes expérimentales.
+\end{doublespace}

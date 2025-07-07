@@ -1636,8 +1636,8 @@
          familyi={T\bibinitperiod},
       }}%
     }
-    \strng{namehash}{T2}
-    \strng{fullhash}{T2}
+    \strng{namehash}{T3}
+    \strng{fullhash}{T3}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{howpublished}{\url{https://www.thorlabs.com/thorproduct.cfm?partnumber=NPL64B}}
@@ -1652,8 +1652,8 @@
          familyi={T\bibinitperiod},
       }}%
     }
-    \strng{namehash}{T2}
-    \strng{fullhash}{T2}
+    \strng{namehash}{T3}
+    \strng{fullhash}{T3}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{howpublished}{\url{https://www.thorlabs.com/thorproduct.cfm?partnumber=DET025A}}
@@ -1753,8 +1753,8 @@
          familyi={T\bibinitperiod},
       }}%
     }
-    \strng{namehash}{T3}
-    \strng{fullhash}{T3}
+    \strng{namehash}{T4}
+    \strng{fullhash}{T4}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{Rev A, August 6, 2021}
@@ -1846,8 +1846,8 @@
          familyi={T\bibinitperiod},
       }}%
     }
-    \strng{namehash}{T4}
-    \strng{fullhash}{T4}
+    \strng{namehash}{T5}
+    \strng{fullhash}{T5}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{howpublished}{\url{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=2875}}
@@ -1873,6 +1873,31 @@
     \verb ml
     \endverb
     \field{year}{2024}
+  \endentry
+
+  \entry{oscilloscope_coding}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={{Tektronix, Inc.}},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T2}
+    \strng{fullhash}{T2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Document Number: 077-0110-00}
+    \field{title}{TDS5000B Series Digital Phosphor Oscilloscopes: Programmer Manual}
+    \verb{url}
+    \verb https://download.tek.com/manual/077011000web_0.pdf
+    \endverb
+    \list{location}{1}{%
+      {Beaverton, OR, USA}%
+    }
+    \list{institution}{1}{%
+      {Tektronix}%
+    }
+    \field{year}{2005}
   \endentry
 
   \entry{Time_delay_china}{article}{}

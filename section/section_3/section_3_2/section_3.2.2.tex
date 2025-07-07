@@ -60,18 +60,21 @@
 
     \begin{equation}
         \expval{\hat{t}} = \frac{\tau}{2}(cos^2(2\theta) + 2sin(2\theta)cos(2\theta))
+        \label{eq:expval_t_1}
     \end{equation}
 
     \noindent Ainsi pour $\ket{\psi_{i}^{2}} = a\ket{H} + b\ket{V}$:
     
     \begin{equation}
         \expval{\hat{t}} = \frac{\tau}{2}(cos^2(2\theta))
+        \label{eq:expval_t_2}
     \end{equation}
 
     \noindent et $\ket{\psi_{i}^{3}} = \frac{1}{2}\Bigl(((1-i)sin(2\theta) + (1+i)cos(2\theta))\ket{H} + ((1+i)sin(2\theta) + (1-i)cos(2\theta))\ket{V}\Bigr)$:
 
     \begin{equation}
         \expval{\hat{t}} = \frac{\tau}{2}\Bigl(1+\frac{sin(4\theta)}{4}\Bigr)
+        \label{eq:expval_t_3}
     \end{equation}
 
     \noindent Cette expérience a été optimisée pour qu’elle fonctionne 
@@ -79,7 +82,7 @@
     \cite{ThorlabsROT} pour les lames d'onde contrôlés par un code 
     \textsc{Python} et un oscilloscope interfaçé à un ordinateur. Ce dernier utilise 
     la bibliothèque Kinesis \cite{pylablib_thorlabs_kinesis} est utilisé pour faire 
-    tourner ces supports et l’API de l'oscilloscope \cite{TektronixTDS5000} 
+    tourner ces supports et l’API de l'oscilloscope \cite{TektronixTDS5000,oscilloscope_coding} 
     pour enregistrer chaque fichier de chaque état d’entrée. Toutes les 
     données sont ensuite analysées avec \textsc{MATLAB}. Les résultats sont 
     présentés au chapitre 4. 

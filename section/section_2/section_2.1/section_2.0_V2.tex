@@ -843,17 +843,65 @@
         \ket{\psi^{in}} = \frac{1}{\sqrt{N}}\Bigl(\hat{\pi}^{H}_{W}\ket{H}+ \Bigl(1-\hat{\pi}^{H}_{W}\Bigr)\ket{V}\Bigr)
     \end{equation}
 
-    \noindent Pour fixer la phase globale, qui varierait selon l'état 
+    \noindent Ce dernier est l'état d'entrée que nous pouvons 
+    reconstruire à partir de la valeur faible. En d'autres termes, nous 
+    pouvons reconstruire l'état d'entrée à partir de la valeur faible 
+    mesurée. Certain fixe la phase globale, qui varierait selon l'état 
     d'entrée, nous supposons que $a$ est toujours réel. Donc 
     l'ellipticité (ou la phase) se trouve dans $b$ et sera dépendante 
-    de la partie imaginaire. À partir des données expérimentales des deux 
-    observables $\expval{\hat{t}}$ et $\expval{\hat{\omega}}$, nous 
-    pouvons calculer directement les amplitudes de probabilité.  
+    de la partie imaginaire \cite{Hairiri}. 
     
+    \noindent À partir des données expérimentales des deux 
+    observables $\expval{\hat{t}}$ et $\expval{\hat{\omega}}$, nous 
+    pouvons calculer directement les amplitudes de probabilité. 
+    Considérons l'équation de la valeur faible:
+
+    \begin{equation}
+        \expval{\hat{\pi}}_W \equiv \hat{\pi}_W = \frac{\bra{\varsigma}\hat{\pi}\ket{\psi}}{\bra{\varsigma}\ket{\psi}}
+    \end{equation}
+
+    \noindent Le numérateur et dénominateur peuvre être écrit en termes de
+    l'amplitude de probabilité, soit \cite{OpticalNetworks}:
+
     \begin{align}
-        |a|^2 &= \frac{\expval{\hat{t}}}{\tau}\\
-        |b|^2 &= 1 - |a|^2
+        \bra{\varsigma}\hat{\pi}\ket{\psi} &= \bar{\mu}a - \bar{\nu}b\\
+        \bra{\varsigma}\ket{\psi} &= \bar{\mu}a + \bar{\nu}b
     \end{align}
+
+    \noindent Vue que nous avons $\bar{\mu} = \bar{\nu} = \frac{1}{\sqrt{2}}$ et 
+    $|a|^2 + |b|^2 = 1$, nous pouvons écrire la valeur faible
+    en termes de les amplitudes de probabilités:
+
+    \begin{equation}
+        \mathcal{R}\Bigl( \expval{\hat{\pi}}_W \Bigr) = |a|^2 - |b|^2
+    \end{equation}
+
+    \noindent Nous pouvons donc écrire chaque amplitudes de probabilités
+    en termes de la partie réelle de la valeur faible, soit:
+
+    \begin{align}
+        |a|^2 &= \frac{1}{2}\Bigl(1 + \mathcal{R}\Bigl( \expval{\hat{\pi}}_W \Bigr)\Bigr)\label{eq:amplitude_a}\\
+        |b|^2 &= \frac{1}{2}\Bigl(1 - \mathcal{R}\Bigl( \expval{\hat{\pi}}_W \Bigr)\Bigr)\label{eq:amplitude_b}
+    \end{align} 
+
+    \noindent De même, pour la partie imaginaire de la valeur faible, 
+    nous avons :
+
+    \begin{equation}
+        \mathcal{I}\Bigl( \expval{\hat{\pi}}_W \Bigr) = 2|a||b|\sin(\phi)
+    \end{equation}
+
+    Où $\phi$ est la phase de l'état d'entrée, qui est la différence 
+    de phase entre les deux états de base $\ket{H}$ et $\ket{V}$. 
+    En utilisant les équations \ref{eq:amplitude_a} et \ref{eq:amplitude_b}, 
+    nous pouvons écrire la partie imaginaire de la valeur faible en 
+    termes des amplitudes de probabilités similairement à la partie 
+    réelle:
+
+    \begin{align}
+        |a|^2 &= \frac{1}{2}\Bigl(1 + \mathcal{I}\Bigl( \expval{\hat{\pi}}_W \Bigr)\Bigr)\label{eq:amplitude_a_im}\\
+        |b|^2 &= \frac{1}{2}\Bigl(1 - \mathcal{I}\Bigl( \expval{\hat{\pi}}_W \Bigr)\Bigr)\label{eq:amplitude_b_im}
+    \end{align} 
 
     \noindent Selon l’état d’entrée, la valeur faible varie. Il est 
     crucial de souligner que le délai $\tau$ correspond au délai maximal 
