@@ -139,18 +139,19 @@
     d'entrée d'écrit par:
 
     \begin{equation}
-        f_{centroïde} = \frac{\sum_{i=1}^{n} f_i \cdot P_i}{\sum_{i=1}^{n} P_i}
+        f_{cent.} = \frac{\sum_{i=1}^{n} f_i \cdot P_i}{\sum_{i=1}^{n} P_i}
+        \label{eq:centroid}
     \end{equation}
 
     \noindent Où $f_i$ est la fréquence de chaque pic et $P_i$ est la puissance
     de chaque pic. Nous avons ensuite calculé la différence entre le
-    centroïde de chaque état d'entrée et celui de l'état $\ket{R}$.
+    centroïde de chaque état d'entrée et celui de l'état $\ket{L}$.
     Cette méthode prend inspiration de: \cite{WeakorStd,OpticalNetworks}.
     Nous évaluons la partie imaginaire de la valeur faible de les 
     trajets de polarisation discutés dans le chapitre 3. Voici les
     résultats que nous avons obtenus pour les déplacements fréquentiels
     pour le trajet de polarisation $\ket{H} \to \ket{R} \to \ket{V} \to \ket{L} \to \ket{H}$
-    présenté dans la figure \ref{fig:imaginary_part}.
+    présenté dans la figure \ref{fig:imaginary_part_HRVLH}.
 
     \begin{figure}[!htpb]
         \centering
@@ -169,11 +170,16 @@
 
     \noindent Ces données on été obtenues en prenant les résultats de la DSP
     pour chaque état d'entrée, en calculant le centroïde de chaque pic
-    et utilisant l'équation \ref{eq:imaginary_part} pour
+    en utilisant l'équation \ref{eq:centroid} et le comparer à 
+    fréquence du centroïde de l'état $\ket{L}$ pour
     calculer la partie imaginaire de la valeur faible. Nous pouvons effectivement
-    calculé les amplitudes de probabilité pour chaque état d'entrée
-    en utilisant la relation \ref{eq:amplitude_a_im} et \ref{eq:amplitude_b_im} 
-    (figure \ref{fig:prob_amp_imaginary_part_HRVLH}).
+    calculé les amplitudes de probabilité (voir figure \ref{fig:prob_amp_imaginary_part_HRVLH}) 
+    pour chaque état d'entrée en utilisant les relations suivantes:
+
+    \begin{align}
+        |a| &= \sqrt{\mathcal{I}(\expval{\hat{\pi}_W})} \label{eq:amplitude_a_im}\\
+        |b| &= \sqrt{1-|a|^2} \label{eq:amplitude_b_im}
+    \end{align}
 
     \begin{figure}[!htpb]
         \centering
@@ -187,8 +193,8 @@
         \label{fig:prob_amp_imaginary_part_HRVLH}
     \end{figure}
 
-    \noindent Ce résultat démontre que la partie imaginaire de la valeur faible
-    est effectivement mesurable, mais que les déplacements ne correspondent pas 
+    \noindent Ces résultats démontrent que la partie imaginaire de la valeur faible
+    est effectivement mesurable, mais que les déplacements ne correspondent pas
     avec nos attentes théoriques. Cependant, nous avons observé des
     déplacements dans le spectre de fréquence, ce qui indique que la
     partie imaginaire de la valeur faible est présente et elle suit
