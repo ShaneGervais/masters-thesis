@@ -65,23 +65,33 @@
     allongeant le bras $\ket{H}$ de $2,5$ $cm$ par rapport au bras 
     $\ket{V}$. En utilisant les mêmes méthodes d’ajustement que celles 
     employées dans l’expérience sur la vitesse de la lumière, nous 
-    mesurons les délais de chaque état $\ket{\psi(\theta)}$. En effet, la courbe 
-    théorique de cette partie réelle est une valeur cosinus carrée en 
-    ignorant la partie $2sin(\theta)cos(\theta)$ de l'équation \ref{eq:expval_t_1}. 
-    On suppose que cette partie est un artéfact perviennant dans
-    l'évolution de nos calculs théoriques, car elle ne contribue pas à la
-    partie réelle de la valeur faible.
-    Cette partie de notre résultat théorique pour ce trajet de polarisation
-    n’a pas de signification 
-    physique; car lorsque nous passons de $\ket{V}$ à $\ket{H}$, nous 
-    devrions pas avoir de délai négatif, car nous avons
-    déjà un délai de référence de $0$ pour l’état $\ket{V}$ au cours de la 
-    calibration. Ce dernier, est donc un terme de 
-    correction qui n’est pas nécessaire pour 
-    caractériser la partie réelle de la valeur faible. En effet,
-    nous avons constaté que la partie réelle de la valeur faible
-    est bien représentée par la fonction cosinus carrée,
-    ce qui est conforme à nos attentes théoriques.
+    mesurons les délais de chaque état $\ket{\psi(\theta)}$. La courbe
+    est une fonction cosinus carrée, ce qui conforme avec nos données
+    expérimentales.
+    Nous avons également constaté que la partie réelle de la valeur faible
+    est bien représentée par la fonction cosinus carrée, ce qui est conforme
+    à nos attentes théoriques.
+    En effet, la partie réelle de la valeur faible est donnée par l'équation
+    \ref{eq:expval_t_1}, qui est une fonction cosinus carrée, avec un terme
+    additionelle de $2sin(\theta)cos(\theta)$, plus sur laquelle nous allons
+    revenir plus tard à la prochaine sous-section.
+    %la courbe
+    %théorique de cette partie réelle est une valeur cosinus carrée en 
+    %ignorant la partie $2sin(\theta)cos(\theta)$ de l'équation \ref{eq:expval_t_1}. 
+    %On suppose que cette partie est un artéfact perviennant dans
+    %l'évolution de nos calculs théoriques, car elle ne contribue pas à la
+    %partie réelle de la valeur faible.
+    %Cette partie de notre résultat théorique pour ce trajet de polarisation
+    %n’a pas de signification 
+    %physique; car lorsque nous passons de $\ket{V}$ à $\ket{H}$, nous 
+    %devrions pas avoir de délai négatif, car nous avons
+    %déjà un délai de référence de $0$ pour l’état $\ket{V}$ au cours de la 
+    %calibration. Ce dernier, est donc un terme de 
+    %correction qui n’est pas nécessaire pour 
+    %caractériser la partie réelle de la valeur faible. En effet,
+    %nous avons constaté que la partie réelle de la valeur faible
+    %est bien représentée par la fonction cosinus carrée,
+    %ce qui est conforme à nos attentes théoriques.
     %Une erreur additionnelle à noter est l’incohérence de nos 
     %modifications physiques dans notre expérience, que nous ne pouvons 
     %pas compenser numériquement. Par exemple, les vibrations de la table 
@@ -113,7 +123,7 @@
     qui ne modifie pas la partie réelle de la valeur faible. 
     En effet, la partie réelle de la valeur faible est toujours représentée
     par la fonction cosinus carrée, ce qui est conforme à nos attentes
-    théoriques trouvées dans l'équation \ref{eq:expval_t_2}.
+    théoriques trouvées dans l'équation \ref{eq:expval_t_2}. 
     On ne peut pas 
     déterminer à partir de la partie réelle de la valeur faible si 
     l’état initial est elliptique ou circulaire. Les informations sur 
@@ -148,15 +158,21 @@
     \noindent Cela s’avère captivant, car elle démontre 
     incontestablement que nous conservons toujours la même composante 
     réelle de la faible valeur. Comme l'équation \ref{eq:expval_t_1},
-    le terme $sin(4\theta)/4$ de l'équation \ref{eq:expval_t_3} 
-    ne contribue pas à la partie réelle de la
-    valeur faible et ne modifie pas la partie réelle de la valeur faible
-    comme dans démonté expérimentalement dans la figure 
-    \ref{fig:DRAL_delay_results}. Le résultat est que la partie réelle de la
-    valeur faible est toujours représentée par $\tau/2$.
-    Ce dernier se conforme à nos attentes expérimentales, 
-    car la partie réelle de la valeur faible est toujours
-    constante, peu importe l'état de polarisation initial.
+    un terme additionelle de $sin(4\theta)/4$ est présent dans
+    l'équation \ref{eq:expval_t_3}, ces derniers
+    seront discutés plus tard. Donc nous pouvons constater que
+    nos données expérimentales sont conformes se conforment avec une relation
+    constante de $\tau/2$ pour la partie réelle de la valeur faible.
+    %ce qui est conforme à nos attentes théoriques.
+    %le terme $sin(4\theta)/4$ de l'équation \ref{eq:expval_t_3} 
+    %ne contribue pas à la partie réelle de la
+    %valeur faible et ne modifie pas la partie réelle de la valeur faible
+    %comme dans démonté expérimentalement dans la figure 
+    %\ref{fig:DRAL_delay_results}. Le résultat est que la partie réelle de la
+    %valeur faible est toujours représentée par $\tau/2$.
+    %Ce dernier se conforme à nos attentes expérimentales, 
+    %car la partie réelle de la valeur faible est toujours
+    %constante, peu importe l'état de polarisation initial.
     %Nous avons donc réussi à mesurer la partie réelle de la valeur faible
     %pour chaque trajet de polarisation, ce qui nous permet de
     %caractériser les amplitudes de probabilité des états de polarisation
@@ -169,9 +185,14 @@
     variable conjuguée du décalage temporel, c’est-à-dire le décalage 
     de fréquence obtenu en mesurant la partie imaginaire de la valeur 
     faible. 
+\end{doublespace}
+
+\begin{doublespace}        
     
-    \noindent En outre, à partir de ces données pour chaque trajet, nous 
-    pouvons directement calculer les modules d'amplitudes de probabilité de l’état 
+    \noindent En outre, à partir de ces données expérimentales 
+    pour chaque trajet, nous 
+    pouvons directement calculer les modules d'amplitudes de 
+    probabilité de l’état 
     quantique à partir de ces mesures de délai, comme nous l’avons 
     mentionné dans la section 2.5 avec les équations: 
     \ref{eq:amplitude_a} et \ref{eq:amplitude_b}.
@@ -244,5 +265,5 @@
     qui est très interessant, car cela démontre une superposition constante 
     des états de bases $\ket{H}$ et $\ket{V}$ dans ce trajet de polarisation
     dont la partie réelle de la valeur faible est toujours
-    $\frac{\tau}{2}$, ce qui est conforme à nos attentes expérimentales.
+    $\frac{\tau}{2}$, ce qui est conforme à nos attentes expérimentales et théoriques.
 \end{doublespace}
