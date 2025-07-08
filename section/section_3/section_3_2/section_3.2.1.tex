@@ -211,11 +211,11 @@
 \end{doublespace}
 
 \begin{align}
-    T_{QWP}(\phi) &= \begin{pmatrix}
+    T_{QWP}(\phi) &= e^{\frac{-i\pi}{4}}\begin{pmatrix}
         cos^{2}(\phi) + isin^{2}(\phi) & (1-i)cos(\phi)sin(\phi)\\
         (1-i)cos(\phi)sin(\phi) & sin^{2}(\phi) + icos^{2}(\phi)
     \end{pmatrix}\\
-    T_{QWP}(\phi = 0^{\degree}) &= \begin{pmatrix}
+    T_{QWP}(\phi = 0^{\degree}) &= e^{\frac{-i\pi}{4}}\begin{pmatrix}
         1 & 0 \\
         0 & i
     \end{pmatrix}
@@ -236,7 +236,7 @@
 
 \begin{align}
     T_{QWP}(\phi = 0^{\degree})T_{HWP}(\theta)\ket{H} &= 
-    \begin{pmatrix} 
+    e^{\frac{-i\pi}{4}}\begin{pmatrix} 
         1 & 0 \\
         0 & i
     \end{pmatrix} 
@@ -246,7 +246,7 @@
     \end{pmatrix} \begin{pmatrix}
         1\\0
     \end{pmatrix}\\
-    &= \begin{pmatrix}
+    &= e^{\frac{-i\pi}{4}}\begin{pmatrix}
         cos(2\theta)\\isin(2\theta)
     \end{pmatrix}
 \end{align}
@@ -302,9 +302,9 @@
 \end{doublespace}
 
 \begin{equation}
-    T_{QWP}(\phi = 45^{\degree}) = \frac{1}{2}\begin{pmatrix}
-        1+i & 1-i \\
-        1-i & 1+i
+    T_{QWP}(\phi = 45^{\degree}) = \frac{e^{\frac{-i\pi}{4}}}{2}\begin{pmatrix}
+        1-i & 1+i \\
+        1+i & 1-i
     \end{pmatrix}
 \end{equation}
 
@@ -314,9 +314,9 @@
 
 \begin{align}
     T_{QWP}(\phi = 45^{\degree})T_{HWP}(\theta)\ket{H} &= 
-    \begin{pmatrix} 
-        \frac{1+i}{2} & \frac{1-i}{2} \\
-        \frac{1-i}{2} & \frac{1+i}{2}
+    e^{\frac{-i\pi}{4}}\begin{pmatrix} 
+        \frac{1-i}{2} & \frac{1+i}{2} \\
+        \frac{1+i}{2} & \frac{1-i}{2}
     \end{pmatrix} 
     \begin{pmatrix}
         cos(2\theta) & sin(2\theta)\\
@@ -324,7 +324,7 @@
     \end{pmatrix} \begin{pmatrix}
         1\\0
     \end{pmatrix}\\
-    &= \frac{1}{2}\begin{pmatrix}
+    &= \frac{e^{\frac{-i\pi}{4}}}{2}\begin{pmatrix}
         cos(2\theta) + sin(2\theta) + i(cos(2\theta) - sin(2\theta))\\cos(2\theta) + sin(2\theta) -i(cos(2\theta)-sin(2\theta))
     \end{pmatrix}
 \end{align}
@@ -334,7 +334,7 @@
 \end{doublespace}
 
 \begin{equation}
-    \ket{\psi_{i}^{3}} = \frac{1}{2}\Bigl(((1-i)sin(2\theta) + (1+i)cos(2\theta))\ket{H} + ((1+i)sin(2\theta) + (1-i)cos(2\theta))\ket{V}\Bigr)
+    \ket{\psi_{i}^{3}} = \frac{e^{\frac{-i\pi}{4}}}{2}\Bigl(((1-i)sin(2\theta) + (1+i)cos(2\theta))\ket{H} + ((1+i)sin(2\theta) + (1-i)cos(2\theta))\ket{V}\Bigr)
     \label{eq:state3}
 \end{equation}
 
