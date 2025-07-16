@@ -31,12 +31,12 @@
     fallait au moins $30$ $\mu W$ d’intensité de signal pour 
     déclencher l’oscilloscope sur ce port \cite{TektronixTDS5000}. 
     Nous déterminons le délai de chaque acquisition par rapport à 
-    notre référence, qui correspond à la longueur initiale du câble
-    ou la position du miroir. De cette manière, nous isolons 
+    une référence, qui correspond à la longueur initiale du câble
+    ou la position initiale du miroir. De cette manière, nous isolons 
     l’expérience pour observer uniquement ce qui se produit lorsqu'on modifie la 
     longueur du câble ou lorsqu’on déplace le miroir. 
 
-    \noindent Le mode d'acquisition est un mode crucial pour la résolution
+    \noindent Le mode d'acquisition est un paramètre crucial pour la résolution
     des données. Notre oscilloscope possède plusieurs modes d'acquisition: 
     échantillonnage direct, détection 
     de pic, enveloppe, haute résolution et moyennage. Nous choisissons
@@ -46,10 +46,11 @@
     un signal clair et éliminer le bruit de fond,
     nous devions effectuer la moyenne sur $1000$ signaux expérimentaux.
 
-    \noindent Le mode d'échantillonnage est un autre aspect important 
-    de la façon dont l'oscilloscope collecte des données. Ces modes sont 
+    \noindent Le mode d'échantillonnage est un autre paramètre important 
+    pour la façon dont l'oscilloscope collecte des données. Ces modes sont 
     l’échantillonnage en temps réel, 
-    l’interpolation et le temps d'équivalent. En mode 
+    l’interpolation et en temps équivalent
+    (\guillemetleft Equivalent-time sampling\guillemetright \space en anglais). En mode 
     d’échantillonnage en temps réel, l’oscilloscope numérise tous 
     les points après un événement déclencheur. Ce mode 
     d'échantillonnage est principalement utilisé pour les mesures 
@@ -61,8 +62,8 @@
     sinusoidale entre les points, ce qui rend la courbe plus lisse \cite{TektronixTDS5000}. 
     Cependant, la résolution
     temporelle est insufisante pour nos mesures. Le mode d
-    ’échantillonnage par temps d'équivalent permet d’augmenter 
-    le taux d’échantillonnage au-delà du taux d’échantillonnage 
+    ’échantillonnage en temps équivalent permet d’augmenter 
+    numériquementle taux d’échantillonnage au-delà du taux d’échantillonnage 
     maximum de l'oscilloscope. La figure \ref{fig:EQ-time} 
     illustre le fonctionnement de ce mode. 
     
@@ -70,13 +71,13 @@
         \centering
         \includegraphics[width=1.0\textwidth]{EQ _time_oscillo_fig.png}
         \caption{Diagramme illustrant le fonctionnement du mode 
-        d’échantillonnage en temps de équivalent de l’oscilloscope 
+        d’échantillonnage en temps équivalent de l’oscilloscope 
         \cite{TektronixTDS5000}. Cet appareil collecte un petit 
         nombre d’échantillons au moment où l’événement de 
         déclenchement se produit, ce qui lui permet d’obtenir le 
         signal complet de notre impulsion. Le taux d’échantillonnage 
         est supérieur à celui du mode en temps réel. 
-        L’oscilloscope en mode de temps d'équivalent
+        L’oscilloscope en mode temps équivalent
         effectue un échantillons à chaque déclenchement du signal
         de référence. Il enregistre un certain nombre d’échantillons
         d’acquisition, puis combine plusieurs échantillons d’un signal

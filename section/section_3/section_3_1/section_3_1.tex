@@ -21,53 +21,51 @@
     \caption{
         Représentation de notre dispositif expérimental pour 
     évaluer la précision de nos mesures temporelles en mesurant la 
-    vitesse d'un signal dans les câbles BNC et la vitesse de la lumière. 
+    vitesse d'un signal dans des câbles BNC et la vitesse de la lumière. 
     L’impulsion du laser est d’abord réglée en 
-    intensité par une lame demi-onde, puis dirigée vers un séparateur 
+    intensité par une lame demi-onde et un séparateur 
     de faisceau polarisant (PBS) qui divise les états de polarisation 
     horizontaux et verticaux en deux 
     voies orthogonales. Le faisceau réfléchi, représenté par l’état de base de 
     polarisation verticale $\ket{V}$, sera notre 
-    signal de référence pour déclencher l’oscilloscope, à gauche. 
-    Le faisceau transmis, correspondant à l’état de base 
-    horizontal $\ket{H}$, subit encore un autre PBS et se revoit avec un miroir fixe 
-    ainsi qu'une lame quart d'onde pour convertir l'état de polarisation
-    $\ket{H}$ en un état $\ket{V}$ pour qu'il soit réfléchi. Il est 
-    ensuite détecté avec un autre photodétecteur puis 
-    mesuré par notre oscilloscope, à droite.
+    signal de référence pour déclencher l’oscilloscope. 
+    Le faisceau transmis, correspondant à un état de polarisation
+    horizontal $\ket{H}$ est le faisceau que nous allons mesurer, le signal
+    expérimental.
+    Il passe par un autre séparateur de faisceau polarisant (PBS)
+    qui le divise en deux voies, la voie réfléchie ne sera pas mesurée 
+    car elle ne contient pas d'intérêt,
+    tandis que la voie transmise est dirigée vers un miroir fixe. Il
+    est ensuite converti en un état de polarisation verticale à l'aide
+    d'une lame quart d'onde pour être réfléchi
+    vers le photodétecteur pour mesurer son temps d'arrivée.
     Pour l'expérience de la vitesse d'un signal dans un câble BNC, nous 
-    utilisons simplement différentes longueurs de câble attachées 
+    utilisons simplement différentes longueurs de câble attachés 
     sur notre photodétecteur, désigner par $\Delta L$. Pour l'expérience de la 
     vitesse de la lumière, nous
-    orientons l'état de polarisation horizontal vers un miroir,
-    que nous réglerons en fonction des différentes distances à 
-    évaluer pour l'expérience de la vitesse de la lumière, désigner par $\Delta x$. 
-    Il est 
-    ensuite renvoyé vers le PBS pour y être réfléchi. Ce procédé 
-    utilise une lame quart d’onde pour convertir l’état de polarisation. 
+    orientons le miroir à des différentes distances à
+    évaluer pour mesurer la vitesse de la lumière, désigner par $\Delta x$.
     }
     \label{fig:speed-of-light}
 \end{figure}
     
     \noindent Notre laser est une source à diodes
-    pulsés nanosecondes, capable de générer des impulsions 
-    allant de $5$ à $39$ $ns$. Nous utilisons une impulsion de $10$ $ns$
+    pulsés d'ordre nanosecondes, capable de générer des impulsions 
+    allant de $5$ à $39$ $ns$ \cite{ThorlabsNPL64B}. 
+    Nous utilisons une impulsion de $10$ $ns$
     pour nos expériences, car les intervalles de temps plus longs  
     rendent la mesure moins précise. Cette perte de précision se présente 
     dans la mesure de la partie imaginaire. À ces longueurs d'impulsion,
     la distribution temporelle du signal devient plus similaire à celle d’une
-    fonction porte \cite{ThorlabsNPL64B} Or, les discountinuités de cette 
-    fonction entrainent la présence de bruit à hautes fréquences ce qui 
-    rend l'analyse moins facile. 
-    Nous voulons une impulsion de forme gaussienne, car cette
-    forme est souvent utilisée dans
-    les mesures faibles \cite{OpticalNetworks, Lundeen_Direct_Measurement,Hairiri,Guilleaum,Brunner_2004}
-    et pour faciliter l’identification de la position maximale de
-    l’impulsion, que nous identifierons comme correspondant à la
-    position temporelle moyenne de l’impulsion. Le laser possède une longueur d’onde comprise entre 
+    fonction porte \cite{ThorlabsNPL64B}. Or, les discontinuités de cette
+    fonction entrainent la présence de bruit à hautes fréquences ce qui
+    rend l'analyse moins facile. Donc, nous avons opté à identifier le 
+    temps d'arrivée de l'impulsion comme la variable temporelle moyenne
+    du pointeur pour éviter ce bruit et faciliter l'analyse.
+    Le laser possède une longueur d’onde comprise entre 
     $640 \pm 10$ $nm$, avec une énergie d’impulsion maximale de 
-    $2,0$ $nJ$. Sa puissance de crête s’élève pas plus 
-    qu’à $50$ $mW$, dont sa puissance moyenne est de $20$ $MW$. 
+    $2,0$ $nJ$. Sa puissance de crête s’élève à un maximum de 
+    $50$ $mW$ avec une puissance moyenne de $20$ $mW$. 
     Nous fixons le taux de répétition à $1$ $MHz$, pour avoir un temps 
     suffisamment long entre les impulsions. Nous recueillons les
     données à l'aide d'un photodétecteur rapide à base de Si 
@@ -77,11 +75,11 @@
     $50$ $\Omega$ \cite{ThorlabsBNC} qui est ensuite connecté à 
     un oscilloscope pour l'enregistrement des données.
     Nous utilisons un oscilloscope Tektronix TDS 5000 \cite{TektronixTDS5000}, 
-    qui est un oscilloscope numérique à mémoire profonde, 
-    capable d’acquérir des signaux à des vitesses allant jusqu’à 
+    qui est un oscilloscope capable d’acquérir des signaux à 
+    des vitesses allant jusqu’à 
     $500$ $GS/s$ (gigéchantillons par seconde), et qui possède une 
     bande passante de $500$ $MHz$.  
-    Ensuite, nous analysons les données avec \textsc{MATLAB} et/ou \textsc{Python}
+    Ensuite, nous analysons les données avec \textsc{MATLAB} et \textsc{Python}
     pour en tirer des conclusions sur la précision de nos mesures
     temporelles.
     
