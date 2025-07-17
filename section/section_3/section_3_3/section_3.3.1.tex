@@ -38,8 +38,8 @@
     dans un interféromètre de 
     Mach-Zehnder (MZ) ce qui permet d’extraire le décallage 
     dans le domaine fréquentiel afin de caractériser 
-    des états de polarisation à partir des variations d’intensité 
-    en sortie avec sont spectre de puissance (figure \ref{fig:imagexp}).
+    des états de polarisation à partir des variations de son 
+    spectre de puissance (figure \ref{fig:imagexp}).
 
     \begin{figure}[!htpb]
         \centering
@@ -50,11 +50,12 @@
         dispositif de la partie réelle dans un interféromètre de 
         Mach-Zehdner. Un séparateur de faisceau non polarisant 
         (NPBS) est utilisé avant l'étape de préparation de l'état 
-        pour diviser le faisceau en deux voies. L’une de ces voies 
-        sert de référence pour interférer avec l’autre voie, qui a 
-        subi une mesure faible. Une lame demi-onde a été placée sur 
-        le trajet de cette référence afin de modifier son état de 
-        polarisation pour permettre des interférences avec l'autre dernier.}
+        pour diviser le faisceau en deux voies. La voie réfléchie
+        sert de signal d'interférence pour interférer avec
+        la voie transmise, qui subit une mesure faible (signal expérimental). 
+        Une lame demi-onde a été placée sur 
+        le trajet de ce signal d'interférence afin de modifier son état de 
+        polarisation pour permettre des interférences avec le signal expérimental.}
         \label{fig:imagexp}
     \end{figure}
 
@@ -68,7 +69,7 @@
     modifications de ce spectre. Cependant 
     la résolution de l’interféromètre doit être suffisante pour 
     distinguer les variations de fréquence causées par l’interaction 
-    faible. Car que notre laser a une faible longueur de cohérence 
+    faible. Puisque notre laser a une faible longueur de cohérence 
     (entre $2$ et $8$ $\mu m$) et qu'il y a plusieurs modes 
     fréquentiels \cite{ThorlabsNPL64B}, c'est difficile d'obtenir 
     une résolution suffisante pour observer directement les franges 
@@ -79,13 +80,22 @@
     obtenu en effectuant une transformation de Fourier rapide (FFT)
     sur les données temporelles de l’interféromètre.
 
-    \noindent Nous commençons par régler l’interféromètre de MZ de 
-    manière à ce qu’il y ait une visibilité maximale avec le bras 
-    correspondant à l'état de polarisation vertical $\ket{V}$ 
-    dans la partie mesure faible du 
-    dispositif, correspondant à l’absence de délai. Le 
-    spectre de visibilité obtenu lors de l’alignement avec ce dernier 
-    est présenté à la figure \ref{fig:vis}.
+    \noindent Pour optimiser l'expérience, les délais sont alignés avec les pics
+    de visibilité pour maximiser la détection des variations de fréquence. 
+    %our ce faire, nous avons 
+    %justé la position du miroir de l’interféromètre de 
+    %olarisation pour 
+    %ue les deux signaux interfèrent de manière constructive. Cela permet d'obtenir un 
+    %pectre de visibilité élevé, ce qui est essentiel pour détecter
+    %es variations de fréquence causées par l’interaction faible.
+    À l'aide d'une lame demi-onde dans le bras du signal d'interférence, 
+    nous pouvons intérférer constructivement ou destructivement
+    le signal expérimental et le signal d'interférence pour identifier
+    quels pics sont causés par des interférences.
+    Le spectre de visibilité obtenu lors de l’alignement en modifiant
+    la position du miroir de l’interféromètre de polarisation est 
+    présenté à la figure \ref{fig:vis}.
+    
 
     \begin{figure}[!htpb]
         \centering
@@ -103,18 +113,6 @@
         \label{fig:vis}
     \end{figure}
 
-    \noindent Nous avons décidé d’aligner l’interaction faible avec le 
-    troisième pique du spectre de visibilité de l’interféromètre. Cela 
-    signifie que nous plaçons l’état de polarisation horizontale 
-    ($\ket{H}$) sur ce pic, un déplacement du mirroir d'environ 
-    $1.2$ $cm$ (aller-retour), de sorte que l’effet du décalage temporel 
-    introduit soit maximal à cet endroit. En effet, les états de 
-    polarisation ciruclaires droit et gauche possède un délai temporel 
-    correspondant au deuxième pic. Ainsi, ces états interféreront avec 
-    une bonne visibilité, $0,77$, avec le signal de référence permettant 
-    d'analyser le spectre fréquentiel. Cette configuration nous permet 
-    ensuite d’observer un effet de décalage fréquentiel maximal pour
-    les états de polarisation circulaires.
     %Cependant, le spectre de 
     %visibilité seul ne possède pas la résolution nécessaire pour détecter 
     %les petits décalages fréquentiels causés par l’interaction faible. 
@@ -122,11 +120,20 @@
     %plus poussée.
     %Ensuite, on superpose les impulsions sous le même état de 
     %polarisation. Comme mentionné précédemment, le polariseur est réglé 
-    %sur un état de polarisation verticale pendant notre mesure projective. 
-    À l'aide d'une lame demi-onde dans le bras du signal d'interférence, 
-    nous pouvons intérférer contrustivement ou destructivement 
-    le signal expériemental et le signal d'interférence pour identifier 
-    quels pics sont causés par des interférences. 
+    %sur un état de polarisation verticale pendant notre mesure projective.
+
+    \noindent En effet, nous avons décidé d’aligner l’interaction faible avec le
+    troisième pic du spectre de visibilité de l’interféromètre. Cela
+    signifie que nous plaçons l’état de polarisation horizontale
+    ($\ket{H}$) sur ce pic, un déplacement du miroir d'environ
+    $1.2$ $cm$ (aller-retour), de sorte que l’effet du décalage temporel
+    introduit soit maximal à cet endroit. En effet, les états de
+    polarisation circulaires droite et gauche possèdent un délai temporel 
+    correspondant au deuxième pic. Ainsi, ces états interféreront avec 
+    une visibilité de $0,67$ avec le signal d'interférence, permettant 
+    d'analyser le spectre fréquentiel. Cette configuration nous permet 
+    ensuite d’observer un effet de décalage fréquentiel maximal pour
+    les états de polarisation circulaires. 
 
     \noindent Les données sont acquises %en mode FFT (transformation de 
     %Fourier rapide) de l’oscilloscope 

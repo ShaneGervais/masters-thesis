@@ -1,13 +1,14 @@
 \begin{doublespace}
     Après avoir préparé l’état, nous interagissons faiblement avec le 
-    système en introduisant un court délai temporel entre les deux états 
-    de base. Pour ce faire, nous utilisons un deuxième séparateur de 
-    faisceau polarisant dans l’étape d’interaction faible. Nous faisons 
+    système en introduisant un court délai temporel entre deux états 
+    $\ket{H}$ et $\ket{V}$ de base. Pour ce faire, nous utilisons 
+    un deuxième séparateur de faisceau polarisant dans l’étape d’interaction faible. Nous faisons 
     en sorte qu’un des bras soit légèrement plus long que 
-    l’autre. Chaque bras de l'interféromètre est équipé d’une lame quart 
+    l’autre de $167$ $ps$ (voir figure \ref{fig:realexp}). 
+    Chaque bras de l'interféromètre est équipé d’une lame quart 
     d’onde pour inverser l’état de polarisation afin que 
     la lumière dans le bras 
-    réfléchie soit transmise et que celle dans le bras transmise 
+    réfléchi soit transmise et que celle dans le bras transmis 
     soit réfléchie, de sorte 
     qu’ils puissent recombiner sur le PBS. La partie transmise, que nous définissons 
     comme étant la partie horizontale de l’état de polarisation 
@@ -15,9 +16,10 @@
     plus long. Cela introduit un délai $\tau$ sur le pointeur couplé 
     avec cet état $a\ket{H} \otimes \ket{\xi(t-\tau)}$.  
     La partie réfléchie, c’est-à-dire la partie 
-    verticale de l'état de polarisation $b\ket{V}$ restent inchangée 
+    verticale de l'état de polarisation $b\ket{V}$ reste inchangée 
     et est couplée avec l'état du pointeur
-    $b\ket{V} \otimes \ket{\xi(t)}$:
+    $b\ket{V} \otimes \ket{\xi(t)}$.
+    Le système est donc dans l'état suivant après l'interaction faible:
 
     \begin{equation}
         \hat{U}^{H}\ket{\psi_i} = a\ket{H} \otimes \ket{\xi(t-\tau)} + b\ket{V} \otimes \ket{\xi(t)}
@@ -26,7 +28,7 @@
     \noindent Pour avoir une interférence avec des poids égaux de 
     $\ket{H}$ et $\ket{V}$, nous avons opté pour une postsélection sur l'état 
     $\ket{D} = \frac{1}{\sqrt{2}}(\ket{H}+\ket{V})$, qui est réalisée à 
-    l’aide d'une lame demi-onde à $45$ dégré et d'un polariseur à $90$ dégré
+    l’aide d'une lame demi-onde à $45$ degrés et d'un polariseur à $90$ degrés
     dont le polariseur sert de référence pour une postsélection diagonale. 
     L'état final après postsélection est : 
 
@@ -35,27 +37,27 @@
     \end{equation}
 
     \noindent Avant de poursuivre avec la caractérisation quantique de 
-    la partie réelle de la valeur faible, nous effectuons une séance de 
-    calibration en envoyant l'état $\ket{V}$ et $\ket{H}$ 
-    qui corresponde respectivement au temps de référence $t_0$ par rapport 
-    auxquels tous les délais seront calculé et le temps de référence 
-    $t_0 + \tau$ correspondant au délai de référence et du délai introduit. 
+    la partie réelle de la valeur faible, nous effectuons une calibration
+    en envoyant l'état $\ket{V}$ et $\ket{H}$ 
+    qui correspondent respectivement au temps de référence $t_0$ par rapport 
+    auxquels tous les délais seront calculés et le temps
+    $t_0 + \tau$ correspondant au délai de référence et au délai introduit. 
     On s'assure que le délai $\tau$ est égal à celui implémenté dans 
-    l'expérience. 
-    
+    l'expérience de $167$ $ps$.
+    Nous pouvons alors mesurer la partie réelle de la valeur faible
+    en utilisant l'état de polarisation préparé et l'état de polarisation
+    post-sélectionné.
+
     \noindent Nous caractérisons ensuite les trajets de polarisation pour mesurer 
     la partie réelle de la valeur faible, c’est-à-dire mesurer les 
     délais temporels associés aux impulsions des états de polarisation. 
     Pour rappeler, la partie réelle de la valeur faible est donnée par
-    la relation suivante:
-
-    \begin{align}
-        \expval{\hat{t}} &= \bra{\psi_f}\hat{t}\ket{\psi_f}\\
-        \mathcal{R}\Bigl(\expval{\hat{\pi}_W}\Bigr) &\equiv \frac{\expval{\hat{t}}}{\tau} \propto \ket{\psi_i}
-    \end{align}
-
-    \noindent Voici les parties réelles de la valeur faible pour chaque 
-    trajets que nous allons investiguer. Soit pour 
+    l'équation \ref{eq:t_norm_interférence}, ce que nous allons donc calculer
+    $\hat{t}$ qui est lié à la partie réelle de la valeur faible
+    $\mathcal{R}\Bigl(\expval{\hat{\pi}_W}\Bigr) \equiv \frac{\expval{\hat{t}}}{\tau}$
+    pour chaque trajets de polarisation.
+    
+    \noindent Nous commençons par l'état de polarisation linéaire 
     $\ket{\psi_{i}^{1}} = cos(2\theta)\ket{H} + sin(2\theta)\ket{V}$:
 
     \begin{equation}
@@ -63,14 +65,18 @@
         \label{eq:expval_t_1}
     \end{equation}
 
-    \noindent Ainsi pour $\ket{\psi_{i}^{2}} = a\ket{H} + b\ket{V}$:
-    
+    \noindent Ensuite, pour l'état de polarisation circulaire 
+    $\ket{\psi_{i}^{2}} = cos(2\theta)\ket{H} + isin(2\theta)\ket{V}$ nous avons:
+
     \begin{equation}
         \expval{\hat{t}} = \frac{\tau}{2}(cos^2(2\theta))
         \label{eq:expval_t_2}
     \end{equation}
 
-    \noindent et $\ket{\psi_{i}^{3}} = \frac{1}{2}\Bigl(((1-i)sin(2\theta) + (1+i)cos(2\theta))\ket{H} + ((1+i)sin(2\theta) + (1-i)cos(2\theta))\ket{V}\Bigr)$:
+    \noindent et pour l'état de polarisation de superposition (en référence qu'il y a toujours
+    une superposition entre $\ket{H}$ et $\ket{V}$ pour ce trajet de polarisation) 
+    $\ket{\psi_{i}^{3}} = \frac{1}{2}\Bigl(((1-i)sin(2\theta) + (1+i)cos(2\theta))\ket{H} + ((1+i)sin(2\theta) + (1-i)cos(2\theta))\ket{V}\Bigr)$
+    nous avons:
 
     \begin{equation}
         \expval{\hat{t}} = \frac{\tau}{2}\Bigl(1+\frac{sin(4\theta)}{4}\Bigr)
@@ -80,8 +86,8 @@
     \noindent Cette expérience a été optimisée pour qu’elle fonctionne 
     de manière autonome grâce à des supports de rotation motorisés 
     \cite{ThorlabsROT} pour les lames d'onde contrôlés par un code 
-    \textsc{Python} et un oscilloscope interfaçé à un ordinateur. Ce dernier utilise 
-    la bibliothèque Kinesis \cite{pylablib_thorlabs_kinesis} est utilisé pour faire 
+    \textsc{Python} et un oscilloscope interfacé à un ordinateur en utilisant
+    la bibliothèque Kinesis \cite{pylablib_thorlabs_kinesis} pour faire 
     tourner ces supports et l’API de l'oscilloscope \cite{TektronixTDS5000,oscilloscope_coding} 
     pour enregistrer chaque fichier de chaque état d’entrée. Toutes les 
     données sont ensuite analysées avec \textsc{MATLAB}. Les résultats sont 
