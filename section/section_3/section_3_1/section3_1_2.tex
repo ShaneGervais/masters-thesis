@@ -2,17 +2,17 @@
     Maintenant, analysons nos données de l'expérience de la 
     vitesse d’un signal électrique à travers un câble BNC à partir des délais 
     d’impulsion. Nous avons configuré l’oscilloscope en mode EQ-time 
-    (temps de équivalent) et acquérons des données sur une durée 
+    (temps équivalent) et acquérons des données sur une durée 
     de $100$ $ns$ (lors des expériences de mesures faibles, nous 
     constaterons que nous n’avons pas besoin
-    d’une telle durée), avec une longueur d'enregistrement de $10 000$ points
-    , une résolution temporelle de $4$ $ps$, moyennée sur $1000$ signaux expérimentaux
+    d’une telle durée), avec une longueur d'enregistrement de $10 000$ points,
+    une résolution temporelle de $4$ $ps$, moyennée sur $1000$ signaux expérimentaux
     et moyennée sur $10$ différentes prises de données. La figure \ref{fig:typical-pulse}
     montre le profil temporel typique de notre impulsion laser d'une série
     de données avec ces paramètres.
 \end{doublespace}
 
-\begin{figure}[hp]
+\begin{figure}[!h!p!t!b]
     \centering
     \includegraphics[width=1.0\textwidth]{typ_pulse.png}
     \caption{Profil temporel typique de notre 
@@ -28,13 +28,28 @@
     pas une fonction gaussienne, mais plutôt une fonction de porte. 
     En allongeant la durée de l’impulsion du laser, l’impulsion 
     ressemble de plus en plus à une fonction porte au fur et à 
-    mesure. Pour préciser la position temporelle de l'impulsion, nous allons
+    mesure \cite{ThorlabsDET025A}. Pour préciser la position temporelle de l'impulsion, nous allons
     effectuer la dérivée de la fonction d'amplitude du signal pour identifier
-    le temps d'arrivée du signal représenté par le pic maximal 
-    de la dérivée. Ensuite, nous ajusterons une courbe à ce pic pour
-    déterminer la position temporelle du pic (le temps d'arrivée du signal) 
-    avec une précision maximale. Nous allons utiliser \textsc{MATLAB} pour
-    effectuer ces ajustements. 
+    le temps d'arrivée du signal représenté par la position temporelle du pic maximal 
+    de la dérivée. La figure 
+    \ref{fig:BNC-pulse} montre le profil temporel 
+    de la dérivée des données d'impulsion pour l'expérience des
+    câbles BNC RG-58 avec chacun de ses ajustements de courbe. 
+    Nous avons effectué ces ajustements pour déterminer la position temporelle
+    du pic de la dérivée de l'impulsion ce qui nous permet de 
+    déterminer le temps d'arrivée du signal avec une précision maximale.
+    Nous avons utilisé \textsc{MATLAB} pour effectuer ces ajustements.
+
+    \begin{figure}[!hptb]
+        \centering
+        \includegraphics[width=1.0\textwidth]{fits_BNC copy.png}
+        \caption{Profil temporel de la dérivée des données d'impulsion 
+        dans l'expérience des câbles BNC RG-58 avec chacun de ses 
+        ajustements de courbe (désignés par les lignes pointillées) 
+        de type \textit{poly4}. }
+        \label{fig:BNC-pulse}
+    \end{figure}
+    
     
     \noindent Nous avons essayé plusieurs types
     d'ajustements, notamment des polynômes de 
@@ -61,18 +76,18 @@
 
     \noindent À partir de ces ajustements paramétriques, nous avons pu 
     déterminer la position temporelle du pic de la dérivée de l'impulsion. 
-    Pour chaque longueur de câble (ainsi que pour les différents parcourts
-    de la mirroir pour l'expérience de la vitesse de la lumière), 
+    Pour chaque longueur de câble (ainsi que pour les différents parcours
+    du miroir pour l'expérience de la vitesse de la lumière), 
     nous avons ajusté les courbes à la dérivée de
     l'impulsion, en utilisant la fonction \textit{fit} de \textsc{MATLAB}.
     Ensuite utilisé la fonction \textit{polyval} pour évaluer
     la position temporelle du pic de la dérivée de l'impulsion avec une 
-    résolution de $1/10000$ de la résolution de l’oscilloscope 
-    et négligeons environ $40 \%$ des données 
-    d’amplitude initiales; l’ajustement était donc susceptible d’être 
+    résolution de $1/10000$ de la résolution de l’oscilloscope correspondant 
+    à une résolution de $4\times10^{-4}$ $ps$. Nous négligeons environ $40 \%$ des données 
+    d’amplitude initiales afin d'ignorer le deuxième pic de la dérivée (voir la figure \ref{fig:BNC-pulse}); l’ajustement était donc susceptible d’être 
     optimal. Le reste du signal ne présente pas d’intérêt. Nous trouvons 
     le délai en comparant à la position initiale, c'est-à-dire 
-    l'expérience réalisée avec le cable le plus court.
+    l'expérience réalisée avec le câble le plus court.
     Le tableau \ref{table:BNC-fits} démontre les différents ajustements que nous 
     avons essayés ainsi que le temps moyen d'arrivée pour chaque 
     distance en utilisant ces ajustements. 
@@ -215,23 +230,20 @@
 
 \begin{doublespace}
     
-    \noindent Il montre également 
-    l'écart-type de la façon dont la position du temps d'arrivée change 
-    pour chaque fichier individuel pour la même longueur de câble. 
-    La figure \ref{fig:BNC-pulse} montre le profil temporel 
-    de la dérivée des données d'impulsion pour l'expérience des
-    câbles BNC RG-58 avec chacun de ses ajustements de courbe. 
     
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=1.0\textwidth]{fits_BNC copy.png}
-        \caption{Profil temporel de la dérivée des données d'impulsion 
-        dans l'expérience des câbles BNC RG-58 avec chacun de ses 
-        ajustements de courbe (désignés par les lignes pointillées) 
-        de type \textit{poly4}. }
-        \label{fig:BNC-pulse}
-    \end{figure}
-    
+    %\noindent Nous avons utilisé ces données pour calculer la vitesse du signal
+    %dans les câbles BNC. Pour ce faire, nous avons calculé la différence
+    %entre les temps d'arrivée pour chaque longueur de câble et le
+    %temps d'arrivée pour le câble le plus court, qui est notre référence.
+    %Nous avons ensuite divisé cette différence par la longueur du câble
+    %pour obtenir la vitesse du signal dans le câble. Nous avons utilisé
+    %plusieurs types d'ajustements de courbe pour déterminer la position
+    %temporelle du pic de la dérivée de l'impulsion, ce qui nous a permis
+    %de déterminer le temps d'arrivée du signal avec une précision maximale.
+    %Nous avons ensuite comparé les vitesses mesurées avec la vitesse théorique
+    %du signal dans un câble BNC, qui est d'environ $197 863 022$ $m/s$ \cite{arrl2019,thorlabs2021}.
+    %Nous avons utilisé la fonction \textit{polyfit} de \textsc{MATLAB} pour ajuster les données et
+    %déterminer la vitesse du signal dans les câbles BNC. Nous avons essayé
 
     \noindent La vitesse est 
     déterminée en effectuant un ajustement linéaire des valeurs 
@@ -239,7 +251,11 @@
     comparons ensuite ces données à la valeur théorique, qui est 
     d’environ $0,66 c$ \cite{arrl2019}. Le tableau \ref{table:speed-BNC-table} présente les résultats
     de la vitesse mesurée dans les câbles BNC pour chaque type 
-    d’ajustement de courbe. 
+    d’ajustement de courbe. Il inclut les différents ajustements, vitesse mesurée
+    et l'erreur en pourcentage.
+    Nous avons utilisé la vitesse théorique de $197 863 022$ $m/s$
+    comme référence, qui est la vitesse du signal dans un câble BNC
+    RG-58 \cite{arrl2019,thorlabs2021}.
     
 
     \begin{longtable}{p{2.0cm} p{4.0cm} p{2.0cm} }
@@ -281,12 +297,6 @@
         fourier6  & 199614259     & 0.8851       \\
         gauss1    & 198122675     & 0.1312 
     \end{longtable}
-
-    \noindent Il inclut les différents ajustements, vitesse mesurée
-    et l'erreur en pourcentage.
-    Nous avons utilisé la vitesse théorique de $197 863 022$ $m/s$
-    comme référence, qui est la vitesse du signal dans un câble BNC
-    RG-58 \cite{arrl2019,thorlabs2021}.
     
     \noindent Le tableau \ref{table:speed-BNC-table} démontre 
     que les ajustements
@@ -325,21 +335,21 @@
     pour chaque longueur de câble BNC ainsi que leur ajustement de
     courbe. 
 
-    \begin{figure}[h]
+    \begin{figure}[!hptb]
         \centering
         \includegraphics[width=1.0\textwidth]{speed_BNC.png}
         \caption{
-        Résultats des délais mesurés pendant l'expérience sur la 
-        vitesse d'un signal électrique dans un câble BNC, ainsi que leur 
-        ajustement linéaire. Les 
-        barres d’erreur horizontales représentent l’incertitude de nos 
-        mesures de la distance, soit $\pm 0,5$ $mm$. Les barres 
-        d'erreurs verticales 
-        correspondent à l'erreur de l'ajustement \textit{poly4} basé sur 
+        Détermination de la vitesse d'un signal électrique dans un câble BNC
+        RG-58. Les points représentent les délais mesurés pour chaque
+        longueur de câble BNC, tandis que la ligne représente l'ajustement
+        linéaire des données. Les barres d’erreur horizontales représentent l’incertitude de nos
+        mesures de la distance, soit $\pm 0,5$ $mm$. Les barres
+        d'erreurs verticales
+        correspondent à l'erreur de l'ajustement \textit{poly4} basé sur
         la variation de la position du pic de la dérivée de l'impulsion
-        pour chaque longueur de câble, soit 
-        $\pm 2$ $ps$. Ils sont tros petits pour être visibles sur
-        la figure. 
+        pour chaque longueur de câble, soit
+        $\pm 2$ $ps$. Ils sont trop petits pour être visibles sur
+        la figure.
         }
         \label{fig:BNC-res}
     \end{figure}
@@ -347,12 +357,12 @@
     \noindent On peut voir que les délais mesurés sont linéaires en
     fonction de la distance, ce qui est conforme à nos attentes. 
     Notre résultat pour la vitesse du signal est 
-    $198 117 476$ $m/s$, ce qui représente une erreur en 
+    $198 117 476$ $m/s$ \cite{arrl2019}, ce qui représente une erreur en 
     pourcentage de $0,1286\%$ par rapport à la vitesse du 
     signal dans un câble BNC qui est environ $0,66$ par 
     rapport à $c$ (voir le tableau \ref{table:speed-BNC-table}) ce qui est 
     réaliste et cohérent avec l'erreur observée lors de 
-    l'expérience précédente \cite{arrl2019,thorlabs2021}. En effet, 
+    l'expérience précédente. En effet, 
     nous avons démontré notre capacité à mesurer des délais très 
     précis. C’est un élément essentiel pour pouvoir commencer à mesurer 
     de petits délais entre des impulsions de lumière, qui est 

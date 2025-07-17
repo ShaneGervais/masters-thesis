@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -16,8 +16,8 @@
   {}
 \endgroup
 
-\datalist[entry]{none/global//global/global}
-  \entry{Feynman1982}{article}{}
+\datalist[entry]{none/global//global/global/global}
+  \entry{Feynman1982}{article}{}{}
     \name{author}{1}{}{%
       {{hash=FRP}{%
          family={Feynman},
@@ -46,7 +46,7 @@
     \warn{\item Invalid format of field 'date' \item Invalid format of field 'date'}
   \endentry
 
-  \entry{quantumcomputing40years}{misc}{}
+  \entry{quantumcomputing40years}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=PJ}{%
          family={Preskill},
@@ -71,7 +71,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{QTintelecomindustry}{article}{}
+  \entry{QTintelecomindustry}{article}{}{}
     \name{author}{16}{}{%
       {{hash=MV}{%
          family={Martin},
@@ -193,7 +193,7 @@
     \warn{\item Invalid format of field 'date' \item Invalid format of field 'date'}
   \endentry
 
-  \entry{metrology}{article}{}
+  \entry{metrology}{article}{}{}
     \name{author}{10}{}{%
       {{hash=TA}{%
          family={Tzalenchuk},
@@ -279,7 +279,7 @@
     \warn{\item Invalid format of field 'date' \item Invalid format of field 'date'}
   \endentry
 
-  \entry{QTapplImpl}{report}{}
+  \entry{QTapplImpl}{report}{}{}
     \name{author}{2}{}{%
       {{hash=LJA}{%
          family={Lewis},
@@ -307,7 +307,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{DiVincenzo_2000}{article}{}
+  \entry{DiVincenzo_2000}{article}{}{}
     \name{author}{1}{}{%
       {{hash=DDP}{%
          family={DiVincenzo},
@@ -340,7 +340,7 @@
     \field{year}{2000}
   \endentry
 
-  \entry{browne2017quantumopticsquantumtechnologies}{misc}{}
+  \entry{browne2017quantumopticsquantumtechnologies}{misc}{}{}
     \name{author}{4}{}{%
       {{hash=BD}{%
          family={Browne},
@@ -383,7 +383,7 @@
     \field{year}{2017}
   \endentry
 
-  \entry{photonicInformation}{article}{}
+  \entry{photonicInformation}{article}{}{}
     \name{author}{2}{}{%
       {{hash=SS}{%
          family={Slussarenko},
@@ -425,7 +425,7 @@
     \field{year}{2019}
   \endentry
 
-  \entry{Wang_2019}{article}{}
+  \entry{Wang_2019}{article}{}{}
     \name{author}{4}{}{%
       {{hash=WJ}{%
          family={Wang},
@@ -476,7 +476,7 @@
     \field{year}{2019}
   \endentry
 
-  \entry{vonNeumann}{book}{}
+  \entry{vonNeumann}{book}{}{}
     \name{author}{2}{}{%
       {{hash=vNJ}{%
          prefix={von},
@@ -515,7 +515,7 @@
     \field{year}{2018}
   \endentry
 
-  \entry{Aharonov}{article}{}
+  \entry{Aharonov}{article}{}{}
     \name{author}{3}{}{%
       {{hash=AY}{%
          family={Aharonov},
@@ -558,7 +558,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Lundeen_Resch}{article}{}
+  \entry{Lundeen_Resch}{article}{}{}
     \name{author}{2}{}{%
       {{hash=LJ}{%
          family={Lundeen},
@@ -596,7 +596,7 @@
     \field{year}{2005}
   \endentry
 
-  \entry{QED}{article}{}
+  \entry{QED}{article}{}{}
     \name{author}{4}{}{%
       {{hash=FGT}{%
          family={Foster},
@@ -645,7 +645,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{OpticalNetworks}{article}{}
+  \entry{OpticalNetworks}{article}{}{}
     \name{author}{5}{}{%
       {{hash=BN}{%
          family={Brunner},
@@ -700,7 +700,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Lundeen_thesis}{thesis}{}
+  \entry{Lundeen_thesis}{thesis}{}{}
     \name{author}{1}{}{%
       {{hash=LJ}{%
          family={Lundeen},
@@ -721,7 +721,7 @@
     \field{year}{2006}
   \endentry
 
-  \entry{Brunner_2004}{article}{}
+  \entry{Brunner_2004}{article}{}{}
     \name{author}{5}{}{%
       {{hash=BN}{%
          family={Brunner},
@@ -776,7 +776,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{WeakorStd}{article}{}
+  \entry{WeakorStd}{article}{}{}
     \name{author}{2}{}{%
       {{hash=BN}{%
          family={Brunner},
@@ -813,7 +813,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Magaña-Loaiza_2017}{article}{}
+  \entry{Magaña-Loaiza_2017}{article}{}{}
     \name{author}{4}{}{%
       {{hash=MLOS}{%
          family={Magaña-Loaiza},
@@ -865,7 +865,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Jeff_outperform}{article}{}
+  \entry{Jeff_outperform}{article}{}{}
     \name{author}{3}{}{%
       {{hash=HJ}{%
          family={Harris},
@@ -908,7 +908,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Lundeen_Direct_Measurement}{article}{}
+  \entry{Lundeen_Direct_Measurement}{article}{}{}
     \name{author}{5}{}{%
       {{hash=LJS}{%
          family={Lundeen},
@@ -964,7 +964,7 @@
     \warn{\item Invalid format of field 'date' \item Invalid format of field 'date'}
   \endentry
 
-  \entry{Lundeen_Bamber}{article}{}
+  \entry{Lundeen_Bamber}{article}{}{}
     \name{author}{2}{}{%
       {{hash=LJS}{%
          family={Lundeen},
@@ -1001,7 +1001,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Hairiri}{article}{}
+  \entry{Hairiri}{article}{}{}
     \name{author}{4}{}{%
       {{hash=HA}{%
          family={Hariri},
@@ -1050,7 +1050,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Guilleaum}{article}{}
+  \entry{Guilleaum}{article}{}{}
     \name{author}{6}{}{%
       {{hash=TGS}{%
          family={Thekkadath},
@@ -1111,7 +1111,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Guilleaum_thesis}{thesis}{}
+  \entry{Guilleaum_thesis}{thesis}{}{}
     \name{author}{1}{}{%
       {{hash=TG}{%
          family={Thekkadath},
@@ -1132,7 +1132,7 @@
     \field{year}{2017}
   \endentry
 
-  \entry{kaneda2018highefficiencysinglephotongenerationlargescale}{misc}{}
+  \entry{kaneda2018highefficiencysinglephotongenerationlargescale}{misc}{}{}
     \name{author}{2}{}{%
       {{hash=KF}{%
          family={Kaneda},
@@ -1163,7 +1163,7 @@
     \field{year}{2018}
   \endentry
 
-  \entry{Dai_2020}{article}{}
+  \entry{Dai_2020}{article}{}{}
     \name{author}{14}{}{%
       {{hash=DH}{%
          family={Dai},
@@ -1274,7 +1274,7 @@
     \field{year}{2020}
   \endentry
 
-  \entry{JohnCHowellFrequencyCombs}{article}{}
+  \entry{JohnCHowellFrequencyCombs}{article}{}{}
     \name{author}{1}{}{%
       {{hash=HJC}{%
          family={Howell},
@@ -1305,7 +1305,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Salazar}{article}{}
+  \entry{Salazar}{article}{}{}
     \name{author}{5}{}{%
       {{hash=SSLJ}{%
          family={Salazar-Serrano},
@@ -1360,7 +1360,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Steinberg_prob_div}{article}{}
+  \entry{Steinberg_prob_div}{article}{}{}
     \name{author}{1}{}{%
       {{hash=SAM}{%
          family={Steinberg},
@@ -1391,7 +1391,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Kwiat}{incollection}{}
+  \entry{Kwiat}{incollection}{}{}
     \name{author}{3}{}{%
       {{hash=AJ}{%
          family={Altepeter},
@@ -1450,7 +1450,7 @@
     \field{year}{2005}
   \endentry
 
-  \entry{hecht2012optics}{book}{}
+  \entry{hecht2012optics}{book}{}{}
     \name{author}{1}{}{%
       {{hash=HE}{%
          family={Hecht},
@@ -1474,7 +1474,7 @@
     \field{year}{2012}
   \endentry
 
-  \entry{TomoReview}{article}{}
+  \entry{TomoReview}{article}{}{}
     \name{author}{2}{}{%
       {{hash=LAI}{%
          family={Lvovsky},
@@ -1511,7 +1511,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Peephole}{inproceedings}{}
+  \entry{Peephole}{inproceedings}{}{}
     \name{author}{1}{}{%
       {{hash=GY}{%
          family={Gefen},
@@ -1539,7 +1539,7 @@
     \field{year}{2017}
   \endentry
 
-  \entry{ApplicationWeak}{article}{}
+  \entry{ApplicationWeak}{article}{}{}
     \name{author}{3}{}{%
       {{hash=AY}{%
          family={Aharonov},
@@ -1582,7 +1582,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Peebles}{book}{}
+  \entry{Peebles}{book}{}{}
     \name{author}{1}{}{%
       {{hash=PPPJE}{%
          family={Peebles},
@@ -1602,7 +1602,7 @@
     \field{year}{1992}
   \endentry
 
-  \entry{Griffiths}{book}{}
+  \entry{Griffiths}{book}{}{}
     \name{author}{2}{}{%
       {{hash=GDJ}{%
          family={Griffiths},
@@ -1629,7 +1629,7 @@
     \field{year}{2018}
   \endentry
 
-  \entry{ThorlabsNPL64B}{misc}{}
+  \entry{ThorlabsNPL64B}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=T}{%
          family={Thorlabs},
@@ -1645,7 +1645,7 @@
     \field{title}{NPL64B - Nanosecond Pulsed Laser Diode System, 640 nm, 5 - 39 ns Adjustable Pulse Width}
   \endentry
 
-  \entry{ThorlabsDET025A}{misc}{}
+  \entry{ThorlabsDET025A}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=T}{%
          family={Thorlabs},
@@ -1661,7 +1661,7 @@
     \field{title}{DET025A - 2 GHz Si Free-Space Photodetector with Window, 400 - 1100 nm, 8-32 Tap}
   \endentry
 
-  \entry{ThorlabsBNC}{misc}{}
+  \entry{ThorlabsBNC}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=PM}{%
          family={PRO},
@@ -1679,7 +1679,7 @@
     \field{title}{RF / Coaxial Cable Assembly, BNC Straight Plug, BNC Straight Plug, RG58, 50 ohm}
   \endentry
 
-  \entry{TektronixTDS5000}{manual}{}
+  \entry{TektronixTDS5000}{manual}{}{}
     \name{author}{1}{}{%
       {{hash=T}{%
          family={{Tektronix}},
@@ -1705,7 +1705,7 @@
     \field{year}{2002}
   \endentry
 
-  \entry{EdmundOpticsStage}{misc}{}
+  \entry{EdmundOpticsStage}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=OE}{%
          family={Optics},
@@ -1723,7 +1723,7 @@
     \field{title}{Crossed-Roller Bearing Linear Translation Stage}
   \endentry
 
-  \entry{arrl2019}{book}{}
+  \entry{arrl2019}{book}{}{}
     \name{author}{1}{}{%
       {{hash=A}{%
          family={{American Radio Relay League (ARRL)}},
@@ -1746,7 +1746,7 @@
     \field{year}{2019}
   \endentry
 
-  \entry{thorlabs2021}{misc}{}
+  \entry{thorlabs2021}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=T}{%
          family={{Thorlabs}},
@@ -1765,7 +1765,7 @@
     \field{year}{2021}
   \endentry
 
-  \entry{RefractiveIndexAir}{article}{}
+  \entry{RefractiveIndexAir}{article}{}{}
     \name{author}{1}{}{%
       {{hash=EB}{%
          family={Edlén},
@@ -1796,7 +1796,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{SpeedOfLight}{article}{}
+  \entry{SpeedOfLight}{article}{}{}
     \name{author}{3}{}{%
       {{hash=MPJ}{%
          family={Mohr},
@@ -1839,7 +1839,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{ThorlabsROT}{misc}{}
+  \entry{ThorlabsROT}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=T}{%
          family={Thorlabs},
@@ -1855,7 +1855,7 @@
     \field{title}{Motorized Precision Rotation Mount}
   \endentry
 
-  \entry{pylablib_thorlabs_kinesis}{misc}{}
+  \entry{pylablib_thorlabs_kinesis}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=P}{%
          family={{PyLabLib Developers}},
@@ -1875,7 +1875,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{oscilloscope_coding}{manual}{}
+  \entry{oscilloscope_coding}{manual}{}{}
     \name{author}{1}{}{%
       {{hash=T}{%
          family={{Tektronix, Inc.}},
@@ -1900,7 +1900,7 @@
     \field{year}{2005}
   \endentry
 
-  \entry{Time_delay_china}{article}{}
+  \entry{Time_delay_china}{article}{}{}
     \name{author}{3}{}{%
       {{hash=LW}{%
          family={Liu},
@@ -1943,7 +1943,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{taylor1997error}{book}{}
+  \entry{taylor1997error}{book}{}{}
     \name{author}{1}{}{%
       {{hash=TJR}{%
          family={Taylor},
@@ -1968,7 +1968,7 @@
     \field{year}{1997}
   \endentry
 
-  \entry{quantuminfoweak}{article}{}
+  \entry{quantuminfoweak}{article}{}{}
     \name{author}{5}{}{%
       {{hash=HJC}{%
          family={Howell},
@@ -2023,7 +2023,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{troupe2017quantumcryptographyweakmeasurements}{misc}{}
+  \entry{troupe2017quantumcryptographyweakmeasurements}{misc}{}{}
     \name{author}{2}{}{%
       {{hash=TJE}{%
          family={Troupe},
@@ -2054,7 +2054,7 @@
     \field{year}{2017}
   \endentry
 
-  \entry{intlundeen}{article}{}
+  \entry{intlundeen}{article}{}{}
     \name{author}{5}{}{%
       {{hash=HJH}{%
          family={Huang},
@@ -2109,7 +2109,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{imaginary_part}{article}{}
+  \entry{imaginary_part}{article}{}{}
     \name{author}{6}{}{%
       {{hash=WR}{%
          family={Wagner},

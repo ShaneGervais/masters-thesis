@@ -6,8 +6,9 @@
     le premier séparateur de faisceau polarisant, l’état de polarisation 
     d’entrée est préparé à l'aide de lame d'ondes et ensuite 
     soumis à une mesure faible en 
-    introduisant un court délai avec une différence de parcours entre 
-    les deux composantes orthogonales de la polarisation. 
+    introduisant un court délai de $167$ $ps$ avec une différence de parcours 
+    de $2,5$ $cm$ entre 
+    les deux composantes $H$ et $V$. 
     Finalement, la postsélection est effectuée pour une 
     caractérisation complète et directe.
 \end{doublespace}
@@ -16,8 +17,8 @@
     \centering
     \includegraphics[width=1.0\textwidth]{partiereelexp.png}
     \caption{Dispositif expérimental pour caractériser la partie réelle de la valeur 
-    faible. L’impulsion du laser est réglée en intensité par une lame demi-onde, 
-    puis dirigée vers un PBS qui divise les états de polarisation 
+    faible. L’impulsion du laser est réglée en intensité par une lame demi-onde 
+    et un PBS qui divise les états de polarisation 
     horizontaux et verticaux de
     base de l’impulsion d’entrée en deux voies orthogonales. Celui qui 
     est réfléchi sera notre signal de référence (ou signal de déclenchement) 
@@ -37,12 +38,12 @@
     subissent une rotation de leur polarisation réalisée avec des 
     lames quart-d'onde et sont recombinées sur un PBS. L'état 
     recombiné qui a subit la mesure faible subit une postsélection 
-    réakusé par une lame demi-onde inclinée à $45$ degrés 
-    par rapport à un polariseur 
-    initialement orienté à $0$ degré. 
-    Cela crée une projection avec l’état $\ket{D}$ qui permet l'interférence des états de base.  
-    Ce dernier est ensuite détecté avec un
-    photodétecteur et le signal est détecté par un oscillocope.
+    réalisée par une lame demi-onde inclinée à $45$ degrés 
+    par rapport à un polariseur. 
+    Cela crée une projection sur l’état $\ket{D}$ qui permet d'extraire le 
+    chevauchement des états $\ket{H}$ et $\ket{V}$.  
+    Ensuite, le signal expérimental est détecté avec un
+    photodétecteur et acquis par l'oscilloscope.
 }
     \label{fig:realexp}
 \end{figure}
@@ -59,12 +60,12 @@
     transmit sera préparé dans divers trajets de polarisation sur la 
     sphère Poincaré et sera caractérisé à l'aide du dispositif experimentale 
     (figure \ref{fig:realexp}). 
-    Les trajets de polarisation testés et sont obtenus 
-    en modifiant les angles des lames d'onde lors de 
+    Les trajets de polarisation sont obtenus en
+    modifiant les angles des lames d'onde lors de 
     l'étape de préparation. Le 
-    premiers traject correspond à l'ensemble des états de polarisation 
+    premier trajet correspond à l'ensemble des états de polarisation 
     linéaire et est réalisé uniquement avec une lame demi-onde définie 
-    par l'opérateur unitaire suivant:
+    par la matrice suivante:
 \end{doublespace}
 
 \begin{align}
@@ -76,15 +77,16 @@
 
 \begin{doublespace}
     \noindent où l'indice $HWP$ fait référence à une lame demi-onde
-    (\guillemetleft halfwaveplate \guillemetright en anglais) 
+    (\guillemetleft half waveplate \guillemetright en anglais) 
     et l'angle $\theta$ l'angle de rotation de la lame par 
     rapport à l'axe rapide. 
     %L'opérateur $T_{HWP}(\theta)$ est un opérateur unitaire 
     %qui agit sur l'état d'entrée $\ket{\psi}$, et il est 
     %défini par la rotation de l'état d'entrée sur la sphère de Poincaré.
-    Ce dernier est une matrice de Jones qui 
+    Cette matrice est une matrice de Jones qui 
     représente la transformation de polarisation induite par la lame 
-    demi-onde. 
+    demi-onde.
+
     %Ce dernier est essentiellement une matrice de Jones qui 
     %représente la transformation de polarisation induite par la lame 
     %demi-onde. 
@@ -104,17 +106,17 @@
     %de polarisation.
     %Ainsi, l'angle $\theta$ est l'angle de rotation de la lame 
     %demi-onde par rapport à l'état de base $\ket{H}$.
-    Ce premier trajet réalise le trajet
-    $\ket{H} \to \ket{D} \to \ket{V} \to \ket{A} \to \ket{H}$. 
-    Pour comprendre 
-    en détail, l'état initial est l’état horizontal 
+    %ce premier trajet réalise une rotation autour de l'axe $S_3$ de la sphère de Poincaré,
+    %c'est-à-dire que l'état de polarisation évolue dans la manière suivante:
+    %$\ket{H} \to \ket{D} \to \ket{V} \to \ket{A} \to \ket{H}$. 
+    \noindent L'état initial est l’état horizontal 
     $\ket{H} \equiv \begin{pmatrix}
         1\\
         0
     \end{pmatrix}$ correspondant dans notre cas à l'état de polarisation 
-    transmis par un séparateur 
+    transmit par un séparateur 
     de faisceau polarisant. Ensuite, l'état évolue de la façon 
-    suivante en fonction de l'angle de la lame d'onde $\theta$:
+    suivante en fonction de l'angle $\theta$ de la lame d'onde:
 \end{doublespace}
 
 \begin{align}
@@ -140,9 +142,9 @@
 
 \begin{doublespace}
     \noindent Afin de donner une représentation visuelle de nos états de 
-    polarisation, nous utilisons la sphère de Poincaré. Les coefficients 
-    de la fonction de l'état de l'équation \ref{eq:state1_Jones} correspondent à la 
-    représentation de Jones de la polarisation. Et, il est possible de 
+    polarisation, nous utilisons la sphère de Poincaré. Les amplitudes de probabilité
+    de la fonction d'onde de l'équation \ref{eq:state1} correspondent à la 
+    représentation de Jones de la polarisation de l'équation \ref{eq:state1_Jones}. Et, il est possible de 
     convertir la représentation de Jones en présentation sur la sphères 
     de Poincaré à l'aide des paramètres de Stokes (figure \ref{fig:path3sphere}):
 \end{doublespace}
@@ -165,17 +167,18 @@
     \centering
     \includegraphics[width=1.0\textwidth]{poincare_sphere_HDVAH.png}
     \caption{Schéma du trajet $\ket{H}\rightarrow\ket{D}\rightarrow\ket{V}\rightarrow\ket{A}\rightarrow\ket{H}$
-    utilisant seulement une lame demi-onde dans la préparation de l'état d'entrée.
+    utilisant seulement une lame demi-onde dans la préparation de l'état initial.
     Ici, un état de polarisation horizontal vecteur $\begin{pmatrix}
         1\\
         0
     \end{pmatrix}$ 
-    représentation de Jones est représenté par le vecteur 
+    en représentation de Jones est représenté par le vecteur 
     $\begin{pmatrix}
         1\\
         0\\
         0
-    \end{pmatrix}$ sur la sphère de Poincaré. Un état de polarisation 
+    \end{pmatrix}$ en représentation de Stokes sur la sphère de Poincaré. 
+    Un état de polarisation 
     diagonal $\begin{pmatrix}
         0\\
         1\\
@@ -190,9 +193,12 @@
 \end{figure}
 
 \begin{doublespace}
-    \noindent Ce permier trajet, correspond à une rotation autour de $S_3$,
+    \noindent Ce premier trajet, correspond à une rotation autour de $S_3$,
     est réalisé en tournant uniquement la lame 
-    demi-onde en l'absence de la lame quart-d'onde. On tourne 
+    demi-onde en l'absence de la lame quart-d'onde, c'est-à-dire 
+    que nous traversons les états de polarisation
+    $\ket{H} \to \ket{D} \to \ket{V} \to \ket{A} \to \ket{H}$.
+    Dans l'expérience, on tourne 
     l'angle de la lame d'onde de $2,5$
     degrés pour chaque acquisition. Chaque degré $\theta^\prime$ 
     que nous tournons en réalité 
@@ -207,7 +213,7 @@
     avec une lame demi-onde tournant de la même manière que précédemment, 
     et une lame quart d'onde réglée à $0$ degré par rapport à 
     $\ket{H}$. L’opération de cette lame d’onde se définit par 
-    l'opérateur suivant:
+    la matrice suivante:
 \end{doublespace}
 
 \begin{align}
@@ -222,16 +228,17 @@
 \end{align}
 
 \begin{doublespace}
-    \noindent La forme de cet opérateur $T_{QWP}(\phi)$, avec 
-    l'angle $\phi$ pour la lame d'onde et l'indice QWP fait référence 
-    à une lame quart d'onde 
-    (\guillemetleft quarter waveplate \guillemetright en anglais). 
+    \noindent où L'indice $QWP$ fait référence 
+    à une lame quart d'onde (\guillemetleft quarter waveplate \guillemetright en anglais).
+    L'angle $\phi$ est l'angle de rotation de la lame 
+    quart d'onde par rapport à l'axe rapide.
+    %Cette matrice est une matrice de Jones qui représente la transformation 
     %permet de conserver $a \in \mathcal{R}$ et de laisser 
     %$b\in \mathcal{C}$ contenir l'information complexe. Nous 
     %procédons ainsi pour que la partie imaginaire de la valeur 
     %faible soit principalement contenue dans $b$ pour des raisons de 
     %simplicité. 
-    Avec ces lames d'ondes, l'état évolue comme suit:
+    Avec cette lame d'onde et celle demi-onde, l'état évolue comme suit:
 \end{doublespace}
 
 \begin{align}
@@ -261,7 +268,7 @@
 \end{equation}
 
 \begin{doublespace}
-    \noindent Avec les paramètres de Stokes pour démontrer sa 
+    \noindent Nous pouvons trouver les paramètres de Stokes pour démontrer sa 
     trajectoire (figure \ref{fig:path4sphere}):
 \end{doublespace}
 
@@ -285,7 +292,7 @@
     \caption{Schéma du trajet 
     $\ket{H}\rightarrow\ket{R}\rightarrow\ket{V}\rightarrow\ket{L}\rightarrow\ket{H}$
     utilisant seulement une lame demi-onde et une lame quart d'onde à 
-    $0$ dégré dans la préparation de l'état d'entrée}
+    $0$ dégré dans la préparation de l'état initial.}
     \label{fig:path4sphere}
 \end{figure}
 
@@ -294,7 +301,7 @@
     qui nous fait passer des états de polarisation diagonal
     $\{\ket{D}, \ket{A}\}$ aux polarisations circulaires 
     $\{ \ket{R}, \ket{L}\}$. La trajectoire résultante est 
-    $\ket{D} \to \ket{R} \to \ket{A} \to \ket{L} \to \ket{D}$. 
+    $\ket{R} \to \ket{A} \to \ket{L} \to \ket{D} \to \ket{R}$. 
     Cette dernière est 
     obtenue en tournant une lame demi-onde avec une lame quart d'onde 
     réglée à $45$ degrés,
@@ -339,7 +346,7 @@
 \end{equation}
 
 \begin{doublespace}
-    \noindent Avec les paramètres de Stokes pour démontrer sa 
+    \noindent Nous pouvons trouver les paramètres de Stokes pour démontrer sa 
     trajectoire (figure \ref{fig:path5sphere}):
 \end{doublespace}
 
@@ -360,9 +367,9 @@
 \begin{figure}[!htpb]
     \centering
     \includegraphics[width=1.0\textwidth]{poincare_sphere_DRALD.png}
-    \caption{Schéma du trajet $\ket{D}\rightarrow\ket{R}\rightarrow\ket{A}\rightarrow\ket{L}\rightarrow\ket{D}$
+    \caption{Schéma du trajet $\ket{R}\rightarrow\ket{A}\rightarrow\ket{L}\rightarrow\ket{D}\rightarrow\ket{R}$
     utilisant une lame demi-onde et une lame quart d'onde à 
-    $45$ dégrés dans la préparation de l'état d'entrée}
+    $45$ dégrés dans la préparation de l'état initial}
     \label{fig:path5sphere}
 \end{figure}
 

@@ -5,31 +5,27 @@
     sur des impulsions lumineuses. Pour ce faire, nous allons vérifier 
     notre capacité à mesurer la vitesse de la lumière. Le dispositif expérimental
     (voir figure \ref{fig:speed-of-light})
-    est conçu pour mesurer la vitesse d'un signal électrique dans les câbles BNC
-    peux être que utiliser pour mesurer la vitesse de la lumière en 
-    utilisant un miroir ajustable pour 
-    créer un délai temporel. Ce dernier se fait en
+    peut être utiliser pour mesurer la vitesse de la lumière en
+    utilisant un miroir ajustable pour
+    créer un délai temporel. Cela se fait en
     déplaçant le miroir ajustable, ce qui modifie la distance parcourue
     par le signal. En mesurant le temps que met le signal à parcourir 
     cette distance, nous pouvons calculer la vitesse de la lumière dans notre
-    milieu. Nous allons maintenant présenter les résultats de cette expérience,
-    ainsi que les données dérivées de l'impulsion mesurée.
+    système. Nous allons maintenant présenter les résultats de cette expérience.
 
     \noindent Nous analysons les données de l'expérience en utilisant la
-    méthode que nous avons acquise précédemment, et ce en effectuant un ajustement de
+    méthode que nous avons acquise précédemment, en effectuant un ajustement de
     la courbe de la dérivée de l'impulsion mesurée. Cette approche
     permet de déterminer le temps d'arrivée des impulsions. Le tableau 
     \ref{table:fits_light} présente les résultats de l'expérience,
     qui présente les temps d’arrivée mesurés pour différentes distances 
-    parcourues par les impulsions, ainsi que les écarts-types et la 
-    qualité des ajustements de courbe. 
+    parcourues par les impulsions, ainsi que les écarts-types.
 
 
     \begin{longtable}{p{2.0cm} p{2.0cm} p{4.0cm} p{2.0cm} }
-        \caption{ Résultats des temps d’arrivée mesurés pour différentes 
-        parcours des impulsions et types d’ajustement de courbe, avec leurs 
-        écarts-types et qualités des ajustements pour l'expérience de la 
-        vitesse de la lumière} \\
+        \caption{Résultats des temps d’arrivée mesurés selon différentes distances 
+        de parcours des impulsions et types d’ajustement avec leurs 
+        écarts-types pour l'expérience de la vitesse de la lumière} \\
         \toprule
         \label{table:fits_light}
         Type de fit & Parcours $\Delta x$ (cm) & Temps d'arrivée (ns) & Écart-type (ns) \\
@@ -203,12 +199,11 @@
 
     Nous remarquons que les ajustements de courbe sont de bonne qualité, 
     avec des résultats (ajustement sur les données) similaires 
-    à celle de l'expérience précédente,
-    ce qui indique que les données sont
-    cohérentes et fiables. Les écarts-types sont également faibles, ce qui
+    à celle de l'expérience précédente. Les écarts-types sont également 
+    faibles, ce qui
     suggère que les mesures sont précises et répétables.
     La figure \ref{fig:fits_light}
-    présente les ajustements de courbe pour les données d'impulsion
+    présente les ajustements de courbe \textit{poly4} pour les données d'impulsion
     mesurées dans l'expérience de la vitesse de la lumière.
     
     \begin{figure}[!hptb]
@@ -217,17 +212,17 @@
         \caption{Profil temporel de la dérivée des données d'impulsion 
         pour chacune des distances mesurées et ajustement de la 
         courbe pour l'expérience de la vitesse de la lumière avec un 
-        miroir réglable.}
+        miroir ajustable.}
         \label{fig:fits_light}
     \end{figure}
     
     \noindent Le tableau \ref{table:speed_light} 
     présente les résultats de la mesure de la vitesse de la lumière pour 
     différents ajustements de courbe. Les valeurs mesurées sont comparées
-    à la vitesse théorique de la lumière dans l'aire 
-    (l'indice de refraction dans l'aire: $n_{aire} \approx 1.00129382$ 
-    \cite{RefractiveIndexAir}), 
-    qui est de $\sim 0.998\,c$ \cite{SpeedOfLight,hecht2012optics}. 
+    à la vitesse théorique de la lumière dans l'air
+    (l'indice de refraction dans l'air: $n_{air} \approx 1.00129382$
+    \cite{RefractiveIndexAir}),
+    qui est de $\sim 0.998\,c$ \cite{SpeedOfLight,hecht2012optics}.
 
     \begin{longtable}{p{2.0cm} p{4.0cm} p{2.0cm}}
         \caption{Mesure de la vitesse de la lumière pour différents 
@@ -271,23 +266,24 @@
  
     \end{longtable}
 
-    \noindent Nous plaçons les résultats des délais obtenus dans l'expérience
-    de la vitesse de la lumière et les comparons au temps d'arrivée
-    d'un impulsion où le miroir est fixe, ce qui nous permet
-    de déterminer les délais pour la vitesse de la lumière. La figure
-    \ref{fig:speed-res} présente les résultats de notre expérience.
+    \noindent Les temps d’arrivée mesurés sont comparés à celui obtenu 
+    lorsque le miroir est fixe, permettant ainsi de déterminer les délais associés à 
+    chaque position. Ces délais sont ensuite utilisés pour calculer la vitesse de la 
+    lumière à l’aide d’une régression linéaire. La figure \ref{fig:speed-res} 
+    présente les résultats de notre expérience.
 
     \begin{figure}[!hptb]
     \centering
     \includegraphics[width=1.0\textwidth]{speed_light.png}
-    \caption{Résultats des délais mesurés pendant l'expérience sur la 
-    vitesse de la lumière, ainsi que leur ajustement linéaire. Les 
-    barres d’erreur horizontales représentent l’incertitude de nos 
-    mesures de la distance, soit $\pm 2$ $\mu m$. Les barres d'erreurs verticales 
-    correspondent à l'erreur de l'ajustement \textit{poly4} basé sur 
-    l'expérience de la vitesse du signal électrique dans les câbles BNC 
-    (voir figure \ref{fig:BNC-res}). Ils sont tros petits pour être visibles sur
-    la figure. 
+    \caption{Détermination de la vitesse de la lumière à partir des
+    délais mesurés pour différentes parcours des impulsions
+    avec un miroir ajustable. La ligne représente l'ajustement linéaire
+    des données. Les barres d’erreur horizontales représentent l’incertitude de nos
+    mesures de la distance, soit $\pm 2$ $\mu m$. Les barres d'erreurs verticales
+    correspondent à l'erreur de l'ajustement \textit{poly4} basé sur
+    l'expérience de la vitesse du signal électrique dans les câbles BNC
+    (voir figure \ref{fig:BNC-res}). Ils sont trop petits pour être visibles sur
+    la figure.
     }
     \label{fig:speed-res}
     \end{figure}
