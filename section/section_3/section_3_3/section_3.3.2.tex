@@ -2,38 +2,50 @@
     
     Nous allons maintenant écrire les résultats attendus pour 
     la partie imaginaire de la valeur faible, comme nous l'avons fait avec 
-    la partie réelle dans la section précédente, pour chaque état 
-    d’entrée. La relation de la partie imaginaire de la valeur faible 
-    est donnée par le suivant :
-    
-    \begin{equation}
-        \mathcal{I}\Bigl( \expval{\hat{\pi}_W} \Bigr) \equiv \frac{\expval{\hat{\omega}}}{\tau} \propto \ket{\psi_i}
-    \end{equation}
-    
-    \noindent Voici les trajets de polarsation correspondant aux 
-    états d’entrée que nous avons utilisés pour la 
-    partie imaginaire de la valeur faible, qui sont calculés de la 
-    même façon que dans la dernière section. Pour $\ket{\psi_{i}^{1}}$ :
+    la partie réelle dans la section précédente, pour chaque trajet
+    de polarisation. La relation de la partie imaginaire de la valeur faible
+    est donnée par l'équation \ref{eq:imaginary_part}. Voici les 
+    trajets de polarisation correspondant aux
+    états d’entrée que nous avons utilisés pour la
+    partie imaginaire de la valeur faible. Nous commençons par l'état de polarisation linéaire
+    $\ket{\psi_{i}^{1}} = cos(2\theta)\ket{H} + sin(2\theta)\ket{V}$ et
+    placer c'est amplitudes de probabilité dans l'équation
+    \ref{eq:imaginary_part} avec une postsélection sur l'état de polarisation
+    $\ket{D}$, nous avons: 
 
     \begin{equation}
         \expval{\hat{\omega}} = 0
     \end{equation}
 
-    \noindent Une absence de délai fréquenciel est attendue pour l'état 
-    de polarisation linéaire. Ensuite, $\ket{\psi_{i}^{2}}$:
+    \noindent ce qui signifie que l'état de polarisation linéaire ne
+    devrait pas produire de décalage fréquentiel. Cela est
+    attendu, car l'état de polarisation linéaire ne possède pas de 
+    différence de phase dans son transport, contrairement aux trajets 
+    suivants. Ensuite, pour un état de polarisation circulaire 
+    $\ket{\psi_{i}^{2}} = cos(2\theta)\ket{H} + i sin(2\theta)\ket{V}$
+    nous obtenons:
 
     \begin{equation}
         \expval{\hat{\omega}} = \frac{\tau}{8\sigma^2}(cos(2\theta)sin(2\theta))
     \end{equation}
 
-    \noindent Et finalement, $\ket{\psi_{i}^{3}}$:
+    \noindent ce type d'état de polarisation devrait produire un
+    décalage fréquentiel proportionnel à la valeur de $\theta$ et à la
+    durée de l'interaction faible $\tau$. Enfin, pour l'état de polarisation
+    de superposition 
+    $\ket{\psi_{i}^{3}} = \frac{1}{2}(((1-i)sin(2\theta)+(i+1)cos(2\theta))\ket{H}
+    + ((1+i)sin(2\theta)+(i-1)cos(2\theta))\ket{V})$ nous avons:
 
     \begin{equation}
         \expval{\hat{\omega}} = \frac{\tau}{8\sigma^2}(sin^2(2\theta)-cos^2(2\theta))
     \end{equation}
 
-    \noindent Cela résume nos approches et attendus expérimentales 
-    menées dans le cadre de ce projet de maîtrise. Le chapitre suivant 
-    présentera nos méthodes d'analyse, nos résultats et les implications 
-    de ce projet. 
+    \noindent ce qui signifie que l'état de polarisation de superposition
+    devrait également produire un décalage fréquentiel proportionnel à la
+    valeur de $\theta$ et à la durée de l'interaction faible $\tau$.
+
+    \noindent Cela résume nos approches et attendus expérimentaux
+    menées dans le cadre de ce projet de maîtrise. Le chapitre suivant
+    présentera nos méthodes d'analyse, nos résultats et les implications
+    de ce projet.
 \end{doublespace}
