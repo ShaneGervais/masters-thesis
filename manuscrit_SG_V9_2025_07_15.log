@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.7.16)  22 JUL 2025 05:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.7.16)  22 JUL 2025 05:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -956,11 +956,6 @@ Package biblatex Warning: BibTeX reported the following issues
 
 Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'intlundeen':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'imaginary_part':
 (biblatex)                - Invalid format of field 'month'.
 
 )
@@ -2086,10 +2081,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [92 <./figure//real_weak_value_vis_3_analysis.png>]
-<./figure//PSD.png, id=1482, 722.7pt x 433.62pt>
-File: ./figure//PSD.png Graphic file (type png)
-<use ./figure//PSD.png>
-Package pdftex.def Info: ./figure//PSD.png  used on input line 59.
+<./figure//PSD copy.png, id=1482, 722.7pt x 433.62pt>
+File: ./figure//PSD copy.png Graphic file (type png)
+<use ./figure//PSD copy.png>
+Package pdftex.def Info: ./figure//PSD copy.png  used on input line 59.
+(pdftex.def)             Requested size: 429.3521pt x 257.61342pt.
+<./figure//zoom_at_87MHz.png, id=1485, 722.7pt x 433.62pt>
+File: ./figure//zoom_at_87MHz.png Graphic file (type png)
+<use ./figure//zoom_at_87MHz.png>
+Package pdftex.def Info: ./figure//zoom_at_87MHz.png  used on input line 72.
 (pdftex.def)             Requested size: 429.3521pt x 257.61342pt.
 
 
@@ -2100,41 +2100,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [93]
-<./figure//zoom_at_87MHz.png, id=1490, 722.7pt x 433.62pt>
-File: ./figure//zoom_at_87MHz.png Graphic file (type png)
-<use ./figure//zoom_at_87MHz.png>
-Package pdftex.def Info: ./figure//zoom_at_87MHz.png  used on input line 72.
-(pdftex.def)             Requested size: 429.3521pt x 257.61342pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
-[]|\T1/cmr/m/n/12 Fréquence
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
-[]|\T1/cmr/m/n/12 Déplacement
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
-\T1/cmr/m/n/12 fré-quen-tiel
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
-[]|\T1/cmr/m/n/12 Fréquence
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
-[]|\T1/cmr/m/n/12 Déplacement
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
-\T1/cmr/m/n/12 fré-quen-tiel
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2142,7 +2107,36 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[94 <./figure//PSD.png>]
+[94 <./figure//PSD copy.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+[]|\T1/cmr/m/n/12 Fréquence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+[]|\T1/cmr/m/n/12 Déplacement
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+\T1/cmr/m/n/12 fré-quen-tiel
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--102
+[]|\T1/cmr/m/n/12 Fréquence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+[]|\T1/cmr/m/n/12 Déplacement
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/cmr/m/n/12 fré-quen-tiel
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2151,12 +2145,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [95 <./figure//zoom_at_87MHz.png>]
-<./figure//imag_weak_value_path_4.png, id=1504, 462.528pt x 346.896pt>
-File: ./figure//imag_weak_value_path_4.png Graphic file (type png)
-<use ./figure//imag_weak_value_path_4.png>
-Package pdftex.def Info: ./figure//imag_weak_value_path_4.png  used on input line 158.
-(pdftex.def)             Requested size: 429.3521pt x 322.02768pt.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2165,18 +2153,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [96]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[97 <./figure//imag_weak_value_path_4.png>]
-<./figure//imaginary_probability_path_4.png, id=1517, 462.528pt x 346.896pt>
+<./figure//imag_weak_value_path_4.png, id=1510, 462.528pt x 346.896pt>
+File: ./figure//imag_weak_value_path_4.png Graphic file (type png)
+<use ./figure//imag_weak_value_path_4.png>
+Package pdftex.def Info: ./figure//imag_weak_value_path_4.png  used on input line 166.
+(pdftex.def)             Requested size: 429.3521pt x 322.02768pt.
+<./figure//imaginary_probability_path_4.png, id=1513, 462.528pt x 346.896pt>
 File: ./figure//imaginary_probability_path_4.png Graphic file (type png)
 <use ./figure//imaginary_probability_path_4.png>
-Package pdftex.def Info: ./figure//imaginary_probability_path_4.png  used on input line 186.
+Package pdftex.def Info: ./figure//imaginary_probability_path_4.png  used on input line 194.
 (pdftex.def)             Requested size: 429.3521pt x 322.02768pt.
 
 
@@ -2186,7 +2171,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[98 <./figure//imaginary_probability_path_4.png>])
+[97]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2194,7 +2179,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[99] (./section/section_5/section_5.tex [100])
+[98 <./figure//imag_weak_value_path_4.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2202,11 +2187,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[101]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 456.
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-)
+[99 <./figure//imaginary_probability_path_4.png>])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[100] (./section/section_5/section_5.tex [101])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2215,6 +2204,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [102]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 456.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2254,7 +2247,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[107] (./annexe/annexe_A.tex [108]
+[107]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2262,13 +2255,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[109]
-<figure/entire_spec.png, id=1722, 1124.2pt x 843.15pt>
+[108] (./annexe/annexe_A.tex [109]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[110]
+<figure/entire_spec.png, id=1724, 1124.2pt x 843.15pt>
 File: figure/entire_spec.png Graphic file (type png)
 <use figure/entire_spec.png>
 Package pdftex.def Info: figure/entire_spec.png  used on input line 145.
 (pdftex.def)             Requested size: 429.3521pt x 322.0085pt.
-<figure/zoom_doppler_res_scatter.png, id=1725, 1124.2pt x 843.15pt>
+<figure/zoom_doppler_res_scatter.png, id=1727, 1124.2pt x 843.15pt>
 File: figure/zoom_doppler_res_scatter.png Graphic file (type png)
 <use figure/zoom_doppler_res_scatter.png>
 Package pdftex.def Info: figure/zoom_doppler_res_scatter.png  used on input line 164.
@@ -2284,7 +2285,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[110]
+[111]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2292,7 +2293,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[111 <./figure/entire_spec.png (PNG copy)>])
+[112 <./figure/entire_spec.png (PNG copy)>])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2300,7 +2301,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[112 <./figure/zoom_doppler_res_scatter.png (PNG copy)>] (./manuscrit_SG_V9_2025_07_15.aux)
+[113 <./figure/zoom_doppler_res_scatter.png (PNG copy)>] (./manuscrit_SG_V9_2025_07_15.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -2316,17 +2317,17 @@ Package logreq Info: Writing requests to 'manuscrit_SG_V9_2025_07_15.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28884 strings out of 476041
- 570843 string characters out of 5793174
+ 28880 strings out of 476041
+ 570690 string characters out of 5793174
  1980388 words of memory out of 6000000
- 48483 multiletter control sequences out of 15000+600000
+ 48479 multiletter control sequences out of 15000+600000
  523208 words of font info for 60 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  73i,14n,117p,1951b,3380s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on manuscrit_SG_V9_2025_07_15.pdf (129 pages, 10880960 bytes).
+Output written on manuscrit_SG_V9_2025_07_15.pdf (130 pages, 10873411 bytes).
 PDF statistics:
- 1900 PDF objects out of 2073 (max. 8388607)
+ 1901 PDF objects out of 2073 (max. 8388607)
  1638 compressed objects within 17 object streams
  396 named destinations out of 1000 (max. 500000)
  492 words of extra memory for PDF output out of 10000 (max. 10000000)

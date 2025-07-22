@@ -1,13 +1,13 @@
 \begin{doublespace}
     Notre méthode pour mesurer la partie imaginaire de la valeur faible 
-    est assez simple. Nous faissons interférer dans un 
-    inertféromètre de MZ une impulsion faiblement 
+    est assez simple. Nous faisons interférer dans un 
+    interféromètre de MZ une impulsion faiblement 
     mesurée avec un signal d'interférence 
     correspondant au spectre du laser, voir la figure \ref{fig:imagexp}. 
     Ainsi, nous pouvons accéder 
-    après intferérences au spectre du signal qui aura été modifié 
+    après interférences au spectre du signal qui aura été modifié 
     par la mesure faible. Cependant, 
-    certaines implications comme la faible visibilité de l'interférence, 
+    certaines implications comme 
     la faible résolution de la mesure et la faible longueur 
     de cohérence du laser rendent difficile la 
     mesure de la partie imaginaire de la valeur faible.
@@ -20,7 +20,7 @@
      de la valeur faible:
 
     \begin{equation}
-        \mathcal{I}(\expval{\hat{\pi}_W}) = \expval{\hat{\omega}} \propto \frac{\tau}{8\sigma^2}
+        \mathcal{I}(\expval{\hat{\pi}_W}) \propto \frac{\tau}{8\sigma^2}
     \end{equation}
     
     \noindent Cela signifie que, pour une impulsion avec une durée de 
@@ -29,14 +29,14 @@
     $3,98$ kHz (avec $\omega \equiv 2\pi f$). Cette valeur est 
     extrêmement petite par rapport à la fréquence de notre laser, qui se 
     situe dans l'ordre $THz$ avec plusieurs modes \cite{ThorlabsNPL64B}. 
-    Les mesures interférométriques 
-    régulières effectuées dans un laboratoire ne présentent qu’une 
-    résolution de l'ordre $MHz$, ce qui nécessite des bras 
-    d'interféromètres assez longs. Donc, pour améliorer l'effet par l'interaction faible,
+    %Les mesures interférométriques 
+    %régulières effectuées dans un laboratoire ne présentent qu’une 
+    %résolution de l'ordre $MHz$, ce qui nécessite des bras 
+    %d'interféromètres assez longs. 
+    Donc, pour améliorer l'effet par l'interaction faible,
     il faut réduire la durée de l'impulsion. 
     Nous allons choisir une longueur d'impulsion de $4$ $ns$ (le minimum 
-    que notre laser peut effectuer) pour un attendue de $16,61$ $kHz$, 
-    encore très petits. 
+    que notre laser peut effectuer) pour un attendue de $16,61$ $kHz$.
     
     \subsubsection{Vérification de la partie imaginaire}
     
@@ -56,8 +56,8 @@
 
     \begin{figure}[!htpb]
         \centering
-        \includegraphics[width=1.0\textwidth]{PSD.png}
-        \caption{DSP résultant d'une mesure faible temporelle. Ici, les 
+        \includegraphics[width=1.0\textwidth]{PSD copy.png}
+        \caption{DSP totale résultant d'une mesure faible temporelle. Ici, les 
         lignes verticales représentent la position des pics de puissance 
         dans le spectre. La fréquence centrale est de 
         $703.12$ $MHz$ pour une durée spectrale de $1.4062$ $GHz$ avec une 
@@ -72,16 +72,17 @@
         \includegraphics[width=1.0\textwidth]{zoom_at_87MHz.png}
         \caption{Zoom sur le pic de puissance à $87,9$ $MHz$. On peut 
         observer la présence de plusieurs pics de puissance, avec leur 
-        ajustement de courbe polynomiale du quatrième ordre pour 
+        ajustements de paramétriques polynomiales du quatrième ordre pour 
         determiner chaque position fréquentielle des états d'entrée.}
         \label{fig:spectre1054}
     \end{figure}
 
     \noindent Nous analysons ensuite le spectre pour repérer les pics
     avec une amplitude supérieure à $1\%$ de la puissance maximale. Pour 
-    chacun de ces pics, nous effectuons un ajustement de courbe 
+    chacun de ces pics, nous effectuons un ajustement de paramétrique
     polynomiale du quatrième ordre, comme dans nos dernières analyses 
-    pour estimer précisément la position fréquentielle du pic. En 
+    pour la mesure de la vitesse d'un signal électrique et de la lumière
+    dans la section 3.1, pour estimer précisément la position fréquentielle du pic. En 
     comparant chacune de ces fréquences à celles de l’état $\ket{V}$, 
     nous obtenons le tableau suivant pour le pic à la fréquence $87,9$ $MHz$:
 
@@ -127,7 +128,10 @@
     effectivement un déplacement de certains pics dans le spectre, 
     mesuré dans l'ordre de kilohertz. Cependant, ces déplacements ne 
     semblent pas être cohérents ni suivre une tendance correspondant à 
-    notre théorie. 
+    notre théorie, ainsi que ceux des autres pics dans la figure \ref{fig:spectre}.
+    Nous pouvons attribuer ce problème à un manque de stabilité
+    du laser, ce qui rend difficile la mesure de la partie 
+    imaginaire de la valeur faible.
 
     \subsubsection{Tentatives de mesurer la partie imaginaire}
 
@@ -142,11 +146,15 @@
         f_{cent.} = \frac{\sum_{i=1}^{n} f_i \cdot P_i}{\sum_{i=1}^{n} P_i}
         \label{eq:centroid}
     \end{equation}
-
-    \noindent Où $f_i$ est la fréquence de chaque pic et $P_i$ est la puissance
+    \noindent où $f_{cent.}$ est la fréquence du centroïde, $n$ est le
+    nombre de pics dans le spectre, $f_i$ est la fréquence de chaque pic 
+    et $P_i$ est la puissance
     de chaque pic. Nous avons ensuite calculé la différence entre le
     centroïde de chaque état d'entrée et celui de l'état $\ket{L}$.
-    Cette méthode prend inspiration de: \cite{WeakorStd,OpticalNetworks}.
+    Le centroïde du spectre est une mesure de la position moyenne des pics
+    de puissance dans le spectre, ce qui nous permet de mesurer les
+    déplacements fréquentiels causés par la mesure faible, 
+    cette méthode prend inspiration de: \cite{WeakorStd,OpticalNetworks}.
     Nous évaluons la partie imaginaire de la valeur faible de les 
     trajets de polarisation discutés dans le chapitre 3. Voici les
     résultats que nous avons obtenus pour les déplacements fréquentiels
@@ -198,25 +206,25 @@
     avec nos attentes théoriques. Cependant, nous avons observé des
     déplacements dans le spectre de fréquence, ce qui indique que la
     partie imaginaire de la valeur faible est présente et elle suit
-    une tendance sinusoïdale. À ce moment présent, ceci est nos meilleures
-    résultats pour la partie imaginaire de la valeur faible et que les autres 
+    une tendance sinusoïdale. À ce moment présent, les résultats présentés
+    sont nos meilleures
+    résultats pour la partie imaginaire de la valeur faible et que les autres
     tentatives de mesure n'ont pas été concluantes.
     
     \subsubsection{Implications pour la partie imaginaire}
-    
-    Les interférences présentent un comportement 
-    imprévisible, ce qui indique que nous avons dépassé la longueur de 
-    cohérence du laser. En conséquence, nous observons des interférences 
-    constructives et destructives qui se produisent de manière inconsistante. 
-    %Malgré cette limitation, nos résultats indiquent qu’un 
-    %effet fréquentiel est causé par la mesure faible. 
+
+    Les résultats des décalages fréquentiels mesurés présentent un comportement
+    imprévisible, ce qui indique que nous avons une instabilité dans notre
+    système laser. 
+    %Malgré cette limitation, nos résultats indiquent qu’un
+    %effet fréquentiel est causé par la mesure faible.
     On entend par
     effet fréquentiel un déplacement dans le spectre de fréquence
-    causé par la mesure faible. Ce déplacement se manifeste dans la DSP
-    cependant, nous n'avons pas pu
+    causé par la mesure faible, ce déplacement se manifeste dans la DSP.
+    Cependant, nous n'avons pas pu
     mesurer la partie imaginaire de la valeur faible qui suit nos attentes
     théoriques car les
-    déplacements sont trop petits et incohérent pour obtenir une
+    déplacements sont trop petits et incohérents pour obtenir une
     mesure fiable.
     Pour assurer une meilleure cohérence, il est nécessaire de modifier 
     notre source.
