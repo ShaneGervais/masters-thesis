@@ -17,7 +17,7 @@
     ainsi que l'oscilloscope qui controle les acquisitions de données. 
     \cite{pylablib_thorlabs_kinesis,TektronixTDS5000,oscilloscope_coding}. 
     Nous collectons des données à chaque 
-    $2,5$ dégrés. Pour chaque état d’entrée de polarisation, nous 
+    $2,5$ degrés. Pour chaque état d’entrée de polarisation, nous 
     prenons cinq fichiers distincts que nous moyennons, puis nous 
     comparons leur temps d'arrivé moyen avec le dossier de 
     calibration pour obtenir le délai associé à cet état. 
@@ -45,10 +45,8 @@
     \caption{Résultats expérimentaux pour la partie réelle de la valeur 
     faible du trajet de polarisation 
     $\ket{H}\rightarrow\ket{D}\rightarrow\ket{V}\rightarrow\ket{A}\rightarrow\ket{H}$. 
-    Rapellez-vous que
+    Rappelez-vous que
     nous avons défini l'angle $\theta$ de sorte que $\theta \equiv 2\theta$.
-    La courbe théorique est une fonction cosinus carrée décalée de
-    $11\degree$ de sorte: $cos^2(\theta - 11\degree)$.
     Les barres d’erreurs horizontales représentent l’erreur de 
     la position de l’angle induite par notre 
     support de rotation motorisé de $\pm 0.3 \degree$ \cite{ThorlabsROT}. Ils sont pas visibles, car ils sont
@@ -70,13 +68,14 @@
     employées dans l’expérience sur la vitesse de la lumière, nous 
     mesurons les délais de chaque état $\ket{\psi(\theta)}$. La courbe
     est une fonction cosinus carrée, ce qui conforme avec nos données
-    expérimentales.
+    expérimentales ainsi que le délai mesuré est conforme avec le délai introduit
+    de $167$ $ps$.
     Nous avons également constaté que la partie réelle de la valeur faible
     est bien représentée par la fonction cosinus carrée, ce qui est conforme
     à nos attentes théoriques.
     En effet, la partie réelle de la valeur faible est donnée par l'équation
     \ref{eq:expval_t_1}, qui est une fonction cosinus carrée, avec un terme
-    additionelle de $2sin(\theta)cos(\theta)$, plus sur laquelle nous allons
+    additionnel de $2sin(\theta)cos(\theta)$, plus sur lequel nous allons
     revenir plus tard à la prochaine sous-section.
     %la courbe
     %théorique de cette partie réelle est une valeur cosinus carrée en 
@@ -113,7 +112,7 @@
     \caption{Résultats expérimentaux pour la partie réelle de la valeur 
     faible du trajet de polarisation 
     $\ket{H} \rightarrow \ket{R} \rightarrow \ket{V} \rightarrow \ket{L} \rightarrow\ket{H}$.
-    La courbe théorique est une fonction cosinus carrée: $cos^2(\theta)$.}
+    }
     \label{fig:HRAL_delay_results}
 \end{figure}
 
@@ -127,25 +126,35 @@
     qui ne modifie pas la partie réelle de la valeur faible. 
     En effet, la partie réelle de la valeur faible est toujours représentée
     par la fonction cosinus carrée, ce qui est conforme à nos attentes
-    théoriques trouvées dans l'équation \ref{eq:expval_t_2}. 
-    On ne peut pas 
-    déterminer à partir de la partie réelle de la valeur faible si 
-    l’état initial est elliptique ou circulaire. Les informations sur 
-    l’ellipticité des états de polarisation se 
+    théoriques trouvées dans l'équation \ref{eq:expval_t_2}. Nous
+    pouvons noter que les résultats expérimentaux sont légèrement
+    décalés par rapport à l'axe des états de polarisation d'entrée,
+    de ce trajet de polarisation circulaire et linéaire dont celui
+    circulaire se conforme mieux avec une fonction cosinus carré.
+    Ce dernier est dû à un terme additionnel 
+    dans le trajet de polarisation linéaire ce qu'on discutera plus tard
+    dans la prochaine sous-section comme mentionné.
+    On ne peut pas
+    déterminer à partir de la partie réelle de la valeur faible si
+    l’état initial est elliptique ou circulaire. Les informations sur
+    l’ellipticité des états de polarisation se
     trouvent dans la partie imaginaire de la valeur faible, où un 
     décalage fréquentiel est observé (maximale pour les états
-    circulaires, null pour les états
+    circulaires, nulle pour les états
     linéaires et intermédiaire pour les états elliptiques) ce qui
     permet de distinguer ces états de polarisation. C’est ce que nous allons
     mesurer dans la section suivante.
-    Ensuite, voici les résultats pour le trajet 
-    $\ket{D} \rightarrow \ket{R} \rightarrow \ket{A} \rightarrow \ket{L} \rightarrow \ket{D}$, 
+
+
+    \noindent Ensuite, voici les résultats pour le trajet 
+    $\ket{R} \rightarrow \ket{A} \rightarrow \ket{L} \rightarrow \ket{D} \rightarrow \ket{R}$, 
     qui est le même trajet que le précédent, mais en départant de l'état
-    $\ket{D}$ et en terminant avec l'état $\ket{D}$, qui sont
-    des états de polarisation linéaires possédant les états de base
-    $\ket{H}$ et $\ket{V}$ comme $\ket{R}$ et $\ket{L}$,
-    mais avec pas de composante imaginaire
-    (figure \ref{fig:HDAV_delay_results}).
+    $\ket{R}$ et en terminant avec l'état $\ket{R}$ ainsi que les
+    états de polarisation $\ket{H}$ et $\ket{V}$ sont toujours 
+    en superposition, ce dernier est représenté
+    par le trajet de polarisation de superposition démontré dans
+    l'équation \ref{eq:state3} et à la figure \ref{fig:path5sphere}.
+    Les résultats sont présentés dans la figure \ref{fig:DRAL_delay_results}.
 \end{doublespace}
 
 \begin{figure}[!h!t!p!b]
@@ -153,20 +162,20 @@
     \includegraphics[width=1.0\textwidth]{real_weak_value_path_5.png}
     \caption{Résultats expérimentaux pour la partie réelle de la valeur 
     faible du trajet de polarisation 
-    $\ket{D} \rightarrow \ket{R} \rightarrow \ket{A} \rightarrow \ket{L} \rightarrow \ket{D}$.
+    $\ket{R} \rightarrow \ket{A} \rightarrow \ket{L} \rightarrow \ket{D} \rightarrow \ket{R}$.
     La courbe théorique est une constante de $1/2$.}
     \label{fig:DRAL_delay_results}
 \end{figure}
 
 \begin{doublespace}
-    \noindent Cela s’avère captivant, car elle démontre 
+    \noindent Cela s’avère intéressant car elle démontre 
     incontestablement que nous conservons toujours la même composante 
     réelle de la faible valeur. Comme l'équation \ref{eq:expval_t_1},
     un terme additionelle de $sin(4\theta)/4$ est présent dans
     l'équation \ref{eq:expval_t_3}, ces derniers
     seront discutés plus tard. Donc nous pouvons constater que
-    nos données expérimentales sont conformes se conforment avec une relation
-    constante de $\tau/2$ pour la partie réelle de la valeur faible.
+    nos données expérimentales sont conformes avec une relation
+    constante d'approximativement $1/2$ pour la partie réelle de la valeur faible.
     %ce qui est conforme à nos attentes théoriques.
     %le terme $sin(4\theta)/4$ de l'équation \ref{eq:expval_t_3} 
     %ne contribue pas à la partie réelle de la
@@ -216,11 +225,8 @@
     de polarisation 
     $\ket{H} \rightarrow \ket{D} \rightarrow \ket{V} \rightarrow \ket{A} \rightarrow \ket{H}$. 
     Les données sont calculées à partir de la partie réelle de la valeur faible
-    par les équations \ref{eq:amplitude_a} et \ref{eq:amplitude_b}.
-    Les courbes théoriques provenant de les amplitudes de probabilités
-    de l'équation \ref{eq:expval_t_1} soit
-    $\sqrt{|cos^2(\theta - 11\degree)|}$ pour $|a|$
-    et $\sqrt{|sin^2(\theta - 11\degree)|}$ pour $|b|$.}
+    par les équations \ref{eq:amplitude_a} et \ref{eq:amplitude_b}
+    .}
     \label{fig:HDVA_prob_amp}
 \end{figure}
 
@@ -234,16 +240,13 @@
         \sigma_{b} &= \frac{\sigma_{\mathcal{R}(\expval{\hat{\pi}}_W)}}{2|b|},
     \end{align}
 
-    \noindent Où $\sigma_{\mathcal{R}(\expval{\hat{\pi}}_W)}$ est l'incertitude de la partie réelle de la valeur faible,
+    \noindent où $\sigma_{\mathcal{R}(\expval{\hat{\pi}}_W)}$ est l'incertitude de la partie réelle de la valeur faible,
     et $\sigma_{a}$ et $\sigma_{b}$ sont les incertitudes des amplitudes de probabilité
     $|a|$ et $|b|$ respectivement.
-    Les amplitudes de probabilité sont bien représentées par ceux 
+    Les amplitudes de probabilité sont bien représentées par celles
     des équations \ref{eq:amplitude_a} et \ref{eq:amplitude_b} ainsi que 
     les attentes expérimentales pour les amplitudes de probabilité
-    calculées pour ce trajet de polarisation: \ref{eq:state1} dont 
-    la courbe théorique est donnée par
-    $\sqrt{|cos^2(\theta - 11\degree)|}$ pour $|a|$
-    et $\sqrt{|sin^2(\theta - 11\degree)|}$ pour $|b|$. 
+    calculées pour ce trajet de polarisation: \ref{eq:state1}.
     Nous avons ensuite mesuré les amplitudes de probabilité pour le trajet 
     $\ket{H} \rightarrow \ket{R} \rightarrow \ket{V} \rightarrow \ket{L}$ 
     (figure \ref{fig:HRVL_prob_amp}):
@@ -258,23 +261,22 @@
     Les données sont calculées à partir de la partie réelle de la valeur faible
     par les équations \ref{eq:amplitude_a} et \ref{eq:amplitude_b}.
     Les courbes théoriques provenant de les amplitudes de probabilités
-    de l'équation \ref{eq:expval_t_2} soit $\sqrt{|cos^2(\theta)|}$ pour $a$
-    et $\sqrt{|sin^2(\theta)|}$ pour $b$.}
+    de l'équation \ref{eq:expval_t_2}.}
     \label{fig:HRVL_prob_amp}
 \end{figure}
 
 \begin{doublespace}
-    
-    Ces résultats sont également conformes à nos attentes théoriques,
-    car les amplitudes de probabilité sont bien représentées par ceux 
-    des équations \ref{eq:amplitude_a} et \ref{eq:amplitude_b}, 
+
+    \noindent Ces résultats sont également conformes à nos attentes théoriques,
+    car les amplitudes de probabilité sont bien représentées par celles
+    des équations \ref{eq:amplitude_a} et \ref{eq:amplitude_b},
     ainsi que les attentes expérimentales pour les amplitudes de probabilité
     calculées pour ce trajet de polarisation: \ref{eq:state2} dont 
     la courbe théorique est donnée par
     $\sqrt{|cos^2(\theta)|}$ pour $a$
     et $\sqrt{|sin^2(\theta)|}$ pour $b$.
     Nous avons ensuite mesuré les amplitudes de probabilité pour le trajet 
-    $\ket{D} \rightarrow \ket{R} \rightarrow \ket{A} \rightarrow \ket{L}$ 
+    $\ket{R} \rightarrow \ket{A} \rightarrow \ket{L} \rightarrow \ket{D} \rightarrow \ket{R}$
     (figure \ref{fig:DRAL_prob_amp}):
 \end{doublespace}
 
@@ -283,7 +285,7 @@
     \includegraphics[width=1.0\textwidth]{real_probability_path_5.png}
     \caption{Résultats de l'amplitude de probabilité pour le trajet de 
     polarisation 
-    $\ket{D} \rightarrow \ket{R} \rightarrow \ket{A} \rightarrow \ket{L}$.
+    $\ket{R} \rightarrow \ket{A} \rightarrow \ket{L} \rightarrow \ket{D} \rightarrow \ket{R}$.
     Les données sont calculées à partir de la partie réelle de la valeur faible
     par les équations \ref{eq:amplitude_a} et \ref{eq:amplitude_b}.
     Les courbes théoriques provenant de les amplitudes de probabilités
@@ -294,7 +296,7 @@
 
 \begin{doublespace}
     \noindent Ces résultats démontre bien que les amplitudes de probabilité,
-    soit $\mathcal{R}(a)$ est constante a une valeur de $\frac{1}{\sqrt{2}}$, 
+    soit $\mathcal{R}(a)$ est approximativement constant a une valeur de $\frac{1}{\sqrt{2}}$, 
     qui est très interessant, car cela démontre une superposition constante 
     des états de bases $\ket{H}$ et $\ket{V}$ dans ce trajet de polarisation
     dont la partie réelle de la valeur faible est toujours

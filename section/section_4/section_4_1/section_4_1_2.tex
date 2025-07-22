@@ -3,18 +3,20 @@
     $\ket{H} \rightarrow \ket{D} \rightarrow \ket{V} \rightarrow \ket{A} \rightarrow \ket{H}$ 
     et $\ket{H} \rightarrow \ket{R} \rightarrow \ket{V} \rightarrow \ket{L} \rightarrow \ket{H}$ 
     suivent une relations expérimentale d'un cosinus carré et que le 
-    trajet $\ket{D} \rightarrow \ket{R} \rightarrow \ket{A} \rightarrow \ket{L} \rightarrow \ket{D}$
+    trajet $\ket{R} \rightarrow \ket{A} \rightarrow \ket{L} \rightarrow \ket{D} \rightarrow \ket{R}$
     suit une relation constante de $\tau/2$ pour la partie réelle de la valeur faible
     dans les figures \ref{fig:HDAV_delay_results}, \ref{fig:HRAL_delay_results} et \ref{fig:DRAL_delay_results} respectivement, 
-    comme nous l'avons vu dans la section précédente. Ainsi, que les 
+    comme nous l'avons vu dans la section précédente. Ainsi, les
     amplitudes de probabilité réelles de ces trajets de polarisation
     dans les figures \ref{fig:HDVA_prob_amp}, \ref{fig:HRVL_prob_amp} et \ref{fig:DRAL_prob_amp}
     suivent respectivement les relations dans les équations
-    \ref{eq:amplitude_a} et \ref{eq:amplitude_b}. Cependant, 
+    \ref{eq:amplitude_a} et \ref{eq:amplitude_b}. 
+    
+    \noindent Cependant, 
     nous avons remarqué que les données expérimentales pour les trajets
     dans les figures \ref{fig:HDAV_delay_results} et \ref{fig:HRAL_delay_results}
     sont légèrement décalées par rapport à l'axe des états de polarisation
-    d'entrée. Nous concacrons que ce décalage est dû au terme additionnel
+    d'entrée. Nous consacrons que ce décalage est dû au terme additionnel
     mentionné précédemment, notamment le terme le terme 
     $2sin(\theta)cos(\theta)$ qui est présent dans l'équation \ref{eq:expval_t_1}.
     Ce terme additionnel apporte des résultats de la partie réelle de la valeur faible
@@ -28,14 +30,60 @@
     non décalé, lors de la mesure de la partie réelle de la valeur faible.
     Or, nous savons que le laser impulsionnel possède une faible 
     longueur de cohérence (voir figure \ref{fig:vis}). 
-    Par conséquent, ce terme 
-    disparait car la visibilité de l'interférence est faible. Ainsi, ce 
-    terme génère du bruit et provoque le décalage observée entre les équations
+    Nous démontrons
+    l'effet de ce terme en fonction de la visibilité avec l'équation:
+
+    \begin{equation}
+        \expval{\hat{t}}_{\text{vis}} = \frac{\tau}{2}(cos^2(\theta) + 2\mathcal{V} sin(\theta)cos(\theta))\label{eq:vis_eq}
+    \end{equation}
+    
+    où $\mathcal{V}$ est la visibilité de ce terme d'interférence.
+    Ainsi, lorsque la visibilité est faible, le terme d'interférence
+    est faible et donc négligé. Nous démontrons
+    des différentes valeurs de visibilité et comment le terme d'interférence
+    affecte la partie réelle de la valeur faible dans la figure \ref{fig:vis_real}.
+
+    \begin{figure}[!htpb]
+        \centering
+        \includegraphics[width=0.8\textwidth]{real_part_visibility.png}
+        \caption{Effet de la visibilité de l'interférence sur la partie réelle de la valeur faible.}
+        \label{fig:vis_real}
+    \end{figure}
+
+    \noindent Ainsi, ce 
+    terme génère du bruit et provoque le décalage observé entre les équations
     \ref{eq:expval_t_1} et \ref{eq:expval_t_2} et dans les figures
     \ref{fig:HDAV_delay_results} et \ref{fig:HRAL_delay_results} 
     respectivement. Nous supposons le même phénomène pour le trajet
-    $\ket{D} \rightarrow \ket{R} \rightarrow \ket{A} \rightarrow \ket{L} \rightarrow \ket{D}$ 
-    dans la figure \ref{fig:DRAL_delay_results}.
+    $\ket{R} \rightarrow \ket{A} \rightarrow \ket{L} \rightarrow \ket{D} \rightarrow \ket{R}$ 
+    dans la figure \ref{fig:DRAL_delay_results}. 
+    
+    \noindent Nous allons maintenant examiner les valeurs des visibilités
+    nécessaires pour les trajets de polarisation linéaire avec un
+    ajustement paramétrique avec l'équation \ref{eq:vis_eq} dans la
+    figure \ref{fig:vis_real_path_3}.
+
+    \begin{figure}[!htpb]
+        \centering
+        \includegraphics[width=0.8\textwidth]{real_weak_value_vis_3_analysis.png}
+        \caption{Trajet de polarisation $\ket{H} \to \ket{D} \to \ket{V} \to \ket{A} \to \ket{H}$
+        avec ajustement paramétrique pour le terme d'interférence.}
+        \label{fig:vis_real_path_3}
+    \end{figure}
+
+    \noindent Nous calculons que la visibilité du terme additionelle $2sin(\theta)cos(\theta)$ 
+    est de $\mathcal{V} = 0.11$ ce qui démontre que ce terme peut 
+    déplacer la partie réelle de la valeur faible. Ce décalage est d'environ $11$ degrés du centre.
+    Pour le trajet de polarisation en superposition, nous abservons une visibilité
+    plus faible que le trajet de polarisation linéaire $\mathcal{V} \approx 0$ 
+    car les résultats sont approximativement constant à $1/2$,
+    démontrant une faible visibilité pour des trajets en superposition
+    qui pose une difficulté à mesurer. Or, nous sommes en mesure de caractériser les états de 
+    polarisation d'entrée avec succès. Il y a cependant 
+    l'information de la partie complexe de l'état quantique que nous devons mesurer. 
+    La section suivante traitera de nos tentatives de mesure de la 
+    partie imaginaire. 
+
     %En effet, le 
     %chemin 1 suit moins bien la théorie que le chemin 2 car le chemin 1 
     %est celui qui possède ce terme d'interférence dont la visibilité est 
@@ -46,9 +94,9 @@
     %que nous avons correctement mesuré la partie réelle de la valeur 
     %faible et nous l'avons utilisée pour caractériser les amplitudes de 
     %probabilité de nos états initiaux. 
-    Or, nous sommes en mesure de caractériser les états de 
-    polarisation d'entrée avec succès. Il y a cependant 
-    l'information de la partie complexe de l'état quantique que nous devons mesurer. 
-    La section suivante traitera de nos tentatives de mesure de la 
-    partie imaginaire. 
+    %Or, nous sommes en mesure de caractériser les états de 
+    %polarisation d'entrée avec succès. Il y a cependant 
+    %l'information de la partie complexe de l'état quantique que nous devons mesurer. 
+    %La section suivante traitera de nos tentatives de mesure de la 
+    %partie imaginaire. 
 \end{doublespace}
