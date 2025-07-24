@@ -423,78 +423,82 @@
     système quantique composé de deux objets : le système à mesurer $S$ 
     et l’appareil de mesure (pointeur) $P$. Ces deux objets sont traités 
     comme des objets de la mécanique quantique couplés dans un système 
-    total $T$ \cite{Hairiri,vonNeumann}. Lorsqu'un état quantique est 
+    total $T$ \cite{vonNeumann}. Le système total $T$ est 
+    défini comme le produit tensoriel du système $S$ et du pointeur $P$. 
+    Lorsqu'un état quantique est 
     soumis à une mesure, il se trouve initialement dans un état superposé 
     inconnu, noté $\ket{\psi}_S = \sum_{j}^{N}c_{j}\ket{s_j}_S$, dont les 
     composantes sont des combinaisons linéaires de vecteurs propres 
     $\ket{s_j}_S$, d'un observable du système $\hat{S}$, avec des valeurs 
-    propres $s_j$ (avec coefficients complexes) et entraine un déplacement 
-    du pointeur en fonction de la force d’interaction $\delta$ avec la 
-    valeur propre $s_j$, $\Delta p =\delta s_j$ appelée la valeur moyenne 
-    faible \cite{Lundeen_Bamber,Hairiri,vonNeumann}. 
+    propres $s_j$ (avec coefficients complexes), et $N$ est le nombre 
+    d'états de base du système, qui est couplé à un pointeur 
+    initialement dans l’état $\ket{\bar{p} = 0}_P$ dans la base $P$ 
+    où $\bar{p}$ est la position moyenne de la variable du pointeur 
+    $p$, qui est initialement à zéro \cite{Hairiri,vonNeumann}. 
+    L’état du système total $T$ est alors écrit comme suit :
 
-    \noindent Cette réduction de l’état quantique se traduit par une 
-    translation de la position du pointeur, initialement dans l’état 
-    $\ket{\xi}_P =\ket{\bar{p} = 0}_P$ dans la base $P$, où $\bar{q}$ 
-    représente la valeur moyenne d’une variable $p$ avec une distribution 
-    de probabilité $\sigma$ passe de sa position initiale à 
-    $\ket{\bar{p} =\delta s_j}_P$. La quantification de cette interaction 
-    se définit à travers un opérateur d’interaction, communément désigné 
-    sous le nom d’opérateur d’interaction de von Neumann. Ce dernier est 
+    \begin{equation}
+        \ket{\Psi^i}_T = \ket{\psi}_S \otimes \ket{\bar{p} = 0}_P
+    \end{equation}
+
+    \noindent L’interaction sur le système $S$ et le pointeur $P$ est 
+    décrite par l’opérateur 
+    d’interaction de von Neumann, qui est appliqué à l’état
+    initial du système total $T$ \cite{vonNeumann}. Cet opérateur d’interaction est 
+    responsable de la perturbation du système quantique et de la 
+    translation du pointeur en fonction de la force d’interaction $\delta$ 
+    (voir figure \ref{fig:interaction}), dont l'état finale du pointeur est 
+    $\ket{\bar{p} = \delta}_P$, appelée la valeur moyenne 
+    faible dont l'état finale se trouve $\ket{\Psi^f}_T$ 
+    \cite{Lundeen_Bamber,Hairiri,vonNeumann}. La quantification de cette interaction 
+    se définit à travers un opérateur d’interaction $\hat{U}$, 
+    communément désigné sous le nom d’opérateur d’interaction de 
+    von Neumann. Ce dernier est 
     exprimé comme suit :
 
     \begin{equation}
-        \hat{U} \equiv exp\Bigl( -\frac{i\mathcal{H}t}{\hbar} \Bigr)
+        \hat{U} \equiv exp\Bigl( -\frac{i}{\hbar}\int \mathcal{H} dt \Bigr)
     \end{equation}
 
-    \noindent Il s'agit d'un opérateur d'évolution temporelle, où $t$ 
+    \noindent Il s'agit d'un opérateur d'évolution temporelle, où $dt$ 
     représente le temps d'interaction avec le système, $\hbar$ la 
     constante de Planck et $\mathcal{H}$ le hamiltonien du système total 
     $T$, qui est défini comme suit :
 
     \begin{equation}
-        \mathcal{H} \equiv g(\hat{S} \otimes \hat{q})
+        \mathcal{H} \equiv g(t)(\hat{S} \otimes \hat{q})
     \end{equation}
 
-    \noindent soit $g$ la constante de couplage, qui doit être réelle 
+    \noindent soit $g(t)$ la constante de couplage, qui doit être réelle 
     pour que le hamiltonien soit hermitien, et $\hat{q}$ la variable 
-    pointeur conjuguée de l'observable $\hat{S}$. Le pointeur et l’état 
-    mesuré sont étroitement liés dans un état décrivant l’ensemble du 
-    système $T$, initialement écrit sous la forme :
-
-    \begin{equation}
-        \ket{\Psi^i}_T = \ket{\psi}_S \otimes \ket{\bar{p}=0}_P    
-    \end{equation}
-
-    \noindent Après la mesure, le pointeur se déplace en fonction de la 
-    force d’interaction $\delta\equiv\frac{gt}{\hbar}$. Lorsque combiné, 
-    l'état du système évolue comme suit :
-
-    \begin{align}
-        \ket{\Psi^f}_T &= \hat{U} \Bigl[\ket{\psi}_S \otimes \ket{\bar{p} = 0}_P\Bigr]\\
-        &= \sum_{j}^{N} c_{j}\ket{s_j}_S \otimes \ket{\bar{p} = \delta s_j}_P
-    \end{align}
-
-    \noindent Dans un régime de mesures faibles, où l’interaction est 
+    pointeur conjuguée de l'observable $\hat{S}$. Dans un régime de mesures faibles, où l’interaction est 
     plus faible que la distribution de probabilité du pointeur, 
     c’est-à-dire $\delta \ll \sigma$, le système mesuré est faiblement 
     couplé avec le pointeur, entraînant ainsi un effondrement minimal 
-    préservant la superposition. La mesure de $\hat{S}$ par la suite 
-    déplace légèrement $\hat{p}$ \cite{Hairiri,Lundeen_Resch}. Considérons 
-    ce qui suit:
-    
+    préservant la superposition (voir figure \ref{fig:interaction}).
+    La force de l'interaction est définie par 
+    $\delta \equiv \frac{\int g(t) dt}{\hbar} = \frac{gt}{\hbar}$ \cite{Lundeen_Resch,Lundeen_thesis}, 
+    donc l'opérateur d'interaction de von Neumann est écrit comme suit :
+
     \begin{equation}
-        \hat{U}\ket{\Psi^{i}}_T = \hat{U}\Bigl[ \ket{\psi}_S \otimes \ket{\bar{p} = 0}_P \Bigr]
+        \hat{U} = e^{-i\delta(\hat{S} \otimes \hat{q})}
     \end{equation}
 
-    \noindent Examinons une étude plus approfondie du système initial 
-    total qui subit une interaction faible. Réécrivons l'opérateur 
-    d'interaction de von Neumann sous la forme d'une série de Taylor.
+    \noindent Alors, au cours de l'interaction, 
+    l’opérateur d’interaction de von Neumann est appliqué à 
+    l’état initial du système total $T$ comme ce suit: 
 
     \begin{align}
         \hat{U}\ket{\Psi^{i}}_T &= \hat{U}\Bigl[ \ket{\psi}_S \otimes \ket{\bar{p} = 0}_P \Bigr]\\
-        &= e^{-i\delta(\hat{S} \otimes \hat{q})}\Bigl[ \ket{\psi}_S \otimes \ket{\bar{p} = 0}_P \Bigr]\\
-        &= \Bigl( 1 - i\delta(\hat{S} \otimes \hat{q}) + \mathcal{O}(\delta^2) \Bigr)\Bigl[ \ket{\psi}_S \otimes \ket{\bar{p} = 0}_P \Bigr]\\
+        &= e^{-i\delta(\hat{S} \otimes \hat{q})}\Bigl[ \ket{\psi}_S \otimes \ket{\bar{p} = 0}_P \Bigr]
+    \end{align}
+
+    \noindent où nous allons maintenant examiner une étude plus approfondie
+    sur cette interaction en récrivant l’opérateur d’interaction de von Neumann
+    sous la forme d'une série de Taylor. 
+
+    \begin{align}
+        \hat{U}\ket{\Psi^{i}}_T &= \Bigl( 1 - i\delta(\hat{S} \otimes \hat{q}) + \mathcal{O}(\delta^2) \Bigr)\Bigl[ \ket{\psi}_S \otimes \ket{\bar{p} = 0}_P \Bigr]\\
         &=  \ket{\psi}_S \otimes \ket{\bar{p} = 0}_P - i\delta\hat{S}\ket{\psi}_S\otimes\hat{q}\ket{\bar{p} = 0}_P + \mathcal{O}(\delta^2)\ket{\psi}_S \otimes \ket{\bar{p}=0}_P
     \end{align}
 
