@@ -5,14 +5,14 @@
 \contentsline {section}{\numberline {}Sommaire}{v}{Doc-Start}%
 \contentsline {section}{\numberline {}Abstract}{vii}{Doc-Start}%
 \contentsline {section}{\numberline {}Liste des tableaux}{x}{Doc-Start}%
-\contentsline {section}{\numberline {}Liste des figures}{xv}{Doc-Start}%
-\contentsline {section}{Liste des symboles}{xvi}{Doc-Start}%
+\contentsline {section}{\numberline {}Liste des figures}{xvi}{Doc-Start}%
+\contentsline {section}{Liste des symboles}{xvii}{Doc-Start}%
 \contentsline {section}{\numberline {1}INTRODUCTION DES PROCÉDURES DIRECTES POUR LES MESURES QUANTIQUES}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Introduction}{1}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Motivation de la thèse}{4}{subsection.1.2}%
 \contentsline {section}{\numberline {2}LES MESURES FAIBLES TEMPORELLES D'UN SYSTÈME QUANTIQUE}{7}{section.2}%
 \contentsline {subsection}{\numberline {2.1}La tomographie quantique}{7}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Introduction aux mesures faibles}{14}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}Introduction aux mesures faibles}{16}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Fondamentaux théoriques des mesures faibles}{19}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Proposition d'une procédure directe avec une mesure faible temporelle}{25}{subsection.2.4}%
 \contentsline {subsubsection}{\numberline {2.4.1}La partie réelle du système}{26}{subsubsection.2.4.1}%
@@ -25,7 +25,7 @@
 \contentsline {subsubsection}{\numberline {3.1.3}Analyse et résultats de l'expérience de mesure de la vitesse de la lumière}{50}{subsubsection.3.1.3}%
 \contentsline {subsection}{\numberline {3.2}Caractérisation de la partie réelle de la valeur faible}{62}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Montage et étapes de préparation}{63}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Mesure faible temporelle}{70}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2}Mesure faible temporelle}{72}{subsubsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.3}Caractérisation de la partie imaginaire de la valeur faible}{74}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Montage proposé}{74}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Résultats attendus théoriques de la partie imaginaire de la valeur faible}{78}{subsubsection.3.3.2}%

@@ -71,15 +71,17 @@
     polarisation diagonale et antidiagonale, et/ou $\{\ket{R}, \ket{L}\}$ 
     pour la polarisation circulaire. Les différences d’intensité 
     observées dans ces diverses configurations de mesure projective 
-    permettent de reconstruire les éléments de matrice densité 
+    permettent de reconstruire les éléments de la matrice de densité 
     à l'aide d'un algorithme de maximum de vraisemblance. 
     
     \noindent En photonique quantique, cette matrice densité peut 
     également être exprimée en termes des paramètres de Stokes 
     \cite{Kwiat}. Ce derniers décrivent les paramètres de Stokes 
-    décrivent complètement l’état 
-    de polarisation et ils sont liés aux probabilités de détection dans 
-    différentes bases de polarisation \cite{hecht2012optics}. 
+    décrivent complètement l’état de polarisation et ils sont liés aux probabilités de détection dans 
+    différentes bases de polarisation \cite{hecht2012optics}. Avec ces
+    paramètres, nous pouvons reconstruire la matrice densité
+    à partir des probabilités de détection dans les différentes bases et
+    de visualiser l'état de polarisation sur la sphère de Poincaré. 
     Les paramètres sont définis par:
     
     \begin{equation}
@@ -97,7 +99,7 @@
         \end{pmatrix}
     \end{equation}
     
-    \noindent Où $P_{\ket{H}}$ la probabilité de détection pour l'état de 
+    \noindent où $P_{\ket{H}}$ la probabilité de détection pour l'état de 
     polarisation horizontale $\ket{H}$ et $P_{\ket{V}}$ la probabilité de 
     détection pour l'état de polarisation verticale $\ket{V}$. Ainsi, les 
     paramètres de Stokes: $S_0$ représente l’intensité ou probabilité 
@@ -243,7 +245,7 @@
         \sqrt{\sum_{i=1}^{3} S_i^2} = \text{DOP}
     \end{equation}
 
-    \noindent Où \text{DOP}, le dégré de polarisation, peut être soit $1$ 
+    \noindent où \text{DOP}, le dégré de polarisation, peut être soit $1$ 
     pour un état pur (entièrement polarisé) ou strictement inférieur à $1$ 
     pour un état mixte (partiellement polarisé). Il est possible de 
     visualiser l’état de polarisation sur la sphère de Poincaré (figure 
@@ -255,7 +257,7 @@
     \begin{figure}[!h!t!p!b!]
         \centering
         \includegraphics[width=1.0\textwidth]{poincare_sphere.png}
-        \caption{La sphère Poincaré. Ce dernier est une représentation 
+        \caption{La sphère Poincaré est une représentation 
         géométrique des états de polarisation. Un point sur la surface de la sphère
         représente un état de polarisation complètement polarisé, lorsqu'un point
         situé à l'intérieur de la sphère représente un état de polarisation
@@ -273,10 +275,12 @@
     d’un état de polarisation. Toutefois, cette méthode présente une inconvéniente 
     majeure : elle nécessite un grand nombre de mesures projectives pour
     obtenir une estimation précise de la matrice densité. En effet,
-    la tomographie quantique est indirecte \cite{Lundeen_Direct_Measurement},
-    en particulier lorsque la dimension de l’espace d’état est élevée.
-    De plus, elle ne permet pas d'accéder facilement à des éléments individuels de la matrice
-    densité, car elle se repose sur une reconstruction globale
+    la tomographie quantique est une méthode indirecte pour 
+    caractériser un état quantique \cite{Lundeen_Direct_Measurement}
+    car elle repose sur la reconstruction de la matrice densité à partir
+    de mesures projectives dans différentes bases.
+    De plus, elle ne permet pas d'accéder facilement à des
+    éléments individuels de la matrice densité, car elle se repose sur une reconstruction globale
     \cite{Guilleaum}. Ces limitations rendent la tomographie peu adaptée
     aux applications nécessitant un accès direct ou simultané à certains 
     paramètres de la matrice densitée, ou des mesures en temps réel
@@ -346,14 +350,16 @@
         \centering
         \includegraphics[width=1.0\textwidth,page=3]{FIGURES.pdf} % Selects page 2
         \caption{Considérons qu'un pointeur possède une forme gaussienne 
-        avec une position moyenne, démontré par la ligne pointillée, avec 
+        avec une position moyenne, représentée par la ligne pointillée, avec 
         une distribution de probabilité $\sigma$ dans l’état 
         $\ket{\psi} = a\ket{H} + b\ket{V}$ et un coefficient d’interaction 
         $\delta$ qui décrivent la force de séparation des états. 
         a) Interaction forte : une interaction forte impliquerait un 
         effondrement complet de l’état séparant complètement les états de 
-        base. Cela se produirait lorsque $\delta \gg \sigma$. Par conséquent, 
-        nous mesurerions l’un ou l’autre via une mesure projective. 
+        base. Ici, cet effondrement est représenté par la 
+        séparation des composantes H et V de l'état par un délai 
+        plus grand que la largeur de l'impulsion $\delta \gg \sigma$. 
+        Par conséquent, nous mesurerions l’un ou l’autre via une mesure projective. 
         b) Interaction faible : Elle consiste en une faible interaction avec 
         le système qui permet aux deux états de base de se chevaucher, de 
         sorte que, lors d’une mesure projective, nous obtenions en retour un 
@@ -367,8 +373,7 @@
     inférieur à la largeur de la distribution des probabilités. Cette 
     méthode permet ainsi de mesurer directement le déplacement du pointeur 
     après une mesure projective et d’en obtenir la valeur faible. 
-    La valeur faible $S_W$, aussi écrite sous la forme 
-    $\expval{\hat{S}}_W$, dont l'indice $W$ signifie 
+    La valeur faible $\expval{\hat{S}}_W$, dont l'indice $W$ signifie 
     \guillemetleft Weak\guillemetright \space cet-à-dire faible en anglais pour la base des
     mesures faibles \cite{Lundeen_Resch}. Ce dernier est défini
     comme la valeur moyenne d’un observable $\hat{S}$ du système,
@@ -376,7 +381,7 @@
     projective $\ket{\psi_f}$, qui est le résultat d’une mesure faible.
     
     \begin{equation}
-        S_W = \frac{\bra{\psi_f}\hat{S}\ket{\psi_i}}{\bra{\psi_f}\ket{\psi_i}}
+        \expval{\hat{S}}_W = \frac{\bra{\psi_f}\hat{S}\ket{\psi_i}}{\bra{\psi_f}\ket{\psi_i}}
     \end{equation}
 
     \noindent La valeur faible est une variable complexe composée d'une partie
@@ -386,7 +391,7 @@
     caractérisation complète \cite{Lundeen_Bamber}.
 
     \begin{equation}
-        S_W = \frac{1}{\delta}\Biggl( \expval{\hat{p}} + i4\sigma^2 \expval{\hat{q}} \Biggr)\label{eq:weakvalue_components}
+        \expval{\hat{S}}_W = \frac{1}{\delta}\Biggl( \expval{\hat{p}} + i4\sigma^2 \expval{\hat{q}} \Biggr)\label{eq:weakvalue_components}
     \end{equation}
 
     \noindent Les mesures faibles servent d’œil de Judas au monde 
@@ -469,7 +474,7 @@
         \mathcal{H} \equiv g(t)(\hat{S} \otimes \hat{q})
     \end{equation}
 
-    \noindent soit $g(t)$ la constante de couplage, qui doit être réelle 
+    \noindent où $g(t)$ est la constante de couplage, qui doit être réelle 
     pour que le hamiltonien soit hermitien, et $\hat{q}$ la variable 
     pointeur conjuguée de l'observable $\hat{S}$. Dans un régime de mesures faibles, où l’interaction est 
     plus faible que la distribution de probabilité du pointeur, 
@@ -495,26 +500,26 @@
 
     \noindent où nous allons maintenant examiner une étude plus approfondie
     sur cette interaction en récrivant l’opérateur d’interaction de von Neumann
-    sous la forme d'une série de Taylor. 
+    sous la forme d'une série de Taylor: 
 
     \begin{align}
         \hat{U}\ket{\Psi^{i}}_T &= \Bigl( 1 - i\delta(\hat{S} \otimes \hat{q}) + \mathcal{O}(\delta^2) \Bigr)\Bigl[ \ket{\psi}_S \otimes \ket{\bar{p} = 0}_P \Bigr]\\
         &=  \ket{\psi}_S \otimes \ket{\bar{p} = 0}_P - i\delta\hat{S}\ket{\psi}_S\otimes\hat{q}\ket{\bar{p} = 0}_P + \mathcal{O}(\delta^2)\ket{\psi}_S \otimes \ket{\bar{p}=0}_P
     \end{align}
 
-    \noindent Où $\mathcal{O}(\delta^2)$ correspond a les ordres plus 
+    \noindent où $\mathcal{O}(\delta^2)$ correspond aux ordres plus 
     élevés de la série de Taylor, que nous négligeons. En suivant la 
     procédure de mesure faible, nous devons effectuer une postsélection 
     ultérieure sur le système avec l’état $\ket{\varphi}_S$, qui a les 
-    mêmes états de base que $\ket{\psi}_S$. 
+    mêmes états de base que $\ket{\psi}_S$:
 
     \begin{align}
         \ket{\varphi}_S\bra{\varphi}_S\hat{U}\ket{\Psi^{i}}_T &= \ket{\varphi}_S\bra{\varphi}_S\ket{\psi}_S \otimes \ket{\bar{p} = 0}_P - i\delta\ket{\varphi}_S\bra{\varphi}_S\hat{S}\ket{\psi}_S\otimes\hat{p}\ket{\bar{p} = 0}_P
     \end{align}
 
-    \noindent En normalisant l’état du système total avec le module de la 
+    \noindent en normalisant l’état du système total avec le module de la 
     probabilité $\bra{\varphi}_S\ket{\psi}_S =\sqrt{Prob}$, dont 
-    $Prob\equiv |\bra{\varphi}_S\ket{\psi}_S|^2$ \cite{Lundeen_Resch,Lundeen_thesis, Steinberg_prob_div}.
+    $Prob\equiv |\bra{\varphi}_S\ket{\psi}_S|^2$ \cite{Lundeen_Resch,Lundeen_thesis, Steinberg_prob_div}:
 
     \begin{align}
         \ket{\varphi}_S\frac{\bra{\varphi}_S\hat{U}\ket{\Psi^{i}}_T}{\bra{\varphi}_S\ket{\psi}_S} &= \ket{\varphi}_S\frac{\bra{\varphi}_S\ket{\psi}_S}{\bra{\varphi}_S\ket{\psi}_S} \otimes \ket{\bar{p} = 0}_P - i\delta\ket{\varphi}_S\frac{\bra{\varphi}_S\hat{S}\ket{\psi}_S}{\bra{\varphi}_S\ket{\psi}_S}\otimes\hat{q}\ket{\bar{p} = 0}_P\label{eq:pre-div}\\
@@ -547,7 +552,7 @@
     proportionnelle à ce qui suit :
 
     \begin{equation}
-        S_W \equiv \frac{\bra{\varphi}_S\hat{S}\ket{\psi}_S}{\bra{\varphi}_S\ket{\psi}_S}
+        \expval{\hat{S}}_W \equiv \frac{\bra{\varphi}_S\hat{S}\ket{\psi}_S}{\bra{\varphi}_S\ket{\psi}_S}
     \end{equation}
 
     \noindent Il s’agit de la valeur faible dérivée pour la première 
@@ -565,10 +570,10 @@
     Pour conclure, écrivons l’état final avec cette valeur :
 
     \begin{align}
-        \ket{\Psi^f}_T &= \bra{\varphi}_S\ket{\psi}_S \Bigl[ \ket{\bar{p} = 0}_P - i\delta S_W \hat{q}\ket{\bar{p}=0}_P \Bigr] \otimes \ket{\varphi}_S\\
-        &= \bra{\varphi}_S\ket{\psi}_S\Bigl[ 1 - i\delta S_W \hat{p} \Bigr] \ket{\bar{p} = 0} \otimes \ket{\varphi}_S\\
-        &= \bra{\varphi}_S\ket{\psi}_S e^{-i\delta S_W \hat{q}} \ket{\bar{p} = 0} \otimes \ket{\varphi}_S\\
-        &= \ket{\psi}_S e^{-i\delta S_W \hat{q}}\ket{\bar{p}=0}
+        \ket{\Psi^f}_T &= \bra{\varphi}_S\ket{\psi}_S \Bigl[ \ket{\bar{p} = 0}_P - i\delta \expval{\hat{S}}_W \hat{q}\ket{\bar{p}=0}_P \Bigr] \otimes \ket{\varphi}_S\\
+        &= \bra{\varphi}_S\ket{\psi}_S\Bigl[ 1 - i\delta \expval{\hat{S}}_W \hat{p} \Bigr] \ket{\bar{p} = 0} \otimes \ket{\varphi}_S\\
+        &= \bra{\varphi}_S\ket{\psi}_S e^{-i\delta \expval{\hat{S}}_W \hat{q}} \ket{\bar{p} = 0} \otimes \ket{\varphi}_S\\
+        &= \ket{\psi}_S e^{-i\delta \expval{\hat{S}}_W \hat{q}}\ket{\bar{p}=0}
     \end{align}
 
     \noindent Nous observons que si nous avons une mesure faible parfaite, 
@@ -587,28 +592,28 @@
     comme dans \cite{Lundeen_thesis,Lundeen_Resch}:
 
     \begin{align}
-        \bra{\bar{p} = \delta s_j}\hat{p}\ket{\bar{p}=\delta s_j} &= -i\delta \mathcal{R}\Bigl(S_W\Bigr)\bra{\bar{p}=\delta s_j}(\hat{p}\hat{q} - \hat{q}\hat{p})\ket{\bar{p}=\delta s_j}\\
-        &+ \delta \mathcal{I}\Bigl(S_W\Bigr)\bra{\bar{p} = \delta s_j}(\hat{p}\hat{q} + \hat{q}\hat{p})\ket{\bar{p}=\delta s_j}\\
-        &= \delta\mathcal{R}\Bigl(S_W\Bigr) = \expval{\hat{p}}
+        \bra{\bar{p} = \delta s_j}\hat{p}\ket{\bar{p}=\delta s_j} &= -i\delta \mathcal{R}\Bigl(\expval{\hat{S}}_W\Bigr)\bra{\bar{p}=\delta s_j}(\hat{p}\hat{q} - \hat{q}\hat{p})\ket{\bar{p}=\delta s_j}\\
+        &+ \delta \mathcal{I}\Bigl(\expval{\hat{S}}_W\Bigr)\bra{\bar{p} = \delta s_j}(\hat{p}\hat{q} + \hat{q}\hat{p})\ket{\bar{p}=\delta s_j}\\
+        &= \delta\mathcal{R}\Bigl(\expval{\hat{S}}_W\Bigr) = \expval{\hat{p}}
     \end{align}
 
     \noindent Ainsi, pour la variable conjuguée:
 
     \begin{align}
-        \bra{\bar{q} = \delta s_j}\hat{q}\ket{\bar{P}=\delta s_j} &= -i\delta \mathcal{R}\Bigl(\hat{S}_W\Bigr)\bra{\bar{p}=\delta s_j}(\hat{q}^2 - \hat{q}^2)\ket{\bar{p}=\delta s_j}\\
-        &+ \delta \mathcal{I}\Bigl(\hat{S}_W\Bigr)\bra{\bar{p} = \delta s_j}(\hat{q}^2 + \hat{q}^2)\ket{\bar{p}=\delta s_j}\\
-        &= \frac{\delta}{4\sigma^2}\mathcal{I}\Bigl(\hat{S}_W\Bigr)
+        \bra{\bar{q} = \delta s_j}\hat{q}\ket{\bar{P}=\delta s_j} &= -i\delta \mathcal{R}\Bigl(\expval{\hat{S}}_W\Bigr)\bra{\bar{p}=\delta s_j}(\hat{q}^2 - \hat{q}^2)\ket{\bar{p}=\delta s_j}\\
+        &+ \delta \mathcal{I}\Bigl(\expval{\hat{S}}_W\Bigr)\bra{\bar{p} = \delta s_j}(\hat{q}^2 + \hat{q}^2)\ket{\bar{p}=\delta s_j}\\
+        &= \frac{\delta}{4\sigma^2}\mathcal{I}\Bigl(\expval{\hat{S}}_W\Bigr)
     \end{align}
 
     \noindent Ensemble, la valeur faible s'écrit:
 
     \begin{equation}
-        \hat{S}_W = \frac{1}{\delta}\Bigl( \expval{\hat{p}} + i4\sigma^2\expval{\hat{q}} \Bigr)
+        \expval{\hat{S}}_W = \frac{1}{\delta}\Bigl( \expval{\hat{p}} + i4\sigma^2\expval{\hat{q}} \Bigr)
     \end{equation}
 
     \noindent En démontrant que la valeur faible est proportionnelle à 
     la fonction d’onde (l'état quantique), comme dans 
-    \cite{Lundeen_Resch}, ainsi qu’on peut en déduire directement les 
+    \cite{Lundeen_Resch}, ainsi on peut en déduire directement les 
     valeur moyenne des observables du système quantique, qu'ils sont en fait
     les composantes réelles et imaginaires de la valeur faible. 
     Nous pouvons caractériser l'état de polarisation du
@@ -649,7 +654,7 @@
 \begin{doublespace}
     Nous voulons caractériser l'état de polarisation avec une mesure 
     faible temporelle. Pour ce faire, il est nécessaire de calculer 
-    les composantes de la valeur faible $\pi_W$ du 
+    les composantes de la valeur faible $\expval{\hat{\pi}}_W$ du 
     système attendue que nous allons implémenter. Pour y parvenir, nous devons 
     d’abord analyser chaque composante de cette valeur. Tout d’abord, 
     examinons la partie réelle en définissant les paramètres de 
@@ -661,10 +666,11 @@
         \ket{\psi} \equiv a\ket{H} + b\ket{V}
     \end{equation}
 
-    \noindent où $a$ et $b$ sont les amplitudes de probabilité de 
-    $\ket{H}$ l'état de polarisation horizontale et $\ket{V}$ l'état 
-    de polarisation verticale, respectivement, avec 
-    $|a|^2 + |b|^2=1 $. Le pointeur du système utilisé possède un profil temporel 
+    \noindent où $a$ et $b$ sont les amplitudes de probabilité associées aux états de polarisation 
+    $\ket{H}$ et $\ket{V}$, respectivement, avec 
+    $|a|^2 + |b|^2 = 1$, ainsi que 
+    $\bra{H}\ket{\psi} = a$ et $\bra{V}\ket{\psi} = b$.
+    Le pointeur du système utilisé possède un profil temporel 
     gaussien pour un faisceau, caractérisé par une variable temporelle 
     $t$ et une largeur temporelle $\sigma$. Le profil temporel du pointeur
     s’écrit comme suit:
@@ -708,9 +714,10 @@
     \end{equation}
 
     \noindent où $\tau$ est le temps d’interaction appliquer sur le système
-    dont $\int g(t) dt = \tau$ et supposons que l'interaction est faible;
-    c'est-à-dire que le temps d'interaction est beaucoup plus court que 
-    la largeur temporelle du pointeur, soit $\tau \ll \sigma$. 
+    dont $\int g(t) dt = \tau$ et se trouve dans le régime de 
+    mesures faibles, c'est-à-dire que le temps d'interaction 
+    est beaucoup plus court que 
+    la largeur temporelle du pointeur $\tau \ll \sigma$ (voir figure \ref{fig:interaction}). 
     Nous l’appliquons à la partie horizontale de l’état $\ket{H}$ 
     signifie par l'indice $H$ sur l'opérateur, ce qui entraine un décalage du 
     pointeur $exp\Bigl( -\tau \frac{\partial }{\partial t} \Bigr) \xi(t) = \xi(t-\tau)$. 
@@ -725,7 +732,8 @@
 
     \noindent Comme nous l’avons mentionné précédemment, 
     l’interaction faible préserve la superposition des états de polarisation 
-    et ne les sépare pas complètement (voir la figure \ref{fig:interaction}).
+    et n'effondre pas l'état complètement en comparaison 
+    d'une mesure forte (voir la figure \ref{fig:interaction}).
     Pour en extraire des informations sur l'état quantique, nous réalisons 
     une postsélection à 
     l’aide d'un état superposé $\ket{\varsigma} = \mu\ket{H} + \nu\ket{V}$. 
@@ -746,10 +754,10 @@
 
     \begin{align}
         \expval{\hat{t}} &= \bra{\Psi(t)^f}\hat{t}\ket{\Psi(t)^f}\\
-        &= \int_{-\infty}^{\infty} I(t)tdt
+        &= \int_{-\infty}^{\infty} F(t)^* t F(t) dt
     \end{align}
 
-    \noindent où $I(t) \equiv |F(t)|^2 $. Ensuite, nous pouvons le normaliser en 
+    \noindent Ensuite, nous pouvons le normaliser en 
     divisant par $\frac{1}{\bra{\Psi(t)^f}\ket{\Psi(t)^f}}$ :
 
     \begin{align}
@@ -758,11 +766,11 @@
     \end{align}
 
     \noindent où $\Xi(t) \equiv \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{t^2}{2\sigma^2}}$ 
-    et $\Xi(t, \tau) \equiv \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(t - \tau)^2}{4\sigma^2}}$. 
+    et $\Xi(t, \tau) \equiv \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{t^2 + (t - \tau)^2}{4\sigma^2}}$. 
     Remarquons qu’en raison d’une interaction faible avec le système, il 
     existe une superposition entre le pointeur et les composantes de 
     polarisation horizontale et verticale. Les solutions de chaque 
-    intégrale sont énumérées ci-dessous. 
+    intégrale sont énumérées ci-dessous:
 
     \begin{align*}
         \int_{-\infty}^{\infty} \Xi(t - \tau)t dt &= \tau & \int_{-\infty}^{\infty} \Xi(t) dt &= 1\\
@@ -770,9 +778,10 @@
         \int_{-\infty}^{\infty} \Xi(t)t dt &= 0 & \int_{-\infty}^{\infty} \Xi(t, \tau) dt &= e^{-\frac{t^2}{8\sigma^2}}
     \end{align*}
 
-    \noindent Donc, nous allons reprendre notre analyse de la 
-    partie réelle de la valeur faible, avec ces solutions, la partie 
-    réelle se trouve:
+    \noindent Ensuite, nous allons reprendre notre analyse de la 
+    partie réelle de la valeur faible à partir de 
+    l'expression \eqref{eq:t_norm_interférence} et avec 
+    ces solutions dérivées, la partie réelle se trouve:
 
     \begin{align}
         \expval{\hat{t}^{norm}} = \tau\frac{|A|^2 + (A\bar{B} + \bar{A}B)e^{-\frac{\tau^2}{8\sigma^2}}}{|A|^2 + |B|^2 + (A\bar{B} + \bar{A}B)e^{-\frac{\tau^2}{8\sigma^2}}}
@@ -784,12 +793,12 @@
 
     \begin{align}
         \lim_{\frac{\tau}{\sigma} \to 0} \expval{\hat{t}^{norm}} &= \tau\frac{|A|^2 + A\bar{B} + \bar{A}B}{|A|^2 + |B|^2 + A\bar{B} + \bar{A}B}\\
-        &\equiv \mathcal{R}(\expval{\hat{\pi}_W})
+        &\equiv \mathcal{R}(\expval{\hat{\pi}}_W)
     \end{align}
 
     \noindent Ce terme représente la position moyenne temporelle du 
     pointeur lors d’une mesure. Il s’agit de la partie réelle de la 
-    valeur faible $\expval{\hat{\pi}_W}$.
+    valeur faible $\expval{\hat{\pi}}_W$.
 \end{doublespace}
 
 \subsubsection{La partie imaginaire du système}
@@ -800,7 +809,7 @@
     devrait entraîner un déplacement de son spectre fréquentiel $\omega$, 
     car $\hat{E} = \hbar\hat{\omega}$ \cite{Peebles,Griffiths}. 
     Vérifions-le en calculant la partie imaginaire de la valeur faible 
-    $\expval{\hat{\pi}_W}$. Tout d’abord, effectuons la transformation de 
+    $\expval{\hat{\pi}}_W$. Tout d’abord, effectuons la transformation de 
     Fourier de la fonction temporelle $F(t)$ de l'état quantique 
     $\ket{\Psi(t)^f}$:
 
@@ -821,11 +830,11 @@
     
     \begin{align}
         \expval{\hat{\omega}} &= \bra{\Psi(\omega)^f}\hat{\omega}\ket{\Psi(\omega)^f}\\
-        &= \int_{-\infty}^{\infty} S(\omega)\omega d\omega
+        &= \int_{-\infty}^{\infty} F(\omega)^* \omega F(\omega) d\omega
     \end{align}
 
-    \noindent où $S(\omega) \equiv |F(\omega)|^2$ et normalisons 
-    l'expression avec $\int_{-\infty}^{\infty} S(\omega) d\omega$:
+    \noindent Normalisons cette expression en divisant par 
+    $\frac{1}{\bra{\Psi(\omega)^f}\ket{\Psi(\omega)^f}}$:
 
     \begin{align}
         \expval{\hat{\omega}^{norm}} &= \frac{\sqrt{2}\sigma}{\sqrt{\pi}}\frac{\int_{-\infty}^{\infty} |A|^2\omega e^{i\omega\tau} + |B|^2\omega e^{i\omega\tau} + A\bar{B}\omega + \bar{A}Be^{2i\omega\tau} \omega d\omega}{\int_{-\infty}^{\infty} |A|^2 e^{i\omega\tau} + |B|^2 e^{i\omega\tau} + A\bar{B} + \bar{A}Be^{2i\omega\tau}d\omega}e^{-2\omega^2 \sigma^2 -i\omega\tau}
@@ -843,12 +852,12 @@
 
     \begin{align}
         \lim_{\frac{\tau}{\sigma} \to 0}\expval{\hat{\omega}^{norm}} &= \frac{i\tau}{4\sigma^2}\frac{B\bar{A} - A\bar{B}}{|A|^2 + |B|^2 + \bar{A}B + A\bar{B}}\\
-        &\equiv \mathcal{I}(\expval{\hat{\pi}_W})
+        &\equiv \mathcal{I}(\expval{\hat{\pi}}_W)
         \label{eq:imaginary_part}
     \end{align}
 
     \noindent Ce terme correspond à la partie imaginaire de la valeur 
-    faible attendue $\expval{\hat{\pi}_W}$.
+    faible attendue $\expval{\hat{\pi}}_W$.
 
 \end{doublespace}
 
@@ -865,57 +874,55 @@
     \end{equation}
 
      \noindent puisque $a$ et $b$ sont des amplitudes de probabilité 
-     pour les états de base $\ket{H}$ et $\ket{V}$ respectivement 
-     (c'est-à-dire $a=\bra{H}\ket{\psi^{in}}$ et $b=\bra{V}\ket{\psi^{in}}$), 
-     on peut, en pratique, calculer directement ces amplitudes de 
+     associées aux états de base $\ket{H}$ et $\ket{V}$ respectivement 
+     (c'est-à-dire $a=\bra{H}\ket{\psi^{in}}$ et $b=\bra{V}\ket{\psi^{in}}$)
+     et encore que $|a|^2 + |b|^2 = 1$, on peut, en pratique, calculer directement ces amplitudes de 
      probabilités en fonction des parties de la valeur mesurée. Cette 
      possibilité découle du fait que la valeur faible est proportionnelle 
      à l'état quantique, comme nous l'avons démontré. Pour caractériser 
      l'état de polarisation d'un système quantique, il s'agit de mesurer 
      faiblement $\hat{\pi}^J = \ket{J}\bra{J}$ soit $J= H,V$ \cite{Hairiri,Lundeen_Direct_Measurement,Lundeen_Bamber}, 
      puis de mesurer par projection sur un état intermédiaire tel que 
-     $\ket{D} = \frac{1}{\sqrt{2}}(\ket{H}+\ket{V})$. Donc, cette opération 
-     réussie, elle permettra d’obtenir un ensemble restreint d’essais 
+     $\ket{D} = \frac{1}{\sqrt{2}}(\ket{H}+\ket{V})$. Avec cette
+     mesure, nous pouvons obtenir un ensemble restreint d’essais 
      dont la moyenne des résultats expérimentaux (tels que les 
      déplacements temporels ou fréquentiels du pointeur) sera 
      proportionnelle à la partie réelle ou imaginaire de la valeur 
-     faible.
+     faible:
     
      \begin{equation}
-        \hat{\pi}_{W}^{J} = \frac{\bra{D}\hat{\pi}^{J}\ket{\psi^{in}}}{\bra{D}\ket{\psi^{in}}} = \sqrt{N}\bra{J}\ket{\psi^{in}}
+        \expval{\hat{\pi}^{J}}_W = \frac{\bra{D}\hat{\pi}^{J}\ket{\psi^{in}}}{\bra{D}\ket{\psi^{in}}} = \sqrt{N}\bra{J}\ket{\psi^{in}}
     \end{equation}
 
     \noindent où $N$ est une constante de normalisation indépendante de 
     $J$. On peut écrire l’état quantique en fonction de la valeur faible. 
 
     \begin{equation}
-        \ket{\psi^{in}} = \frac{1}{\sqrt{N}}\Bigl(\hat{\pi}^{H}_{W}\ket{H}+\hat{\pi}^{V}_{W}\ket{V}\Bigr)
+        \ket{\psi^{in}} = \frac{1}{\sqrt{N}}\Bigl(\expval{\hat{\pi}^{H}}_W\ket{H}+\expval{\hat{\pi}^{V}}_W\ket{V}\Bigr)
     \end{equation}
 
-    \noindent Puisque 
-    $N = \Bigl|\hat{\pi}^{H}_{W}\Bigr|^2 + \Bigl|\hat{\pi}^{V}_{W}\Bigr|^2$ 
-    ,
-    $N = \Bigl|\hat{\pi}^{H}_{W}\Bigr|^2 + \Bigl|1- \hat{\pi}^{H}_{W}\Bigr|^2$: 
-    
+    \noindent Puisque $N$ est une constante de normalisation
+    $N = \Bigl|\expval{\hat{\pi}^{H}}_W\Bigr|^2 + \Bigl|\expval{\hat{\pi}^{V}}_W\Bigr|^2 
+    = \Bigl|\expval{\hat{\pi}^{H}}_W\Bigr|^2 + \Bigl|1- \expval{\hat{\pi}^{H}}_W\Bigr|^2$,
+    nous pouvons écrire l'état quantique d'entrée en fonction de la
+    valeur faible mesurée:
 
     \begin{equation}
-        \ket{\psi^{in}} = \frac{1}{\sqrt{N}}\Bigl(\hat{\pi}^{H}_{W}\ket{H}+ \Bigl(1-\hat{\pi}^{H}_{W}\Bigr)\ket{V}\Bigr)
+        \ket{\psi^{in}} = \frac{1}{\sqrt{N}}\Bigl(\expval{\hat{\pi}^{H}}_W\ket{H}+ \Bigl(1- \expval{\hat{\pi}^{H}}_W\Bigr)\ket{V}\Bigr)
     \end{equation}
 
     \noindent Ce dernier est l'état d'entrée que nous pouvons 
     reconstruire à partir de la valeur faible. En d'autres termes, nous 
-    pouvons reconstruire l'état d'entrée à partir de la valeur faible 
+    pouvons reconstruire directement l'état d'entrée à partir de la valeur faible 
     mesurée. Certain fixe la phase globale, qui varierait selon l'état 
     d'entrée, nous supposons que $a$ est toujours réel. Donc 
     l'ellipticité (ou la phase) se trouve dans $b$ et sera dépendante 
-    de la partie imaginaire \cite{Hairiri}. 
-    
-    \noindent À partir des données expérimentales des deux 
+    de la partie imaginaire \cite{Hairiri}. Et, à partir des données expérimentales des deux 
     valeurs moyennes $\expval{\hat{t}}$ et $\expval{\hat{\omega}}$, nous 
     pouvons calculer directement les amplitudes de probabilité. 
 
     \begin{align}
-        |a| &= \sqrt{\frac{\mathcal{R}(\expval{\hat{\pi}}_W)}{\tau}}\label{eq:amplitude_a}\\
+        |a| &= \sqrt{\frac{\mathcal{R}(\expval{\hat{\pi}^{H}}_W)}{\tau}}\label{eq:amplitude_a}\\
         |b| &= \sqrt{1 - |a|^2}\label{eq:amplitude_b}
     \end{align}
 

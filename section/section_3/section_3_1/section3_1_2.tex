@@ -337,13 +337,16 @@
 
     \begin{figure}[!hptb]
         \centering
-        \includegraphics[width=1.0\textwidth]{speed_BNC.png}
+        \includegraphics[width=1.0\textwidth]{speed_BNC copy 2.png}
         \caption{
         Détermination de la vitesse d'un signal électrique dans un câble BNC
-        RG-58. Les points représentent les délais mesurés pour chaque
+        RG-58 où $\tau$ est le temps de propagation et $\Delta L$ est 
+        la variation des longueurs de câble. Les points représentent les délais mesurés pour chaque
         longueur de câble BNC, tandis que la ligne représente l'ajustement
-        linéaire des données. Les barres d’erreur horizontales représentent l’incertitude de nos
-        mesures de la distance, soit $\pm 0,5$ $mm$. Les barres
+        linéaire des données. Les valeurs de l'ajustement linéaire sont
+        en $ns/mm$ pour la pente et en $ns$ pour l'ordonnée à l'origine.
+        Les barres d’erreur horizontales représentent l’incertitude de nos
+        câbles BNC, environ $\pm 2\%$ par le manufacturier. Les barres
         d'erreurs verticales
         correspondent à l'erreur de l'ajustement \textit{poly4} basé sur
         la variation de la position du pic de la dérivée de l'impulsion
@@ -355,13 +358,17 @@
     \end{figure}
 
     \noindent On peut voir que les délais mesurés sont linéaires en
-    fonction de la distance, ce qui est conforme à nos attentes. 
-    Notre résultat pour la vitesse du signal est 
-    $198 117 476$ $m/s$ \cite{arrl2019}, ce qui représente une erreur en 
-    pourcentage de $0,1286\%$ par rapport à la vitesse du 
-    signal dans un câble BNC qui est environ $0,66$ par 
-    rapport à $c$ (voir le tableau \ref{table:speed-BNC-table}) ce qui est 
-    réaliste et cohérent avec l'erreur observée lors de 
+    fonction de la distance, ce qui est conforme à nos attentes.
+    L'ajustement linéaire des données nous donne une pente de
+    $0,00504738$ $ns/mm$ et une ordonnée à l'origine de
+    $0,0947$ $ns$. Le coefficient de corrélation $R^2$ est de $0,9999$,
+    ce qui indique que les données sont bien ajustées par une droite.
+    Notre résultat pour la vitesse du signal électrique dans un câble BNC est
+    $198 117 476$ $m/s$ \cite{arrl2019}, ce qui représente une erreur en
+    pourcentage de $0,1286\%$ par rapport à la vitesse du
+    signal dans un câble BNC qui est environ $0,66$ par
+    rapport à $c$ (voir le tableau \ref{table:speed-BNC-table}) ce qui est
+    réaliste et cohérent avec l'erreur observée lors de
     l'expérience précédente. En effet, 
     nous avons démontré notre capacité à mesurer des délais très 
     précis. C’est un élément essentiel pour pouvoir commencer à mesurer 
