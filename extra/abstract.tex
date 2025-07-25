@@ -1,55 +1,40 @@
 \begin{doublespace}
-    Development of new quantum technologies, such as quantum 
-    computers, advanced cybersecurity using quantum communication protocols, 
-    and the development of sensitive quantum sensors used in metrology, relies
-    on the state characterization of qubits, which are states containing
-    the system's information. Similarly, classical bits in computing 
-    can be $0$ or $1$; a qubit takes advantage of the fundamental laws of physics,
-    namely quantum mechanics, allowing it to have both outcomes in a superposition state.
 
-    The concept of a quantum computer (and later qubits) arises from the famous Richard Feynman, opening the 
-    world to new possibilities for technologies. David P. DiVincenzo
-    laid the groundwork for the physical implementation of a quantum computer, for which
-    measurement is, in fact, crucial. Unlike the classical world, 
-    quantum mechanics makes it challenging
-    to measure the components of the system.
-    Because of the Heisenberg uncertainty principle, one cannot know the precise location
-    and momentum of a particle; thus, in quantum mechanics, there’s always a trade-off 
-    between what you are trying to observe for full state characterization.
+    For the development of new quantum technologies, such as
+    quantum computers, quantum sensors for quantum metrology, or
+    quantum telecommunications, it is essential to be able to
+    characterize the quantum states of quantum systems. The 
+    characterization of quantum states is an active area of research,
+    as it allows for understanding, measuring and manipulating quantum systems.
 
-    \noindent Traditionally, quantum state tomography is used for state characterization, 
-    where one projectively measures the system in all possible states, which can then be represented
-    and reconstructed indirectly. This
-    method can become very tedious to consider for systems 
-    with many dimensions, and such reconstructions are also resource-intensive. 
+    \noindent Traditional characterization methods, such as quantum
+    tomography, reconstructs a quantum system's state by performing projective measurements
+    on the system, followed by a reconstruction of the state using the density matrix.
+    However, this approach is an indirect method that requires
+    many projective measurements and does not allow for real-time 
+    tracking of the quantum state evolution, as it requires the 
+    use of a computational algorithm. Furthermore, it is limited 
+    by the increasing complexity of high-dimensional quantum systems,
+    making the reconstruction of the system's state increasingly 
+    difficult and resource-intensive. Thus, it is not suitable 
+    for systems requiring real-time characterization, where the 
+    temporal evolution of a state is crucial, such as in quantum
+    metrology or for error detection in quantum computers
+    during computational processes.
 
-    \noindent Alternatively, quantum weak measurements can present an advantage, 
-    as they offer a more direct way of measuring the quantum state. Weak measurements take
-    advantage of what’s called the "weak value," a value that arises experimentally
-    when introducing a weak interaction between a coupled system and a pointer, where the 
-    pointer can be thought of as a needle on a measurement apparatus. This strategy,
-    famously described by Yakir Aharonov, David Albert, and Lev Vaidman (along with post-selection on a known state)
-    can give rise to how the pointer evolves for
-    different input states, proportional to this weak value. This could allow for less information loss 
-    during characterization, preserving the integrity of the original state, 
-    which is essential for quantum communications.
+    \noindent An alternative method, such as weak measurements,
+    is a promising approach for the direct characterization of quantum states,
+    without complete collapse of the system; however, in its current form,
+    it is not integrable into quantum technologies. In this thesis, we propose to perform
+    temporal weak measurements by exploiting the temporal domain of photons
+    as our pointer variable, by designing an experimental device in this regime
+    to characterize a quantum state that can be easy to implement in a common optics laboratory.
 
-    \noindent However, recent research in quantum weak measurements—particularly in the 
-    quantum photonic context—focuses on the position and momentum degrees
-    of freedom for polarization state characterization, which is not considered to be 
-    practical for quantum technology applications. We propose to look at the 
-    time and energy (frequency) domains of photons as a more practically implementable
-    approach for future quantum technologies. This would enable real-time 
-    tracking of a quantum state, which could bring considerable
-    advantages to technologies such as quantum computers and quantum sensors for metrology.
+    \noindent In this thesis, we aim to explore the different degrees of freedom
+    that would allow weak measurements to be compatible with
+    future quantum technologies and our existing photonic infrastructures.
+    This could enable direct real-time tracking of the temporal
+    evolution of a quantum state while minimizing information
+    loss through the weak measurement regime.
 
-    \noindent In this thesis, we shall explore the fundamentals of weak measurement theory,
-    while briefly reviewing quantum state tomography and proposing our theoretical
-    expectations for the experimental realization of temporal weak measurements. 
-    Experimental verification 
-    of our capability to measure small temporal shifts will be carried out 
-    by comparing the speed of an electric signal and that of light. 
-    We will then perform a temporal weak measurement of a pure state with 
-    the objective of measuring the real and imaginary parts of the weak value, 
-    which will allow us to directly reconstruct our prepared quantum states.
 \end{doublespace}

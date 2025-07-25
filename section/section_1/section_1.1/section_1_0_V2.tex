@@ -81,14 +81,14 @@
         lançer un dé, nous supposons qu’il se trouve dans un état de 
         superposition $\ket{\text{dé}} = c_1\ket{1} + c_2\ket{2} + c_3\ket{3} + c_4\ket{4} + c_5\ket{5} + c_6\ket{6}$, 
         où tous les états propres possibles $\{ \ket{1},\ket{2},\ket{3},\ket{4},\ket{5},\ket{6} \}$ 
-        et leurs coefficients de probabilité $c_1, c_2, c_3, c_4, c_5, c_6$ 
+        et leurs paramètres de probabilité $c_1, c_2, c_3, c_4, c_5, c_6$ 
         se trouvent dans notre main. Une fois lancés sur la table et en 
         observant leur résultat, nous disons que le système s’effondre vers 
         l’une de ses valeurs possibles, comme l’état $\ket{5}$, qui a une 
         probabilité de $\frac{1}{6}$ de se produire. Une fois qu’il s’est 
         effondré, les mesures ultérieures du système restent les mêmes. 
         L’objectif des mesures quantiques est de caractériser complètement 
-        l’état du système quantique du dé. Comme nous sommes limités aux 
+        l’état du système quantique. Comme nous sommes limités aux 
         mesures projectives, nous discuterons des techniques possibles, 
         telles que l’effondrement continu du système via la tomographie et 
         la reconstruction indirecte de l’état quantique, ainsi que notre 
@@ -160,15 +160,19 @@
     interférométriques. Cette approche offre une implémentation plus 
     facile, puisqu’elle ne nécessite pas de composants optiques 
     spécifiques, tels qu’un cristal. Il ne faut que des miroirs pour 
-    interagir avec le système de manière contrôlable. Cette flexibilité 
-    rend possible l’intégration de mesures faibles temporelles dans 
+    interagir avec le système de manière contrôlable. 
+    
+    \noindent On vise à explorer les degrés de libertés 
+    qui seraient compatibles avec 
+    des systèmes quantiques pour identifier la manière de rendre 
+    intégrable les mesures faibles. Cette flexibilité 
+    rend possible l’intégration de mesures faibles dans 
     des technologies quantiques \cite{kaneda2018highefficiencysinglephotongenerationlargescale,Dai_2020}. 
     Elles peuvent également être facilement implantées dans nos systèmes 
-    optiques existant, par exemple dans les télécommunications à fibre 
-    optique \cite{OpticalNetworks}. 
-    
-    \noindent Notre objectif est d’évaluer directement la composante 
-    réelle et imaginaire de la valeur faible provenant d'un pointeur 
+    optiques existant, par exemple dans des télécommunications quantiques \cite{OpticalNetworks}. 
+
+    \noindent Notre objectif pour effectuer cette caractérisation 
+    est d’évaluer directement les composantes réelle et imaginaire de la valeur faible provenant d'un pointeur 
     temporel, ce qui permet une description directe de l’état de 
     polarisation. Cette méthode utilise la polarisation comme base 
     quantique, car elle est facile à contrôler et à mettre en pratique en 

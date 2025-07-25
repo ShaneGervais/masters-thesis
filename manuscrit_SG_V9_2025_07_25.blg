@@ -1,0 +1,66 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: manuscrit_SG_V9_2025_07_25.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 12560 items from 5000.
+Database file #1: manuscrit_SG_V9_2025_07_25-blx.bib
+Database file #2: ./reference_these.bib
+Biblatex version: 3.19
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 54 entries,
+            6399 wiz_defined-function locations,
+            1652 strings with 28892 characters,
+and the built_in function-call counts, 518260 in all, are:
+= -- 44116
+> -- 8172
+< -- 1918
++ -- 16196
+- -- 3919
+* -- 35891
+:= -- 59911
+add.period$ -- 0
+call.type$ -- 54
+change.case$ -- 1248
+chr.to.int$ -- 212
+cite$ -- 106
+duplicate$ -- 50792
+empty$ -- 44658
+format.name$ -- 3729
+if$ -- 103265
+int.to.chr$ -- 0
+int.to.str$ -- 157
+missing$ -- 0
+newline$ -- 2112
+num.names$ -- 3009
+pop$ -- 19638
+preamble$ -- 1
+purify$ -- 1638
+quote$ -- 0
+skip$ -- 11221
+stack$ -- 0
+substring$ -- 85375
+swap$ -- 9100
+text.length$ -- 1198
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 1820
+warning$ -- 0
+while$ -- 6744
+width$ -- 0
+write$ -- 2059
