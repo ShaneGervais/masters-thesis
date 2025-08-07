@@ -4,7 +4,7 @@
     fondements théoriques des mesures quantiques, en ce qui concerne la
     tomographie quantique et les mesures faibles. Nous commencerons
     avec une tomographie quantique pour des états de polarisation dans
-    le cadre de: \cite{Kwiat}, puis introduire une méthode alternative,
+    le cadre de: \cite{Kwiat}, puis introduirons une méthode alternative,
     les mesures faibles, selon le formalisme proposé par Aharonov,
     Albert et Vaidman (AAV) \cite{Aharonov}, ainsi que dans le cadre
     expérimental développé dans \cite{Lundeen_Resch}. Nous 
@@ -13,7 +13,7 @@
     faible avec un pointeur, comme présenté dans \cite{Lundeen_Bamber}.
     Enfin, nous allons proposer un cadre théorique pour les mesures
     faibles temporelles et les prédictions théoriques pour les valeurs
-    moyennes des observables expérimentaux du système qui pourraient
+    moyennes des observables expérimentales du système qui pourraient
     être mesurées directement dans notre laboratoire.
 
 \end{doublespace}
@@ -32,14 +32,12 @@
     (polarisation horizontale, verticale) (diagonale, anti-diagonale) et 
     (circulaire droite, gauche) respectivement. Ensuite, les résultats 
     obtenus sont analysés par un algorithme qui reconstruit implicitement la 
-    matrice densitée de l’état quantique. La matrice densitée représente un 
+    matrice densité de l’état quantique. La matrice densité représente un 
     opérateur hermitien qui renferme toutes les informations sur l’état 
-    quantique, y compris la fonction d’onde ainsi que certaines 
-    caractéristiques probabilistes qu’un tel système peut présenter. Elle 
-    se présente sous la forme $\hat{\rho} =\ket{\psi}\bra{\psi}$ pour un 
-    état $\ket{\psi}$ et on peut facilement vérifier sa pureté en prenant 
-    la trace de $\hat{\rho}^2$, $Tr(\hat{\rho}^2)=1$. 
-    
+    quantique. Elle se présente sous la forme $\rho = \ket{\psi}\bra{\psi}$ 
+    pour un état $\ket{\psi}$ et on peut facilement vérifier sa pureté en prenant 
+    la trace de $\rho^2$, $Tr(\rho^2)=1$.
+
     \noindent Pour approfondir nos connaissances, considérons un exemple 
     arbitraire. Supposons un photon préparé dans l’état de polarisation 
     suivant:
@@ -49,11 +47,11 @@
     \end{equation}
 
     \noindent où $a$, $b \in \mathcal{C}$, $|a|^2 + |b|^2 = 1$ et dans la 
-    base $\{ \ket{H}, \ket{V} \}$. La matrice de densité de cet état, que 
+    base $\{ \ket{H}, \ket{V} \}$. La matrice densité de cet état, que 
     l'on retrouvera prochainement dans cet exemple, s'écrit comme suit:
     
     \begin{equation}
-        \hat{\rho} = \begin{pmatrix}
+        \rho = \begin{pmatrix}
             |a|^2 & ab^*\\
             a^*b & |b|^2
         \end{pmatrix}
@@ -71,13 +69,13 @@
     polarisation diagonale et antidiagonale, et/ou $\{\ket{R}, \ket{L}\}$ 
     pour la polarisation circulaire. Les variations d’intensité 
     observées dans ces différentes configurations de mesure projective 
-    permettent de reconstruire les éléments de la matrice de densité 
+    permettent de reconstruire les éléments de la matrice densité 
     à l'aide d'un algorithme de maximum de vraisemblance. 
     
     \noindent En photonique quantique, cette matrice densité peut 
     également être exprimée en termes des paramètres de Stokes 
-    \cite{Kwiat}. Ce derniers décrivent les paramètres de Stokes 
-    décrivent complètement l’état de polarisation et ils sont liés aux probabilités de détection dans 
+    \cite{Kwiat}. Ces derniers décrivent complètement l’état de 
+    polarisation et ils sont liés aux probabilités de détection dans 
     différentes bases de polarisation \cite{hecht2012optics}. Avec ces
     paramètres, nous pouvons reconstruire la matrice densité
     à partir des probabilités de détection dans les différentes bases et
@@ -98,25 +96,25 @@
             P_{\ket{R}} - P_{\ket{L}}
         \end{pmatrix}
     \end{equation}
-    
-    \noindent où $P_{\ket{H}}$ la probabilité de détection pour l'état de 
-    polarisation horizontale $\ket{H}$ et $P_{\ket{V}}$ la probabilité de 
-    détection pour l'état de polarisation verticale $\ket{V}$. Ainsi, les 
-    paramètres de Stokes: $S_0$ représente l’intensité ou probabilité 
-    totale du faisceau, $S_1$ représente la différence de probabilités 
-    entre les polarisations $\ket{H}$ et $\ket{V}$, $S_2$ représente la 
+
+    \noindent où $P_{\ket{H}}$ est la probabilité de détection pour l'état de
+    polarisation horizontale $\ket{H}$ et $P_{\ket{V}}$ la probabilité de
+    détection pour l'état de polarisation verticale $\ket{V}$. Ainsi, le
+    paramètre de Stokes $S_0$ représente l’intensité ou probabilité
+    totale du faisceau, $S_1$ représente la différence de probabilités
+    entre les polarisations $\ket{H}$ et $\ket{V}$, $S_2$ représente la
     différence de probabilités entre les polarisations 
     $\ket{D} \equiv \frac{1}{\sqrt{2}}(\ket{H} + \ket{V})$ et $\ket{A} \equiv \frac{1}{\sqrt{2}}(\ket{H} - {V})$ 
     et $S_3$ représente la différence de probabilités entre les polarisations 
     $\ket{R} \equiv \frac{1}{\sqrt{2}}(\ket{H}+i{V})$ et $\ket{L} \equiv \frac{1}{\sqrt{2}}(\ket{H} - i\ket{V})$. 
     En notant les probabilités de mesure pour chacune de ces bases, on 
-    reconstruit la matrice densité à partir de:
+    reconstruit la matrice densité à partir de la relation suivante \cite{Kwiat}:
     
     \begin{equation}
-        \hat{\rho} = \frac{1}{2}\sum_{i=0}^{3} S_i \sigma_i
+        \rho = \frac{1}{2}\sum_{i=0}^{3} S_i \hat{\sigma}_i
     \end{equation}
     
-    \noindent Soit $\hat{\sigma}_i$ sont les matrices de Pauli définies 
+    \noindent Soit $\hat{\sigma}_i$ les matrices de Pauli définies 
     comme suit:
     
     \begin{equation}
@@ -138,12 +136,12 @@
         \end{pmatrix}
     \end{equation}
 
-    \noindent Utilisant l'état arbitraire que nous avons mentionné, 
+    \noindent En utilisant l'état arbitraire que nous avons mentionné, 
     trouvons la matrice densité avec les paramètres de Stokes. 
     Commençons par réécrire la matrice densité comme suit:
 
     \begin{equation}
-        \hat{\rho} = \frac{1}{2}(S_0\hat{\sigma}_0 + S_1\hat{\sigma}_1 + S_2\hat{\sigma}_2 + S_3\hat{\sigma}_3)
+        \rho = \frac{1}{2}(S_0\hat{\sigma}_0 + S_1\hat{\sigma}_1 + S_2\hat{\sigma}_2 + S_3\hat{\sigma}_3)
     \end{equation}
 
     \noindent Ensuite, trouvons chacun des paramètres de Stokes en 
@@ -201,7 +199,7 @@
     
 
     \begin{align}
-        \hat{\rho} &= \frac{1}{2}(S_0\hat{\sigma}_0 + S_1\hat{\sigma}_1 + S_2\hat{\sigma}_2 + S_3\hat{\sigma}_3)\\
+        \rho &= \frac{1}{2}(S_0\hat{\sigma}_0 + S_1\hat{\sigma}_1 + S_2\hat{\sigma}_2 + S_3\hat{\sigma}_3)\\
         &= \frac{1}{2}\begin{pmatrix}
             S_0 + S_1 & S_2 -S_3\\
             S_2 + S_3 & S_0 - S_1
@@ -216,24 +214,24 @@
         \end{pmatrix}
     \end{align}
 
-    \noindent Nous avons maintenant reconstruit notre matrice de densité 
+    \noindent Nous avons maintenant reconstruit notre matrice densité 
     à partir d'un état de polarisation arbitraire en utilisant les 
     paramètres de Stokes. 
     
     \noindent Pour un état pur, comme notre exemple, on a la propriété 
-    $Tr(\hat{\rho^2}) = 1$, ce qui se traduit par une cohérence quantique 
+    $Tr(\rho^2) = 1$, ce qui se traduit par une cohérence quantique 
     maximale. En revanche, un état mixte se caractérise par une matrice 
     densité statistique, qui est une somme pondérée d'états purs:
 
     \begin{equation}
-        \hat{\rho}_{mixte} = \sum_{i}^{N} p_i\ket{\psi}_i\bra{\psi}_i
+        \rho_{mixte} = \sum_{i}^{N} p_i\ket{\psi}_i\bra{\psi}_i
     \end{equation}
 
 
     \noindent Nous avons $N$ états, chacun étant associé à une 
     probabilité $p_i$, de sorte que $\sum_{i}^{N} p_i = 1 $. Chaque état 
     $\ket{\psi_i}$ correspond à un mélange statistique représenté par 
-    une matrice densité mixte. Dans ce contexte, $Tr(\hat{\rho}^{2}_{mixte}) < 1 $. 
+    une matrice densité mixte. Dans ce contexte, $Tr(\rho^{2}_{mixte}) < 1 $. 
     Cela signifie que la pureté d’une matrice densité peut être mesurée 
     par sa trace. Un état pur possède une cohérence parfaite, tandis 
     qu’un état mixte résulte d’un mélange statistique d’états. Il est 
@@ -248,11 +246,12 @@
     \noindent où \text{DOP}, le dégré de polarisation, peut être soit $1$ 
     pour un état pur (entièrement polarisé) ou strictement inférieur à $1$ 
     pour un état mixte (partiellement polarisé). Il est possible de 
-    visualiser l’état de polarisation sur la sphère de Poincaré (figure 
-    \ref{fig:spherepoincarre}) une représentation tridimensionnelle où 
+    visualiser l’état de polarisation sur la sphère de 
+    Poincaré (figure \ref{fig:spherepoincarre}) qui offre
+    une représentation tridimensionnelle où 
     chaque axe correspond à un paramètre de Stokes, excluant ainsi $S_0$. 
     Chaque point sur cette surface représente un état distinct de 
-    polarisation complète. 
+    polarisation pur. 
 
     \begin{figure}[!h!t!p!b!]
         \centering
@@ -272,8 +271,8 @@
     permettent de déterminer empiriquement ces coefficients de la matrice 
     densité, à partir des paramètres de Stokes, et peuvent donc 
     reconstruire et caractériser entièrement la matrice densité 
-    d’un état de polarisation. Toutefois, cette méthode présente une inconvéniente 
-    majeure : elle nécessite un grand nombre de mesures projectives pour
+    d’un état de polarisation. Toutefois, cette méthode présente un inconvénient 
+    majeur : elle nécessite un grand nombre de mesures projectives pour
     obtenir une estimation précise de la matrice densité. En effet,
     la tomographie quantique est une méthode indirecte pour 
     caractériser un état quantique \cite{Lundeen_Direct_Measurement}
@@ -283,7 +282,7 @@
     éléments individuels de la matrice densité, car elle se repose sur une reconstruction globale
     \cite{Guilleaum}. Ces limitations rendent la tomographie peu adaptée
     aux applications nécessitant un accès direct ou simultané à certains 
-    paramètres de la matrice densitée, ou des mesures en temps réel
+    paramètres de la matrice densité, ou des mesures en temps réel
     \cite{TomoReview}.
 \end{doublespace}
 
@@ -375,10 +374,10 @@
     après une mesure projective et d’en obtenir la valeur faible. 
     La valeur faible $\expval{\hat{S}}_W$, dont l'indice $W$ signifie 
     \guillemetleft Weak\guillemetright \space cet-à-dire faible en anglais pour la base des
-    mesures faibles \cite{Lundeen_Resch}. Ce dernier est défini
-    comme la valeur moyenne d’un observable $\hat{S}$ du système,
+    mesures faibles \cite{Lundeen_Resch}. Cette dernière est définie
+    comme la valeur moyenne d’une observable $\hat{S}$ du système,
     mesuré dans un état d’entrée $\ket{\psi_i}$ et un état de mesure
-    projective $\ket{\psi_f}$, qui est le résultat d’une mesure faible.
+    projective $\ket{\psi_f}$, qui est le résultat d’une mesure faible et est définie par:
     
     \begin{equation}
         \expval{\hat{S}}_W = \frac{\bra{\psi_f}\hat{S}\ket{\psi_i}}{\bra{\psi_f}\ket{\psi_i}}
@@ -434,7 +433,7 @@
     soumis à une mesure, il se trouve initialement dans un état superposé 
     inconnu, noté $\ket{\psi}_S = \sum_{j}^{N}c_{j}\ket{s_j}_S$, dont les 
     composantes sont des combinaisons linéaires de vecteurs propres 
-    $\ket{s_j}_S$, d'un observable du système $\hat{S}$, avec des valeurs 
+    $\ket{s_j}_S$, d'une observable du système $\hat{S}$, avec des valeurs 
     propres $s_j$ (avec coefficients complexes), et $N$ est le nombre 
     d'états de base du système, qui est couplé à un pointeur 
     initialement dans l’état $\ket{\bar{p} = 0}_P$ dans la base $P$ 
@@ -503,11 +502,12 @@
     sous la forme d'une série de Taylor: 
 
     \begin{align}
-        \hat{U}\ket{\Psi^{i}}_T &= \Bigl( 1 - i\delta(\hat{S} \otimes \hat{q}) + \mathcal{O}(\delta^2) \Bigr)\Bigl[ \ket{\psi}_S \otimes \ket{\bar{p} = 0}_P \Bigr]\\
+        \hat{U}\ket{\Psi^{i}}_T &= \Bigl(\mathds{1} - i\delta(\hat{S} \otimes \hat{q}) + \mathcal{O}(\delta^2) \Bigr)\Bigl[ \ket{\psi}_S \otimes \ket{\bar{p} = 0}_P \Bigr]\\
         &=  \ket{\psi}_S \otimes \ket{\bar{p} = 0}_P - i\delta\hat{S}\ket{\psi}_S\otimes\hat{q}\ket{\bar{p} = 0}_P + \mathcal{O}(\delta^2)\ket{\psi}_S \otimes \ket{\bar{p}=0}_P
     \end{align}
 
-    \noindent où $\mathcal{O}(\delta^2)$ correspond aux ordres plus 
+    \noindent où $\mathds{1}$ est l'opérateur d'identité et 
+    $\mathcal{O}(\delta^2)$ correspond aux ordres plus 
     élevés de la série de Taylor, que nous négligeons. En suivant la 
     procédure de mesure faible, nous devons effectuer une postsélection 
     ultérieure sur le système avec l’état $\ket{\varphi}_S$, qui a les 
@@ -518,8 +518,9 @@
     \end{align}
 
     \noindent en normalisant l’état du système total avec le module de la 
-    probabilité $\bra{\varphi}_S\ket{\psi}_S =\sqrt{Prob}$, dont 
-    $Prob\equiv |\bra{\varphi}_S\ket{\psi}_S|^2$ \cite{Lundeen_Resch,Lundeen_thesis, Steinberg_prob_div}:
+    probabilité $\bra{\varphi}_S\ket{\psi}_S =\sqrt{Prob}$, où
+    $Prob\equiv |\bra{\varphi}_S\ket{\psi}_S|^2$ est la probabilité de trouver l’état $\ket{\psi}_S$
+    dans l’état $\ket{\varphi}_S$ \cite{Lundeen_Resch,Lundeen_thesis, Steinberg_prob_div}:
 
     \begin{align}
         \ket{\varphi}_S\frac{\bra{\varphi}_S\hat{U}\ket{\Psi^{i}}_T}{\bra{\varphi}_S\ket{\psi}_S} &= \ket{\varphi}_S\frac{\bra{\varphi}_S\ket{\psi}_S}{\bra{\varphi}_S\ket{\psi}_S} \otimes \ket{\bar{p} = 0}_P - i\delta\ket{\varphi}_S\frac{\bra{\varphi}_S\hat{S}\ket{\psi}_S}{\bra{\varphi}_S\ket{\psi}_S}\otimes\hat{q}\ket{\bar{p} = 0}_P\label{eq:pre-div}\\
@@ -713,13 +714,13 @@
         \hat{U}^H = exp\Bigl(-i\tau\ket{H}\bra{H} \otimes \frac{\partial}{\partial t}\Bigr)
     \end{equation}
 
-    \noindent où $\tau$ est le temps d’interaction appliquer sur le système
-    dont $\int g(t) dt = \tau$ et se trouve dans le régime de 
+    \noindent où $\int g(t) dt = \tau$ est le temps d’interaction appliqué sur le système
+    et se trouve dans le régime de 
     mesures faibles, c'est-à-dire que le temps d'interaction 
     est beaucoup plus court que 
     la largeur temporelle du pointeur $\tau \ll \sigma$ (voir figure \ref{fig:interaction}). 
-    Nous l’appliquons à la partie horizontale de l’état $\ket{H}$ 
-    signifie par l'indice $H$ sur l'opérateur, ce qui entraine un décalage du 
+    Nous l’appliquons à la partie horizontale de l’état $\ket{H}$
+    désignée par l'indice $H$ sur l'opérateur, ce qui entraine un décalage du 
     pointeur $exp\Bigl( -\tau \frac{\partial }{\partial t} \Bigr) \xi(t) = \xi(t-\tau)$. 
     L’état évolue ensuite de cette manière:
 
@@ -870,14 +871,14 @@
     état d’entrée quelconque:
 
     \begin{equation}
-        \ket{\psi^{in}} = a\ket{H} + b\ket{V} 
+        \ket{\psi^{i}} = a\ket{H} + b\ket{V} 
     \end{equation}
 
      \noindent puisque $a$ et $b$ sont des amplitudes de probabilité 
      associées aux états de base $\ket{H}$ et $\ket{V}$ respectivement 
-     (c'est-à-dire $a=\bra{H}\ket{\psi^{in}}$ et $b=\bra{V}\ket{\psi^{in}}$)
+     (c'est-à-dire $a=\bra{H}\ket{\psi^{i}}$ et $b=\bra{V}\ket{\psi^{i}}$)
      et encore que $|a|^2 + |b|^2 = 1$, on peut, en pratique, calculer directement ces amplitudes de 
-     probabilités en fonction des parties de la valeur mesurée. Cette 
+     probabilités en fonction des parties de la valeur faible mesurée. Cette 
      possibilité découle du fait que la valeur faible est proportionnelle 
      à l'état quantique, comme nous l'avons démontré. Pour caractériser 
      l'état de polarisation d'un système quantique, il s'agit de mesurer 
@@ -891,14 +892,14 @@
      faible:
     
      \begin{equation}
-        \expval{\hat{\pi}^{J}}_W = \frac{\bra{D}\hat{\pi}^{J}\ket{\psi^{in}}}{\bra{D}\ket{\psi^{in}}} = \sqrt{N}\bra{J}\ket{\psi^{in}}
+        \expval{\hat{\pi}^{J}}_W = \frac{\bra{D}\hat{\pi}^{J}\ket{\psi^{i}}}{\bra{D}\ket{\psi^{i}}} = \sqrt{N}\bra{J}\ket{\psi^{i}}
     \end{equation}
 
     \noindent où $N$ est une constante de normalisation indépendante de 
     $J$. On peut écrire l’état quantique en fonction de la valeur faible. 
-
+    
     \begin{equation}
-        \ket{\psi^{in}} = \frac{1}{\sqrt{N}}\Bigl(\expval{\hat{\pi}^{H}}_W\ket{H}+\expval{\hat{\pi}^{V}}_W\ket{V}\Bigr)
+        \ket{\psi^{i}} = \frac{1}{\sqrt{N}}\Bigl(\expval{\hat{\pi}^{H}}_W\ket{H}+\expval{\hat{\pi}^{V}}_W\ket{V}\Bigr)
     \end{equation}
 
     \noindent Puisque $N$ est une constante de normalisation
@@ -908,7 +909,7 @@
     valeur faible mesurée:
 
     \begin{equation}
-        \ket{\psi^{in}} = \frac{1}{\sqrt{N}}\Bigl(\expval{\hat{\pi}^{H}}_W\ket{H}+ \Bigl(1- \expval{\hat{\pi}^{H}}_W\Bigr)\ket{V}\Bigr)
+        \ket{\psi^{i}} = \frac{1}{\sqrt{N}}\Bigl(\expval{\hat{\pi}^{H}}_W\ket{H}+ \Bigl(1- \expval{\hat{\pi}^{H}}_W\Bigr)\ket{V}\Bigr)
     \end{equation}
 
     \noindent Ce dernier est l'état d'entrée que nous pouvons 
@@ -975,13 +976,26 @@
     %    |b|^2 &= \frac{1}{2}\Bigl(1 - \mathcal{I}\Bigl( \expval{\hat{\pi}}_W \Bigr)\Bigr)\label{eq:amplitude_b_im}
     %\end{align} 
 
-    \noindent Selon l’état d’entrée, la valeur faible varie. Il est 
-    crucial de souligner que le délai $\tau$ correspond au délai maximal 
-    que nous utilisons pour interagir avec le système. Ce dernier 
-    normalise les amplitudes de probabilité. Lorsque nous modifions les 
-    états d’entrée, le délai $\tau$ devrait varier entre l’absence de 
-    délai et le délai maximal, c’est-à-dire entre les polarisations 
-    $\ket{V}$ et $\ket{H}$. 
+    \noindent Donc, en variant l'état d'entrée avec un délai 
+    $\tau$ fixed et connue, ainsi que la largeur temporelle et
+    l'état de postsélection, nous pouvons mesurer le déplacement 
+    temporel du pointeur et le décalage fréquentiel, qui sont 
+    proportionnels à la partie réelle et imaginaire de la valeur faible, 
+    respectivement. En utilisant les équations \ref{eq:amplitude_a} et 
+    \ref{eq:amplitude_b}, nous pouvons reconstruire l'état d'entrée 
+    $\ket{\psi^{i}}$ en fonction de la valeur faible mesurée de façon 
+    directe, sans avoir besoin de reconstruire la matrice densité.
+    
+    %Il est 
+    %crucial de souligner que le délai $\tau$ correspond au délai maximal 
+    %que nous utilisons pour interagir avec le système. Ce dernier 
+    %normalise les amplitudes de probabilité. Lorsque nous modifions les 
+    %états d’entrée, le résultat de la mesure varie en fonction 
+    %de la valeur faible mesurée
+    
+    %le délai $\tau$ devrait varier entre l’absence de 
+    %délai et le délai maximal, c’est-à-dire entre les polarisations 
+    %$\ket{V}$ et $\ket{H}$. 
 
 \end{doublespace}
 

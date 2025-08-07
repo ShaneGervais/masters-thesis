@@ -61,8 +61,7 @@
     les éventuelles lacunes. Les options d'interpollation sont linéaire ou 
     sinusoidale entre les points, ce qui rend la courbe plus lisse \cite{TektronixTDS5000}. 
     Cependant, la résolution
-    temporelle est insufisante pour nos mesures. Le mode d
-    ’échantillonnage en temps équivalent permet d’augmenter 
+    temporelle est insufisante pour nos mesures. Le mode d’échantillonnage en temps équivalent permet d’augmenter 
     numériquement le taux d’échantillonnage au-delà du taux d’échantillonnage 
     maximum de l'oscilloscope. La figure \ref{fig:EQ-time} 
     illustre le fonctionnement de ce mode. 
@@ -122,13 +121,22 @@
     Les délais 
     commencent par une mesure avec un câble possèdant la longueur 
     la plus courte; dans ce cas, le miroir ajustable est fixe. Pour 
-    l'expérience de mesures de la vitesse de la lumière, nous introduisons
+    l'expérience de mesure de la vitesse de la lumière, nous introduisons
     un délai en déplaçant le miroir à différentes distances $\Delta x$: 
-    $2,52$-$5,48$-$10,10$-$20,19$-$30,29$-$40,38$-$50,48$ et $65,62$ $cm$ $\pm 2$ $\mu m$ (converti à partir des pouces, car 
-    notre platine de translation linéaire manuelle est en unités 
-    impériales \cite{EdmundOpticsStage}). Le délai mesuré 
-    part d’une référence, appelée position $0$, correspondant à 
-    la position initiale du miroir. Comme le montre
+    $2,52$-$5,48$ $cm$ $\pm 2$ $\mu m$ (converti à partir des pouces, car 
+    notre platine de translation linéaire manuelle utilise des unités 
+    impériales \cite{EdmundOpticsStage}) et 
+    $10,10$-$20,19$-$30,29$-$40,38$-$50,48$ et $65,62$ $cm$ $\pm 2$ $mm$.
+    Les deux premières distances sont mesurées avec une platine de 
+    translation linéaire manuelle, tandis que les autres sont mesurées
+    avec une règle d’un mètre de longueur. La platine est à $0,00$ $cm$
+    lorsque le miroir est à la position initiale, les autres distances sont
+    mesurées par rapport à cette position. L'incertitude des distances mesurées
+    avec la règle est de $2$ $mm$, car nous prenons en compte le
+    positionnement de la règle à la position initiale et à la position à mesurer. 
+    Le miroir est déplacé
+    manuellement à chaque fois que nous voulons mesurer un nouveau délai.
+    Comme le montre
     la figure \ref{fig:speed-of-light}, la lumière doit parcourir 
     une distance double car elle parcourt deux fois la 
     distance entre le PBS et le miroir qui se déplace. 

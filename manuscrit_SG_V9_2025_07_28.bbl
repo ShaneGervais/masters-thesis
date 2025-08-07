@@ -193,6 +193,44 @@
     \warn{\item Invalid format of field 'date' \item Invalid format of field 'date'}
   \endentry
 
+  \entry{Wootters1982}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WWK}{%
+         family={Wootters},
+         familyi={W\bibinitperiod},
+         given={W.\bibnamedelima K.},
+         giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=ZWH}{%
+         family={Zurek},
+         familyi={Z\bibinitperiod},
+         given={W.\bibnamedelima H.},
+         giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WWKZWH1}
+    \strng{fullhash}{WWKZWH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    If a photon of definite polarization encounters an excited atom, there is typically some nonvanishing probability that the atom will emit a second photon by stimulated emission. Such a photon is guaranteed to have the same polarization as the original photon. But is it possible by this or any other process to amplify a quantum state, that is, to produce several copies of a quantum system (the polarized photon in the present case) each having the same state as the original? If it were, the amplifying process could be used to ascertain the exact state of a quantum system: in the case of a photon, one could determine its polarization by first producing a beam of identically polarized copies and then measuring the Stokes parameters1. We show here that the linearity of quantum mechanics forbids such replication and that this conclusion holds for all quantum systems.%
+    }
+    \verb{doi}
+    \verb 10.1038/299802a0
+    \endverb
+    \field{isbn}{1476-4687}
+    \field{number}{5886}
+    \field{pages}{802\bibrangedash 803}
+    \field{title}{A single quantum cannot be cloned}
+    \verb{url}
+    \verb https://doi.org/10.1038/299802a0
+    \endverb
+    \field{volume}{299}
+    \field{journaltitle}{Nature}
+    \field{year}{1982}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field 'date'}
+  \endentry
+
   \entry{metrology}{article}{}
     \name{author}{10}{}{%
       {{hash=TA}{%
@@ -1839,22 +1877,6 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{ThorlabsROT}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=T}{%
-         family={Thorlabs},
-         familyi={T\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{T5}
-    \strng{fullhash}{T5}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{howpublished}{\url{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=2875}}
-    \field{note}{Consulté le 28 février 2025}
-    \field{title}{Motorized Precision Rotation Mount}
-  \endentry
-
   \entry{pylablib_thorlabs_kinesis}{misc}{}
     \name{author}{1}{}{%
       {{hash=P}{%
@@ -1873,6 +1895,22 @@
     \verb ml
     \endverb
     \field{year}{2024}
+  \endentry
+
+  \entry{ThorlabsROT}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={Thorlabs},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T5}
+    \strng{fullhash}{T5}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=2875}}
+    \field{note}{Consulté le 28 février 2025}
+    \field{title}{Motorized Precision Rotation Mount}
   \endentry
 
   \entry{oscilloscope_coding}{manual}{}

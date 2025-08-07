@@ -58,7 +58,7 @@
     
     \noindent Nous commençons par l'état de polarisation linéaire 
     $\ket{\psi_{i}^{1}} = cos(2\theta)\ket{H} + sin(2\theta)\ket{V}$
-    qui est préparé par la lame demi-onde à $2\theta$, nous obtenons:
+    qui est préparé par la lame demi-onde à $\theta$, nous obtenons:
 
     \begin{equation}
         \expval{\hat{t}} = \frac{\tau}{2}(cos^2(2\theta) + 2sin(2\theta)cos(2\theta))
@@ -67,7 +67,7 @@
 
     \noindent Ensuite, pour l'état de polarisation circulaire 
     $\ket{\psi_{i}^{2}} = cos(2\theta)\ket{H} + isin(2\theta)\ket{V}$
-    préparé par la lame demi-onde à $2\theta$ et une lame quart d'onde 
+    préparé par la lame demi-onde à $\theta$ et une lame quart d'onde 
     à $0$ degré, nous avons:
 
     \begin{equation}
@@ -86,14 +86,16 @@
         \label{eq:expval_t_3}
     \end{equation}
 
-    \noindent Cette expérience a été optimisée pour qu’elle fonctionne 
-    de manière autonome grâce à des supports de rotation motorisés 
-    \cite{ThorlabsROT} pour les lames d'onde contrôlés par un code 
-    \textsc{Python} et un oscilloscope interfacé à un ordinateur en utilisant
-    la bibliothèque Kinesis \cite{pylablib_thorlabs_kinesis} pour faire 
-    tourner ces supports et l’API de l'oscilloscope \cite{TektronixTDS5000,oscilloscope_coding} 
-    pour enregistrer chaque fichier de chaque état d’entrée. Toutes les 
-    données sont ensuite analysées avec \textsc{MATLAB}. Les résultats sont 
-    présentés au chapitre 4. 
+    \noindent Pour automatiser l'expérience, nous utilisons la 
+    bibliothèque Kinesis pour contrôler les supports de rotation motorisés \cite{pylablib_thorlabs_kinesis,ThorlabsROT} 
+    des lames d'onde et pilotons l’acquisition via l’API de l’oscilloscope (interface VISA) \cite{oscilloscope_coding,TektronixTDS5000}. 
+    Nous envoyons un signal via \textsc{Python} à Kinesis pour faire 
+    tourner la lame demi-onde d'entrée (voir figure \ref{fig:realexp}) 
+    de $90$ degrés par $2.5$ degrés à chaque itération. 
+    Ensuite, un signal est envoyé à l'oscilloscope pour acquérir 
+    les données de l'impulsion et les enregistrer automatiquement, $5$
+    fichiers sont créés pour chaque état d'entrée. Ce processus 
+    est répété pour chaque état d'entrée, permettant 
+    une collecte de données efficace et reproductible.
 \end{doublespace}
 

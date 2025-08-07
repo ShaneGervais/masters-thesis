@@ -6,12 +6,14 @@
     Google et IBM, développent des ordinateurs quantiques. Même des 
     entreprises, telles que Xanadu, basées au Canada, travaillent sur 
     des systèmes photoniques pour les ordinateurs quantiques. Ces 
-    ordinateurs quantiques utilisent les propriétés naturelles de la 
-    mécanique quantique pour résoudre des problèmes complexes \cite{Feynman1982,quantumcomputing40years}. 
+    ordinateurs quantiques utilisent les propriétés fondamentales de la 
+    mécanique quantique (comme la superposition, l'intrication, etc.) 
+    pour résoudre des problèmes complexes \cite{Feynman1982,quantumcomputing40years}. 
     Contrairement aux ordinateurs classiques, un ordinateur quantique 
-    utilise ce qu'on appelle des qubits (un état de bit quantifié tel 
-    que $\ket{0}$ et $\ket{1}$) qui tire parti de la nature physique de la 
-    mécanique quantique permettant à un état d'être dans une combinaison 
+    repose sur des bits quantiques, ou qubits, soit $\ket{0}$ et $\ket{1}$, qui
+    forment un ensemble binaire de deux états possibles, comme le spin d'une particule $\ket{\uparrow}$ et $\ket{\downarrow}$ ou
+    la polarisation $\ket{H}$ et $\ket{V}$ par exemple. Les lois de 
+    la mécanique quantique permettent à un état d'être dans une combinaison 
     linéaire des deux états à la fois, également appelée superposition, 
     telle que $\frac{1}{\sqrt{2}}(\ket{0}+\ket{1})$. Cela signifie 
     qu’un ordinateur quantique 
@@ -20,8 +22,11 @@
     exploitée pour développer des systèmes de communication quantique \cite{QTintelecomindustry}. 
     Ces systèmes utilisent un état quantique pour stocker des informations 
     ou des messages afin d'envoyer des messages cryptés de manière ultra 
-    sécuriser via une clé de distribution quantique, ce qui permet 
-    également de détecter toute écoute clandestine. Des travaux sont 
+    sécurisée via une clé de distribution quantique, ce qui permet 
+    également de détecter toute écoute clandestine. Cette ultra sécurité
+    est rendue possible par le fait que la simple observation d’un état
+    quantique le perturbe, ce qui rend impossible la copie d’un état
+    quantique inconnu (théorème de non-clonage) \cite{Wootters1982}. Des travaux sont 
     également menés sur des capteurs quantiques capables de détecter des 
     changements infimes dans les champs gravitationnels, ce qui permet 
     de mieux cartographier les ressources souterraines \cite{metrology}. 
@@ -31,29 +36,30 @@
     positionnement global (GPS) \cite{QTapplImpl}. Sans aborder les 
     autres applications des 
     technologies quantiques, nous constatons qu'elles peuvent avoir un 
-    impact considérable sur le monde.
-    
-    \noindent En effet, pour connaitre le résultat d'un qubit ou même le 
-    message lors d'un protocole de communication quantique, le 
-    développement des technologies quantiques repose sur la capacité à 
-    mesurer et à caractériser les états quantiques avec une précision et 
-    une fiabilité accrues \cite{DiVincenzo_2000,QTapplImpl}. Dans ce 
-    contexte, le domaine de la photonique quantique occupe une place 
-    centrale grâce aux propriétés étonnantes des photons. Les photons se 
-    distinguent par leur faible décohérence, divers degrés de liberté 
-    (polarisation, domaine positionnel, quantité de mouvement, temporel 
-    et fréquentiel), et leur intégration naturelle dans les 
+    impact considérable sur le monde moderne. 
+
+    \noindent Cependant, pour que ces technologies quantiques 
+    soient mises en œuvre, il est essentiel de pouvoir mesurer et
+    caractériser les états quantiques de manière précise et fiable,
+    telles que le résultat d'une opération quantique ou l'état d'un qubit
+    \cite{DiVincenzo_2000,QTapplImpl}. Les mesures quantiques
+    sont un aspect fondamental de la mécanique quantique, car elles
+    permettent d'extraire des informations sur l'état d'un système
+    quantique. Dans ce contexte, le domaine de la photonique quantique
+    occupe une place centrale grâce aux propriétés remarquables des photons.
+    Les photons se distinguent par leur faible décohérence, divers degrés
+    de liberté (polarisation, domaine positionnel, quantité de mouvement,
+    temporel et fréquentiel), et leur intégration naturelle dans les
     infrastructures optiques existantes \cite{browne2017quantumopticsquantumtechnologies,photonicInformation}. 
     L’état de polarisation des photons, sous forme de qubit, possède des 
     caractéristiques idéales pour de nombreuses applications, notamment 
     la télécommunication quantique sécurisée, l’imagerie quantique à 
     haute résolution, la métrologie quantique et d’autres encore, comme 
     mentionné \cite{QTintelecomindustry,metrology,Wang_2019,QTapplImpl}.
-
-    \noindent Par conséquent, il est crucial d’effectuer des mesures afin 
+    Par conséquent, il est crucial d’effectuer des mesures afin 
     de caractériser avec précision les états quantiques pour soutenir ces 
     diverses technologies. Cependant, effectuer des mesures quantiques 
-    pose un défi en raison de la nature aléatoire de la théorie. 
+    pose un défi en raison de la nature probabiliste de la théorie. 
     Contrairement à la mécanique classique, il est impossible de mesurer 
     simultanément deux variables complémentaires (ex: le moment d’arrivée 
     et la fréquence spectrale) avec une précision absolue à cause du 
@@ -122,7 +128,7 @@
     
     Les recherches et applications sur les mesures faibles ont démontré 
     leur potentiel, notamment la théorie des mesures quantiques, 
-    l’informatique quantique, la télécommunication optique, etc. 
+    l’informatique quantique, la télécommunication optique 
     \cite{Lundeen_Resch,QED,OpticalNetworks,Lundeen_thesis,Brunner_2004}. 
     Elles peuvent même se révéler plus efficaces que les méthodes 
     traditionnelles en certains cas. Dans l'étude: \cite{WeakorStd}, ils 
@@ -152,24 +158,23 @@
     généralement sur l’utilisation de cristaux BBO (bêta-borate de baryum) de 
     taille spécifique pour implémenter l’interaction faible 
     \cite{Hairiri,Guilleaum,Guilleaum_thesis}. Cette exigence rend leur 
-    flexibilité difficile pour s’adapter à divers systèmes intégrés.
-
-    \noindent On vise à explorer les degrés de libertés 
+    mise en œuvre difficile pour s’adapter à divers systèmes intégrés. 
+    Pour surmonter cette limitation, 
+    on vise à explorer les degrés de libertés 
     qui seraient compatibles avec 
     des systèmes quantiques pour identifier la manière de rendre 
-    intégrable les mesures faibles. Cette flexibilité 
-    rend possible l’intégration de mesures faibles dans 
-    des technologies quantiques \cite{kaneda2018highefficiencysinglephotongenerationlargescale,Dai_2020}. 
-    Elles peuvent également être facilement implantées dans nos systèmes 
-    optiques existant, par exemple dans des télécommunications quantiques \cite{OpticalNetworks}. 
+    intégrable les mesures faibles. En explorant différents degrés de liberté,
+    nous pouvons identifier les variables qui sont compatibles avec
+    des systèmes quantiques et qui peuvent être intégrées dans des
+    technologies quantiques \cite{kaneda2018highefficiencysinglephotongenerationlargescale,Dai_2020}. 
 
     \noindent Comme les photons possèdent différents degrés de liberté, 
     nous proposons d’utiliser le mode temporel comme pointeur pour la 
     caractérisation de l’état de polarisation à l’aide de méthodes 
     interférométriques. Cette approche offre une implémentation plus 
     facile, puisqu’elle ne nécessite pas de composants optiques 
-    spécifiques, tels qu’un cristal. Il ne faut que des miroirs pour 
-    interagir avec le système de manière contrôlable. 
+    spécifiques, tels qu’un cristal. Il ne faut qu'un interféromètre pour 
+    réaliser les mesures de manière controllable et reproductible.
 
     \noindent Notre objectif pour effectuer cette caractérisation 
     est d’évaluer directement les composantes réelle et imaginaire de la valeur faible provenant d'un pointeur 
@@ -184,14 +189,13 @@
     technologies quantiques et à l’exploration de nouvelles opportunités 
     dans les domaines scientifique et industriel.
 
-    \noindent Pour résumé, on propose une nouvelle méthode de mesure 
+    \noindent Pour résumer, on propose une nouvelle méthode de mesure 
     faible qui exploite le mode temporel des photons pour caractériser 
     des états de polarisation. Cette méthode offre un cadre plus robuste 
     pour son implantation dans les technologies quantiques. Dans la suite 
     de cette thèse, nous explorerons notre compréhension des mesures 
-    faibles, de leur réalisation expérimentale et de leurs applications 
-    dans l’informatique quantique, la communication quantique et d’autres 
-    domaines. Nous commencerons par une analyse des principes 
+    faibles, de leur réalisation expérimentale et les résultats
+    obtenus.Nous commencerons par une analyse des principes 
     fondamentaux des mesures quantiques. Ensuite, nous discuterons les approches 
     tomographiques et des mesures faibles en termes de leurs avantages et 
     limites. Nous présenterons ensuite une méthode innovante, 
@@ -199,6 +203,5 @@
     collecter le plus d'information possible sur l'état quantique tout en 
     limitant l’influence de la mesure (interaction) sur le système. Cette 
     méthode sera évaluée à travers des expériences en laboratoire. Ensuite, 
-    nous discuterons des résultats et des implications pour les 
-    technologies quantiques émergentes. 
+    nous discuterons des résultats et travaux futurs. 
 \end{doublespace}

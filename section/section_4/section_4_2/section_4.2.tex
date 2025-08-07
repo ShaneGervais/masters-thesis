@@ -48,8 +48,7 @@
     Pour trouver des déplacements induits par la 
     mesure faible, nous calculons la densité spectrale du spectre de 
     puissance (DSP) sur un ensemble d'impulsions du signal expérimentale.  
-    La fonction \textit{pspectrum} de \textsc{MATLAB} facilite se calcule pour 
-    nous, en effectuent une transformation de Fourier à haute résolution sur 
+    La fonction \textit{pspectrum} de \textsc{MATLAB} effectue une transformation de Fourier à haute résolution sur 
     plusieurs impulsions pour obtenir la DSP. 
     Voici ce spectre que nous avons obtenu à partir de nos données 
     expérimentales (figure \ref{fig:spectre}).
@@ -163,14 +162,14 @@
 
     \begin{figure}[!htpb]
         \centering
-        \includegraphics[width=1.0\textwidth]{imag_weak_value_path_4.png}
+        \includegraphics[width=1.0\textwidth]{imag_weak_value_path_4 copy 2.png}
         \caption{Déplacement fréquentiel mesuré pour les trajets de polarisation 
         $\ket{H} \to \ket{R} \to \ket{V} \to \ket{L} \to \ket{H}$, 
         avec un délai de $167$ $ps$ et une durée d'impulsion de $4$ $ns$. 
         Les barres d'erreur verticale représentent l'incertitude de la mesure,
         calculée à partir de la variations des fréquences
         mesurées pour chaque état d'entrée. Les déplacements sont mesurés en
-        kilohertz (kHz) par rapport à l'état $\ket{L}$. La courbe théorique
+        kilohertz (kHz) par rapport à l'état $\ket{V}$. La courbe théorique
         n'est pas représentée car les déplacements ne correspondent pas
         avec nos attentes théoriques.}
         \label{fig:imaginary_part_HRVLH}
@@ -179,9 +178,21 @@
     \noindent Ces données on été obtenues en prenant les résultats de la DSP
     pour chaque état d'entrée, en calculant le centroïde de chaque pic
     en utilisant l'équation \ref{eq:centroid} et le comparer à 
-    fréquence du centroïde de l'état $\ket{L}$ pour
-    calculer la partie imaginaire de la valeur faible. Nous pouvons effectivement
-    calculé les amplitudes de probabilité (voir figure \ref{fig:prob_amp_imaginary_part_HRVLH}) 
+    fréquence du centroïde de l'état $\ket{V}$ pour
+    calculer la partie imaginaire de la valeur faible. Nous avons 
+    observé que les déplacements fréquentiels sont positives et c'est 
+    dû à la nature de l'analyse. Ces résultats nous indiquent que nous sommes entrains 
+    d'observer la valeur absolue de la partie imaginaire de la valeur faible,
+    représentée par avec la courbe théorique dans la figure \ref{fig:imaginary_part_HRVLH}.
+    Cependant, les déplacements ne correspondent pas à nos attentes théoriques,
+    car la courbe théorique est bien sinusoïdale, mais les déplacements
+    mesurés suivent une tendance de $sin(1.75\theta)$ ce qui est différent
+    à celui attendu dans l'équation \ref{eq:expval_omega_circular}.
+    Néanmoins, ces déplacements dans la DSP indiquent que la
+    partie imaginaire de la valeur faible est présente et elle suit
+    une tendance sinusoïdale et permet l'état soit caractérisable à partir de
+    ces résultats. Nous pouvons effectivement
+    calculé les amplitudes de probabilité (voir figure \ref{fig:prob_amp_imaginary_part_HRVLH})
     pour chaque état d'entrée en utilisant les relations suivantes:
 
     \begin{align}

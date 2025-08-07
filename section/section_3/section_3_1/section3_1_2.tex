@@ -43,10 +43,12 @@
     \begin{figure}[!hptb]
         \centering
         \includegraphics[width=1.0\textwidth]{fits_BNC copy.png}
-        \caption{Profil temporel de la dérivée des données d'impulsion 
-        dans l'expérience des câbles BNC RG-58 avec chacun de ses 
-        ajustements de courbe (désignés par les lignes pointillées) 
-        de type \textit{poly4}. }
+        \caption{Donneés de la dérivée des impulsions de chaque longueur de câble
+            BNC RG-58, avec les ajustements paramétriques  
+            de type \textit{poly4} représentés par les lignes pointillées.
+            La position temporelle du pic de la dérivée de l'impulsion
+            est utilisée pour déterminer le temps d'arrivée du signal.
+            }
         \label{fig:BNC-pulse}
     \end{figure}
     
@@ -59,16 +61,16 @@
         y(t) = a_0 + a_1 T + a_2 t^2 + \ldots + a_N t^N
     \end{equation}
 
-    \noindent Où $a_i$ sont les coefficients du polynôme et $t$ est le temps. 
+    \noindent où $a_i$ sont les coefficients du polynôme et $t$ est le temps. 
     Des séries de Fourier de degré $1$ à $6$, démarquant par \textit{fourierN},
     
     \begin{equation}
         y(t) = a_0 + a_1 cos(\omega t) + a_2 sin(\omega t) + \ldots + a_N cos(N \omega t) + b_1 sin(N \omega t)
     \end{equation}
 
-    \noindent Où $a_i$ et $b_i$ sont les coefficients de la série de 
+    \noindent où $a_i$ et $b_i$ sont les coefficients de la série de 
     Fourier, $\omega$ est la fréquence angulaire et $t$ est le temps. 
-    Et une fonction gaussienne, démarquant par \textit{gauss1} qui est:
+    Et une fonction gaussienne, dénommée par \textit{gauss1} qui est:
 
     \begin{equation}
         y(t) = a_0 + a_1 e^{-\frac{(t - t_0)^2}{2 \sigma^2}}
@@ -80,12 +82,12 @@
     du miroir pour l'expérience de la vitesse de la lumière), 
     nous avons ajusté les courbes à la dérivée de
     l'impulsion, en utilisant la fonction \textit{fit} de \textsc{MATLAB}.
-    Ensuite utilisé la fonction \textit{polyval} pour évaluer
-    la position temporelle du pic de la dérivée de l'impulsion avec une 
-    résolution de $1/10000$ de la résolution de l’oscilloscope correspondant 
-    à une résolution de $4\times10^{-4}$ $ps$. Nous négligeons environ $40 \%$ des données 
-    d’amplitude initiales afin d'ignorer le deuxième pic de la dérivée (voir la figure \ref{fig:BNC-pulse}); l’ajustement était donc susceptible d’être 
-    optimal. Le reste du signal ne présente pas d’intérêt. Nous trouvons 
+    Ensuite, nous avons utilisé la fonction \textit{polyval} pour évaluer
+    la position temporelle du pic de la dérivée de l'impulsion avec une
+    résolution de $1/10000$ de la résolution de l’oscilloscope correspondant
+    à une résolution de $4\times10^{-4}$ $ps$. Nous négligeons environ $40 \%$ des données
+    d’amplitude initiales afin d'ignorer le deuxième pic de la dérivée (voir la figure \ref{fig:BNC-pulse}); l’ajustement était donc susceptible d’être
+    optimal. Le reste du signal ne présente pas d’intérêt. Nous trouvons
     le délai en comparant à la position initiale, c'est-à-dire 
     l'expérience réalisée avec le câble le plus court.
     Le tableau \ref{table:BNC-fits} démontre les différents ajustements que nous 
@@ -97,7 +99,7 @@
 
 \begin{longtable}{p{2.0cm} p{2.0cm} p{4.0cm} p{2.0cm}}
     \caption{Résultats des temps d'arrivée et écart-type de différents 
-    ajustements de courbe pour l'expérience de vitesse dans les câbles 
+    ajustements de courbe pour l'expérience de la vitesse d'un signal dans un câble 
     BNC. Plus de chiffres significatifs ont été ajoutés pour les 
     ajustements de courbe pour qu'ils soient compatibles avec 
     l'écart-type.} \\
@@ -254,12 +256,12 @@
     d’ajustement de courbe. Il inclut les différents ajustements, vitesse mesurée
     et l'erreur en pourcentage.
     Nous avons utilisé la vitesse théorique de $197 863 022$ $m/s$
-    comme référence, qui est la vitesse du signal dans un câble BNC
-    RG-58 \cite{arrl2019,thorlabs2021}.
+    comme référence, qui est la vitesse d'un signal électrique dans un câble BNC
+    \cite{arrl2019,thorlabs2021}.
     
 
     \begin{longtable}{p{2.0cm} p{4.0cm} p{2.0cm} }
-        \caption{Mesure de la vitesse du signal dans les câbles BNC 
+        \caption{Mesure de la vitesse d'un signal électrique dans les câbles BNC 
         pour différents ajustements de courbe (vitesse théorique $197863022$ $m/s$ \cite{arrl2019})} \\
         \toprule
         \label{table:speed-BNC-table}
@@ -319,7 +321,7 @@
     continuer avec le polynôme du quatrième ordre, car il est
     légèrement plus précis que les autres ajustements avec un écart-type
     très faible et possède
-    une forme plus simple. Cette ajustement de 
+    une forme plus simple. Cet ajustement de
     la courbe s'écrit comme suit :
 
     \begin{equation}
@@ -327,11 +329,9 @@
     \end{equation}
     
     
-    \noindent Les paramètres d’ajustement $a_0$, $b_0$, $c_0$ et 
-    $d_0$ de la fonction avec variable dépendante $y$, qui 
-    représente l’amplitude, et $t$, qui correspond à la position 
-    temporelle des courbes, sont sélectionnés pour optimiser 
-    l’ajustement de nos données. La figure \ref{fig:BNC-res} 
+    \noindent où $a_0$, $b_0$, $c_0$ et $d_0$ sont les paramètres d’ajustement
+    du polynôme, $y$ représente la dérivée de nos données et 
+    $t$ représente le temps. La figure \ref{fig:BNC-res} 
     montre les délais mesurés
     pour chaque longueur de câble BNC ainsi que leur ajustement de
     courbe. 
@@ -364,7 +364,7 @@
     $0,00506615$ $ns/mm$ et un coefficient de corrélation 
     $R^2$ de $0,9999$,
     ce qui indique que les données sont bien ajustées par une droite.
-    Notre résultat pour la vitesse du signal électrique dans un câble BNC est
+    Notre résultat pour la vitesse d'un signal électrique dans un câble BNC est
     $197 388 575 \pm 0,0008$ $m/s$, ce qui représente une erreur en
     pourcentage de $0,2367\%$ par rapport à la vitesse du
     signal dans un câble BNC qui est environ $0,66$ par
