@@ -250,8 +250,8 @@
     Poincaré (figure \ref{fig:spherepoincarre}) qui offre
     une représentation tridimensionnelle où 
     chaque axe correspond à un paramètre de Stokes, excluant ainsi $S_0$. 
-    Chaque point sur cette surface représente un état distinct de 
-    polarisation pur. 
+    Chaque point sur cette surface représente un état distinct d'une
+    polarisation pure.
 
     \begin{figure}[!h!t!p!b!]
         \centering
@@ -267,7 +267,7 @@
         \label{fig:spherepoincarre}
     \end{figure}
 
-    \noindent Enfin, les protocoles de la tomographie quantique 
+    \noindent Enfin, les protocoles de tomographie quantique 
     permettent de déterminer empiriquement ces coefficients de la matrice 
     densité, à partir des paramètres de Stokes, et peuvent donc 
     reconstruire et caractériser entièrement la matrice densité 
@@ -315,10 +315,17 @@
     \ref{fig:neumann} illustre une métaphore de ce modèle pour décrire
     comment le système est couplé à un pointeur, qui est un
     indicateur de la mesure lors de l'interaction. 
-    Nous pouvons imaginer que le couplage est rompu
-    lorsque le conducteur relâche le frein en même temps que l'accélérateur. 
-    Le pointeur est alors déplacé en fonction de la force d’interaction
-    $\hat{U}$ que le conducteur exerce sur le système.
+    Considérons une voiture de Formule 1 comme système, avec le
+    conducteur qui interagit avec le système. L’indicateur de vitesse
+    agit comme un pointeur, initialement réglé sur zéro avant que le
+    conducteur n’interagisse avec le système. Après l’interaction,
+    le pointeur est alors déplacé en fonction de la force d’interaction
+    $\hat{U}$ que le conducteur exerce sur le système. Cette force
+    d’interaction déplace le pointeur grandement, permettant ainsi de lire la
+    vitesse de la voiture sur l’indicateur. Ce modèle illustre
+    comment une interaction forte entre le système et le pointeur
+    permet de perturber le système de manière significative,
+    entraînant un effondrement complet de la fonction d’onde.
 
     \begin{figure}[!htbp]
         \centering
@@ -351,7 +358,7 @@
         \caption{Considérons qu'un pointeur possède une forme gaussienne 
         avec une position moyenne, représentée par la ligne pointillée, avec 
         une distribution de probabilité $\sigma$ dans l’état 
-        $\ket{\psi} = a\ket{H} + b\ket{V}$ et un coefficient d’interaction 
+        $\ket{\psi_i} = a\ket{H} + b\ket{V}$ et un coefficient d’interaction 
         $\delta$ qui décrivent la force de séparation des états. 
         a) Interaction forte : une interaction forte impliquerait un 
         effondrement complet de l’état séparant complètement les états de 
@@ -367,11 +374,21 @@
         \label{fig:interaction}
     \end{figure}
 
-    \noindent Dans le contexte des mesures faibles, la force de l’interaction, 
-    soit $\delta$, est choisie pour que le déplacement du pointeur soit 
-    inférieur à la largeur de la distribution des probabilités. Cette 
-    méthode permet ainsi de mesurer directement le déplacement du pointeur 
-    après une mesure projective et d’en obtenir la valeur faible. 
+    \noindent Dans le contexte des mesures faibles, la voiture de Formule 1 
+    de notre métaphore précédente (voir la figure \ref{fig:neumann}) interagit faiblement avec le système, 
+    de sorte que l’indicateur de vitesse (pointeur) est légèrement 
+    déplacé, mais pas suffisamment pour lire la vitesse exacte. L'aiguille
+    est plus large que le déplacement causé par l'interaction,
+    rendant ainsi la lecture de la vitesse imprécise. Cependant, en
+    répétant cette interaction plusieurs fois et en moyennant les
+    résultats, on peut obtenir une estimation précise de la vitesse
+    moyenne. 
+    
+    \noindent Dans ce régime, la force de l’interaction,
+    soit $\delta$, est choisie pour que le déplacement du pointeur soit
+    inférieur à la largeur de la distribution des probabilités. Cette
+    méthode permet ainsi de mesurer directement le déplacement du pointeur
+    après une mesure projective et d’en obtenir la valeur faible.
     La valeur faible $\expval{\hat{S}}_W$, dont l'indice $W$ signifie 
     \guillemetleft Weak\guillemetright \space cet-à-dire faible en anglais pour la base des
     mesures faibles \cite{Lundeen_Resch}. Cette dernière est définie
