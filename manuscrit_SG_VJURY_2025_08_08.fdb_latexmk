@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex manuscrit_SG_VJURY_2025_08_08"] 1754626912.94488 "manuscrit_SG_VJURY_2025_08_08.aux" "manuscrit_SG_VJURY_2025_08_08.bbl" "manuscrit_SG_VJURY_2025_08_08" 1754626919.86266 0
-  "./manuscrit_SG_VJURY_2025_08_08-blx.bib" 1754626919.50476 343 3a07cef98ad14713f755034bc844b0fc ""
+["bibtex manuscrit_SG_VJURY_2025_08_08"] 1754629798.82413 "manuscrit_SG_VJURY_2025_08_08.aux" "manuscrit_SG_VJURY_2025_08_08.bbl" "manuscrit_SG_VJURY_2025_08_08" 1754630321.97245 0
+  "./manuscrit_SG_VJURY_2025_08_08-blx.bib" 1754630321.60502 343 3a07cef98ad14713f755034bc844b0fc ""
   "./reference_these.bib" 1754401731.00541 40287 566793ade28b652f1150131045aa8c19 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1678141846 65484 b7949c47a88ed6dca66ebc7a04577312 ""
-  "manuscrit_SG_VJURY_2025_08_08.aux" 1754626919.48874 70884 e4154887a0b9bdff0ec96a3c9aeea4c6 "pdflatex"
+  "manuscrit_SG_VJURY_2025_08_08.aux" 1754630321.58918 70886 08ca579300b2a7e455703e2b2d321590 "pdflatex"
   (generated)
   "manuscrit_SG_VJURY_2025_08_08.bbl"
   "manuscrit_SG_VJURY_2025_08_08.blg"
   (rewritten before read)
-["pdflatex"] 1754626913.03868 "/Users/shanegervais/Documents/masters-thesis/manuscrit_SG_VJURY_2025_08_08.tex" "manuscrit_SG_VJURY_2025_08_08.pdf" "manuscrit_SG_VJURY_2025_08_08" 1754626919.86287 0
-  "/Users/shanegervais/Documents/masters-thesis/manuscrit_SG_VJURY_2025_08_08.tex" 1754626899.16494 16301 0fcb95123a6dc80514abbf27b1239be4 ""
+["pdflatex"] 1754630314.77348 "/Users/shanegervais/Documents/masters-thesis/manuscrit_SG_VJURY_2025_08_08.tex" "manuscrit_SG_VJURY_2025_08_08.pdf" "manuscrit_SG_VJURY_2025_08_08" 1754630321.97272 0
+  "/Users/shanegervais/Documents/masters-thesis/manuscrit_SG_VJURY_2025_08_08.tex" 1754627085.15494 16301 0fcb95123a6dc80514abbf27b1239be4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -209,14 +209,14 @@
   "figure/visibility_2.png" 1749030043.32883 308779 7c32d26e6a9f77a774a180f0675cc2ea ""
   "figure/zoom_at_87MHz.png" 1751884866.70797 240417 180206df4337477d824d92ece4b02f5e ""
   "figure/zoom_doppler_res_scatter.png" 1749030043.33997 37682 c62b6413dd2f59ed9a6017f7bb8ef063 ""
-  "manuscrit_SG_VJURY_2025_08_08.aux" 1754626919.48874 70884 e4154887a0b9bdff0ec96a3c9aeea4c6 "pdflatex"
-  "manuscrit_SG_VJURY_2025_08_08.bbl" 1754626913.03599 73465 0e6fcea4ee22e3b80a2d4f0918514c48 "bibtex manuscrit_SG_VJURY_2025_08_08"
-  "manuscrit_SG_VJURY_2025_08_08.lof" 1754626919.50558 18578 28bc50e4f7837d063203677e7bee8467 "pdflatex"
-  "manuscrit_SG_VJURY_2025_08_08.lot" 1754626919.50556 1514 e20b634fab8c1a4f8ea9a95c7bd8c3b0 "pdflatex"
-  "manuscrit_SG_VJURY_2025_08_08.out" 1754626919.50215 10832 6e1cdf1a4bc37b3e1474e3433464d13e "pdflatex"
-  "manuscrit_SG_VJURY_2025_08_08.run.xml" 1754626919.50546 2753 2566c9c227fec1537a64c938296ef5e6 "pdflatex"
-  "manuscrit_SG_VJURY_2025_08_08.tex" 1754626899.16494 16301 0fcb95123a6dc80514abbf27b1239be4 ""
-  "manuscrit_SG_VJURY_2025_08_08.toc" 1754626919.50551 4423 855db7e1ca9403a7daa0cd88df7c6d21 "pdflatex"
+  "manuscrit_SG_VJURY_2025_08_08.aux" 1754630321.58918 70886 08ca579300b2a7e455703e2b2d321590 "pdflatex"
+  "manuscrit_SG_VJURY_2025_08_08.bbl" 1754629798.92135 73465 0e6fcea4ee22e3b80a2d4f0918514c48 "bibtex manuscrit_SG_VJURY_2025_08_08"
+  "manuscrit_SG_VJURY_2025_08_08.lof" 1754630321.60604 18579 e349f8db9464d45225272fcc6e363b41 "pdflatex"
+  "manuscrit_SG_VJURY_2025_08_08.lot" 1754630321.60602 1514 e59c63508b73acd687070b12f8195214 "pdflatex"
+  "manuscrit_SG_VJURY_2025_08_08.out" 1754630321.60237 10832 6e1cdf1a4bc37b3e1474e3433464d13e "pdflatex"
+  "manuscrit_SG_VJURY_2025_08_08.run.xml" 1754630321.60565 2753 2566c9c227fec1537a64c938296ef5e6 "pdflatex"
+  "manuscrit_SG_VJURY_2025_08_08.tex" 1754627085.15494 16301 0fcb95123a6dc80514abbf27b1239be4 ""
+  "manuscrit_SG_VJURY_2025_08_08.toc" 1754630321.6057 4423 2b6e91829ea425ac89aa2a4535c75db8 "pdflatex"
   "real_part_visibility.png" 1753427054.78862 282792 35cfe22512da79fb0e694cef59e568b1 ""
   "section/section_1/section_1.1/section_1_0_V2.tex" 1754625362.22939 13389 db7fe6635533a70ee2c85d3a1531b5f4 ""
   "section/section_2/section_2.1/section_2.0_V2.tex" 1754626669.72854 54897 c8fe62a8138e3ae03bae33724fdea45d ""
@@ -224,7 +224,7 @@
   "section/section_3/section_3_1/section_3_1.tex" 1754535172.22049 4903 66ce7500c0afc171881ab1660648784e ""
   "section/section_3/section_3_1/section_3_1_1.tex" 1754529315.08255 8506 49f745d46880bd68884f902c95659ee6 ""
   "section/section_3/section_3_1/section_3_1_3.tex" 1753687363.25769 16605 34dff00dcb433787807660f883eb76e8 ""
-  "section/section_3/section_3_1/section_3_intro.tex" 1753060035.92541 1306 c93ec1b9467ba03886e3b33f90948065 ""
+  "section/section_3/section_3_1/section_3_intro.tex" 1754630314.55488 2155 2b6aab67e902e56e8db5c7edc30002a3 ""
   "section/section_3/section_3_2/section_3.2.1.tex" 1754536801.85346 14812 28b6bb8f318d156987fd2644a1a516fa ""
   "section/section_3/section_3_2/section_3.2.2.tex" 1754537871.90643 5525 70f13726338ef7bd17c4e26c7bb79510 ""
   "section/section_3/section_3_2/section_3.2.tex" 1754536594.70544 2476 d6317160b31d725254d934568c96e29a ""
