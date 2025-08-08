@@ -365,10 +365,10 @@ INPUT ./figure/fits_BNC copy.png
 INPUT ./figure/fits_BNC copy.png
 INPUT ./figure/fits_BNC copy.png
 INPUT ./figure/fits_BNC copy.png
-INPUT ./figure/speed_BNC copy 3.png
-INPUT ./figure/speed_BNC copy 3.png
-INPUT ./figure/speed_BNC copy 3.png
-INPUT ./figure/speed_BNC copy 3.png
+INPUT ./figure/speed_BNC copy 4.png
+INPUT ./figure/speed_BNC copy 4.png
+INPUT ./figure/speed_BNC copy 4.png
+INPUT ./figure/speed_BNC copy 4.png
 INPUT ./section/section_3/section_3_1/section_3_1_3.tex
 INPUT ./section/section_3/section_3_1/section_3_1_3.tex
 INPUT section/section_3/section_3_1/section_3_1_3.tex
@@ -376,10 +376,10 @@ INPUT ./figure/fits_light.png
 INPUT ./figure/fits_light.png
 INPUT ./figure/fits_light.png
 INPUT ./figure/fits_light.png
-INPUT ./figure/speed_light copy 2.png
-INPUT ./figure/speed_light copy 2.png
-INPUT ./figure/speed_light copy 2.png
-INPUT ./figure/speed_light copy 2.png
+INPUT ./figure/speed_light copy 3.png
+INPUT ./figure/speed_light copy 3.png
+INPUT ./figure/speed_light copy 3.png
+INPUT ./figure/speed_light copy 3.png
 INPUT ./section/section_3/section_3_2/section_3.2.tex
 INPUT ./section/section_3/section_3_2/section_3.2.tex
 INPUT section/section_3/section_3_2/section_3.2.tex

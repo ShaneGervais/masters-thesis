@@ -1,41 +1,27 @@
+\label{sec:real_results}
 \begin{doublespace}
-    %Cette dernière est ensuite tournée pour envoyer la 
-    %polarisation $\ket{V}$ correspondant à notre position temporelle 
-    %moyenne de référence, qui est notre état d’entrée possédant un délai 
-    %de $0$. L’oscilloscope prend des données, puis notre code fait 
-    %tourner la lame demi-onde pour envoyer le délai maximal, soit 
-    %l’état de polarisation $\ket{H}$. 
-    
-    
-    %L’oscilloscope est évidemment utilisé pour mesurer les temps 
-    %d’équivalence et il calcule ensuite la moyenne de plus de $10000$ 
-    %formes d’onde. 
-
     Nous avons optimisé notre expérience pour qu’elle soit 
     automatisée avec un code \textsc{Python} qui contrôle les supports de 
-    rotation motorisés pour les lames d'ondes à l'étape d'entrée 
-    ainsi que l'oscilloscope qui controle les acquisitions de données. 
+    rotation motorisés pour les lames d'onde à l'étape d'entrée, 
+    ainsi que l'oscilloscope qui contrôle les acquisitions de données 
     \cite{pylablib_thorlabs_kinesis,TektronixTDS5000,oscilloscope_coding}. 
     Nous collectons des données à chaque 
     $2,5$ degrés. Pour chaque état d’entrée de polarisation, nous 
     prenons cinq fichiers distincts que nous moyennons, puis nous 
-    comparons leur temps d'arrivé moyen avec le dossier de 
+    comparons leur temps d'arrivée moyen avec le dossier de 
     calibration pour obtenir le délai associé à cet état. 
     Nous combinons 
     les résultats pour la partie 
     réelle de la valeur faible à nos valeurs théoriques 
-    calculées dans le chapitre précédent dans les équations: 
+    calculées dans le chapitre précédent dans les équations : 
     \ref{eq:expval_t_1}, \ref{eq:expval_t_2} et \ref{eq:expval_t_3}.
-    Pour simplifier la notation des équations, nous redéfinissons
-    l'angle $\theta$ de sorte que $\theta \equiv 2\theta$,
-    c’est-à-dire, nous utilisons une nouvelle variable angulaire égale 
-    à deux fois l’angle initial. Cela permet de négliger le facteur $2$ 
-    dans les expressions ultérieures et de se rapprocher de la forme 
-    usuelle dans les représentations circulaires.
-    Voici les 
-    résultats de chaque délai pour les différents états d’entrée pour 
-    le trajet 
-    $\ket{H}\rightarrow\ket{D}\rightarrow\ket{V}\rightarrow\ket{A}\rightarrow\ket{H}$ 
+    Pour simplifier la notation des équations, nous redéfinissons 
+    l'angle $\theta$ en posant $\theta \leftarrow 2\theta_{\rm phys}$,
+    où $\theta_{\rm phys}$ est l'angle physique de la lame demi-onde,
+    de sorte que $H$ corresponde à $\theta=0^\circ$ (ou $180^\circ$) et $V$ à $90^\circ$.
+    Voici les résultats de chaque délai pour les différents états d’entrée pour
+    le trajet
+    $\ket{H}\rightarrow\ket{D}\rightarrow\ket{V}\rightarrow\ket{A}\rightarrow\ket{H}$
     (figure \ref{fig:HDAV_delay_results}).
 \end{doublespace}
 
@@ -46,9 +32,10 @@
     faible du trajet de polarisation 
     $\ket{H}\rightarrow\ket{D}\rightarrow\ket{V}\rightarrow\ket{A}\rightarrow\ket{H}$. 
     Rappelez-vous que
-    nous avons défini l'angle $\theta$ de sorte que $\theta \equiv 2\theta$.
-    Les barres d’erreurs horizontales représentent l’erreur de 
-    la position de l’angle induite par notre 
+    nous avons défini l'angle $\theta$ de sorte que $\theta \leftarrow 2\theta_{\rm phys}$,
+    où $\theta_{\rm phys}$ est l'angle physique de la lame demi-onde.
+    Les barres d’erreurs horizontales représentent l’erreur de
+    la position de l’angle induite par notre
     support de rotation motorisé de $\pm 0.3 \degree$ \cite{ThorlabsROT}. Ils sont pas visibles, car ils sont
     trop petits pour être prise en 
     considération, alors nous les avons négligées.
@@ -64,19 +51,17 @@
     \noindent Cette série de données a été collectée avec une 
     interaction faible correspondant à un délai de $167$ $ps$, obtenu en 
     allongeant le bras $\ket{H}$ de $2,5$ $cm$ par rapport au bras 
-    $\ket{V}$. En utilisant les mêmes méthodes d’ajustement que celles 
-    employées dans l’expérience sur la vitesse de la lumière, nous 
-    mesurons les délais de chaque état $\ket{\psi(\theta)}$. La courbe
-    est une fonction cosinus carrée, ce qui conforme avec nos données
-    expérimentales ainsi que le délai mesuré est conforme avec le délai introduit
-    de $167$ $ps$.
-    Nous avons également constaté que la partie réelle de la valeur faible
-    est bien représentée par la fonction cosinus carrée, ce qui est conforme
-    à nos attentes théoriques.
+    $\ket{V}$. En utilisant les mêmes méthodes d’ajustement que celles
+    employées dans l’expérience sur la vitesse de la lumière, nous
+    mesurons les délais de chaque état $\ket{\psi(\theta)}$. Nous avons
+    également constaté que les données expérimentales de 
+    la partie réelle de la valeur faible
+    de ce trajet de polarisation est bien représentée par une fonction
+    cosinus carrée mais pas parfaitement centrée.
     En effet, la partie réelle de la valeur faible est donnée par l'équation
     \ref{eq:expval_t_1}, qui est une fonction cosinus carrée, avec un terme
     additionnel de $2sin(\theta)cos(\theta)$, plus sur lequel nous allons
-    revenir plus tard à la prochaine sous-section.
+    revenir plus tard à la sous-section \ref{sec:implications_real}.
     %la courbe
     %théorique de cette partie réelle est une valeur cosinus carrée en 
     %ignorant la partie $2sin(\theta)cos(\theta)$ de l'équation \ref{eq:expval_t_1}. 
@@ -120,28 +105,20 @@
     \noindent Ces résultats sont similaires à ceux du trajet précédent, 
     ce qui est logique, car les états de polarisation $\ket{R}$ et 
     $\ket{L}$ possèdent toujours les mêmes états de base que $\ket{D}$ 
-    et $\ket{A}$, mais avec une composante imaginaire. Ce dernier 
+    et $\ket{A}$, mais avec une composante imaginaire. Cette dernière 
     n’affecte pas la partie réelle de la valeur faible, car il ne 
     s’agit que d’un décalage de phase, soit de $e^{i\pi/2}$,
     qui ne modifie pas la partie réelle de la valeur faible. 
     En effet, la partie réelle de la valeur faible est toujours représentée
     par la fonction cosinus carrée, ce qui est conforme à nos attentes
     théoriques trouvées dans l'équation \ref{eq:expval_t_2}. Nous
-    pouvons noter que les résultats expérimentaux sont légèrement
-    décalés par rapport à l'axe des états de polarisation d'entrée,
-    de ce trajet de polarisation circulaire et linéaire dont celui
-    circulaire se conforme mieux avec une fonction cosinus carré.
-    On ne peut pas
-    déterminer à partir de la partie réelle de la valeur faible si
-    l’état initial est elliptique ou circulaire. Les informations sur
-    l’ellipticité des états de polarisation se
-    trouvent dans la partie imaginaire de la valeur faible, où un 
-    décalage fréquentiel est observé (maximale pour les états
-    circulaires, nulle pour les états
-    linéaires et intermédiaire pour les états elliptiques) ce qui
-    permet de distinguer ces états de polarisation. C’est ce que nous allons
-    mesurer dans la section suivante.
-
+    pouvons noter que les résultats expérimentaux du trajet de polarisation
+    $\ket{H} \rightarrow \ket{D} \rightarrow \ket{V} \rightarrow \ket{A} \rightarrow\ket{H}$
+    sont légèrement décalés par rapport à l'axe des états de polarisation d'entrée,
+    en comparaison avec les résultats du trajet de polarisation
+    $\ket{H} \rightarrow \ket{R} \rightarrow \ket{V} \rightarrow \ket{L} \rightarrow\ket{H}$,
+    où celui circulaire se conforme mieux à une fonction cosinus carrée (à revenir).
+    
 
     \noindent Ensuite, voici les résultats pour le trajet 
     $\ket{R} \rightarrow \ket{A} \rightarrow \ket{L} \rightarrow \ket{D} \rightarrow \ket{R}$, 
@@ -164,37 +141,29 @@
 \end{figure}
 
 \begin{doublespace}
-    \noindent Cela s’avère intéressant car elle démontre 
-    incontestablement que nous conservons toujours la même composante 
-    réelle de la faible valeur. Comme l'équation \ref{eq:expval_t_1},
-    un terme additionelle de $sin(4\theta)/4$ est présent dans
-    l'équation \ref{eq:expval_t_3}, ces derniers
-    seront discutés plus tard. Donc nous pouvons constater que
-    nos données expérimentales sont conformes avec une relation
-    constante d'approximativement $1/2$ pour la partie réelle de la valeur faible.
-    %ce qui est conforme à nos attentes théoriques.
-    %le terme $sin(4\theta)/4$ de l'équation \ref{eq:expval_t_3} 
-    %ne contribue pas à la partie réelle de la
-    %valeur faible et ne modifie pas la partie réelle de la valeur faible
-    %comme dans démonté expérimentalement dans la figure 
-    %\ref{fig:DRAL_delay_results}. Le résultat est que la partie réelle de la
-    %valeur faible est toujours représentée par $\tau/2$.
-    %Ce dernier se conforme à nos attentes expérimentales, 
-    %car la partie réelle de la valeur faible est toujours
-    %constante, peu importe l'état de polarisation initial.
-    %Nous avons donc réussi à mesurer la partie réelle de la valeur faible
-    %pour chaque trajet de polarisation, ce qui nous permet de
-    %caractériser les amplitudes de probabilité des états de polarisation
-    %initiaux. Cependant, nous avons négligé la partie imaginaire de la
-    %valeur faible, qui est essentielle pour caractériser complètement
-    %les états de polarisation. C’est ce que nous allons aborder dans la
-    %section suivante.
-    Par conséquent, l’ensemble des données 
-    sur l’ellipticité entre ces polarisations est contenu dans la 
-    variable conjuguée du décalage temporel, c’est-à-dire le décalage 
-    de fréquence obtenu en mesurant la partie imaginaire de la valeur 
-    faible. 
+    \noindent Cela s’avère intéressant, car cela démontre 
+        clairement que nous conservons toujours la même composante 
+        réelle de la valeur faible. 
+        Ainsi, nous constatons que
+        nos données expérimentales sont conformes à une relation
+        constante d'environ $1/2$ pour la partie réelle de la valeur faible.
+        On ne peut cependant pas
+        déterminer à partir de la partie réelle de la valeur faible si
+        l’état initial est elliptique ou circulaire. Les informations sur
+        l’ellipticité des états de polarisation se
+        trouvent dans la partie imaginaire de la valeur faible, où un 
+        décalage fréquentiel est observé (maximal pour les états
+        circulaires, nul pour les états
+        linéaires et intermédiaire pour les états elliptiques), ce qui
+        permet de distinguer ces états de polarisation. Par conséquent, l’ensemble des données 
+        sur l’ellipticité entre ces polarisations est contenu dans la 
+        variable conjuguée du décalage temporel, c’est-à-dire le décalage 
+        de fréquence obtenu en mesurant la partie imaginaire de la valeur 
+        faible. C’est ce que nous allons
+        mesurer dans la section \ref{sec:imaginary_results}.
 \end{doublespace}
+
+\subsubsection{Caractérisation des amplitudes de probabilité à partir de la partie réelle de la valeur faible}\label{sec:prob_amplitude_results}
 
 \begin{doublespace}        
     
@@ -203,14 +172,14 @@
     pouvons directement calculer les modules d'amplitudes de 
     probabilité de l’état 
     quantique à partir de ces mesures de délai, comme nous l’avons 
-    mentionné dans la section 2.5 avec les équations: 
+    mentionné dans la section \ref{sec:proposition_exp} avec les équations: 
     \ref{eq:amplitude_a} et \ref{eq:amplitude_b}.
     Nous allons maintenant
     présenter les résultats expérimentaux pour 
     les amplitudes de probabilité pour chaque trajet de polarisation
     que nous avons mesuré. Celui du trajet de polarisation
     $\ket{H} \rightarrow \ket{D} \rightarrow \ket{V} \rightarrow \ket{A} \rightarrow \ket{H}$ 
-    sera présenté dans la prochaine sous-section. Voici les résultats
+    sera présenté dans la sous-section \ref{sec:implications_real}. Voici les résultats
     pour le trajet de polarisation
     $\ket{H} \rightarrow \ket{R} \rightarrow \ket{V} \rightarrow \ket{L}$ 
     dans la figure \ref{fig:HRVL_prob_amp}.

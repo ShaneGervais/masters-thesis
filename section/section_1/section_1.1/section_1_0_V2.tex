@@ -3,21 +3,25 @@
 \begin{doublespace}
 
     À l'heure actuelle, de grandes entreprises technologiques, telles que 
-    Google et IBM, développent des ordinateurs quantiques. Même des 
+    Google et IBM, développent des ordinateurs quantiques; même des 
     entreprises, telles que Xanadu, basées au Canada, travaillent sur 
     des systèmes photoniques pour les ordinateurs quantiques. Ces 
     ordinateurs quantiques utilisent les propriétés fondamentales de la 
     mécanique quantique (comme la superposition, l'intrication, etc.) 
     pour résoudre des problèmes complexes \cite{Feynman1982,quantumcomputing40years}. 
     Contrairement aux ordinateurs classiques, un ordinateur quantique 
-    repose sur des bits quantiques, ou qubits, soit $\ket{0}$ et $\ket{1}$, qui
-    forment un ensemble binaire de deux états possibles, comme le spin d'une particule $\ket{\uparrow}$ et $\ket{\downarrow}$ ou
-    la polarisation $\ket{H}$ et $\ket{V}$ par exemple. Les lois de 
+    repose sur des bits quantisés appelés qubits, soit $\ket{0}$ et $\ket{1}$,
+    qui forment un ensemble binaire de deux états physiques possibles du système utilisé, comme le spin d'une particule $\ket{\uparrow}$ et $\ket{\downarrow}$ ou
+    la polarisation d'un photon $\ket{H}$ et $\ket{V}$ par exemple. Les lois de 
     la mécanique quantique permettent à un état d'être dans une combinaison 
     linéaire des deux états à la fois, également appelée superposition, 
     telle que $\frac{1}{\sqrt{2}}(\ket{0}+\ket{1})$. Cela signifie 
     qu’un ordinateur quantique 
-    peut contenir simultanément $2^n$ états possibles. Cette utilisation 
+    peut contenir simultanément $2^n$ états possibles, où $n$ est le nombre de qubits.
+    Cette capacité de superposition permet aux ordinateurs quantiques de
+    traiter des informations de manière exponentiellement plus efficace que les ordinateurs classiques.
+    
+    \noindent Cette utilisation 
     des propriétés physiques de la mécanique quantique est également 
     exploitée pour développer des systèmes de communication quantique \cite{QTintelecomindustry}. 
     Ces systèmes utilisent un état quantique pour stocker des informations 
@@ -25,13 +29,13 @@
     sécurisée via une clé de distribution quantique, ce qui permet 
     également de détecter toute écoute clandestine. Cette ultra sécurité
     est rendue possible par le fait que la simple observation d’un état
-    quantique le perturbe, ce qui rend impossible la copie d’un état
-    quantique inconnu (théorème de non-clonage) \cite{Wootters1982}. Des travaux sont 
-    également menés sur des capteurs quantiques capables de détecter des 
-    changements infimes dans les champs gravitationnels, ce qui permet 
-    de mieux cartographier les ressources souterraines \cite{metrology}. 
-    Dans le même 
-    domaine, les gyroscopes quantiques peuvent être utilisés pour les 
+    quantique le perturbe, ce qui rend impossible de copier un état
+    quantique contenant un message privé (théorème de non-clonage \cite{Wootters1982}). Des travaux sont
+    également menés sur des capteurs quantiques capables de détecter des
+    changements infimes dans les champs gravitationnels, ce qui permet
+    de mieux cartographier les ressources souterraines \cite{metrology}.
+    Dans le même
+    domaine, les gyroscopes quantiques peuvent être utilisés pour des
     systèmes de navigation sans avoir besoin d'un système de 
     positionnement global (GPS) \cite{QTapplImpl}. Sans aborder les 
     autres applications des 

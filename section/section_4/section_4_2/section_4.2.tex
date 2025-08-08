@@ -1,3 +1,4 @@
+\label{sec:imaginary_results}
 \begin{doublespace}
     Notre méthode pour mesurer la partie imaginaire de la valeur faible 
     est assez simple. Nous faisons interférer dans un 
@@ -16,14 +17,10 @@
 
 \begin{doublespace}
 
-     \noindent À partir de la relation proportionelle à la partie imaginaire 
-     de la valeur faible:
-
-    \begin{equation}
-        \mathcal{I}(\expval{\hat{\pi}_W}) \propto \frac{\tau}{8\sigma^2}
-    \end{equation}
-    
-    \noindent Cela signifie que, pour une impulsion avec une durée de 
+     \noindent À partir de l'équation \ref{eq:imaginary_part}, le 
+     déplacement fréquentiel maximal attendu pour la partie imaginaire de la valeur faible est donné par:
+    $\expval{\hat{\omega}}_{max} = \frac{\tau}{8\sigma^2}$. 
+    Cela signifie que, pour une impulsion avec une durée de 
     $10$ $ns$, et un délai de $167$ $ps$ appliqué sur le système, on 
     s'attend à un déplacement dans le spectre de fréquence de seulement 
     $3,98$ kHz (avec $\omega \equiv 2\pi f$). Cette valeur est 
@@ -49,9 +46,11 @@
     mesure faible, nous calculons la densité spectrale du spectre de 
     puissance (DSP) sur un ensemble d'impulsions du signal expérimentale.  
     La fonction \textit{pspectrum} de \textsc{MATLAB} effectue une transformation de Fourier à haute résolution sur 
-    plusieurs impulsions pour obtenir la DSP. 
-    Voici ce spectre que nous avons obtenu à partir de nos données 
-    expérimentales (figure \ref{fig:spectre}).
+    plusieurs impulsions pour obtenir la DSP. La figure \ref{fig:spectre} 
+    montre le spectre de puissance total.
+
+    %Voici ce spectre que nous avons obtenu à partir de nos données 
+    %expérimentales (figure \ref{fig:spectre}).
 
     \begin{figure}[!htpb]
         \centering

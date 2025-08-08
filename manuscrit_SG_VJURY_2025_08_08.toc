@@ -5,11 +5,11 @@
 \contentsline {section}{\numberline {}Sommaire}{v}{Doc-Start}%
 \contentsline {section}{\numberline {}Abstract}{vii}{Doc-Start}%
 \contentsline {section}{\numberline {}Liste des tableaux}{x}{Doc-Start}%
-\contentsline {section}{\numberline {}Liste des figures}{xvi}{Doc-Start}%
-\contentsline {section}{Liste des symboles}{xvii}{Doc-Start}%
+\contentsline {section}{\numberline {}Liste des figures}{xv}{Doc-Start}%
+\contentsline {section}{Liste des symboles}{xvi}{Doc-Start}%
 \contentsline {section}{\numberline {1}INTRODUCTION DES PROCÉDURES DIRECTES POUR LES MESURES QUANTIQUES}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Introduction}{1}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Motivation de la thèse}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.2}Motivation de la thèse}{3}{subsection.1.2}%
 \contentsline {section}{\numberline {2}LES MESURES FAIBLES TEMPORELLES D'UN SYSTÈME QUANTIQUE}{7}{section.2}%
 \contentsline {subsection}{\numberline {2.1}La tomographie quantique}{7}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Introduction aux mesures faibles}{16}{subsection.2.2}%
@@ -25,19 +25,20 @@
 \contentsline {subsubsection}{\numberline {3.1.3}Analyse et résultats de l'expérience de mesure de la vitesse de la lumière}{51}{subsubsection.3.1.3}%
 \contentsline {subsection}{\numberline {3.2}Caractérisation de la partie réelle de la valeur faible}{63}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Montage et étapes de préparation}{64}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Mesure faible temporelle}{73}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2}Mesure faible temporelle}{71}{subsubsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.3}Caractérisation de la partie imaginaire de la valeur faible}{75}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Montage proposé}{76}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.1}Montage proposé}{75}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Résultats attendus théoriques de la partie imaginaire de la valeur faible}{79}{subsubsection.3.3.2}%
 \contentsline {section}{\numberline {4}RÉSULTATS ET DISCUSSION}{81}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Analyse des résultats expérimentaux pour la partie réelle de la valeur faible}{81}{subsection.4.1}%
 \contentsline {subsubsection}{\numberline {4.1.1}La partie réelle}{82}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}Discussion sur les résultats expérimentaux de la partie réelle}{88}{subsubsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.2}La partie imaginaire}{92}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.1.2}Caractérisation des amplitudes de probabilité à partir de la partie réelle de la valeur faible}{87}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Discussion sur les résultats expérimentaux de la partie réelle}{90}{subsubsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.2}La partie imaginaire}{94}{subsection.4.2}%
 \contentsline {subsubsection}{\numberline {4.2.1}Vérification de la partie imaginaire}{94}{subsubsection.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.2}Tentatives de mesurer la partie imaginaire}{97}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Implications pour la partie imaginaire}{101}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.3}Implications pour la partie imaginaire}{99}{subsubsection.4.2.3}%
 \contentsline {section}{\numberline {5}CONCLUSION}{102}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Conclusion sur la thèse}{102}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Applications et projets futurs}{102}{subsection.5.2}%
-\contentsline {section}{\numberline {} ANNEXE A}{110}{subsection.5.2}%
+\contentsline {section}{\numberline {} ANNEXE A}{111}{subsection.5.2}%
