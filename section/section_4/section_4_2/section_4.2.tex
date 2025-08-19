@@ -21,9 +21,11 @@
      déplacement fréquentiel maximal attendu pour la partie imaginaire de la valeur faible est donné par:
     $\expval{\hat{\omega}}_{max} = \frac{\tau}{8\sigma^2}$. 
     Cela signifie que, pour une impulsion avec une durée de 
-    $10$ $ns$, et un délai de $167$ $ps$ appliqué sur le système, on 
+    $10$ $ns$, et un délai de $40,16$ $ps$ (correspondant au 
+    deuxième pic de visibilité mentionné dans la section 
+    \ref{sec:imaginary_propose}) appliqué sur le système, on 
     s'attend à un déplacement dans le spectre de fréquence de seulement 
-    $3,98$ kHz (avec $\omega \equiv 2\pi f$). Cette valeur est 
+    $7,989$ kHz (avec $\omega \equiv 2\pi f$). Cette valeur est 
     extrêmement petite par rapport à la fréquence de notre laser, qui se 
     situe dans l'ordre $THz$ avec plusieurs modes \cite{ThorlabsNPL64B}. 
     %Les mesures interférométriques 
@@ -33,63 +35,63 @@
     Donc, pour améliorer l'effet par l'interaction faible,
     il faut réduire la durée de l'impulsion. 
     Nous allons choisir une longueur d'impulsion de $4$ $ns$ (le minimum 
-    que notre laser peut effectuer) pour un attendue de $16,61$ $kHz$.
+    que notre laser peut effectuer) pour un attendue de $49,932$ $kHz$.
     
     \subsubsection{Vérification de la partie imaginaire}
-    
-    Nous avons commencer par si nous pouvions observer
-    des déplacements fréquentiels dans la DSP
-    causés par la mesure faible. Pour ce faire, nous avons utilisé
+
+    Nous avons commencé par déterminer si nous pouvions observer
+    des déplacements fréquentiels dans la densité spectrale de
+    puissance (DSP), qui représente la 
+    distribution de la puissance d'un signal 
+    en fonction de la fréquence. Elle permet d’identifier les 
+    fréquences qui sont présentes à chaque portion d'un signal et 
+    avec quelle intensité. Nous avons utilisé
     les états de polarisation $\ket{H}$, $\ket{V}$, $\ket{R}$,
     $\ket{A}$, $\ket{L}$ et $\ket{D}$ comme états d'entrée.
-    Pour trouver des déplacements induits par la 
-    mesure faible, nous calculons la densité spectrale du spectre de 
-    puissance (DSP) sur un ensemble d'impulsions du signal expérimentale.  
-    La fonction \textit{pspectrum} de \textsc{MATLAB} effectue une transformation de Fourier à haute résolution sur 
-    plusieurs impulsions pour obtenir la DSP. La figure \ref{fig:spectre} 
-    montre le spectre de puissance total.
+    Les séries on été prises avec un délai de $40,16$ $ps$, sur 
+    plusieurs impulsions de $4$ $ns$ pendant $2$ $\mu s$. Pour chaque état
+    d'entrée pendant la prise de données, nous prenons une série de 
+    mesures avec des interférences
+    et sans interférences, puis calculons la différence. Ensuite, 
+    nous effectuons une transformation de Fourier à haute résolution 
+    pour obtenir la DSP avec la fonction \textit{FFT} de l'oscilloscope
+    sur une durée spectrale de $1,4062$ $GHz$ \cite{TektronixTDS5000}. L'analyse
+    de la DSP est présentée dans la figure \ref{fig:spectre}, 
+    qui montre le spectre de puissance total.
 
     %Voici ce spectre que nous avons obtenu à partir de nos données 
     %expérimentales (figure \ref{fig:spectre}).
 
     \begin{figure}[!htpb]
         \centering
-        \includegraphics[width=1.0\textwidth]{PSD copy.png}
+        \includegraphics[width=1.0\textwidth]{spectre.png}
         \caption{DSP totale résultant d'une mesure faible temporelle. Ici, les 
         lignes verticales représentent la position des pics de puissance 
         dans le spectre. La fréquence centrale est de 
-        $703.12$ $MHz$ pour une durée spectrale de $1.4062$ $GHz$ avec une 
+        $703,12$ $MHz$ pour une durée spectrale de $1,4062$ $GHz$ avec une 
         résolution temporelle de $4$ $ps$.
         La figure \ref{fig:spectre1054} montre un zoom 
-        sur le pic de puissance à $87,9$ $MHz$.}
+        sur le pic de puissance à $175,8$ $MHz$.}
         \label{fig:spectre}
     \end{figure}
 
-    \begin{figure}[!htpb]
-        \centering
-        \includegraphics[width=1.0\textwidth]{zoom_at_87MHz.png}
-        \caption{Zoom sur le pic de puissance à $87,9$ $MHz$. On peut 
-        observer la présence de plusieurs pics de puissance, avec leur 
-        ajustements de paramétriques polynomiales du quatrième ordre pour 
-        determiner chaque position fréquentielle des états d'entrée.}
-        \label{fig:spectre1054}
-    \end{figure}
-
-    \noindent Nous analysons ensuite le spectre pour repérer les pics
-    avec une amplitude supérieure à $1\%$ de la puissance maximale. Pour 
+    \noindent Pour trouver des
+    déplacements induits par la mesure faible, nous analysons
+    le déplacement de chacun des pics du spectre. Pour
     chacun de ces pics, nous effectuons un ajustement de paramétrique
     polynomiale du quatrième ordre, comme dans nos dernières analyses 
     pour la mesure de la vitesse d'un signal électrique et de la lumière
-    dans la section 3.1, pour estimer précisément la position fréquentielle du pic. En 
-    comparant chacune de ces fréquences à celles de l’état $\ket{V}$, 
-    nous obtenons le tableau suivant pour le pic à la fréquence $87,9$ $MHz$:
+    dans la section \ref{sec:lightspeed}, pour estimer 
+    précisément la position fréquentielle du pic. En
+    comparant chacune de ces fréquences à celles de l’état $\ket{R}$,
+    nous obtenons le tableau suivant pour le pic à la fréquence $175,8$ $MHz$:
 
     \begin{longtable}{p{3.0cm} p{3.0cm} p{3.0cm}}
     \caption{Tableau récapitulatif des pics de puissance dans le spectre de
     puissance, avec les états d'entrée, les fréquences mesurées et les
     déplacements fréquentiels. Les fréquences sont mesurées en
     mégahertz (MHz) et les déplacements fréquentiels en kilohertz (kHz) 
-    par rapport à l'état $\ket{R}$.} \\
+    par rapport à l'état $\ket{R}$. } \\
     \toprule
     \label{table:imaginare-table}
     État d'entrée & Fréquence (MHz) & Déplacement fréquentiel (kHz)\\
@@ -109,19 +111,34 @@
     \bottomrule
     \endlastfoot
     
-    $\ket{H}$ & 87.907 &  +1.000 \\
-    $\ket{V}$ & 87.915 &  +9.000 \\
-    $\ket{R}$ & 87.906 &   0.000 \\
-    $\ket{A}$ & 87.910 &  +4.000 \\
-    $\ket{L}$ & 87.902 &  -4.000 \\
-    $\ket{D}$ & 87.916 & +10.000 \\
+    $\ket{H}$ & 175.79 &  8.2416  \\
+    $\ket{V}$ & 175.79 &  10.851 \\
+    $\ket{R}$ & 175.78 &   0.000 \\
+    $\ket{A}$ & 175.74 &  -39.963 \\
+    $\ket{L}$ & 175.79 &  2.0604 \\
+    $\ket{D}$ & 175.78 & 0.96152 \\
 
     %\midrule
 
 
     \end{longtable}
 
-    \noindent Bien que la différence prévue soit de $16,61$ $kHz$ (du minimum au maximum), ce qui 
+    \noindent Nous avons observé que les déplacements fréquentiels
+    mesurés sont généralement faibles, de l'ordre de quelques kilohertz,
+    ce qui est conforme à nos attentes théoriques. Nous pouvons
+    visualiser ces déplacements dans la figure \ref{fig:spectre1054}.
+
+    \begin{figure}[!htpb]
+        \centering
+        \includegraphics[width=1.0\textwidth]{spectre_175.png}
+        \caption{Zoom sur le pic de puissance à $175,8$ $MHz$. On peut 
+        observer la présence de plusieurs pics de puissance, avec leur 
+        ajustements de paramétriques polynomiales du quatrième ordre pour 
+        determiner chaque position fréquentielle des états d'entrée.}
+        \label{fig:spectre1054}
+    \end{figure}
+
+    \noindent Bien que la différence prévue soit de $49,932$ $kHz$ (du minimum au maximum), ce qui 
     n’a pas été strictement observé, l’analyse de Fourier révèle 
     effectivement un déplacement de certains pics dans le spectre, 
     mesuré dans l'ordre de kilohertz. Cependant, ces déplacements ne 
@@ -133,11 +150,15 @@
 
     \subsubsection{Tentatives de mesurer la partie imaginaire}
 
-    \noindent Considérons une prise de données sur plusieurs
-    état d'entrée, comme l'on fait dans notre expérience de la partie
-    réelle de la valeur faible. Cette fois ici, nous avons
-    pris la mesure de la DSP pour chaque état d'entrée et considéré
-    comment le centroïde de chaque pic se déplace en fonction de l'état
+     Considérons une prise de données similaires
+    à ceux effectuées pour la partie réelle (voir la section \ref{sec:real_experiment}). 
+    Cette fois ici, prenons sur une 
+    durée de $100$ $ns$ avec un délai de $180,71$ $ps$, un délai 
+    qui correspond au dernier pic de visibilité (voir la figure \ref{fig:vis}), 
+    et une durée d'impulsion de $10$ $ns$. À partir de ces données, nous effectuons
+    une analyse de Fourier pour extraire la DSP directement de 
+    l'interferomètre de polarisation. Ensuite, nous calculons comment le
+    centroïde de chaque pic se déplace en fonction de l'état
     d'entrée d'écrit par:
 
     \begin{equation}
@@ -147,30 +168,35 @@
     \noindent où $f_{cent.}$ est la fréquence du centroïde, $n$ est le
     nombre de pics dans le spectre, $f_i$ est la fréquence de chaque pic 
     et $P_i$ est la puissance
-    de chaque pic. Nous avons ensuite calculé la différence entre le
-    centroïde de chaque état d'entrée et celui de l'état $\ket{L}$.
+    de chaque pic. 
     Le centroïde du spectre est une mesure de la position moyenne des pics
     de puissance dans le spectre, ce qui nous permet de mesurer les
-    déplacements fréquentiels causés par la mesure faible, 
-    cette méthode prend inspiration de: \cite{WeakorStd,OpticalNetworks}.
-    Nous évaluons la partie imaginaire de la valeur faible de les 
-    trajets de polarisation discutés dans le chapitre 3. Voici les
+    déplacements fréquentiels causés par la mesure faible.
+    Nous remarquons que \ref{eq:centroid} est similaire à l'équation \ref{eq:imaginary_part}
+    qui décrit la partie imaginaire de la valeur faible.
+    Nous pouvons donc utiliser cette équation pour calculer
+    la partie imaginaire de la valeur faible en utilisant les déplacements
+    du centroïde. 
+    
+    \noindent Nous avons calculé la différence entre le
+    centroïde de chaque état d'entrée et celui de l'état $\ket{V}$
+    car on s'attend quelle soit minimale (ainsi que $\ket{H}$).
+    Nous évaluons la partie imaginaire de la valeur faible de les
+    trajets de polarisation discutés dans le chapitre \ref{chap:3}. Voici les
     résultats que nous avons obtenus pour les déplacements fréquentiels
     pour le trajet de polarisation $\ket{H} \to \ket{R} \to \ket{V} \to \ket{L} \to \ket{H}$
     présenté dans la figure \ref{fig:imaginary_part_HRVLH}.
 
     \begin{figure}[!htpb]
         \centering
-        \includegraphics[width=1.0\textwidth]{imag_weak_value_path_4 copy 2.png}
+        \includegraphics[width=1.0\textwidth]{imag_weak_value_path_4 copy 3.png}
         \caption{Déplacement fréquentiel mesuré pour les trajets de polarisation 
         $\ket{H} \to \ket{R} \to \ket{V} \to \ket{L} \to \ket{H}$, 
-        avec un délai de $167$ $ps$ et une durée d'impulsion de $4$ $ns$. 
+        avec un délai de $180,71$ $ps$ et une durée d'impulsion de $10$ $ns$. 
         Les barres d'erreur verticale représentent l'incertitude de la mesure,
         calculée à partir de la variations des fréquences
         mesurées pour chaque état d'entrée. Les déplacements sont mesurés en
-        kilohertz (kHz) par rapport à l'état $\ket{V}$. La courbe théorique
-        n'est pas représentée car les déplacements ne correspondent pas
-        avec nos attentes théoriques.}
+        kilohertz (kHz) par rapport à l'état $\ket{V}$.}
         \label{fig:imaginary_part_HRVLH}
     \end{figure}
 
@@ -178,18 +204,25 @@
     pour chaque état d'entrée, en calculant le centroïde de chaque pic
     en utilisant l'équation \ref{eq:centroid} et le comparer à 
     fréquence du centroïde de l'état $\ket{V}$ pour
-    calculer la partie imaginaire de la valeur faible. Nous avons 
-    observé que les déplacements fréquentiels sont positives et c'est 
-    dû à la nature de l'analyse. Ces résultats nous indiquent que nous sommes entrains 
+    calculer la partie imaginaire de la valeur faible car
+    on suppose que les états de polarisation $\ket{H}$ et $\ket{V}$ 
+    ne possède aucun délai fréquentiel ainsi que l'état $\ket{V}$
+    est celui qui n'a pas été décalé temporellement. Nous avons
+    observé que les déplacements fréquentiels sont positifs car ils
+    correspondent à des augmentations de la fréquence du centroïde. 
+    Ces résultats nous indiquent que nous sommes en train
     d'observer la valeur absolue de la partie imaginaire de la valeur faible,
     représentée par avec la courbe théorique dans la figure \ref{fig:imaginary_part_HRVLH}.
-    Cependant, les déplacements ne correspondent pas à nos attentes théoriques,
-    car la courbe théorique est bien sinusoïdale, mais les déplacements
-    mesurés suivent une tendance de $sin(1.75\theta)$ ce qui est différent
-    à celui attendu dans l'équation \ref{eq:expval_omega_circular}.
+    Le déplacement fréquentiel maximal mesuré 
+    (comparer à l'état $\ket{V}$) est de $640,708$ $kHz$
+    qui est largement supérieur à ce que l'on pourrait attendre
+    théoriquement. 
+    La tendance de ces déplacements ne correspond 
+    pas directement à nos attentes théoriques de $|sin(2\theta)|$, 
+    mais ils suivent une tendance similaire.
     Néanmoins, ces déplacements dans la DSP indiquent que la
     partie imaginaire de la valeur faible est présente et elle suit
-    une tendance sinusoïdale et permet l'état soit caractérisable à partir de
+    une tendance sinusoïdale absolue et permet l'état soit caractérisable à partir de
     ces résultats. Nous pouvons effectivement
     calculé les amplitudes de probabilité (voir figure \ref{fig:prob_amp_imaginary_part_HRVLH})
     pour chaque état d'entrée en utilisant les relations suivantes:

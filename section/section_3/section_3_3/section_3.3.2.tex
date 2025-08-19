@@ -1,3 +1,4 @@
+
 \begin{doublespace}
     
     Nous allons maintenant écrire les résultats attendus pour 
@@ -25,12 +26,12 @@
     attendu, car l'état de polarisation linéaire ne possède pas de 
     différence de phase dans son transport, contrairement aux trajets 
     suivants. Ensuite, pour un état de polarisation circulaire 
-    $\ket{\psi_{i}^{2}} = cos(2\theta)\ket{H} + i sin(2\theta)\ket{V}$
+    $\ket{\psi_{i}^{2}} = e^{\frac{-i\pi}{4}}cos(2\theta)\ket{H} + ie^{\frac{-i\pi}{4}} sin(2\theta)\ket{V}$
     préparé par la lame demi-onde à $\theta$ et une lame quart d'onde 
     à $0$ degré, nous avons:
 
     \begin{equation}
-        \expval{\hat{\omega}} = \frac{\tau}{8\sigma^2}(cos(2\theta)sin(2\theta))\label{eq:expval_omega_circular}
+        \expval{\hat{\omega}} = \frac{\tau}{8\sigma^2}sin(4\theta)\label{eq:expval_omega_circular}
     \end{equation}
 
     \noindent ce type d'état de polarisation devrait produire un
@@ -43,7 +44,7 @@
     nous avons:
 
     \begin{equation}
-        \expval{\hat{\omega}} = \frac{\tau}{8\sigma^2}(sin^2(2\theta)-cos^2(2\theta))
+        \expval{\hat{\omega}} = -\frac{\tau}{8\sigma^2}sin(4\theta)
     \end{equation}
 
     \noindent ce qui signifie que l'état de polarisation de superposition
