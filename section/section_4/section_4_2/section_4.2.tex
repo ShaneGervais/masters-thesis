@@ -55,7 +55,7 @@
     et sans interférences, puis calculons la différence. Ensuite, 
     nous effectuons une transformation de Fourier à haute résolution 
     pour obtenir la DSP avec la fonction \textit{FFT} de l'oscilloscope
-    sur une durée spectrale de $1,4062$ $GHz$ \cite{TektronixTDS5000}. L'analyse
+    sur une étendue spectrale analysée de $1,4062$ $GHz$ \cite{TektronixTDS5000}. L'analyse
     de la DSP est présentée dans la figure \ref{fig:spectre}, 
     qui montre le spectre de puissance total.
 
@@ -193,30 +193,39 @@
         \caption{Déplacement fréquentiel mesuré pour les trajets de polarisation 
         $\ket{H} \to \ket{R} \to \ket{V} \to \ket{L} \to \ket{H}$, 
         avec un délai de $180,71$ $ps$ et une durée d'impulsion de $10$ $ns$. 
-        Les barres d'erreur verticale représentent l'incertitude de la mesure,
-        calculée à partir de la variations des fréquences
+        Les barres d'erreur verticales représentent l'incertitude de la mesure,
+        calculée à partir de la variation des fréquences
         mesurées pour chaque état d'entrée. Les déplacements sont mesurés en
-        kilohertz (kHz) par rapport à l'état $\ket{V}$.}
+        kilohertz (kHz) par rapport à l'état $\ket{V}$. La courbe en tirets 
+        représente la valeur absolue
+        de la prédiction théorique (le signe n’est pas accessible avec notre méthode
+        de centroïde basée sur l’intensité spectrale seule).}
         \label{fig:imaginary_part_HRVLH}
     \end{figure}
 
-    \noindent Ces données on été obtenues en prenant les résultats de la DSP
-    pour chaque état d'entrée, en calculant le centroïde de chaque pic
-    en utilisant l'équation \ref{eq:centroid} et le comparer à 
-    fréquence du centroïde de l'état $\ket{V}$ pour
-    calculer la partie imaginaire de la valeur faible car
-    on suppose que les états de polarisation $\ket{H}$ et $\ket{V}$ 
-    ne possède aucun délai fréquentiel ainsi que l'état $\ket{V}$
-    est celui qui n'a pas été décalé temporellement. Nous avons
-    observé que les déplacements fréquentiels sont positifs car ils
-    correspondent à des augmentations de la fréquence du centroïde. 
-    Ces résultats nous indiquent que nous sommes en train
-    d'observer la valeur absolue de la partie imaginaire de la valeur faible,
-    représentée par avec la courbe théorique dans la figure \ref{fig:imaginary_part_HRVLH}.
-    Le déplacement fréquentiel maximal mesuré 
-    (comparer à l'état $\ket{V}$) est de $640,708$ $kHz$
-    qui est largement supérieur à ce que l'on pourrait attendre
-    théoriquement. 
+    \noindent Ces données ont été obtenues en calculant, pour chaque état d'entrée, 
+    le centroïde de chaque pic à partir de la DSP à l'aide de l'équation 
+    \ref{eq:centroid}, puis en comparant cette valeur à la fréquence du centroïde 
+    de l'état $\ket{V}$, $\Delta f(\theta) = f_{\text{centroid}}(\theta) - f_{\text{centroid}}(\ket{V})$. 
+    Ce choix s'explique par le fait que les états de 
+    polarisation $\ket{H}$ et $\ket{V}$ ne présentent pas de décalage fréquentiel 
+    attendu, et que l'état $\ket{V}$ sert de référence non décalée temporellement.
+    Dans nos données, on ne voit que des décalages positifs, alors que la
+    théorie (voir équation \ref{eq:expval_omega_circular}) prévoit des 
+    décalages positifs et négatifs selon l’angle.
+    Si l’on considère la valeur absolue $|\Delta f(\theta)|$, l’ajustement
+    est \emph{bon sur la première moitié} du balayage
+    ($\theta \approx 0^\circ$–$90^\circ$) et \emph{moins bon sur la seconde}
+    ($90^\circ$–$180^\circ$), précisément là où la courbe théorique devrait
+    devenir négative. Ceci s'explique par l'absence de référence de phase et par le fait
+    que le centroïde est extrait d’un spectre d’intensité 
+    positif $P(f_i) \ge 0$ : le traitement
+    est donc insensible au signe du décalage observé et ne conserve que sa magnitude.
+    Cela renforce l’idée que le problème provient
+    de l'absence des valeurs négatives.
+    Le déplacement fréquentiel maximal mesuré
+    (par rapport à l'état $\ket{V}$) est de $640,708$ $kHz$, ce qui reste 
+    largement supérieur à la valeur attendue théoriquement.
     La tendance de ces déplacements ne correspond 
     pas directement à nos attentes théoriques de $|sin(2\theta)|$, 
     mais ils suivent une tendance similaire.
@@ -239,7 +248,10 @@
         La partie imaginaire des amplitudes de probabilité mesurées pour le trajet de polarisation
         $\ket{H} \to \ket{R} \to \ket{V} \to \ket{L} \to \ket{H}$.
         Les barres d'erreur sont propagées à partir de l'incertitude
-        de la mesure des déplacements fréquentiels de la partie imaginaire de ce trajet de polarisation.
+        de la mesure des déplacements fréquentiels de la partie imaginaire de ce
+        trajet de polarisation. Ces amplitudes proviennent d’une mesure de la
+        valeur absolue de la partie imaginaire; le signe est perdu dans notre
+        procédure actuelle.
         }
         \label{fig:prob_amp_imaginary_part_HRVLH}
     \end{figure}
@@ -276,7 +288,17 @@
     examineront l’intégration d’une source impulsionnelle 
     cohérente; dans ces conditions, la partie imaginaire devrait 
     devenir mesurable, permettant une caractérisation complète.
-    
+
+    \noindent Enfin, soulignons que la manipulation avec la source utilisée ne permet 
+    \emph{déjà pas} d’observer les décalages négatifs attendus pour la 
+    partie réelle. L’absence de cohérence suffisante supprime cette observation. 
+    Dans ces conditions, il est \emph{inutile} de chercher 
+    à « améliorer » la partie imaginaire : cette voie expérimentale 
+    est abandonnée. Les résultats de la partie imaginaire présentés 
+    ici sont fournis à titre indicatif pour la discussion, sans prétention 
+    quantitative. Dans le prochain chapitre, nous allons 
+    conclure sur ces résultats et proposer des perspectives pour de futures 
+    recherches.
 
 \end{doublespace}
 
