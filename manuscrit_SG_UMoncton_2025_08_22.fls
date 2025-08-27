@@ -365,10 +365,10 @@ INPUT ./figure/fits_BNC copy.png
 INPUT ./figure/fits_BNC copy.png
 INPUT ./figure/fits_BNC copy.png
 INPUT ./figure/fits_BNC copy.png
-INPUT ./figure/speed_BNC copy 4.png
-INPUT ./figure/speed_BNC copy 4.png
-INPUT ./figure/speed_BNC copy 4.png
-INPUT ./figure/speed_BNC copy 4.png
+INPUT ./figure/speed_BNC copy 5.png
+INPUT ./figure/speed_BNC copy 5.png
+INPUT ./figure/speed_BNC copy 5.png
+INPUT ./figure/speed_BNC copy 5.png
 INPUT ./section/section_3/section_3_1/section_3_1_3.tex
 INPUT ./section/section_3/section_3_1/section_3_1_3.tex
 INPUT section/section_3/section_3_1/section_3_1_3.tex
@@ -478,10 +478,10 @@ INPUT ./figure/spectre_175.png
 INPUT ./figure/spectre_175.png
 INPUT ./figure/spectre_175.png
 INPUT ./figure/spectre_175.png
-INPUT ./figure/imag_weak_value_path_4 copy 3.png
-INPUT ./figure/imag_weak_value_path_4 copy 3.png
-INPUT ./figure/imag_weak_value_path_4 copy 3.png
-INPUT ./figure/imag_weak_value_path_4 copy 3.png
+INPUT ./figure/imag_weak_value_path_4 copy 4.png
+INPUT ./figure/imag_weak_value_path_4 copy 4.png
+INPUT ./figure/imag_weak_value_path_4 copy 4.png
+INPUT ./figure/imag_weak_value_path_4 copy 4.png
 INPUT ./figure/imaginary_probability_path_4.png
 INPUT ./figure/imaginary_probability_path_4.png
 INPUT ./figure/imaginary_probability_path_4.png
