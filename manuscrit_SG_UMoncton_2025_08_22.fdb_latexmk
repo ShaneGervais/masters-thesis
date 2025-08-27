@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex manuscrit_SG_UMoncton_2025_08_22"] 1755879016.0474 "manuscrit_SG_UMoncton_2025_08_22.aux" "manuscrit_SG_UMoncton_2025_08_22.bbl" "manuscrit_SG_UMoncton_2025_08_22" 1756252956.25175 0
-  "./manuscrit_SG_UMoncton_2025_08_22-blx.bib" 1756252955.89344 343 3a07cef98ad14713f755034bc844b0fc ""
+["bibtex manuscrit_SG_UMoncton_2025_08_22"] 1756308584.50148 "manuscrit_SG_UMoncton_2025_08_22.aux" "manuscrit_SG_UMoncton_2025_08_22.bbl" "manuscrit_SG_UMoncton_2025_08_22" 1756309551.54545 0
+  "./manuscrit_SG_UMoncton_2025_08_22-blx.bib" 1756309551.16625 343 3a07cef98ad14713f755034bc844b0fc ""
   "./reference_these.bib" 1754401731.00541 40287 566793ade28b652f1150131045aa8c19 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1678141846 65484 b7949c47a88ed6dca66ebc7a04577312 ""
-  "manuscrit_SG_UMoncton_2025_08_22.aux" 1756252955.87735 71982 f528f20310e59ac70b876dabf6efe7bb "pdflatex"
+  "manuscrit_SG_UMoncton_2025_08_22.aux" 1756309551.15065 72913 0cda6192343037840521dadc4c449457 "pdflatex"
   (generated)
   "manuscrit_SG_UMoncton_2025_08_22.bbl"
   "manuscrit_SG_UMoncton_2025_08_22.blg"
   (rewritten before read)
-["pdflatex"] 1756252949.82418 "/Users/shanegervais/Documents/masters-thesis/manuscrit_SG_UMoncton_2025_08_22.tex" "manuscrit_SG_UMoncton_2025_08_22.pdf" "manuscrit_SG_UMoncton_2025_08_22" 1756252956.25195 0
+["pdflatex"] 1756309544.7906 "/Users/shanegervais/Documents/masters-thesis/manuscrit_SG_UMoncton_2025_08_22.tex" "manuscrit_SG_UMoncton_2025_08_22.pdf" "manuscrit_SG_UMoncton_2025_08_22" 1756309551.54569 0
   "/Users/shanegervais/Documents/masters-thesis/manuscrit_SG_UMoncton_2025_08_22.tex" 1755879002.64802 17570 cfa97c9a62c4ec5d7137a9e4f1d5959e ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -194,6 +194,8 @@
   "figure/poincare_sphere_DRAL.png" 1753267545.20211 901766 3052f8f8f64efe1f74858ed0f6028056 ""
   "figure/poincare_sphere_HDVA.png" 1753267595.3513 876798 9d53c3663b1553926a3b74aaa0c8745f ""
   "figure/poincare_sphere_HRVL.png" 1753267528.09334 888973 97d1a955687780db304967085c9b796e ""
+  "figure/real_part_visibility_DRAL.png" 1756307331.91172 262478 1c9f60b1d4fadb3ed2f5a48e2620dfd9 ""
+  "figure/real_part_visibility_HDVA.png" 1756306964.79083 282792 35cfe22512da79fb0e694cef59e568b1 ""
   "figure/real_probability_path_3.png" 1752003581.30805 147104 61e7d563803323e76dc15c9345610715 ""
   "figure/real_probability_path_4.png" 1752007417.60613 144446 217d604356fe21d2a7da72f925c03077 ""
   "figure/real_probability_path_5.png" 1752004168.71287 81433 7b619042f7fd6547fcafaf99241affb3 ""
@@ -209,15 +211,14 @@
   "figure/typ_pulse.png" 1749030043.32499 234554 04711d3430fc91a18607b43202365fd7 ""
   "figure/visibility_2.png" 1749030043.32883 308779 7c32d26e6a9f77a774a180f0675cc2ea ""
   "figure/zoom_doppler_res_scatter.png" 1749030043.33997 37682 c62b6413dd2f59ed9a6017f7bb8ef063 ""
-  "manuscrit_SG_UMoncton_2025_08_22.aux" 1756252955.87735 71982 f528f20310e59ac70b876dabf6efe7bb "pdflatex"
-  "manuscrit_SG_UMoncton_2025_08_22.bbl" 1755879016.15303 73465 0e6fcea4ee22e3b80a2d4f0918514c48 "bibtex manuscrit_SG_UMoncton_2025_08_22"
-  "manuscrit_SG_UMoncton_2025_08_22.lof" 1756252955.89429 18814 8c9883af61ff34ded42adeb178e07a26 "pdflatex"
-  "manuscrit_SG_UMoncton_2025_08_22.lot" 1756252955.89418 1515 c249f4623e89f409e17603785e7bbb4b "pdflatex"
-  "manuscrit_SG_UMoncton_2025_08_22.out" 1756252955.89083 11424 c44b87234d6114b130b15b00e50f1628 "pdflatex"
-  "manuscrit_SG_UMoncton_2025_08_22.run.xml" 1756252955.89407 2780 8bfbad25d54b17fc6a4b81bea2bb46af "pdflatex"
+  "manuscrit_SG_UMoncton_2025_08_22.aux" 1756309551.15065 72913 0cda6192343037840521dadc4c449457 "pdflatex"
+  "manuscrit_SG_UMoncton_2025_08_22.bbl" 1756308584.59398 73465 0e6fcea4ee22e3b80a2d4f0918514c48 "bibtex manuscrit_SG_UMoncton_2025_08_22"
+  "manuscrit_SG_UMoncton_2025_08_22.lof" 1756309551.1669 19201 9fccbdf10494d9eca1ad015d2efeb9f3 "pdflatex"
+  "manuscrit_SG_UMoncton_2025_08_22.lot" 1756309551.16687 1515 07a3bde6c0f3dc1fb4e8072aec8620c3 "pdflatex"
+  "manuscrit_SG_UMoncton_2025_08_22.out" 1756309551.16365 11424 c44b87234d6114b130b15b00e50f1628 "pdflatex"
+  "manuscrit_SG_UMoncton_2025_08_22.run.xml" 1756309551.16677 2780 8bfbad25d54b17fc6a4b81bea2bb46af "pdflatex"
   "manuscrit_SG_UMoncton_2025_08_22.tex" 1755879002.64802 17570 cfa97c9a62c4ec5d7137a9e4f1d5959e ""
-  "manuscrit_SG_UMoncton_2025_08_22.toc" 1756252955.89412 4596 5511b34210589dd8532e0b0de49cddaf "pdflatex"
-  "real_part_visibility.png" 1753427054.78862 282792 35cfe22512da79fb0e694cef59e568b1 ""
+  "manuscrit_SG_UMoncton_2025_08_22.toc" 1756309551.16682 4598 3853b48a754d201c3b9583183495b6d3 "pdflatex"
   "section/section_1/section_1.1/section_1_0_V2.tex" 1754638312.43286 13679 f52e17c5002c45fd12fa7b4018d3074a ""
   "section/section_2/section_2.1/section_2.0_V2.tex" 1755816327.41967 54925 9bc505c38ca03fc01c8a337fae633c71 ""
   "section/section_3/section_3_1/section3_1_2.tex" 1756252949.55585 19162 1595bb43c37603ea704790b4226d09e4 ""
@@ -234,9 +235,9 @@
   "section/section_4/section_4_1/section_4.1.tex" 1753190622.64225 2170 393d3dd995909b0b7499825f293f3d1a ""
   "section/section_4/section_4_1/section_4.tex" 1751316745.96337 1282 642937ff9e632639c7d59e10968b85e6 ""
   "section/section_4/section_4_1/section_4_1_1.tex" 1755786303.79354 13557 84485fc2e2a6980404ea4e58734f7806 ""
-  "section/section_4/section_4_1/section_4_1_2.tex" 1755877557.96097 7502 41b4bd19c9c82308fd9e0d0bca4d0f40 ""
-  "section/section_4/section_4_2/section_4.2.tex" 1755880524.59854 15945 855484c275fd86ba2c189326229a47f0 ""
-  "section/section_5/section_5.tex" 1755878526.65853 5793 cdf57c9b76e48253c2872a65f72712c4 ""
+  "section/section_4/section_4_1/section_4_1_2.tex" 1756308577.63265 8456 8caba4b6ec880fe4c94ed6966b4c1711 ""
+  "section/section_4/section_4_2/section_4.2.tex" 1756309412.20866 16021 deea86ad6d5913678cddd5e0d06ad9a3 ""
+  "section/section_5/section_5.tex" 1756309544.61495 5813 bc3030ad76c70f2683caf97712274a1e ""
   (generated)
   "manuscrit_SG_UMoncton_2025_08_22-blx.bib"
   "manuscrit_SG_UMoncton_2025_08_22.aux"

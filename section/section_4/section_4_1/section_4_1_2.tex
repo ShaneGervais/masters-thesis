@@ -45,8 +45,10 @@
 
     \begin{figure}[!htpb]
         \centering
-        \includegraphics[width=1.0\textwidth]{real_part_visibility.png}
-        \caption{Effet de la visibilité de l'interférence sur la partie réelle de la valeur faible.}
+        \includegraphics[width=1.0\textwidth]{real_part_visibility_HDVA.png}
+        \caption{Effet de la visibilité de l'interférence sur la partie réelle de la valeur faible
+        pour le trajet de polarisation linéaire.
+        Les valeurs démontrées sont $\mathcal{V} = 1, 0.5, 0.1, 0.01$.}
         \label{fig:vis_real}
     \end{figure}
 
@@ -61,14 +63,14 @@
     \noindent Nous allons maintenant examiner les valeurs des visibilités
     nécessaires pour les trajets de polarisation linéaire avec un
     ajustement paramétrique avec l'équation \ref{eq:vis_eq} dans la
-    figure \ref{fig:vis_real_path_3}.
+    figure \ref{fig:vis_real_path_1}.
 
     \begin{figure}[!htpb]
         \centering
         \includegraphics[width=1.0\textwidth]{real_weak_value_vis_3_analysis.png}
         \caption{Trajet de polarisation $\ket{H} \to \ket{D} \to \ket{V} \to \ket{A} \to \ket{H}$
         avec ajustement paramétrique pour le terme d'interférence.}
-        \label{fig:vis_real_path_3}
+        \label{fig:vis_real_path_1}
     \end{figure}
 
     \noindent Nous calculons que la visibilité du terme additionelle $2sin(\theta)cos(\theta)$ 
@@ -98,21 +100,38 @@
     des équations \ref{eq:amplitude_a} et \ref{eq:amplitude_b} ainsi que 
     les attentes expérimentales pour les amplitudes de probabilité
     calculées pour ce trajet de polarisation: \ref{eq:state1}.
-    Pour le trajet de polarisation en superposition, nous abservons une visibilité
-    plus faible que le trajet de polarisation linéaire $\mathcal{V} \approx 0$ 
-    car les résultats sont approximativement constant à $1/2$,
-    qui pose une difficulté à mesurer.
+    
+    \noindent Pour le trajet de polarisation en superposition, nous pouvons 
+    aussi d'écrire l'effet du terme d'interférence en fonction de la visibilité 
+    avec l'équation:
 
-    \noindent Avec la source utilisée, nous ne pouvons pas 
-    observer les effets de ce terme d'interférence et obtenir des délais 
-    négatifs pour la partie réelle de la valeur faible. Ceci est 
-    dû à la faible longueur de cohérence de notre source laser.
-    Or, nous sommes en mesure de caractériser les états de
-    polarisation d'entrée avec succès relative pour la partie réelle de
-    la valeur faible. Il y a cependant
-    l'information de la partie complexe de l'état quantique que nous devons mesurer.
-    La section suivante traitera de nos tentatives de mesure de la
-    partie imaginaire. 
+    \begin{equation}
+        \expval{\hat{t}}_{vis}^{superposition} = \frac{\tau}{2}(1 + \mathcal{V}\frac{sin(2\theta)}{4})\label{eq:vis_eq_superposition}
+    \end{equation}
+
+    \noindent Nous démontrons des différentes valeurs de visibilité et comment le terme d'interférence
+    affecte la partie réelle de la valeur faible de ce trajet de polarisation
+    dans la figure \ref{fig:vis_real_DRAL}.
+
+    \begin{figure}[!htpb]
+        \centering
+        \includegraphics[width=1.0\textwidth]{real_part_visibility_DRAL.png}
+        \caption{Effet de la visibilité de l'interférence sur la partie réelle de la valeur faible
+        pour le trajet de polarisation en superposition. Les valeurs démontrées sont
+        $\mathcal{V} = 1, 0.5, 0.1, 0.01$.}
+        \label{fig:vis_real_DRAL}
+    \end{figure}
+
+    \noindent Nous abservons une visibilité similaire à celle du trajet de polarisation linéaire
+    $\mathcal{V} \approx 0.11$ pour le trajet de polarisation en superposition. 
+    Ceci se voit dans la figure \ref{fig:DRAL_delay_results} et correspond aux 
+    incertitudes expérimentales observées. 
+    Nous constatons que du fait de la faible longueur de cohérence du laser, 
+    les effets des termes d'interférences apparaissant dans la formule de la 
+    valeur faible ne sont pas aussi important que prévu. Cependant, en prenant 
+    en compte la visibilité du laser, nous sommes capables d'expliquer le 
+    comportement des courbes expérimentales à l'aide des formules théoriques 
+    revisitées. 
 
     %En effet, le 
     %chemin 1 suit moins bien la théorie que le chemin 2 car le chemin 1 

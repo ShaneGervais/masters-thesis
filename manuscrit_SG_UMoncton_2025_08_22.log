@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.28)  26 AUG 2025 21:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.28)  27 AUG 2025 12:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1150,6 +1150,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [15]
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[16]
+
 LaTeX Warning: Command \' invalid in math mode on input line 290.
 
 Missing character: There is no é in font cmr12!
@@ -1165,7 +1173,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[16]
+[17]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1173,7 +1181,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[17]
+[18]
 Overfull \hbox (0.95027pt too wide) in paragraph at lines 384--384
 |[]\T1/cmr/bx/n/12 INTRODUCTION DES PRO-CÉ-DURES DI-RECTES POUR LES ME-
  []
@@ -1189,7 +1197,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [2]
 
 pdfTeX warning: pdflatex (file ./figure/FIGURES.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figure/FIGURES.pdf, id=633, page=1, 963.6pt x 542.025pt>
+<./figure/FIGURES.pdf, id=642, page=1, 963.6pt x 542.025pt>
 File: ./figure/FIGURES.pdf Graphic file (type pdf)
 <use ./figure/FIGURES.pdf, page 1>
 Package pdftex.def Info: ./figure/FIGURES.pdf , page1 used on input line 89.
@@ -1279,7 +1287,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [13]
-<./figure/poincare_sphere.png, id=783, 682.2288pt x 682.2288pt>
+<./figure/poincare_sphere.png, id=793, 682.2288pt x 682.2288pt>
 File: ./figure/poincare_sphere.png Graphic file (type png)
 <use ./figure/poincare_sphere.png>
 Package pdftex.def Info: ./figure/poincare_sphere.png  used on input line 258.
@@ -1303,7 +1311,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [15 <./figure/poincare_sphere.png>]
 
 pdfTeX warning: pdflatex (file ./figure/FIGURES.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figure/FIGURES.pdf, id=805, page=2, 963.6pt x 542.025pt>
+<./figure/FIGURES.pdf, id=814, page=2, 963.6pt x 542.025pt>
 File: ./figure/FIGURES.pdf Graphic file (type pdf)
 <use ./figure/FIGURES.pdf, page 2>
 Package pdftex.def Info: ./figure/FIGURES.pdf , page2 used on input line 332.
@@ -1318,7 +1326,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [16]
 
 pdfTeX warning: pdflatex (file ./figure/FIGURES.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figure/FIGURES.pdf, id=811, page=3, 963.6pt x 542.025pt>
+<./figure/FIGURES.pdf, id=821, page=3, 963.6pt x 542.025pt>
 File: ./figure/FIGURES.pdf Graphic file (type pdf)
 <use ./figure/FIGURES.pdf, page 3>
 Package pdftex.def Info: ./figure/FIGURES.pdf , page3 used on input line 357.
@@ -1475,7 +1483,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [34] (./section/section_3/section_3_1/section_3_intro.tex) (./section/section_3/section_3_1/section_3_1.tex [35]
-<./figure/speed_of_light_exp.png, id=1038, 8311.05pt x 4565.055pt>
+<./figure/speed_of_light_exp.png, id=1047, 8311.05pt x 4565.055pt>
 File: ./figure/speed_of_light_exp.png Graphic file (type png)
 <use ./figure/speed_of_light_exp.png>
 Package pdftex.def Info: ./figure/speed_of_light_exp.png  used on input line 21.
@@ -1505,7 +1513,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [38]
-<./figure/EQ _time_oscillo_fig.png, id=1065, 856.19875pt x 441.14813pt>
+<./figure/EQ _time_oscillo_fig.png, id=1074, 856.19875pt x 441.14813pt>
 File: ./figure/EQ _time_oscillo_fig.png Graphic file (type png)
 <use ./figure/EQ _time_oscillo_fig.png>
 Package pdftex.def Info: ./figure/EQ _time_oscillo_fig.png  used on input line 71.
@@ -1535,12 +1543,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [41] (./section/section_3/section_3_1/section3_1_2.tex
-<./figure/typ_pulse.png, id=1087, 562.14015pt x 421.575pt>
+<./figure/typ_pulse.png, id=1096, 562.14015pt x 421.575pt>
 File: ./figure/typ_pulse.png Graphic file (type png)
 <use ./figure/typ_pulse.png>
 Package pdftex.def Info: ./figure/typ_pulse.png  used on input line 17.
 (pdftex.def)             Requested size: 429.3521pt x 321.99564pt.
-<./figure/fits_BNC copy.png, id=1096, 376.5267pt x 292.6935pt>
+<./figure/fits_BNC copy.png, id=1105, 376.5267pt x 292.6935pt>
 File: ./figure/fits_BNC copy.png Graphic file (type png)
 <use ./figure/fits_BNC copy.png>
 Package pdftex.def Info: ./figure/fits_BNC copy.png  used on input line 45.
@@ -1647,7 +1655,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [50]
-<./figure/speed_BNC copy 5.png, id=1150, 374.3586pt x 295.8252pt>
+<./figure/speed_BNC copy 5.png, id=1159, 374.3586pt x 295.8252pt>
 File: ./figure/speed_BNC copy 5.png Graphic file (type png)
 <use ./figure/speed_BNC copy 5.png>
 Package pdftex.def Info: ./figure/speed_BNC copy 5.png  used on input line 341.
@@ -1736,7 +1744,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [58]
-<./figure/fits_light.png, id=1190, 377.0085pt x 295.8252pt>
+<./figure/fits_light.png, id=1199, 377.0085pt x 295.8252pt>
 File: ./figure/fits_light.png Graphic file (type png)
 <use ./figure/fits_light.png>
 Package pdftex.def Info: ./figure/fits_light.png  used on input line 212.
@@ -1758,7 +1766,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [60 <./figure/fits_light.png (PNG copy)>]
-<./figure/speed_light copy 3.png, id=1208, 377.7312pt x 295.8252pt>
+<./figure/speed_light copy 3.png, id=1217, 377.7312pt x 295.8252pt>
 File: ./figure/speed_light copy 3.png Graphic file (type png)
 <use ./figure/speed_light copy 3.png>
 Package pdftex.def Info: ./figure/speed_light copy 3.png  used on input line 278.
@@ -1788,7 +1796,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [63]) (./section/section_3/section_3_2/section_3.2.1.tex
-<./figure/partiereelexp.png, id=1231, 11490.93pt x 4974.585pt>
+<./figure/partiereelexp.png, id=1240, 11490.93pt x 4974.585pt>
 File: ./figure/partiereelexp.png Graphic file (type png)
 <use ./figure/partiereelexp.png>
 Package pdftex.def Info: ./figure/partiereelexp.png  used on input line 20.
@@ -1818,7 +1826,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [66]
-<./figure/poincare_sphere_HDVA.png, id=1253, 722.7pt x 722.7pt>
+<./figure/poincare_sphere_HDVA.png, id=1262, 722.7pt x 722.7pt>
 File: ./figure/poincare_sphere_HDVA.png Graphic file (type png)
 <use ./figure/poincare_sphere_HDVA.png>
 Package pdftex.def Info: ./figure/poincare_sphere_HDVA.png  used on input line 170.
@@ -1840,7 +1848,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [68 <./figure/poincare_sphere_HDVA.png>]
-<./figure/poincare_sphere_HRVL.png, id=1268, 722.7pt x 722.7pt>
+<./figure/poincare_sphere_HRVL.png, id=1277, 722.7pt x 722.7pt>
 File: ./figure/poincare_sphere_HRVL.png Graphic file (type png)
 <use ./figure/poincare_sphere_HRVL.png>
 Package pdftex.def Info: ./figure/poincare_sphere_HRVL.png  used on input line 293.
@@ -1862,7 +1870,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [70 <./figure/poincare_sphere_HRVL.png>]
-<./figure/poincare_sphere_DRAL.png, id=1283, 722.7pt x 722.7pt>
+<./figure/poincare_sphere_DRAL.png, id=1292, 722.7pt x 722.7pt>
 File: ./figure/poincare_sphere_DRAL.png Graphic file (type png)
 <use ./figure/poincare_sphere_DRAL.png>
 Package pdftex.def Info: ./figure/poincare_sphere_DRAL.png  used on input line 371.
@@ -1908,7 +1916,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [75]
-<./figure/partieimagexp.png, id=1329, 11490.93pt x 6889.74pt>
+<./figure/partieimagexp.png, id=1338, 11490.93pt x 6889.74pt>
 File: ./figure/partieimagexp.png Graphic file (type png)
 <use ./figure/partieimagexp.png>
 Package pdftex.def Info: ./figure/partieimagexp.png  used on input line 47.
@@ -1922,7 +1930,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [76 <./figure/partieimagexp.png>]
-<./figure/visibility_2.png, id=1338, 578.16pt x 289.08pt>
+<./figure/visibility_2.png, id=1347, 578.16pt x 289.08pt>
 File: ./figure/visibility_2.png Graphic file (type png)
 <use ./figure/visibility_2.png>
 Package pdftex.def Info: ./figure/visibility_2.png  used on input line 84.
@@ -1960,7 +1968,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [80] (./section/section_4/section_4_1/section_4.tex) (./section/section_4/section_4_1/section_4.1.tex [81]) (./section/section_4/section_4_1/section_4_1_1.tex
-<./figure/real_weak_value_path_3.png, id=1375, 462.528pt x 346.896pt>
+<./figure/real_weak_value_path_3.png, id=1384, 462.528pt x 346.896pt>
 File: ./figure/real_weak_value_path_3.png Graphic file (type png)
 <use ./figure/real_weak_value_path_3.png>
 Package pdftex.def Info: ./figure/real_weak_value_path_3.png  used on input line 30.
@@ -1982,7 +1990,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [83 <./figure/real_weak_value_path_3.png>]
-<./figure/real_weak_value_path_4.png, id=1390, 462.528pt x 346.896pt>
+<./figure/real_weak_value_path_4.png, id=1399, 462.528pt x 346.896pt>
 File: ./figure/real_weak_value_path_4.png Graphic file (type png)
 <use ./figure/real_weak_value_path_4.png>
 Package pdftex.def Info: ./figure/real_weak_value_path_4.png  used on input line 96.
@@ -1996,7 +2004,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [84 <./figure/real_weak_value_path_4.png>]
-<./figure/real_weak_value_path_5.png, id=1400, 462.528pt x 346.896pt>
+<./figure/real_weak_value_path_5.png, id=1409, 462.528pt x 346.896pt>
 File: ./figure/real_weak_value_path_5.png Graphic file (type png)
 <use ./figure/real_weak_value_path_5.png>
 Package pdftex.def Info: ./figure/real_weak_value_path_5.png  used on input line 135.
@@ -2018,7 +2026,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [86 <./figure/real_weak_value_path_5.png>]
-<./figure/real_probability_path_4.png, id=1417, 462.528pt x 346.896pt>
+<./figure/real_probability_path_4.png, id=1427, 462.528pt x 346.896pt>
 File: ./figure/real_probability_path_4.png Graphic file (type png)
 <use ./figure/real_probability_path_4.png>
 Package pdftex.def Info: ./figure/real_probability_path_4.png  used on input line 190.
@@ -2040,7 +2048,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [88 <./figure/real_probability_path_4.png>]
-<./figure/real_probability_path_5.png, id=1442, 462.528pt x 346.896pt>
+<./figure/real_probability_path_5.png, id=1451, 462.528pt x 346.896pt>
 File: ./figure/real_probability_path_5.png Graphic file (type png)
 <use ./figure/real_probability_path_5.png>
 Package pdftex.def Info: ./figure/real_probability_path_5.png  used on input line 230.
@@ -2062,15 +2070,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [90]
-<real_part_visibility.png, id=1474, 578.16pt x 433.62pt>
-File: real_part_visibility.png Graphic file (type png)
-<use real_part_visibility.png>
-Package pdftex.def Info: real_part_visibility.png  used on input line 48.
+<./figure/real_part_visibility_HDVA.png, id=1483, 578.16pt x 433.62pt>
+File: ./figure/real_part_visibility_HDVA.png Graphic file (type png)
+<use ./figure/real_part_visibility_HDVA.png>
+Package pdftex.def Info: ./figure/real_part_visibility_HDVA.png  used on input line 48.
 (pdftex.def)             Requested size: 429.3521pt x 322.01181pt.
-<./figure/real_weak_value_vis_3_analysis.png, id=1482, 462.528pt x 346.896pt>
+<./figure/real_weak_value_vis_3_analysis.png, id=1491, 462.528pt x 346.896pt>
 File: ./figure/real_weak_value_vis_3_analysis.png Graphic file (type png)
 <use ./figure/real_weak_value_vis_3_analysis.png>
-Package pdftex.def Info: ./figure/real_weak_value_vis_3_analysis.png  used on input line 68.
+Package pdftex.def Info: ./figure/real_weak_value_vis_3_analysis.png  used on input line 70.
 (pdftex.def)             Requested size: 429.3521pt x 322.02768pt.
 
 
@@ -2080,7 +2088,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[91 <./real_part_visibility.png>]
+[91 <./figure/real_part_visibility_HDVA.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2089,10 +2097,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [92 <./figure/real_weak_value_vis_3_analysis.png>]
-<./figure/real_probability_path_3.png, id=1495, 462.528pt x 346.896pt>
+<./figure/real_probability_path_3.png, id=1504, 462.528pt x 346.896pt>
 File: ./figure/real_probability_path_3.png Graphic file (type png)
 <use ./figure/real_probability_path_3.png>
-Package pdftex.def Info: ./figure/real_probability_path_3.png  used on input line 86.
+Package pdftex.def Info: ./figure/real_probability_path_3.png  used on input line 88.
 (pdftex.def)             Requested size: 429.3521pt x 322.02768pt.
 
 
@@ -2102,7 +2110,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[93 <./figure/real_probability_path_3.png>]) (./section/section_4/section_4_2/section_4.2.tex
+[93 <./figure/real_probability_path_3.png>]
+<./figure/real_part_visibility_DRAL.png, id=1518, 578.16pt x 433.62pt>
+File: ./figure/real_part_visibility_DRAL.png Graphic file (type png)
+<use ./figure/real_part_visibility_DRAL.png>
+Package pdftex.def Info: ./figure/real_part_visibility_DRAL.png  used on input line 118.
+(pdftex.def)             Requested size: 429.3521pt x 322.01181pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2110,8 +2124,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[94]
-<./figure/spectre.png, id=1518, 374.8404pt x 292.2117pt>
+[94 <./figure/real_part_visibility_DRAL.png>]) (./section/section_4/section_4_2/section_4.2.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[95]
+<./figure/spectre.png, id=1536, 374.8404pt x 292.2117pt>
 File: ./figure/spectre.png Graphic file (type png)
 <use ./figure/spectre.png>
 Package pdftex.def Info: ./figure/spectre.png  used on input line 67.
@@ -2153,16 +2175,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[95]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[96 <./figure/spectre.png (PNG copy)>]
-<./figure/spectre_175.png, id=1531, 369.5406pt x 288.3573pt>
+[96]
+<./figure/spectre_175.png, id=1546, 369.5406pt x 288.3573pt>
 File: ./figure/spectre_175.png Graphic file (type png)
 <use ./figure/spectre_175.png>
 Package pdftex.def Info: ./figure/spectre_175.png  used on input line 133.
@@ -2183,8 +2197,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[98 <./figure/spectre_175.png (PNG copy)>]
-<./figure/imag_weak_value_path_4 copy 4.png, id=1549, 462.528pt x 346.896pt>
+[98 <./figure/spectre.png (PNG copy)>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[99 <./figure/spectre_175.png (PNG copy)>]
+<./figure/imag_weak_value_path_4 copy 4.png, id=1567, 462.528pt x 346.896pt>
 File: ./figure/imag_weak_value_path_4 copy 4.png Graphic file (type png)
 <use ./figure/imag_weak_value_path_4 copy 4.png>
 Package pdftex.def Info: ./figure/imag_weak_value_path_4 copy 4.png  used on input line 192.
@@ -2197,7 +2219,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[99]
+[100]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2205,8 +2227,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[100 <./figure/imag_weak_value_path_4 copy 4.png>]
-<./figure/imaginary_probability_path_4.png, id=1563, 462.528pt x 346.896pt>
+[101 <./figure/imag_weak_value_path_4 copy 4.png>]
+<./figure/imaginary_probability_path_4.png, id=1581, 462.528pt x 346.896pt>
 File: ./figure/imaginary_probability_path_4.png Graphic file (type png)
 <use ./figure/imaginary_probability_path_4.png>
 Package pdftex.def Info: ./figure/imaginary_probability_path_4.png  used on input line 246.
@@ -2219,7 +2241,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[101]
+[102]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2227,15 +2249,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[102 <./figure/imaginary_probability_path_4.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[103])
+[103 <./figure/imaginary_probability_path_4.png>])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2320,12 +2334,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [115]
-<figure/entire_spec.png, id=1783, 1124.2pt x 843.15pt>
+<figure/entire_spec.png, id=1798, 1124.2pt x 843.15pt>
 File: figure/entire_spec.png Graphic file (type png)
 <use figure/entire_spec.png>
 Package pdftex.def Info: figure/entire_spec.png  used on input line 147.
 (pdftex.def)             Requested size: 429.3521pt x 322.0085pt.
-<figure/zoom_doppler_res_scatter.png, id=1786, 1124.2pt x 843.15pt>
+<figure/zoom_doppler_res_scatter.png, id=1801, 1124.2pt x 843.15pt>
 File: figure/zoom_doppler_res_scatter.png Graphic file (type png)
 <use figure/zoom_doppler_res_scatter.png>
 Package pdftex.def Info: figure/zoom_doppler_res_scatter.png  used on input line 166.
@@ -2378,18 +2392,18 @@ Package logreq Info: Writing requests to 'manuscrit_SG_UMoncton_2025_08_22.run.x
 
  ) 
 Here is how much of TeX's memory you used:
- 28918 strings out of 474116
- 573788 string characters out of 5743682
+ 28934 strings out of 474116
+ 574425 string characters out of 5743682
  2058187 words of memory out of 5000000
- 50457 multiletter control sequences out of 15000+600000
+ 50470 multiletter control sequences out of 15000+600000
  569278 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,14n,117p,1962b,3363s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on manuscrit_SG_UMoncton_2025_08_22.pdf (135 pages, 7731306 bytes).
+Output written on manuscrit_SG_UMoncton_2025_08_22.pdf (136 pages, 8004109 bytes).
 PDF statistics:
- 1972 PDF objects out of 2073 (max. 8388607)
- 1701 compressed objects within 18 object streams
- 402 named destinations out of 1000 (max. 500000)
- 500 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1987 PDF objects out of 2073 (max. 8388607)
+ 1713 compressed objects within 18 object streams
+ 405 named destinations out of 1000 (max. 500000)
+ 505 words of extra memory for PDF output out of 10000 (max. 10000000)
 

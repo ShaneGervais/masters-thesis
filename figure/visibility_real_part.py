@@ -13,7 +13,8 @@ plt.rcParams.update({
 
 # Function definition
 def weak_value_real(theta, V):
-    return np.cos(theta)**2 + 2 * V * np.sin(theta) * np.cos(theta)
+    return (1 + V*np.sin(4*theta)/4)/2
+    #return np.cos(theta)**2 + 2 * V * np.sin(theta) * np.cos(theta)
 
 # Domain
 theta = np.linspace(0, 2 * np.pi, 500)
@@ -37,6 +38,6 @@ plt.grid(True)
 plt.tight_layout()
 
 # Save high-res image
-plt.savefig("real_part_visibility.png", dpi=300)
+plt.savefig("./real_part_visibility_DRAL.png", dpi=300)
 
 plt.show()
