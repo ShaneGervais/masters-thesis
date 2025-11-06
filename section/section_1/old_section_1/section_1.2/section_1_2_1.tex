@@ -1,0 +1,188 @@
+Le 
+premier est un article de Jeff Lundeen et al. qui 
+présente les résultats expérimentaux d'une mesure directe 
+d'un état quantique 
+\cite{Lundeen_Direct_Measurement,Lundeen_thesis}. 
+Ils commencent par mentionner les 
+implications du principe d'incertitude et du fait que 
+nous ne pouvons pas connaître à la fois la position et 
+quantité de mouvement d'une particule. Ils décrivent 
+qu'en utilisant la tomographie avec un ensemble de 
+particules, ils peuvent déduire indirectement la fonction 
+d'onde par reconstruction algorithmique, mais cela est 
+bien sûr compliqué et long. C'est là que les mesures 
+faibles entrent en jeu. Ils décrivent la méthode ou la 
+procédure comme étant une contrepartie directe de la 
+tomographie quantique et exempte des calculs et de séries 
+de mesures compliquées et extensives. La mesure directe 
+d'un état quantique qu'ils font est une procédure 
+comprenant une préparation de l'état d'entrée, une interaction faible 
+(mesure faible) et une mesure projective où le 
+résultat final est une mesure des deux variables 
+complémentaires du système qui apparaît 
+proportionnellement au système quantique. Ils décrivent 
+que la mesure directe est une réduction de la perturbation 
+induite par la première mesure, soit la mesure faible. 
+Ils mentionnent que la mesure faible est décrite 
+comme une extension du modèle von Neumann des mesures 
+quantiques (décrit pour la première 
+fois par AAV)\cite{Aharonov,vonNeumann}. Le 
+modèle implique un couplage de deux parties : l'état 
+quantique du système et le système ancillaire qui est 
+généralement appelé le « pointeur » en référence à 
+l'existence d'un compteur et d'une aiguille d'un appareil 
+de mesure. Prenons l'exemple de la figure \ref{fig:fuel}, 
+qui représente la jauge de carburant d'une voiture. Le 
+système commence dans une superposition d'états propres 
+d'un observable désirée $\hat{A}$. Le système se couple avec une 
+force de $g$ à la variable complémentaire conjuguée 
+de $\hat{A}$, soit $\hat{P}$. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\textwidth]{fuel_gauge.png}
+    \caption{Schéma d'une jauge de carburant utilisée 
+    pour décrire le modèle de von Neumann pour les 
+    mesures quantiques où un système et un appareil de 
+    mesure sont couplés. Ce schéma est tiré de la thèse 
+    de doctorat de Jeff Lundeen à l'université de 
+    Toronto en 2006 \cite{Lundeen_thesis}. Je l'utilise ici pour faciliter la 
+    description d'un pointeur qui peut être considéré 
+    comme l'aiguille de la jauge de carburant. }
+    \label{fig:fuel}
+\end{figure}
+
+Lorsque nous appuyons sur l'accélérateur, nous 
+interagissons avec le système pendant un certain temps 
+$t$, ce qui finit par effondrer le système à l'état propre 
+correspondant et déplace l'aiguille d'autant. L'aiguille 
+ou pointeur est donc un indicateur du résultat d'une 
+mesure. Ils décrivent que lors d'une procédure directe 
+via mesure faible, la force de couplage est réduite de 
+sorte qu'il y a une perturbation minimale et, bien sûr, 
+l'étape de post-sélection nous permet de mesurer 
+directement la fonction d'onde d'un système quantique. 
+Dans l'article, ils ont construit un appareil 
+expérimental (démontré dans la figure 
+\ref{fig:lundeen_exp}) pour tenter de mesurer 
+la valeur faible d'un 
+système photonique quantique, où les parties réelles et 
+imaginaires de la valeur faible sont les observables de 
+position et de quantité de mouvement en conséquence. Ils 
+ont effectué une mesure directe de la fonction d'onde 
+spatiale transversale d'un photon. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\textwidth]{lundeen_exp.png}
+    \caption{Schéma de l'appareil expérimental 
+    utilisé par Jeff Lundeen et al. pour 
+    mesurer directement la fonction d'onde 
+    d'un système quantique. Ils utilisent ici une fibre 
+    optique monomode qui laisse passer des photons 
+    approximativement gaussiens monomode. 
+    Les photons passent à 
+    travers un polariseur à microfils pour être 
+    collimatés avec lentille achromatique. La 
+    lentille est masquée par une ouverture rectangulaire. 
+    Les photons passent ensuite à travers une demi-plaque 
+    d'onde 
+    qui détermine la force de la mesure faible via 
+    son angle et utiliser comme pointeur pour les décalages 
+    transversale (initiallement à $x=0$). Ensuite, 
+    les photons passent à travers 
+    une fente en post-sélectionnant ceux qui ont un 
+    déplacement de quantité de mouvement de $p=0$. Ensuite, 
+    les photons 
+    sont collimatés avec une lentille et passent à 
+    travers une plaque d'onde demi ou quart, puis entrent 
+    dans un séparateur de faisceaux polarisant où chaque 
+    bras est équipé d'un détecteur 
+    \cite{Lundeen_Direct_Measurement}.}
+    \label{fig:lundeen_exp}
+\end{figure}
+
+Ils ont produit un 
+flux de photons de deux manières : soit en atténuant un 
+faisceau laser, soit en générant des photons uniques par 
+le biais d'une conversion paramétrique descendante 
+spontanée «spontaneous parametric down-conversion» 
+(SPDC). L'expérience peut être divisée en quatre étapes 
+séquentielles : la préparation de la fonction d'onde 
+transverse, mesure faible de la position transverse du 
+photon, postsélection des photons dont le moment 
+transverse est nul et lecture de la mesure faible 
+résultante. Ils mesurent faiblement la position 
+transversale du photon en la couplant à un degré de 
+liberté interne du photon, soit sa polarisation. 
+L'utilisation de la polarisation comme état quantique du 
+système pour caractériser un système quantique a 
+également été utilisée dans \cite{weak_photon_pol}. Cela leur a 
+permis d'utiliser les angles de polarisation linéaire du 
+photon comme pointeur. Dans ce cas, la réduction sur la 
+force de la mesure correspond à la réduction de l'angle 
+de polarisation linéaire des photons, ce qui est réalisé 
+à l'aide d'une lame demi-onde. Ils utilisent ensuite une 
+lentille à transformation de Fourier et une fente pour 
+post-sélectionner (projecter) uniquement les photons 
+ayant un décalage de quantité de mouvement de 0. Les 
+résultats sont présentés dans les figures 
+\ref{fig:lundeen_exp_1} et \ref{fig:lundeen_exp_2}.
+
+\begin{figure}[hp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{lundeen_exp_res_1.png}
+    \caption{Mesures de la fonction d'onde d'un photon 
+    unique. a) Partie réelle (carrés bleus) et 
+    imaginaire (carrés rouges) de la valeur faible 
+    liée aux déplacements de position et de quantité de 
+    mouvement. b) En utilisant les données de a), ils 
+    tracent la phase (carrés noirs ouverts) et le module 
+    au carré de la fonction d'onde (cercles rouges 
+    ouverts) \cite{Lundeen_Direct_Measurement}.}
+    \label{fig:lundeen_exp_1}
+\end{figure}
+
+\begin{figure}[hp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{lundeen_exp_res_2.png}
+    \caption{Mesures des fonctions d'onde modifiées. 
+    Dans ces résultats, ils ont testé leur capacité à 
+    mesurer la fonction d'onde en modifiant la fonction 
+    de probabilité en plaçant un atténuateur à 
+    apodisation spatiale inverse après la fibre. a) 
+    Densité de probabilité calculée de la fonction d'onde 
+    à partir des données (cercles bleus pleins) ainsi 
+    que le balayage du détecteur de la fonction de 
+    probabilité (ligne continue). b) Toujours avec 
+    l'œil de bœuf en place, ils ont modifié le profil 
+    de phase de la fonction d'onde en créant une 
+    discontinuité de phase où il y a 0 décalages 
+    translationnels imposés avec un verre à mi-chemin à 
+    travers la fonction d'onde. Dans ce graphique, nous 
+    avons la partie réelle (carrés bleus pleins) et la 
+    partie imaginaire (carrés rouges ouverts) \cite{Lundeen_Direct_Measurement}.}
+    \label{fig:lundeen_exp_2}
+\end{figure}
+
+Ces résultats montrent qu'ils sont capables de 
+caractériser la fonction d'onde de translation 
+quantique de leur système en fonction des 
+déphasages induit. Ils peuvent lire la partie 
+réelle de la fonction d'onde à l'aide d'une 
+lame demi-onde et la partie imaginaire à l'aide 
+d'une lame quart-onde. Cette méthode permet de 
+caractériser de manière très simpliste une 
+fonction d'onde quantique. Ce qui nous amène à 
+l'article suivant dont nous allons discuter. 
+%\begin{figure}[h]
+%    \centering
+%    \includegraphics[width=1.0\textwidth]{lundeen_exp_res_3.png}
+%    \caption{Modification de phase de la fonction d'onde. 
+%    a) Ici, ils déplacent la fente transversalement à 
+%    différentes positions et observent les changements 
+%    de phase. b) Ici, ils introduisent un changement de 
+%    phase quadratique en déplaçant les premières fentes 
+%    à différentes positions \cite{Lundeen_Direct_Measurement}. }
+%    \label{fig:lundeen_exp_3}
+%\end{figure}

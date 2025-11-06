@@ -1,0 +1,73 @@
+Appliquons l'opérateur d'intéraction sur état préparé. Nous pouvons appliqué
+l'opérateur sur les deux bases ou sur les bases individuel. Pour la simplicité et de l'applications 
+ultérieures, nous allons seulement l'appliquer sur un état de base soit $\ket{0}$ 
+donnoté sur l'opérateur par $\hat{U^0}$,
+
+
+\begin{align}
+    \hat{U^{0}}\ket{\Psi_i} &= \hat{U^0}\bigl[\ket{\psi} \otimes \ket{\zeta(x)}\bigr]\\
+    &= \hat{U^{0}}\bigl[ a\ket{0} \otimes \ket{\zeta(x)} + b\ket{1} \otimes \ket{\zeta(x)} \bigr]\\
+    &= \bigl[ a\ket{0} \otimes \hat{U^{0}}\ket{\zeta(x)} + b\ket{1} \otimes \ket{\zeta(x)} \bigr]\\
+    &= \bigl[ a\ket{0} \otimes \ket{\zeta(x-\delta)} + b\ket{1} \otimes \ket{\zeta(x)} \bigr] \equiv \ket{\Psi_{\hat{\pi}}}
+\end{align}
+
+Cette étape on le surnomme l'étape de la mesure signifiant avec le symbole $\hat{\pi}$, ce que j'appelle cet état
+intermédiare soit l'état après avoir subit une mesure $\ket{\Psi_{\hat{\pi}}}$. 
+L'opérateur d'interaction subit un décalage $\delta$ sur le pointeur de la base $\ket{0}$, 
+ce qui déplace l'état du pointeur de $\ket{\zeta(x)}$ 
+a une nouvelle $\ll$ position $\gg$ après la mesure $\ket{\zeta(x-\delta)}$. Ensuite
+la procédure du model standard des mesures quantiques dit que pour qu'on puisque obtenir de l'information
+sur notre état il faut appliqué un état (contenant les mêmes bases que notre état qu'on veut mesurer)
+connue de projection $\ket{\phi} \equiv u\ket{0} + v\ket{1}$ (l'étape se dénote par le symbole $\Lambda$). 
+Ce dernier, nous permettons d'obtenir un observable pour chaque possibilité qu'on peut retrouver
+notre état $\ket{\psi}$. Soit des paramètres des bases $u$ et $v$ qu'on peut
+connaître et changer. Cet état est projecter sur notre état qui a été subit a une interaction par l'appareil de mesure,
+
+\begin{align}
+    \ket{\Psi_f} &\equiv \ket{\phi}\bra{\phi}\ket{\Psi_{\hat{\pi}}}\\
+    &= \ket{\phi}[\bar{u}\bra{0} + \bar{v}\bra{1}][a\ket{0} \otimes \ket{\zeta(x-\delta)} +b\ket{1} \otimes \ket{\zeta(x)}]\\
+    &= \bigl[ \bar{u}a\ket{\zeta(x-\delta)} + \bar{v}b\ket{\zeta(x)} \bigr] \otimes \ket{\phi}\\
+    &= F(x) \otimes \ket{\phi}
+\end{align}
+
+Dont $\ket{\Psi_f}$ dénote l'état finale à la fin de la procédure et 
+$F(x) \equiv \bar{u}a\ket{\zeta(x-\delta)} + \bar{v}b\ket{\zeta(x)}$ une
+fonction décrivant le chevauchement entre notre état $\ket{\psi}$, notre 
+projection $\ket{\phi}$ et le pointeur $\ket{\zeta(x)}$. En fin de la procédure,
+il faut obtenir de l'information sur l'état en trouvant la distribution de 
+probabilté sur chaque état, comme qu'on souvant en physique classique.
+
+\begin{align}
+    |F(x)|^2 &= \bigl[ u\bar{a}\bra{\zeta(x-\delta)} + v\bar{b}\bra{\zeta(x)} \bigr] \bigl[ \bar{u}a\ket{\zeta(x-\delta)} + \bar{v}b\ket{\zeta(x)} \bigr]\\
+    &= |a\bar{u}|^2 \bra{\zeta(x-\delta)}\ket{\zeta(x-\delta)} + u\bar{a}\bar{v}b\bra{\zeta(x-\delta)}\ket{\zeta(x)}\\
+    &+ v\bar{b}\bar{u}a\bra{\zeta(x)}\ket{\zeta(x-\delta)} + |b\bar{v}|\bra{\zeta(x)}\ket{\zeta(x)}
+\end{align}
+
+Nous savons que quand $\delta \gg \sigma$, les distributions gaussien
+du pointeur ne chevauche pas donc $\bra{\zeta(x-\delta)}\ket{\zeta(x)} \approx 0$ et laissons 
+$\bra{\zeta(x)}\ket{\zeta(x)} \equiv Z(x)$,
+
+\begin{align}
+    |F(x)|^2 &= |a\bar{u}|^2 Z(x-\delta) + |b\bar{v}|^2 Z(x)\\
+    &= Prob(\phi|0)Prob(0|\phi)Z(x-\delta) + Prob(\phi|1)Prob(1|\phi)Z(x)
+\end{align}
+
+Dont $Prob(0|\psi) \equiv |a|^2$, $Prob(1|\psi) \equiv |b|^2$, $Prob(1|\phi) \equiv |v|^2$ 
+et $Prob(0|\phi) \equiv |u|^2$. La probabilité que l'état soit $\ket{0}$ 
+démontrer par la loi d'Aharanov-Bergmann-Lebowitz (ABL) (loi des probilités 
+et évènements séquntiels):
+
+\begin{equation}
+    Prob(0) = \frac{\int_{0}^{\infty} |F(x)|^2 dx}{\int_{-\infty}^{\infty} |F(x)|^2 dx} = \frac{Prob(\phi|0)Prob(0|\psi)}{\sum_{K=0,1} Prob(\phi|K)Prob(K|\psi)}
+\end{equation}
+
+Même affaire pour la probabilité que sa soit $\ket{1}$ dont $Prob(1) = 1 - Prob(0)$.
+Avec ce dernier nous pouvons mesuré l'observable de la $\ll$ position $\gg$ du pointeur:
+
+\begin{equation}
+    \expval{\hat{x}} = \delta Prob(0) + Prob(1)
+\end{equation}
+
+L'interaction entre l'appareil de mesure et le système est dite forte car nous 
+réduisons ($\ll$ collapse $\gg$) l'état. Mais qu'est ce passe-t'il si on reduissons
+le l'intéraction entre le système et l'appareil de mesure?

@@ -284,6 +284,12 @@
     aux applications nécessitant un accès direct ou simultané à certains 
     paramètres de la matrice densité, ou des mesures en temps réel
     \cite{TomoReview}.
+    \textcolor{red}{ Étant donné que les photons ont un grand nombre de 
+    dimensions à caractériser, telles que leurs différents états 
+    de polarisation, cela nécessiterait un grand nombre de 
+    mesures projectives pour qu'une tomographie quantique 
+    puisse caractériser l'état du système. Cela rendrait cette 
+    technique impraticable dans un contexte d'application. }
 \end{doublespace}
 
 \subsection{Introduction aux mesures faibles}
@@ -395,11 +401,13 @@
     comme la valeur moyenne d’une observable $\hat{S}$ du système,
     mesuré dans un état d’entrée $\ket{\psi_i}$ et un état de mesure
     projective $\ket{\psi_f}$, qui est le résultat d’une mesure faible et est définie par:
-    
-    \begin{equation}
-        \expval{\hat{S}}_W = \frac{\bra{\psi_f}\hat{S}\ket{\psi_i}}{\bra{\psi_f}\ket{\psi_i}}
-    \end{equation}
+    \textcolor{red}{FIX ME: }
 
+    \begin{equation}
+        \expval{\hat{S}}_W = \frac{\bra{\psi_f}\hat{S}\ket{\psi_i}}{\bra{\psi_f}\ket{\psi_i}}        
+    \end{equation}
+        
+    
     \noindent La valeur faible est une variable complexe composée d'une partie
     réelle et imaginaire \cite{Aharonov,Lundeen_Resch}. Ces composantes renferment des 
     informations sur l'observable de la variable du pointeur $\hat{p}$ 
@@ -407,7 +415,7 @@
     caractérisation complète \cite{Lundeen_Bamber}.
 
     \begin{equation}
-        \expval{\hat{S}}_W = \frac{1}{\delta}\Biggl( \expval{\hat{p}} + i4\sigma^2 \expval{\hat{q}} \Biggr)\label{eq:weakvalue_components}
+        \expval{\hat{S}}_W = \frac{1}{\delta}\Biggl( \expval{\hat{p}} - i4\sigma^2 \expval{\hat{q}} \Biggr)\label{eq:weakvalue_components}
     \end{equation}
 
     \noindent Les mesures faibles servent d’œil de Judas au monde 
@@ -491,8 +499,8 @@
     \end{equation}
 
     \noindent où $g(t)$ est la constante de couplage, qui doit être réelle 
-    pour que le hamiltonien soit hermitien, et $\hat{q}$ la variable 
-    pointeur conjuguée de l'observable $\hat{S}$. Dans un régime de mesures faibles, où l’interaction est 
+    pour que le hamiltonien soit hermitien, $\hat{S}$ l'opérateur de mesure 
+    et $\hat{q}$ la variable conjuguée du pointeur. Dans un régime de mesures faibles, où l’interaction est 
     plus faible que la distribution de probabilité du pointeur, 
     c’est-à-dire $\delta \ll \sigma$, le système mesuré est faiblement 
     couplé avec le pointeur, entraînant ainsi un effondrement minimal 
@@ -520,7 +528,7 @@
 
     \begin{align}
         \hat{U}\ket{\Psi^{i}}_T &= \Bigl(\mathds{1} - i\delta(\hat{S} \otimes \hat{q}) + \mathcal{O}(\delta^2) \Bigr)\Bigl[ \ket{\psi}_S \otimes \ket{\bar{p} = 0}_P \Bigr]\\
-        &=  \ket{\psi}_S \otimes \ket{\bar{p} = 0}_P - i\delta\hat{S}\ket{\psi}_S\otimes\hat{q}\ket{\bar{p} = 0}_P + \mathcal{O}(\delta^2)\ket{\psi}_S \otimes \ket{\bar{p}=0}_P
+        &=  \ket{\psi}_S \otimes \ket{\bar{p} = 0}_P - i\delta\hat{S}\ket{\psi}_S\otimes\hat{q}\ket{\bar{p} = 0}_P + \mathcal{O}(\delta^2)
     \end{align}
 
     \noindent où $\mathds{1}$ est l'opérateur d'identité et 
@@ -531,7 +539,7 @@
     mêmes états de base que $\ket{\psi}_S$:
 
     \begin{align}
-        \ket{\varphi}_S\bra{\varphi}_S\hat{U}\ket{\Psi^{i}}_T &= \ket{\varphi}_S\bra{\varphi}_S\ket{\psi}_S \otimes \ket{\bar{p} = 0}_P - i\delta\ket{\varphi}_S\bra{\varphi}_S\hat{S}\ket{\psi}_S\otimes\hat{p}\ket{\bar{p} = 0}_P
+        \ket{\varphi}_S\bra{\varphi}_S\hat{U}\ket{\Psi^{i}}_T &= \ket{\varphi}_S\bra{\varphi}_S\ket{\psi}_S \otimes \ket{\bar{p} = 0}_P - i\delta\ket{\varphi}_S\bra{\varphi}_S\hat{S}\ket{\psi}_S\otimes\hat{q}\ket{\bar{p} = 0}_P
     \end{align}
 
     \noindent en normalisant l’état du système total avec le module de la 
@@ -552,7 +560,7 @@
     suivant :
 
     \begin{align}
-        \ket{\Psi^f}_T &\equiv \ket{\varphi}_S\bra{\varphi}_S\hat{U}\ket{\psi}_S\\
+        \ket{\Psi^f}_T &\equiv \ket{\varphi}_S\bra{\varphi}_S\hat{U}\ket{\Psi^i}_T\\
         &\simeq \bra{\varphi}_S\ket{\psi}_S \Bigl[ \ket{\bar{p} = 0}_P - i\delta\frac{\bra{\varphi}_S\hat{S}\ket{\psi}_S}{\bra{\varphi}_S\ket{\psi}_S} \hat{q}\ket{\bar{p}=0}_P \Bigr] \otimes \ket{\varphi}_S
     \end{align}
 
@@ -589,9 +597,9 @@
 
     \begin{align}
         \ket{\Psi^f}_T &= \bra{\varphi}_S\ket{\psi}_S \Bigl[ \ket{\bar{p} = 0}_P - i\delta \expval{\hat{S}}_W \hat{q}\ket{\bar{p}=0}_P \Bigr] \otimes \ket{\varphi}_S\\
-        &= \bra{\varphi}_S\ket{\psi}_S\Bigl[ 1 - i\delta \expval{\hat{S}}_W \hat{p} \Bigr] \ket{\bar{p} = 0} \otimes \ket{\varphi}_S\\
-        &= \bra{\varphi}_S\ket{\psi}_S e^{-i\delta \expval{\hat{S}}_W \hat{q}} \ket{\bar{p} = 0} \otimes \ket{\varphi}_S\\
-        &= \ket{\psi}_S e^{-i\delta \expval{\hat{S}}_W \hat{q}}\ket{\bar{p}=0}
+        &= \bra{\varphi}_S\ket{\psi}_S\Bigl[ 1 - i\delta \expval{\hat{S}}_W \hat{q} \Bigr] \ket{\bar{p} = 0}_P \otimes \ket{\varphi}_S\\
+        &= \bra{\varphi}_S\ket{\psi}_S e^{-i\delta \expval{\hat{S}}_W \hat{q}} \ket{\bar{p} = 0}_P \otimes \ket{\varphi}_S\\
+        &= \ket{\psi}_S e^{-i\delta \expval{\hat{S}}_W \hat{q}}\ket{\bar{p}=0}_P
     \end{align}
 
     \noindent Nous observons que si nous avons une mesure faible parfaite, 
@@ -607,31 +615,81 @@
     l'aide des composantes réelles et imaginaires de la valeur faible
     comme mentionné dans l'équation \ref{eq:weakvalue_components}. 
     Démontrons cela en mesurant les observables $\hat{p}$ et $\hat{q}$ 
-    comme dans \cite{Lundeen_thesis,Lundeen_Resch}:
+    comme dans \cite{Lundeen_thesis,Lundeen_Resch}. Commençons
+    avec $\expval{\hat{p}}$ \textcolor{red}{CORRECTION}:
 
     \begin{align}
-        \bra{\bar{p} = \delta s_j}\hat{p}\ket{\bar{p}=\delta s_j} &= -i\delta \mathcal{R}\Bigl(\expval{\hat{S}}_W\Bigr)\bra{\bar{p}=\delta s_j}(\hat{p}\hat{q} - \hat{q}\hat{p})\ket{\bar{p}=\delta s_j}\\
-        &+ \delta \mathcal{I}\Bigl(\expval{\hat{S}}_W\Bigr)\bra{\bar{p} = \delta s_j}(\hat{p}\hat{q} + \hat{q}\hat{p})\ket{\bar{p}=\delta s_j}\\
-        &= \delta\mathcal{R}\Bigl(\expval{\hat{S}}_W\Bigr) = \expval{\hat{p}}
+        \bra{\bar{p} = \delta s_j}\hat{p}\ket{\bar{p}=\delta s_j} &= \bra{\bar{p}=0} \Bigl(e^{-i\delta \expval{\hat{S}}_W \hat{q}}\Bigr)^{\dagger} \hat{p} \Bigl(e^{-i\delta \expval{\hat{S}}_W \hat{q}}\Bigr) \ket{\bar{p}=0}\\
+        &= \bra{\bar{p}=0} \Bigl(1 + i\delta \expval{\hat{S}}_W^{*} \hat{q}\Bigr) \hat{p} \Bigl(1 - i\delta \expval{\hat{S}}_W \hat{q}\Bigr) \ket{\bar{p}=0}\\
+        &= \bra{\bar{p}=0} \hat{p} \ket{\bar{p}=0} + i\delta \expval{\hat{S}}_W^{*} \bra{\bar{p}=0} \hat{q}\hat{p} \ket{\bar{p}=0}\\
+        &- i\delta \expval{\hat{S}}_W \bra{\bar{p}=0} \hat{p}\hat{q} \ket{\bar{p}=0} + \mathcal{O}(\delta^2)
     \end{align}
 
-    \noindent Ainsi, pour la variable conjuguée:
+    \noindent En négligeant les termes d’ordre supérieur et sachant que  
+    $\bra{\bar{p}=0}\hat{p}\ket{\bar{p}=0} = 0$, nous obtenons:
 
     \begin{align}
-        \bra{\bar{q} = \delta s_j}\hat{q}\ket{\bar{P}=\delta s_j} &= -i\delta \mathcal{R}\Bigl(\expval{\hat{S}}_W\Bigr)\bra{\bar{p}=\delta s_j}(\hat{q}^2 - \hat{q}^2)\ket{\bar{p}=\delta s_j}\\
-        &+ \delta \mathcal{I}\Bigl(\expval{\hat{S}}_W\Bigr)\bra{\bar{p} = \delta s_j}(\hat{q}^2 + \hat{q}^2)\ket{\bar{p}=\delta s_j}\\
-        &= \frac{\delta}{4\sigma^2}\mathcal{I}\Bigl(\expval{\hat{S}}_W\Bigr)
+        \bra{\bar{p} = \delta s_j}\hat{p}\ket{\bar{p}=\delta s_j} &=  -i\delta \expval{\hat{S}}_W^{*} \bra{\bar{p}=0} \hat{q}\hat{p} \ket{\bar{p}=0} \\
+        &+ i\delta \expval{\hat{S}}_W \bra{\bar{p}=0} \hat{p}\hat{q} \ket{\bar{p}=0}\\
+        &= -i\delta \Bigl( \mathcal{R}\Bigl(\expval{\hat{S}}_W\Bigr) - i\mathcal{I}\Bigl(\expval{\hat{S}}_W\Bigr) \Bigr) \bra{\bar{p}=0} \hat{q}\hat{p} \ket{\bar{p}=0}\\
+        &+ i\delta \Bigl( \mathcal{R}\Bigl(\expval{\hat{S}}_W\Bigr) + i\mathcal{I}\Bigl(\expval{\hat{S}}_W\Bigr) \Bigr) \bra{\bar{p}=0} \hat{p}\hat{q} \ket{\bar{p}=0}\\
+        &= -\delta \mathcal{R}(\expval{\hat{S}}_W)(\bra{\bar{p} = 0}\hat{p}\hat{q} \ket{\bar{p} = 0} - \bra{\bar{p} = 0}\hat{q}\hat{p} \ket{\bar{p} = 0})\\
+        &+ i\delta \mathcal{I}(\expval{\hat{S}}_W)(\bra{\bar{p} = 0}\hat{p}\hat{q} \ket{\bar{p} = 0} + \bra{\bar{p} = 0}\hat{q}\hat{p} \ket{\bar{p} = 0})
+    \end{align} 
+
+    \begin{align}
+        &= -i\delta \mathcal{R}(\expval{\hat{S}}_W)(\bra{\bar{p} = 0}\hat{p}\hat{q} - \hat{q}\hat{p}\ket{\bar{p} = 0})\\
+        &+ \delta \mathcal{I}(\expval{\hat{S}}_W)(\bra{\bar{p} = 0}\hat{p}\hat{q} + \hat{q}\hat{p}\ket{\bar{p} = 0})\\
+        &= -i\delta \mathcal{R}(\expval{\hat{S}}_W) \bra{\bar{p} = 0}[\hat{p},\hat{q}]\ket{\bar{p} = 0} \\
+        &+ \delta \mathcal{I}(\expval{\hat{S}}_W) \bra{\bar{p} = 0}\{\hat{p},\hat{q}\}\ket{\bar{p} = 0}
+    \end{align}
+
+    \noindent En utilisant les relations de
+    commutation $[\hat{p},\hat{q}] = i$ et
+    l'anticommutateur $\{\hat{p},\hat{q}\} = -i$, nous obtenons:
+    
+    \begin{align}
+        \bra{\bar{p} = \delta s_j}\hat{p}\ket{\bar{p}=\delta s_j} &= \delta\mathcal{R}\Bigl(\expval{\hat{S}}_W\Bigr) = \expval{\hat{p}}
+    \end{align}
+
+    \noindent Ensuite, répétons les mêmes étapes pour $\expval{\hat{q}}$:
+
+    \begin{align}
+        \bra{\bar{p} = \delta s_j}\hat{q}\ket{\bar{p}=\delta s_j} &= \bra{\bar{p}=0} \Bigl(e^{-i\delta \expval{\hat{S}}_W \hat{q}}\Bigr)^{\dagger} \hat{q} \Bigl(e^{-i\delta \expval{\hat{S}}_W \hat{q}}\Bigr) \ket{\bar{p}=0}\\
+        &= \bra{\bar{p}=0} \Bigl(1 + i\delta \expval{\hat{S}}_W^{*} \hat{q}\Bigr) \hat{q} \Bigl(1 - i\delta \expval{\hat{S}}_W \hat{q}\Bigr) \ket{\bar{p}=0}\\
+        &= \bra{\bar{p}=0} \hat{q} \ket{\bar{p}=0} + i\delta \expval{\hat{S}}_W^{*} \bra{\bar{p}=0} \hat{q}\hat{q} \ket{\bar{p}=0}\\
+        &- i\delta \expval{\hat{S}}_W \bra{\bar{p}=0} \hat{q}\hat{q} \ket{\bar{p}=0} + \mathcal{O}(\delta^2)
+    \end{align}
+
+    \noindent En négligeant les termes d’ordre supérieur et sachant que  
+    $\bra{\bar{p}=0}\hat{q}\ket{\bar{p}=0} = 0$, nous obtenons:
+
+    \begin{align}
+        \bra{\bar{p} = \delta s_j}\hat{q}\ket{\bar{p}=\delta s_j} &=  i\delta \expval{\hat{S}}_W^{*} \bra{\bar{p}=0} \hat{q}\hat{q} \ket{\bar{p}=0} \\
+        &- i\delta \expval{\hat{S}}_W \bra{\bar{p}=0} \hat{q}\hat{q} \ket{\bar{p}=0}\\
+        &= i\delta \Bigl( \mathcal{R}\Bigl(\expval{\hat{S}}_W\Bigr) - i\mathcal{I}\Bigl(\expval{\hat{S}}_W\Bigr) \Bigr) \bra{\bar{p}=0} \hat{q}\hat{q} \ket{\bar{p}=0}\\
+        &- i\delta \Bigl( \mathcal{R}\Bigl(\expval{\hat{S}}_W\Bigr) + i\mathcal{I}\Bigl(\expval{\hat{S}}_W\Bigr) \Bigr) \bra{\bar{p}=0} \hat{q}\hat{q} \ket{\bar{p}=0}\\
+        &= i\delta \mathcal{R}\Bigl(\expval{\hat{S}}_W\Bigr)(\bra{\bar{p} = 0}\hat{q}^2 \ket{\bar{p} = 0} - \bra{\bar{p} = 0}\hat{q}^2 \ket{\bar{p} = 0})\\
+        &- \delta \mathcal{I}\Bigl(\expval{\hat{S}}_W\Bigr)(\bra{\bar{p} = 0}\hat{q}^2 \ket{\bar{p} = 0} + \bra{\bar{p} = 0}\hat{q}^2 \ket{\bar{p} = 0})\\
+        &= i\delta \mathcal{R}\Bigl(\expval{\hat{S}}_W\Bigr)(\bra{\bar{p}= 0}\hat{q}^2 - \hat{q}^2\ket{\bar{p}=0})\\
+        &- \delta \mathcal{I}\Bigl(\expval{\hat{S}}_W\Bigr)(\bra{\bar{p}= 0}\hat{q}^2 + \hat{q}^2\ket{\bar{p}=0})
+    \end{align}
+
+    \noindent En utilisant la relation $\bra{\bar{p}=0}\hat{q}^2\ket{\bar{p}=0} = \frac{1}{8\sigma^2}$, nous obtenons:
+
+    \begin{align}
+        \bra{\bar{q} = \delta s_j}\hat{q}\ket{\bar{p}=\delta s_j} = \frac{\delta}{4\sigma^2}\mathcal{I}\Bigl(\expval{\hat{S}}_W\Bigr) = \expval{\hat{q}}
     \end{align}
 
     \noindent Ensemble, la valeur faible s'écrit:
 
     \begin{equation}
-        \expval{\hat{S}}_W = \frac{1}{\delta}\Bigl( \expval{\hat{p}} + i4\sigma^2\expval{\hat{q}} \Bigr)
+        \expval{\hat{S}}_W = \frac{1}{\delta}\Bigl( \expval{\hat{p}} - i4\sigma^2\expval{\hat{q}} \Bigr)
     \end{equation}
 
     \noindent En démontrant que la valeur faible est proportionnelle à 
     la fonction d’onde (l'état quantique), comme dans 
-    \cite{Lundeen_Resch}, ainsi on peut en déduire directement les 
+    \cite{Lundeen_Direct_Measurement,Lundeen_thesis,Lundeen_Resch}, ainsi on peut en déduire directement les 
     valeur moyenne des observables du système quantique, qu'ils sont en fait
     les composantes réelles et imaginaires de la valeur faible. 
     Nous pouvons caractériser l'état de polarisation du
@@ -811,7 +869,7 @@
 
     \begin{align}
         \lim_{\frac{\tau}{\sigma} \to 0} \expval{\hat{t}^{norm}} &= \tau\frac{|A|^2 + A\bar{B} + \bar{A}B}{|A|^2 + |B|^2 + A\bar{B} + \bar{A}B}\\
-        &\equiv \mathcal{R}(\expval{\hat{\pi}}_W)
+        &\equiv \tau \mathcal{R}(\expval{\hat{\pi}}_W)
     \end{align}
 
     \noindent Ce terme représente la position moyenne temporelle du 
@@ -870,7 +928,7 @@
 
     \begin{align}
         \lim_{\frac{\tau}{\sigma} \to 0}\expval{\hat{\omega}^{norm}} &= \frac{i\tau}{4\sigma^2}\frac{B\bar{A} - A\bar{B}}{|A|^2 + |B|^2 + \bar{A}B + A\bar{B}}\\
-        &\equiv \mathcal{I}(\expval{\hat{\pi}}_W)
+        &\equiv \frac{\tau}{4\sigma^2}\mathcal{I}(\expval{\hat{\pi}}_W)
         \label{eq:imaginary_part}
     \end{align}
 
@@ -909,39 +967,64 @@
      faible:
     
      \begin{equation}
-        \expval{\hat{\pi}^{J}}_W = \frac{\bra{D}\hat{\pi}^{J}\ket{\psi^{i}}}{\bra{D}\ket{\psi^{i}}} = \sqrt{N}\bra{J}\ket{\psi^{i}}
+        \expval{\hat{\pi}^{J}}_W = \frac{\bra{D}\hat{\pi}^{J}\ket{\psi^{i}}}{\bra{D}\ket{\psi^{i}}} = \sqrt{N}\bra{J}\ket{\psi^{i}}\label{eq:weak_value_J}
     \end{equation}
 
     \noindent où $N$ est une constante de normalisation indépendante de 
-    $J$. On peut écrire l’état quantique en fonction de la valeur faible. 
+    $J$. On peut écrire l’état quantique d'entrée, après avoir subit une mesure directe, 
+    en fonction de la valeur faible mesurée \cite{Lundeen_Direct_Measurement}: 
     
     \begin{equation}
-        \ket{\psi^{i}} = \frac{1}{\sqrt{N}}\Bigl(\expval{\hat{\pi}^{H}}_W\ket{H}+\expval{\hat{\pi}^{V}}_W\ket{V}\Bigr)
+        \ket{\psi^{f}} = \frac{1}{\sqrt{N}}\Bigl(\expval{\hat{\pi}^{H}}_W\ket{H}+\expval{\hat{\pi}^{V}}_W\ket{V}\Bigr)
     \end{equation}
 
-    \noindent Puisque $N$ est une constante de normalisation
-    $N = \Bigl|\expval{\hat{\pi}^{H}}_W\Bigr|^2 + \Bigl|\expval{\hat{\pi}^{V}}_W\Bigr|^2 
-    = \Bigl|\expval{\hat{\pi}^{H}}_W\Bigr|^2 + \Bigl|1- \expval{\hat{\pi}^{H}}_W\Bigr|^2$,
-    nous pouvons écrire l'état quantique d'entrée en fonction de la
-    valeur faible mesurée:
+    \noindent Puisque $N$ est une constante de normalisation telle que
+    
+    \begin{align}
+        N &= \Bigl|\expval{\hat{\pi}^{H}}_W\Bigr|^2 + \Bigl|\expval{\hat{\pi}^{V}}_W\Bigr|^2\\
+          &= \Bigl|\expval{\hat{\pi}^{H}}_W\Bigr|^2 + \Bigl|1- \expval{\hat{\pi}^{H}}_W\Bigr|^2
+    \end{align}
+
+    \noindent nous pouvons récrire l'état quantique sous la forme suivante :
 
     \begin{equation}
-        \ket{\psi^{i}} = \frac{1}{\sqrt{N}}\Bigl(\expval{\hat{\pi}^{H}}_W\ket{H}+ \Bigl(1- \expval{\hat{\pi}^{H}}_W\Bigr)\ket{V}\Bigr)
+        \ket{\psi^{f}} = \frac{1}{\sqrt{N}}\Bigl(\expval{\hat{\pi}^{H}}_W\ket{H}+ \Bigl(1- \expval{\hat{\pi}^{H}}_W\Bigr)\ket{V}\Bigr)
     \end{equation}
 
     \noindent Ce dernier est l'état d'entrée que nous pouvons 
-    reconstruire à partir de la valeur faible. En d'autres termes, nous 
+    reconstruire à partir de la valeur faible, où $a = \frac{\expval{\hat{\pi}^{H}}_W}{\sqrt{N}}$
+    et $b = \frac{1-\expval{\hat{\pi}^{H}}_W}{\sqrt{N}}$. En d'autres termes, nous 
     pouvons reconstruire directement l'état d'entrée à partir de la valeur faible 
-    mesurée. Certain fixe la phase globale, qui varierait selon l'état 
-    d'entrée, nous supposons que $a$ est toujours réel. Donc 
+    mesurée sans ambiguïté. Certains fixent la phase globale \cite{Hairiri}, qui varierait selon l'état 
+    d'entrée, nous supposons que $a$ est toujours réel; donc 
     l'ellipticité (ou la phase) se trouve dans $b$ et sera dépendante 
-    de la partie imaginaire \cite{Hairiri}. Et, à partir des données expérimentales des deux 
-    valeurs moyennes $\expval{\hat{t}}$ et $\expval{\hat{\omega}}$, nous 
-    pouvons calculer directement les amplitudes de probabilité. 
+    de la partie imaginaire. 
+    
+    \noindent En performant une mesure faible
+    sur $\ket{\psi^{i}}$, décrit par l'opérateur $\hat{\pi}^{H} = \ket{H}\bra{H}$, 
+    avec un délai $\tau$, nous pouvons reconstruire l'état à partir 
+    des données expérimentales des deux 
+    valeurs moyennes $\expval{\hat{t}}$ et $\expval{\hat{\omega}}$ et
+    calculer directement les amplitudes de probabilité. 
+    En utilisant les équations \eqref{eq:weak_value_J}, \eqref{eq:expval_t_norm}
+    et \eqref{eq:imaginary_part}, nous obtenons les relations suivantes :
+
+    \noindent pour le cas générale où $a,b\in\mathcal{C}$, nous avons :
 
     \begin{align}
-        |a| &= \sqrt{\frac{\mathcal{R}(\expval{\hat{\pi}^{H}}_W)}{\tau}}\label{eq:amplitude_a}\\
-        |b| &= \sqrt{1 - |a|^2}\label{eq:amplitude_b}
+        \mathcal{R}(a) &= \mathcal{R}(\expval{\hat{\pi}^{H}}_W) = \frac{\expval{\hat{t}}}{\tau}\label{eq:real_part_a}\\
+        \mathcal{I}(a) &= \mathcal{I}(\expval{\hat{\pi}^{H}}_W) = -\frac{4\sigma^2 \expval{\hat{\omega}}}{\tau}\label{eq:imaginary_part_a}\\
+        \mathcal{R}(b) &= 1 - \mathcal{R}(\expval{\hat{\pi}^{H}}_W) = 1 - \frac{\expval{\hat{t}}}{\tau}\label{eq:real_part_b_general}\\
+        \mathcal{I}(b) &= - \mathcal{I}(\expval{\hat{\pi}^{H}}_W) = \frac{4\sigma^2 \expval{\hat{\omega}}}{\tau}\label{eq:imaginary_part_b_general} 
+    \end{align}
+
+    \noindent et pour le cas où $a\in\mathcal{R}$ et $b\in\mathcal{I}$, nous avons :
+
+    \begin{align}
+        a &= \sqrt{\mathcal{R}(\expval{\hat{\pi}^{H}}_W)} = \sqrt{\frac{\expval{\hat{t}}}{\tau}}\label{eq:amplitude_a}\\
+        |b| &= \sqrt{1 - |a|^2}\label{eq:amplitude_b}\\
+        \mathcal{R}(b) &= 0\label{eq:real_part_b}\\
+        \mathcal{I}(b) &= \frac{\mathcal{I}(\expval{\hat{\pi}^{H}}_W)}{\sqrt{\mathcal{R}(\expval{\hat{\pi}^{H}}_W)}} = \frac{4\sigma^2 \expval{\hat{\omega}}}{\sqrt{\tau\expval{\hat{t}}}}\label{eq:imaginary_part_b}
     \end{align}
 
     %Considérons l'équation de la valeur faible:

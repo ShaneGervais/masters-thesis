@@ -68,8 +68,10 @@
         y(t) = a_0 + a_1 cos(\omega t) + a_2 sin(\omega t) + \ldots + a_N cos(N \omega t) + b_1 sin(N \omega t)
     \end{equation}
 
-    \noindent où $a_i$ et $b_i$ sont les coefficients de la série de 
-    Fourier, $\omega$ est la fréquence angulaire et $t$ est le temps. 
+    \noindent où $a_i$, $b_i$ \textbf{\textcolor{red}{et}} $\omega$ sont les coefficients de la série de 
+    Fourier et $t$ est le temps. \textcolor{red}{Notez que $\omega$ est la fréquence fondamentale du
+    signal que le fit cherche à modéliser, cette valeur est donc déterminée par le fit lui-même
+    et n'est pas un paramètre fixe varient selon les données.}
     Et une fonction gaussienne, dénommée par \textit{gauss1} qui est:
 
     \begin{equation}
@@ -90,10 +92,15 @@
     optimal. Le reste du signal ne présente pas d’intérêt. Nous trouvons
     le délai en comparant à la position initiale, c'est-à-dire 
     l'expérience réalisée avec le câble le plus court.
-    Le tableau \ref{table:BNC-fits} démontre les différents ajustements que nous 
-    avons essayés ainsi que le temps moyen d'arrivée pour chaque 
-    distance en utilisant ces ajustements. 
-    
+    \textcolor{red}{Le tableau \ref{table:BNC-fits} démontre les temps d'arrivée et
+    l'écart-type pour les différents ajustements que nous avons essayés;
+    dont le temps d'arrivée est calculé à partir de la position moyenne
+    du pic sur $10$ différentes prises de données de la même longueur de câble
+    et l'écart-type est la variation de ses positions temporelles
+    pour chaque prise de données.
+    Nous avons ajouté plus de chiffres significatifs pour les
+    ajustements de courbe pour qu'ils soient compatibles avec
+    l'écart-type.}
 \end{doublespace}
 
 
