@@ -463,6 +463,98 @@
     \field{year}{2019}
   \endentry
 
+  \entry{Huang:22}{article}{}
+    \name{author}{4}{}{%
+      {{hash=HJH}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Jing-Hui},
+         giveni={J\bibinithyphendelim H\bibinitperiod},
+      }}%
+      {{hash=DXY}{%
+         family={Duan},
+         familyi={D\bibinitperiod},
+         given={Xue-Ying},
+         giveni={X\bibinithyphendelim Y\bibinitperiod},
+      }}%
+      {{hash=WGJ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Guang-Jun},
+         giveni={G\bibinithyphendelim J\bibinitperiod},
+      }}%
+      {{hash=HXY}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Xiang-Yun},
+         giveni={X\bibinithyphendelim Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Optica Publishing Group}%
+    }
+    \keyw{High power lasers; Modulation techniques; Optical components; Phase modulation; Phase shift; Precision metrology}
+    \strng{namehash}{HJH+1}
+    \strng{fullhash}{HJHDXYWGJHXY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We study the amplification of a weak magnetic field with the weak-value amplification (WVA) technique based on the Faraday magneto-optic effect. By using a different scheme to perform the Mach--Zehnder interferometer with the probe in momentum space, we have demonstrated a new, to the best of our knowledge, weak measure protocol to detect the small weak magnetic field by amplifying the phase shift of the Faraday magneto-optic effect. Our numerical results show that our scheme with the WVA technique has a higher signal-to-noise ratio than the traditional optical fiber scheme with the open-loop modulation technique. Besides, considering the instrument limitations of our scheme, we have demonstrated the magnetic field resolution at the 10{\textminus}13T level.%
+    }
+    \verb{doi}
+    \verb 10.1364/JOSAB.447515
+    \endverb
+    \field{number}{4}
+    \field{pages}{1289\bibrangedash 1296}
+    \field{title}{Enhancing the precision of detecting weak magnetic fields based on weak-value amplification}
+    \verb{url}
+    \verb https://opg.optica.org/josab/abstract.cfm?URI=josab-39-4-1289
+    \endverb
+    \field{volume}{39}
+    \field{journaltitle}{J. Opt. Soc. Am. B}
+    \field{year}{2022}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{SpinHallEffect}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HO}{%
+         family={Hosten},
+         familyi={H\bibinitperiod},
+         given={Onur},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=KP}{%
+         family={Kwiat},
+         familyi={K\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HOKP1}
+    \strng{fullhash}{HOKP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We have detected a spin-dependent displacement perpendicular to the refractive index gradient for photons passing through an air-glass interface. The effect is the photonic version of the spin Hall effect in electronic systems, indicating the universality of the effect for particles of different nature. Treating the effect as a weak measurement of the spin projection of the photons, we used a preselection and postselection technique on the spin state to enhance the original displacement by nearly four orders of magnitude, attaining sensitivity to displacements of ∼1 angstrom. The spin Hall effect can be used for manipulating photonic angular momentum states, and the measurement technique holds promise for precision metrology.%
+    }
+    \verb{doi}
+    \verb 10.1126/science.1152697
+    \endverb
+    \verb{eprint}
+    \verb https://www.science.org/doi/pdf/10.1126/science.1152697
+    \endverb
+    \field{number}{5864}
+    \field{pages}{787\bibrangedash 790}
+    \field{title}{Observation of the Spin Hall Effect of Light via Weak Measurements}
+    \verb{url}
+    \verb https://www.science.org/doi/abs/10.1126/science.1152697
+    \endverb
+    \field{volume}{319}
+    \field{journaltitle}{Science}
+    \field{year}{2008}
+  \endentry
+
   \entry{Wang_2019}{article}{}
     \name{author}{4}{}{%
       {{hash=WJ}{%

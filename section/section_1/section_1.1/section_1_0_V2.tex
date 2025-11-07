@@ -11,7 +11,7 @@
     pour résoudre des problèmes complexes \cite{Feynman1982,quantumcomputing40years}. 
     Contrairement aux ordinateurs classiques, un ordinateur quantique 
     repose sur des bits quantisés appelés qubits, soit $\ket{0}$ et $\ket{1}$,
-    qui forment un ensemble binaire de deux états physiques possibles du système utilisé, comme le spin d'une particule $\ket{\uparrow}$ et $\ket{\downarrow}$ ou
+    qui forment un ensemble binaire de deux ou plusieurs états physiques possibles du système utilisé, comme le spin d'une particule $\ket{\uparrow}$ et $\ket{\downarrow}$ ou
     la polarisation d'un photon $\ket{H}$ et $\ket{V}$ par exemple. Les lois de 
     la mécanique quantique permettent à un état d'être dans une combinaison 
     linéaire des deux états à la fois, également appelée superposition, 
@@ -59,30 +59,30 @@
     caractéristiques idéales pour de nombreuses applications, notamment 
     la télécommunication quantique sécurisée, l’imagerie quantique à 
     haute résolution, la métrologie quantique et d’autres encore, comme 
-    mentionné \cite{QTintelecomindustry,metrology,Wang_2019,QTapplImpl}.
+    mentionné \cite{QTintelecomindustry,metrology,QTapplImpl,Huang:22,SpinHallEffect,Wang_2019}.
     Par conséquent, il est crucial d’effectuer des mesures afin 
     de caractériser avec précision les états quantiques pour soutenir ces 
     diverses technologies. Cependant, effectuer des mesures quantiques 
     pose un défi en raison de la nature probabiliste de la théorie. 
     En effet, il est impossible de mesurer 
     simultanément deux variables complémentaires (ex: le moment d’arrivée 
-    et la fréquence spectrale) avec une précision absolue à cause du 
+    et la fréquence spectrale d'une particule) avec une précision absolue décrit par le 
     principe d’incertitude d’Heisenberg. Dans ce cadre, on décrit que 
     l’état du système comme se trouvant dans une superposition de tous 
     ses états possibles. Une mesure ou une interaction avec le système 
     quantique cause une perturbation qui fait s'effondrer l’état dans 
-    l’un de ses états propres possibles. Une fois perturbé à une de ces 
-    valeurs propres, l’état du système demeure inchangé. La figure 
-    \ref{fig:dice} ci-dessous illustre ce concept. 
-
-    \noindent Les techniques conventionnelles, comme la tomographie 
-    quantique, permettent une reconstruction complète des états à l’aide 
-    de plusieurs mesures projectives prédéterminées. Toutefois, elles 
-    deviennent rapidement inadaptées aux systèmes de grande dimension en 
-    raison de leur coût computationnel et expérimental exponentiel. Comme 
-    ces techniques reposent sur un grand nombre de mesures de projection, 
-    ceci les rend inadaptées à certaines applications nécessitant des 
-    mesures en temps réel.
+    l’un de ses états propres possibles. Une fois que le système est 
+    effondré dans une de ces valeurs propres, des mesures ultérieures
+    sur le système donneront toujours le même résultat. La figure 
+    \ref{fig:dice} ci-dessous illustre le concept de superposition 
+    quantique et son effondrement lors d'une mesure. Une fois que 
+    le dé est lancé et que le résultat est observé, le système 
+    démeure dans cet état spécifique pour les mesures ultérieures
+    (par exemple, l’état $\ket{5}$). Donc, pour obtenir d'autre 
+    informations sur l'état initial du système, il est nécessaire 
+    d'effectuer plusieurs mesures sur des copies identiques du système
+    et reconstruire l'état quantique à partir des statistiques
+    obtenues.
 
     \begin{figure}[!htbp]
         \centering
@@ -106,6 +106,20 @@
         directe de l’état quantique.}
         \label{fig:dice}
     \end{figure}
+
+    \noindent C'est ici que les techniques conventionnelles, comme la tomographie 
+    quantique, permettent une reconstruction complète des états à l’aide 
+    de plusieurs mesures projectives prédéterminées. Soit que mesurer 
+    l’état de polarisation d’un photon, par exemple, nécessite de projeter 
+    l’état du photon sur plusieurs bases de mesure spécifiques et d’effectuer 
+    ces mesures sur des copies identiques du système pour recueillir
+    suffisamment de statistiques pour une reconstruction complète de l’état.
+    Toutefois, elles deviennent rapidement inadaptées aux systèmes de grande dimension en
+    raison de leur coût computationnel et expérimental exponentiel. Comme
+    ces techniques reposent sur un grand nombre de mesures de projection,
+    ceci les rend inadaptées à certaines applications nécessitant des
+    mesures en temps réel.
+
     
 
     \noindent Une approche alternative consiste à utiliser des mesures 
@@ -113,8 +127,8 @@
     quantique directement sans entraîner son effondrement complet. Ce 
     dernier repose sur le modèle de mesure quantique de von Neumann 
     \cite{vonNeumann} et exploite un pointeur couplé au système, dont le 
-    déplacement minimal appliqué sur le système est proportionnel à un 
-    observable complexe nommé la \guillemetleft valeur faible \guillemetright. 
+    déplacement minimal appliqué sur le système est proportionnel à une 
+    observable complexe nommée la \guillemetleft valeur faible \guillemetright. 
     Cette technique a été introduite par Aharonov, Albert et Vaidman 
     (AAV) \cite{Aharonov}. Bien que les mesures faibles aient été 
     largement étudiées en théorie, leur mise en œuvre expérimentale dans 
@@ -131,11 +145,11 @@
 \begin{doublespace}
     
     Les recherches et applications sur les mesures faibles ont démontré 
-    leur potentiel, notamment la théorie des mesures quantiques, 
-    l’informatique quantique, la télécommunication optique 
-    \cite{Lundeen_Resch,QED,OpticalNetworks,Lundeen_thesis,Brunner_2004}. 
+    leur potentiel, notamment en ce qui concerne: la théorie des mesures quantiques, 
+    l’informatique quantique, la télécommunication optique et la métrologie quantique
+    \cite{Huang:22,SpinHallEffect,Lundeen_Resch,QED,OpticalNetworks,Lundeen_thesis,Brunner_2004}. 
     Elles peuvent même se révéler plus efficaces que les méthodes 
-    traditionnelles en certains cas. Dans l'étude: \cite{WeakorStd}, ils 
+    traditionnelles en certains cas. Dans l'étude \cite{WeakorStd}, ils 
     comparent les mesures faibles à l'interférométrie standard pour 
     mesurer de petits décalages de phase longitudinaux. La partie 
     imaginaire de la valeur faible contient l'information complexe du 
@@ -187,7 +201,7 @@
     quantique, car elle est facile à contrôler et à mettre en pratique en 
     laboratoire. Bien que certaines études aient déjà exploré des mesures 
     faibles dans ce régime, elles se sont principalement concentrées 
-    à partir d’un délai fréquentiel \cite{JohnCHowellFrequencyCombs,Salazar,OpticalNetworks,Steinberg_prob_div}. 
+    à partir d’un décalage fréquentiel \cite{JohnCHowellFrequencyCombs,Salazar,OpticalNetworks,Steinberg_prob_div}. 
     Cette thèse vise à améliorer la méthode de caractérisation directe 
     des états quantiques, contribuant ainsi à l’avancement des 
     technologies quantiques et à l’exploration de nouvelles opportunités 
