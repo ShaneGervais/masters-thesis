@@ -1,0 +1,48 @@
+Comme nous l'avons déjà mentionné, 
+un déplacement de la variable du pointeur, 
+tel que sa position temporelle $t$ par rapport à 
+un $t_0$, devrait entraîner un déplacement de son 
+spectre de fréquence. Vérifions-le en calculant 
+la partie imaginaire de la valeur faible $\expval{\hat{\pi}_W}$. 
+Commençons par prendre la transformation de 
+Fourier de la fonction temporel $F(t)$ de l'état quantique $\ket{\Psi(t)^f}$:
+
+\begin{align}
+    F(\omega) &= \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty} F(t)e^{-i\omega t}dt\\
+    &= \frac{\sqrt[4]{2}\sqrt{\sigma}}{\sqrt[4]{\pi}}(A + Be^{i\omega\tau})e^{-\omega^2 \sigma^2 - i\omega\tau}
+\end{align}
+
+Avec ce dernier la fonction d'onde s'écrit:
+
+\begin{equation}
+    \ket{\Psi(\omega)^f} = F(\omega) \otimes \ket{\varsigma}
+\end{equation}
+
+Ensuite trouvons la valeur d'espérance pour la position fréquentielle avec des étapes similaires que la partie réelle:
+
+\begin{align}
+    \expval{\hat{\omega}} &= \bra{\Psi(\omega)^f}\hat{\omega}\ket{\Psi(\omega)^f}\\
+    &= \int_{-\infty}^{\infty} S(\omega) d\omega
+\end{align}
+
+Soit $S(\omega) \equiv |F(\omega)|^2$ et normalisons cette valeur:
+
+\begin{align}
+    \expval{\hat{\omega}^{norm}} &= \frac{\sqrt{2}\sigma}{\sqrt{\pi}}\frac{\int_{-\infty}^{\infty} |A|^2\omega e^{i\omega\tau} + |B|^2\omega e^{i\omega\tau} + A\bar{B}\omega + \bar{A}Be^{2i\omega\tau} \omega d\omega}{\int_{-\infty}^{\infty} |A|^2 e^{i\omega\tau} + |B|^2 e^{i\omega\tau} + A\bar{B} + \bar{A}Be^{2i\omega\tau}d\omega}e^{-2\omega^2 \sigma^2 -i\omega\tau}
+\end{align}
+
+Avec des solutions d'intégrale similaires nous obtenons:
+
+\begin{equation}
+    \expval{\hat{\omega}^{norm}} = \frac{i\tau}{4\sigma^2}\frac{(B\bar{A} - A\bar{B})e^{-\frac{\tau^2}{8\sigma^2}}}{|A|^2 + |B|^2 + \bar{A}B + A\bar{B}}
+\end{equation}
+
+Prenons encore la limite dont $\tau \ll \sigma$ vue que nous sommes dans le 
+régime des mesures faibles:
+
+\begin{align}
+    \lim_{\frac{\tau}{\sigma} \to 0}\expval{\hat{\omega}^{norm}} &= \frac{i\tau}{4\sigma^2}\frac{B\bar{A} - A\bar{B}}{|A|^2 + |B|^2 + \bar{A}B + A\bar{B}}\\
+    &\equiv \mathcal{I}(\expval{\hat{\pi}_W})
+    \label{eq:imaginary_part}
+\end{align}
+

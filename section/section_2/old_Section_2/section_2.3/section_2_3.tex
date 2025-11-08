@@ -1,0 +1,73 @@
+Nous continuons avec notre système photonique 
+quantique en nous appuyant sur nos découvertes 
+concernant la partie réelle et imaginaire de la 
+valeur faible. Nous pouvons calculer que pour 
+un état d'entré soit:
+
+\begin{equation}
+    \ket{\psi^{in}} = a\ket{H} + b\ket{V} 
+\end{equation}
+
+Puisque $a$ et $b$ sont des amplitudes de 
+probabilité pour les états de base $\ket{H}$ et $\ket{V}$ 
+respectivement soit $a=\bra{H}\ket{\psi^{in}}$ et
+$b=\bra{V}\ket{\psi^{in}}$. Expérimentalement, 
+les parties mesurées de la valeur faible 
+peuvent être 
+calculées directement en fonction de la façon 
+dont l'observable change en fonction de l'état 
+d'entrée. Cela est possible car la valeur faible 
+est proportionnelle à l'état quantique, comme le 
+montre la section 2.1. Pour les états de 
+polarisation, il s'agit de mesurer faiblement 
+$\expval{\hat{S}^J} = \ket{J}\bra{J}$ 
+soit $J= H,V$, puis de mesurer par projection sur un état 
+intermédiaire tel que 
+$\ket{D} = \frac{1}{\sqrt{2}}(\ket{H}+\ket{V})$. 
+Si l'on y parvient, 
+on obtient un sous-ensemble d'essais dont le 
+résultat moyen est la valeur faible.
+
+\begin{equation}
+    \expval{\hat{S}_{W}^{J}} = \frac{\bra{D}\hat{S}^{J}\ket{\psi^{in}}}{\bra{D}\ket{\psi^{in}}} = \sqrt{N}\bra{J}\ket{\psi^{in}}
+\end{equation}
+
+Où $N$ est une constante de normalisation 
+indépendante de $J$. L'état quantique peut être 
+écrit en relation avec la valeur faible écrite. 
+
+\begin{equation}
+    \ket{\psi^{in}} = \frac{1}{\sqrt{N}}\Bigl(\expval{\hat{S}^{H}_{W}}\ket{H}+\expval{\hat{S}^{V}_{W}}\ket{V}\Bigr)
+\end{equation}
+
+Nous pouvons supposer que 
+$N = \Bigl|\expval{\hat{S}^{H}_{W}}\Bigr|^2 + \Bigl|\expval{\hat{S}^{V}_{W}}\Bigr|^2$ 
+puisque $|a|^2 + |b|^2 = 1$ donc 
+$N = \Bigl|\expval{\hat{S}^{H}_{W}}\Bigr|^2 + \Bigl|1- \expval{\hat{S}^{H}_{W}}\Bigr|^2$. 
+Donc,
+
+\begin{equation}
+    \ket{\psi^{in}} = \frac{1}{\sqrt{N}}\Bigl(\expval{\hat{S}^{H}_{W}}\ket{H}+ \Bigl(1-\expval{\hat{S}^{H}_{W}}\Bigr)\ket{V}\Bigr)
+\end{equation}
+
+Pour fixer la phase globale qui varierait selon l'état 
+d'entrée, nous supposons que $a$ est toujours réel.
+Cependant $b$ sera dépendant sur la partie imaginaire.
+Avec les données expérimentales des deux 
+observables $\expval{\hat{t}}$ et $\expval{\hat{\omega}}$, nous pouvons calculer 
+directement les amplitudes de probabilité à partir des données expérimentales.  
+
+\begin{align}
+    |a|^2 &= \frac{\expval{\hat{t}}}{\tau}\\
+    |b|^2 &= 1 - |a|^2
+\end{align}
+
+En fonction de l'état d'entrée, la valeur faible 
+varie. Il est important de noter que le délai $\tau$ 
+est le délai maximal que nous utilisons pour 
+interagir avec le système. Ce dernier, normalise
+les amplitudes de probabilité. Lorsque nous 
+changeons les états d'entrée, le délai $\tau$ 
+devrait évoluer entre l'absence de délai et le 
+délai maximal, c'est-à-dire entre les 
+polarisations $\ket{V}$ et $\ket{H}$. 

@@ -1,0 +1,98 @@
+Nous voulons caractériser 
+l'état de polarisation avec une mesure faible temporelle.
+Pour réaliser ce dernier, il faut calculer qu'il faut s'attendre
+à la valeur faible $\expval{\hat{\pi}_W}$. Nous allons calculer chaque
+partie de cette valeur à la fois. Commençons avec la partie réelle
+et par définir les paramètres de cette 
+expérience potentielle que nous voulons eventuellement 
+effectuer. L'état de polarisation de notre système que 
+nous voulons mesurer est défini comme suit:
+
+\begin{equation}
+    \ket{\psi} \equiv a\ket{H} + b\ket{V}
+\end{equation}
+
+Soit $a$ et $b$ des paramètres de probabilité pour les bases
+$\ket{H}$ et $\ket{V}$ respectivement et $|a|^2 + |b|^2 = 1$, ainsi que $\ket{H}$ et $\ket{V}$ 
+correspond à les polarisation horizontaux et verticaux d'un photon.
+
+\begin{equation}
+    \ket{\xi(t)} = \bra{t}\ket{\xi} \equiv \frac{1}{(\sqrt{2\pi}\sigma)^{1/2}}e^{-\frac{t^2}{4\sigma^2}}
+\end{equation}
+
+Soit le pointeur du système le profile temporel d'un faisceau,
+généralement gaussien est utilisé, avec position temporel $t$ (par rapport à un temps $t_0$) 
+et $\sigma$ l'écart du profile temporel. L'état totale initial s'écrit:
+
+\begin{equation}
+    \ket{\Psi(t)^i} \equiv \ket{\psi} \otimes \ket{\xi(t)}
+\end{equation}
+
+Effectuons une interaction faible temporelle sur la partie horizontale de l'état 
+$\ket{H}$ avec l'opérateur de von Neumann $\hat{U}^H$, 
+l'exposant $H$ est pour indiqué 
+que l'opérateur est appliqué sur la partie horizontale.
+
+\begin{align}
+    \hat{U^H}\ket{\Psi(t)^i} &= \hat{U}^H \Bigl[ \ket{\psi} \otimes \ket{\xi(t)} \Bigr]\\
+    &= \hat{U}^H \Bigl[ a\ket{H} \otimes \ket{\xi(t)} + b\ket{V} \otimes \ket{\xi(t)}\Bigr]\\
+    &= a\ket{H} \otimes \hat{U}^H \ket{\xi(t)} + b\ket{V} \otimes \ket{\xi(t)}\\
+    &= a\ket{H} \otimes \ket{\xi(t-\tau)} + b\ket{V} \otimes \ket{\xi(t)}
+\end{align}
+
+L'interaction de von Neumann subit un délai temporel $\tau$ sur le pointeur couplé 
+avec la partie horizontale. Ensuite Effectuons une mesure projective avec 
+l'état $\ket{\varsigma} \equiv \mu\ket{H} + \nu\ket{V}$ soit $\nu$ et $\mu$ des paramètres
+probabilité pour $\ket{H}$ et $\ket{V}$ respectivement et $|\mu|^2 + |\nu|^2 = 1$. 
+
+\begin{align}
+    \ket{\Psi(t)^f} &= \ket{\varsigma}\bra{\varsigma}\hat{U}^H\ket{\Psi(t)^i} = \Bigl[ \bar{\mu}\bra{H} + \bar{\nu}\bra{V} \Bigr]a\ket{H} \otimes \ket{\xi(t-\tau)} + b\ket{V} \otimes \ket{\xi(t)}\\
+    &= \Bigl[\bar{\mu}a\ket{\xi(t-\tau)} + \bar{\nu}b\ket{\xi(t)}\Bigr] \otimes \ket{\varsigma}\\
+    &= F(t)\otimes\ket{\varsigma}
+\end{align}
+
+Soit $F(t) \equiv A\ket{\xi(t-\tau)} + B\ket{\xi(t)}$, $A \equiv a\bar{\mu}$ et $B \equiv b\bar{\nu}$. 
+Trouvons la valeur d'espérance de la position 
+temporel $\expval{\hat{t}}$.
+
+\begin{align}
+    \expval{\hat{t}} &= \bra{\Psi(t)^f}\hat{t}\ket{\Psi(t)^f}\\
+    &= \int_{-\infty}^{\infty} I(t)tdt
+\end{align}
+
+Soit $I(t) \equiv |F(t)|^2$, nous pouvons le normalisé avec $\frac{1}{\bra{\Psi(t)^f}\ket{\Psi(t)^f}}$:
+
+\begin{align}
+    \expval{\hat{t}^{norm}} &= \frac{\bra{\Psi(t)^f}\hat{t}\ket{\Psi(t)^f}}{\bra{\Psi(t)^f}\ket{\Psi(t)^f}} = \frac{\int_{-\infty}^{\infty} I(t)tdt}{\int_{-\infty}^{\infty} I(t)dt}\\
+    &= \frac{\int_{-\infty}^{\infty} |A|^2\Xi(t - \tau)t + |B|^2\Xi(t)t + A\bar{B}\Xi(t, \tau)t + \bar{A}B\Xi(t, \tau)t dt}{\int_{-\infty}^{\infty} |A|^2\Xi(t - \tau) + |B|^2\Xi(t) + A\bar{B}\Xi(t, \tau) + \bar{A}B\Xi(t, \tau) dt}
+\end{align}
+
+Soit $\Xi(t) \equiv \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{t^2}{2\sigma^2}}$ et $\Xi(t, \tau) \equiv \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{2t^2 - 2t\tau + \tau^2}{4\sigma^2}}$. 
+Notons que vue que nous effectuons une interaction faible sur
+le système, il y a une superposition entre les pointeurs 
+pour la partie de polarisation horizontale et verticale.
+Les solutions de chaque intégrale sont énumérées 
+ci-dessous et nous reprendrons notre développement de 
+la partie réelle de la valeur faible.
+
+\begin{align*}
+    \int_{-\infty}^{\infty} \Xi(t - \tau)t dt &= \tau & \int_{-\infty}^{\infty} \Xi(t) dt &= 1\\
+    \int_{-\infty}^{\infty} \Xi(t - \tau) dt &= 1 & \int_{-\infty}^{\infty} \Xi(t, \tau)t dt &= \frac{\tau}{2}e^{-\frac{t^2}{8\sigma^2}}\\
+    \int_{-\infty}^{\infty} \Xi(t)t dt &= 0 & \int_{-\infty}^{\infty} \Xi(t, \tau) dt &= e^{-\frac{t^2}{8\sigma^2}}
+\end{align*}
+
+Donc avec ces solutions, la partie réelle se trouve:
+
+\begin{align}
+    \expval{\hat{t}^{norm}} = \tau\frac{|A|^2 + (A\bar{B} + \bar{A}B)e^{-\frac{\tau^2}{8\sigma^2}}}{|A|^2 + |B|^2 + (A\bar{B} + \bar{A}B)e^{-\frac{\tau^2}{8\sigma^2}}}
+\end{align}
+
+Vue que nous sommes dans le régime des mesures faibles, prenons
+la limite $\tau \ll \sigma$:
+
+\begin{align}
+    \lim_{\frac{\tau}{\sigma} \to 0} \expval{\hat{t}^{norm}} &= \tau\frac{|A|^2 + A\bar{B} + \bar{A}B}{|A|^2 + |B|^2 + A\bar{B} + \bar{A}B}\\
+    &\equiv \mathcal{R}(\expval{\hat{\pi}_W})
+\end{align}
+
+Ce dernier est la partie réelle de la valeur faible $\expval{\hat{\pi}_W}$.

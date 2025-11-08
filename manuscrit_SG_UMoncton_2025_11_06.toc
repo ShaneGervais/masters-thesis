@@ -11,13 +11,14 @@
 \contentsline {subsection}{\numberline {1.1}Introduction}{1}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Motivation de la thèse}{5}{subsection.1.2}%
 \contentsline {section}{\numberline {2}LES MESURES FAIBLES TEMPORELLES D'UN SYSTÈME QUANTIQUE}{8}{section.2}%
-\contentsline {subsection}{\numberline {2.1}La tomographie quantique}{8}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Introduction aux mesures faibles}{17}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Fondamentaux théoriques des mesures faibles}{21}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Proposition d'une procédure directe avec une mesure faible temporelle}{29}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}La partie réelle du système}{29}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.2}La partie imaginaire du système}{33}{subsubsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.5}Proposition expérimentale pour la caractérisation de la valeur faible}{35}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.1}Les mesures quantiques: une procédure reconstructive à caractériser un état quantique}{8}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}La tomographie quantique}{9}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Introduction aux mesures faibles}{17}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Fondamentaux théoriques des mesures faibles}{20}{subsubsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.2}Proposition d'une procédure directe avec une mesure faible temporelle}{29}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}La partie réelle du système}{29}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}La partie imaginaire du système}{34}{subsubsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.3}Proposition expérimentale pour la caractérisation de la valeur faible}{35}{subsection.2.3}%
 \contentsline {section}{\numberline {3}MESURE EXPÉRIMENTALE DIRECTE D'UN ÉTAT DE POLARISATION EN UTILISANT UNE MESURE FAIBLE TEMPORELLE}{39}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Mesure de délais temporels ultra courts}{40}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Notes sur l'importances de l’acquisition des données }{42}{subsubsection.3.1.1}%
