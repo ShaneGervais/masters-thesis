@@ -1,4 +1,4 @@
-\begin{doublespace}
+\begin{onehalfspace}
 
     Dans ce chapitre, nous nous concentrerons sur les
     fondements théoriques des mesures quantiques, en ce qui concerne la
@@ -16,19 +16,19 @@
     moyennes des observables expérimentales du système qui pourraient
     être mesurées directement dans notre laboratoire.
 
-\end{doublespace}
+\end{onehalfspace}
 
-\subsection{Les mesures quantiques: une procédure reconstructive à caractériser un état quantique}
+\subsection{\textcolor{red}{Les mesures quantiques: une procédure reconstructive à caractériser un état quantique}}
 
-\begin{doublespace}
+\begin{onehalfspace}
     Dans ce qui suit, nous allons présenter deux méthodes de caractérisation d'un état quantique: la tomographie quantique et les mesures faibles.
     Nous allons démontrer un exemple de tomographie quantique pour des états de polarisation, puis introduire le formalisme des mesures faibles et comment elles permettent d'accéder directement à la fonction d'onde d'un état quantique.
     Ainsi, nous allons présenter les fondements théoriques des mesures faibles et comment elles peuvent être utilisées pour caractériser un état quantique.
-\end{doublespace}
+\end{onehalfspace}
 
-\subsubsection{La tomographie quantique}
+\subsubsection{\textcolor{red}{La tomographie quantique}}
 
-\begin{doublespace}
+\begin{onehalfspace}
         
     Traditionnellement, la tomographie quantique est utilisée pour 
     reconstruire la fonction d’onde d’un état quantique à partir d’un 
@@ -181,6 +181,9 @@
         &+ \biggl(\frac{1}{\sqrt{2}}(b\bra{H}\ket{V} + b\bra{V}\ket{V})\biggr)\Biggr]\Biggl[ \biggl(\frac{1}{\sqrt{2}}(a^*\bra{H}\ket{H} + a^*\bra{V}\ket{H})\biggr)\\
         &+ \biggl(\frac{1}{\sqrt{2}}(b^*\bra{H}\ket{V} + b^*\bra{V}\ket{V})\biggr) \Biggr] = \frac{1}{2}(a + b)(a^* + b^*)\\
         &= \frac{1}{2}(|a|^2 + ab^* + a^*b + |b|^2)\\
+    \end{align}
+    
+    \begin{align}  
         P_{\ket{A}} &= |\bra{A}\ket{\psi}|^2 = \Biggl[\biggl(\frac{1}{\sqrt{2}}(a\bra{H}\ket{H} - a\bra{V}\ket{H})\biggr)\\ 
         &+ \biggl(\frac{1}{\sqrt{2}}(b\bra{H}\ket{V} - b\bra{V}\ket{V})\biggr)\Biggr]\Biggl[ \biggl(\frac{1}{\sqrt{2}}(a^*\bra{H}\ket{H} - a^*\bra{V}\ket{H})\biggr)\\
         &+ \biggl(\frac{1}{\sqrt{2}}(b^*\bra{H}\ket{V} - b^*\bra{V}\ket{V})\biggr) \Biggr] = \frac{1}{2}(a - b)(a^* - b^*)\\
@@ -298,11 +301,11 @@
     mesures projectives pour qu'une tomographie quantique 
     puisse caractériser l'état du système. Cela rendrait cette 
     technique impraticable dans un contexte d'application. }
-\end{doublespace}
+\end{onehalfspace}
 
-\subsubsection{Introduction aux mesures faibles}
+\subsubsection{\textcolor{red}{Introduction aux mesures faibles}}
 
-\begin{doublespace}
+\begin{onehalfspace}
     
     Une alternative intéressante consiste à utiliser des mesures faibles, 
     une méthode permettant d’accéder à la fonction d’onde d’un système 
@@ -327,7 +330,7 @@
     informations sur la fonction d’onde. Le pointeur indique l'état de la 
     mesure résultante de l'appareil de mesure \cite{vonNeumann}. 
 
-    \noindent Considérons les scénarios à la figure \ref{fig:interaction} 
+    \noindent \textcolor{red}{Considérons les scénarios à la figure \ref{fig:interaction} 
     dans lequel le système à caractériser
     c'est l'état de polarisation d'un photon, et le pointeur est une autre
     propriété du photon, comme sa position temporelle décrit par 
@@ -351,7 +354,7 @@
     le pointeur est déplacé de manière minimale, permettant ainsi
     d'extraire des informations sur la fonction d'onde du système
     directement à partir du déplacement du pointeur, sans effondrement
-    complet de la fonction d'onde du système. 
+    complet de la fonction d'onde du système. }
 
     \begin{figure}[!htbp]
         \centering
@@ -375,7 +378,7 @@
         \label{fig:interaction}
     \end{figure}
 
-    \noindent En effectuant une mesure projective après une interaction
+    \noindent \textcolor{red}{En effectuant une mesure projective après une interaction
     faible, nous obtenons une distribution de probabilité du pointeur similairement
     à l'état initial du système, mais légèrement déplacé.
     Ce déplacement du pointeur est proportionnel à ce qu'on appelle la 
@@ -388,7 +391,7 @@
     mesures faibles \cite{Lundeen_Resch}, est définie
     comme la valeur moyenne faible d’un observable $\hat{S}$ du système,
     mesuré dans un état d’entrée $\ket{\psi_i}$ et un état de mesure
-    projective $\ket{\psi_f}$, qui est le résultat d’une mesure faible écrite comme le suivant:
+    projective $\ket{\psi_f}$, qui est le résultat d’une mesure faible écrite comme le suivant:}
 
 
     \begin{equation}
@@ -403,6 +406,7 @@
     permettant une caractérisation complète \cite{Lundeen_Bamber}.
     Ainsi, la valeur faible peut être exprimée en fonction de ces 
     observables du pointeur comme suit :
+
     \begin{equation}
         \expval{\hat{S}}_W = \frac{1}{\delta}\Biggl( \expval{\hat{p}} - i4\sigma^2 \expval{\hat{q}} \Biggr)\label{eq:weakvalue_components}
     \end{equation}
@@ -421,11 +425,11 @@
     que les procédures théoriques pour obtenir les composantes réelles et
     imaginaires de la valeur faible.
 
-\end{doublespace}
+\end{onehalfspace}
 
-\subsubsection{Fondamentaux théoriques des mesures faibles}
+\subsubsection{\textcolor{red}{Fondamentaux théoriques des mesures faibles}}
 
-\begin{doublespace}
+\begin{onehalfspace}
     Tout d’abord, nous aborderons les principes théoriques sous-jacents 
     aux mesures faibles, en expliquant comment la valeur faible est liée à la 
     fonction d’onde de l’état quantique et peut être mesurée directement. 
@@ -493,9 +497,9 @@
         \mathcal{H} \equiv g(t)(\hat{S} \otimes \hat{q})
     \end{equation}
 
-    \noindent où $g$ est la constante de couplage, qui doit être réelle 
+    \noindent \textcolor{red}{où $g$ est la constante de couplage, qui doit être réelle 
     pour que le hamiltonien soit hermitien, $\hat{S}$ l'opérateur de mesure 
-    et $\hat{q}$ la variable conjuguée du pointeur. Dans un régime de mesures faibles, où l’interaction est 
+    et $\hat{q}$ la variable conjuguée du pointeur}. Dans un régime de mesures faibles, où l’interaction est 
     plus faible que la distribution de probabilité du pointeur, 
     c’est-à-dire $\delta \ll \sigma$, le système mesuré est faiblement 
     couplé avec le pointeur, entraînant ainsi un effondrement minimal 
@@ -519,7 +523,7 @@
 
     \noindent où nous allons maintenant examiner une étude plus approfondie
     sur cette interaction en récrivant l’opérateur d’interaction de von Neumann
-    sous la forme d'une série de Taylor: 
+    sous la forme d'une série de Taylor: \textcolor{red}{FIXED}
 
     \begin{align}
         \hat{U}\ket{\Psi^{i}}_T &= \Bigl(\mathds{1} - i\delta(\hat{S} \otimes \hat{q}) + \mathcal{O}(\delta^2) \Bigr)\Bigl[ \ket{\psi}_S \otimes \ket{\bar{p} = 0}_P \Bigr]\\
@@ -531,7 +535,7 @@
     élevés de la série de Taylor, que nous négligeons. En suivant la 
     procédure de mesure faible, nous devons effectuer une postsélection 
     ultérieure sur le système avec l’état $\ket{\varphi}_S$, qui est dans 
-    la même base $S$ que $\ket{\psi}_S$:
+    la même base $S$ que $\ket{\psi}_S$:\textcolor{red}{FIXED}
 
     \begin{align}
         \ket{\varphi}_S\bra{\varphi}_S\hat{U}\ket{\Psi^{i}}_T &= \ket{\varphi}_S\bra{\varphi}_S\ket{\psi}_S \otimes \ket{\bar{p} = 0}_P - i\delta\ket{\varphi}_S\bra{\varphi}_S\hat{S}\ket{\psi}_S\otimes\hat{q}\ket{\bar{p} = 0}_P
@@ -553,7 +557,7 @@
     système total. Dans ce cas, le $\frac{\bra{\varphi}_S\ket{\psi}_S}{\bra{\varphi}_S\ket{\psi}_S}$
     sur le côté droit est annulé et nous déplaçons le $\frac{1}{\bra{\varphi}_S\ket{\psi}_S}$
     du côté gauche vers le côté droit. L'état final est maintenant le
-    suivant :
+    suivant :\textcolor{red}{FIXED}
 
     \begin{align}
         \ket{\Psi^f}_T &\equiv \ket{\varphi}_S\bra{\varphi}_S\hat{U}\ket{\Psi^i}_T\\
@@ -589,7 +593,7 @@
     d’une interaction. Si l’interaction est faible, il est possible de 
     mesurer ces valeurs décalées individuellement lors d’une procédure 
     directe via une mesure faible \cite{Hairiri,Lundeen_Resch,Lundeen_Direct_Measurement,Guilleaum}. 
-    Pour conclure, écrivons l’état final avec cette valeur :
+    Pour conclure, écrivons l’état final avec cette valeur :\textcolor{red}{FIXED}
 
     \begin{align}
         \ket{\Psi^f}_T &= \bra{\varphi}_S\ket{\psi}_S \Bigl[ \ket{\bar{p} = 0}_P - i\delta \expval{\hat{S}}_W \hat{q}\ket{\bar{p}=0}_P \Bigr] \otimes \ket{\varphi}_S\\
@@ -612,7 +616,7 @@
     comme mentionné dans l'équation \ref{eq:weakvalue_components}. 
     Démontrons cela en mesurant les observables $\hat{p}$ et $\hat{q}$ 
     comme dans \cite{Lundeen_thesis,Lundeen_Resch}. Commençons
-    avec $\expval{\hat{p}}$ :
+    avec $\expval{\hat{p}}$ :\textcolor{red}{FIXED}
 
     \begin{align}
         \bra{\bar{p} = \delta s_j}\hat{p}\ket{\bar{p}=\delta s_j} &= \bra{\bar{p}=0} \Bigl(e^{-i\delta \expval{\hat{S}}_W \hat{q}}\Bigr)^{\dagger} \hat{p} \Bigl(e^{-i\delta \expval{\hat{S}}_W \hat{q}}\Bigr) \ket{\bar{p}=0}\\
@@ -698,12 +702,12 @@
     mesures quantiques et une alternative à la tomographie quantique
     traditionnelle \cite{Lundeen_Direct_Measurement,Guilleaum}.
 
-\end{doublespace}
+\end{onehalfspace}
 
 \subsection{Proposition d'une procédure directe avec une mesure faible temporelle}
 
     
-\begin{doublespace}
+\begin{onehalfspace}
     Les mesures faibles temporelles exploitent les propriétés temporelles 
     et fréquentielles d’une impulsion lumineuse pour caractériser un état 
     quantique. Cette approche repose sur lequel que
@@ -722,11 +726,11 @@
     %comme pointeur, ainsi que l’effet sur sa variable conjuguée, un 
     %décalage fréquentiel variant avec la valeur faible. Ce faisant, nous 
     %pourrons caractériser l’état de polarisation du système.
-\end{doublespace}
+\end{onehalfspace}
 
 \subsubsection{La partie réelle du système}
     
-\begin{doublespace}
+\begin{onehalfspace}
     Nous voulons caractériser l'état de polarisation avec une mesure 
     faible temporelle. Pour ce faire, il est nécessaire de calculer 
     les composantes de la valeur faible $\expval{\hat{\pi}}_W$ du 
@@ -864,7 +868,7 @@
     \end{align}
 
    \noindent Comme nous sommes dans le régime des mesures faibles, 
-   prenons la limite où $\tau \ll \sigma$:
+   prenons la limite où $\tau \ll \sigma$:\textcolor{red}{FIXED}
 
     \begin{align}
         \lim_{\frac{\tau}{\sigma} \to 0} \expval{\hat{t}^{norm}} &= \tau\frac{|A|^2 + A\bar{B} + \bar{A}B}{|A|^2 + |B|^2 + A\bar{B} + \bar{A}B}\\
@@ -874,11 +878,11 @@
     \noindent Ce terme représente la position moyenne temporelle du 
     pointeur lors d’une mesure. Il s’agit de la partie réelle de la 
     valeur faible $\expval{\hat{\pi}}_W$.
-\end{doublespace}
+\end{onehalfspace}
 
 \subsubsection{La partie imaginaire du système}
     
-\begin{doublespace}
+\begin{onehalfspace}
     Comme nous l'avons déjà évoqué, un déplacement de la variable du 
     pointeur, tel qu'un décalage $\tau$ de sa position temporelle $t$, 
     devrait entraîner un déplacement de son spectre fréquentiel $\omega$, 
@@ -923,7 +927,7 @@
     \end{equation}
 
     \noindent Prenons encore la limite dont $\tau \ll \sigma$, qui 
-    s’applique au domaine des mesures faibles:
+    s’applique au domaine des mesures faibles:\textcolor{red}{FIXED}
 
     \begin{align}
         \lim_{\frac{\tau}{\sigma} \to 0}\expval{\hat{\omega}^{norm}} &= \frac{i\tau}{4\sigma^2}\frac{B\bar{A} - A\bar{B}}{|A|^2 + |B|^2 + \bar{A}B + A\bar{B}}\\
@@ -934,11 +938,11 @@
     \noindent Ce terme correspond à la partie imaginaire de la valeur 
     faible attendue $\expval{\hat{\pi}}_W$.
 
-\end{doublespace}
+\end{onehalfspace}
 
 \subsection{Proposition expérimentale pour la caractérisation de la valeur faible}\label{sec:proposition_exp}
     
-\begin{doublespace}
+\begin{onehalfspace}
     Nous continuons avec notre système photonique quantique, en nous 
     appuyant sur nos résulats théoriques concernant la partie réelle et 
     imaginaire de la valeur faible. Pour un 
@@ -964,60 +968,60 @@
      déplacements temporels ou fréquentiels du pointeur) sera 
      proportionnelle à la partie réelle ou imaginaire de la valeur 
      faible:
-    
+    \textcolor{red}{FIXED}
      \begin{equation}
         \expval{\hat{\pi}^{J}}_W = \frac{\bra{D}\hat{\pi}^{J}\ket{\psi^{i}}}{\bra{D}\ket{\psi^{i}}} = \sqrt{N}\bra{J}\ket{\psi^{i}}\label{eq:weak_value_J}
     \end{equation}
 
-    \noindent où $N$ est une constante de normalisation indépendante de 
+    \noindent \textcolor{red}{où $N$ est une constante de normalisation indépendante de 
     $J$. On peut écrire l’état quantique d'entrée, après avoir subit une mesure directe, 
-    en fonction de la valeur faible mesurée \cite{Lundeen_Direct_Measurement}: 
-    
+    en fonction de la valeur faible mesurée \cite{Lundeen_Direct_Measurement}: }\textcolor{red}{FIXED}
+
     \begin{equation}
         \ket{\psi^{f}} = \frac{1}{\sqrt{N}}\Bigl(\expval{\hat{\pi}^{H}}_W\ket{H}+\expval{\hat{\pi}^{V}}_W\ket{V}\Bigr)
     \end{equation}
 
-    \noindent Puisque $N$ est une constante de normalisation telle que
+    \noindent \textcolor{red}{Puisque $N$ est une constante de normalisation telle que}\textcolor{red}{FIXED}
     
     \begin{align}
         N &= \Bigl|\expval{\hat{\pi}^{H}}_W\Bigr|^2 + \Bigl|\expval{\hat{\pi}^{V}}_W\Bigr|^2\\
           &= \Bigl|\expval{\hat{\pi}^{H}}_W\Bigr|^2 + \Bigl|1- \expval{\hat{\pi}^{H}}_W\Bigr|^2
     \end{align}
 
-    \noindent nous pouvons récrire l'état quantique sous la forme suivante :
+    \noindent \textcolor{red}{nous pouvons récrire l'état quantique sous la forme suivante :}\textcolor{red}{FIXED}
 
     \begin{equation}
         \ket{\psi^{f}} = \frac{1}{\sqrt{N}}\Bigl(\expval{\hat{\pi}^{H}}_W\ket{H}+ \Bigl(1- \expval{\hat{\pi}^{H}}_W\Bigr)\ket{V}\Bigr)
     \end{equation}
 
-    \noindent Ce dernier est l'état d'entrée que nous pouvons 
+    \noindent \textcolor{red}{Ce dernier est l'état d'entrée que nous pouvons 
     reconstruire à partir de la valeur faible, où $a = \frac{\expval{\hat{\pi}^{H}}_W}{\sqrt{N}}$
     et $b = \frac{1-\expval{\hat{\pi}^{H}}_W}{\sqrt{N}}$. En d'autres termes, nous 
     pouvons reconstruire directement l'état d'entrée à partir de la valeur faible 
     mesurée sans ambiguïté. Certains fixent la phase globale \cite{Hairiri}, qui varierait selon l'état 
     d'entrée, nous supposons que $a$ est toujours réel; donc 
     l'ellipticité (ou la phase) se trouve dans $b$ et sera dépendante 
-    de la partie imaginaire. 
+    de la partie imaginaire.}
     
-    \noindent En performant une mesure faible
+    \noindent \textcolor{red}{En performant une mesure faible
     sur $\ket{\psi^{i}}$, décrit par l'opérateur $\hat{\pi}^{H} = \ket{H}\bra{H}$, 
     avec un délai $\tau$, nous pouvons reconstruire l'état à partir 
     des données expérimentales des deux 
     valeurs moyennes $\expval{\hat{t}}$ et $\expval{\hat{\omega}}$ et
     calculer directement les amplitudes de probabilité. 
     En utilisant les équations \eqref{eq:weak_value_J}, \eqref{eq:expval_t_norm}
-    et \eqref{eq:imaginary_part}, nous obtenons les relations suivantes :
+    et \eqref{eq:imaginary_part}, nous obtenons les relations suivantes }:\textcolor{red}{FIXED}
 
-    \noindent pour le cas générale où $a,b\in\mathcal{C}$, nous avons :
+    %\noindent pour le cas générale où $a,b\in\mathcal{C}$, nous avons :
 
-    \begin{align}
-        \mathcal{R}(a) &= \mathcal{R}(\expval{\hat{\pi}^{H}}_W) = \frac{\expval{\hat{t}}}{\tau}\label{eq:real_part_a}\\
-        \mathcal{I}(a) &= \mathcal{I}(\expval{\hat{\pi}^{H}}_W) = -\frac{4\sigma^2 \expval{\hat{\omega}}}{\tau}\label{eq:imaginary_part_a}\\
-        \mathcal{R}(b) &= 1 - \mathcal{R}(\expval{\hat{\pi}^{H}}_W) = 1 - \frac{\expval{\hat{t}}}{\tau}\label{eq:real_part_b_general}\\
-        \mathcal{I}(b) &= - \mathcal{I}(\expval{\hat{\pi}^{H}}_W) = \frac{4\sigma^2 \expval{\hat{\omega}}}{\tau}\label{eq:imaginary_part_b_general} 
-    \end{align}
+    %\begin{align}
+    %    \mathcal{R}(a) &= \mathcal{R}(\expval{\hat{\pi}^{H}}_W) = \frac{\expval{\hat{t}}}{\tau}\label{eq:real_part_a}\\
+    %    \mathcal{I}(a) &= \mathcal{I}(\expval{\hat{\pi}^{H}}_W) = -\frac{4\sigma^2 \expval{\hat{\omega}}}{\tau}\label{eq:imaginary_part_a}\\
+    %    \mathcal{R}(b) &= 1 - \mathcal{R}(\expval{\hat{\pi}^{H}}_W) = 1 - \frac{\expval{\hat{t}}}{\tau}\label{eq:real_part_b_general}\\
+    %    \mathcal{I}(b) &= - \mathcal{I}(\expval{\hat{\pi}^{H}}_W) = \frac{4\sigma^2 \expval{\hat{\omega}}}{\tau}\label{eq:imaginary_part_b_general} 
+    %\end{align}
 
-    \noindent et pour le cas où $a\in\mathcal{R}$ et $b\in\mathcal{I}$, nous avons :
+    %\noindent et pour le cas où $a\in\mathcal{R}$ et $b\in\mathcal{I}$, nous avons :
 
     \begin{align}
         a &= \sqrt{\mathcal{R}(\expval{\hat{\pi}^{H}}_W)} = \sqrt{\frac{\expval{\hat{t}}}{\tau}}\label{eq:amplitude_a}\\
@@ -1096,10 +1100,10 @@
     %délai et le délai maximal, c’est-à-dire entre les polarisations 
     %$\ket{V}$ et $\ket{H}$. 
 
-\end{doublespace}
+\end{onehalfspace}
 
     
-\begin{doublespace}
+\begin{onehalfspace}
     \noindent Ce chapitre a posé les bases théoriques des mesures faibles 
     temporelles et leur potentiel pour les systèmes photoniques. En 
     s’appuyant sur des techniques innovantes et des travaux antérieurs, 
@@ -1107,4 +1111,4 @@
     temporelles pour caractériser directement les états quantiques. Le 
     prochain chapitre abordera les aspects expérimentaux de la mise en 
     œuvre de ces méthodes.
-\end{doublespace}
+\end{onehalfspace}

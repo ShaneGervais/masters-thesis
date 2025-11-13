@@ -1,4 +1,4 @@
-\begin{doublespace}
+\begin{onehalfspace}
     Maintenant, analysons nos données de l'expérience de la 
     vitesse d’un signal électrique à travers un câble BNC à partir des délais 
     d’impulsion. Nous avons configuré l’oscilloscope en mode EQ-time 
@@ -10,7 +10,7 @@
     et moyennée sur $10$ différentes prises de données. La figure \ref{fig:typical-pulse}
     montre le profil temporel typique de notre impulsion laser d'une série
     de données avec ces paramètres.
-\end{doublespace}
+\end{onehalfspace}
 
 \begin{figure}[!h!p!t!b]
     \centering
@@ -23,14 +23,17 @@
     \label{fig:typical-pulse}
 \end{figure}
 
-\begin{doublespace}
-    \noindent Le profil temporel des impulsions n’est 
+\begin{onehalfspace}
+    \noindent \textcolor{red}{\sout{Le profil temporel des impulsions n’est 
     pas une fonction gaussienne, mais plutôt une fonction de porte. 
     En allongeant la durée de l’impulsion du laser, l’impulsion 
     ressemble de plus en plus à une fonction porte au fur et à 
-    mesure \cite{ThorlabsDET025A}. Pour préciser la position temporelle de l'impulsion, nous allons
+    mesure \cite{ThorlabsDET025A}}}. \textcolor{red}{Vue que le profile temporel des impulsion 
+    semble à une fonction porte \cite{ThorlabsDET025A} (voir la figure \ref{fig:typical-pulse}), on pourrait ajuster une fonction porte sur
+    le signal mais cela créerait une ambiguïté lors de la détermination du temps 
+    d'arrivée du signal}. Donc, pour préciser la position temporelle de l'impulsion, nous allons
     effectuer la dérivée de la fonction d'amplitude du signal pour identifier
-    le temps d'arrivée du signal représenté par la position temporelle du pic maximal 
+    le temps d'arrivée du signal \textcolor{red}{via le front montant du signal} représenté par la position temporelle du pic maximal
     de la dérivée. La figure 
     \ref{fig:BNC-pulse} montre le profil temporel 
     de la dérivée des données d'impulsion pour l'expérience des
@@ -101,7 +104,7 @@
     Nous avons ajouté plus de chiffres significatifs pour les
     ajustements de courbe pour qu'ils soient compatibles avec
     l'écart-type.}
-\end{doublespace}
+\end{onehalfspace}
 
 
 \begin{longtable}{p{2.0cm} p{2.0cm} p{4.0cm} p{2.0cm}}
@@ -237,7 +240,7 @@
     
 \end{longtable}
 
-\begin{doublespace}
+\begin{onehalfspace}
     
     
     %\noindent Nous avons utilisé ces données pour calculer la vitesse du signal
@@ -374,7 +377,7 @@
     $197 388 575 \pm 0,0008$ $m/s$, ce qui représente une erreur en
     pourcentage de $0,2367\%$ par rapport à la vitesse du
     signal dans un câble BNC qui est environ $0,66$ par
-    rapport à $c$ (voir le tableau \ref{table:speed-BNC-table}) ce qui est
+    rapport à $c$ selon \cite{arrl2019} (voir le tableau \ref{table:speed-BNC-table}) ce qui est
     réaliste et cohérent avec l'erreur observée lors de
     l'expérience précédente. En effet, 
     nous avons démontré notre capacité à mesurer des délais très 
@@ -382,5 +385,5 @@
     de petits délais entre des impulsions de lumière, qui est 
     l’objectif de la prochaine expérience.
 
-\end{doublespace}
+\end{onehalfspace}
 

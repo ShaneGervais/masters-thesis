@@ -1,4 +1,4 @@
-\begin{doublespace}
+\begin{onehalfspace}
     
     La façon dont nous acquérons nos données est importante, car nous 
     devons nous assurer que nous utilisons la méthode la plus précise 
@@ -12,14 +12,14 @@
 
     \noindent Pour mesurer des délais temporels, nous avons 
     besoin d'un signal de 
-    référence et un signal expérimental. Nous obtenons ce signal 
+    référence et un signal expérimental. Nous obtenons \textcolor{red}{le signal expérimental}
     en prélevant une partie du signal du laser à l'aide d'un PBS (voir 
     la figure \ref{fig:speed-of-light}). Le signal de référence est
     envoyé à un photodétecteur rapide, qui est utilisé pour
     déclencher l'oscilloscope. Le signal expérimental est envoyé
     à un autre photodétecteur rapide, qui est utilisé pour
     mesurer le délai temporel par rapport au signal de référence. 
-    Le signal de référence est déclenché sur son front montant et 
+    Le signal de référence \textcolor{red}{déclenche l'oscilloscope} sur son front montant et 
     est connecté à l'entrée auxiliaire afin de ne pas affecter le taux 
     d'échantillonnage de l'oscilloscope. 
     %Je utilise le port externe de l’oscilloscope 
@@ -39,12 +39,13 @@
     \noindent Le mode d'acquisition est un paramètre crucial pour la résolution
     des données. Notre oscilloscope possède plusieurs modes d'acquisition: 
     échantillonnage direct, détection 
-    de pic, enveloppe, haute résolution et moyennage. Nous choisissons
+    de pic, enveloppe, haute résolution et moyen. Nous choisissons
     le mode d'acquisition moyen, car il permet de réduire le bruit 
     dans la prise de données. Ce réglage effectue la moyenne sur $N$ 
     signaux expérimentaux générant un signal moyenné. Pour obtenir 
     un signal clair et éliminer le bruit de fond,
-    nous devions effectuer la moyenne sur $1000$ signaux expérimentaux.
+    nous devions effectuer la moyenne sur $1000$ signaux expérimentaux,
+    \textcolor{red}{ce qui réduit le bruit de fond d'un facteur $\sqrt{1000} \approx 32$}.
 
     \noindent Le mode d'échantillonnage est un autre paramètre important 
     pour la façon dont l'oscilloscope collecte des données. Ces modes sont 
@@ -80,7 +81,8 @@
         effectue un échantillons à chaque déclenchement du signal
         de référence. Il enregistre un certain nombre d’échantillons
         d’acquisition, puis combine plusieurs échantillons d’un signal
-        répétitif en cours d’acquisition. Il régule ensuite la
+        répétitif en cours d’acquisition \textcolor{red}{pour reconstruire le signal complet}. 
+        Il régule ensuite la
         fréquence d’échantillonnage du signal d’entrée pour un
         enregistrement du signal complet.}
         \label{fig:EQ-time}
@@ -106,11 +108,11 @@
     \noindent Avec ces paramètres, nous avons la meilleure résolution 
     possible avec l’équipement servant à collecter des données sur 
     notre signal. Nous enregistrons ensuite les signaux d’onde de 
-    sortie au format \textsc{CSV}. Une mesure d'acquisition 
+    sortie \textcolor{red}{\sout{au format \textsc{CSV}}}. Une mesure d'acquisition 
     prend environ trois minutes et
     nous prenons $10$ différentes acquisitions pour chaque different délai. 
     Nous mesurons la vitesse d'un signal dans un 
-    câble BNC RG-58 \cite{ThorlabsBNC} avec des délais temporels implémentés
+    câble \textcolor{red}{BNC RG-58 $50 \Omega$} \cite{ThorlabsBNC} avec des délais temporels implémentés
     en faisant parcourir le signal expérimental à travers des câbles de
     différentes longueurs. Cette expérience 
     facilite nos mesures, car les câbles ont une longueur déterminée 
@@ -119,8 +121,7 @@
     $172$, $270$, $522$, $1032$ et $3000$ $mm$ 
     (avec $\pm 2 \%$ d'erreur de fabrication \cite{ThorlabsBNC}). 
     Les délais 
-    commencent par une mesure avec un câble possèdant la longueur 
-    la plus courte; dans ce cas, le miroir ajustable est fixe. Pour 
+    commencent par une mesure \textcolor{red}{avec le câble le plus courte}; dans ce cas, le miroir ajustable est fixe. Pour 
     l'expérience de mesure de la vitesse de la lumière, nous introduisons
     un délai en déplaçant le miroir à différentes distances $\Delta x$: 
     $2,52$-$5,48$ $cm$ $\pm 2$ $\mu m$ (converti à partir des pouces, car 
@@ -143,4 +144,4 @@
     Ensuite, les données sont analysées afin de 
     trouver le délai obtenu pour chaque distance du miroir.
     
-\end{doublespace}
+\end{onehalfspace}

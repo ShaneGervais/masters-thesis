@@ -1,19 +1,19 @@
 \label{sec:real_experiment}
 
-\begin{doublespace}
+\begin{onehalfspace}
     Notre dispositif expérimental, représenté à la figure 
     \ref{fig:realexp}, est composé du laser pulsé et possède 
     une configuration similaire à celle de notre 
     montage précédent (figure \ref{fig:speed-of-light}). Après 
     le premier séparateur de faisceau polarisant, l’état de polarisation 
-    d’entrée est préparé à l'aide de lame d'ondes et ensuite 
+    d’entrée est préparé à l'aide des lames d'ondes et ensuite 
     soumis à une mesure faible en 
     introduisant un court délai de $167$ $ps$ avec une différence de parcours 
     de $5$ $cm$ entre 
     les deux composantes $H$ et $V$. 
     Finalement, la postsélection est effectuée pour une 
     caractérisation complète et directe.
-\end{doublespace}
+\end{onehalfspace}
 
 \begin{figure}[!htpb]
     \centering
@@ -50,7 +50,7 @@
     \label{fig:realexp}
 \end{figure}
 
-\begin{doublespace}
+\begin{onehalfspace}
     \noindent Une fois de plus, nous utilisons le signal 
     de référence comme signal déclencheur de l'oscilloscope en 
     le branchant sur l'entrée externe, car nous voulons bénéficier de la 
@@ -68,7 +68,7 @@
     premier trajet correspond à l'ensemble des états de polarisation 
     linéaire et est réalisé uniquement avec une lame demi-onde définie 
     par la matrice suivante:
-\end{doublespace}
+\end{onehalfspace}
 
 \begin{align}
     T_{HWP}(\theta) = \begin{pmatrix}
@@ -77,11 +77,11 @@
     \end{pmatrix}
 \end{align}
 
-\begin{doublespace}
-    \noindent où l'indice $HWP$ fait référence à une lame demi-onde
+\begin{onehalfspace}
+    \noindent \textcolor{red}{où l'indice $HWP$ fait référence à une lame demi-onde
     (\guillemetleft half wave plate \guillemetright en anglais) 
     et $\theta$ l'angle de rotation de la lame par 
-    rapport à l'axe rapide. 
+    rapport à l'axe rapide.} 
     %L'opérateur $T_{HWP}(\theta)$ est un opérateur unitaire 
     %qui agit sur l'état d'entrée $\ket{\psi}$, et il est 
     %défini par la rotation de l'état d'entrée sur la sphère de Poincaré.
@@ -119,7 +119,7 @@
     transmit par un séparateur 
     de faisceau polarisant. Ensuite, l'état évolue de la façon 
     suivante en fonction de l'angle $\theta$ de la lame d'onde:
-\end{doublespace}
+\end{onehalfspace}
 
 \begin{align}
     T_{HWP}(\theta)\ket{H} &= \begin{pmatrix}
@@ -133,23 +133,23 @@
     \end{pmatrix}\label{eq:state1_Jones}
 \end{align}
 
-\begin{doublespace}
-    \noindent Donc, l'état d'entrée préparé est:
-\end{doublespace}
+\begin{onehalfspace}
+    \noindent Donc, \textcolor{red}{les états d'entrée selon l'angle $\theta$ préparés sont}:
+\end{onehalfspace}
 
 \begin{equation}
     \ket{\psi_{i}^{1}} = cos(2\theta)\ket{H} + sin(2\theta)\ket{V}
     \label{eq:state1}
 \end{equation}
 
-\begin{doublespace}
+\begin{onehalfspace}
     \noindent Afin de donner une représentation visuelle de nos états de 
     polarisation, nous utilisons la sphère de Poincaré. Les amplitudes de probabilité
     de la fonction d'onde de l'équation \ref{eq:state1} correspondent à la 
     représentation de Jones de la polarisation de l'équation \ref{eq:state1_Jones}. Et, il est possible de 
     convertir la représentation de Jones en présentation sur la sphères 
     de Poincaré à l'aide des paramètres de Stokes (figure \ref{fig:path3sphere}):
-\end{doublespace}
+\end{onehalfspace}
 
 \begin{equation}
     S = \begin{pmatrix}
@@ -194,14 +194,14 @@
     \label{fig:path3sphere}
 \end{figure}
 
-\begin{doublespace}
+\begin{onehalfspace}
     \noindent Ce premier trajet, correspond à une rotation autour de $S_3$,
     est réalisé en tournant uniquement la lame 
     demi-onde, c'est-à-dire 
     que nous traversons les états de polarisation
     $\ket{H} \to \ket{D} \to \ket{V} \to \ket{A} \to \ket{H}$.
     Dans l'expérience, on tourne 
-    l'angle de la lame d'onde de $2,5$
+    l'angle de la lame \textcolor{red}{demi-onde} de $2,5$
     degrés pour chaque acquisition. Chaque degré $\theta^\prime$ 
     que nous tournons en réalité 
     équivaut à tourner de $5$ degrés sur un plan circulaire 
@@ -214,9 +214,9 @@
     Cela se fait 
     avec une lame demi-onde tournant de la même manière que précédemment, 
     et une lame quart d'onde réglée à $0$ degré par rapport à 
-    $\ket{H}$. L’opération de cette lame d’onde se définit par 
+    $\ket{H}$. L’opération de \textcolor{red}{la lame quart d'onde} se définit par 
     la matrice suivante:
-\end{doublespace}
+\end{onehalfspace}
 
 \begin{align}
     T_{QWP}(\phi) &= e^{\frac{-i\pi}{4}}\begin{pmatrix}
@@ -229,7 +229,7 @@
     \end{pmatrix}
 \end{align}
 
-\begin{doublespace}
+\begin{onehalfspace}
     \noindent où l'indice $QWP$ fait référence 
     à une lame quart d'onde (\guillemetleft quarter wave plate \guillemetright en anglais).
     L'angle $\phi$ est l'angle de rotation de la lame 
@@ -241,7 +241,7 @@
     %faible soit principalement contenue dans $b$ pour des raisons de 
     %simplicité. 
     Avec cette lame d'onde et celle demi-onde, l'état évolue comme suit:
-\end{doublespace}
+\end{onehalfspace}
 
 \begin{align}
     T_{QWP}(\phi = 0^{\degree})T_{HWP}(\theta)\ket{H} &= 
@@ -260,19 +260,19 @@
     \end{pmatrix}
 \end{align}
 
-\begin{doublespace}
+\begin{onehalfspace}
     \noindent Donc, l'état d'entrée est: 
-\end{doublespace}
+\end{onehalfspace}
 
 \begin{equation}
     \ket{\psi_{i}^{2}} = e^{\frac{-i\pi}{4}}cos(2\theta)\ket{H} + e^{\frac{-i\pi}{4}}isin(2\theta)\ket{V}
     \label{eq:state2}
 \end{equation}
 
-\begin{doublespace}
+\begin{onehalfspace}
     \noindent Nous pouvons trouver les paramètres de Stokes pour démontrer sa 
     trajectoire (figure \ref{fig:path4sphere}):
-\end{doublespace}
+\end{onehalfspace}
 
 \begin{equation}
     S = \begin{pmatrix}
@@ -298,7 +298,7 @@
     \label{fig:path4sphere}
 \end{figure}
 
-\begin{doublespace}
+\begin{onehalfspace}
     \noindent Le trajet final est une rotation autour de $S_1$ 
     qui nous fait passer des états de polarisation diagonal
     $\{\ket{D}, \ket{A}\}$ aux polarisations circulaires 
@@ -308,7 +308,7 @@
     obtenue en tournant une lame demi-onde avec une lame quart d'onde 
     réglée à $45$ degrés,
     la lame quart d'onde réalise l'opération suivante: 
-\end{doublespace}
+\end{onehalfspace}
 
 \begin{equation}
     T_{QWP}(\phi = 45^{\degree}) = \frac{e^{\frac{-i\pi}{4}}}{2}\begin{pmatrix}
@@ -317,9 +317,9 @@
     \end{pmatrix}
 \end{equation}
 
-\begin{doublespace}
+\begin{onehalfspace}
     \noindent Avec cette opération, l'état évolue comme suit:
-\end{doublespace}
+\end{onehalfspace}
 
 \begin{align}
     T_{QWP}(\phi = 45^{\degree})T_{HWP}(\theta)\ket{H} &= 
@@ -338,19 +338,19 @@
     \end{pmatrix}
 \end{align}
 
-\begin{doublespace}
+\begin{onehalfspace}
     \noindent Donc, l'état d'entrée est: 
-\end{doublespace}
+\end{onehalfspace}
 
 \begin{equation}
     \ket{\psi_{i}^{3}} = \frac{e^{\frac{-i\pi}{4}}}{2}\Bigl(((1-i)sin(2\theta) + (1+i)cos(2\theta))\ket{H} + ((1+i)sin(2\theta) + (1-i)cos(2\theta))\ket{V}\Bigr)
     \label{eq:state3}
 \end{equation}
 
-\begin{doublespace}
+\begin{onehalfspace}
     \noindent Nous pouvons trouver les paramètres de Stokes pour démontrer sa 
     trajectoire (figure \ref{fig:path5sphere}):
-\end{doublespace}
+\end{onehalfspace}
 
 \begin{equation}
     S = \begin{pmatrix}
