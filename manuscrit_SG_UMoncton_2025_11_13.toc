@@ -2,11 +2,11 @@
 \contentsline {section}{\numberline {}Page titre}{i}{Doc-Start}%
 \contentsline {section}{\numberline {}Composition du jury}{ii}{Doc-Start}%
 \contentsline {section}{\numberline {}Remerciements}{iii}{Doc-Start}%
-\contentsline {section}{\numberline {}Sommaire}{vi}{Doc-Start}%
-\contentsline {section}{\numberline {}Abstract}{vii}{Doc-Start}%
-\contentsline {section}{\numberline {}Liste des tableaux}{x}{Doc-Start}%
-\contentsline {section}{\numberline {}Liste des figures}{xvi}{Doc-Start}%
-\contentsline {section}{Liste des symboles}{xvii}{Doc-Start}%
+\contentsline {section}{\numberline {}Sommaire}{vii}{Doc-Start}%
+\contentsline {section}{\numberline {}Abstract}{viii}{Doc-Start}%
+\contentsline {section}{\numberline {}Liste des tableaux}{xi}{Doc-Start}%
+\contentsline {section}{\numberline {}Liste des figures}{xvii}{Doc-Start}%
+\contentsline {section}{Liste des symboles}{xviii}{Doc-Start}%
 \contentsline {section}{\numberline {1}INTRODUCTION AUX PROCÉDURES DIRECTES POUR LES MESURES QUANTIQUES}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Introduction}{1}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Motivation de la thèse}{4}{subsection.1.2}%
