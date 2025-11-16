@@ -24,16 +24,12 @@
 \end{figure}
 
 \begin{onehalfspace}
-    \noindent \textcolor{red}{\sout{Le profil temporel des impulsions n’est 
-    pas une fonction gaussienne, mais plutôt une fonction de porte. 
-    En allongeant la durée de l’impulsion du laser, l’impulsion 
-    ressemble de plus en plus à une fonction porte au fur et à 
-    mesure \cite{ThorlabsDET025A}}}. \textcolor{red}{Vue que le profile temporel des impulsion 
-    semble à une fonction porte \cite{ThorlabsDET025A} (voir la figure \ref{fig:typical-pulse}), on pourrait ajuster une fonction porte sur
+    \noindent Vue que le profile temporel des impulsion 
+    ressemble à une fonction porte \cite{ThorlabsDET025A} (voir la figure \ref{fig:typical-pulse}), on pourrait ajuster une fonction porte sur
     le signal mais cela créerait une ambiguïté lors de la détermination du temps 
-    d'arrivée du signal}. Donc, pour préciser la position temporelle de l'impulsion, nous allons
+    d'arrivée du signal. Donc, pour préciser la position temporelle de l'impulsion, nous allons
     effectuer la dérivée de la fonction d'amplitude du signal pour identifier
-    le temps d'arrivée du signal \textcolor{red}{via le front montant du signal} représenté par la position temporelle du pic maximal
+    le temps d'arrivée du signal via le front montant du signal représenté par la position temporelle du pic maximal
     de la dérivée. La figure 
     \ref{fig:BNC-pulse} montre le profil temporel 
     de la dérivée des données d'impulsion pour l'expérience des
@@ -71,10 +67,10 @@
         y(t) = a_0 + a_1 cos(\omega t) + a_2 sin(\omega t) + \ldots + a_N cos(N \omega t) + b_1 sin(N \omega t)
     \end{equation}
 
-    \noindent où $a_i$, $b_i$ \textbf{\textcolor{red}{et}} $\omega$ sont les coefficients de la série de 
-    Fourier et $t$ est le temps. \textcolor{red}{Notez que $\omega$ est la fréquence fondamentale du
-    signal que le fit cherche à modéliser, cette valeur est donc déterminée par le fit lui-même
-    et n'est pas un paramètre fixe varient selon les données.}
+    \noindent où $a_i$, $b_i$ et $\omega$ sont les coefficients de la série de 
+    Fourier et $t$ est le temps. Notez que $\omega$ est la fréquence fondamentale du
+    signal que le fit cherche à approximer, cette valeur est donc déterminée par le fit lui-même
+    et n'est pas un paramètre fixe varient selon les données.
     Et une fonction gaussienne, dénommée par \textit{gauss1} qui est:
 
     \begin{equation}
@@ -95,7 +91,7 @@
     optimal. Le reste du signal ne présente pas d’intérêt. Nous trouvons
     le délai en comparant à la position initiale, c'est-à-dire 
     l'expérience réalisée avec le câble le plus court.
-    \textcolor{red}{Le tableau \ref{table:BNC-fits} démontre les temps d'arrivée et
+    Le tableau \ref{table:BNC-fits} démontre les temps d'arrivée et
     l'écart-type pour les différents ajustements que nous avons essayés;
     dont le temps d'arrivée est calculé à partir de la position moyenne
     du pic sur $10$ différentes prises de données de la même longueur de câble
@@ -103,7 +99,7 @@
     pour chaque prise de données.
     Nous avons ajouté plus de chiffres significatifs pour les
     ajustements de courbe pour qu'ils soient compatibles avec
-    l'écart-type.}
+    l'écart-type.
 \end{onehalfspace}
 
 
