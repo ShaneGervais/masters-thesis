@@ -1,0 +1,167 @@
+ \documentclass[superscriptaddress,12pt]{article}
+ \usepackage[letterpaper,top=2.5cm,bottom=2.5cm,left=4cm,right=2.5cm]{geometry}
+
+ %\documentclass[aps,pra,notitlepage,superscriptaddress,10pt]{revtex4-2}
+ %\documentclass[aps,pra,notitlepage,superscriptaddress,twocolumn,10pt]{revtex4-2}
+ \usepackage[utf8]{inputenc} % to insert the character directly by copy paste or as ^+i typed on your keyboard
+ \usepackage[T1]{fontenc} % to lower the accent
+ \usepackage{bm} 			%Permet d'utiliser des charactères gras dans les équations
+ \usepackage{amsmath}		%Défini plusieurs fonctions utiles pour les équations
+ \usepackage{physics}
+ \usepackage{icomma}			%Enlève l'espace après la virgule dans les nombres 
+ \usepackage{setspace}
+ \usepackage{multirow}
+ \usepackage{booktabs}
+ \usepackage{titlesec}
+ %\usepackage{nomencl}
+ \usepackage{csvsimple}
+ \usepackage{longtable}
+ \usepackage{array}
+% Custom format for nomenclature
+\usepackage{etoolbox} % To patch commands
+\usepackage{amsmath}
+\usepackage[thinc]{esdiff}
+\usepackage{setspace}
+\usepackage[frak=esstix]{mathalpha}
+\usepackage{dsfont}
+\usepackage[normalem]{ulem}
+\usepackage[french]{babel}
+\usepackage{csquotes}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{bbm}
+\usepackage{gensymb}
+\usepackage{lmodern}
+\usepackage{mathrsfs}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}  
+\usepackage[T1]{fontenc}
+\onehalfspacing
+
+\title{Rapport de correction}
+\author{Shane Gervais}
+\date{17 Novembre 2025}
+
+\begin{document}
+\maketitle
+
+Ce document présente les corrections apportées au manuscrit intitulé
+\guillemetleft \textit{Caractérisation directe d'un état de polarisation à l'aide des mesures faibles temporelles} \guillemetright,
+soumis au département de physique et d'astronomie de l'Université de Moncton
+pour l'obtention du diplôme de Maîtrise ès sciences (physique) avec la
+supervision du professeur Lambert Giner. 
+
+\vspace{1cm}
+
+\noindent Le jury est composé des professeurs suivants :
+\begin{itemize}
+    \item Professeur Lambert Giner (directeur de recherche)
+    \item Professeur Normand Beaudoin (examinateur interne)
+    \item Agent de recherche Guillaume Thekkadath (examinateur externe)
+    \item Professeur Alexandre Melanson (président du jury)
+\end{itemize}
+\vspace{1cm}
+
+\noindent Je tiens à remercier sincèrement les membres du jury pour 
+leur temps, leurs commentaires constructifs et leur soutien 
+tout au long de ce processus.
+\vspace{1cm}
+
+\noindent Ce rapport détaille les modifications apportées au manuscrit en réponse aux
+commentaires et suggestions formulés par les membres du jury. La section suivante
+correspond au commentaire spécifique, suivi de la réponse et modification
+apportées au manuscrit.
+
+\section*{Commentaires et réponses}
+
+\vspace{1cm}
+\textbf{Commentaire 1 :} Le professeur Normand Beaudoin écrit \textit{quelques symboles dans le texte qui ne s’y
+retrouvent pas. De plus, dans la liste des symboles ou dans une autre liste, l’auteur devrait y inclure
+les acronymes.} \\ 
+
+\textbf{Réponse 1 :} J'ai revue l'ensemble du manuscrit pour m'assurer que tous les symboles 
+sont mis dans la liste des symboles et j'ai aussi ajouté les acronymes dans la liste de symboles avec
+leur définition et où ils apparaissent pour la première fois dans le texte.
+
+\vspace{1cm}
+\textbf{Commentaire 2 :} Le professeur Normand Beaudoin et agent de recherche Guillaume Thekkadath écrivent \textit{Il y a quelques fautes de français dans le texte.} \\
+\textbf{Réponse 2 :} J'ai relu attentivement le manuscrit et corrigé les fautes de français
+que j'ai pu trouver. J'ai aussi demandé à un collègue de relire le manuscrit pour s'assurer
+qu'il n'y avait pas d'erreurs grammaticales ou orthographiques restantes.
+
+\vspace{1cm}
+
+\textbf{Commentaire 3 :} L'agent de recherche Guillaume Thekkadath et le professeur Normand Beaudoin écrivent \textit{Qu'il doit élaborer plus précisement le mentionement du principe d'Heisenberg pour les mesures conjointes de deux composantes qu'ils commutent pas } \\
+\textbf{Réponse 3 :} J'ai reformulé l'explications du principe d'Heisenberg pour d'écrire plus en détaille pour le lecteur; 
+décrivent que les mesures conjointes de deux composantes non commutatives sont limitées par ce principe. Décrivent qu'une 
+mesure avec le système cause une perturbation qui fait effondrer l'état dans l'un de ses états propres possibles. Cela 
+rend l'example du dé quantique plus clair pour le lecteur. 
+
+\vspace{1cm}
+
+\textbf{Commentaire 4 :} L'agent de recherche Guillaume Thekkadath écrit \textit{Ça vaudrait la peine de souligner que ces contraintes deviennent plus importantes pour des états quantiques de haute dimension. } \\
+
+\textbf{Réponse 4 :} J'ai ajouté une phrase dans pour souligner que les contraintes
+des mesures projectives deviennent plus importantes pour des états quantiques de haute dimension,
+ce qui rend les techniques de mesures faibles particulièrement avantageuses dans ces cas.
+
+\vspace{1cm}
+
+\textbf{Commentaire 5 :} Le professeur Normand Beaudoin écrit \textit{qu'il faut élaborer sur le concept du pointeur ainsi que l'équation 37 tombait du ciel} \\
+\textbf{Réponse 5 :} J'ai ajouté une explication plus détaillée du concept de pointeur dans le contexte
+des mesures faibles en jêtant l'example d'une voiture Formule 1 à la place d'un example quantique permettant à 
+le lecteur de bien suivre et comprendre le concept de l'interaction de von Neumann sur un système que nous avons considéré précedemment dans la tomographie quantique, permettant une bonne transition vers les mesures faibles et l'apparision de l'équation 37.
+
+\vspace{1cm}
+
+\textbf{Commentaire 6 :} Le professeur Normand Beaudoin écrit \textit{qu'il faut clairifié l'utilisation de la dérivée sur le signal et pourquoi ignoré certain aspects sur le signal} \\
+
+\textbf{Réponse 6 :} J'ai clarifié l'utilisation de la dérivée sur le signal en expliquant
+comment la dérivée permet de mesurer le temps d'arrivé du signal et  
+en élaborant sur les aspects du signal qui sont ignorés dans cette approche, clairifiant 
+pourquoi ces aspects sont négligés. J'ai aussi ajouté une précsision sur notre argument de pourquoi utilisé la
+dérivée dans notre analyse apport qu'un adjustement paramétrique d'une fonction porte pour trouver le temps d'arrivé du signal.
+
+\vspace{1cm}
+
+\textbf{Commentaire 7 :} Le professeur Normand Beaudoin écrit \textit{plusieurs remarque sur la partie expérimentale de la mesure de la vitesse du signal électrique dans un câble BNC} \\
+
+\textbf{Réponse 7 :} J'ai revu la section expérimentale de la mesure de la vitesse du signal électrique dans un câble BNC en tenant compte des remarques du professeur Beaudoin. J'ai clarifié la description de l'expérience, les procédures utilisées et les résultats obtenus, en m'assurant que toutes les informations pertinentes sont incluses et bien expliquées.
+
+\vspace{1cm}
+
+\textbf{Commentaire 8 :} Le professeur Normand Beaudoin écrit \textit{qu'il faut élaborer chaque état de polarisation du signal à travers les figures 12 et 16} \\
+
+\textbf{Réponse 8 :} J'ai ajouté des descriptions détaillées pour que le lecteur puisse comprendre comment le signal évolue à travers chaque composante en terme de ça polarisation que je trouve qu'il est comprenable pour un lecteur 
+comprenant les principes de base de la polarisation de la lumière. 
+
+\vspace{1cm}
+
+\textbf{Commentaire 9 :} L'agent de recherche Guillaume Thekkadath écrit \textit{vaut la peine de donner un peu plus de détails pour expliquer (58) à (60). } \\
+
+\textbf{Réponse 9 :} J'ai ajouté des explications supplémentaires pour clarifier la transition entre les équations (58) à (60), en détaillant les étapes intermédiaires et les concepts sous-jacents qui permettent de comprendre cette progression.
+
+\vspace{1cm}
+
+\textbf{Commentaire 10 :} L'agent de recherche Guillaume Thekkadath écrit \textit{Spécifiez quelque part comment vous avez calculé l'écart type } \\
+\textbf{Réponse 10 :} J'ai ajouté une explication détaillée sur la méthode utilisée pour calculer l'écart type, afin de clarifier ce point pour le lecteur.
+
+\vspace{1cm}
+
+\textbf{Commentaire 11 :} L'agent de recherche Guillaume Thekkadath écrit \textit{comment j'ai obtenue le résultat du pourcentage d'erreur obtenue pour la vitesse du signal } \\
+\textbf{Réponse 11 :} J'ai remarqué que c'état un erreur de ma part et j'ai corrigé le pourcentage d'erreur dans le manuscrit en expliquant clairement comment j'ai obtenu ce résultat.
+
+\vspace{1cm}
+
+En conclusion, j'ai pris en compte tous les commentaires et suggestions formulés par les membres du jury et j'ai apporté les modifications nécessaires au manuscrit. Je suis convaincu que ces changements ont amélioré la qualité et la clarté du travail présenté.
+
+\end{document}
